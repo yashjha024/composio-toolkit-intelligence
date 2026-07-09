@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "assignment_number": 1,
+    "app_name": "Salesforce",
+    "website_hint": "salesforce.com",
+    "assigned_category": "CRM and Sales"
+  },
+  "evidence_pool": [],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": []
+  }
+}

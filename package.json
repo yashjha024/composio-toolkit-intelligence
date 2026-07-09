@@ -1,0 +1,23 @@
+{
+  "name": "composio-toolkit-intelligence",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Evidence-first Product Operations research system for application toolkit buildability analysis.",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "build": "tsc",
+    "extract-benchmark": "node scripts/extract-benchmark.js"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.9",
+    "typescript": "^5.5.2",
+    "vitest": "^1.6.0",
+    "xlsx": "^0.18.5",
+    "adm-zip": "^0.5.14"
+  }
+}

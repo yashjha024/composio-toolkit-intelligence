@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "assignment_number": 92,
+    "app_name": "Otter AI",
+    "website_hint": "help.otter.ai (MCP server)",
+    "assigned_category": "AI, Research and Media-native"
+  },
+  "evidence_pool": [],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": []
+  }
+}

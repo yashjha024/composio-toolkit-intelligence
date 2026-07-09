@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "assignment_number": 56,
+    "app_name": "Firecrawl",
+    "website_hint": "firecrawl.dev",
+    "assigned_category": "Data, SEO and Scraping"
+  },
+  "evidence_pool": [],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": []
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "assignment_number": 90,
+    "app_name": "PitchBook",
+    "website_hint": "pitchbook.com (research API)",
+    "assigned_category": "Finance and Fintech"
+  },
+  "evidence_pool": [],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": []
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "assignment_number": 61,
+    "app_name": "GitHub",
+    "website_hint": "docs.github.com/rest",
+    "assigned_category": "Developer, Infra and Data platforms"
+  },
+  "evidence_pool": [],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": []
+  }
+}
