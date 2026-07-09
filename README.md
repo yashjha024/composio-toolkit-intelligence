@@ -39,7 +39,7 @@ The objective was to build a repeatable system that could answer:
 
 The primary deliverable is a self-contained interactive HTML case study:
 
-**`case-study.html`**
+**`https://composio-toolkit-intelligence.netlify.app/`**
 
 It is designed to be understood by a reviewer in approximately two minutes without narration.
 
