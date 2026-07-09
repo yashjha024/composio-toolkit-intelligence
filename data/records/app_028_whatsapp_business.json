@@ -1,0 +1,416 @@
+{
+  "identity": {
+    "assignment_number": 28,
+    "app_name": "WhatsApp Business",
+    "website_hint": "developers.facebook.com/docs/whatsapp",
+    "assigned_category": "Communications and Messaging",
+    "researched_at": "2026-07-09T17:02:20.367Z"
+  },
+  "product": {
+    "normalized_category": "Communications and Messaging",
+    "one_line_description": "The WhatsApp Business Platform enables medium and large businesses to communicate with their customers at scale through an API."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "Authentication to the WhatsApp Business Platform Cloud API requires an access token (either a System User access token or a User access token) generated with the `whatsapp_business_management` permission. This token must be included in the `Authorization` HTTP header of requests as a Bearer Token."
+  },
+  "developer_access": {
+    "access_model": "admin_gated",
+    "credentials_obtainable_without_human_approval": false,
+    "access_notes": "To use the WhatsApp Business Platform, a business needs to be verified. Developers must set up a Meta Business Account and a WhatsApp Business Account through Business Manager. While temporary access tokens are available for testing, permanent access tokens require a System User created in Business Manager, implying administrative oversight and approval for full production access."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "REST",
+      "webhooks"
+    ],
+    "api_breadth": "broad",
+    "api_summary": "The WhatsApp Business Platform provides a public API composed of a Cloud API and an On-Premises API. It is a RESTful API with extensive capabilities for sending and receiving messages, managing business profiles, handling media, and setting up webhooks for real-time notifications. The API supports various messaging features and business operations."
+  },
+  "mcp": {
+    "mcp_status": "none_found",
+    "mcp_summary": "No information regarding Model Context Protocol (MCP) servers or related functionalities was found in the provided documentation."
+  },
+  "buildability": {
+    "verdict": "outreach_required",
+    "primary_blocker": "Requires vendor/support approval for admin credentials.",
+    "verdict_reasoning": "[PROVISIONAL V1] Admin gated access explicitly requires external vendor authorization."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 1,
+      "access_model": 0.9,
+      "public_api": 1,
+      "api_breadth": 0.9,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.96,
+    "requires_human_review": false,
+    "human_review_reason": null
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783616540367_0",
+      "claim_field": "product.one_line_description",
+      "claim": "The WhatsApp Business Platform allows medium and large businesses to communicate with their customers at scale.",
+      "source_url": "https://developers.facebook.com/docs/whatsapp",
+      "source_title": "WhatsApp Business Platform Overview - Documentation - Meta for Developers",
+      "source_type": "official_doc",
+      "evidence_snippet": "The WhatsApp Business Platform allows medium and large businesses to communicate with their customers at scale.",
+      "retrieved_at": "2026-07-09T17:02:20.367Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": false,
+        "status_code": 400,
+        "redirect_chain": [
+          "https://developers.facebook.com/docs/whatsapp"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616540367_1",
+      "claim_field": "authentication.auth_methods",
+      "claim": "bearer_token",
+      "source_url": "https://developers.facebook.com/docs/whatsapp",
+      "source_title": "WhatsApp Business Platform Overview - Documentation - Meta for Developers",
+      "source_type": "official_doc",
+      "evidence_snippet": "All access tokens must be included in the Authorization HTTP header of your requests, as a Bearer Token.",
+      "retrieved_at": "2026-07-09T17:02:20.367Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": false,
+        "status_code": 400,
+        "redirect_chain": [
+          "https://developers.facebook.com/docs/whatsapp"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616540367_2",
+      "claim_field": "authentication.auth_methods",
+      "claim": "bearer_token",
+      "source_url": "https://developers.facebook.com/docs/whatsapp",
+      "source_title": "WhatsApp Business Platform Overview - Documentation - Meta for Developers",
+      "source_type": "official_doc",
+      "evidence_snippet": "Each request to the WhatsApp Business Platform Cloud API must include an access token generated with the whatsapp_business_management permission.",
+      "retrieved_at": "2026-07-09T17:02:20.367Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": false,
+        "status_code": 400,
+        "redirect_chain": [
+          "https://developers.facebook.com/docs/whatsapp"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616540367_3",
+      "claim_field": "developer_access.access_model",
+      "claim": "admin_gated",
+      "source_url": "https://developers.facebook.com/docs/whatsapp",
+      "source_title": "WhatsApp Business Platform Overview - Documentation - Meta for Developers",
+      "source_type": "official_doc",
+      "evidence_snippet": "Before you can use the WhatsApp Business Platform, your business needs to be verified.",
+      "retrieved_at": "2026-07-09T17:02:20.367Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": false,
+        "status_code": 400,
+        "redirect_chain": [
+          "https://developers.facebook.com/docs/whatsapp"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616540367_4",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": false,
+      "source_url": "https://developers.facebook.com/docs/whatsapp",
+      "source_title": "WhatsApp Business Platform Overview - Documentation - Meta for Developers",
+      "source_type": "official_doc",
+      "evidence_snippet": "Before you can use the WhatsApp Business Platform, your business needs to be verified.",
+      "retrieved_at": "2026-07-09T17:02:20.367Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": false,
+        "status_code": 400,
+        "redirect_chain": [
+          "https://developers.facebook.com/docs/whatsapp"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616540367_5",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": false,
+      "source_url": "https://developers.facebook.com/docs/whatsapp",
+      "source_title": "WhatsApp Business Platform Overview - Documentation - Meta for Developers",
+      "source_type": "official_doc",
+      "evidence_snippet": "To start developing with the Cloud API, you need to set up a Meta Business Account and then a WhatsApp Business Account. This process must be completed in Business Manager.",
+      "retrieved_at": "2026-07-09T17:02:20.367Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": false,
+        "status_code": 400,
+        "redirect_chain": [
+          "https://developers.facebook.com/docs/whatsapp"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616540367_6",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": false,
+      "source_url": "https://developers.facebook.com/docs/whatsapp",
+      "source_title": "WhatsApp Business Platform Overview - Documentation - Meta for Developers",
+      "source_type": "official_doc",
+      "evidence_snippet": "After you've finished testing and are ready to go live, you can generate a permanent access token with the System User that you created in Business Manager.",
+      "retrieved_at": "2026-07-09T17:02:20.367Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": false,
+        "status_code": 400,
+        "redirect_chain": [
+          "https://developers.facebook.com/docs/whatsapp"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616540367_7",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://developers.facebook.com/docs/whatsapp",
+      "source_title": "WhatsApp Business Platform Overview - Documentation - Meta for Developers",
+      "source_type": "official_doc",
+      "evidence_snippet": "The WhatsApp Business Platform consists of two main components: The Cloud API and the On-Premises API.",
+      "retrieved_at": "2026-07-09T17:02:20.367Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": false,
+        "status_code": 400,
+        "redirect_chain": [
+          "https://developers.facebook.com/docs/whatsapp"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616540367_8",
+      "claim_field": "api_surface.api_styles",
+      "claim": "webhooks",
+      "source_url": "https://developers.facebook.com/docs/whatsapp",
+      "source_title": "WhatsApp Business Platform Overview - Documentation - Meta for Developers",
+      "source_type": "official_doc",
+      "evidence_snippet": "Set up webhooks to receive important notifications including when a customer sends a message to your business.",
+      "retrieved_at": "2026-07-09T17:02:20.367Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": false,
+        "status_code": 400,
+        "redirect_chain": [
+          "https://developers.facebook.com/docs/whatsapp"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616540367_9",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://developers.facebook.com/docs/whatsapp",
+      "source_title": "WhatsApp Business Platform Overview - Documentation - Meta for Developers",
+      "source_type": "official_doc",
+      "evidence_snippet": "Cloud API: Send and receive messages, manage your business profile, media and message templates, and gain insights into your account.",
+      "retrieved_at": "2026-07-09T17:02:20.367Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": false,
+        "status_code": 400,
+        "redirect_chain": [
+          "https://developers.facebook.com/docs/whatsapp"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 28,
+      "app_name": "WhatsApp Business",
+      "website_hint": "developers.facebook.com/docs/whatsapp",
+      "assigned_category": "Communications and Messaging",
+      "researched_at": "2026-07-09T17:02:20.367Z"
+    },
+    "product": {
+      "normalized_category": "Communications and Messaging",
+      "one_line_description": "The WhatsApp Business Platform enables medium and large businesses to communicate with their customers at scale through an API."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "Authentication to the WhatsApp Business Platform Cloud API requires an access token (either a System User access token or a User access token) generated with the `whatsapp_business_management` permission. This token must be included in the `Authorization` HTTP header of requests as a Bearer Token."
+    },
+    "developer_access": {
+      "access_model": "admin_gated",
+      "credentials_obtainable_without_human_approval": false,
+      "access_notes": "To use the WhatsApp Business Platform, a business needs to be verified. Developers must set up a Meta Business Account and a WhatsApp Business Account through Business Manager. While temporary access tokens are available for testing, permanent access tokens require a System User created in Business Manager, implying administrative oversight and approval for full production access."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "REST",
+        "webhooks"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "The WhatsApp Business Platform provides a public API composed of a Cloud API and an On-Premises API. It is a RESTful API with extensive capabilities for sending and receiving messages, managing business profiles, handling media, and setting up webhooks for real-time notifications. The API supports various messaging features and business operations."
+    },
+    "mcp": {
+      "mcp_status": "none_found",
+      "mcp_summary": "No information regarding Model Context Protocol (MCP) servers or related functionalities was found in the provided documentation."
+    },
+    "buildability": {
+      "verdict": "outreach_required",
+      "primary_blocker": "Requires vendor/support approval for admin credentials.",
+      "verdict_reasoning": "[PROVISIONAL V1] Admin gated access explicitly requires external vendor authorization."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 1,
+        "access_model": 0.9,
+        "public_api": 1,
+        "api_breadth": 0.9,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.96,
+      "requires_human_review": false,
+      "human_review_reason": null
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_auth_methods_unclear",
+    "risk_material_evidence_validation_failed",
+    "risk_insufficient_official_sources"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_auth_methods_unclear",
+      "risk_material_evidence_validation_failed",
+      "risk_insufficient_official_sources"
+    ]
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "assignment_number": 65,
+  "app_name": "Supabase",
+  "assigned_category": "Developer, Infra and Data platforms",
+  "processing_mode": "fast_scale",
+  "baseline_fields": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "access_model": "unclear",
+    "credentials_obtainable_without_approval": true,
+    "public_api_status": "yes",
+    "api_breadth": "broad",
+    "mcp_status": "official",
+    "buildability_verdict": "UNCLEAR",
+    "primary_blocker": "Research data ambiguous or insufficient."
+  },
+  "verified_fields": {
+    "auth_methods": {
+      "verified_value": [
+        "email and password",
+        "passwordless",
+        "OAuth",
+        "mobile logins"
+      ],
+      "evidence_url": "https://supabase.com/docs",
+      "concise_evidence_snippet": "Auth Add and manage email and password, passwordless, OAuth, and mobile logins to your project through a suite of identity providers and APIs.",
+      "baseline_classification": "incorrect",
+      "correction_required": true,
+      "failure_mode": "extraction_error"
+    },
+    "access_model": {
+      "verified_value": "freemium",
+      "evidence_url": "https://supabase.com/docs/pricing",
+      "concise_evidence_snippet": "Start building for free, collaborate with your team, then scale to millions of users. Free Perfect for passion projects & simple websites.",
+      "baseline_classification": "incorrect",
+      "correction_required": true,
+      "failure_mode": "conservative_guardrail"
+    },
+    "credentials_obtainable_without_approval": {
+      "verified_value": true,
+      "evidence_url": "https://supabase.com/docs/pricing",
+      "concise_evidence_snippet": "Start building for free, collaborate with your team, then scale to millions of users. Start for Free",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "public_api_status": {
+      "verified_value": "yes",
+      "evidence_url": "https://supabase.com/docs",
+      "concise_evidence_snippet": "Modules [...] Data REST API [...] GraphQL API [...] Client Libraries [...] Supabase CLI",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "api_breadth": {
+      "verified_value": "broad",
+      "evidence_url": "https://supabase.com/docs",
+      "concise_evidence_snippet": "Modules [...] Data REST API [...] GraphQL API [...] Client Libraries [...] Supabase CLI [...] Management API",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "mcp_status": {
+      "verified_value": "official",
+      "evidence_url": "https://supabase.com/docs",
+      "concise_evidence_snippet": "AI tools Develop with Supabase AI-first using plugins, MCP, and skills.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "buildability_verdict": {
+      "verified_value": "BUILD_NOW",
+      "evidence_url": "https://supabase.com/docs/pricing",
+      "concise_evidence_snippet": "Start building for free... Unlimited API requests. Data REST API. GraphQL API.",
+      "baseline_classification": "incorrect",
+      "correction_required": true,
+      "failure_mode": "conservative_guardrail"
+    },
+    "primary_blocker": {
+      "verified_value": null,
+      "evidence_url": "https://supabase.com/docs/pricing",
+      "concise_evidence_snippet": "Start building for free, collaborate with your team, then scale to millions of users.",
+      "baseline_classification": "incorrect",
+      "correction_required": true,
+      "failure_mode": "conservative_guardrail"
+    },
+    "unclear_diagnosis": "false_unclear_due_to_guardrails"
+  },
+  "verified_at": "2026-07-09T18:54:23.404Z"
+}

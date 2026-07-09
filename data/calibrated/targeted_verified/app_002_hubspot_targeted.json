@@ -1,0 +1,28 @@
+{
+  "assignment_number": 2,
+  "app_name": "HubSpot",
+  "assigned_category": "CRM and Sales",
+  "baseline_verdict": "UNCLEAR",
+  "calibrated_verdict": "UNCLEAR",
+  "exact_fields_to_verify": [
+    "access_model_unclear",
+    "auth_methods_unclear"
+  ],
+  "targeted_result": {
+    "verified_auth_methods": [
+      "unclear"
+    ],
+    "verified_access_model": "self_serve_free",
+    "verified_credentials_obtainable_without_approval": true,
+    "verified_public_api_status": "yes",
+    "verified_api_breadth": "broad",
+    "verified_verdict": "BUILD_NOW",
+    "primary_blocker": null,
+    "evidence_url": "https://www.hubspot.com/",
+    "concise_evidence_snippet": "Get started free with HubSpot's free tools",
+    "remaining_uncertainty": [
+      "auth_methods"
+    ]
+  },
+  "verified_at": "2026-07-09T18:59:56.056Z"
+}

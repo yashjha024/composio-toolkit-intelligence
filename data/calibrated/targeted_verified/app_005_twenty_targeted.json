@@ -1,0 +1,25 @@
+{
+  "assignment_number": 5,
+  "app_name": "Twenty",
+  "assigned_category": "CRM and Sales",
+  "baseline_verdict": "UNCLEAR",
+  "calibrated_verdict": "UNCLEAR",
+  "exact_fields_to_verify": [
+    "access_model_unclear"
+  ],
+  "targeted_result": {
+    "verified_auth_methods": [
+      "oauth2"
+    ],
+    "verified_access_model": "self_serve_free",
+    "verified_credentials_obtainable_without_approval": true,
+    "verified_public_api_status": "yes",
+    "verified_api_breadth": "broad",
+    "verified_verdict": "BUILD_NOW",
+    "primary_blocker": null,
+    "evidence_url": "https://docs.twenty.com/developers/introduction",
+    "concise_evidence_snippet": "Developers can self-host Twenty on their own infrastructure, providing free access to its APIs and tools.",
+    "remaining_uncertainty": []
+  },
+  "verified_at": "2026-07-09T18:59:40.746Z"
+}

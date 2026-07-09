@@ -1,0 +1,770 @@
+{
+  "identity": {
+    "assignment_number": 54,
+    "app_name": "MrScraper",
+    "website_hint": "docs.mrscraper.com",
+    "assigned_category": "Data, SEO and Scraping",
+    "researched_at": "2026-07-09T17:16:14.718Z"
+  },
+  "product": {
+    "normalized_category": "Data, SEO and Scraping",
+    "one_line_description": "A powerful scraping platform designed to automate and simplify data extraction with AI-powered and manual scrapers."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "The documentation mentions a 'Token Plan' and an 'API Playground', suggesting token-based authentication for API access, but the specific authentication method (e.g., API key, bearer token) is not explicitly stated."
+  },
+  "developer_access": {
+    "access_model": "self_serve_paid",
+    "credentials_obtainable_without_human_approval": true,
+    "access_notes": "API access appears to be self-serve, indicated by the presence of a 'Token Plan' and 'Billing' sections in the documentation, suggesting credentials can be obtained without human approval, likely tied to a paid plan."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "REST",
+      "SDK",
+      "CLI",
+      "webhooks"
+    ],
+    "api_breadth": "broad",
+    "api_summary": "MrScraper offers a public Scraper API, supports various SDKs (Python, Node.js, LangChain), provides a CLI, and integrates with webhooks. It allows programmatically creating and running scrapers, with features like AI scraping, manual workflows, and bulk scraping likely accessible via API."
+  },
+  "mcp": {
+    "mcp_status": "official",
+    "mcp_summary": "The 'MCP Server' is listed as a component under the 'Getting Started' section of the official documentation, indicating official support."
+  },
+  "buildability": {
+    "verdict": "build_now",
+    "primary_blocker": null,
+    "verdict_reasoning": "Self-serve developer access is verified with a broad/moderate documented public API."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 0.6,
+      "access_model": 0.8,
+      "public_api": 1,
+      "api_breadth": 0.9,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.85,
+    "requires_human_review": false,
+    "human_review_reason": null
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783617374718_0",
+      "claim_field": "product.one_line_description",
+      "claim": "A powerful scraping platform designed to automate and simplify data extraction with AI-powered and manual scrapers.",
+      "source_url": "https://docs.mrscraper.com/docs/getting-started/overview",
+      "source_title": "Overview | MrScraper Documentation",
+      "source_type": "official_doc",
+      "evidence_snippet": "Discover how our powerful scraping platform can transform the way you extract data. Whether you're scraping e-commerce product data, collecting job listings, gathering customer reviews for sentiment analysis, or extracting any website content, our AI-powered and manual scrapers are designed to automate and simplify the process, giving you a powerful edge in any project.",
+      "retrieved_at": "2026-07-09T17:16:14.718Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.mrscraper.com/docs/getting-started/overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617374718_1",
+      "claim_field": "authentication.auth_methods",
+      "claim": [
+        "unclear"
+      ],
+      "source_url": "https://docs.mrscraper.com/docs/getting-started/overview",
+      "source_title": "Overview | MrScraper Documentation",
+      "source_type": "official_doc",
+      "evidence_snippet": "[Token Plan](/docs/getting-started/api-token)",
+      "retrieved_at": "2026-07-09T17:16:14.718Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.mrscraper.com/docs/getting-started/overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617374718_2",
+      "claim_field": "authentication.auth_summary",
+      "claim": "The documentation mentions a 'Token Plan' and an 'API Playground', suggesting token-based authentication for API access, but the specific authentication method (e.g., API key, bearer token) is not explicitly stated.",
+      "source_url": "https://docs.mrscraper.com/docs/getting-started/overview",
+      "source_title": "Overview | MrScraper Documentation",
+      "source_type": "official_doc",
+      "evidence_snippet": "[Token Plan](/docs/getting-started/api-token)",
+      "retrieved_at": "2026-07-09T17:16:14.718Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.mrscraper.com/docs/getting-started/overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617374718_3",
+      "claim_field": "authentication.auth_summary",
+      "claim": "The documentation mentions a 'Token Plan' and an 'API Playground', suggesting token-based authentication for API access, but the specific authentication method (e.g., API key, bearer token) is not explicitly stated.",
+      "source_url": "https://docs.mrscraper.com/docs/getting-started/overview",
+      "source_title": "Overview | MrScraper Documentation",
+      "source_type": "official_doc",
+      "evidence_snippet": "[API Playground](/docs/api/overview#api-playground)",
+      "retrieved_at": "2026-07-09T17:16:14.718Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.mrscraper.com/docs/getting-started/overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617374718_4",
+      "claim_field": "developer_access.access_model",
+      "claim": "self_serve_paid",
+      "source_url": "https://docs.mrscraper.com/docs/getting-started/overview",
+      "source_title": "Overview | MrScraper Documentation",
+      "source_type": "official_doc",
+      "evidence_snippet": "[Token Plan](/docs/getting-started/api-token)",
+      "retrieved_at": "2026-07-09T17:16:14.718Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.mrscraper.com/docs/getting-started/overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617374718_5",
+      "claim_field": "developer_access.access_model",
+      "claim": "self_serve_paid",
+      "source_url": "https://docs.mrscraper.com/docs/getting-started/overview",
+      "source_title": "Overview | MrScraper Documentation",
+      "source_type": "official_doc",
+      "evidence_snippet": "[Billing](/docs/getting-started/billing)",
+      "retrieved_at": "2026-07-09T17:16:14.718Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.mrscraper.com/docs/getting-started/overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617374718_6",
+      "claim_field": "credentials_obtainable_without_human_approval",
+      "claim": true,
+      "source_url": "https://docs.mrscraper.com/docs/getting-started/overview",
+      "source_title": "Overview | MrScraper Documentation",
+      "source_type": "official_doc",
+      "evidence_snippet": "[Token Plan](/docs/getting-started/api-token)",
+      "retrieved_at": "2026-07-09T17:16:14.718Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.mrscraper.com/docs/getting-started/overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617374718_7",
+      "claim_field": "credentials_obtainable_without_human_approval",
+      "claim": true,
+      "source_url": "https://docs.mrscraper.com/docs/getting-started/overview",
+      "source_title": "Overview | MrScraper Documentation",
+      "source_type": "official_doc",
+      "evidence_snippet": "[API Playground](/docs/api/overview#api-playground)",
+      "retrieved_at": "2026-07-09T17:16:14.718Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.mrscraper.com/docs/getting-started/overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617374718_8",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://docs.mrscraper.com/docs/getting-started/overview",
+      "source_title": "Overview | MrScraper Documentation",
+      "source_type": "official_doc",
+      "evidence_snippet": "[Scraper API](/docs/features/activating-api)",
+      "retrieved_at": "2026-07-09T17:16:14.718Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.mrscraper.com/docs/getting-started/overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617374718_9",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://docs.mrscraper.com/docs/getting-started/overview",
+      "source_title": "Overview | MrScraper Documentation",
+      "source_type": "official_doc",
+      "evidence_snippet": "[API Playground](/docs/api/overview#api-playground)",
+      "retrieved_at": "2026-07-09T17:16:14.718Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.mrscraper.com/docs/getting-started/overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617374718_10",
+      "claim_field": "api_surface.api_styles",
+      "claim": "REST",
+      "source_url": "https://docs.mrscraper.com/docs/getting-started/overview",
+      "source_title": "Overview | MrScraper Documentation",
+      "source_type": "official_doc",
+      "evidence_snippet": "[Scraper API](/docs/features/activating-api)",
+      "retrieved_at": "2026-07-09T17:16:14.718Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.mrscraper.com/docs/getting-started/overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617374718_11",
+      "claim_field": "api_surface.api_styles",
+      "claim": "SDK",
+      "source_url": "https://docs.mrscraper.com/docs/getting-started/overview",
+      "source_title": "Overview | MrScraper Documentation",
+      "source_type": "official_doc",
+      "evidence_snippet": "[Python SDK](/docs/integrations/python)",
+      "retrieved_at": "2026-07-09T17:16:14.718Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.mrscraper.com/docs/getting-started/overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617374718_12",
+      "claim_field": "api_surface.api_styles",
+      "claim": "SDK",
+      "source_url": "https://docs.mrscraper.com/docs/getting-started/overview",
+      "source_title": "Overview | MrScraper Documentation",
+      "source_type": "official_doc",
+      "evidence_snippet": "[Node.js SDK](/docs/integrations/node)",
+      "retrieved_at": "2026-07-09T17:16:14.718Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.mrscraper.com/docs/getting-started/overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617374718_13",
+      "claim_field": "api_surface.api_styles",
+      "claim": "SDK",
+      "source_url": "https://docs.mrscraper.com/docs/getting-started/overview",
+      "source_title": "Overview | MrScraper Documentation",
+      "source_type": "official_doc",
+      "evidence_snippet": "[LangChain SDK](/docs/integrations/langchain)",
+      "retrieved_at": "2026-07-09T17:16:14.718Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.mrscraper.com/docs/getting-started/overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617374718_14",
+      "claim_field": "api_surface.api_styles",
+      "claim": "CLI",
+      "source_url": "https://docs.mrscraper.com/docs/getting-started/overview",
+      "source_title": "Overview | MrScraper Documentation",
+      "source_type": "official_doc",
+      "evidence_snippet": "[CLI](/docs/getting-started/cli)",
+      "retrieved_at": "2026-07-09T17:16:14.718Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.mrscraper.com/docs/getting-started/overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617374718_15",
+      "claim_field": "api_surface.api_styles",
+      "claim": "webhooks",
+      "source_url": "https://docs.mrscraper.com/docs/getting-started/overview",
+      "source_title": "Overview | MrScraper Documentation",
+      "source_type": "official_doc",
+      "evidence_snippet": "[Webhook](/docs/integrations/webhook)",
+      "retrieved_at": "2026-07-09T17:16:14.718Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.mrscraper.com/docs/getting-started/overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617374718_16",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://docs.mrscraper.com/docs/getting-started/overview",
+      "source_title": "Overview | MrScraper Documentation",
+      "source_type": "official_doc",
+      "evidence_snippet": "[AI Scraper](/docs/features/ai-scraper)",
+      "retrieved_at": "2026-07-09T17:16:14.718Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.mrscraper.com/docs/getting-started/overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617374718_17",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://docs.mrscraper.com/docs/getting-started/overview",
+      "source_title": "Overview | MrScraper Documentation",
+      "source_type": "official_doc",
+      "evidence_snippet": "[Manual Scraper](/docs/features/manual-scraper)",
+      "retrieved_at": "2026-07-09T17:16:14.718Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.mrscraper.com/docs/getting-started/overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617374718_18",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://docs.mrscraper.com/docs/getting-started/overview",
+      "source_title": "Overview | MrScraper Documentation",
+      "source_type": "official_doc",
+      "evidence_snippet": "[Bulk Scraping](/docs/features/bulk-scraping)",
+      "retrieved_at": "2026-07-09T17:16:14.718Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.mrscraper.com/docs/getting-started/overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617374718_19",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://docs.mrscraper.com/docs/getting-started/overview",
+      "source_title": "Overview | MrScraper Documentation",
+      "source_type": "official_doc",
+      "evidence_snippet": "[Create and Run a Scraper Programmatically](/docs/guides/programmatically)",
+      "retrieved_at": "2026-07-09T17:16:14.718Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.mrscraper.com/docs/getting-started/overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617374718_20",
+      "claim_field": "mcp.mcp_status",
+      "claim": "official",
+      "source_url": "https://docs.mrscraper.com/docs/getting-started/overview",
+      "source_title": "Overview | MrScraper Documentation",
+      "source_type": "official_doc",
+      "evidence_snippet": "[MCP Server](/docs/getting-started/mcp-server)",
+      "retrieved_at": "2026-07-09T17:16:14.718Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.mrscraper.com/docs/getting-started/overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617374718_21",
+      "claim_field": "mcp.mcp_summary",
+      "claim": "The 'MCP Server' is listed as a component under the 'Getting Started' section of the official documentation, indicating official support.",
+      "source_url": "https://docs.mrscraper.com/docs/getting-started/overview",
+      "source_title": "Overview | MrScraper Documentation",
+      "source_type": "official_doc",
+      "evidence_snippet": "[MCP Server](/docs/getting-started/mcp-server)",
+      "retrieved_at": "2026-07-09T17:16:14.718Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.mrscraper.com/docs/getting-started/overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 54,
+      "app_name": "MrScraper",
+      "website_hint": "docs.mrscraper.com",
+      "assigned_category": "Data, SEO and Scraping",
+      "researched_at": "2026-07-09T17:16:14.718Z"
+    },
+    "product": {
+      "normalized_category": "Data, SEO and Scraping",
+      "one_line_description": "A powerful scraping platform designed to automate and simplify data extraction with AI-powered and manual scrapers."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "The documentation mentions a 'Token Plan' and an 'API Playground', suggesting token-based authentication for API access, but the specific authentication method (e.g., API key, bearer token) is not explicitly stated."
+    },
+    "developer_access": {
+      "access_model": "self_serve_paid",
+      "credentials_obtainable_without_human_approval": true,
+      "access_notes": "API access appears to be self-serve, indicated by the presence of a 'Token Plan' and 'Billing' sections in the documentation, suggesting credentials can be obtained without human approval, likely tied to a paid plan."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "REST",
+        "SDK",
+        "CLI",
+        "webhooks"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "MrScraper offers a public Scraper API, supports various SDKs (Python, Node.js, LangChain), provides a CLI, and integrates with webhooks. It allows programmatically creating and running scrapers, with features like AI scraping, manual workflows, and bulk scraping likely accessible via API."
+    },
+    "mcp": {
+      "mcp_status": "official",
+      "mcp_summary": "The 'MCP Server' is listed as a component under the 'Getting Started' section of the official documentation, indicating official support."
+    },
+    "buildability": {
+      "verdict": "build_now",
+      "primary_blocker": null,
+      "verdict_reasoning": "Self-serve developer access is verified with a broad/moderate documented public API."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0.6,
+        "access_model": 0.8,
+        "public_api": 1,
+        "api_breadth": 0.9,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.85,
+      "requires_human_review": false,
+      "human_review_reason": null
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_auth_methods_unclear",
+    "risk_material_evidence_validation_failed",
+    "risk_contradictory_claims"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_auth_methods_unclear",
+      "risk_material_evidence_validation_failed",
+      "risk_contradictory_claims"
+    ]
+  }
+}

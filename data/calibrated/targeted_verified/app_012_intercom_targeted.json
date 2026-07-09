@@ -1,0 +1,30 @@
+{
+  "assignment_number": 12,
+  "app_name": "Intercom",
+  "assigned_category": "Support and Helpdesk",
+  "baseline_verdict": "UNCLEAR",
+  "calibrated_verdict": "UNCLEAR",
+  "exact_fields_to_verify": [
+    "access_model_unclear",
+    "auth_methods_unclear"
+  ],
+  "targeted_result": {
+    "verified_auth_methods": [
+      "unclear"
+    ],
+    "verified_access_model": "unclear",
+    "verified_credentials_obtainable_without_approval": false,
+    "verified_public_api_status": "yes",
+    "verified_api_breadth": "broad",
+    "verified_verdict": "UNCLEAR",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "evidence_url": "https://www.intercom.com/",
+    "concise_evidence_snippet": "The source mentions 'powerful, flexible APIs'... However, it does not specify how API credentials can be obtained... or if human approval is required for API access.",
+    "remaining_uncertainty": [
+      "access_model",
+      "auth_methods",
+      "credentials_obtainable_without_approval"
+    ]
+  },
+  "verified_at": "2026-07-09T18:59:54.843Z"
+}

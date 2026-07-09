@@ -1,0 +1,507 @@
+{
+  "identity": {
+    "assignment_number": 17,
+    "app_name": "Plain",
+    "website_hint": "plain.com",
+    "assigned_category": "Support and Helpdesk",
+    "researched_at": "2026-07-09T16:56:29.219Z"
+  },
+  "product": {
+    "normalized_category": "Support and Helpdesk",
+    "one_line_description": "Plain is an AI support infrastructure built for B2B teams to manage and automate customer support interactions across various channels."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "The provided source content mentions an API and API Reference, but does not specify any particular authentication methods (e.g., API keys, OAuth) required to access the API."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": "unknown",
+    "access_notes": "The website offers 'Start a trial' and 'Start for free' buttons, likely for accessing the main product platform. It also highlights an 'API Reference', implying developer access, but it does not explicitly state how API-specific credentials are obtained, whether through self-service, free trial access, or requiring sales/admin approval. The phrasing 'Our sales team knows the product deeply and works with you to get to a yes or no quickly' suggests a sales-assisted process for product acquisition, but it's unclear if this extends directly to API credential obtainment."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "GraphQL"
+    ],
+    "api_breadth": "broad",
+    "api_summary": "Plain offers a public, API-first approach, stating that 'Every part of Plain can be extended, customized, or embedded into your own product and tooling' and 'everything you see in the product can be done programmatically.' The API reference specifically mentions GraphQL, allowing for extensive programmatic interaction to extend workflows, automate processes, and integrate with external systems."
+  },
+  "mcp": {
+    "mcp_status": "none_found",
+    "mcp_summary": "No information regarding Model Context Protocol (MCP) server availability was found in the provided source content."
+  },
+  "buildability": {
+    "verdict": "unclear",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 0.1,
+      "access_model": 0.2,
+      "public_api": 1,
+      "api_breadth": 0.9,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.6,
+    "requires_human_review": true,
+    "human_review_reason": "Specific details on API authentication methods and the process for obtaining API credentials are not explicitly stated. The available information primarily describes general product trials and API capabilities without direct instructions on developer access to the API itself."
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783616189219_0",
+      "claim_field": "product.one_line_description",
+      "claim": "Plain is an AI support infrastructure built for B2B teams to manage and automate customer support interactions across various channels.",
+      "source_url": "https://www.plain.com/",
+      "source_title": "Plain — The AI Support Stack Built for B2B",
+      "source_type": "official_doc",
+      "evidence_snippet": "Plain is AI support infrastructure that enables B2B teams to build anything – no-code or all-code.",
+      "retrieved_at": "2026-07-09T16:56:29.219Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.plain.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616189219_1",
+      "claim_field": "product.one_line_description",
+      "claim": "Plain is an AI support infrastructure built for B2B teams to manage and automate customer support interactions across various channels.",
+      "source_url": "https://www.plain.com/",
+      "source_title": "Plain — The AI Support Stack Built for B2B",
+      "source_type": "official_doc",
+      "evidence_snippet": "Plain — The AI Support Stack Built for B2B",
+      "retrieved_at": "2026-07-09T16:56:29.219Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.plain.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616189219_2",
+      "claim_field": "authentication.auth_methods",
+      "claim": "unclear",
+      "source_url": "https://www.plain.com/",
+      "source_title": "Plain — The AI Support Stack Built for B2B",
+      "source_type": "official_doc",
+      "evidence_snippet": "When you demand complete extensibility\n\n#### [Learn about our API](https://www.plain.com/docs/)",
+      "retrieved_at": "2026-07-09T16:56:29.219Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.plain.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616189219_3",
+      "claim_field": "developer_access.access_model",
+      "claim": "unclear",
+      "source_url": "https://www.plain.com/",
+      "source_title": "Plain — The AI Support Stack Built for B2B",
+      "source_type": "official_doc",
+      "evidence_snippet": "When you demand complete extensibility\n\n#### [Learn about our API](https://www.plain.com/docs/)",
+      "retrieved_at": "2026-07-09T16:56:29.219Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.plain.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616189219_4",
+      "claim_field": "developer_access.access_model",
+      "claim": "unclear",
+      "source_url": "https://www.plain.com/",
+      "source_title": "Plain — The AI Support Stack Built for B2B",
+      "source_type": "official_doc",
+      "evidence_snippet": "#### Start a trial",
+      "retrieved_at": "2026-07-09T16:56:29.219Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.plain.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616189219_5",
+      "claim_field": "developer_access.access_model",
+      "claim": "unclear",
+      "source_url": "https://www.plain.com/",
+      "source_title": "Plain — The AI Support Stack Built for B2B",
+      "source_type": "official_doc",
+      "evidence_snippet": "Our sales team knows the product deeply and works with you to get to a yes or no quickly, whichever is right.",
+      "retrieved_at": "2026-07-09T16:56:29.219Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.plain.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616189219_6",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://www.plain.com/",
+      "source_title": "Plain — The AI Support Stack Built for B2B",
+      "source_type": "official_doc",
+      "evidence_snippet": "When you demand complete extensibility\n\n#### [Learn about our API](https://www.plain.com/docs/)",
+      "retrieved_at": "2026-07-09T16:56:29.219Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.plain.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616189219_7",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://www.plain.com/",
+      "source_title": "Plain — The AI Support Stack Built for B2B",
+      "source_type": "official_doc",
+      "evidence_snippet": "API\n\nBuild anything\n\nEvery part of Plain can be extended, customized, or embedded into your own product and tooling.",
+      "retrieved_at": "2026-07-09T16:56:29.219Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.plain.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616189219_8",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://www.plain.com/",
+      "source_title": "Plain — The AI Support Stack Built for B2B",
+      "source_type": "official_doc",
+      "evidence_snippet": "Plain is API-first, so everything you see in the product can be done programmatically.",
+      "retrieved_at": "2026-07-09T16:56:29.219Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.plain.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616189219_9",
+      "claim_field": "api_surface.api_styles",
+      "claim": "GraphQL",
+      "source_url": "https://www.plain.com/",
+      "source_title": "Plain — The AI Support Stack Built for B2B",
+      "source_type": "official_doc",
+      "evidence_snippet": "API Reference (https://www.plain.com/docs/graphql/introduction)",
+      "retrieved_at": "2026-07-09T16:56:29.219Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.plain.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616189219_10",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://www.plain.com/",
+      "source_title": "Plain — The AI Support Stack Built for B2B",
+      "source_type": "official_doc",
+      "evidence_snippet": "Plain is API-first, so everything you see in the product can be done programmatically.",
+      "retrieved_at": "2026-07-09T16:56:29.219Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.plain.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616189219_11",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://www.plain.com/",
+      "source_title": "Plain — The AI Support Stack Built for B2B",
+      "source_type": "official_doc",
+      "evidence_snippet": "Extend workflows, automate the edge cases, or replace entire pieces with your own logic.",
+      "retrieved_at": "2026-07-09T16:56:29.219Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.plain.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616189219_12",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://www.plain.com/",
+      "source_title": "Plain — The AI Support Stack Built for B2B",
+      "source_type": "official_doc",
+      "evidence_snippet": "API\n\nBuild anything\n\nEvery part of Plain can be extended, customized, or embedded into your own product and tooling.",
+      "retrieved_at": "2026-07-09T16:56:29.219Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.plain.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 17,
+      "app_name": "Plain",
+      "website_hint": "plain.com",
+      "assigned_category": "Support and Helpdesk",
+      "researched_at": "2026-07-09T16:56:29.219Z"
+    },
+    "product": {
+      "normalized_category": "Support and Helpdesk",
+      "one_line_description": "Plain is an AI support infrastructure built for B2B teams to manage and automate customer support interactions across various channels."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "The provided source content mentions an API and API Reference, but does not specify any particular authentication methods (e.g., API keys, OAuth) required to access the API."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": "unknown",
+      "access_notes": "The website offers 'Start a trial' and 'Start for free' buttons, likely for accessing the main product platform. It also highlights an 'API Reference', implying developer access, but it does not explicitly state how API-specific credentials are obtained, whether through self-service, free trial access, or requiring sales/admin approval. The phrasing 'Our sales team knows the product deeply and works with you to get to a yes or no quickly' suggests a sales-assisted process for product acquisition, but it's unclear if this extends directly to API credential obtainment."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "GraphQL"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "Plain offers a public, API-first approach, stating that 'Every part of Plain can be extended, customized, or embedded into your own product and tooling' and 'everything you see in the product can be done programmatically.' The API reference specifically mentions GraphQL, allowing for extensive programmatic interaction to extend workflows, automate processes, and integrate with external systems."
+    },
+    "mcp": {
+      "mcp_status": "none_found",
+      "mcp_summary": "No information regarding Model Context Protocol (MCP) server availability was found in the provided source content."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient.",
+      "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0.1,
+        "access_model": 0.2,
+        "public_api": 1,
+        "api_breadth": 0.9,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.6,
+      "requires_human_review": true,
+      "human_review_reason": "Specific details on API authentication methods and the process for obtaining API credentials are not explicitly stated. The available information primarily describes general product trials and API capabilities without direct instructions on developer access to the API itself."
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_access_model_unclear",
+    "risk_auth_methods_unclear",
+    "risk_material_evidence_validation_failed",
+    "risk_contradictory_claims",
+    "risk_verdict_unclear",
+    "risk_low_confidence"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_access_model_unclear",
+      "risk_auth_methods_unclear",
+      "risk_material_evidence_validation_failed",
+      "risk_contradictory_claims",
+      "risk_verdict_unclear",
+      "risk_low_confidence"
+    ]
+  }
+}

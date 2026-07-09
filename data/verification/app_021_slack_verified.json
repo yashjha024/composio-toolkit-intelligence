@@ -1,0 +1,88 @@
+{
+  "assignment_number": 21,
+  "app_name": "Slack",
+  "assigned_category": "Communications and Messaging",
+  "processing_mode": "deep_verified",
+  "baseline_fields": {
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access_model": "unclear",
+    "credentials_obtainable_without_approval": "unknown",
+    "public_api_status": "yes",
+    "api_breadth": "unclear",
+    "mcp_status": "community",
+    "buildability_verdict": "UNCLEAR",
+    "primary_blocker": "Research data ambiguous or insufficient."
+  },
+  "verified_fields": {
+    "auth_methods": {
+      "verified_value": [
+        "oauth2"
+      ],
+      "evidence_url": "https://docs.slack.dev/authentication/",
+      "concise_evidence_snippet": "Whether you’re handling OAuth 2.0, verifying requests, or setting up Sign in with Slack, we’ve got you covered.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "access_model": {
+      "verified_value": "self_serve_free",
+      "evidence_url": "https://slack.com/pricing",
+      "concise_evidence_snippet": "Free: A simpler way to chat and collaborate ₹0 Free forever",
+      "baseline_classification": "incorrect",
+      "correction_required": true,
+      "failure_mode": "extraction_error"
+    },
+    "credentials_obtainable_without_approval": {
+      "verified_value": true,
+      "evidence_url": "https://slack.com/pricing",
+      "concise_evidence_snippet": "Free: A simpler way to chat and collaborate ₹0 Free forever [Get started]",
+      "baseline_classification": "incorrect",
+      "correction_required": true,
+      "failure_mode": "extraction_error"
+    },
+    "public_api_status": {
+      "verified_value": "yes",
+      "evidence_url": "https://docs.slack.dev/",
+      "concise_evidence_snippet": "Welcome to the Slack API docs, the place where ideas turn into interactive apps, workflows get automated.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "api_breadth": {
+      "verified_value": "SDK,CLI",
+      "evidence_url": "https://docs.slack.dev/",
+      "concise_evidence_snippet": "### Slack CLI ### Java Slack SDK ### Node Slack SDK ### Python Slack SDK",
+      "baseline_classification": "incorrect",
+      "correction_required": true,
+      "failure_mode": "extraction_error"
+    },
+    "mcp_status": {
+      "verified_value": "community",
+      "evidence_url": "https://github.com/modelcontextprotocol/servers",
+      "concise_evidence_snippet": "Slack - Channel management and messaging capabilities. Now maintained by Zencoder",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "buildability_verdict": {
+      "verified_value": "BUILD_NOW",
+      "evidence_url": "https://slack.com/pricing",
+      "concise_evidence_snippet": "Free: A simpler way to chat and collaborate ₹0 Free forever [Get started]",
+      "baseline_classification": "incorrect",
+      "correction_required": true,
+      "failure_mode": "conservative_guardrail"
+    },
+    "primary_blocker": {
+      "verified_value": null,
+      "evidence_url": "https://slack.com/pricing",
+      "concise_evidence_snippet": "The availability of a free tier and clear API documentation indicates no primary blocker.",
+      "baseline_classification": "incorrect",
+      "correction_required": true,
+      "failure_mode": "conservative_guardrail"
+    },
+    "unclear_diagnosis": "false_unclear_due_to_guardrails"
+  },
+  "verified_at": "2026-07-09T18:54:30.095Z"
+}

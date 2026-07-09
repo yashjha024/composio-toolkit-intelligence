@@ -1,0 +1,416 @@
+{
+  "identity": {
+    "assignment_number": 100,
+    "app_name": "Grain",
+    "website_hint": "grain.com (meeting notes)",
+    "assigned_category": "AI, Research and Media-native",
+    "researched_at": "2026-07-09T18:29:57.216Z"
+  },
+  "product": {
+    "normalized_category": "AI, Research and Media-native",
+    "one_line_description": "Grain is an AI notetaker that captures and enriches meeting data, then delivers it to AI tools like Claude or ChatGPT for analysis and agent-driven work."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "The source content mentions an API for integration with AI agents and other services, but does not provide any specific details on the authentication methods required to access this API."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": "unknown",
+    "access_notes": "The source indicates the existence of an API and integrations, but does not specify how developers can obtain credentials (e.g., API keys) for direct access to the API. \"Get started - free forever\" refers to access to the main product, not explicitly API credentials."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "other"
+    ],
+    "api_breadth": "moderate",
+    "api_summary": "Grain offers an API that allows AI agents to query transcripts, search across meetings, and access a user's full meeting history. The API supports integrations with various tools and AI models."
+  },
+  "mcp": {
+    "mcp_status": "official",
+    "mcp_summary": "Grain provides an 'MCP Server & API' that enables AI agents to query meeting transcripts, search across meetings, and access full meeting history, indicating official support for Model Context Protocol interactions."
+  },
+  "buildability": {
+    "verdict": "unclear",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 1,
+      "access_model": 1,
+      "public_api": 1,
+      "api_breadth": 0.8,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.95,
+    "requires_human_review": false,
+    "human_review_reason": null
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783621797216_0",
+      "claim_field": "product.one_line_description",
+      "claim": "Grain is an AI notetaker that captures and enriches meeting data, then delivers it to AI tools like Claude or ChatGPT for analysis and agent-driven work.",
+      "source_url": "https://grain.com/",
+      "source_title": "Grain | The AI Notetaker Built for Growing Teams",
+      "source_type": "official_doc",
+      "evidence_snippet": "The AI notetaker for agents and teams\nGrain captures and enriches your meetings, then delivers them to Claude, ChatGPT, or any AI tool so your agents can do the work.",
+      "retrieved_at": "2026-07-09T18:29:57.216Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://grain.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621797216_1",
+      "claim_field": "developer_access.access_model",
+      "claim": "unclear",
+      "source_url": "https://grain.com/",
+      "source_title": "Grain | The AI Notetaker Built for Growing Teams",
+      "source_type": "official_doc",
+      "evidence_snippet": "Get started - free forever",
+      "retrieved_at": "2026-07-09T18:29:57.216Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://grain.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621797216_2",
+      "claim_field": "developer_access.access_model",
+      "claim": "unclear",
+      "source_url": "https://grain.com/",
+      "source_title": "Grain | The AI Notetaker Built for Growing Teams",
+      "source_type": "official_doc",
+      "evidence_snippet": "MCP Server & API\nLet your AI agents query transcripts, search across meetings, and access your full meeting history.",
+      "retrieved_at": "2026-07-09T18:29:57.216Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://grain.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621797216_3",
+      "claim_field": "developer_access.access_model",
+      "claim": "unclear",
+      "source_url": "https://grain.com/",
+      "source_title": "Grain | The AI Notetaker Built for Growing Teams",
+      "source_type": "official_doc",
+      "evidence_snippet": "Integrations with Claude, ChatGPT, Slack, HubSpot, Zapier, API and more make it effortless to get your meeting data wherever you need it.",
+      "retrieved_at": "2026-07-09T18:29:57.216Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://grain.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621797216_4",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://grain.com/",
+      "source_title": "Grain | The AI Notetaker Built for Growing Teams",
+      "source_type": "official_doc",
+      "evidence_snippet": "Integrations with Claude, ChatGPT, Slack, HubSpot, Zapier, API and more make it effortless to get your meeting data wherever you need it.",
+      "retrieved_at": "2026-07-09T18:29:57.216Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://grain.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621797216_5",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://grain.com/",
+      "source_title": "Grain | The AI Notetaker Built for Growing Teams",
+      "source_type": "official_doc",
+      "evidence_snippet": "MCP Server & API",
+      "retrieved_at": "2026-07-09T18:29:57.216Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://grain.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621797216_6",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "moderate",
+      "source_url": "https://grain.com/",
+      "source_title": "Grain | The AI Notetaker Built for Growing Teams",
+      "source_type": "official_doc",
+      "evidence_snippet": "Let your AI agents query transcripts, search across meetings, and access your full meeting history.",
+      "retrieved_at": "2026-07-09T18:29:57.216Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://grain.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621797216_7",
+      "claim_field": "api_surface.api_summary",
+      "claim": "The API allows AI agents to query transcripts, search meetings, and access meeting history.",
+      "source_url": "https://grain.com/",
+      "source_title": "Grain | The AI Notetaker Built for Growing Teams",
+      "source_type": "official_doc",
+      "evidence_snippet": "Let your AI agents query transcripts, search across meetings, and access your full meeting history.",
+      "retrieved_at": "2026-07-09T18:29:57.216Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://grain.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621797216_8",
+      "claim_field": "mcp.mcp_status",
+      "claim": "official",
+      "source_url": "https://grain.com/",
+      "source_title": "Grain | The AI Notetaker Built for Growing Teams",
+      "source_type": "official_doc",
+      "evidence_snippet": "MCP Server & API",
+      "retrieved_at": "2026-07-09T18:29:57.216Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://grain.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621797216_9",
+      "claim_field": "mcp.mcp_summary",
+      "claim": "Grain provides an 'MCP Server & API' that enables AI agents to query meeting transcripts, search across meetings, and access full meeting history, indicating official support for Model Context Protocol interactions.",
+      "source_url": "https://grain.com/",
+      "source_title": "Grain | The AI Notetaker Built for Growing Teams",
+      "source_type": "official_doc",
+      "evidence_snippet": "MCP Server & API\nLet your AI agents query transcripts, search across meetings, and access your full meeting history.",
+      "retrieved_at": "2026-07-09T18:29:57.216Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://grain.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 100,
+      "app_name": "Grain",
+      "website_hint": "grain.com (meeting notes)",
+      "assigned_category": "AI, Research and Media-native",
+      "researched_at": "2026-07-09T18:29:57.216Z"
+    },
+    "product": {
+      "normalized_category": "AI, Research and Media-native",
+      "one_line_description": "Grain is an AI notetaker that captures and enriches meeting data, then delivers it to AI tools like Claude or ChatGPT for analysis and agent-driven work."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "The source content mentions an API for integration with AI agents and other services, but does not provide any specific details on the authentication methods required to access this API."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": "unknown",
+      "access_notes": "The source indicates the existence of an API and integrations, but does not specify how developers can obtain credentials (e.g., API keys) for direct access to the API. \"Get started - free forever\" refers to access to the main product, not explicitly API credentials."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "other"
+      ],
+      "api_breadth": "moderate",
+      "api_summary": "Grain offers an API that allows AI agents to query transcripts, search across meetings, and access a user's full meeting history. The API supports integrations with various tools and AI models."
+    },
+    "mcp": {
+      "mcp_status": "official",
+      "mcp_summary": "Grain provides an 'MCP Server & API' that enables AI agents to query meeting transcripts, search across meetings, and access full meeting history, indicating official support for Model Context Protocol interactions."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient.",
+      "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 1,
+        "access_model": 1,
+        "public_api": 1,
+        "api_breadth": 0.8,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.95,
+      "requires_human_review": false,
+      "human_review_reason": null
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_access_model_unclear",
+    "risk_auth_methods_unclear",
+    "risk_contradictory_claims",
+    "risk_verdict_unclear"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_access_model_unclear",
+      "risk_auth_methods_unclear",
+      "risk_contradictory_claims",
+      "risk_verdict_unclear"
+    ]
+  }
+}

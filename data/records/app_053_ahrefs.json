@@ -1,0 +1,702 @@
+{
+  "identity": {
+    "assignment_number": 53,
+    "app_name": "Ahrefs",
+    "website_hint": "ahrefs.com/api",
+    "assigned_category": "Data, SEO and Scraping",
+    "researched_at": "2026-07-09T17:15:35.641Z"
+  },
+  "product": {
+    "normalized_category": "Data, SEO and Scraping",
+    "one_line_description": "Ahrefs provides APIs and developer tools to access marketing and search data for custom integrations, workflow automation, and AI assistant enhancements."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "Authentication for the Ahrefs REST API uses API keys, which can be created and managed by developers. For the Ahrefs Connect integration program, OAuth 2.0 authorization is implemented."
+  },
+  "developer_access": {
+    "access_model": "sales_gated",
+    "credentials_obtainable_without_human_approval": false,
+    "access_notes": "Free test queries are available without an Enterprise plan, implying full API access requires an Enterprise plan. Enterprise plans typically involve sales engagement, indicating a 'sales_gated' access model for core API credentials. A separate 'Ahrefs Connect' program for third-party app integrations requires an application process."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "api_summary": "Ahrefs offers a REST API to research keywords, analyze backlinks, track rankings, and monitor brand visibility. It includes endpoints for site explorer, with broad capabilities for marketing and search data."
+  },
+  "mcp": {
+    "mcp_status": "official",
+    "mcp_summary": "Ahrefs provides an official MCP (Model Context Protocol) to connect its data to AI assistants and agents, including specific setups for Claude (Desktop/Web, Code) and ChatGPT to enhance their answers with marketing insights."
+  },
+  "buildability": {
+    "verdict": "outreach_required",
+    "primary_blocker": "Access requires contacting enterprise sales team.",
+    "verdict_reasoning": "Public API endpoints exist, but developer credentials cannot be obtained without sales contact."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 1,
+      "access_model": 0.9,
+      "public_api": 1,
+      "api_breadth": 0.9,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.95,
+    "requires_human_review": false,
+    "human_review_reason": null
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783617335641_0",
+      "claim_field": "product.one_line_description",
+      "claim": "Access Ahrefs marketing and search data through our APIs and developer tools to build custom integrations and workflows.",
+      "source_url": "https://docs.ahrefs.com/",
+      "source_title": "Ahrefs for Developers",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Access Ahrefs marketing and search data through our APIs and developer tools to build custom integrations and workflows.",
+      "retrieved_at": "2026-07-09T17:15:35.641Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.ahrefs.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617335641_1",
+      "claim_field": "authentication.auth_methods",
+      "claim": "api_key",
+      "source_url": "https://docs.ahrefs.com/",
+      "source_title": "Ahrefs for Developers",
+      "source_type": "developer_portal",
+      "evidence_snippet": "API keys\nCreate and manage your API keys",
+      "retrieved_at": "2026-07-09T17:15:35.641Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.ahrefs.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617335641_2",
+      "claim_field": "authentication.auth_methods",
+      "claim": "oauth2",
+      "source_url": "https://docs.ahrefs.com/",
+      "source_title": "Ahrefs for Developers",
+      "source_type": "developer_portal",
+      "evidence_snippet": "OAuth guide\nImplement OAuth 2.0 authorization",
+      "retrieved_at": "2026-07-09T17:15:35.641Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.ahrefs.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617335641_3",
+      "claim_field": "authentication.auth_summary",
+      "claim": "API keys\nCreate and manage your API keys",
+      "source_url": "https://docs.ahrefs.com/",
+      "source_title": "Ahrefs for Developers",
+      "source_type": "developer_portal",
+      "evidence_snippet": "API keys\nCreate and manage your API keys",
+      "retrieved_at": "2026-07-09T17:15:35.641Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.ahrefs.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617335641_4",
+      "claim_field": "authentication.auth_summary",
+      "claim": "OAuth guide\nImplement OAuth 2.0 authorization",
+      "source_url": "https://docs.ahrefs.com/",
+      "source_title": "Ahrefs for Developers",
+      "source_type": "developer_portal",
+      "evidence_snippet": "OAuth guide\nImplement OAuth 2.0 authorization",
+      "retrieved_at": "2026-07-09T17:15:35.641Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.ahrefs.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617335641_5",
+      "claim_field": "developer_access.access_model",
+      "claim": "sales_gated",
+      "source_url": "https://docs.ahrefs.com/",
+      "source_title": "Ahrefs for Developers",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Free test queries\nTry API endpoints without an Enterprise plan",
+      "retrieved_at": "2026-07-09T17:15:35.641Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.ahrefs.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617335641_6",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": false,
+      "source_url": "https://docs.ahrefs.com/",
+      "source_title": "Ahrefs for Developers",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Free test queries\nTry API endpoints without an Enterprise plan",
+      "retrieved_at": "2026-07-09T17:15:35.641Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.ahrefs.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617335641_7",
+      "claim_field": "developer_access.access_notes",
+      "claim": "Free test queries\nTry API endpoints without an Enterprise plan",
+      "source_url": "https://docs.ahrefs.com/",
+      "source_title": "Ahrefs for Developers",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Free test queries\nTry API endpoints without an Enterprise plan",
+      "retrieved_at": "2026-07-09T17:15:35.641Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.ahrefs.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617335641_8",
+      "claim_field": "developer_access.access_notes",
+      "claim": "How to apply\nSteps to join the program",
+      "source_url": "https://docs.ahrefs.com/",
+      "source_title": "Ahrefs for Developers",
+      "source_type": "developer_portal",
+      "evidence_snippet": "How to apply\nSteps to join the program",
+      "retrieved_at": "2026-07-09T17:15:35.641Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.ahrefs.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617335641_9",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://docs.ahrefs.com/",
+      "source_title": "Ahrefs for Developers",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Access Ahrefs marketing and search data through our APIs and developer tools to build custom integrations and workflows.",
+      "retrieved_at": "2026-07-09T17:15:35.641Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.ahrefs.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617335641_10",
+      "claim_field": "api_surface.api_styles",
+      "claim": "REST",
+      "source_url": "https://docs.ahrefs.com/",
+      "source_title": "Ahrefs for Developers",
+      "source_type": "developer_portal",
+      "evidence_snippet": "## REST API\nResearch keywords, analyze backlinks, track rankings, and monitor brand visibility across traditional search and AI platforms.",
+      "retrieved_at": "2026-07-09T17:15:35.641Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.ahrefs.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617335641_11",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://docs.ahrefs.com/",
+      "source_title": "Ahrefs for Developers",
+      "source_type": "developer_portal",
+      "evidence_snippet": "## REST API\nResearch keywords, analyze backlinks, track rankings, and monitor brand visibility across traditional search and AI platforms.",
+      "retrieved_at": "2026-07-09T17:15:35.641Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.ahrefs.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617335641_12",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://docs.ahrefs.com/",
+      "source_title": "Ahrefs for Developers",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Explore endpoints\nBrowse all available API endpoints",
+      "retrieved_at": "2026-07-09T17:15:35.641Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.ahrefs.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617335641_13",
+      "claim_field": "api_surface.api_summary",
+      "claim": "## REST API\nResearch keywords, analyze backlinks, track rankings, and monitor brand visibility across traditional search and AI platforms.",
+      "source_url": "https://docs.ahrefs.com/",
+      "source_title": "Ahrefs for Developers",
+      "source_type": "developer_portal",
+      "evidence_snippet": "## REST API\nResearch keywords, analyze backlinks, track rankings, and monitor brand visibility across traditional search and AI platforms.",
+      "retrieved_at": "2026-07-09T17:15:35.641Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.ahrefs.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617335641_14",
+      "claim_field": "api_surface.api_summary",
+      "claim": "Explore endpoints\nBrowse all available API endpoints",
+      "source_url": "https://docs.ahrefs.com/",
+      "source_title": "Ahrefs for Developers",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Explore endpoints\nBrowse all available API endpoints",
+      "retrieved_at": "2026-07-09T17:15:35.641Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.ahrefs.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617335641_15",
+      "claim_field": "mcp.mcp_status",
+      "claim": "official",
+      "source_url": "https://docs.ahrefs.com/",
+      "source_title": "Ahrefs for Developers",
+      "source_type": "developer_portal",
+      "evidence_snippet": "## MCP\nConnect your Ahrefs data to AI assistants and agents to enhance their answers with real marketing insights.",
+      "retrieved_at": "2026-07-09T17:15:35.641Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.ahrefs.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617335641_16",
+      "claim_field": "mcp.mcp_summary",
+      "claim": "## MCP\nConnect your Ahrefs data to AI assistants and agents to enhance their answers with real marketing insights.",
+      "source_url": "https://docs.ahrefs.com/",
+      "source_title": "Ahrefs for Developers",
+      "source_type": "developer_portal",
+      "evidence_snippet": "## MCP\nConnect your Ahrefs data to AI assistants and agents to enhance their answers with real marketing insights.",
+      "retrieved_at": "2026-07-09T17:15:35.641Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.ahrefs.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617335641_17",
+      "claim_field": "mcp.mcp_summary",
+      "claim": "Claude Desktop / Web\nConnect Ahrefs to Claude on desktop or web",
+      "source_url": "https://docs.ahrefs.com/",
+      "source_title": "Ahrefs for Developers",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Claude Desktop / Web\nConnect Ahrefs to Claude on desktop or web",
+      "retrieved_at": "2026-07-09T17:15:35.641Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.ahrefs.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617335641_18",
+      "claim_field": "mcp.mcp_summary",
+      "claim": "ChatGPT setup\nUse Ahrefs data in ChatGPT conversations",
+      "source_url": "https://docs.ahrefs.com/",
+      "source_title": "Ahrefs for Developers",
+      "source_type": "developer_portal",
+      "evidence_snippet": "ChatGPT setup\nUse Ahrefs data in ChatGPT conversations",
+      "retrieved_at": "2026-07-09T17:15:35.641Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.ahrefs.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617335641_19",
+      "claim_field": "mcp.mcp_summary",
+      "claim": "Claude Code\nIntegrate Ahrefs into your coding workflow",
+      "source_url": "https://docs.ahrefs.com/",
+      "source_title": "Ahrefs for Developers",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Claude Code\nIntegrate Ahrefs into your coding workflow",
+      "retrieved_at": "2026-07-09T17:15:35.641Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.ahrefs.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 53,
+      "app_name": "Ahrefs",
+      "website_hint": "ahrefs.com/api",
+      "assigned_category": "Data, SEO and Scraping",
+      "researched_at": "2026-07-09T17:15:35.641Z"
+    },
+    "product": {
+      "normalized_category": "Data, SEO and Scraping",
+      "one_line_description": "Ahrefs provides APIs and developer tools to access marketing and search data for custom integrations, workflow automation, and AI assistant enhancements."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "Authentication for the Ahrefs REST API uses API keys, which can be created and managed by developers. For the Ahrefs Connect integration program, OAuth 2.0 authorization is implemented."
+    },
+    "developer_access": {
+      "access_model": "sales_gated",
+      "credentials_obtainable_without_human_approval": false,
+      "access_notes": "Free test queries are available without an Enterprise plan, implying full API access requires an Enterprise plan. Enterprise plans typically involve sales engagement, indicating a 'sales_gated' access model for core API credentials. A separate 'Ahrefs Connect' program for third-party app integrations requires an application process."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "REST"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "Ahrefs offers a REST API to research keywords, analyze backlinks, track rankings, and monitor brand visibility. It includes endpoints for site explorer, with broad capabilities for marketing and search data."
+    },
+    "mcp": {
+      "mcp_status": "official",
+      "mcp_summary": "Ahrefs provides an official MCP (Model Context Protocol) to connect its data to AI assistants and agents, including specific setups for Claude (Desktop/Web, Code) and ChatGPT to enhance their answers with marketing insights."
+    },
+    "buildability": {
+      "verdict": "outreach_required",
+      "primary_blocker": "Access requires contacting enterprise sales team.",
+      "verdict_reasoning": "Public API endpoints exist, but developer credentials cannot be obtained without sales contact."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 1,
+        "access_model": 0.9,
+        "public_api": 1,
+        "api_breadth": 0.9,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.95,
+      "requires_human_review": false,
+      "human_review_reason": null
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_auth_methods_unclear",
+    "risk_material_evidence_validation_failed"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_auth_methods_unclear",
+      "risk_material_evidence_validation_failed"
+    ]
+  }
+}

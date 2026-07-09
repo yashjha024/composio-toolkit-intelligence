@@ -1,0 +1,28 @@
+{
+  "assignment_number": 10,
+  "app_name": "DealCloud",
+  "assigned_category": "CRM and Sales",
+  "baseline_verdict": "UNCLEAR",
+  "calibrated_verdict": "UNCLEAR",
+  "exact_fields_to_verify": [
+    "access_model_unclear"
+  ],
+  "targeted_result": {
+    "verified_auth_methods": [
+      "api_key",
+      "bearer_token"
+    ],
+    "verified_access_model": "unclear",
+    "verified_credentials_obtainable_without_approval": false,
+    "verified_public_api_status": "yes",
+    "verified_api_breadth": "broad",
+    "verified_verdict": "OUTREACH_REQUIRED",
+    "primary_blocker": "API credential acquisition requires manual process or approval.",
+    "evidence_url": "https://api.docs.dealcloud.com/",
+    "concise_evidence_snippet": "No information found regarding how to obtain these credentials, pricing, or self-service signup for API access.",
+    "remaining_uncertainty": [
+      "Specifics of the API credential acquisition process (e.g., sales contact, admin approval, partner program)."
+    ]
+  },
+  "verified_at": "2026-07-09T18:59:50.417Z"
+}

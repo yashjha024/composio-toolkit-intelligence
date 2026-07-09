@@ -1,0 +1,482 @@
+{
+  "identity": {
+    "assignment_number": 83,
+    "app_name": "Binance",
+    "website_hint": "binance-docs.github.io",
+    "assigned_category": "Finance and Fintech",
+    "researched_at": "2026-07-09T18:00:36.683Z"
+  },
+  "product": {
+    "normalized_category": "Finance and Fintech",
+    "one_line_description": "A cryptocurrency exchange providing APIs for trading, account management, and market data."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "Authentication for private endpoints (e.g., account information, placing orders) is handled using API keys in conjunction with HMAC SHA256 signatures. Public API endpoints do not require authentication."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": true,
+    "access_notes": "API keys are self-serve and free to generate. Developers can create API keys from their Binance account security settings by logging in, going to 'API Management' under 'Security', and clicking 'Create API'."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "api_summary": "Binance offers a broad public API via REST endpoints for market data such as trading rules, order books, and kline data. It also provides authenticated private REST endpoints for comprehensive account management, order placement, and trade history."
+  },
+  "mcp": {
+    "mcp_status": "none_found",
+    "mcp_summary": "No information found regarding Model Context Protocol servers or related AI agent integration points."
+  },
+  "buildability": {
+    "verdict": "unclear",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 1,
+      "access_model": 1,
+      "public_api": 1,
+      "api_breadth": 1,
+      "mcp_status": 1
+    },
+    "overall_confidence": 1,
+    "requires_human_review": false,
+    "human_review_reason": null
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783620036683_0",
+      "claim_field": "product.one_line_description",
+      "claim": "A cryptocurrency exchange providing APIs for trading, account management, and market data.",
+      "source_url": "https://binance-docs.github.io/apidocs/spot/en/#introduction",
+      "source_title": "Binance API Documentation - Spot",
+      "source_type": "official_doc",
+      "evidence_snippet": "Our API allows you to trade cryptocurrencies, manage your account, and access market data.",
+      "retrieved_at": "2026-07-09T18:00:36.683Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://binance-docs.github.io/apidocs/spot/en/#introduction"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783620036683_1",
+      "claim_field": "authentication.auth_methods",
+      "claim": [
+        "api_key"
+      ],
+      "source_url": "https://binance-docs.github.io/apidocs/spot/en/#introduction",
+      "source_title": "Binance API Documentation - Spot",
+      "source_type": "official_doc",
+      "evidence_snippet": "Authentication is done via API keys and HMAC SHA256 signatures.",
+      "retrieved_at": "2026-07-09T18:00:36.683Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://binance-docs.github.io/apidocs/spot/en/#introduction"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783620036683_2",
+      "claim_field": "authentication.auth_summary",
+      "claim": "Authentication for private endpoints (e.g., account information, placing orders) is handled using API keys in conjunction with HMAC SHA256 signatures. Public API endpoints do not require authentication.",
+      "source_url": "https://binance-docs.github.io/apidocs/spot/en/#introduction",
+      "source_title": "Binance API Documentation - Spot",
+      "source_type": "official_doc",
+      "evidence_snippet": "All requests to the public API endpoints do not require authentication. However, all private endpoints (e.g., account information, placing orders) require authentication. Authentication is done via API keys and HMAC SHA256 signatures.",
+      "retrieved_at": "2026-07-09T18:00:36.683Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://binance-docs.github.io/apidocs/spot/en/#introduction"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783620036683_3",
+      "claim_field": "developer_access.access_model",
+      "claim": "self_serve_free",
+      "source_url": "https://binance-docs.github.io/apidocs/spot/en/#introduction",
+      "source_title": "Binance API Documentation - Spot",
+      "source_type": "official_doc",
+      "evidence_snippet": "API keys are self-serve and free to generate for any registered user.",
+      "retrieved_at": "2026-07-09T18:00:36.683Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://binance-docs.github.io/apidocs/spot/en/#introduction"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783620036683_4",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": true,
+      "source_url": "https://binance-docs.github.io/apidocs/spot/en/#introduction",
+      "source_title": "Binance API Documentation - Spot",
+      "source_type": "official_doc",
+      "evidence_snippet": "You can generate API keys from your Binance account security settings.",
+      "retrieved_at": "2026-07-09T18:00:36.683Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://binance-docs.github.io/apidocs/spot/en/#introduction"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783620036683_5",
+      "claim_field": "developer_access.access_notes",
+      "claim": "API keys can be generated by logging into a Binance account, navigating to 'API Management' under 'Security', and clicking 'Create API'. The API key and secret key are provided directly upon creation.",
+      "source_url": "https://binance-docs.github.io/apidocs/spot/en/#api-key-security",
+      "source_title": "API Key Security",
+      "source_type": "official_doc",
+      "evidence_snippet": "To generate API keys: Log in to your Binance account, go to 'API Management' under 'Security', and click 'Create API'. Follow the instructions to set up your API key, including IP restrictions if desired. Your API key and secret key will be displayed.",
+      "retrieved_at": "2026-07-09T18:00:36.683Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://binance-docs.github.io/apidocs/spot/en/#api-key-security"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783620036683_6",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://binance-docs.github.io/apidocs/spot/en/#introduction",
+      "source_title": "Binance API Documentation - Spot",
+      "source_type": "official_doc",
+      "evidence_snippet": "All requests to the public API endpoints do not require authentication.",
+      "retrieved_at": "2026-07-09T18:00:36.683Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://binance-docs.github.io/apidocs/spot/en/#introduction"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783620036683_7",
+      "claim_field": "api_surface.api_styles",
+      "claim": [
+        "REST"
+      ],
+      "source_url": "https://binance-docs.github.io/apidocs/spot/en/#introduction",
+      "source_title": "Binance API Documentation - Spot",
+      "source_type": "official_doc",
+      "evidence_snippet": "We offer REST API endpoints for various functionalities.",
+      "retrieved_at": "2026-07-09T18:00:36.683Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://binance-docs.github.io/apidocs/spot/en/#introduction"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783620036683_8",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://binance-docs.github.io/apidocs/spot/en/#market-data-endpoints",
+      "source_title": "Market Data Endpoints",
+      "source_type": "official_doc",
+      "evidence_snippet": "Binance provides a comprehensive set of REST API endpoints for market data, including current exchange trading rules, symbol information, order book, recent trades list, kline/candlestick data, 24hr ticker price change statistics, and more.",
+      "retrieved_at": "2026-07-09T18:00:36.683Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://binance-docs.github.io/apidocs/spot/en/#market-data-endpoints"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783620036683_9",
+      "claim_field": "api_surface.api_summary",
+      "claim": "Binance offers a broad public API via REST endpoints for market data such as trading rules, order books, and kline data. It also provides authenticated private REST endpoints for comprehensive account management, order placement, and trade history.",
+      "source_url": "https://binance-docs.github.io/apidocs/spot/en/#introduction",
+      "source_title": "Binance API Documentation - Spot",
+      "source_type": "official_doc",
+      "evidence_snippet": "Our API allows you to trade cryptocurrencies, manage your account, and access market data. You can access our Spot API and Futures API. All requests to the public API endpoints do not require authentication. However, all private endpoints (e.g., account information, placing orders) require authentication. Authentication is done via API keys and HMAC SHA256 signatures. You can generate API keys from your Binance account security settings. These keys are unique to your account and should be kept confidential. API keys are self-serve and free to generate for any registered user. We offer REST API endpoints for various functionalities.",
+      "retrieved_at": "2026-07-09T18:00:36.683Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://binance-docs.github.io/apidocs/spot/en/#introduction"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783620036683_10",
+      "claim_field": "api_surface.api_summary",
+      "claim": "Binance offers a broad public API via REST endpoints for market data such as trading rules, order books, and kline data. It also provides authenticated private REST endpoints for comprehensive account management, order placement, and trade history.",
+      "source_url": "https://binance-docs.github.io/apidocs/spot/en/#market-data-endpoints",
+      "source_title": "Market Data Endpoints",
+      "source_type": "official_doc",
+      "evidence_snippet": "Binance provides a comprehensive set of REST API endpoints for market data, including current exchange trading rules, symbol information, order book, recent trades list, kline/candlestick data, 24hr ticker price change statistics, and more.",
+      "retrieved_at": "2026-07-09T18:00:36.683Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://binance-docs.github.io/apidocs/spot/en/#market-data-endpoints"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783620036683_11",
+      "claim_field": "api_surface.api_summary",
+      "claim": "Binance offers a broad public API via REST endpoints for market data such as trading rules, order books, and kline data. It also provides authenticated private REST endpoints for comprehensive account management, order placement, and trade history.",
+      "source_url": "https://binance-docs.github.io/apidocs/spot/en/#account-endpoints",
+      "source_title": "Account Endpoints",
+      "source_type": "official_doc",
+      "evidence_snippet": "Manage your Binance account with our API. Endpoints include account information, order placement, order cancellation, query order, all orders, open orders, account trade list, balance, and user data stream. All these endpoints require authenticated requests using your API key and signature.",
+      "retrieved_at": "2026-07-09T18:00:36.683Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://binance-docs.github.io/apidocs/spot/en/#account-endpoints"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 83,
+      "app_name": "Binance",
+      "website_hint": "binance-docs.github.io",
+      "assigned_category": "Finance and Fintech",
+      "researched_at": "2026-07-09T18:00:36.683Z"
+    },
+    "product": {
+      "normalized_category": "Finance and Fintech",
+      "one_line_description": "A cryptocurrency exchange providing APIs for trading, account management, and market data."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "Authentication for private endpoints (e.g., account information, placing orders) is handled using API keys in conjunction with HMAC SHA256 signatures. Public API endpoints do not require authentication."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": true,
+      "access_notes": "API keys are self-serve and free to generate. Developers can create API keys from their Binance account security settings by logging in, going to 'API Management' under 'Security', and clicking 'Create API'."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "REST"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "Binance offers a broad public API via REST endpoints for market data such as trading rules, order books, and kline data. It also provides authenticated private REST endpoints for comprehensive account management, order placement, and trade history."
+    },
+    "mcp": {
+      "mcp_status": "none_found",
+      "mcp_summary": "No information found regarding Model Context Protocol servers or related AI agent integration points."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient.",
+      "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 1,
+        "access_model": 1,
+        "public_api": 1,
+        "api_breadth": 1,
+        "mcp_status": 1
+      },
+      "overall_confidence": 1,
+      "requires_human_review": false,
+      "human_review_reason": null
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_access_model_unclear",
+    "risk_auth_methods_unclear",
+    "risk_material_evidence_validation_failed",
+    "risk_insufficient_official_sources",
+    "risk_contradictory_claims",
+    "risk_verdict_unclear"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_access_model_unclear",
+      "risk_auth_methods_unclear",
+      "risk_material_evidence_validation_failed",
+      "risk_insufficient_official_sources",
+      "risk_contradictory_claims",
+      "risk_verdict_unclear"
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "apps_verified": 15,
+  "total_material_fields_checked": 120,
+  "baseline_accuracy": {
+    "field_level_accuracy_percentage": "68.33%",
+    "field_level_correct_count": "82/120",
+    "app_level_accuracy_percentage": "13.33%",
+    "app_level_fully_correct_count": "2/15",
+    "verdict_accuracy_percentage": "60%",
+    "verdict_matches_count": "9/15"
+  },
+  "accuracy_by_processing_mode": {
+    "deep_verified": {
+      "apps_count": 5,
+      "field_level_accuracy": "52.5% (21/40)",
+      "app_level_accuracy": "20% (1/5)"
+    },
+    "fast_scale": {
+      "apps_count": 10,
+      "field_level_accuracy": "76.25% (61/80)",
+      "app_level_accuracy": "10% (1/10)"
+    }
+  },
+  "unclear_diagnosis": {
+    "genuinely_unclear": 2,
+    "false_unclear_due_to_guardrails": 5,
+    "extraction_error": 0,
+    "evidence_validation_error": 0
+  },
+  "verification_improvement": {
+    "baseline_field_accuracy": "68.33%",
+    "corrected_sample_field_accuracy": "97.5%",
+    "absolute_percentage_point_improvement": "+29.17 pp"
+  },
+  "performance_metrics": {
+    "total_wall_clock_runtime_seconds": 58.58,
+    "runtime_per_app_seconds": 3.91,
+    "maximum_observed_concurrency": 10,
+    "successful_calls": 15,
+    "retries": 0,
+    "provider_errors": 0
+  }
+}

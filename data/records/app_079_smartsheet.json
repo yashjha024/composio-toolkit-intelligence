@@ -1,0 +1,447 @@
+{
+  "identity": {
+    "assignment_number": 79,
+    "app_name": "Smartsheet",
+    "website_hint": "smartsheet.com/developers",
+    "assigned_category": "Productivity and Project Management",
+    "researched_at": "2026-07-09T17:52:18.601Z"
+  },
+  "product": {
+    "normalized_category": "Productivity and Project Management",
+    "one_line_description": "Smartsheet is a work management platform offering APIs and developer tools for building integrations and applications."
+  },
+  "authentication": {
+    "auth_methods": [
+      "oauth2"
+    ],
+    "auth_summary": "Developers can register applications that request user authorization to access Smartsheet data, indicating an OAuth2-like authentication flow."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": true,
+    "access_notes": "Developers can register applications via a 'Developer tools registration' process to obtain credentials that allow requesting user authorization to access Smartsheet data. There is no indication that this registration process requires human approval or payment."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "REST",
+      "SDK"
+    ],
+    "api_breadth": "broad",
+    "api_summary": "Smartsheet offers a public API with API Guides and a comprehensive API Reference. It provides SDKs for multiple languages including C#, Java, Node.js, and Python, along with sample repositories to assist development. The presence of 'API Reference' typically implies a RESTful API."
+  },
+  "mcp": {
+    "mcp_status": "official",
+    "mcp_summary": "Smartsheet supports an official Model Context Protocol (MCP) server, including specific tools, for AI integration."
+  },
+  "buildability": {
+    "verdict": "unclear",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 0.9,
+      "access_model": 0.9,
+      "public_api": 1,
+      "api_breadth": 0.9,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.95,
+    "requires_human_review": false,
+    "human_review_reason": null
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783619538601_0",
+      "claim_field": "authentication.auth_methods",
+      "claim": "oauth2",
+      "source_url": "https://developers.smartsheet.com/",
+      "source_title": "Smartsheet Developers & API",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Develop applications that request user authorization to access Smartsheet data.",
+      "retrieved_at": "2026-07-09T17:52:18.601Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.smartsheet.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619538601_1",
+      "claim_field": "developer_access.access_model",
+      "claim": "self_serve_free",
+      "source_url": "https://developers.smartsheet.com/",
+      "source_title": "Smartsheet Developers & API",
+      "source_type": "developer_portal",
+      "evidence_snippet": "### Developer tools registration\nDevelop applications that request user authorization to access Smartsheet data.\n\n![right caret icon](https://cdn.bfldr.com/F9HJESZB/at/5b8rg63qqwpptxs6b69h4g6/caret-right-icon.svg)](/register)",
+      "retrieved_at": "2026-07-09T17:52:18.601Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.smartsheet.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619538601_2",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": true,
+      "source_url": "https://developers.smartsheet.com/",
+      "source_title": "Smartsheet Developers & API",
+      "source_type": "developer_portal",
+      "evidence_snippet": "### Developer tools registration\nDevelop applications that request user authorization to access Smartsheet data.\n\n![right caret icon](https://cdn.bfldr.com/F9HJESZB/at/5b8rg63qqwpptxs6b69h4g6/caret-right-icon.svg)](/register)",
+      "retrieved_at": "2026-07-09T17:52:18.601Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.smartsheet.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619538601_3",
+      "claim_field": "developer_access.access_notes",
+      "claim": "Developers can register applications via a 'Developer tools registration' process to obtain credentials that allow requesting user authorization to access Smartsheet data. There is no indication that this registration process requires human approval or payment.",
+      "source_url": "https://developers.smartsheet.com/",
+      "source_title": "Smartsheet Developers & API",
+      "source_type": "developer_portal",
+      "evidence_snippet": "### Developer tools registration\nDevelop applications that request user authorization to access Smartsheet data.\n\n![right caret icon](https://cdn.bfldr.com/F9HJESZB/at/5b8rg63qqwpptxs6b69h4g6/caret-right-icon.svg)](/register)",
+      "retrieved_at": "2026-07-09T17:52:18.601Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.smartsheet.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619538601_4",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://developers.smartsheet.com/",
+      "source_title": "Smartsheet Developers & API",
+      "source_type": "developer_portal",
+      "evidence_snippet": "# Smartsheet Developers & API\n\nExplore API docs, connect to our MCP server, develop faster on SDKs, and join a thriving community building on Smartsheet.",
+      "retrieved_at": "2026-07-09T17:52:18.601Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.smartsheet.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619538601_5",
+      "claim_field": "api_surface.api_styles",
+      "claim": "SDK",
+      "source_url": "https://developers.smartsheet.com/",
+      "source_title": "Smartsheet Developers & API",
+      "source_type": "developer_portal",
+      "evidence_snippet": "### Smartsheet SDKs\nResources\n\n[C# (smartsheet-csharp-sdk)](https://smartsheet.github.io/smartsheet-csharp-sdk/)\n\n[Java (smartsheet-java-sdk)](https://github.com/smartsheet/smartsheet-java-sdk)\n\n[Node.js (smartsheet-javascript-sdk)](https://github.com/smartsheet/smartsheet-javascript-sdk)\n\n[Python (smartsheet-python-sdk)](https://github.com/smartsheet/smartsheet-python-sdk)",
+      "retrieved_at": "2026-07-09T17:52:18.601Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.smartsheet.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619538601_6",
+      "claim_field": "api_surface.api_styles",
+      "claim": "REST",
+      "source_url": "https://developers.smartsheet.com/",
+      "source_title": "Smartsheet Developers & API",
+      "source_type": "developer_portal",
+      "evidence_snippet": "### Smartsheet API Reference\n\n![right caret icon](https://cdn.bfldr.com/F9HJESZB/at/5b8rg63qqwpptxs6b69h4g6/caret-right-icon.svg)](/api/smartsheet/openapi)",
+      "retrieved_at": "2026-07-09T17:52:18.601Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.smartsheet.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619538601_7",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://developers.smartsheet.com/",
+      "source_title": "Smartsheet Developers & API",
+      "source_type": "developer_portal",
+      "evidence_snippet": "### Smartsheet API Guides\n\n![right caret icon](https://cdn.bfldr.com/F9HJESZB/at/5b8rg63qqwpptxs6b69h4g6/caret-right-icon.svg)](/api/smartsheet/introduction)\n\n### Smartsheet API Reference\n\n![right caret icon](https://cdn.bfldr.com/F9HJESZB/at/5b8rg63qqwpptxs6b69h4g6/caret-right-icon.svg)](/api/smartsheet/openapi)\n\n### Smartsheet SDKs\nResources\n\n[C# (smartsheet-csharp-sdk)](https://smartsheet.github.io/smartsheet-csharp-sdk/)\n\n[Java (smartsheet-java-sdk)](https://github.com/smartsheet/smartsheet-java-sdk)\n\n[Node.js (smartsheet-javascript-sdk)](https://github.com/smartsheet/smartsheet-javascript-sdk)\n\n[Python (smartsheet-python-sdk)](https://github.com/smartsheet/smartsheet-python-sdk)",
+      "retrieved_at": "2026-07-09T17:52:18.601Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.smartsheet.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619538601_8",
+      "claim_field": "api_surface.api_summary",
+      "claim": "Smartsheet offers a public API with API Guides and a comprehensive API Reference. It provides SDKs for multiple languages including C#, Java, Node.js, and Python, along with sample repositories to assist development. The presence of 'API Reference' typically implies a RESTful API.",
+      "source_url": "https://developers.smartsheet.com/",
+      "source_title": "Smartsheet Developers & API",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Explore API docs, connect to our MCP server, develop faster on SDKs, and join a thriving community building on Smartsheet.\n\n## Smartsheet\n\n### Smartsheet API Guides\n\n### Smartsheet API Reference\n\n### Smartsheet SDKs\nResources\n\n[C# (smartsheet-csharp-sdk)]...\n[Java (smartsheet-java-sdk)]...\n[Node.js (smartsheet-javascript-sdk)]...\n[Python (smartsheet-python-sdk)]...",
+      "retrieved_at": "2026-07-09T17:52:18.601Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.smartsheet.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619538601_9",
+      "claim_field": "mcp.mcp_status",
+      "claim": "official",
+      "source_url": "https://developers.smartsheet.com/",
+      "source_title": "Smartsheet Developers & API",
+      "source_type": "developer_portal",
+      "evidence_snippet": "### AI & Smartsheet MCP Server\n\n![right caret icon](https://cdn.bfldr.com/F9HJESZB/at/5b8rg63qqwpptxs6b69h4g6/caret-right-icon.svg)](/ai-mcp/smartsheet/mcp-server)",
+      "retrieved_at": "2026-07-09T17:52:18.601Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.smartsheet.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619538601_10",
+      "claim_field": "mcp.mcp_summary",
+      "claim": "Smartsheet supports an official Model Context Protocol (MCP) server, including specific tools, for AI integration.",
+      "source_url": "https://developers.smartsheet.com/",
+      "source_title": "Smartsheet Developers & API",
+      "source_type": "developer_portal",
+      "evidence_snippet": "### AI & Smartsheet MCP Server\n\n![right caret icon](https://cdn.bfldr.com/F9HJESZB/at/5b8rg63qqwpptxs6b69h4g6/caret-right-icon.svg)](/ai-mcp/smartsheet/mcp-server)\n\n### Smartsheet MCP Server Tools\n\n![right caret icon](https://cdn.bfldr.com/F9HJESZB/at/5b8rg63qqwpptxs6b69h4g6/caret-right-icon.svg)](/ai-mcp/smartsheet/mcp-server-tools)",
+      "retrieved_at": "2026-07-09T17:52:18.601Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.smartsheet.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 79,
+      "app_name": "Smartsheet",
+      "website_hint": "smartsheet.com/developers",
+      "assigned_category": "Productivity and Project Management",
+      "researched_at": "2026-07-09T17:52:18.601Z"
+    },
+    "product": {
+      "normalized_category": "Productivity and Project Management",
+      "one_line_description": "Smartsheet is a work management platform offering APIs and developer tools for building integrations and applications."
+    },
+    "authentication": {
+      "auth_methods": [
+        "oauth2"
+      ],
+      "auth_summary": "Developers can register applications that request user authorization to access Smartsheet data, indicating an OAuth2-like authentication flow."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": true,
+      "access_notes": "Developers can register applications via a 'Developer tools registration' process to obtain credentials that allow requesting user authorization to access Smartsheet data. There is no indication that this registration process requires human approval or payment."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "REST",
+        "SDK"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "Smartsheet offers a public API with API Guides and a comprehensive API Reference. It provides SDKs for multiple languages including C#, Java, Node.js, and Python, along with sample repositories to assist development. The presence of 'API Reference' typically implies a RESTful API."
+    },
+    "mcp": {
+      "mcp_status": "official",
+      "mcp_summary": "Smartsheet supports an official Model Context Protocol (MCP) server, including specific tools, for AI integration."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient.",
+      "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0.9,
+        "access_model": 0.9,
+        "public_api": 1,
+        "api_breadth": 0.9,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.95,
+      "requires_human_review": false,
+      "human_review_reason": null
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_access_model_unclear",
+    "risk_material_evidence_validation_failed",
+    "risk_contradictory_claims",
+    "risk_verdict_unclear"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_access_model_unclear",
+      "risk_material_evidence_validation_failed",
+      "risk_contradictory_claims",
+      "risk_verdict_unclear"
+    ]
+  }
+}

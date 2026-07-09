@@ -1,0 +1,27 @@
+{
+  "assignment_number": 11,
+  "app_name": "Zendesk",
+  "assigned_category": "Support and Helpdesk",
+  "baseline_verdict": "UNCLEAR",
+  "calibrated_verdict": "UNCLEAR",
+  "exact_fields_to_verify": [
+    "access_model",
+    "public_api_status"
+  ],
+  "targeted_result": {
+    "verified_auth_methods": [
+      "API Key",
+      "OAuth"
+    ],
+    "verified_access_model": "self_serve_free",
+    "verified_credentials_obtainable_without_approval": true,
+    "verified_public_api_status": "yes",
+    "verified_api_breadth": "broad",
+    "verified_verdict": "BUILD_NOW",
+    "primary_blocker": null,
+    "evidence_url": "https://developer.zendesk.com/documentation/",
+    "concise_evidence_snippet": "Try out the Sunshine Platform with a free, 14-day trial account. [Create an account]",
+    "remaining_uncertainty": []
+  },
+  "verified_at": "2026-07-09T18:59:48.805Z"
+}

@@ -1,0 +1,422 @@
+{
+  "identity": {
+    "assignment_number": 47,
+    "app_name": "Ecwid",
+    "website_hint": "api-docs.ecwid.com",
+    "assigned_category": "Ecommerce",
+    "researched_at": "2026-07-09T17:11:54.609Z"
+  },
+  "product": {
+    "normalized_category": "Ecommerce",
+    "one_line_description": "Ecwid provides APIs and tools for developers to build, integrate, and customize online stores, manage products, orders, payments, shipping, and storefront events."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "The documentation mentions getting API access with an app but does not explicitly detail specific authentication methods like API keys or OAuth."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": true,
+    "access_notes": "Developers can obtain API access by setting up a development environment and creating an app. The documentation implies this is a self-serve process, and there is no explicit mention of human approval or costs associated with obtaining API credentials."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "REST",
+      "SDK",
+      "webhooks"
+    ],
+    "api_breadth": "broad",
+    "api_summary": "Ecwid offers a broad API surface including a REST-like API for managing core e-commerce functionalities such as orders, payments, and shipping, a JavaScript API for storefront customizations and event tracking, and webhooks for automating integrations. The API supports both private and public applications."
+  },
+  "mcp": {
+    "mcp_status": "none_found",
+    "mcp_summary": "No machine-readable API specifications (e.g., OpenAPI, Swagger) were found. A reference to 'llms.txt' appears to be for an internal AI Assistant's context rather than a public Model Context Protocol for external agents."
+  },
+  "buildability": {
+    "verdict": "unclear",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 0.3,
+      "access_model": 0.8,
+      "public_api": 1,
+      "api_breadth": 0.9,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.8,
+    "requires_human_review": false,
+    "human_review_reason": null
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783617114609_0",
+      "claim_field": "product.one_line_description",
+      "claim": "Ecwid provides APIs and tools for developers to build, integrate, and customize online stores, manage products, orders, payments, shipping, and storefront events.",
+      "source_url": "https://docs.ecwid.com/",
+      "source_title": "Build with Ecwid apps | Ecwid Documentationarrow-up-right-and-arrow-down-left-from-center",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Build with Ecwid apps\nExplore our guides and examples to integrate Ecwid Ecommerce\nAutomate integrations\nCustomize storefront\nCreate discounts\nCreate orders with API calls\nPayment API\nShipping API",
+      "retrieved_at": "2026-07-09T17:11:54.609Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.ecwid.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617114609_1",
+      "claim_field": "authentication.auth_methods",
+      "claim": "unclear",
+      "source_url": "https://docs.ecwid.com/",
+      "source_title": "Build with Ecwid apps | Ecwid Documentationarrow-up-right-and-arrow-down-left-from-center",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Get access to API with an app",
+      "retrieved_at": "2026-07-09T17:11:54.609Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.ecwid.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617114609_2",
+      "claim_field": "developer_access.access_model",
+      "claim": "self_serve_free",
+      "source_url": "https://docs.ecwid.com/",
+      "source_title": "Build with Ecwid apps | Ecwid Documentationarrow-up-right-and-arrow-down-left-from-center",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Get access to API with an app\nSet up your dev environment in Ecwid",
+      "retrieved_at": "2026-07-09T17:11:54.609Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.ecwid.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617114609_3",
+      "claim_field": "credentials_obtainable_without_human_approval",
+      "claim": true,
+      "source_url": "https://docs.ecwid.com/",
+      "source_title": "Build with Ecwid apps | Ecwid Documentationarrow-up-right-and-arrow-down-left-from-center",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Get access to API with an app\nSet up your dev environment in Ecwid",
+      "retrieved_at": "2026-07-09T17:11:54.609Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.ecwid.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617114609_4",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://docs.ecwid.com/",
+      "source_title": "Build with Ecwid apps | Ecwid Documentationarrow-up-right-and-arrow-down-left-from-center",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Build with Ecwid apps\nPrivate and public Ecwid apps\nPublic apps overview",
+      "retrieved_at": "2026-07-09T17:11:54.609Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.ecwid.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617114609_5",
+      "claim_field": "api_surface.api_styles",
+      "claim": "REST",
+      "source_url": "https://docs.ecwid.com/",
+      "source_title": "Build with Ecwid apps | Ecwid Documentationarrow-up-right-and-arrow-down-left-from-center",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Make your first API request\nCreate orders with API calls\nPayment API\nShipping API",
+      "retrieved_at": "2026-07-09T17:11:54.609Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.ecwid.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617114609_6",
+      "claim_field": "api_surface.api_styles",
+      "claim": "SDK",
+      "source_url": "https://docs.ecwid.com/",
+      "source_title": "Build with Ecwid apps | Ecwid Documentationarrow-up-right-and-arrow-down-left-from-center",
+      "source_type": "developer_portal",
+      "evidence_snippet": "List of JS API calls\nJS API: track events\nJS API: manage cart and checkout\nJS API: Open page\nJS API: manage customers\nJS API: Generate carts",
+      "retrieved_at": "2026-07-09T17:11:54.609Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.ecwid.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617114609_7",
+      "claim_field": "api_surface.api_styles",
+      "claim": "webhooks",
+      "source_url": "https://docs.ecwid.com/",
+      "source_title": "Build with Ecwid apps | Ecwid Documentationarrow-up-right-and-arrow-down-left-from-center",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Automate integrations\nWebhooks",
+      "retrieved_at": "2026-07-09T17:11:54.609Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.ecwid.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617114609_8",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://docs.ecwid.com/",
+      "source_title": "Build with Ecwid apps | Ecwid Documentationarrow-up-right-and-arrow-down-left-from-center",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Ecwid API features\nAutomate integrations\nBuild websites\nCustomize storefront\nCreate discounts\nBrowse guides",
+      "retrieved_at": "2026-07-09T17:11:54.609Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.ecwid.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617114609_9",
+      "claim_field": "mcp.mcp_status",
+      "claim": "none_found",
+      "source_url": "https://docs.ecwid.com/",
+      "source_title": "Build with Ecwid apps | Ecwid Documentationarrow-up-right-and-arrow-down-left-from-center",
+      "source_type": "developer_portal",
+      "evidence_snippet": "For the complete documentation index, see llms.txt. This page is also available as Markdown (https://docs.ecwid.com/build-with-ecwid-apps.md).",
+      "retrieved_at": "2026-07-09T17:11:54.609Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.ecwid.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 47,
+      "app_name": "Ecwid",
+      "website_hint": "api-docs.ecwid.com",
+      "assigned_category": "Ecommerce",
+      "researched_at": "2026-07-09T17:11:54.609Z"
+    },
+    "product": {
+      "normalized_category": "Ecommerce",
+      "one_line_description": "Ecwid provides APIs and tools for developers to build, integrate, and customize online stores, manage products, orders, payments, shipping, and storefront events."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "The documentation mentions getting API access with an app but does not explicitly detail specific authentication methods like API keys or OAuth."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": true,
+      "access_notes": "Developers can obtain API access by setting up a development environment and creating an app. The documentation implies this is a self-serve process, and there is no explicit mention of human approval or costs associated with obtaining API credentials."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "REST",
+        "SDK",
+        "webhooks"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "Ecwid offers a broad API surface including a REST-like API for managing core e-commerce functionalities such as orders, payments, and shipping, a JavaScript API for storefront customizations and event tracking, and webhooks for automating integrations. The API supports both private and public applications."
+    },
+    "mcp": {
+      "mcp_status": "none_found",
+      "mcp_summary": "No machine-readable API specifications (e.g., OpenAPI, Swagger) were found. A reference to 'llms.txt' appears to be for an internal AI Assistant's context rather than a public Model Context Protocol for external agents."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient.",
+      "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0.3,
+        "access_model": 0.8,
+        "public_api": 1,
+        "api_breadth": 0.9,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.8,
+      "requires_human_review": false,
+      "human_review_reason": null
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_access_model_unclear",
+    "risk_auth_methods_unclear",
+    "risk_material_evidence_validation_failed",
+    "risk_contradictory_claims",
+    "risk_verdict_unclear"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_access_model_unclear",
+      "risk_auth_methods_unclear",
+      "risk_material_evidence_validation_failed",
+      "risk_contradictory_claims",
+      "risk_verdict_unclear"
+    ]
+  }
+}

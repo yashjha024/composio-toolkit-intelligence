@@ -100,6 +100,7 @@ Return a JSON object:
         evidence_snippet: e.evidence_snippet || '',
         retrieved_at: new Date().toISOString(),
         supports_claim: true,
+        fetch_mode: pages.find((p: any) => p.url === e.source_url)?.fetchMode || 'http',
         url_status: { format_valid: true, resolves: true, redirect_chain: [e.source_url || ''] },
         snippet_match_status: { exact_match: false, normalized_match: false, match_type: 'not_found' },
         semantic_support_status: { supported: true, critic_notes: '' },

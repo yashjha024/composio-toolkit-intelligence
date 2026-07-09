@@ -1,0 +1,393 @@
+{
+  "identity": {
+    "assignment_number": 8,
+    "app_name": "Close",
+    "website_hint": "close.com",
+    "assigned_category": "CRM and Sales",
+    "researched_at": "2026-07-09T16:52:13.082Z"
+  },
+  "product": {
+    "normalized_category": "CRM and Sales",
+    "one_line_description": "Close is a sales CRM built for teams that sell, combining calling, email, SMS, pipeline management, reporting, and an AI sales agent (Chloe) into a single platform."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "The provided source pages do not explicitly state the authentication methods used for the Close API."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": "unknown",
+    "access_notes": "The source mentions a 'developer platform' and a link to 'Explore the developer platform', but it does not specify the process for obtaining API credentials or whether it requires human approval, a paid plan, or is self-serve."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "REST",
+      "webhooks",
+      "other"
+    ],
+    "api_breadth": "broad",
+    "api_summary": "Close offers a REST API, webhooks, and an MCP server, described as 'Everything you need to customize Close for the way your team works'."
+  },
+  "mcp": {
+    "mcp_status": "official",
+    "mcp_summary": "Close explicitly mentions offering an 'MCP server' as part of its developer platform."
+  },
+  "buildability": {
+    "verdict": "unclear",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 0,
+      "access_model": 0.1,
+      "public_api": 1,
+      "api_breadth": 0.8,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.6,
+    "requires_human_review": true,
+    "human_review_reason": "Authentication methods and the exact process for obtaining API credentials are not specified."
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783615933083_0",
+      "claim_field": "product.one_line_description",
+      "claim": "Close is a sales CRM built for teams that sell. It combines calling, email, SMS, pipeline management, reporting, and an AI sales agent named Chloe into a single platform.",
+      "source_url": "https://close.com/",
+      "source_title": "Close CRM | Sales CRM with Built-In AI Sales Agent",
+      "source_type": "official_doc",
+      "evidence_snippet": "Close is a sales CRM built for teams that sell. It combines calling, email, SMS, pipeline management, reporting, and an AI sales agent named Chloe into a single platform.",
+      "retrieved_at": "2026-07-09T16:52:13.083Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://close.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783615933083_1",
+      "claim_field": "developer_access.access_model",
+      "claim": "unclear",
+      "source_url": "https://close.com/",
+      "source_title": "Close CRM | Sales CRM with Built-In AI Sales Agent",
+      "source_type": "official_doc",
+      "evidence_snippet": "REST API, webhooks, and MCP server. Everything you need to customize Close for the way your team works. [Explore the developer platform](https://developer.close.com/)",
+      "retrieved_at": "2026-07-09T16:52:13.083Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://close.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783615933083_2",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": "unknown",
+      "source_url": "https://close.com/",
+      "source_title": "Close CRM | Sales CRM with Built-In AI Sales Agent",
+      "source_type": "official_doc",
+      "evidence_snippet": "REST API, webhooks, and MCP server. Everything you need to customize Close for the way your team works. [Explore the developer platform](https://developer.close.com/)",
+      "retrieved_at": "2026-07-09T16:52:13.083Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://close.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783615933083_3",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://close.com/",
+      "source_title": "Close CRM | Sales CRM with Built-In AI Sales Agent",
+      "source_type": "official_doc",
+      "evidence_snippet": "REST API, webhooks, and MCP server.  Everything you need to customize Close for the way your team works.",
+      "retrieved_at": "2026-07-09T16:52:13.083Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://close.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783615933083_4",
+      "claim_field": "api_surface.api_styles",
+      "claim": "REST",
+      "source_url": "https://close.com/",
+      "source_title": "Close CRM | Sales CRM with Built-In AI Sales Agent",
+      "source_type": "official_doc",
+      "evidence_snippet": "REST API, webhooks, and MCP server.  Everything you need to customize Close for the way your team works.",
+      "retrieved_at": "2026-07-09T16:52:13.083Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://close.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783615933083_5",
+      "claim_field": "api_surface.api_styles",
+      "claim": "webhooks",
+      "source_url": "https://close.com/",
+      "source_title": "Close CRM | Sales CRM with Built-In AI Sales Agent",
+      "source_type": "official_doc",
+      "evidence_snippet": "REST API, webhooks, and MCP server.  Everything you need to customize Close for the way your team works.",
+      "retrieved_at": "2026-07-09T16:52:13.083Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://close.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783615933083_6",
+      "claim_field": "api_surface.api_styles",
+      "claim": "other",
+      "source_url": "https://close.com/",
+      "source_title": "Close CRM | Sales CRM with Built-In AI Sales Agent",
+      "source_type": "official_doc",
+      "evidence_snippet": "REST API, webhooks, and MCP server.  Everything you need to customize Close for the way your team works.",
+      "retrieved_at": "2026-07-09T16:52:13.083Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://close.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783615933083_7",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://close.com/",
+      "source_title": "Close CRM | Sales CRM with Built-In AI Sales Agent",
+      "source_type": "official_doc",
+      "evidence_snippet": "Everything you need to customize Close for the way your team works.",
+      "retrieved_at": "2026-07-09T16:52:13.083Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://close.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783615933083_8",
+      "claim_field": "mcp.mcp_status",
+      "claim": "official",
+      "source_url": "https://close.com/",
+      "source_title": "Close CRM | Sales CRM with Built-In AI Sales Agent",
+      "source_type": "official_doc",
+      "evidence_snippet": "REST API, webhooks, and MCP server.  Everything you need to customize Close for the way your team works.",
+      "retrieved_at": "2026-07-09T16:52:13.083Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://close.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 8,
+      "app_name": "Close",
+      "website_hint": "close.com",
+      "assigned_category": "CRM and Sales",
+      "researched_at": "2026-07-09T16:52:13.082Z"
+    },
+    "product": {
+      "normalized_category": "CRM and Sales",
+      "one_line_description": "Close is a sales CRM built for teams that sell, combining calling, email, SMS, pipeline management, reporting, and an AI sales agent (Chloe) into a single platform."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "The provided source pages do not explicitly state the authentication methods used for the Close API."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": "unknown",
+      "access_notes": "The source mentions a 'developer platform' and a link to 'Explore the developer platform', but it does not specify the process for obtaining API credentials or whether it requires human approval, a paid plan, or is self-serve."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "REST",
+        "webhooks",
+        "other"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "Close offers a REST API, webhooks, and an MCP server, described as 'Everything you need to customize Close for the way your team works'."
+    },
+    "mcp": {
+      "mcp_status": "official",
+      "mcp_summary": "Close explicitly mentions offering an 'MCP server' as part of its developer platform."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient.",
+      "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0,
+        "access_model": 0.1,
+        "public_api": 1,
+        "api_breadth": 0.8,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.6,
+      "requires_human_review": true,
+      "human_review_reason": "Authentication methods and the exact process for obtaining API credentials are not specified."
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_access_model_unclear",
+    "risk_auth_methods_unclear",
+    "risk_contradictory_claims",
+    "risk_verdict_unclear",
+    "risk_low_confidence"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_access_model_unclear",
+      "risk_auth_methods_unclear",
+      "risk_contradictory_claims",
+      "risk_verdict_unclear",
+      "risk_low_confidence"
+    ]
+  }
+}

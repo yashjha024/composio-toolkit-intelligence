@@ -1,0 +1,391 @@
+{
+  "identity": {
+    "assignment_number": 45,
+    "app_name": "Magento (Adobe Commerce)",
+    "website_hint": "developer.adobe.com/commerce",
+    "assigned_category": "Ecommerce",
+    "researched_at": "2026-07-09T17:10:31.543Z"
+  },
+  "product": {
+    "normalized_category": "Ecommerce",
+    "one_line_description": "Adobe Commerce provides developers with software, tools, and services to customize and extend Adobe Commerce for multichannel, global commerce and integration with backend systems."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "The provided source page does not explicitly detail the authentication methods required for API access."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": "unknown",
+    "access_notes": "The source page mentions developer software, tools, services, documentation, and a playground, but does not provide explicit information on how to obtain API credentials for Adobe Commerce, or if they are self-serve, free, or gated by a subscription or sales process."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "REST",
+      "webhooks"
+    ],
+    "api_breadth": "broad",
+    "api_summary": "Adobe Commerce is an API-first commerce platform that allows developers to customize and extend the platform, support multichannel and global commerce, and integrate with backend systems. It supports event-driven integrations, implying webhook capabilities, and the 'API-first Commerce' headline suggests extensive RESTful APIs."
+  },
+  "mcp": {
+    "mcp_status": "none_found",
+    "mcp_summary": "There is no mention of Model Context Protocol (MCP) or similar AI agent/toolkit specific integration on the provided page."
+  },
+  "buildability": {
+    "verdict": "unclear",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 0,
+      "access_model": 0.2,
+      "public_api": 1,
+      "api_breadth": 0.8,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.6,
+    "requires_human_review": true,
+    "human_review_reason": "Authentication methods and how to obtain API developer credentials (access model) are unclear from the provided page. The page describes developer resources but not the specific process for API key generation or access tiers."
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783617031543_0",
+      "claim_field": "product.one_line_description",
+      "claim": "Adobe Commerce provides developers with software, tools, and services to customize and extend Adobe Commerce for multichannel, global commerce and integration with backend systems.",
+      "source_url": "https://developer.adobe.com/commerce",
+      "source_title": ":experiencecloud:",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Adobe provides developers with software, tools, and services to customize and extend Adobe Commerce to support multichannel, global commerce for B2B and B2C, and integrate with backend systems.",
+      "retrieved_at": "2026-07-09T17:10:31.543Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.adobe.com/commerce"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617031543_1",
+      "claim_field": "developer_access.access_notes",
+      "claim": "The source page mentions developer software, tools, services, documentation, and a playground, but does not provide explicit information on how to obtain API credentials for Adobe Commerce, or if they are self-serve, free, or gated by a subscription or sales process.",
+      "source_url": "https://developer.adobe.com/commerce",
+      "source_title": ":experiencecloud:",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Adobe provides developers with software, tools, and services to customize and extend Adobe Commerce to support multichannel, global commerce for B2B and B2C, and integrate with backend systems.",
+      "retrieved_at": "2026-07-09T17:10:31.543Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.adobe.com/commerce"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617031543_2",
+      "claim_field": "developer_access.access_notes",
+      "claim": "The source page mentions developer software, tools, services, documentation, and a playground, but does not provide explicit information on how to obtain API credentials for Adobe Commerce, or if they are self-serve, free, or gated by a subscription or sales process.",
+      "source_url": "https://developer.adobe.com/commerce",
+      "source_title": ":experiencecloud:",
+      "source_type": "developer_portal",
+      "evidence_snippet": "### **[Developer playground](https://experienceleague.adobe.com/developer/commerce/storefront/playgrounds/commerce-services/)**\nAn API playground for hands-on learning",
+      "retrieved_at": "2026-07-09T17:10:31.543Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.adobe.com/commerce"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617031543_3",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://developer.adobe.com/commerce",
+      "source_title": ":experiencecloud:",
+      "source_type": "developer_portal",
+      "evidence_snippet": "## [API-first Commerce](https://developer.adobe.com/commerce/webapi/)\nMake innovation a constant with a secure, scalable, and extensible commerce platform.",
+      "retrieved_at": "2026-07-09T17:10:31.543Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.adobe.com/commerce"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617031543_4",
+      "claim_field": "api_surface.api_styles",
+      "claim": "REST",
+      "source_url": "https://developer.adobe.com/commerce",
+      "source_title": ":experiencecloud:",
+      "source_type": "developer_portal",
+      "evidence_snippet": "## [API-first Commerce](https://developer.adobe.com/commerce/webapi/)\nMake innovation a constant with a secure, scalable, and extensible commerce platform.",
+      "retrieved_at": "2026-07-09T17:10:31.543Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.adobe.com/commerce"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617031543_5",
+      "claim_field": "api_surface.api_styles",
+      "claim": "webhooks",
+      "source_url": "https://developer.adobe.com/commerce",
+      "source_title": ":experiencecloud:",
+      "source_type": "developer_portal",
+      "evidence_snippet": "## [Event-driven integrations](https://developer.adobe.com/commerce/extensibility/)\nBuild a personalized commerce powerhouse by adding Adobe Experience Cloud products to Adobe Commerce.",
+      "retrieved_at": "2026-07-09T17:10:31.543Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.adobe.com/commerce"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617031543_6",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://developer.adobe.com/commerce",
+      "source_title": ":experiencecloud:",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Adobe provides developers with software, tools, and services to customize and extend Adobe Commerce to support multichannel, global commerce for B2B and B2C, and integrate with backend systems.",
+      "retrieved_at": "2026-07-09T17:10:31.543Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.adobe.com/commerce"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617031543_7",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://developer.adobe.com/commerce",
+      "source_title": ":experiencecloud:",
+      "source_type": "developer_portal",
+      "evidence_snippet": "## [API-first Commerce](https://developer.adobe.com/commerce/webapi/)\nMake innovation a constant with a secure, scalable, and extensible commerce platform.",
+      "retrieved_at": "2026-07-09T17:10:31.543Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.adobe.com/commerce"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617031543_8",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://developer.adobe.com/commerce",
+      "source_title": ":experiencecloud:",
+      "source_type": "developer_portal",
+      "evidence_snippet": "## [Event-driven integrations](https://developer.adobe.com/commerce/extensibility/)\nBuild a personalized commerce powerhouse by adding Adobe Experience Cloud products to Adobe Commerce.",
+      "retrieved_at": "2026-07-09T17:10:31.543Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.adobe.com/commerce"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 45,
+      "app_name": "Magento (Adobe Commerce)",
+      "website_hint": "developer.adobe.com/commerce",
+      "assigned_category": "Ecommerce",
+      "researched_at": "2026-07-09T17:10:31.543Z"
+    },
+    "product": {
+      "normalized_category": "Ecommerce",
+      "one_line_description": "Adobe Commerce provides developers with software, tools, and services to customize and extend Adobe Commerce for multichannel, global commerce and integration with backend systems."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "The provided source page does not explicitly detail the authentication methods required for API access."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": "unknown",
+      "access_notes": "The source page mentions developer software, tools, services, documentation, and a playground, but does not provide explicit information on how to obtain API credentials for Adobe Commerce, or if they are self-serve, free, or gated by a subscription or sales process."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "REST",
+        "webhooks"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "Adobe Commerce is an API-first commerce platform that allows developers to customize and extend the platform, support multichannel and global commerce, and integrate with backend systems. It supports event-driven integrations, implying webhook capabilities, and the 'API-first Commerce' headline suggests extensive RESTful APIs."
+    },
+    "mcp": {
+      "mcp_status": "none_found",
+      "mcp_summary": "There is no mention of Model Context Protocol (MCP) or similar AI agent/toolkit specific integration on the provided page."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient.",
+      "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0,
+        "access_model": 0.2,
+        "public_api": 1,
+        "api_breadth": 0.8,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.6,
+      "requires_human_review": true,
+      "human_review_reason": "Authentication methods and how to obtain API developer credentials (access model) are unclear from the provided page. The page describes developer resources but not the specific process for API key generation or access tiers."
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_access_model_unclear",
+    "risk_auth_methods_unclear",
+    "risk_contradictory_claims",
+    "risk_verdict_unclear",
+    "risk_low_confidence"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_access_model_unclear",
+      "risk_auth_methods_unclear",
+      "risk_contradictory_claims",
+      "risk_verdict_unclear",
+      "risk_low_confidence"
+    ]
+  }
+}

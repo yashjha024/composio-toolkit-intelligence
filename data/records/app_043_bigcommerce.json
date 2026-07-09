@@ -1,0 +1,627 @@
+{
+  "identity": {
+    "assignment_number": 43,
+    "app_name": "BigCommerce",
+    "website_hint": "developer.bigcommerce.com",
+    "assigned_category": "Ecommerce",
+    "researched_at": "2026-07-09T17:10:01.466Z"
+  },
+  "product": {
+    "normalized_category": "Ecommerce",
+    "one_line_description": "BigCommerce is an e-commerce platform that provides SaaS products and APIs for building, customizing, and scaling online stores and managing store data."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "API credentials (access tokens) are generated within the store control panel. These tokens are used with an 'X-Auth-Token' header for REST APIs and as a 'Bearer' token for GraphQL Storefront API requests."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": true,
+    "access_notes": "Developers can sign up for a free BigCommerce trial store and generate API credentials (access tokens) directly from the 'Settings > API Accounts' section within their store control panel. This process does not require human approval."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "REST",
+      "GraphQL",
+      "webhooks",
+      "SDK"
+    ],
+    "api_breadth": "broad",
+    "api_summary": "BigCommerce offers extensive REST and GraphQL APIs for managing store data, including products, orders, customers, and store settings, as well as for crafting storefront experiences. It also provides webhooks for real-time event notifications and SDKs for development."
+  },
+  "mcp": {
+    "mcp_status": "official",
+    "mcp_summary": "BigCommerce provides documentation specifically for AI agents, including a '/llms.txt' index at the root level and page-level indexes. It also references 'AI Agent Setup' for connecting AI agents like Cursor, Claude, or Codex via MCP."
+  },
+  "buildability": {
+    "verdict": "unclear",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 1,
+      "access_model": 1,
+      "public_api": 1,
+      "api_breadth": 1,
+      "mcp_status": 1
+    },
+    "overall_confidence": 1,
+    "requires_human_review": false,
+    "human_review_reason": null
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783617001466_0",
+      "claim_field": "product.one_line_description",
+      "claim": "BigCommerce is an e-commerce platform that provides SaaS products and APIs for building, customizing, and scaling online stores and managing store data.",
+      "source_url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+      "source_title": "BigCommerce Developers | BigCommerce Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "We’re a commerce-centric company, platform, and set of retailer-facing SaaS products used to scale ecommerce businesses:",
+      "retrieved_at": "2026-07-09T17:10:01.466Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.bigcommerce.com/developer/docs/overview/quick-start"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617001466_1",
+      "claim_field": "authentication.auth_methods",
+      "claim": "api_key",
+      "source_url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+      "source_title": "BigCommerce Developers | BigCommerce Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "X-Auth-Token: {{ACCESS_TOKEN}}",
+      "retrieved_at": "2026-07-09T17:10:01.466Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.bigcommerce.com/developer/docs/overview/quick-start"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617001466_2",
+      "claim_field": "authentication.auth_methods",
+      "claim": "bearer_token",
+      "source_url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+      "source_title": "BigCommerce Developers | BigCommerce Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "'Authorization': `Bearer {{TOKEN}}`",
+      "retrieved_at": "2026-07-09T17:10:01.466Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.bigcommerce.com/developer/docs/overview/quick-start"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617001466_3",
+      "claim_field": "authentication.auth_summary",
+      "claim": "API credentials (access tokens) are generated within the store control panel. These tokens are used with an 'X-Auth-Token' header for REST APIs and as a 'Bearer' token for GraphQL Storefront API requests.",
+      "source_url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+      "source_title": "BigCommerce Developers | BigCommerce Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "Generate API credentials: Navigate to **Settings > API Accounts** in your store control panel. Create credentials with the scopes you need.",
+      "retrieved_at": "2026-07-09T17:10:01.466Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.bigcommerce.com/developer/docs/overview/quick-start"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617001466_4",
+      "claim_field": "developer_access.access_model",
+      "claim": "self_serve_free",
+      "source_url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+      "source_title": "BigCommerce Developers | BigCommerce Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "Sign up for a free BigCommerce trial store to test API calls and build integrations without affecting live data.",
+      "retrieved_at": "2026-07-09T17:10:01.466Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.bigcommerce.com/developer/docs/overview/quick-start"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617001466_5",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": true,
+      "source_url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+      "source_title": "BigCommerce Developers | BigCommerce Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "Generate API credentials: Navigate to **Settings > API Accounts** in your store control panel. Create credentials with the scopes you need.",
+      "retrieved_at": "2026-07-09T17:10:01.466Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.bigcommerce.com/developer/docs/overview/quick-start"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617001466_6",
+      "claim_field": "developer_access.access_notes",
+      "claim": "Developers can sign up for a free BigCommerce trial store and generate API credentials (access tokens) directly from the 'Settings > API Accounts' section within their store control panel. This process does not require human approval.",
+      "source_url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+      "source_title": "BigCommerce Developers | BigCommerce Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "Sign up for a free BigCommerce trial store to test API calls and build integrations without affecting live data.",
+      "retrieved_at": "2026-07-09T17:10:01.466Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.bigcommerce.com/developer/docs/overview/quick-start"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617001466_7",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+      "source_title": "BigCommerce Developers | BigCommerce Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "Build, customize, and scale on the BigCommerce platform. Whether you’re creating a storefront, building an app, or managing store data through APIs, these docs will get you there.",
+      "retrieved_at": "2026-07-09T17:10:01.466Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.bigcommerce.com/developer/docs/overview/quick-start"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617001466_8",
+      "claim_field": "api_surface.api_styles",
+      "claim": "REST",
+      "source_url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+      "source_title": "BigCommerce Developers | BigCommerce Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "### REST Management API",
+      "retrieved_at": "2026-07-09T17:10:01.466Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.bigcommerce.com/developer/docs/overview/quick-start"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617001466_9",
+      "claim_field": "api_surface.api_styles",
+      "claim": "GraphQL",
+      "source_url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+      "source_title": "BigCommerce Developers | BigCommerce Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "### GraphQL Storefront API",
+      "retrieved_at": "2026-07-09T17:10:01.466Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.bigcommerce.com/developer/docs/overview/quick-start"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617001466_10",
+      "claim_field": "api_surface.api_styles",
+      "claim": "webhooks",
+      "source_url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+      "source_title": "BigCommerce Developers | BigCommerce Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "Webhooks: Real-time store event notifications.",
+      "retrieved_at": "2026-07-09T17:10:01.466Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.bigcommerce.com/developer/docs/overview/quick-start"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617001466_11",
+      "claim_field": "api_surface.api_styles",
+      "claim": "SDK",
+      "source_url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+      "source_title": "BigCommerce Developers | BigCommerce Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "[Tools & SDKs](/developer/docs/overview/tools-and-sdks)",
+      "retrieved_at": "2026-07-09T17:10:01.466Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.bigcommerce.com/developer/docs/overview/quick-start"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617001466_12",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+      "source_title": "BigCommerce Developers | BigCommerce Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "From store-level APIs that handle product catalogs, orders, and customers to shopper-focused APIs that help you craft perfect storefront experiences, our platform can power almost any commerce experience you can imagine.",
+      "retrieved_at": "2026-07-09T17:10:01.466Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.bigcommerce.com/developer/docs/overview/quick-start"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617001466_13",
+      "claim_field": "api_surface.api_summary",
+      "claim": "BigCommerce offers extensive REST and GraphQL APIs for managing store data, including products, orders, customers, and store settings, as well as for crafting storefront experiences. It also provides webhooks for real-time event notifications and SDKs for development.",
+      "source_url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+      "source_title": "BigCommerce Developers | BigCommerce Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "From store-level APIs that handle product catalogs, orders, and customers to shopper-focused APIs that help you craft perfect storefront experiences, our platform can power almost any commerce experience you can imagine.",
+      "retrieved_at": "2026-07-09T17:10:01.466Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.bigcommerce.com/developer/docs/overview/quick-start"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617001466_14",
+      "claim_field": "mcp.mcp_status",
+      "claim": "official",
+      "source_url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+      "source_title": "BigCommerce Developers | BigCommerce Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "For AI agents: a documentation index is available at the root level at /llms.txt. Append /llms.txt to any URL for a page-level index, or .md for the markdown version of any page.",
+      "retrieved_at": "2026-07-09T17:10:01.466Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.bigcommerce.com/developer/docs/overview/quick-start"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617001466_15",
+      "claim_field": "mcp.mcp_summary",
+      "claim": "BigCommerce provides documentation specifically for AI agents, including a '/llms.txt' index at the root level and page-level indexes. It also references 'AI Agent Setup' for connecting AI agents like Cursor, Claude, or Codex via MCP.",
+      "source_url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+      "source_title": "BigCommerce Developers | BigCommerce Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "For AI agents: a documentation index is available at the root level at /llms.txt. Append /llms.txt to any URL for a page-level index, or .md for the markdown version of any page.",
+      "retrieved_at": "2026-07-09T17:10:01.466Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.bigcommerce.com/developer/docs/overview/quick-start"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617001466_16",
+      "claim_field": "mcp.mcp_summary",
+      "claim": "BigCommerce provides documentation specifically for AI agents, including a '/llms.txt' index at the root level and page-level indexes. It also references 'AI Agent Setup' for connecting AI agents like Cursor, Claude, or Codex via MCP.",
+      "source_url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+      "source_title": "BigCommerce Developers | BigCommerce Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "AI Agent Setup: Connect Cursor, Claude, or Codex to the BigCommerce developer docs via MCP.",
+      "retrieved_at": "2026-07-09T17:10:01.466Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.bigcommerce.com/developer/docs/overview/quick-start"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 43,
+      "app_name": "BigCommerce",
+      "website_hint": "developer.bigcommerce.com",
+      "assigned_category": "Ecommerce",
+      "researched_at": "2026-07-09T17:10:01.466Z"
+    },
+    "product": {
+      "normalized_category": "Ecommerce",
+      "one_line_description": "BigCommerce is an e-commerce platform that provides SaaS products and APIs for building, customizing, and scaling online stores and managing store data."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "API credentials (access tokens) are generated within the store control panel. These tokens are used with an 'X-Auth-Token' header for REST APIs and as a 'Bearer' token for GraphQL Storefront API requests."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": true,
+      "access_notes": "Developers can sign up for a free BigCommerce trial store and generate API credentials (access tokens) directly from the 'Settings > API Accounts' section within their store control panel. This process does not require human approval."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "REST",
+        "GraphQL",
+        "webhooks",
+        "SDK"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "BigCommerce offers extensive REST and GraphQL APIs for managing store data, including products, orders, customers, and store settings, as well as for crafting storefront experiences. It also provides webhooks for real-time event notifications and SDKs for development."
+    },
+    "mcp": {
+      "mcp_status": "official",
+      "mcp_summary": "BigCommerce provides documentation specifically for AI agents, including a '/llms.txt' index at the root level and page-level indexes. It also references 'AI Agent Setup' for connecting AI agents like Cursor, Claude, or Codex via MCP."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient.",
+      "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 1,
+        "access_model": 1,
+        "public_api": 1,
+        "api_breadth": 1,
+        "mcp_status": 1
+      },
+      "overall_confidence": 1,
+      "requires_human_review": false,
+      "human_review_reason": null
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_access_model_unclear",
+    "risk_auth_methods_unclear",
+    "risk_material_evidence_validation_failed",
+    "risk_contradictory_claims",
+    "risk_verdict_unclear"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_access_model_unclear",
+      "risk_auth_methods_unclear",
+      "risk_material_evidence_validation_failed",
+      "risk_contradictory_claims",
+      "risk_verdict_unclear"
+    ]
+  }
+}

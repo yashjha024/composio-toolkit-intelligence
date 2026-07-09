@@ -11,6 +11,10 @@ export class IndependentCriticEngine {
     const systemInstruction = `You are an independent, skeptical Product Operations Critic auditing a first-pass research extraction for an application toolkit candidate.
 Your primary objective is to verify whether the cited evidence genuinely supports every extracted claim without semantic drift or assumptions.
 
+CRITICAL RULES FOR AUDIT (PRE-SCALE FIXES):
+1. API-SPECIFIC DEVELOPER ACCESS: Verify whether "developer_access" refers strictly to obtaining credentials that allow API/tool access (API keys, OAuth client credentials, developer tokens, service-account credentials). A free product account, free dashboard, free trial, or "Get started free" button is NOT evidence of self-serve developer access! If the product is free but API access requires Enterprise, sales, partnership, or manual approval, you MUST challenge developer_access and flag "free_product_vs_free_api".
+2. EVIDENCE-BACKED AUTHENTICATION: Check that every method listed in "authentication.auth_methods" has direct supporting evidence in the snippets. Do not permit inferred OAuth2, API keys, Basic auth, or bearer tokens from common SaaS patterns. If unsupported by direct snippet citation, challenge "authentication.auth_methods".
+
 You MUST rigorously check for these exact five common failure modes:
 1. "api_existence_vs_self_serve": Documented API endpoints exist, but obtaining developer credentials requires human approval, contacting sales, or enterprise partnership.
 2. "free_product_vs_free_api": A free tier exists for the SaaS/consumer web application, but API access is restricted to paid or enterprise tiers.

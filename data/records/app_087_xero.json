@@ -1,0 +1,530 @@
+{
+  "identity": {
+    "assignment_number": 87,
+    "app_name": "Xero",
+    "website_hint": "developer.xero.com",
+    "assigned_category": "Finance and Fintech",
+    "researched_at": "2026-07-09T18:08:38.226Z"
+  },
+  "product": {
+    "normalized_category": "Finance and Fintech",
+    "one_line_description": "Xero provides a developer platform with APIs and tools for building integrations and automating workflows for small businesses and accountants."
+  },
+  "authentication": {
+    "auth_methods": [
+      "oauth2"
+    ],
+    "auth_summary": "Xero's custom connections utilize the client credentials grant type, which is a standard part of OAuth2, to provide a simplified developer experience."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": true,
+    "access_notes": "Developers can sign up for a free account to build on the Xero platform, which includes access to SDKs, APIs, and documentation. This process appears to be self-serve without requiring human approval for initial access."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "SDK"
+    ],
+    "api_breadth": "broad",
+    "api_summary": "Xero offers public APIs and SDKs, enabling developers to create powerful and custom integrations for small businesses. The platform supports building apps, agents, and workflows, indicating a broad range of functionalities and integration points available through its API."
+  },
+  "mcp": {
+    "mcp_status": "official",
+    "mcp_summary": "Xero provides an official MCP (Model Context Protocol) Server as part of its AI Toolkit, which also includes OpenAI Agents SDK, LangChain, and prompt examples."
+  },
+  "buildability": {
+    "verdict": "unclear",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 1,
+      "access_model": 1,
+      "public_api": 1,
+      "api_breadth": 0.9,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.95,
+    "requires_human_review": false,
+    "human_review_reason": null
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783620518226_0",
+      "claim_field": "authentication.auth_methods",
+      "claim": "oauth2",
+      "source_url": "https://developer.xero.com/",
+      "source_title": "Xero Developer Platform",
+      "source_type": "developer_portal",
+      "evidence_snippet": "It utilises the client credentials grant type to provide a simplified, efficient developer experience.",
+      "retrieved_at": "2026-07-09T18:08:38.226Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.xero.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783620518226_1",
+      "claim_field": "authentication.auth_summary",
+      "claim": "Xero's custom connections utilize the client credentials grant type, which is a standard part of OAuth2, to provide a simplified developer experience.",
+      "source_url": "https://developer.xero.com/",
+      "source_title": "Xero Developer Platform",
+      "source_type": "developer_portal",
+      "evidence_snippet": "A streamlined integration option for anyone building bespoke solutions for Xero businesses. It utilises the client credentials grant type to provide a simplified, efficient developer experience.",
+      "retrieved_at": "2026-07-09T18:08:38.226Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.xero.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783620518226_2",
+      "claim_field": "developer_access.access_model",
+      "claim": "self_serve_free",
+      "source_url": "https://developer.xero.com/",
+      "source_title": "Xero Developer Platform",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Sign up for a free account to build on the Xero platform.",
+      "retrieved_at": "2026-07-09T18:08:38.226Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.xero.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783620518226_3",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": true,
+      "source_url": "https://developer.xero.com/",
+      "source_title": "Xero Developer Platform",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Sign up for a free account to build on the Xero platform. Take a look at our getting started guide, SDKs and the other steps you need to complete for certification.",
+      "retrieved_at": "2026-07-09T18:08:38.226Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.xero.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783620518226_4",
+      "claim_field": "developer_access.access_notes",
+      "claim": "Developers can sign up for a free account to build on the Xero platform, which includes access to SDKs, APIs, and documentation. This process appears to be self-serve without requiring human approval for initial access.",
+      "source_url": "https://developer.xero.com/",
+      "source_title": "Xero Developer Platform",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Sign up for a free account to build on the Xero platform. Take a look at our getting started guide, SDKs and the other steps you need to complete for certification.",
+      "retrieved_at": "2026-07-09T18:08:38.226Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.xero.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783620518226_5",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://developer.xero.com/",
+      "source_title": "Xero Developer Platform",
+      "source_type": "developer_portal",
+      "evidence_snippet": "# Xero Developer: Powering Your Innovation and Growth",
+      "retrieved_at": "2026-07-09T18:08:38.226Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.xero.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783620518226_6",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://developer.xero.com/",
+      "source_title": "Xero Developer Platform",
+      "source_type": "developer_portal",
+      "evidence_snippet": "This includes Xero APIs, SDKs, code samples, documentation and more.",
+      "retrieved_at": "2026-07-09T18:08:38.226Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.xero.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783620518226_7",
+      "claim_field": "api_surface.api_styles",
+      "claim": "SDK",
+      "source_url": "https://developer.xero.com/",
+      "source_title": "Xero Developer Platform",
+      "source_type": "developer_portal",
+      "evidence_snippet": "This includes Xero APIs, SDKs, code samples, documentation and more.",
+      "retrieved_at": "2026-07-09T18:08:38.226Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.xero.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783620518226_8",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://developer.xero.com/",
+      "source_title": "Xero Developer Platform",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Get started with our APIs and developer tools to create powerful integrations for small business.",
+      "retrieved_at": "2026-07-09T18:08:38.226Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.xero.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783620518226_9",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://developer.xero.com/",
+      "source_title": "Xero Developer Platform",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Seamlessly connect to Xero with custom integrations tailored to your needs.",
+      "retrieved_at": "2026-07-09T18:08:38.226Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.xero.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783620518226_10",
+      "claim_field": "api_surface.api_summary",
+      "claim": "Xero offers public APIs and SDKs to enable developers to build custom integrations and applications for small businesses, facilitating connections and automations tailored to specific needs.",
+      "source_url": "https://developer.xero.com/",
+      "source_title": "Xero Developer Platform",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Get started with our APIs and developer tools to create powerful integrations for small business.",
+      "retrieved_at": "2026-07-09T18:08:38.226Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.xero.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783620518226_11",
+      "claim_field": "api_surface.api_summary",
+      "claim": "Xero offers public APIs and SDKs to enable developers to build custom integrations and applications for small businesses, facilitating connections and automations tailored to specific needs.",
+      "source_url": "https://developer.xero.com/",
+      "source_title": "Xero Developer Platform",
+      "source_type": "developer_portal",
+      "evidence_snippet": "This includes Xero APIs, SDKs, code samples, documentation and more.",
+      "retrieved_at": "2026-07-09T18:08:38.226Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.xero.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783620518226_12",
+      "claim_field": "mcp.mcp_status",
+      "claim": "official",
+      "source_url": "https://developer.xero.com/",
+      "source_title": "Xero Developer Platform",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Get Started with Xero's AI Toolkit including OpenAI Agents SDK, MCP Server, LangChain and prompt examples.",
+      "retrieved_at": "2026-07-09T18:08:38.226Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.xero.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783620518226_13",
+      "claim_field": "mcp.mcp_summary",
+      "claim": "Xero provides an official MCP Server as part of its AI Toolkit, alongside OpenAI Agents SDK, LangChain, and prompt examples.",
+      "source_url": "https://developer.xero.com/",
+      "source_title": "Xero Developer Platform",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Get Started with Xero's AI Toolkit including OpenAI Agents SDK, MCP Server, LangChain and prompt examples.",
+      "retrieved_at": "2026-07-09T18:08:38.226Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.xero.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 87,
+      "app_name": "Xero",
+      "website_hint": "developer.xero.com",
+      "assigned_category": "Finance and Fintech",
+      "researched_at": "2026-07-09T18:08:38.226Z"
+    },
+    "product": {
+      "normalized_category": "Finance and Fintech",
+      "one_line_description": "Xero provides a developer platform with APIs and tools for building integrations and automating workflows for small businesses and accountants."
+    },
+    "authentication": {
+      "auth_methods": [
+        "oauth2"
+      ],
+      "auth_summary": "Xero's custom connections utilize the client credentials grant type, which is a standard part of OAuth2, to provide a simplified developer experience."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": true,
+      "access_notes": "Developers can sign up for a free account to build on the Xero platform, which includes access to SDKs, APIs, and documentation. This process appears to be self-serve without requiring human approval for initial access."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "SDK"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "Xero offers public APIs and SDKs, enabling developers to create powerful and custom integrations for small businesses. The platform supports building apps, agents, and workflows, indicating a broad range of functionalities and integration points available through its API."
+    },
+    "mcp": {
+      "mcp_status": "official",
+      "mcp_summary": "Xero provides an official MCP (Model Context Protocol) Server as part of its AI Toolkit, which also includes OpenAI Agents SDK, LangChain, and prompt examples."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient.",
+      "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 1,
+        "access_model": 1,
+        "public_api": 1,
+        "api_breadth": 0.9,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.95,
+      "requires_human_review": false,
+      "human_review_reason": null
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_access_model_unclear",
+    "risk_contradictory_claims",
+    "risk_verdict_unclear"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_access_model_unclear",
+      "risk_contradictory_claims",
+      "risk_verdict_unclear"
+    ]
+  }
+}

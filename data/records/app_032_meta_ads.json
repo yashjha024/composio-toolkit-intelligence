@@ -1,0 +1,125 @@
+{
+  "identity": {
+    "assignment_number": 32,
+    "app_name": "Meta Ads",
+    "website_hint": "developers.facebook.com/docs/marketing-apis",
+    "assigned_category": "Marketing, Ads, Email and Social",
+    "researched_at": "2026-07-09T17:04:33.881Z"
+  },
+  "product": {
+    "normalized_category": "Marketing, Ads, Email and Social",
+    "one_line_description": "unclear"
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "Authentication methods and requirements are unclear as no source documentation was provided."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": "unknown",
+    "access_notes": "Steps for obtaining API credentials and human approval requirements are unclear as no source documentation was provided."
+  },
+  "api_surface": {
+    "public_api": "unclear",
+    "api_styles": [],
+    "api_breadth": "unclear",
+    "api_summary": "Documented endpoints and breadth are unclear as no source documentation was provided."
+  },
+  "mcp": {
+    "mcp_status": "unclear",
+    "mcp_summary": "Model Context Protocol server availability is unclear as no source documentation was provided."
+  },
+  "buildability": {
+    "verdict": "unclear",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 0,
+      "access_model": 0,
+      "public_api": 0,
+      "api_breadth": 0,
+      "mcp_status": 0
+    },
+    "overall_confidence": 0,
+    "requires_human_review": true,
+    "human_review_reason": "No source pages were provided for extraction, making all claims unclear and preventing evidence extraction."
+  },
+  "evidence_pool": [],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 32,
+      "app_name": "Meta Ads",
+      "website_hint": "developers.facebook.com/docs/marketing-apis",
+      "assigned_category": "Marketing, Ads, Email and Social",
+      "researched_at": "2026-07-09T17:04:33.881Z"
+    },
+    "product": {
+      "normalized_category": "Marketing, Ads, Email and Social",
+      "one_line_description": "unclear"
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "Authentication methods and requirements are unclear as no source documentation was provided."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": "unknown",
+      "access_notes": "Steps for obtaining API credentials and human approval requirements are unclear as no source documentation was provided."
+    },
+    "api_surface": {
+      "public_api": "unclear",
+      "api_styles": [],
+      "api_breadth": "unclear",
+      "api_summary": "Documented endpoints and breadth are unclear as no source documentation was provided."
+    },
+    "mcp": {
+      "mcp_status": "unclear",
+      "mcp_summary": "Model Context Protocol server availability is unclear as no source documentation was provided."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient.",
+      "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0,
+        "access_model": 0,
+        "public_api": 0,
+        "api_breadth": 0,
+        "mcp_status": 0
+      },
+      "overall_confidence": 0,
+      "requires_human_review": true,
+      "human_review_reason": "No source pages were provided for extraction, making all claims unclear and preventing evidence extraction."
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_access_model_unclear",
+    "risk_auth_methods_unclear",
+    "risk_public_api_unclear",
+    "risk_insufficient_official_sources",
+    "risk_verdict_unclear",
+    "risk_low_confidence"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_access_model_unclear",
+      "risk_auth_methods_unclear",
+      "risk_public_api_unclear",
+      "risk_insufficient_official_sources",
+      "risk_verdict_unclear",
+      "risk_low_confidence"
+    ]
+  }
+}

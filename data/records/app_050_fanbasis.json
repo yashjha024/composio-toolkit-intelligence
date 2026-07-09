@@ -1,0 +1,298 @@
+{
+  "identity": {
+    "assignment_number": 50,
+    "app_name": "fanbasis",
+    "website_hint": "fanbasis.com",
+    "assigned_category": "Ecommerce",
+    "researched_at": "2026-07-09T17:13:45.436Z"
+  },
+  "product": {
+    "normalized_category": "Ecommerce",
+    "one_line_description": "FanBasis is an all-in-one operating system for modern digital businesses, providing tools for checkout, fulfillment, payments, financing, and scaling for selling knowledge, experience, or services online."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "Authentication methods for programmatic API access are not explicitly documented in the provided source. User login options include email/password, Google, and Apple."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": "unknown",
+    "access_notes": "The provided source does not contain information about how developers can obtain credentials for programmatic API access to FanBasis. Options presented are for user/seller account creation and logging in to the web application."
+  },
+  "api_surface": {
+    "public_api": "no",
+    "api_styles": [],
+    "api_breadth": "none",
+    "api_summary": "The source mentions '7000+ App Integrations' and the ability to 'Plug into tools you already use—CRMs, workflows, and data pipelines', suggesting FanBasis integrates with other services. However, there is no explicit mention of a public API, SDKs, or developer endpoints for external developers to build against."
+  },
+  "mcp": {
+    "mcp_status": "none_found",
+    "mcp_summary": "No information regarding Model Context Protocol (MCP) server availability was found in the provided source."
+  },
+  "buildability": {
+    "verdict": "blocked_low_priority",
+    "primary_blocker": "No documented public API available.",
+    "verdict_reasoning": "Application lacks documented REST, GraphQL, or SDK endpoints required for agent tool calling."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 0.5,
+      "access_model": 0.5,
+      "public_api": 0.9,
+      "api_breadth": 0.9,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.7,
+    "requires_human_review": true,
+    "human_review_reason": "The provided source does not explicitly mention a public API or developer access methods. While '7000+ App Integrations' suggests connectivity, it's unclear if these are pre-built or allow for custom developer integrations via an API. Further investigation is needed to determine API availability and developer access."
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783617225436_0",
+      "claim_field": "product.one_line_description",
+      "claim": "FanBasis is an all-in-one operating system for modern digital businesses, providing tools for checkout, fulfillment, payments, financing, and scaling for selling knowledge, experience, or services online.",
+      "source_url": "https://www.fanbasis.com/",
+      "source_title": "FanBasis",
+      "source_type": "official_doc",
+      "evidence_snippet": "The Operating System for Modern Digital Businesses\nAll-in-one software to run high-ticket, high-margin digital businesses. Everything from checkout to fulfillment with built-in financing, premium payments, and enterprise-grade scale.\nIf you're selling knowledge, experience, or services online—FanBasis was built to run your business end-to-end. From payments to fulfillment, it's everything you need to sell smarter, get paid faster, and scale without limits.",
+      "retrieved_at": "2026-07-09T17:13:45.436Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.fanbasis.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617225436_1",
+      "claim_field": "authentication.auth_methods",
+      "claim": [
+        "unclear"
+      ],
+      "source_url": "https://www.fanbasis.com/",
+      "source_title": "FanBasis",
+      "source_type": "official_doc",
+      "evidence_snippet": "Or [![](https://www.fanbasis.com/images/social-m/google.svg) Continue with Google](https://www.fanbasis.com/auth/google)\n[![](https://www.fanbasis.com/images/social-m/apple.svg) Continue with Apple](https://www.fanbasis.com/auth/apple)\nEmail Address * Create Password * Re-enter Password *",
+      "retrieved_at": "2026-07-09T17:13:45.436Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.fanbasis.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617225436_2",
+      "claim_field": "developer_access.access_model",
+      "claim": "unclear",
+      "source_url": "https://www.fanbasis.com/",
+      "source_title": "FanBasis",
+      "source_type": "official_doc",
+      "evidence_snippet": "Book a Demo Call\nCreate an Account\n### I am a... ### Seller Host, sell, and scale your business ### User Learn a new skill or join a community OR Create a referral account",
+      "retrieved_at": "2026-07-09T17:13:45.436Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.fanbasis.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617225436_3",
+      "claim_field": "api_surface.public_api",
+      "claim": "no",
+      "source_url": "https://www.fanbasis.com/",
+      "source_title": "FanBasis",
+      "source_type": "official_doc",
+      "evidence_snippet": "7000+ App Integrations\nPlug into tools you already use—CRMs, workflows, and data pipelines.",
+      "retrieved_at": "2026-07-09T17:13:45.436Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.fanbasis.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617225436_4",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "none",
+      "source_url": "https://www.fanbasis.com/",
+      "source_title": "FanBasis",
+      "source_type": "official_doc",
+      "evidence_snippet": "7000+ App Integrations\nPlug into tools you already use—CRMs, workflows, and data pipelines.",
+      "retrieved_at": "2026-07-09T17:13:45.436Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.fanbasis.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617225436_5",
+      "claim_field": "mcp.mcp_status",
+      "claim": "none_found",
+      "source_url": "https://www.fanbasis.com/",
+      "source_title": "FanBasis",
+      "source_type": "official_doc",
+      "evidence_snippet": "No direct mention of Model Context Protocol (MCP) or related terms found in the provided source content.",
+      "retrieved_at": "2026-07-09T17:13:45.436Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.fanbasis.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 50,
+      "app_name": "fanbasis",
+      "website_hint": "fanbasis.com",
+      "assigned_category": "Ecommerce",
+      "researched_at": "2026-07-09T17:13:45.436Z"
+    },
+    "product": {
+      "normalized_category": "Ecommerce",
+      "one_line_description": "FanBasis is an all-in-one operating system for modern digital businesses, providing tools for checkout, fulfillment, payments, financing, and scaling for selling knowledge, experience, or services online."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "Authentication methods for programmatic API access are not explicitly documented in the provided source. User login options include email/password, Google, and Apple."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": "unknown",
+      "access_notes": "The provided source does not contain information about how developers can obtain credentials for programmatic API access to FanBasis. Options presented are for user/seller account creation and logging in to the web application."
+    },
+    "api_surface": {
+      "public_api": "no",
+      "api_styles": [],
+      "api_breadth": "none",
+      "api_summary": "The source mentions '7000+ App Integrations' and the ability to 'Plug into tools you already use—CRMs, workflows, and data pipelines', suggesting FanBasis integrates with other services. However, there is no explicit mention of a public API, SDKs, or developer endpoints for external developers to build against."
+    },
+    "mcp": {
+      "mcp_status": "none_found",
+      "mcp_summary": "No information regarding Model Context Protocol (MCP) server availability was found in the provided source."
+    },
+    "buildability": {
+      "verdict": "blocked_low_priority",
+      "primary_blocker": "No documented public API available.",
+      "verdict_reasoning": "Application lacks documented REST, GraphQL, or SDK endpoints required for agent tool calling."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0.5,
+        "access_model": 0.5,
+        "public_api": 0.9,
+        "api_breadth": 0.9,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.7,
+      "requires_human_review": true,
+      "human_review_reason": "The provided source does not explicitly mention a public API or developer access methods. While '7000+ App Integrations' suggests connectivity, it's unclear if these are pre-built or allow for custom developer integrations via an API. Further investigation is needed to determine API availability and developer access."
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_access_model_unclear",
+    "risk_auth_methods_unclear",
+    "risk_material_evidence_validation_failed",
+    "risk_low_confidence"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_access_model_unclear",
+      "risk_auth_methods_unclear",
+      "risk_material_evidence_validation_failed",
+      "risk_low_confidence"
+    ]
+  }
+}

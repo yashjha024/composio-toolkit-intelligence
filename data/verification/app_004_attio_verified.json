@@ -1,0 +1,88 @@
+{
+  "assignment_number": 4,
+  "app_name": "Attio",
+  "assigned_category": "CRM and Sales",
+  "processing_mode": "deep_verified",
+  "baseline_fields": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "access_model": "unclear",
+    "credentials_obtainable_without_approval": "unknown",
+    "public_api_status": "yes",
+    "api_breadth": "unclear",
+    "mcp_status": "official",
+    "buildability_verdict": "UNCLEAR",
+    "primary_blocker": "Research data ambiguous or insufficient."
+  },
+  "verified_fields": {
+    "auth_methods": {
+      "verified_value": [
+        "unclear"
+      ],
+      "evidence_url": "https://docs.attio.com/docs",
+      "concise_evidence_snippet": "The Attio Developer Platform consists of four parts: ... REST API ... App SDK. (No explicit authentication methods mentioned)",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "access_model": {
+      "verified_value": "self_serve_free",
+      "evidence_url": "https://attio.com/pricing",
+      "concise_evidence_snippet": "Start for free... API and webhook access. Free. Per user/month, billed monthlyannually. For individuals getting started.",
+      "baseline_classification": "incorrect",
+      "correction_required": true,
+      "failure_mode": "extraction_error"
+    },
+    "credentials_obtainable_without_approval": {
+      "verified_value": true,
+      "evidence_url": "https://attio.com/pricing",
+      "concise_evidence_snippet": "Start for free, no credit card required. API and webhook access is available on the Free plan.",
+      "baseline_classification": "incorrect",
+      "correction_required": true,
+      "failure_mode": "extraction_error"
+    },
+    "public_api_status": {
+      "verified_value": "yes",
+      "evidence_url": "https://docs.attio.com/docs",
+      "concise_evidence_snippet": "The Attio Developer Platform consists of four parts: ... REST API. This allows developers to build apps.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "api_breadth": {
+      "verified_value": "read/write",
+      "evidence_url": "https://docs.attio.com/docs",
+      "concise_evidence_snippet": "REST API ... allows developers to build apps that read and write information to and from Attio workspaces. subscribe to events using webhooks.",
+      "baseline_classification": "incorrect",
+      "correction_required": true,
+      "failure_mode": "conservative_guardrail"
+    },
+    "mcp_status": {
+      "verified_value": "official",
+      "evidence_url": "https://docs.attio.com/docs",
+      "concise_evidence_snippet": "## MCP Manage Attio via AI. Connect Claude, ChatGPT or your AI tool of choice to search, update and manage your Attio workspace.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "buildability_verdict": {
+      "verified_value": "BUILD_WITH_CAVEATS",
+      "evidence_url": "https://attio.com/pricing",
+      "concise_evidence_snippet": "API and webhook access is available for Free plan, self-serve. Auth methods are unclear.",
+      "baseline_classification": "incorrect",
+      "correction_required": true,
+      "failure_mode": "conservative_guardrail"
+    },
+    "primary_blocker": {
+      "verified_value": "Authentication methods not specified.",
+      "evidence_url": "https://docs.attio.com/docs",
+      "concise_evidence_snippet": "The documentation for the REST API and App SDK does not detail specific authentication methods such as OAuth or API keys.",
+      "baseline_classification": "incorrect",
+      "correction_required": true,
+      "failure_mode": "extraction_error"
+    },
+    "unclear_diagnosis": "false_unclear_due_to_guardrails"
+  },
+  "verified_at": "2026-07-09T18:54:30.501Z"
+}

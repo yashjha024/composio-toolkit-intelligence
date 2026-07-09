@@ -1,0 +1,13 @@
+{
+  "provider_route": "vertex-ai",
+  "project_id": "gen-lang-client-0153019470",
+  "location": "global",
+  "model": "gemini-2.5-flash",
+  "successful_call_count": 116,
+  "cumulative_input_tokens": 731122,
+  "cumulative_output_tokens": 174566,
+  "cumulative_total_tokens": 1118928,
+  "cumulative_cached_tokens": 11080,
+  "cumulative_thinking_tokens": 213240,
+  "last_updated_timestamp": "2026-07-09T19:00:11.094Z"
+}

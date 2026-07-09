@@ -15,6 +15,7 @@ export interface WebPageContent {
   rawHtml: string;
   markdown: string;
   title: string;
+  fetchMode?: 'http' | 'alternate_official_source' | 'browser_fallback';
 }
 
 export interface WebFetcherProvider {
@@ -24,4 +25,6 @@ export interface WebFetcherProvider {
 export interface LlmProvider {
   generateStructured<T>(prompt: string, schema: object, systemInstruction?: string): Promise<T>;
   generateText(prompt: string, systemInstruction?: string): Promise<string>;
+  getCumulativeUsageSummary?(): any;
 }
+

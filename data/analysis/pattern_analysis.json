@@ -1,0 +1,218 @@
+{
+  "total_apps": 100,
+  "deep_verified_count": 10,
+  "fast_scale_count": 90,
+  "evidence_stats": {
+    "total_evidence_count": 934,
+    "total_validated_evidence_count": 572,
+    "average_evidence_per_app": "9.34",
+    "average_validated_per_app": "5.72"
+  },
+  "distributions": {
+    "auth_methods": {
+      "unclear": 79,
+      "api_key": 11,
+      "oauth2": 12,
+      "bearer_token": 7,
+      "basic": 1,
+      "custom": 2
+    },
+    "access_model": {
+      "unclear": 78,
+      "self_serve_free": 8,
+      "sales_gated": 6,
+      "admin_gated": 3,
+      "partner_gated": 1,
+      "self_serve_trial": 1,
+      "self_serve_paid": 3
+    },
+    "public_api_status": {
+      "unclear": 16,
+      "yes": 74,
+      "limited": 7,
+      "no": 3
+    },
+    "api_breadth": {
+      "unclear": 32,
+      "broad": 55,
+      "moderate": 8,
+      "narrow": 3,
+      "none": 2
+    },
+    "mcp_status": {
+      "unclear": 5,
+      "none_found": 65,
+      "official": 28,
+      "community": 2
+    },
+    "verdict": {
+      "UNCLEAR": 76,
+      "BUILD_NOW": 11,
+      "OUTREACH_REQUIRED": 9,
+      "BLOCKED_LOW_PRIORITY": 3,
+      "BUILD_WITH_CAVEATS": 1
+    },
+    "primary_blockers": {
+      "Research data ambiguous or insufficient.": 76,
+      "Access requires contacting enterprise sales team.": 5,
+      "Requires vendor/support approval for admin credentials.": 3,
+      "Requires formal ISV or partner program approval from vendor.": 1,
+      "No documented public API available.": 3,
+      "Minor onboarding or tier restrictions.": 1
+    },
+    "risk_flags": {
+      "risk_access_model_unclear": 72,
+      "risk_auth_methods_unclear": 74,
+      "risk_material_evidence_validation_failed": 60,
+      "risk_contradictory_claims": 56,
+      "risk_verdict_unclear": 70,
+      "risk_low_confidence": 56,
+      "risk_public_api_unclear": 15,
+      "risk_insufficient_official_sources": 8
+    }
+  },
+  "matrices": {
+    "category_by_access_model": {
+      "CRM and Sales": {
+        "unclear": 9,
+        "self_serve_free": 1
+      },
+      "Support and Helpdesk": {
+        "unclear": 8,
+        "sales_gated": 2
+      },
+      "Communications and Messaging": {
+        "unclear": 9,
+        "admin_gated": 1
+      },
+      "Marketing, Ads, Email and Social": {
+        "unclear": 8,
+        "partner_gated": 1,
+        "admin_gated": 1
+      },
+      "Ecommerce": {
+        "unclear": 9,
+        "admin_gated": 1
+      },
+      "Data, SEO and Scraping": {
+        "self_serve_trial": 1,
+        "unclear": 4,
+        "sales_gated": 2,
+        "self_serve_paid": 1,
+        "self_serve_free": 2
+      },
+      "Developer, Infra and Data platforms": {
+        "unclear": 7,
+        "self_serve_free": 3
+      },
+      "Productivity and Project Management": {
+        "unclear": 8,
+        "self_serve_free": 2
+      },
+      "Finance and Fintech": {
+        "unclear": 8,
+        "sales_gated": 2
+      },
+      "AI, Research and Media-native": {
+        "unclear": 8,
+        "self_serve_paid": 2
+      }
+    },
+    "category_by_buildability": {
+      "CRM and Sales": {
+        "UNCLEAR": 9,
+        "BUILD_NOW": 1
+      },
+      "Support and Helpdesk": {
+        "UNCLEAR": 9,
+        "OUTREACH_REQUIRED": 1
+      },
+      "Communications and Messaging": {
+        "UNCLEAR": 9,
+        "OUTREACH_REQUIRED": 1
+      },
+      "Marketing, Ads, Email and Social": {
+        "UNCLEAR": 8,
+        "OUTREACH_REQUIRED": 2
+      },
+      "Ecommerce": {
+        "UNCLEAR": 8,
+        "OUTREACH_REQUIRED": 1,
+        "BLOCKED_LOW_PRIORITY": 1
+      },
+      "Data, SEO and Scraping": {
+        "BUILD_NOW": 4,
+        "UNCLEAR": 3,
+        "OUTREACH_REQUIRED": 2,
+        "BLOCKED_LOW_PRIORITY": 1
+      },
+      "Developer, Infra and Data platforms": {
+        "UNCLEAR": 7,
+        "BUILD_NOW": 3
+      },
+      "Productivity and Project Management": {
+        "UNCLEAR": 8,
+        "BUILD_NOW": 2
+      },
+      "Finance and Fintech": {
+        "UNCLEAR": 8,
+        "OUTREACH_REQUIRED": 2
+      },
+      "AI, Research and Media-native": {
+        "UNCLEAR": 7,
+        "BLOCKED_LOW_PRIORITY": 1,
+        "BUILD_NOW": 1,
+        "BUILD_WITH_CAVEATS": 1
+      }
+    },
+    "category_by_api_availability": {
+      "CRM and Sales": {
+        "unclear": 2,
+        "yes": 8
+      },
+      "Support and Helpdesk": {
+        "yes": 4,
+        "limited": 2,
+        "unclear": 4
+      },
+      "Communications and Messaging": {
+        "yes": 7,
+        "limited": 1,
+        "unclear": 2
+      },
+      "Marketing, Ads, Email and Social": {
+        "yes": 7,
+        "unclear": 2,
+        "limited": 1
+      },
+      "Ecommerce": {
+        "yes": 9,
+        "no": 1
+      },
+      "Data, SEO and Scraping": {
+        "yes": 7,
+        "unclear": 2,
+        "no": 1
+      },
+      "Developer, Infra and Data platforms": {
+        "yes": 9,
+        "unclear": 1
+      },
+      "Productivity and Project Management": {
+        "yes": 9,
+        "unclear": 1
+      },
+      "Finance and Fintech": {
+        "yes": 8,
+        "unclear": 1,
+        "limited": 1
+      },
+      "AI, Research and Media-native": {
+        "unclear": 1,
+        "limited": 2,
+        "no": 1,
+        "yes": 6
+      }
+    }
+  }
+}

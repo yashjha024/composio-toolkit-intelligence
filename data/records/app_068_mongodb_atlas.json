@@ -1,0 +1,426 @@
+{
+  "identity": {
+    "assignment_number": 68,
+    "app_name": "MongoDB Atlas",
+    "website_hint": "mongodb.com/docs/atlas/api",
+    "assigned_category": "Developer, Infra and Data platforms",
+    "researched_at": "2026-07-09T17:30:31.978Z"
+  },
+  "product": {
+    "normalized_category": "Developer, Infra and Data platforms",
+    "one_line_description": "MongoDB Atlas provides a suite of programmatic tools and APIs, including an Administration API, SDKs, CLI, and integration with Infrastructure as Code platforms, to manage Atlas deployments and access AI capabilities like embedding and reranking models."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "The documentation mentions configuring access for the Atlas Administration API, but does not explicitly state the authentication methods (e.g., API keys, OAuth2, bearer tokens). Therefore, the specific authentication methods are unclear from the provided source."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": "unknown",
+    "access_notes": "The source refers to 'Get Started with the Atlas Administration API' for configuring access, but it does not specify whether obtaining API credentials is self-serve (free/paid) or requires human approval (sales/admin/partner gated)."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "REST",
+      "SDK",
+      "CLI",
+      "other"
+    ],
+    "api_breadth": "broad",
+    "api_summary": "MongoDB Atlas offers a broad public API surface including the Atlas Administration API (RESTful with endpoints), Atlas Go SDK, Atlas CLI, and an Atlas Embedding and Reranking API. It also supports Infrastructure as Code tools like HashiCorp Terraform, Cloud Development Kit for Terraform, AWS CloudFormation, AWS CDK, and the Atlas Kubernetes Operator, which leverage underlying APIs."
+  },
+  "mcp": {
+    "mcp_status": "official",
+    "mcp_summary": "MongoDB Atlas provides an 'Atlas Embedding and Reranking API' for accessing state-of-the-art embedding and reranking models from Voyage AI, and specifically notes a documentation index for AI agents at 'https://www.mongodb.com/docs/llms.txt'."
+  },
+  "buildability": {
+    "verdict": "unclear",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 0.5,
+      "access_model": 0.5,
+      "public_api": 1,
+      "api_breadth": 1,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.8,
+    "requires_human_review": false,
+    "human_review_reason": null
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783618231978_0",
+      "claim_field": "product.one_line_description",
+      "claim": "MongoDB Atlas provides a suite of programmatic tools and APIs, including an Administration API, SDKs, CLI, and integration with Infrastructure as Code platforms, to manage Atlas deployments and access AI capabilities like embedding and reranking models.",
+      "source_url": "https://www.mongodb.com/docs/atlas/api/",
+      "source_title": "Atlas Programmatic Access - Atlas - MongoDB Docsarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightmenu-verticalarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightmenu-vertical",
+      "source_type": "official_doc",
+      "evidence_snippet": "You can interact with Atlas programmatically to perform administrative tasks or manage your deployments using the following resources.\n## Atlas Administration API\nProgrammatically perform administrative tasks on your Atlas cluster outside of the Atlas UI with the Atlas Administration API. ...\n### Atlas Embedding and Reranking API\nThe Embedding and Reranking API provides endpoints for accessing Voyage AI's state-of-the-art embedding and reranking models. Use the REST API and available client SDKs to power search and retrieval in your AI applications.\n## Atlas Go SDK\nThe Atlas Go SDK provides platform-specific and Go language-specific tools, libraries, and documentation to help you build applications that interact with Atlas quickly and easily using the Atlas Administration API.\n## Atlas CLI\nThe Atlas CLI is a command-line interface built specifically for MongoDB Atlas.",
+      "retrieved_at": "2026-07-09T17:30:31.978Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.mongodb.com/docs/atlas/api/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783618231978_1",
+      "claim_field": "authentication.auth_methods",
+      "claim": [
+        "unclear"
+      ],
+      "source_url": "https://www.mongodb.com/docs/atlas/api/",
+      "source_title": "Atlas Programmatic Access - Atlas - MongoDB Docsarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightmenu-verticalarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightmenu-vertical",
+      "source_type": "official_doc",
+      "evidence_snippet": "To configure access for the Atlas Administration API, see [Get Started with the Atlas Administration API.](/docs/atlas/configure-api-access/#std-label-atlas-admin-api-access)",
+      "retrieved_at": "2026-07-09T17:30:31.978Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.mongodb.com/docs/atlas/api/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783618231978_2",
+      "claim_field": "developer_access.access_model",
+      "claim": "unclear",
+      "source_url": "https://www.mongodb.com/docs/atlas/api/",
+      "source_title": "Atlas Programmatic Access - Atlas - MongoDB Docsarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightmenu-verticalarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightmenu-vertical",
+      "source_type": "official_doc",
+      "evidence_snippet": "To configure access for the Atlas Administration API, see [Get Started with the Atlas Administration API.](/docs/atlas/configure-api-access/#std-label-atlas-admin-api-access)",
+      "retrieved_at": "2026-07-09T17:30:31.978Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.mongodb.com/docs/atlas/api/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783618231978_3",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://www.mongodb.com/docs/atlas/api/",
+      "source_title": "Atlas Programmatic Access - Atlas - MongoDB Docsarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightmenu-verticalarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightmenu-vertical",
+      "source_type": "official_doc",
+      "evidence_snippet": "You can interact with Atlas programmatically to perform administrative tasks or manage your deployments using the following resources.\n## Atlas Administration API\nProgrammatically perform administrative tasks on your Atlas cluster outside of the Atlas UI with the Atlas Administration API.",
+      "retrieved_at": "2026-07-09T17:30:31.978Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.mongodb.com/docs/atlas/api/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783618231978_4",
+      "claim_field": "api_surface.api_styles",
+      "claim": "REST",
+      "source_url": "https://www.mongodb.com/docs/atlas/api/",
+      "source_title": "Atlas Programmatic Access - Atlas - MongoDB Docsarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightmenu-verticalarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightmenu-vertical",
+      "source_type": "official_doc",
+      "evidence_snippet": "Programmatically perform administrative tasks on your Atlas cluster outside of the Atlas UI with the Atlas Administration API. Atlas Administration API resources add, edit, or delete administrative objects within Atlas, including projects, users, and clusters.\nYou can explore the various endpoints available through the Atlas Administration API in MongoDB's [Postman workspace.](https://www.postman.com/mongodb-devrel/workspace/mongodb-atlas-administration-apis/overview)",
+      "retrieved_at": "2026-07-09T17:30:31.978Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.mongodb.com/docs/atlas/api/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783618231978_5",
+      "claim_field": "api_surface.api_styles",
+      "claim": "SDK",
+      "source_url": "https://www.mongodb.com/docs/atlas/api/",
+      "source_title": "Atlas Programmatic Access - Atlas - MongoDB Docsarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightmenu-verticalarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightmenu-vertical",
+      "source_type": "official_doc",
+      "evidence_snippet": "## Atlas Go SDK\nThe Atlas Go SDK provides platform-specific and Go language-specific tools, libraries, and documentation to help you build applications that interact with Atlas quickly and easily using the Atlas Administration API.",
+      "retrieved_at": "2026-07-09T17:30:31.978Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.mongodb.com/docs/atlas/api/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783618231978_6",
+      "claim_field": "api_surface.api_styles",
+      "claim": "CLI",
+      "source_url": "https://www.mongodb.com/docs/atlas/api/",
+      "source_title": "Atlas Programmatic Access - Atlas - MongoDB Docsarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightmenu-verticalarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightmenu-vertical",
+      "source_type": "official_doc",
+      "evidence_snippet": "## Atlas CLI\nThe Atlas CLI is a command-line interface built specifically for MongoDB Atlas. You can use Atlas CLI to interact with Atlas from the terminal with short and intuitive commands and accomplish complex operational tasks such as creating a cluster or setting up an access list interactively and programmatically.",
+      "retrieved_at": "2026-07-09T17:30:31.978Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.mongodb.com/docs/atlas/api/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783618231978_7",
+      "claim_field": "api_surface.api_styles",
+      "claim": "other",
+      "source_url": "https://www.mongodb.com/docs/atlas/api/",
+      "source_title": "Atlas Programmatic Access - Atlas - MongoDB Docsarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightmenu-verticalarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightmenu-vertical",
+      "source_type": "official_doc",
+      "evidence_snippet": "## HashiCorp Terraform MongoDB Atlas Provider\nHashiCorp Terraform MongoDB Atlas Provider provides refined programmatic access and management of MongoDB Atlas resources. ...\n## Cloud Development Kit for Terraform\nCDK for Terraform leverages the MongoDB Atlas Atlas Administration API to enable provisioning across popular programming languages... \n## MongoDB Atlas AWS CloudFormation Resources\nAtlas CloudFormation Resources helps you to manage MongoDB Atlas. ...\n## Atlas Kubernetes Operator\nThe Atlas Kubernetes Operator enables you to manage Atlas resources through custom resources that you apply in Kubernetes.",
+      "retrieved_at": "2026-07-09T17:30:31.978Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.mongodb.com/docs/atlas/api/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783618231978_8",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://www.mongodb.com/docs/atlas/api/",
+      "source_title": "Atlas Programmatic Access - Atlas - MongoDB Docsarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightmenu-verticalarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightmenu-vertical",
+      "source_type": "official_doc",
+      "evidence_snippet": "You can interact with Atlas programmatically to perform administrative tasks or manage your deployments using the following resources.\n## Atlas Administration API\n## Atlas Go SDK\n### Atlas Embedding and Reranking API\n## Atlas CLI\n## HashiCorp Terraform MongoDB Atlas Provider\n## Cloud Development Kit for Terraform\n## MongoDB Atlas AWS CloudFormation Resources\n## AWS Partner Solutions\n## AWS Cloud Development Kit\n## Atlas Kubernetes Operator",
+      "retrieved_at": "2026-07-09T17:30:31.978Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.mongodb.com/docs/atlas/api/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783618231978_9",
+      "claim_field": "mcp.mcp_status",
+      "claim": "official",
+      "source_url": "https://www.mongodb.com/docs/atlas/api/",
+      "source_title": "Atlas Programmatic Access - Atlas - MongoDB Docsarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightmenu-verticalarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightarrow-rightmenu-vertical",
+      "source_type": "official_doc",
+      "evidence_snippet": "For AI agents: a documentation index is available at https://www.mongodb.com/docs/llms.txt — markdown versions of all pages are available by appending .md to any URL path.\n### Atlas Embedding and Reranking API\nThe Embedding and Reranking API provides endpoints for accessing Voyage AI's state-of-the-art embedding and reranking models. Use the REST API and available client SDKs to power search and retrieval in your AI applications.",
+      "retrieved_at": "2026-07-09T17:30:31.978Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.mongodb.com/docs/atlas/api/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 68,
+      "app_name": "MongoDB Atlas",
+      "website_hint": "mongodb.com/docs/atlas/api",
+      "assigned_category": "Developer, Infra and Data platforms",
+      "researched_at": "2026-07-09T17:30:31.978Z"
+    },
+    "product": {
+      "normalized_category": "Developer, Infra and Data platforms",
+      "one_line_description": "MongoDB Atlas provides a suite of programmatic tools and APIs, including an Administration API, SDKs, CLI, and integration with Infrastructure as Code platforms, to manage Atlas deployments and access AI capabilities like embedding and reranking models."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "The documentation mentions configuring access for the Atlas Administration API, but does not explicitly state the authentication methods (e.g., API keys, OAuth2, bearer tokens). Therefore, the specific authentication methods are unclear from the provided source."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": "unknown",
+      "access_notes": "The source refers to 'Get Started with the Atlas Administration API' for configuring access, but it does not specify whether obtaining API credentials is self-serve (free/paid) or requires human approval (sales/admin/partner gated)."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "REST",
+        "SDK",
+        "CLI",
+        "other"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "MongoDB Atlas offers a broad public API surface including the Atlas Administration API (RESTful with endpoints), Atlas Go SDK, Atlas CLI, and an Atlas Embedding and Reranking API. It also supports Infrastructure as Code tools like HashiCorp Terraform, Cloud Development Kit for Terraform, AWS CloudFormation, AWS CDK, and the Atlas Kubernetes Operator, which leverage underlying APIs."
+    },
+    "mcp": {
+      "mcp_status": "official",
+      "mcp_summary": "MongoDB Atlas provides an 'Atlas Embedding and Reranking API' for accessing state-of-the-art embedding and reranking models from Voyage AI, and specifically notes a documentation index for AI agents at 'https://www.mongodb.com/docs/llms.txt'."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient.",
+      "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0.5,
+        "access_model": 0.5,
+        "public_api": 1,
+        "api_breadth": 1,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.8,
+      "requires_human_review": false,
+      "human_review_reason": null
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_access_model_unclear",
+    "risk_auth_methods_unclear",
+    "risk_material_evidence_validation_failed",
+    "risk_contradictory_claims",
+    "risk_verdict_unclear"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_access_model_unclear",
+      "risk_auth_methods_unclear",
+      "risk_material_evidence_validation_failed",
+      "risk_contradictory_claims",
+      "risk_verdict_unclear"
+    ]
+  }
+}

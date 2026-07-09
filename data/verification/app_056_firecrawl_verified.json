@@ -1,0 +1,92 @@
+{
+  "assignment_number": 56,
+  "app_name": "Firecrawl",
+  "assigned_category": "Data, SEO and Scraping",
+  "processing_mode": "deep_verified",
+  "baseline_fields": {
+    "auth_methods": [
+      "api_key",
+      "bearer_token",
+      "oauth2"
+    ],
+    "access_model": "self_serve_free",
+    "credentials_obtainable_without_approval": true,
+    "public_api_status": "yes",
+    "api_breadth": "broad",
+    "mcp_status": "official",
+    "buildability_verdict": "BUILD_NOW",
+    "primary_blocker": null
+  },
+  "verified_fields": {
+    "auth_methods": {
+      "verified_value": [
+        "api_key",
+        "bearer_token",
+        "oauth2"
+      ],
+      "evidence_url": "https://docs.firecrawl.dev/api-reference/introduction",
+      "concise_evidence_snippet": "Authorization header. Bearer fc-123456789 represents your API Key. Hosted Firecrawl can issue OAuth access tokens.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "access_model": {
+      "verified_value": "self_serve_free",
+      "evidence_url": "https://firecrawl.dev/pricing",
+      "concise_evidence_snippet": "Free Plan - No cost, no card, no hassle. 1,000 credits / month. Get started.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "credentials_obtainable_without_approval": {
+      "verified_value": true,
+      "evidence_url": "https://firecrawl.dev/docs",
+      "concise_evidence_snippet": "Get your API key. Sign up and get your API key to start using Firecrawl.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "public_api_status": {
+      "verified_value": "yes",
+      "evidence_url": "https://firecrawl.dev/docs",
+      "concise_evidence_snippet": "curl -s -X POST \"https://api.firecrawl.dev/v2/search\" -H \"Content-Type: application/json\"",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "api_breadth": {
+      "verified_value": "broad",
+      "evidence_url": "https://firecrawl.dev/docs",
+      "concise_evidence_snippet": "Search, Scrape, Interact. Also: Crawl, Map, Extract, Monitor, Agent. Extensive list of tools available.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "mcp_status": {
+      "verified_value": "official",
+      "evidence_url": "https://github.com/firecrawl/firecrawl-mcp-server",
+      "concise_evidence_snippet": "🔥 Official Firecrawl MCP Server - Adds powerful web scraping and search to Cursor, Claude and any other LLM clients.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "buildability_verdict": {
+      "verified_value": "BUILD_NOW",
+      "evidence_url": "https://firecrawl.dev/docs",
+      "concise_evidence_snippet": "Public API, self-serve free tier, credentials without approval, broad functionality, clear pricing, and comprehensive docs.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "primary_blocker": {
+      "verified_value": null,
+      "evidence_url": "https://firecrawl.dev/docs",
+      "concise_evidence_snippet": "No primary blocker found given the 'BUILD_NOW' verdict.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "unclear_diagnosis": "not_applicable"
+  },
+  "verified_at": "2026-07-09T18:54:34.331Z"
+}

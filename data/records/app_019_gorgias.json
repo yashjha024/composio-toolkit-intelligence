@@ -1,0 +1,300 @@
+{
+  "identity": {
+    "assignment_number": 19,
+    "app_name": "Gorgias",
+    "website_hint": "gorgias.com",
+    "assigned_category": "Support and Helpdesk",
+    "researched_at": "2026-07-09T16:57:36.646Z"
+  },
+  "product": {
+    "normalized_category": "Support and Helpdesk",
+    "one_line_description": "Gorgias is an AI-powered helpdesk platform designed for e-commerce brands to automate customer support and drive sales through personalized conversations across multiple channels."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "The provided source does not specify the authentication methods available for developers to access Gorgias's API. It mentions 'one click to install' for Shopify and '300+ integrations' but no details on API authentication."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": "unknown",
+    "access_notes": "The source page does not provide information on how developers can obtain API credentials for Gorgias. Calls to action are 'Book a demo' and 'Discover pricing' for product access, not API access. While it mentions 'one click to install' for Shopify, this refers to customer onboarding for the Gorgias application itself, not self-serve developer access to Gorgias's API."
+  },
+  "api_surface": {
+    "public_api": "unclear",
+    "api_styles": [],
+    "api_breadth": "unclear",
+    "api_summary": "The existence of '300+ integrations' and a 'Native Shopify integration' suggests Gorgias likely has an underlying API. However, the provided source does not explicitly mention a public API for developers to build against, nor does it detail API styles or breadth of available endpoints."
+  },
+  "mcp": {
+    "mcp_status": "none_found",
+    "mcp_summary": "There is no mention of Model Context Protocol or similar server availability in the provided source."
+  },
+  "buildability": {
+    "verdict": "unclear",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 0.5,
+      "access_model": 0.5,
+      "public_api": 0.5,
+      "api_breadth": 0.5,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.6,
+    "requires_human_review": true,
+    "human_review_reason": "No explicit mention of a public API, developer portal, or API authentication methods. The 'integrations' section indicates API usage, but not developer access to Gorgias's API."
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783616256646_0",
+      "claim_field": "product.one_line_description",
+      "claim": "Gorgias is an AI-powered helpdesk platform designed for e-commerce brands to automate customer support and drive sales through personalized conversations across multiple channels.",
+      "source_url": "https://www.gorgias.com/",
+      "source_title": "The Conversational AI platform for Ecommerce | Gorgias",
+      "source_type": "official_doc",
+      "evidence_snippet": "The #1 Helpdesk + AI Agent built to drive sales. Turn browsers into buyers and automate routine support from one unified platform trained on your brand.",
+      "retrieved_at": "2026-07-09T16:57:36.646Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.gorgias.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616256646_1",
+      "claim_field": "api_surface.public_api",
+      "claim": "unclear",
+      "source_url": "https://www.gorgias.com/",
+      "source_title": "The Conversational AI platform for Ecommerce | Gorgias",
+      "source_type": "official_doc",
+      "evidence_snippet": "300+ integrations Recharge, Klaviyo, Yotpo, and more connected out of the box",
+      "retrieved_at": "2026-07-09T16:57:36.646Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.gorgias.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616256646_2",
+      "claim_field": "api_surface.public_api",
+      "claim": "unclear",
+      "source_url": "https://www.gorgias.com/",
+      "source_title": "The Conversational AI platform for Ecommerce | Gorgias",
+      "source_type": "official_doc",
+      "evidence_snippet": "Native Shopify integration Pull up any order, customer, or product without leaving the ticket",
+      "retrieved_at": "2026-07-09T16:57:36.646Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.gorgias.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616256646_3",
+      "claim_field": "developer_access.access_notes",
+      "claim": "The source page does not provide information on how developers can obtain API credentials for Gorgias. Calls to action are 'Book a demo' and 'Discover pricing' for product access, not API access. While it mentions 'one click to install' for Shopify, this refers to customer onboarding for the Gorgias application itself, not self-serve developer access to Gorgias's API.",
+      "source_url": "https://www.gorgias.com/",
+      "source_title": "The Conversational AI platform for Ecommerce | Gorgias",
+      "source_type": "official_doc",
+      "evidence_snippet": "[Discover pricing](/wip/legacy/pricing)[Book a demo](/demo)",
+      "retrieved_at": "2026-07-09T16:57:36.646Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.gorgias.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616256646_4",
+      "claim_field": "developer_access.access_notes",
+      "claim": "The source page does not provide information on how developers can obtain API credentials for Gorgias. Calls to action are 'Book a demo' and 'Discover pricing' for product access, not API access. While it mentions 'one click to install' for Shopify, this refers to customer onboarding for the Gorgias application itself, not self-serve developer access to Gorgias's API.",
+      "source_url": "https://www.gorgias.com/",
+      "source_title": "The Conversational AI platform for Ecommerce | Gorgias",
+      "source_type": "official_doc",
+      "evidence_snippet": "Native Shopify integration One click to install.",
+      "retrieved_at": "2026-07-09T16:57:36.646Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.gorgias.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616256646_5",
+      "claim_field": "mcp.mcp_status",
+      "claim": "none_found",
+      "source_url": "https://www.gorgias.com/",
+      "source_title": "The Conversational AI platform for Ecommerce | Gorgias",
+      "source_type": "official_doc",
+      "evidence_snippet": "Built on a direct OpenAI partnership. Deeper model access. AI fine-tuned for product recommendations, order management, and brand voice. A real integration.",
+      "retrieved_at": "2026-07-09T16:57:36.646Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.gorgias.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 19,
+      "app_name": "Gorgias",
+      "website_hint": "gorgias.com",
+      "assigned_category": "Support and Helpdesk",
+      "researched_at": "2026-07-09T16:57:36.646Z"
+    },
+    "product": {
+      "normalized_category": "Support and Helpdesk",
+      "one_line_description": "Gorgias is an AI-powered helpdesk platform designed for e-commerce brands to automate customer support and drive sales through personalized conversations across multiple channels."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "The provided source does not specify the authentication methods available for developers to access Gorgias's API. It mentions 'one click to install' for Shopify and '300+ integrations' but no details on API authentication."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": "unknown",
+      "access_notes": "The source page does not provide information on how developers can obtain API credentials for Gorgias. Calls to action are 'Book a demo' and 'Discover pricing' for product access, not API access. While it mentions 'one click to install' for Shopify, this refers to customer onboarding for the Gorgias application itself, not self-serve developer access to Gorgias's API."
+    },
+    "api_surface": {
+      "public_api": "unclear",
+      "api_styles": [],
+      "api_breadth": "unclear",
+      "api_summary": "The existence of '300+ integrations' and a 'Native Shopify integration' suggests Gorgias likely has an underlying API. However, the provided source does not explicitly mention a public API for developers to build against, nor does it detail API styles or breadth of available endpoints."
+    },
+    "mcp": {
+      "mcp_status": "none_found",
+      "mcp_summary": "There is no mention of Model Context Protocol or similar server availability in the provided source."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient.",
+      "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0.5,
+        "access_model": 0.5,
+        "public_api": 0.5,
+        "api_breadth": 0.5,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.6,
+      "requires_human_review": true,
+      "human_review_reason": "No explicit mention of a public API, developer portal, or API authentication methods. The 'integrations' section indicates API usage, but not developer access to Gorgias's API."
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_access_model_unclear",
+    "risk_auth_methods_unclear",
+    "risk_public_api_unclear",
+    "risk_material_evidence_validation_failed",
+    "risk_verdict_unclear",
+    "risk_low_confidence"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_access_model_unclear",
+      "risk_auth_methods_unclear",
+      "risk_public_api_unclear",
+      "risk_material_evidence_validation_failed",
+      "risk_verdict_unclear",
+      "risk_low_confidence"
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "assignment_number": 1,
+  "app_name": "Salesforce",
+  "assigned_category": "CRM and Sales",
+  "processing_mode": "deep_verified",
+  "baseline_fields": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "access_model": "unclear",
+    "credentials_obtainable_without_approval": "unknown",
+    "public_api_status": "unclear",
+    "api_breadth": "unclear",
+    "mcp_status": "unclear",
+    "buildability_verdict": "UNCLEAR",
+    "primary_blocker": "Research data ambiguous or insufficient."
+  },
+  "verified_fields": {
+    "auth_methods": {
+      "verified_value": [
+        "unclear"
+      ],
+      "evidence_url": "",
+      "concise_evidence_snippet": "",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "access_model": {
+      "verified_value": "self-serve_free_and_paid",
+      "evidence_url": "https://salesforce.com/pricing",
+      "concise_evidence_snippet": "Calculate pricing Start for free ... See all Agentforce pricing ... See all Small Business pricing",
+      "baseline_classification": "incorrect",
+      "correction_required": true,
+      "failure_mode": "extraction_error"
+    },
+    "credentials_obtainable_without_approval": {
+      "verified_value": true,
+      "evidence_url": "https://salesforce.com/pricing",
+      "concise_evidence_snippet": "Start for free ... Help small businesses sell smarter and support faster in a single app.",
+      "baseline_classification": "incorrect",
+      "correction_required": true,
+      "failure_mode": "extraction_error"
+    },
+    "public_api_status": {
+      "verified_value": "documented_and_available",
+      "evidence_url": "https://salesforce.com/pricing",
+      "concise_evidence_snippet": "MuleSoft: Connect any app, data, or device — in the cloud or on-premises. AI App Dev: Build, customize, and configure",
+      "baseline_classification": "incorrect",
+      "correction_required": true,
+      "failure_mode": "extraction_error"
+    },
+    "api_breadth": {
+      "verified_value": "full",
+      "evidence_url": "https://salesforce.com/pricing",
+      "concise_evidence_snippet": "MuleSoft: Connect any app, data, or device — in the cloud or on-premises. AI App Dev: Build, customize, and configure",
+      "baseline_classification": "incorrect",
+      "correction_required": true,
+      "failure_mode": "extraction_error"
+    },
+    "mcp_status": {
+      "verified_value": "available",
+      "evidence_url": "https://salesforce.com/pricing",
+      "concise_evidence_snippet": "MuleSoft: Connect any app, data, or device — in the cloud or on-premises.",
+      "baseline_classification": "incorrect",
+      "correction_required": true,
+      "failure_mode": "extraction_error"
+    },
+    "buildability_verdict": {
+      "verified_value": "BUILD_NOW",
+      "evidence_url": "https://salesforce.com/pricing",
+      "concise_evidence_snippet": "Start for free...MuleSoft: Connect any app, data, or device — in the cloud or on-premises. AI App Dev: Build, customize, and configure",
+      "baseline_classification": "incorrect",
+      "correction_required": true,
+      "failure_mode": "conservative_guardrail"
+    },
+    "primary_blocker": {
+      "verified_value": null,
+      "evidence_url": "",
+      "concise_evidence_snippet": "",
+      "baseline_classification": "incorrect",
+      "correction_required": true,
+      "failure_mode": "extraction_error"
+    },
+    "unclear_diagnosis": "false_unclear_due_to_guardrails"
+  },
+  "verified_at": "2026-07-09T18:54:38.698Z"
+}

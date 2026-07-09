@@ -1,0 +1,88 @@
+{
+  "assignment_number": 96,
+  "app_name": "Devin",
+  "assigned_category": "AI, Research and Media-native",
+  "processing_mode": "fast_scale",
+  "baseline_fields": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "access_model": "unclear",
+    "credentials_obtainable_without_approval": false,
+    "public_api_status": "yes",
+    "api_breadth": "unclear",
+    "mcp_status": "none_found",
+    "buildability_verdict": "UNCLEAR",
+    "primary_blocker": "Research data ambiguous or insufficient."
+  },
+  "verified_fields": {
+    "auth_methods": {
+      "verified_value": [
+        "unclear"
+      ],
+      "evidence_url": "https://docs.devin.ai/get-started/devin-intro",
+      "concise_evidence_snippet": "there is no direct information on how to obtain API credentials for the 'Devin API' or if these credentials can be obtained without human approval.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "access_model": {
+      "verified_value": "subscription",
+      "evidence_url": "https://docs.devin.ai/get-started/devin-intro",
+      "concise_evidence_snippet": "To access Devin, sign up at [app.devin.ai]. Individual and Teams plans are available.",
+      "baseline_classification": "incorrect",
+      "correction_required": true,
+      "failure_mode": "extraction_error"
+    },
+    "credentials_obtainable_without_approval": {
+      "verified_value": false,
+      "evidence_url": "https://docs.devin.ai/get-started/devin-intro",
+      "concise_evidence_snippet": "there is no direct information on how to obtain API credentials for the 'Devin API' or if these credentials can be obtained without human approval.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "public_api_status": {
+      "verified_value": "yes",
+      "evidence_url": "https://docs.devin.ai/get-started/devin-intro",
+      "concise_evidence_snippet": "Devin is also available via the [Devin API](/api-reference/overview).",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "api_breadth": {
+      "verified_value": "api, cli, sdk",
+      "evidence_url": "https://docs.devin.ai/get-started/devin-intro",
+      "concise_evidence_snippet": "Devin is also available via the [Devin API]. Install Devin CLI — use Devin directly from your command line. Claim: SDK",
+      "baseline_classification": "incorrect",
+      "correction_required": true,
+      "failure_mode": "extraction_error"
+    },
+    "mcp_status": {
+      "verified_value": "none_found",
+      "evidence_url": "https://docs.devin.ai/get-started/devin-intro",
+      "concise_evidence_snippet": "No explicit mention of a Managed Cloud Provider (MCP) in the provided documentation snippets.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "buildability_verdict": {
+      "verified_value": "UNCLEAR",
+      "evidence_url": "https://docs.devin.ai/get-started/devin-intro",
+      "concise_evidence_snippet": "no direct information on how to obtain API credentials or if these can be obtained without human approval.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "primary_blocker": {
+      "verified_value": "Research data ambiguous or insufficient.",
+      "evidence_url": "https://docs.devin.ai/get-started/devin-intro",
+      "concise_evidence_snippet": "no direct information on how to obtain API credentials for the 'Devin API' or if these credentials can be obtained without human approval.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "unclear_diagnosis": "genuinely_unclear"
+  },
+  "verified_at": "2026-07-09T18:55:05.392Z"
+}

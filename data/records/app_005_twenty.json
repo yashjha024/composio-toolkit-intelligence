@@ -1,0 +1,741 @@
+{
+  "identity": {
+    "assignment_number": 5,
+    "app_name": "Twenty",
+    "website_hint": "twenty.com (open-source CRM)",
+    "assigned_category": "CRM and Sales",
+    "researched_at": "2026-07-09T15:53:21.636Z"
+  },
+  "product": {
+    "normalized_category": "CRM and Sales",
+    "one_line_description": "Twenty is an open-source CRM designed for AI, providing building blocks for technical teams to create custom CRM solutions."
+  },
+  "authentication": {
+    "auth_methods": [
+      "oauth2"
+    ],
+    "auth_summary": "Twenty supports OAuth for authentication with its APIs."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": true,
+    "access_notes": "Developers can self-host Twenty on their own infrastructure, providing free access to its APIs and tools. Alternatively, a 30-day trial is available for the managed cloud service which can be signed up for in under a minute, after which the cloud service becomes paid ($9/user/month for Pro)."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "REST",
+      "GraphQL",
+      "webhooks",
+      "SDK",
+      "CLI"
+    ],
+    "api_breadth": "broad",
+    "api_summary": "Twenty offers REST and GraphQL APIs, webhooks, an SDK (twenty-sdk) for defining objects and extending functionality, and a CLI (create-twenty-app) for scaffolding apps. It allows extensive customization through custom objects, server-side logic, UI components, and AI agents, all as TypeScript packages."
+  },
+  "mcp": {
+    "mcp_status": "official",
+    "mcp_summary": "Every Cloud workspace ships with a native MCP (Model Context Protocol) server. AI assistants can connect via OAuth to read and write CRM data in natural language."
+  },
+  "buildability": {
+    "verdict": "unclear",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 0.9,
+      "access_model": 0.9,
+      "public_api": 1,
+      "api_breadth": 0.9,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.95,
+    "requires_human_review": false,
+    "human_review_reason": null
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783612401636_0",
+      "claim_field": "product.one_line_description",
+      "claim": "Twenty is an open-source CRM designed for AI, providing building blocks for technical teams to create custom CRM solutions.",
+      "source_url": "https://github.com/twentyhq/twenty",
+      "source_title": "GitHub - twentyhq/twenty: The open alternative to Salesforce, designed for AI. · GitHub",
+      "source_type": "github_repo",
+      "evidence_snippet": "The open alternative to Salesforce, designed for AI.",
+      "retrieved_at": "2026-07-09T15:53:21.636Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://github.com/twentyhq/twenty"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612401636_1",
+      "claim_field": "product.one_line_description",
+      "claim": "Twenty is an open-source CRM designed for AI, providing building blocks for technical teams to create custom CRM solutions.",
+      "source_url": "https://twenty.com/",
+      "source_title": "Twenty | #1 Open Source CRM",
+      "source_type": "official_doc",
+      "evidence_snippet": "Twenty gives technical teams the building blocks for a custom CRM that meets complex business needs and quickly adapts as the business evolves.",
+      "retrieved_at": "2026-07-09T15:53:21.636Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://twenty.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612401636_2",
+      "claim_field": "authentication.auth_methods",
+      "claim": "oauth2",
+      "source_url": "https://docs.twenty.com/developers/introduction",
+      "source_title": "Developers - Twenty Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "REST and GraphQL APIs, webhooks, and OAuth.",
+      "retrieved_at": "2026-07-09T15:53:21.636Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.twenty.com/developers/introduction"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612401636_3",
+      "claim_field": "developer_access.access_model",
+      "claim": "self_serve_free",
+      "source_url": "https://docs.twenty.com/developers/introduction",
+      "source_title": "Developers - Twenty Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Run Twenty on your own infrastructure.",
+      "retrieved_at": "2026-07-09T15:53:21.636Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.twenty.com/developers/introduction"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612401636_4",
+      "claim_field": "developer_access.access_model",
+      "claim": "self_serve_free",
+      "source_url": "https://twenty.com/",
+      "source_title": "Twenty | #1 Open Source CRM",
+      "source_type": "official_doc",
+      "evidence_snippet": "Yes. Twenty is the #1 Open Source CRM on GitHub. You can self-host to fully own your infrastructure, or run it on our managed cloud for a zero-ops setup.",
+      "retrieved_at": "2026-07-09T15:53:21.636Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://twenty.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612401636_5",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": true,
+      "source_url": "https://twenty.com/",
+      "source_title": "Twenty | #1 Open Source CRM",
+      "source_type": "official_doc",
+      "evidence_snippet": "Sign up for Cloud in under a minute and start your 30-day trial.",
+      "retrieved_at": "2026-07-09T15:53:21.636Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://twenty.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612401636_6",
+      "claim_field": "developer_access.access_notes",
+      "claim": "Developers can self-host Twenty on their own infrastructure, providing free access to its APIs and tools. Alternatively, a 30-day trial is available for the managed cloud service which can be signed up for in under a minute, after which the cloud service becomes paid ($9/user/month for Pro).",
+      "source_url": "https://docs.twenty.com/developers/introduction",
+      "source_title": "Developers - Twenty Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Run Twenty on your own infrastructure.",
+      "retrieved_at": "2026-07-09T15:53:21.636Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.twenty.com/developers/introduction"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612401636_7",
+      "claim_field": "developer_access.access_notes",
+      "claim": "Developers can self-host Twenty on their own infrastructure, providing free access to its APIs and tools. Alternatively, a 30-day trial is available for the managed cloud service which can be signed up for in under a minute, after which the cloud service becomes paid ($9/user/month for Pro).",
+      "source_url": "https://twenty.com/",
+      "source_title": "Twenty | #1 Open Source CRM",
+      "source_type": "official_doc",
+      "evidence_snippet": "Sign up for Cloud in under a minute and start your 30-day trial.",
+      "retrieved_at": "2026-07-09T15:53:21.636Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://twenty.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612401636_8",
+      "claim_field": "developer_access.access_notes",
+      "claim": "Developers can self-host Twenty on their own infrastructure, providing free access to its APIs and tools. Alternatively, a 30-day trial is available for the managed cloud service which can be signed up for in under a minute, after which the cloud service becomes paid ($9/user/month for Pro).",
+      "source_url": "https://twenty.com/",
+      "source_title": "Twenty | #1 Open Source CRM",
+      "source_type": "official_doc",
+      "evidence_snippet": "Cloud Pro is $9/user/month (yearly). Organization is $19/user/month and unlocks SSO and row-level permissions for teams that need finer access control.",
+      "retrieved_at": "2026-07-09T15:53:21.636Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://twenty.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612401636_9",
+      "claim_field": "developer_access.access_notes",
+      "claim": "Developers can self-host Twenty on their own infrastructure, providing free access to its APIs and tools. Alternatively, a 30-day trial is available for the managed cloud service which can be signed up for in under a minute, after which the cloud service becomes paid ($9/user/month for Pro).",
+      "source_url": "https://github.com/twentyhq/twenty",
+      "source_title": "GitHub - twentyhq/twenty: The open alternative to Salesforce, designed for AI. · GitHub",
+      "source_type": "github_repo",
+      "evidence_snippet": "Scaffold a new app with the Twenty CLI:\nnpx create-twenty-app my-app",
+      "retrieved_at": "2026-07-09T15:53:21.636Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://github.com/twentyhq/twenty"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612401636_10",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://docs.twenty.com/developers/introduction",
+      "source_title": "Developers - Twenty Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "REST and GraphQL APIs, webhooks, and OAuth.",
+      "retrieved_at": "2026-07-09T15:53:21.636Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.twenty.com/developers/introduction"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612401636_11",
+      "claim_field": "api_surface.api_styles",
+      "claim": "REST",
+      "source_url": "https://docs.twenty.com/developers/introduction",
+      "source_title": "Developers - Twenty Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "REST and GraphQL APIs, webhooks, and OAuth.",
+      "retrieved_at": "2026-07-09T15:53:21.636Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.twenty.com/developers/introduction"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612401636_12",
+      "claim_field": "api_surface.api_styles",
+      "claim": "GraphQL",
+      "source_url": "https://docs.twenty.com/developers/introduction",
+      "source_title": "Developers - Twenty Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "REST and GraphQL APIs, webhooks, and OAuth.",
+      "retrieved_at": "2026-07-09T15:53:21.636Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.twenty.com/developers/introduction"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612401636_13",
+      "claim_field": "api_surface.api_styles",
+      "claim": "webhooks",
+      "source_url": "https://docs.twenty.com/developers/introduction",
+      "source_title": "Developers - Twenty Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "REST and GraphQL APIs, webhooks, and OAuth.",
+      "retrieved_at": "2026-07-09T15:53:21.636Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.twenty.com/developers/introduction"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612401636_14",
+      "claim_field": "api_surface.api_styles",
+      "claim": "SDK",
+      "source_url": "https://github.com/twentyhq/twenty",
+      "source_title": "GitHub - twentyhq/twenty: The open alternative to Salesforce, designed for AI. · GitHub",
+      "source_type": "github_repo",
+      "evidence_snippet": "import { defineObject, FieldType } from 'twenty-sdk/define';",
+      "retrieved_at": "2026-07-09T15:53:21.636Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://github.com/twentyhq/twenty"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612401636_15",
+      "claim_field": "api_surface.api_styles",
+      "claim": "CLI",
+      "source_url": "https://github.com/twentyhq/twenty",
+      "source_title": "GitHub - twentyhq/twenty: The open alternative to Salesforce, designed for AI. · GitHub",
+      "source_type": "github_repo",
+      "evidence_snippet": "Scaffold a new app with the Twenty CLI:\nnpx create-twenty-app my-app",
+      "retrieved_at": "2026-07-09T15:53:21.636Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://github.com/twentyhq/twenty"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612401636_16",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://docs.twenty.com/developers/introduction",
+      "source_title": "Developers - Twenty Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Extend Twenty with custom objects, server-side logic, UI components, and AI agents — all as TypeScript packages.",
+      "retrieved_at": "2026-07-09T15:53:21.636Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.twenty.com/developers/introduction"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612401636_17",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://github.com/twentyhq/twenty",
+      "source_title": "GitHub - twentyhq/twenty: The open alternative to Salesforce, designed for AI. · GitHub",
+      "source_type": "github_repo",
+      "evidence_snippet": "Twenty gives technical teams the building blocks for a custom CRM that meets complex business needs and quickly adapts as the business evolves. Twenty is the CRM you build, ship, and version like the rest of your stack.",
+      "retrieved_at": "2026-07-09T15:53:21.636Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://github.com/twentyhq/twenty"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612401636_18",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://twenty.com/",
+      "source_title": "Twenty | #1 Open Source CRM",
+      "source_type": "official_doc",
+      "evidence_snippet": "Compose your CRM and internal apps with a single extensibility toolkit. Data model, layout, and automation.",
+      "retrieved_at": "2026-07-09T15:53:21.636Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://twenty.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612401636_19",
+      "claim_field": "mcp.mcp_status",
+      "claim": "official",
+      "source_url": "https://twenty.com/",
+      "source_title": "Twenty | #1 Open Source CRM",
+      "source_type": "official_doc",
+      "evidence_snippet": "Every Cloud workspace ships with a native MCP server. Connect your AI assistant via OAuth and it can read and write your CRM data in natural language.",
+      "retrieved_at": "2026-07-09T15:53:21.636Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://twenty.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612401636_20",
+      "claim_field": "mcp.mcp_summary",
+      "claim": "Every Cloud workspace ships with a native MCP (Model Context Protocol) server. AI assistants can connect via OAuth to read and write CRM data in natural language.",
+      "source_url": "https://twenty.com/",
+      "source_title": "Twenty | #1 Open Source CRM",
+      "source_type": "official_doc",
+      "evidence_snippet": "Every Cloud workspace ships with a native MCP server. Connect your AI assistant via OAuth and it can read and write your CRM data in natural language.",
+      "retrieved_at": "2026-07-09T15:53:21.636Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://twenty.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 5,
+      "app_name": "Twenty",
+      "website_hint": "twenty.com (open-source CRM)",
+      "assigned_category": "CRM and Sales",
+      "researched_at": "2026-07-09T15:53:21.636Z"
+    },
+    "product": {
+      "normalized_category": "CRM and Sales",
+      "one_line_description": "Twenty is an open-source CRM designed for AI, providing building blocks for technical teams to create custom CRM solutions."
+    },
+    "authentication": {
+      "auth_methods": [
+        "oauth2"
+      ],
+      "auth_summary": "Twenty supports OAuth for authentication with its APIs."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": true,
+      "access_notes": "Developers can self-host Twenty on their own infrastructure, providing free access to its APIs and tools. Alternatively, a 30-day trial is available for the managed cloud service which can be signed up for in under a minute, after which the cloud service becomes paid ($9/user/month for Pro)."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "REST",
+        "GraphQL",
+        "webhooks",
+        "SDK",
+        "CLI"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "Twenty offers REST and GraphQL APIs, webhooks, an SDK (twenty-sdk) for defining objects and extending functionality, and a CLI (create-twenty-app) for scaffolding apps. It allows extensive customization through custom objects, server-side logic, UI components, and AI agents, all as TypeScript packages."
+    },
+    "mcp": {
+      "mcp_status": "official",
+      "mcp_summary": "Every Cloud workspace ships with a native MCP (Model Context Protocol) server. AI assistants can connect via OAuth to read and write CRM data in natural language."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient.",
+      "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0.9,
+        "access_model": 0.9,
+        "public_api": 1,
+        "api_breadth": 0.9,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.95,
+      "requires_human_review": false,
+      "human_review_reason": null
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_access_model_unclear",
+    "risk_contradictory_claims",
+    "risk_verdict_unclear"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_access_model_unclear",
+      "risk_contradictory_claims",
+      "risk_verdict_unclear"
+    ]
+  }
+}

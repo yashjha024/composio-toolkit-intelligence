@@ -1,0 +1,88 @@
+{
+  "assignment_number": 15,
+  "app_name": "Pylon",
+  "assigned_category": "Support and Helpdesk",
+  "processing_mode": "fast_scale",
+  "baseline_fields": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "access_model": "sales_gated",
+    "credentials_obtainable_without_approval": false,
+    "public_api_status": "limited",
+    "api_breadth": "moderate",
+    "mcp_status": "none_found",
+    "buildability_verdict": "OUTREACH_REQUIRED",
+    "primary_blocker": "Access requires contacting enterprise sales team."
+  },
+  "verified_fields": {
+    "auth_methods": {
+      "verified_value": [
+        "unclear"
+      ],
+      "evidence_url": "",
+      "concise_evidence_snippet": "No information found regarding authentication methods in the provided documentation.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "access_model": {
+      "verified_value": "sales_gated",
+      "evidence_url": "https://usepylon.com/pricing",
+      "concise_evidence_snippet": "\"Get started\" buttons for all plans link to \"/schedule-demo\", indicating sales interaction is required.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "credentials_obtainable_without_approval": {
+      "verified_value": false,
+      "evidence_url": "https://usepylon.com/pricing",
+      "concise_evidence_snippet": "\"Get started\" for all plans requires scheduling a demo, preventing unapproved credential obtainment.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "public_api_status": {
+      "verified_value": "limited",
+      "evidence_url": "https://usepylon.com/pricing",
+      "concise_evidence_snippet": "\"API\" is listed as a feature in Professional plan. No public API documentation found.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "api_breadth": {
+      "verified_value": "unverifiable",
+      "evidence_url": "https://usepylon.com/",
+      "concise_evidence_snippet": "\"Automate repetitive tasks...\" and other snippets describe product features, not API breadth. No API docs available.",
+      "baseline_classification": "incorrect",
+      "correction_required": true,
+      "failure_mode": "extraction_error"
+    },
+    "mcp_status": {
+      "verified_value": "none_found",
+      "evidence_url": "https://usepylon.com/",
+      "concise_evidence_snippet": "No information found regarding marketplace, developer program, or partnership portal.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "buildability_verdict": {
+      "verified_value": "OUTREACH_REQUIRED",
+      "evidence_url": "https://usepylon.com/pricing",
+      "concise_evidence_snippet": "All \"Get started\" buttons on pricing page link to \"/schedule-demo\", requiring outreach.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "primary_blocker": {
+      "verified_value": "Access requires contacting enterprise sales team.",
+      "evidence_url": "https://usepylon.com/pricing",
+      "concise_evidence_snippet": "All \"Get started\" buttons on pricing page link to \"/schedule-demo\", requiring contact.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "unclear_diagnosis": "not_applicable"
+  },
+  "verified_at": "2026-07-09T18:54:39.450Z"
+}

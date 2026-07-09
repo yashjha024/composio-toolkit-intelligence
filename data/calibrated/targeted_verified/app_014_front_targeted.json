@@ -1,0 +1,30 @@
+{
+  "assignment_number": 14,
+  "app_name": "Front",
+  "assigned_category": "Support and Helpdesk",
+  "baseline_verdict": "UNCLEAR",
+  "calibrated_verdict": "UNCLEAR",
+  "exact_fields_to_verify": [
+    "access_model_unclear",
+    "auth_methods_unclear"
+  ],
+  "targeted_result": {
+    "verified_auth_methods": [
+      "unclear"
+    ],
+    "verified_access_model": "unclear",
+    "verified_credentials_obtainable_without_approval": false,
+    "verified_public_api_status": "yes",
+    "verified_api_breadth": "broad",
+    "verified_verdict": "UNCLEAR",
+    "primary_blocker": "Information on developer access model and API credentialing is absent from official documentation.",
+    "evidence_url": "https://front.com/",
+    "concise_evidence_snippet": "Official site mentions 160+ integrations but provides no details on developer API access, authentication methods, or self-service credential obtainment.",
+    "remaining_uncertainty": [
+      "access_model",
+      "auth_methods",
+      "credentials_obtainable_without_approval"
+    ]
+  },
+  "verified_at": "2026-07-09T19:00:11.097Z"
+}

@@ -1,0 +1,26 @@
+{
+  "assignment_number": 3,
+  "app_name": "Pipedrive",
+  "assigned_category": "CRM and Sales",
+  "baseline_verdict": "UNCLEAR",
+  "calibrated_verdict": "UNCLEAR",
+  "exact_fields_to_verify": [
+    "access_model_unclear"
+  ],
+  "targeted_result": {
+    "verified_auth_methods": [
+      "api_key",
+      "oauth2"
+    ],
+    "verified_access_model": "self_serve_free",
+    "verified_credentials_obtainable_without_approval": true,
+    "verified_public_api_status": "yes",
+    "verified_api_breadth": "broad",
+    "verified_verdict": "BUILD_NOW",
+    "primary_blocker": null,
+    "evidence_url": "https://developers.pipedrive.com/",
+    "concise_evidence_snippet": "Sign up for a Sandbox Account today to begin experimenting and developing in a risk free environment",
+    "remaining_uncertainty": []
+  },
+  "verified_at": "2026-07-09T18:59:44.680Z"
+}

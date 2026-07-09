@@ -1,0 +1,335 @@
+{
+  "identity": {
+    "assignment_number": 82,
+    "app_name": "Plaid",
+    "website_hint": "plaid.com/docs",
+    "assigned_category": "Finance and Fintech",
+    "researched_at": "2026-07-09T17:58:37.231Z"
+  },
+  "product": {
+    "normalized_category": "Finance and Fintech",
+    "one_line_description": "Plaid provides APIs for accessing financial data, initiating payments, verifying identity, preventing fraud, and supporting credit underwriting processes."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "The provided documentation does not explicitly detail the authentication methods required to access the Plaid API."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": "unknown",
+    "access_notes": "The documentation provides a 'Get started' link, but it does not specify whether API credentials can be obtained freely and without human approval, or if it requires a trial, paid plan, or sales/admin gating."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "REST",
+      "SDK"
+    ],
+    "api_breadth": "broad",
+    "api_summary": "Plaid offers a broad public API with numerous functionalities, including retrieving bank account information, balances, transaction data, investment holdings, liabilities, and supporting payments, identity verification, fraud prevention, and credit underwriting. It is accessible via server-side API libraries and integrates with API endpoints, suggesting RESTful interactions and SDK support."
+  },
+  "mcp": {
+    "mcp_status": "official",
+    "mcp_summary": "Plaid offers an official Model Context Protocol (MCP) Server for developer tooling, available via a GitHub repository labeled as 'Plaid MCP Server'."
+  },
+  "buildability": {
+    "verdict": "unclear",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 0,
+      "access_model": 0.1,
+      "public_api": 1,
+      "api_breadth": 1,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.7,
+    "requires_human_review": true,
+    "human_review_reason": "Authentication methods and the exact developer access model (e.g., self-serve, free, trial, or gated) for obtaining API credentials are not clearly specified in the provided documentation."
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783619917231_0",
+      "claim_field": "product.one_line_description",
+      "claim": "Plaid provides APIs for accessing financial data, initiating payments, verifying identity, preventing fraud, and supporting credit underwriting processes.",
+      "source_url": "https://plaid.com/docs/",
+      "source_title": "Home | Plaid Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "#### Auth\nRetrieve bank account information for ACH, wire, and other bank-to-bank transfers.\n#### Balance\nRetrieve real-time account balance information.\n#### Identity\nVerify users' financial account ownership and reduce fraud.\n#### Transfer\nSend and receive money end to end with Plaid.\n#### Transactions\nRetrieve transaction data for budgeting tools, expense management, and more.\n#### Investments\nView holdings and transactions from investment accounts.\n#### Liabilities\nAccess loan data, like balances and interest rates, for student loans, mortgages, and credit cards.\n#### Enrich\nAdd detailed information and insights to your existing transactions data.\n#### Identity Verification\nGlobal KYC compliance and anti-fraud. Verify user identity data and documents.\n#### Monitor\nUse with Identity Verification to enable sanction, PEP, and watchlist screening for anti-money laundering compliance.\n#### Protect\nPrevent fraud before it happens — at every step of the user lifecycle.\n#### Consumer Report (by Plaid Check)\nMake smarter credit and lending decisions with insights powered by Plaid Check.\n#### Assets\nAccess users' financial information for loan underwriting.\n#### Statements\nGet PDF statements directly from the user's bank, for underwriting verification and compliance.\n#### Income\nVerify income and employment, for lending use cases and more.",
+      "retrieved_at": "2026-07-09T17:58:37.231Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://plaid.com/docs/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619917231_1",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://plaid.com/docs/",
+      "source_title": "Home | Plaid Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "Hi! I'm Bill! You can ask me all about the Plaid API.",
+      "retrieved_at": "2026-07-09T17:58:37.231Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://plaid.com/docs/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619917231_2",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://plaid.com/docs/",
+      "source_title": "Home | Plaid Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "# Welcome to the Docs\n#### Here you'll find guides, resources, and references to build with Plaid.",
+      "retrieved_at": "2026-07-09T17:58:37.231Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://plaid.com/docs/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619917231_3",
+      "claim_field": "api_surface.api_styles",
+      "claim": "REST",
+      "source_url": "https://plaid.com/docs/",
+      "source_title": "Home | Plaid Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "#### API Reference\nExplore server-side API libraries and integrate with API endpoints",
+      "retrieved_at": "2026-07-09T17:58:37.231Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://plaid.com/docs/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619917231_4",
+      "claim_field": "api_surface.api_styles",
+      "claim": "SDK",
+      "source_url": "https://plaid.com/docs/",
+      "source_title": "Home | Plaid Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "#### API Reference\nExplore server-side API libraries and integrate with API endpoints",
+      "retrieved_at": "2026-07-09T17:58:37.231Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://plaid.com/docs/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619917231_5",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://plaid.com/docs/",
+      "source_title": "Home | Plaid Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "#### Auth\nRetrieve bank account information for ACH, wire, and other bank-to-bank transfers.\n#### Balance\nRetrieve real-time account balance information.\n#### Identity\nVerify users' financial account ownership and reduce fraud.\n#### Signal Transaction Scores\nReduce fraud and provide instant funds access by assessing the return risk of an ACH debit transaction.\n#### Transfer\nSend and receive money end to end with Plaid.\n#### Investments Move\nGet verified data for initiating an ACATS or ATON brokerage-to-brokerage transfer.\n#### Payments (Europe)\nMake one-time payments, recurring payments, or payouts within your app.\n#### Transactions\nRetrieve transaction data for budgeting tools, expense management, and more.\n#### Investments\nView holdings and transactions from investment accounts.\n#### Liabilities\nAccess loan data, like balances and interest rates, for student loans, mortgages, and credit cards.\n#### Enrich\nAdd detailed information and insights to your existing transactions data.\n#### Identity Verification\nGlobal KYC compliance and anti-fraud. Verify user identity data and documents.\n#### Monitor\nUse with Identity Verification to enable sanction, PEP, and watchlist screening for anti-money laundering compliance.\n#### Protect\nPrevent fraud before it happens — at every step of the user lifecycle.\n#### Consumer Report (by Plaid Check)\nMake smarter credit and lending decisions with insights powered by Plaid Check.\n#### Assets\nAccess users' financial information for loan underwriting.\n#### Statements\nGet PDF statements directly from the user's bank, for underwriting verification and compliance.\n#### Income\nVerify income and employment, for lending use cases and more.\n#### Layer\nOnboard users instantly with just a phone number.",
+      "retrieved_at": "2026-07-09T17:58:37.231Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://plaid.com/docs/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619917231_6",
+      "claim_field": "mcp.mcp_status",
+      "claim": "official",
+      "source_url": "https://plaid.com/docs/",
+      "source_title": "Home | Plaid Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "Plug me in via the [Plaid MCP Server](https://github.com/plaid/ai-coding-toolkit/tree/main/sandbox).",
+      "retrieved_at": "2026-07-09T17:58:37.231Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://plaid.com/docs/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 82,
+      "app_name": "Plaid",
+      "website_hint": "plaid.com/docs",
+      "assigned_category": "Finance and Fintech",
+      "researched_at": "2026-07-09T17:58:37.231Z"
+    },
+    "product": {
+      "normalized_category": "Finance and Fintech",
+      "one_line_description": "Plaid provides APIs for accessing financial data, initiating payments, verifying identity, preventing fraud, and supporting credit underwriting processes."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "The provided documentation does not explicitly detail the authentication methods required to access the Plaid API."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": "unknown",
+      "access_notes": "The documentation provides a 'Get started' link, but it does not specify whether API credentials can be obtained freely and without human approval, or if it requires a trial, paid plan, or sales/admin gating."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "REST",
+        "SDK"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "Plaid offers a broad public API with numerous functionalities, including retrieving bank account information, balances, transaction data, investment holdings, liabilities, and supporting payments, identity verification, fraud prevention, and credit underwriting. It is accessible via server-side API libraries and integrates with API endpoints, suggesting RESTful interactions and SDK support."
+    },
+    "mcp": {
+      "mcp_status": "official",
+      "mcp_summary": "Plaid offers an official Model Context Protocol (MCP) Server for developer tooling, available via a GitHub repository labeled as 'Plaid MCP Server'."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient.",
+      "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0,
+        "access_model": 0.1,
+        "public_api": 1,
+        "api_breadth": 1,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.7,
+      "requires_human_review": true,
+      "human_review_reason": "Authentication methods and the exact developer access model (e.g., self-serve, free, trial, or gated) for obtaining API credentials are not clearly specified in the provided documentation."
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_access_model_unclear",
+    "risk_auth_methods_unclear",
+    "risk_material_evidence_validation_failed",
+    "risk_contradictory_claims",
+    "risk_verdict_unclear",
+    "risk_low_confidence"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_access_model_unclear",
+      "risk_auth_methods_unclear",
+      "risk_material_evidence_validation_failed",
+      "risk_contradictory_claims",
+      "risk_verdict_unclear",
+      "risk_low_confidence"
+    ]
+  }
+}

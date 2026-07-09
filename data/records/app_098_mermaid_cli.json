@@ -1,0 +1,565 @@
+{
+  "identity": {
+    "assignment_number": 98,
+    "app_name": "Mermaid CLI",
+    "website_hint": "github.com/mermaid-js/mermaid-cli",
+    "assigned_category": "AI, Research and Media-native",
+    "researched_at": "2026-07-09T18:26:06.707Z"
+  },
+  "product": {
+    "normalized_category": "AI, Research and Media-native",
+    "one_line_description": "Mermaid CLI is a command-line interface tool for the Mermaid library that takes a Mermaid definition file as input and generates SVG, PNG, or PDF files as output."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "The Mermaid CLI is a local command-line tool and a Node.js API. The documentation does not mention any authentication methods (like API keys or OAuth) required to use the CLI or its Node.js API for diagram generation."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": true,
+    "access_notes": "Developers can obtain access to the Mermaid CLI by installing it via npm (globally or locally), using Docker/Podman, or directly calling its Node.js API. All these methods are self-serve and free, not requiring any human approval or special credentials."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "CLI",
+      "SDK"
+    ],
+    "api_breadth": "narrow",
+    "api_summary": "The Mermaid CLI provides a command-line interface (CLI) for converting Mermaid definition files (.mmd) into various output formats such as SVG, PNG, and PDF. It supports options like specifying themes, custom CSS files, and transforming markdown files containing Mermaid diagrams. Additionally, it offers a Node.js API for programmatic access, although its versioning is tied to Mermaid and not semver. The API surface is focused primarily on diagram generation and conversion."
+  },
+  "mcp": {
+    "mcp_status": "none_found",
+    "mcp_summary": "There is no mention of Model Context Protocol (MCP) or any related servers in the provided documentation."
+  },
+  "buildability": {
+    "verdict": "unclear",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 0.9,
+      "access_model": 0.9,
+      "public_api": 0.9,
+      "api_breadth": 0.8,
+      "mcp_status": 0.9
+    },
+    "overall_confidence": 0.85,
+    "requires_human_review": false,
+    "human_review_reason": null
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783621566707_0",
+      "claim_field": "product.one_line_description",
+      "claim": "Mermaid CLI is a command-line interface tool for the Mermaid library that takes a Mermaid definition file as input and generates SVG, PNG, or PDF files as output.",
+      "source_url": "https://github.com/mermaid-js/mermaid-cli",
+      "source_title": "GitHub - mermaid-js/mermaid-cli: Command line tool for the Mermaid library · GitHub",
+      "source_type": "github_repo",
+      "evidence_snippet": "This is a command-line interface (CLI) for [mermaid](https://mermaid.js.org/). It takes a mermaid definition file as input and generates an SVG/PNG/PDF file as output.",
+      "retrieved_at": "2026-07-09T18:26:06.707Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://github.com/mermaid-js/mermaid-cli"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621566707_1",
+      "claim_field": "authentication.auth_methods",
+      "claim": "unclear",
+      "source_url": "https://github.com/mermaid-js/mermaid-cli",
+      "source_title": "GitHub - mermaid-js/mermaid-cli: Command line tool for the Mermaid library · GitHub",
+      "source_type": "github_repo",
+      "evidence_snippet": " mermaid-cli \n\n mermaid-cli\n\n This is a command-line interface (CLI) for mermaid.js. It takes a mermaid definition file as input and generates an SVG/PNG/PDF file as output.\n\n Installation\n\n npm install -g @mermaid-js/mermaid-cli\n\n Usage\n\n Convert Mermaid mmd Diagram File To SVG\n\n mmdc -i input.mmd -o output.svg",
+      "retrieved_at": "2026-07-09T18:26:06.707Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://github.com/mermaid-js/mermaid-cli"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621566707_2",
+      "claim_field": "developer_access.access_model",
+      "claim": "self_serve_free",
+      "source_url": "https://github.com/mermaid-js/mermaid-cli",
+      "source_title": "GitHub - mermaid-js/mermaid-cli: Command line tool for the Mermaid library · GitHub",
+      "source_type": "github_repo",
+      "evidence_snippet": "npm install -g @mermaid-js/mermaid-cli",
+      "retrieved_at": "2026-07-09T18:26:06.707Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://github.com/mermaid-js/mermaid-cli"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621566707_3",
+      "claim_field": "developer_access.access_model",
+      "claim": "self_serve_free",
+      "source_url": "https://github.com/mermaid-js/mermaid-cli",
+      "source_title": "GitHub - mermaid-js/mermaid-cli: Command line tool for the Mermaid library · GitHub",
+      "source_type": "github_repo",
+      "evidence_snippet": "docker pull minlag/mermaid-cli",
+      "retrieved_at": "2026-07-09T18:26:06.707Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://github.com/mermaid-js/mermaid-cli"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621566707_4",
+      "claim_field": "developer_access.access_model",
+      "claim": "self_serve_free",
+      "source_url": "https://github.com/mermaid-js/mermaid-cli",
+      "source_title": "GitHub - mermaid-js/mermaid-cli: Command line tool for the Mermaid library · GitHub",
+      "source_type": "github_repo",
+      "evidence_snippet": "import { run } from \"@mermaid-js/mermaid-cli\";\n\nawait run(\n    \"input.mmd\",\n    \"output.svg\", // {optional options},\n);",
+      "retrieved_at": "2026-07-09T18:26:06.707Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://github.com/mermaid-js/mermaid-cli"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621566707_5",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": true,
+      "source_url": "https://github.com/mermaid-js/mermaid-cli",
+      "source_title": "GitHub - mermaid-js/mermaid-cli: Command line tool for the Mermaid library · GitHub",
+      "source_type": "github_repo",
+      "evidence_snippet": "npm install -g @mermaid-js/mermaid-cli",
+      "retrieved_at": "2026-07-09T18:26:06.707Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://github.com/mermaid-js/mermaid-cli"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621566707_6",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://github.com/mermaid-js/mermaid-cli",
+      "source_title": "GitHub - mermaid-js/mermaid-cli: Command line tool for the Mermaid library · GitHub",
+      "source_type": "github_repo",
+      "evidence_snippet": "This is a command-line interface (CLI) for [mermaid](https://mermaid.js.org/). It takes a mermaid definition file as input and generates an SVG/PNG/PDF file as output.",
+      "retrieved_at": "2026-07-09T18:26:06.707Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://github.com/mermaid-js/mermaid-cli"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621566707_7",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://github.com/mermaid-js/mermaid-cli",
+      "source_title": "GitHub - mermaid-js/mermaid-cli: Command line tool for the Mermaid library · GitHub",
+      "source_type": "github_repo",
+      "evidence_snippet": "It's possible to call `mermaid-cli` via a Node.JS API.",
+      "retrieved_at": "2026-07-09T18:26:06.707Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://github.com/mermaid-js/mermaid-cli"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621566707_8",
+      "claim_field": "api_surface.api_styles",
+      "claim": "CLI",
+      "source_url": "https://github.com/mermaid-js/mermaid-cli",
+      "source_title": "GitHub - mermaid-js/mermaid-cli: Command line tool for the Mermaid library · GitHub",
+      "source_type": "github_repo",
+      "evidence_snippet": "This is a command-line interface (CLI) for [mermaid](https://mermaid.js.org/). It takes a mermaid definition file as input and generates an SVG/PNG/PDF file as output.",
+      "retrieved_at": "2026-07-09T18:26:06.707Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://github.com/mermaid-js/mermaid-cli"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621566707_9",
+      "claim_field": "api_surface.api_styles",
+      "claim": "SDK",
+      "source_url": "https://github.com/mermaid-js/mermaid-cli",
+      "source_title": "GitHub - mermaid-js/mermaid-cli: Command line tool for the Mermaid library · GitHub",
+      "source_type": "github_repo",
+      "evidence_snippet": "It's possible to call `mermaid-cli` via a Node.JS API.",
+      "retrieved_at": "2026-07-09T18:26:06.707Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://github.com/mermaid-js/mermaid-cli"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621566707_10",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "narrow",
+      "source_url": "https://github.com/mermaid-js/mermaid-cli",
+      "source_title": "GitHub - mermaid-js/mermaid-cli: Command line tool for the Mermaid library · GitHub",
+      "source_type": "github_repo",
+      "evidence_snippet": "It takes a mermaid definition file as input and generates an SVG/PNG/PDF file as output.",
+      "retrieved_at": "2026-07-09T18:26:06.707Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://github.com/mermaid-js/mermaid-cli"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621566707_11",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "narrow",
+      "source_url": "https://github.com/mermaid-js/mermaid-cli",
+      "source_title": "GitHub - mermaid-js/mermaid-cli: Command line tool for the Mermaid library · GitHub",
+      "source_type": "github_repo",
+      "evidence_snippet": "mmdc -i input.mmd -o output.png -t dark -b transparent",
+      "retrieved_at": "2026-07-09T18:26:06.707Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://github.com/mermaid-js/mermaid-cli"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621566707_12",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "narrow",
+      "source_url": "https://github.com/mermaid-js/mermaid-cli",
+      "source_title": "GitHub - mermaid-js/mermaid-cli: Command line tool for the Mermaid library · GitHub",
+      "source_type": "github_repo",
+      "evidence_snippet": "mmdc --input test-positive/flowchart1.mmd --cssFile test-positive/flowchart1.css -o docs/animated-flowchart.svg",
+      "retrieved_at": "2026-07-09T18:26:06.707Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://github.com/mermaid-js/mermaid-cli"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621566707_13",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "narrow",
+      "source_url": "https://github.com/mermaid-js/mermaid-cli",
+      "source_title": "GitHub - mermaid-js/mermaid-cli: Command line tool for the Mermaid library · GitHub",
+      "source_type": "github_repo",
+      "evidence_snippet": "mmdc -i readme.template.md -o readme.md",
+      "retrieved_at": "2026-07-09T18:26:06.707Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://github.com/mermaid-js/mermaid-cli"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621566707_14",
+      "claim_field": "mcp.mcp_status",
+      "claim": "none_found",
+      "source_url": "https://github.com/mermaid-js/mermaid-cli",
+      "source_title": "GitHub - mermaid-js/mermaid-cli: Command line tool for the Mermaid library · GitHub",
+      "source_type": "github_repo",
+      "evidence_snippet": "No direct evidence found regarding Model Context Protocol.",
+      "retrieved_at": "2026-07-09T18:26:06.707Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://github.com/mermaid-js/mermaid-cli"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 98,
+      "app_name": "Mermaid CLI",
+      "website_hint": "github.com/mermaid-js/mermaid-cli",
+      "assigned_category": "AI, Research and Media-native",
+      "researched_at": "2026-07-09T18:26:06.707Z"
+    },
+    "product": {
+      "normalized_category": "AI, Research and Media-native",
+      "one_line_description": "Mermaid CLI is a command-line interface tool for the Mermaid library that takes a Mermaid definition file as input and generates SVG, PNG, or PDF files as output."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "The Mermaid CLI is a local command-line tool and a Node.js API. The documentation does not mention any authentication methods (like API keys or OAuth) required to use the CLI or its Node.js API for diagram generation."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": true,
+      "access_notes": "Developers can obtain access to the Mermaid CLI by installing it via npm (globally or locally), using Docker/Podman, or directly calling its Node.js API. All these methods are self-serve and free, not requiring any human approval or special credentials."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "CLI",
+        "SDK"
+      ],
+      "api_breadth": "narrow",
+      "api_summary": "The Mermaid CLI provides a command-line interface (CLI) for converting Mermaid definition files (.mmd) into various output formats such as SVG, PNG, and PDF. It supports options like specifying themes, custom CSS files, and transforming markdown files containing Mermaid diagrams. Additionally, it offers a Node.js API for programmatic access, although its versioning is tied to Mermaid and not semver. The API surface is focused primarily on diagram generation and conversion."
+    },
+    "mcp": {
+      "mcp_status": "none_found",
+      "mcp_summary": "There is no mention of Model Context Protocol (MCP) or any related servers in the provided documentation."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient.",
+      "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0.9,
+        "access_model": 0.9,
+        "public_api": 0.9,
+        "api_breadth": 0.8,
+        "mcp_status": 0.9
+      },
+      "overall_confidence": 0.85,
+      "requires_human_review": false,
+      "human_review_reason": null
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_access_model_unclear",
+    "risk_auth_methods_unclear",
+    "risk_material_evidence_validation_failed",
+    "risk_contradictory_claims",
+    "risk_verdict_unclear"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_access_model_unclear",
+      "risk_auth_methods_unclear",
+      "risk_material_evidence_validation_failed",
+      "risk_contradictory_claims",
+      "risk_verdict_unclear"
+    ]
+  }
+}

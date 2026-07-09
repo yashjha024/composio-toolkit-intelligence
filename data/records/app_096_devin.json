@@ -1,0 +1,364 @@
+{
+  "identity": {
+    "assignment_number": 96,
+    "app_name": "Devin",
+    "website_hint": "docs.devin.ai (MCP)",
+    "assigned_category": "AI, Research and Media-native",
+    "researched_at": "2026-07-09T18:22:01.952Z"
+  },
+  "product": {
+    "normalized_category": "AI, Research and Media-native",
+    "one_line_description": "Devin is an autonomous AI software engineer that can write, run and test code."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "No explicit authentication methods (e.g., API keys, OAuth) are documented for the Devin API on this page."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": false,
+    "access_notes": "While Devin offers a web application accessible by signing up for 'Individual and Teams plans' or requesting administrator permissions, there is no direct information on how to obtain API credentials for the 'Devin API' or if these credentials can be obtained without human approval."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "SDK",
+      "CLI"
+    ],
+    "api_breadth": "unclear",
+    "api_summary": "Devin offers an API, referred to as the 'Devin API', and also provides a Command Line Interface (CLI) for direct interaction. The breadth of the API is unclear as no specific endpoints or capabilities are detailed on this page."
+  },
+  "mcp": {
+    "mcp_status": "none_found",
+    "mcp_summary": "There is no mention of Model Context Protocol (MCP) in the provided documentation."
+  },
+  "buildability": {
+    "verdict": "unclear",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 0,
+      "access_model": 0,
+      "public_api": 1,
+      "api_breadth": 0,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.5,
+    "requires_human_review": true,
+    "human_review_reason": "Details on API authentication, developer access for API credentials, and the specific breadth of the API are missing. Further investigation into the `/api-reference/overview` page is needed."
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783621321952_0",
+      "claim_field": "product.one_line_description",
+      "claim": "Devin is an autonomous AI software engineer that can write, run and test code.",
+      "source_url": "https://docs.devin.ai/get-started/devin-intro",
+      "source_title": "Introducing Devin - Devin Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "Devin is an autonomous AI software engineer that can write, run and test code.",
+      "retrieved_at": "2026-07-09T18:22:01.952Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.devin.ai/get-started/devin-intro"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621321952_1",
+      "claim_field": "developer_access.access_model",
+      "claim": "unclear",
+      "source_url": "https://docs.devin.ai/get-started/devin-intro",
+      "source_title": "Introducing Devin - Devin Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "Devin is also available via the [Devin API](/api-reference/overview).\nTo access Devin, sign up at [app.devin.ai](https://app.devin.ai). Individual and Teams plans are available.",
+      "retrieved_at": "2026-07-09T18:22:01.952Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.devin.ai/get-started/devin-intro"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621321952_2",
+      "claim_field": "developer_access.access_notes",
+      "claim": "While Devin offers a web application accessible by signing up for 'Individual and Teams plans' or requesting administrator permissions, there is no direct information on how to obtain API credentials for the 'Devin API' or if these credentials can be obtained without human approval.",
+      "source_url": "https://docs.devin.ai/get-started/devin-intro",
+      "source_title": "Introducing Devin - Devin Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "Devin is also available via the [Devin API](/api-reference/overview).\nTo access Devin, sign up at [app.devin.ai](https://app.devin.ai). Individual and Teams plans are available.\nIf your company is already working with Cognition, you can request permissions from your Administrator or Cognition directly and access Devin via the web application at [app.devin.ai](https://app.devin.ai).",
+      "retrieved_at": "2026-07-09T18:22:01.952Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.devin.ai/get-started/devin-intro"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621321952_3",
+      "claim_field": "public_api",
+      "claim": "yes",
+      "source_url": "https://docs.devin.ai/get-started/devin-intro",
+      "source_title": "Introducing Devin - Devin Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "Devin is also available via the [Devin API](/api-reference/overview).",
+      "retrieved_at": "2026-07-09T18:22:01.952Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.devin.ai/get-started/devin-intro"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621321952_4",
+      "claim_field": "api_styles",
+      "claim": "SDK",
+      "source_url": "https://docs.devin.ai/get-started/devin-intro",
+      "source_title": "Introducing Devin - Devin Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "Devin is also available via the [Devin API](/api-reference/overview).",
+      "retrieved_at": "2026-07-09T18:22:01.952Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.devin.ai/get-started/devin-intro"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621321952_5",
+      "claim_field": "api_styles",
+      "claim": "CLI",
+      "source_url": "https://docs.devin.ai/get-started/devin-intro",
+      "source_title": "Introducing Devin - Devin Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "Install Devin CLI — use Devin directly from your command line",
+      "retrieved_at": "2026-07-09T18:22:01.952Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.devin.ai/get-started/devin-intro"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621321952_6",
+      "claim_field": "api_summary",
+      "claim": "Devin is also available via the [Devin API](/api-reference/overview).",
+      "source_url": "https://docs.devin.ai/get-started/devin-intro",
+      "source_title": "Introducing Devin - Devin Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "Devin is also available via the [Devin API](/api-reference/overview).",
+      "retrieved_at": "2026-07-09T18:22:01.952Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.devin.ai/get-started/devin-intro"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621321952_7",
+      "claim_field": "api_summary",
+      "claim": "Install Devin CLI — use Devin directly from your command line",
+      "source_url": "https://docs.devin.ai/get-started/devin-intro",
+      "source_title": "Introducing Devin - Devin Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "Install Devin CLI — use Devin directly from your command line",
+      "retrieved_at": "2026-07-09T18:22:01.952Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.devin.ai/get-started/devin-intro"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 96,
+      "app_name": "Devin",
+      "website_hint": "docs.devin.ai (MCP)",
+      "assigned_category": "AI, Research and Media-native",
+      "researched_at": "2026-07-09T18:22:01.952Z"
+    },
+    "product": {
+      "normalized_category": "AI, Research and Media-native",
+      "one_line_description": "Devin is an autonomous AI software engineer that can write, run and test code."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "No explicit authentication methods (e.g., API keys, OAuth) are documented for the Devin API on this page."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": false,
+      "access_notes": "While Devin offers a web application accessible by signing up for 'Individual and Teams plans' or requesting administrator permissions, there is no direct information on how to obtain API credentials for the 'Devin API' or if these credentials can be obtained without human approval."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "SDK",
+        "CLI"
+      ],
+      "api_breadth": "unclear",
+      "api_summary": "Devin offers an API, referred to as the 'Devin API', and also provides a Command Line Interface (CLI) for direct interaction. The breadth of the API is unclear as no specific endpoints or capabilities are detailed on this page."
+    },
+    "mcp": {
+      "mcp_status": "none_found",
+      "mcp_summary": "There is no mention of Model Context Protocol (MCP) in the provided documentation."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient.",
+      "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0,
+        "access_model": 0,
+        "public_api": 1,
+        "api_breadth": 0,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.5,
+      "requires_human_review": true,
+      "human_review_reason": "Details on API authentication, developer access for API credentials, and the specific breadth of the API are missing. Further investigation into the `/api-reference/overview` page is needed."
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_access_model_unclear",
+    "risk_auth_methods_unclear",
+    "risk_material_evidence_validation_failed",
+    "risk_contradictory_claims",
+    "risk_verdict_unclear",
+    "risk_low_confidence"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_access_model_unclear",
+      "risk_auth_methods_unclear",
+      "risk_material_evidence_validation_failed",
+      "risk_contradictory_claims",
+      "risk_verdict_unclear",
+      "risk_low_confidence"
+    ]
+  }
+}

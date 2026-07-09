@@ -1,0 +1,275 @@
+{
+  "identity": {
+    "assignment_number": 38,
+    "app_name": "Pinterest",
+    "website_hint": "developers.pinterest.com",
+    "assigned_category": "Marketing, Ads, Email and Social",
+    "researched_at": "2026-07-09T17:07:07.688Z"
+  },
+  "product": {
+    "normalized_category": "Marketing, Ads, Email and Social",
+    "one_line_description": "Pinterest offers an API to integrate, manage ads, upload product feeds, plan content, and track conversions."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "The provided source page does not explicitly state the authentication methods required to access the Pinterest API."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": "unknown",
+    "access_notes": "The 'Get started' button links to an '/account-setup/' page, but it's unclear if API credentials can be obtained free and self-serve without human approval, sales involvement, or specific partnership requirements. It doesn't explicitly state that API keys or other credentials are self-serve and free."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "other"
+    ],
+    "api_breadth": "broad",
+    "api_summary": "Pinterest offers a public API that enables a broad range of functionalities including tracking conversions, creating and managing organic content (Pins and Boards), building and managing ad campaigns, managing product catalogs for shopping, and analyzing Pinterest data. The specific API styles (e.g., REST, GraphQL) are not explicitly mentioned on the developer portal home page."
+  },
+  "mcp": {
+    "mcp_status": "none_found",
+    "mcp_summary": "No information regarding Model Context Protocol (MCP) servers was found on the provided source page."
+  },
+  "buildability": {
+    "verdict": "unclear",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 0.5,
+      "access_model": 0.5,
+      "public_api": 1,
+      "api_breadth": 1,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.7,
+    "requires_human_review": true,
+    "human_review_reason": "The exact model for obtaining API credentials (e.g., self-serve free API keys vs. sales-gated) and specific authentication methods are not explicitly detailed on the developer portal's landing page. More detailed documentation would be needed to confirm these aspects."
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783616827688_0",
+      "claim_field": "product.one_line_description",
+      "claim": "Pinterest offers an API to integrate, manage ads, upload product feeds, plan content, and track conversions.",
+      "source_url": "https://developers.pinterest.com/",
+      "source_title": "Pinterest Developers, Opens a new tab, Opens a new tab",
+      "source_type": "developer_portal",
+      "evidence_snippet": "One API to seamlessly integrate with Pinterest Securely plan content, manage ads, upload product feeds, and more.",
+      "retrieved_at": "2026-07-09T17:07:07.688Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.pinterest.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616827688_1",
+      "claim_field": "developer_access.access_model",
+      "claim": "unclear",
+      "source_url": "https://developers.pinterest.com/",
+      "source_title": "Pinterest Developers, Opens a new tab, Opens a new tab",
+      "source_type": "developer_portal",
+      "evidence_snippet": "[Get started](/account-setup/)",
+      "retrieved_at": "2026-07-09T17:07:07.688Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.pinterest.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616827688_2",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": "unknown",
+      "source_url": "https://developers.pinterest.com/",
+      "source_title": "Pinterest Developers, Opens a new tab, Opens a new tab",
+      "source_type": "developer_portal",
+      "evidence_snippet": "[Get started](/account-setup/)",
+      "retrieved_at": "2026-07-09T17:07:07.688Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.pinterest.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616827688_3",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://developers.pinterest.com/",
+      "source_title": "Pinterest Developers, Opens a new tab, Opens a new tab",
+      "source_type": "developer_portal",
+      "evidence_snippet": "One API to seamlessly integrate with Pinterest",
+      "retrieved_at": "2026-07-09T17:07:07.688Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.pinterest.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616827688_4",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://developers.pinterest.com/",
+      "source_title": "Pinterest Developers, Opens a new tab, Opens a new tab",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Use cases\n[Track Conversions Maximize conversion visibility on Pinterest by using Pinterest Conversions API, Pinterest Tag, or uploading conversion data.]\n[Create content Build apps and experiences that allow Pinterest users to create and manage organic content (Pins and Boards) on Pinterest.]\n[Build & Manage ads Use Pinterest API to manage ad campaigns, set up targeting, and report on campaign performance.]\n[Manage product catalogs Pinterest API for Shopping allows you to create and manage your product catalogs on Pinterest as well as create, manage and report on shopping ads.]\n[Analyze Pinterest data Pinterest API helps you ingest analytics data for content and ads directly from Pinterest into your data warehouse or analytics tools.]",
+      "retrieved_at": "2026-07-09T17:07:07.688Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.pinterest.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 38,
+      "app_name": "Pinterest",
+      "website_hint": "developers.pinterest.com",
+      "assigned_category": "Marketing, Ads, Email and Social",
+      "researched_at": "2026-07-09T17:07:07.688Z"
+    },
+    "product": {
+      "normalized_category": "Marketing, Ads, Email and Social",
+      "one_line_description": "Pinterest offers an API to integrate, manage ads, upload product feeds, plan content, and track conversions."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "The provided source page does not explicitly state the authentication methods required to access the Pinterest API."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": "unknown",
+      "access_notes": "The 'Get started' button links to an '/account-setup/' page, but it's unclear if API credentials can be obtained free and self-serve without human approval, sales involvement, or specific partnership requirements. It doesn't explicitly state that API keys or other credentials are self-serve and free."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "other"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "Pinterest offers a public API that enables a broad range of functionalities including tracking conversions, creating and managing organic content (Pins and Boards), building and managing ad campaigns, managing product catalogs for shopping, and analyzing Pinterest data. The specific API styles (e.g., REST, GraphQL) are not explicitly mentioned on the developer portal home page."
+    },
+    "mcp": {
+      "mcp_status": "none_found",
+      "mcp_summary": "No information regarding Model Context Protocol (MCP) servers was found on the provided source page."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient.",
+      "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0.5,
+        "access_model": 0.5,
+        "public_api": 1,
+        "api_breadth": 1,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.7,
+      "requires_human_review": true,
+      "human_review_reason": "The exact model for obtaining API credentials (e.g., self-serve free API keys vs. sales-gated) and specific authentication methods are not explicitly detailed on the developer portal's landing page. More detailed documentation would be needed to confirm these aspects."
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_access_model_unclear",
+    "risk_auth_methods_unclear",
+    "risk_material_evidence_validation_failed",
+    "risk_contradictory_claims",
+    "risk_verdict_unclear",
+    "risk_low_confidence"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_access_model_unclear",
+      "risk_auth_methods_unclear",
+      "risk_material_evidence_validation_failed",
+      "risk_contradictory_claims",
+      "risk_verdict_unclear",
+      "risk_low_confidence"
+    ]
+  }
+}

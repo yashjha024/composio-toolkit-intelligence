@@ -1,0 +1,209 @@
+{
+  "identity": {
+    "assignment_number": 13,
+    "app_name": "Freshdesk",
+    "website_hint": "freshdesk.com",
+    "assigned_category": "Support and Helpdesk",
+    "researched_at": "2026-07-09T16:54:29.286Z"
+  },
+  "product": {
+    "normalized_category": "Support and Helpdesk",
+    "one_line_description": "Freshdesk is an AI-powered customer service platform designed to provide faster and accurate resolutions in a central workspace using features like AI agents, AI Copilot, and AI Insights."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "No information regarding authentication methods for API access was found."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": "unknown",
+    "access_notes": "The provided source mentions 'Try it free' and 'Book a demo' for the product itself, but does not specify how to obtain API credentials for developers. While 'BUILD' is mentioned in the context of integrations, there's no evidence on the access model for obtaining API credentials."
+  },
+  "api_surface": {
+    "public_api": "limited",
+    "api_styles": [],
+    "api_breadth": "unclear",
+    "api_summary": "The existence of an API or integration framework is suggested by the phrases 'Connect your business apps' and 'BUILD.', as well as a link to 'Explore integrations'. However, no specific details about the API's capabilities, endpoints, or styles are provided."
+  },
+  "mcp": {
+    "mcp_status": "none_found",
+    "mcp_summary": "The source extensively discusses Freshdesk's internal AI capabilities, such as 'Vertical AI Agents', 'Freddy AI Agent', 'Freddy AI Copilot', and 'Freddy AI Insights', which resolve queries, automate tasks, and assist human agents. There is no mention of Freshdesk providing an external Model Context Protocol (MCP) or an API for external AI agents to call and integrate with its functionalities."
+  },
+  "buildability": {
+    "verdict": "unclear",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 0,
+      "access_model": 0,
+      "public_api": 0.4,
+      "api_breadth": 0,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.4,
+    "requires_human_review": true,
+    "human_review_reason": "Limited information available regarding API access, authentication methods, and breadth. The 'BUILD' and 'Explore integrations' hints at an API, but specifics are missing."
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783616069286_0",
+      "claim_field": "product.one_line_description",
+      "claim": "Freshdesk is an AI-powered customer service platform designed to provide faster and accurate resolutions in a central workspace using features like AI agents, AI Copilot, and AI Insights.",
+      "source_url": "https://www.freshworks.com/freshdesk/",
+      "source_title": "Freshdesk: AI-powered platform for modern customer service | Freshworks",
+      "source_type": "official_doc",
+      "evidence_snippet": "With Freshdesk, AI handles the complexity from day one while your team builds the connections. All in a central workspace designed for faster and accurate resolutions.",
+      "retrieved_at": "2026-07-09T16:54:29.286Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.freshworks.com/freshdesk/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616069286_1",
+      "claim_field": "public_api",
+      "claim": "limited",
+      "source_url": "https://www.freshworks.com/freshdesk/",
+      "source_title": "Freshdesk: AI-powered platform for modern customer service | Freshworks",
+      "source_type": "official_doc",
+      "evidence_snippet": "INSTALL. CUSTOMIZE. BUILD. Connect your business apps Integrate with the tools your team relies on, seamlessly connected with Freshdesk. Get started without any complexity. Explore integrations",
+      "retrieved_at": "2026-07-09T16:54:29.286Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.freshworks.com/freshdesk/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616069286_2",
+      "claim_field": "mcp.mcp_status",
+      "claim": "none_found",
+      "source_url": "https://www.freshworks.com/freshdesk/",
+      "source_title": "Freshdesk: AI-powered platform for modern customer service | Freshworks",
+      "source_type": "official_doc",
+      "evidence_snippet": "FRESHDESK ## Customer service that puts people first With Freshdesk, AI handles the complexity from day one while your team builds the connections. All in a central workspace designed for faster and accurate resolutions. [Try it free](https://www.freshworks.com/freshdesk/signup/)[Book a demo](https://www.freshworks.com/freshdesk/demo-request/) TRUSTED BY 74,000+ BUSINESSES WORLDWIDE ## Introducing Vertical AI Agents and a new customer service home Resolve complex, yet repetitive queries with ready-to-launch Vertical AI Agents and 50+ prebuilt agentic workflows. Bring every conversation, AI intelligence, and customer insight together in the Freshdesk Command Center. Launch AI agents in minutes Resolve in a central workspace ## Seamless support. Smarter agents. Faster resolutions. Unify every channel, cut the noise, and give agents an easy-to-use platform to resolve requests without missing a beat. With Freshdesk, you don’t just keep up, you stay ahead. Auto-resolve issues with AI agents AI agents go beyond suggestions. They take action. From resolving routine queries to updating records and processing requests, these digital teammates handle the busywork. No waiting, no hand-holding. Just automated resolutions, 24/7. Be resolution ready with a single workspace Work smarter with AI Copilot and AI Insights Streamline every queue, every time ## Meet Freddy AI From AI Agents that resolve queries and tasks to AI Copilot and AI Insights for human agents and leaders, Freddy combines automation and intelligence to help your team work more efficiently, scale effortlessly, and deliver great experiences across every channel. [Learn more](https://www.freshworks.com/freshdesk/omni/freddy-ai-automation/) ## The full customer service experience Everything you need to support customers and empower teams—all in one place, available out of the box. Omnichannel customer service Support customers on any channel with AI, context, and workflows in one connected view. Freshdesk Command Center Bring every conversation, AI Intelligence, and customer insight into a single, central view. Advanced ticketing Resolve issues that need deeper problem solving with a robust ticketing platform. Freddy AI Agent Resolve complex, repetitive queries with ready to launch AI agents. Freddy AI Copilot Help agents work smarter with AI summaries, live translations, reply suggestions, and more. Freddy AI Insights Give proactive visibility to leaders when issues arise and ask questions to get instant insights. Self-service Empower customers to find answers with AI agents and knowledge base. Collaboration Solve complex issues that require multiple teams easily. Advanced workflows Automate routing, prioritization, SLAs based on sentiment, agent skills, and workload. Industry-leading results with Freshdesk Up to 80%Resolutions with Freddy AI Agent <2 minsAverage conversational resolution time 97%Omnichannel first contact resolution rate 60%Improved agent productivity with Freddy AI Copilot",
+      "retrieved_at": "2026-07-09T16:54:29.286Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.freshworks.com/freshdesk/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 13,
+      "app_name": "Freshdesk",
+      "website_hint": "freshdesk.com",
+      "assigned_category": "Support and Helpdesk",
+      "researched_at": "2026-07-09T16:54:29.286Z"
+    },
+    "product": {
+      "normalized_category": "Support and Helpdesk",
+      "one_line_description": "Freshdesk is an AI-powered customer service platform designed to provide faster and accurate resolutions in a central workspace using features like AI agents, AI Copilot, and AI Insights."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "No information regarding authentication methods for API access was found."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": "unknown",
+      "access_notes": "The provided source mentions 'Try it free' and 'Book a demo' for the product itself, but does not specify how to obtain API credentials for developers. While 'BUILD' is mentioned in the context of integrations, there's no evidence on the access model for obtaining API credentials."
+    },
+    "api_surface": {
+      "public_api": "limited",
+      "api_styles": [],
+      "api_breadth": "unclear",
+      "api_summary": "The existence of an API or integration framework is suggested by the phrases 'Connect your business apps' and 'BUILD.', as well as a link to 'Explore integrations'. However, no specific details about the API's capabilities, endpoints, or styles are provided."
+    },
+    "mcp": {
+      "mcp_status": "none_found",
+      "mcp_summary": "The source extensively discusses Freshdesk's internal AI capabilities, such as 'Vertical AI Agents', 'Freddy AI Agent', 'Freddy AI Copilot', and 'Freddy AI Insights', which resolve queries, automate tasks, and assist human agents. There is no mention of Freshdesk providing an external Model Context Protocol (MCP) or an API for external AI agents to call and integrate with its functionalities."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient.",
+      "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0,
+        "access_model": 0,
+        "public_api": 0.4,
+        "api_breadth": 0,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.4,
+      "requires_human_review": true,
+      "human_review_reason": "Limited information available regarding API access, authentication methods, and breadth. The 'BUILD' and 'Explore integrations' hints at an API, but specifics are missing."
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_access_model_unclear",
+    "risk_auth_methods_unclear",
+    "risk_verdict_unclear",
+    "risk_low_confidence"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_access_model_unclear",
+      "risk_auth_methods_unclear",
+      "risk_verdict_unclear",
+      "risk_low_confidence"
+    ]
+  }
+}

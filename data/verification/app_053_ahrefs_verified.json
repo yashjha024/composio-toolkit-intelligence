@@ -1,0 +1,89 @@
+{
+  "assignment_number": 53,
+  "app_name": "Ahrefs",
+  "assigned_category": "Data, SEO and Scraping",
+  "processing_mode": "fast_scale",
+  "baseline_fields": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "access_model": "sales_gated",
+    "credentials_obtainable_without_approval": false,
+    "public_api_status": "yes",
+    "api_breadth": "broad",
+    "mcp_status": "official",
+    "buildability_verdict": "OUTREACH_REQUIRED",
+    "primary_blocker": "Access requires contacting enterprise sales team."
+  },
+  "verified_fields": {
+    "auth_methods": {
+      "verified_value": [
+        "api_key",
+        "oauth2"
+      ],
+      "evidence_url": "https://docs.ahrefs.com/",
+      "concise_evidence_snippet": "API keys Create and manage your API keys; OAuth guide Implement OAuth 2.0 authorization",
+      "baseline_classification": "incorrect",
+      "correction_required": true,
+      "failure_mode": "extraction_error"
+    },
+    "access_model": {
+      "verified_value": "sales_gated",
+      "evidence_url": "https://ahrefs.com/api",
+      "concise_evidence_snippet": "Free test queries Try API endpoints without an Enterprise plan",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "credentials_obtainable_without_approval": {
+      "verified_value": true,
+      "evidence_url": "https://ahrefs.com/api",
+      "concise_evidence_snippet": "Free test queries Try API endpoints without an Enterprise plan",
+      "baseline_classification": "incorrect",
+      "correction_required": true,
+      "failure_mode": "extraction_error"
+    },
+    "public_api_status": {
+      "verified_value": "yes",
+      "evidence_url": "https://ahrefs.com/api",
+      "concise_evidence_snippet": "Access Ahrefs marketing and search data through our APIs and developer tools to build custom integrations and workflows.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "api_breadth": {
+      "verified_value": "broad",
+      "evidence_url": "https://ahrefs.com/api",
+      "concise_evidence_snippet": "Research keywords, analyze backlinks, track rankings, and monitor brand visibility across traditional search and AI platforms.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "mcp_status": {
+      "verified_value": "official",
+      "evidence_url": "https://ahrefs.com/api",
+      "concise_evidence_snippet": "## MCP Connect your Ahrefs data to AI assistants and agents to enhance their answers with real marketing insights.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "buildability_verdict": {
+      "verified_value": "BUILD_WITH_CAVEATS",
+      "evidence_url": "https://ahrefs.com/api",
+      "concise_evidence_snippet": "Free test queries Try API endpoints without an Enterprise plan",
+      "baseline_classification": "incorrect",
+      "correction_required": true,
+      "failure_mode": "conservative_guardrail"
+    },
+    "primary_blocker": {
+      "verified_value": "Access to full API functionality requires contacting enterprise sales team.",
+      "evidence_url": "https://ahrefs.com/api",
+      "concise_evidence_snippet": "Free test queries Try API endpoints without an Enterprise plan",
+      "baseline_classification": "partially_correct",
+      "correction_required": true,
+      "failure_mode": "extraction_error"
+    },
+    "unclear_diagnosis": "not_applicable"
+  },
+  "verified_at": "2026-07-09T18:54:36.802Z"
+}

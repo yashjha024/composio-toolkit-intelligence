@@ -1,0 +1,27 @@
+{
+  "assignment_number": 9,
+  "app_name": "Copper",
+  "assigned_category": "CRM and Sales",
+  "baseline_verdict": "UNCLEAR",
+  "calibrated_verdict": "UNCLEAR",
+  "exact_fields_to_verify": [
+    "public_api_status_unclear",
+    "access_model_unclear",
+    "auth_methods_unclear"
+  ],
+  "targeted_result": {
+    "verified_auth_methods": [
+      "none"
+    ],
+    "verified_access_model": "unclear",
+    "verified_credentials_obtainable_without_approval": false,
+    "verified_public_api_status": "no",
+    "verified_api_breadth": "none",
+    "verified_verdict": "BLOCKED_LOW_PRIORITY",
+    "primary_blocker": "No public API documentation found.",
+    "evidence_url": "https://copper.com/docs",
+    "concise_evidence_snippet": "Attempting to access https://copper.com/docs results in a '404 Page Not Found' error, indicating no public developer documentation.",
+    "remaining_uncertainty": []
+  },
+  "verified_at": "2026-07-09T18:59:51.163Z"
+}

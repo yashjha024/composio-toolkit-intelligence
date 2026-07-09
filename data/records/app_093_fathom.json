@@ -1,0 +1,209 @@
+{
+  "identity": {
+    "assignment_number": 93,
+    "app_name": "Fathom",
+    "website_hint": "fathom.video",
+    "assigned_category": "AI, Research and Media-native",
+    "researched_at": "2026-07-09T18:16:19.177Z"
+  },
+  "product": {
+    "normalized_category": "AI, Research and Media-native",
+    "one_line_description": "Fathom is an AI notetaking tool that records, transcribes, and summarizes virtual meetings, integrating with popular communication and productivity applications."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "No explicit authentication methods for an API are documented. The website mentions 'Log In' and 'Sign Up' for product access."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": "unknown",
+    "access_notes": "The website promotes free sign-up for the product itself ('SIGN UP FREE', 'Get started - free forever'), but there is no information about obtaining API credentials (like API keys, OAuth client credentials, or developer tokens) without human approval or any specific developer access program."
+  },
+  "api_surface": {
+    "public_api": "no",
+    "api_styles": [],
+    "api_breadth": "none",
+    "api_summary": "The source mentions product integrations with other tools (ChatGPT, Claude, Slack, Salesforce, HubSpot, Notion, Asana) where meeting data and actions sync automatically. However, there is no evidence or mention of a public API, SDK, webhooks, or developer portal for external developers to programmatically access Fathom's functionalities."
+  },
+  "mcp": {
+    "mcp_status": "none_found",
+    "mcp_summary": "There is no mention of Model Context Protocol or related concepts in the provided source."
+  },
+  "buildability": {
+    "verdict": "blocked_low_priority",
+    "primary_blocker": "No documented public API available.",
+    "verdict_reasoning": "Application lacks documented REST, GraphQL, or SDK endpoints required for agent tool calling."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 0,
+      "access_model": 0,
+      "public_api": 1,
+      "api_breadth": 1,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.4,
+    "requires_human_review": true,
+    "human_review_reason": "Critical information regarding developer access and API authentication methods is entirely missing from the provided source. Only product-level integrations are mentioned, not a public developer API."
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783620979177_0",
+      "claim_field": "product.one_line_description",
+      "claim": "Fathom is an AI notetaking tool that records, transcribes, and summarizes virtual meetings, integrating with popular communication and productivity applications.",
+      "source_url": "https://www.fathom.ai/",
+      "source_title": "Fathom AI Notetaker - Never Take Notes Again",
+      "source_type": "official_doc",
+      "evidence_snippet": "Fathom summarizes your meetings so you can focus on the conversation. AI notetaking that is out of this world. Your meeting data, now inside ChatGPT, Claude, and more. Meeting notes, insights and action items sync automatically with your tools – Slack, Salesforce, HubSpot, Notion, Asana, and beyond – without you lifting a finger.",
+      "retrieved_at": "2026-07-09T18:16:19.177Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.fathom.ai/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783620979177_1",
+      "claim_field": "developer_access.access_model",
+      "claim": "unclear",
+      "source_url": "https://www.fathom.ai/",
+      "source_title": "Fathom AI Notetaker - Never Take Notes Again",
+      "source_type": "official_doc",
+      "evidence_snippet": "SIGN UP FREE. Get started - free forever. Get Started. It’s Free.",
+      "retrieved_at": "2026-07-09T18:16:19.177Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.fathom.ai/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783620979177_2",
+      "claim_field": "api_surface.public_api",
+      "claim": "no",
+      "source_url": "https://www.fathom.ai/",
+      "source_title": "Fathom AI Notetaker - Never Take Notes Again",
+      "source_type": "official_doc",
+      "evidence_snippet": "CHATGPT & CLAUDE INTEGRATIONS & MORE. Your meeting data, now inside ChatGPT, Claude, and more. Meeting notes, insights and action items sync automatically with your tools – Slack, Salesforce, HubSpot, Notion, Asana, and beyond – without you lifting a finger.",
+      "retrieved_at": "2026-07-09T18:16:19.177Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.fathom.ai/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 93,
+      "app_name": "Fathom",
+      "website_hint": "fathom.video",
+      "assigned_category": "AI, Research and Media-native",
+      "researched_at": "2026-07-09T18:16:19.177Z"
+    },
+    "product": {
+      "normalized_category": "AI, Research and Media-native",
+      "one_line_description": "Fathom is an AI notetaking tool that records, transcribes, and summarizes virtual meetings, integrating with popular communication and productivity applications."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "No explicit authentication methods for an API are documented. The website mentions 'Log In' and 'Sign Up' for product access."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": "unknown",
+      "access_notes": "The website promotes free sign-up for the product itself ('SIGN UP FREE', 'Get started - free forever'), but there is no information about obtaining API credentials (like API keys, OAuth client credentials, or developer tokens) without human approval or any specific developer access program."
+    },
+    "api_surface": {
+      "public_api": "no",
+      "api_styles": [],
+      "api_breadth": "none",
+      "api_summary": "The source mentions product integrations with other tools (ChatGPT, Claude, Slack, Salesforce, HubSpot, Notion, Asana) where meeting data and actions sync automatically. However, there is no evidence or mention of a public API, SDK, webhooks, or developer portal for external developers to programmatically access Fathom's functionalities."
+    },
+    "mcp": {
+      "mcp_status": "none_found",
+      "mcp_summary": "There is no mention of Model Context Protocol or related concepts in the provided source."
+    },
+    "buildability": {
+      "verdict": "blocked_low_priority",
+      "primary_blocker": "No documented public API available.",
+      "verdict_reasoning": "Application lacks documented REST, GraphQL, or SDK endpoints required for agent tool calling."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0,
+        "access_model": 0,
+        "public_api": 1,
+        "api_breadth": 1,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.4,
+      "requires_human_review": true,
+      "human_review_reason": "Critical information regarding developer access and API authentication methods is entirely missing from the provided source. Only product-level integrations are mentioned, not a public developer API."
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_access_model_unclear",
+    "risk_auth_methods_unclear",
+    "risk_material_evidence_validation_failed",
+    "risk_low_confidence"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_access_model_unclear",
+      "risk_auth_methods_unclear",
+      "risk_material_evidence_validation_failed",
+      "risk_low_confidence"
+    ]
+  }
+}

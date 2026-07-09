@@ -1,0 +1,360 @@
+{
+  "identity": {
+    "assignment_number": 41,
+    "app_name": "Shopify",
+    "website_hint": "shopify.dev",
+    "assigned_category": "Ecommerce",
+    "researched_at": "2026-07-09T17:08:48.831Z"
+  },
+  "product": {
+    "normalized_category": "Ecommerce",
+    "one_line_description": "Shopify Dev Docs provide tools and frameworks for building apps, customizing storefronts, and creating agentic shopping experiences on the Shopify platform."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "The provided documentation does not explicitly detail the authentication methods (e.g., API keys, OAuth2) required for accessing Shopify's APIs."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": true,
+    "access_notes": "Developers can self-serve to set up their development environment by installing the Shopify CLI globally and initializing new apps, themes, or headless storefronts with simple commands. The process described for starting development does not indicate a need for human approval for gaining access to these developer tools."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "CLI"
+    ],
+    "api_breadth": "broad",
+    "api_summary": "Shopify provides a broad public API surface that allows developers to extend core functionality, integrate apps into the admin, online store, and checkout, and build agentic shopping experiences. The Shopify CLI is a key tool for initializing development projects."
+  },
+  "mcp": {
+    "mcp_status": "none_found",
+    "mcp_summary": "No mention of Model Context Protocol (MCP) or similar agent-specific server protocols was found in the provided documentation."
+  },
+  "buildability": {
+    "verdict": "unclear",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 0.1,
+      "access_model": 0.7,
+      "public_api": 1,
+      "api_breadth": 0.9,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.7,
+    "requires_human_review": true,
+    "human_review_reason": "Authentication methods are not explicitly detailed in the provided snippet. While developer tools access is self-serve via CLI, the exact process for obtaining API credentials and whether it requires human approval for *that specific step* is not explicitly stated, although implied by the self-serve development flow."
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783616928831_0",
+      "claim_field": "product.one_line_description",
+      "claim": "Shopify Dev Docs provide tools and frameworks for building apps, customizing storefronts, and creating agentic shopping experiences on the Shopify platform.",
+      "source_url": "https://shopify.dev/docs",
+      "source_title": "Shopify Dev Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Learn how to build an app, or customize your storefront. Whether you're just getting started, deep in the development process, or ready to distribute and monetize your work, Shopify's docs, dev tools and frameworks make building easy and efficient.",
+      "retrieved_at": "2026-07-09T17:08:48.831Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://shopify.dev/docs"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616928831_1",
+      "claim_field": "developer_access.access_model",
+      "claim": "self_serve_free",
+      "source_url": "https://shopify.dev/docs",
+      "source_title": "Shopify Dev Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Initialize new [apps](/docs/api/shopify-cli/app), [themes](/docs/api/shopify-cli/theme), and [headless storefronts](/docs/api/shopify-cli/hydrogen) in an instant with the latest Shopify CLI. A single command installs all the dependencies you need, including the CLI itself, so you can dive straight into development.",
+      "retrieved_at": "2026-07-09T17:08:48.831Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://shopify.dev/docs"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616928831_2",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": true,
+      "source_url": "https://shopify.dev/docs",
+      "source_title": "Shopify Dev Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Initialize new [apps](/docs/api/shopify-cli/app), [themes](/docs/api/shopify-cli/theme), and [headless storefronts](/docs/api/shopify-cli/hydrogen) in an instant with the latest Shopify CLI. A single command installs all the dependencies you need, including the CLI itself, so you can dive straight into development.",
+      "retrieved_at": "2026-07-09T17:08:48.831Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://shopify.dev/docs"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616928831_3",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://shopify.dev/docs",
+      "source_title": "Shopify Dev Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Learn how to build an app, or customize your storefront. Whether you're just getting started, deep in the development process, or ready to distribute and monetize your work, Shopify's docs, dev tools and frameworks make building easy and efficient.",
+      "retrieved_at": "2026-07-09T17:08:48.831Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://shopify.dev/docs"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616928831_4",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://shopify.dev/docs",
+      "source_title": "Shopify Dev Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Extend Shopify's core functionality with apps that integrate into Shopify's admin, online store, checkout and more.",
+      "retrieved_at": "2026-07-09T17:08:48.831Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://shopify.dev/docs"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616928831_5",
+      "claim_field": "api_surface.api_styles",
+      "claim": "CLI",
+      "source_url": "https://shopify.dev/docs",
+      "source_title": "Shopify Dev Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Accelerate development with Shopify CLI 3.0",
+      "retrieved_at": "2026-07-09T17:08:48.831Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://shopify.dev/docs"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616928831_6",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://shopify.dev/docs",
+      "source_title": "Shopify Dev Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Extend Shopify's core functionality with apps that integrate into Shopify's admin, online store, checkout and more.",
+      "retrieved_at": "2026-07-09T17:08:48.831Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://shopify.dev/docs"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616928831_7",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://shopify.dev/docs",
+      "source_title": "Shopify Dev Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Build agentic shopping experiences powered by Shopify merchants, from product discovery to checkout.",
+      "retrieved_at": "2026-07-09T17:08:48.831Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://shopify.dev/docs"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 41,
+      "app_name": "Shopify",
+      "website_hint": "shopify.dev",
+      "assigned_category": "Ecommerce",
+      "researched_at": "2026-07-09T17:08:48.831Z"
+    },
+    "product": {
+      "normalized_category": "Ecommerce",
+      "one_line_description": "Shopify Dev Docs provide tools and frameworks for building apps, customizing storefronts, and creating agentic shopping experiences on the Shopify platform."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "The provided documentation does not explicitly detail the authentication methods (e.g., API keys, OAuth2) required for accessing Shopify's APIs."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": true,
+      "access_notes": "Developers can self-serve to set up their development environment by installing the Shopify CLI globally and initializing new apps, themes, or headless storefronts with simple commands. The process described for starting development does not indicate a need for human approval for gaining access to these developer tools."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "CLI"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "Shopify provides a broad public API surface that allows developers to extend core functionality, integrate apps into the admin, online store, and checkout, and build agentic shopping experiences. The Shopify CLI is a key tool for initializing development projects."
+    },
+    "mcp": {
+      "mcp_status": "none_found",
+      "mcp_summary": "No mention of Model Context Protocol (MCP) or similar agent-specific server protocols was found in the provided documentation."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient.",
+      "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0.1,
+        "access_model": 0.7,
+        "public_api": 1,
+        "api_breadth": 0.9,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.7,
+      "requires_human_review": true,
+      "human_review_reason": "Authentication methods are not explicitly detailed in the provided snippet. While developer tools access is self-serve via CLI, the exact process for obtaining API credentials and whether it requires human approval for *that specific step* is not explicitly stated, although implied by the self-serve development flow."
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_access_model_unclear",
+    "risk_auth_methods_unclear",
+    "risk_contradictory_claims",
+    "risk_verdict_unclear",
+    "risk_low_confidence"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_access_model_unclear",
+      "risk_auth_methods_unclear",
+      "risk_contradictory_claims",
+      "risk_verdict_unclear",
+      "risk_low_confidence"
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "conservative_guardrail": {
+    "count": 15,
+    "apps_and_fields": [
+      "#1 Salesforce.buildability_verdict",
+      "#4 Attio.api_breadth",
+      "#4 Attio.buildability_verdict",
+      "#21 Slack.buildability_verdict",
+      "#21 Slack.primary_blocker",
+      "#53 Ahrefs.buildability_verdict",
+      "#54 MrScraper.auth_methods",
+      "#65 Supabase.access_model",
+      "#65 Supabase.buildability_verdict",
+      "#65 Supabase.primary_blocker",
+      "#75 Asana.auth_methods",
+      "#81 Stripe.auth_methods",
+      "#81 Stripe.access_model",
+      "#81 Stripe.buildability_verdict",
+      "#81 Stripe.primary_blocker"
+    ]
+  },
+  "extraction_error": {
+    "count": 22,
+    "apps_and_fields": [
+      "#1 Salesforce.access_model",
+      "#1 Salesforce.credentials_obtainable_without_approval",
+      "#1 Salesforce.public_api_status",
+      "#1 Salesforce.api_breadth",
+      "#1 Salesforce.mcp_status",
+      "#1 Salesforce.primary_blocker",
+      "#4 Attio.access_model",
+      "#4 Attio.credentials_obtainable_without_approval",
+      "#4 Attio.primary_blocker",
+      "#11 Zendesk.access_model",
+      "#11 Zendesk.credentials_obtainable_without_approval",
+      "#15 Pylon.api_breadth",
+      "#21 Slack.access_model",
+      "#21 Slack.credentials_obtainable_without_approval",
+      "#21 Slack.api_breadth",
+      "#28 WhatsApp Business.auth_methods",
+      "#53 Ahrefs.auth_methods",
+      "#53 Ahrefs.credentials_obtainable_without_approval",
+      "#53 Ahrefs.primary_blocker",
+      "#65 Supabase.auth_methods",
+      "#96 Devin.access_model",
+      "#96 Devin.api_breadth"
+    ]
+  },
+  "evidence_validation_error": {
+    "count": 1,
+    "apps_and_fields": [
+      "#70 Sentry.access_model"
+    ]
+  },
+  "outdated_source": {
+    "count": 0,
+    "apps_and_fields": []
+  },
+  "contradictory_source": {
+    "count": 0,
+    "apps_and_fields": []
+  },
+  "other": {
+    "count": 0,
+    "apps_and_fields": []
+  }
+}

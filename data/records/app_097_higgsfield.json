@@ -1,0 +1,555 @@
+{
+  "identity": {
+    "assignment_number": 97,
+    "app_name": "higgsfield",
+    "website_hint": "higgsfield.ai/cli (content suite)",
+    "assigned_category": "AI, Research and Media-native",
+    "researched_at": "2026-07-09T18:24:08.930Z"
+  },
+  "product": {
+    "normalized_category": "AI, Research and Media-native",
+    "one_line_description": "Higgsfield CLI enables AI agents to generate images and videos, train characters, analyze videos, and create marketing content by connecting to the Higgsfield platform via the Model Context Protocol (MCP)."
+  },
+  "authentication": {
+    "auth_methods": [
+      "custom"
+    ],
+    "auth_summary": "Authentication for the Higgsfield CLI is performed using the `higgsfield auth login` command, which opens a browser for a user to log in with their Higgsfield account. The platform explicitly states that no API keys are required or used for authentication."
+  },
+  "developer_access": {
+    "access_model": "self_serve_paid",
+    "credentials_obtainable_without_human_approval": true,
+    "access_notes": "Developers can install the Higgsfield CLI via `npm install -g @higgsfield/cli`. Access is then gained by running `higgsfield auth login`, which initiates a browser-based login process using an existing Higgsfield account. The system uses a credit system tied to existing Higgsfield plans, implying a paid model for usage, but the initial CLI access and authentication process do not require human approval."
+  },
+  "api_surface": {
+    "public_api": "limited",
+    "api_styles": [
+      "CLI"
+    ],
+    "api_breadth": "broad",
+    "api_summary": "The primary programmatic interface is the Higgsfield CLI, which allows AI agents to leverage a broad range of capabilities including image and video generation (up to 4K resolution and 15 seconds respectively), character training, video analysis, marketing video creation, viral clip generation, and virality prediction. It connects to over 30 AI models and supports iterative workflows."
+  },
+  "mcp": {
+    "mcp_status": "official",
+    "mcp_summary": "Higgsfield officially supports the Model Context Protocol (MCP), an open standard for AI agents to access external tools. Agents such as Claude, OpenClaw, and Hermes can connect to Higgsfield by adding the Higgsfield MCP server URL in their settings and authenticating via a Higgsfield account. MCP enables agents to generate content, train characters, and browse creation history."
+  },
+  "buildability": {
+    "verdict": "build_with_caveats",
+    "primary_blocker": "Minor onboarding or tier restrictions.",
+    "verdict_reasoning": "Application is technically buildable, subject to specific account or tier constraints."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 0.9,
+      "access_model": 0.9,
+      "public_api": 0.7,
+      "api_breadth": 0.9,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.9,
+    "requires_human_review": false,
+    "human_review_reason": null
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783621448930_0",
+      "claim_field": "product.one_line_description",
+      "claim": "Higgsfield CLI enables AI agents to generate images and videos, train characters, analyze videos, and create marketing content by connecting to the Higgsfield platform via the Model Context Protocol (MCP).",
+      "source_url": "https://higgsfield.ai/cli",
+      "source_title": "Higgsfield CLI | AI Image & Video Generation for Any Agent",
+      "source_type": "official_doc",
+      "evidence_snippet": "Higgsfield CLI | AI Image & Video Generation for Any Agent\nHiggsfield uses MCP (Model Context Protocol), an open standard that gives AI agents access to external tools. Once connected, your agent can generate images, create videos, train characters, and browse your creation history, all within a single session.",
+      "retrieved_at": "2026-07-09T18:24:08.930Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://higgsfield.ai/cli"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621448930_1",
+      "claim_field": "authentication.auth_methods",
+      "claim": "custom",
+      "source_url": "https://higgsfield.ai/cli",
+      "source_title": "Higgsfield CLI | AI Image & Video Generation for Any Agent",
+      "source_type": "official_doc",
+      "evidence_snippet": "Run higgsfield auth login and you're authenticated.",
+      "retrieved_at": "2026-07-09T18:24:08.930Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://higgsfield.ai/cli"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621448930_2",
+      "claim_field": "authentication.auth_methods",
+      "claim": "custom",
+      "source_url": "https://higgsfield.ai/cli",
+      "source_title": "Higgsfield CLI | AI Image & Video Generation for Any Agent",
+      "source_type": "official_doc",
+      "evidence_snippet": "No. Add the Higgsfield MCP server URL in your agent's settings and authenticate through your Higgsfield account. No API keys to manage or configure.",
+      "retrieved_at": "2026-07-09T18:24:08.930Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://higgsfield.ai/cli"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621448930_3",
+      "claim_field": "authentication.auth_summary",
+      "claim": "Authentication for the Higgsfield CLI is performed using the `higgsfield auth login` command, which opens a browser for a user to log in with their Higgsfield account. The platform explicitly states that no API keys are required or used for authentication.",
+      "source_url": "https://higgsfield.ai/cli",
+      "source_title": "Higgsfield CLI | AI Image & Video Generation for Any Agent",
+      "source_type": "official_doc",
+      "evidence_snippet": "Run higgsfield auth login and you're authenticated.\nNo. Add the Higgsfield MCP server URL in your agent's settings and authenticate through your Higgsfield account. No API keys to manage or configure.",
+      "retrieved_at": "2026-07-09T18:24:08.930Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://higgsfield.ai/cli"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621448930_4",
+      "claim_field": "developer_access.access_model",
+      "claim": "self_serve_paid",
+      "source_url": "https://higgsfield.ai/cli",
+      "source_title": "Higgsfield CLI | AI Image & Video Generation for Any Agent",
+      "source_type": "official_doc",
+      "evidence_snippet": "`npm install -g @higgsfield/cli`",
+      "retrieved_at": "2026-07-09T18:24:08.930Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://higgsfield.ai/cli"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621448930_5",
+      "claim_field": "developer_access.access_model",
+      "claim": "self_serve_paid",
+      "source_url": "https://higgsfield.ai/cli",
+      "source_title": "Higgsfield CLI | AI Image & Video Generation for Any Agent",
+      "source_type": "official_doc",
+      "evidence_snippet": "Run higgsfield auth login and you're authenticated.",
+      "retrieved_at": "2026-07-09T18:24:08.930Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://higgsfield.ai/cli"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621448930_6",
+      "claim_field": "developer_access.access_model",
+      "claim": "self_serve_paid",
+      "source_url": "https://higgsfield.ai/cli",
+      "source_title": "Higgsfield CLI | AI Image & Video Generation for Any Agent",
+      "source_type": "official_doc",
+      "evidence_snippet": "Higgsfield tools use the same credit system as the Higgsfield platform. Each generation costs credits based on the model and resolution. Your existing Higgsfield plan credits work seamlessly through any connected agent.",
+      "retrieved_at": "2026-07-09T18:24:08.930Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://higgsfield.ai/cli"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621448930_7",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": true,
+      "source_url": "https://higgsfield.ai/cli",
+      "source_title": "Higgsfield CLI | AI Image & Video Generation for Any Agent",
+      "source_type": "official_doc",
+      "evidence_snippet": "Run higgsfield auth login and you're authenticated.",
+      "retrieved_at": "2026-07-09T18:24:08.930Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://higgsfield.ai/cli"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621448930_8",
+      "claim_field": "developer_access.access_notes",
+      "claim": "Developers can install the Higgsfield CLI via `npm install` and then authenticate using `higgsfield auth login`, which opens a browser for account login. No API keys are used, and access relies on an existing Higgsfield account and its associated credit system.",
+      "source_url": "https://higgsfield.ai/cli",
+      "source_title": "Higgsfield CLI | AI Image & Video Generation for Any Agent",
+      "source_type": "official_doc",
+      "evidence_snippet": "`npm install -g @higgsfield/cli`\nRun higgsfield auth login and you're authenticated.\nNo. Add the Higgsfield MCP server URL in your agent's settings and authenticate through your Higgsfield account. No API keys to manage or configure.\nYour existing Higgsfield plan credits work seamlessly through any connected agent.",
+      "retrieved_at": "2026-07-09T18:24:08.930Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://higgsfield.ai/cli"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621448930_9",
+      "claim_field": "api_surface.public_api",
+      "claim": "limited",
+      "source_url": "https://higgsfield.ai/cli",
+      "source_title": "Higgsfield CLI | AI Image & Video Generation for Any Agent",
+      "source_type": "official_doc",
+      "evidence_snippet": "Higgsfield CLI | AI Image & Video Generation for Any Agent\nHiggsfield uses MCP (Model Context Protocol), an open standard that gives AI agents access to external tools.",
+      "retrieved_at": "2026-07-09T18:24:08.930Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://higgsfield.ai/cli"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621448930_10",
+      "claim_field": "api_surface.api_styles",
+      "claim": "CLI",
+      "source_url": "https://higgsfield.ai/cli",
+      "source_title": "Higgsfield CLI | AI Image & Video Generation for Any Agent",
+      "source_type": "official_doc",
+      "evidence_snippet": "Higgsfield CLI | AI Image & Video Generation for Any Agent\n`npm install -g @higgsfield/cli`",
+      "retrieved_at": "2026-07-09T18:24:08.930Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://higgsfield.ai/cli"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621448930_11",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://higgsfield.ai/cli",
+      "source_title": "Higgsfield CLI | AI Image & Video Generation for Any Agent",
+      "source_type": "official_doc",
+      "evidence_snippet": "Generate, Product Photoshoot & Soul ID\nVideo analyzer\nMarketing video generator\nSoul character training\nCinematic image to video\nViral clip generator\nVirality prediction\nImages up to 4K resolution, videos up to 15 seconds across multiple cinematic styles, consistent characters using Soul training, and more.",
+      "retrieved_at": "2026-07-09T18:24:08.930Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://higgsfield.ai/cli"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621448930_12",
+      "claim_field": "api_surface.api_summary",
+      "claim": "The CLI and MCP enable AI agents to access a broad range of AI capabilities including image and video generation, character training, video analysis, marketing video creation, viral clip generation, and virality prediction, leveraging 30+ underlying AI models.",
+      "source_url": "https://higgsfield.ai/cli",
+      "source_title": "Higgsfield CLI | AI Image & Video Generation for Any Agent",
+      "source_type": "official_doc",
+      "evidence_snippet": "Generate, Product Photoshoot & Soul ID\nVideo analyzer\nMarketing video generator\nSoul character training\nCinematic image to video\nViral clip generator\nVirality prediction\nHiggsfield gives your agent access to 30+ models including Soul, Cinema Studio, Flux, Seedream, Kling, Minimax Hailuo, Veo, and more. Your agent automatically selects the best model for the task, or you can specify one yourself.\nImages up to 4K resolution, videos up to 15 seconds across multiple cinematic styles, consistent characters using Soul training, and more. You can generate from text prompts, reference images, or a combination of both.",
+      "retrieved_at": "2026-07-09T18:24:08.930Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://higgsfield.ai/cli"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621448930_13",
+      "claim_field": "mcp.mcp_status",
+      "claim": "official",
+      "source_url": "https://higgsfield.ai/cli",
+      "source_title": "Higgsfield CLI | AI Image & Video Generation for Any Agent",
+      "source_type": "official_doc",
+      "evidence_snippet": "How does Higgsfield connect to AI agents?\nHiggsfield uses MCP (Model Context Protocol), an open standard that gives AI agents access to external tools.\nWhich agents are supported?\nHiggsfield MCP works with Claude (web, Cowork, and Claude Code), OpenClaw, Hermes Agent, and NemoClaw. Any agent or client that supports MCP can connect to Higgsfield.",
+      "retrieved_at": "2026-07-09T18:24:08.930Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://higgsfield.ai/cli"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621448930_14",
+      "claim_field": "mcp.mcp_summary",
+      "claim": "Higgsfield officially supports the Model Context Protocol (MCP), an open standard that allows AI agents like Claude, OpenClaw, and Hermes to access Higgsfield's tools for image and video generation, character training, and more. Users add the Higgsfield MCP server URL in their agent's settings for connection.",
+      "source_url": "https://higgsfield.ai/cli",
+      "source_title": "Higgsfield CLI | AI Image & Video Generation for Any Agent",
+      "source_type": "official_doc",
+      "evidence_snippet": "Higgsfield uses MCP (Model Context Protocol), an open standard that gives AI agents access to external tools. Once connected, your agent can generate images, create videos, train characters, and browse your creation history, all within a single session.\nHiggsfield MCP works with Claude (web, Cowork, and Claude Code), OpenClaw, Hermes Agent, and NemoClaw. Any agent or client that supports MCP can connect to Higgsfield.\nNo. Add the Higgsfield MCP server URL in your agent's settings and authenticate through your Higgsfield account. No API keys to manage or configure.",
+      "retrieved_at": "2026-07-09T18:24:08.930Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://higgsfield.ai/cli"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 97,
+      "app_name": "higgsfield",
+      "website_hint": "higgsfield.ai/cli (content suite)",
+      "assigned_category": "AI, Research and Media-native",
+      "researched_at": "2026-07-09T18:24:08.930Z"
+    },
+    "product": {
+      "normalized_category": "AI, Research and Media-native",
+      "one_line_description": "Higgsfield CLI enables AI agents to generate images and videos, train characters, analyze videos, and create marketing content by connecting to the Higgsfield platform via the Model Context Protocol (MCP)."
+    },
+    "authentication": {
+      "auth_methods": [
+        "custom"
+      ],
+      "auth_summary": "Authentication for the Higgsfield CLI is performed using the `higgsfield auth login` command, which opens a browser for a user to log in with their Higgsfield account. The platform explicitly states that no API keys are required or used for authentication."
+    },
+    "developer_access": {
+      "access_model": "self_serve_paid",
+      "credentials_obtainable_without_human_approval": true,
+      "access_notes": "Developers can install the Higgsfield CLI via `npm install -g @higgsfield/cli`. Access is then gained by running `higgsfield auth login`, which initiates a browser-based login process using an existing Higgsfield account. The system uses a credit system tied to existing Higgsfield plans, implying a paid model for usage, but the initial CLI access and authentication process do not require human approval."
+    },
+    "api_surface": {
+      "public_api": "limited",
+      "api_styles": [
+        "CLI"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "The primary programmatic interface is the Higgsfield CLI, which allows AI agents to leverage a broad range of capabilities including image and video generation (up to 4K resolution and 15 seconds respectively), character training, video analysis, marketing video creation, viral clip generation, and virality prediction. It connects to over 30 AI models and supports iterative workflows."
+    },
+    "mcp": {
+      "mcp_status": "official",
+      "mcp_summary": "Higgsfield officially supports the Model Context Protocol (MCP), an open standard for AI agents to access external tools. Agents such as Claude, OpenClaw, and Hermes can connect to Higgsfield by adding the Higgsfield MCP server URL in their settings and authenticating via a Higgsfield account. MCP enables agents to generate content, train characters, and browse creation history."
+    },
+    "buildability": {
+      "verdict": "build_with_caveats",
+      "primary_blocker": "Minor onboarding or tier restrictions.",
+      "verdict_reasoning": "Application is technically buildable, subject to specific account or tier constraints."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0.9,
+        "access_model": 0.9,
+        "public_api": 0.7,
+        "api_breadth": 0.9,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.9,
+      "requires_human_review": false,
+      "human_review_reason": null
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_material_evidence_validation_failed"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_material_evidence_validation_failed"
+    ]
+  }
+}

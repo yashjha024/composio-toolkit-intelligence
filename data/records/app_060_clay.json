@@ -1,0 +1,356 @@
+{
+  "identity": {
+    "assignment_number": 60,
+    "app_name": "Clay",
+    "website_hint": "clay.com",
+    "assigned_category": "Data, SEO and Scraping",
+    "researched_at": "2026-07-09T17:18:48.617Z"
+  },
+  "product": {
+    "normalized_category": "Data, SEO and Scraping",
+    "one_line_description": "Clay provides infrastructure to get any data, run AI-powered agentic workflows, and launch go-to-market plays to grow revenue."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "The provided source does not explicitly mention authentication methods for Clay's own API or developer access. While the platform integrates with 200+ data and AI vendors, how developers would authenticate with Clay's core platform for API access is unclear."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": "unknown",
+    "access_notes": "The website offers 'Start free trial' and 'Sign up' options, which appear to grant access to the Clay application. However, there is no explicit mention or documentation on how to obtain API credentials (e.g., API keys, OAuth tokens) for programmatic access to Clay's services without human approval."
+  },
+  "api_surface": {
+    "public_api": "unclear",
+    "api_styles": [],
+    "api_breadth": "unclear",
+    "api_summary": "The provided source does not explicitly mention Clay exposing a public API for external programmatic use. The platform highlights its ability to 'get data from the most complete data marketplace' by integrating with '200+ data and AI vendors' and 'orchestrate workflows across tools in real time', suggesting it acts as a consumer or orchestrator of other services' APIs and data, rather than directly offering its own API. Features like 'Functions' and 'AI formatting' are listed but lack descriptive text."
+  },
+  "mcp": {
+    "mcp_status": "none_found",
+    "mcp_summary": "No mention of Model Context Protocol (MCP) or similar concepts was found on the provided source page."
+  },
+  "buildability": {
+    "verdict": "unclear",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 0.2,
+      "access_model": 0.2,
+      "public_api": 0.2,
+      "api_breadth": 0.2,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.3,
+    "requires_human_review": true,
+    "human_review_reason": "Lack of explicit information regarding Clay's public API, developer access, and authentication methods. The website focuses on the product's capabilities and integrations rather than its own API for external developers."
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783617528617_0",
+      "claim_field": "product.one_line_description",
+      "claim": "Infrastructure to get any data, run agentic workflows, and launch GTM plays.",
+      "source_url": "https://www.clay.com/",
+      "source_title": "Clay | Build systems to grow revenue",
+      "source_type": "official_doc",
+      "evidence_snippet": "Infrastructure to get any data, run agentic workflows, and launch GTM plays.",
+      "retrieved_at": "2026-07-09T17:18:48.617Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.clay.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617528617_1",
+      "claim_field": "developer_access.access_model",
+      "claim": "unclear",
+      "source_url": "https://www.clay.com/",
+      "source_title": "Clay | Build systems to grow revenue",
+      "source_type": "official_doc",
+      "evidence_snippet": "[ Start free trial ](https://app.clay.com/signup?source=website)",
+      "retrieved_at": "2026-07-09T17:18:48.617Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.clay.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617528617_2",
+      "claim_field": "developer_access.access_model",
+      "claim": "unclear",
+      "source_url": "https://www.clay.com/",
+      "source_title": "Clay | Build systems to grow revenue",
+      "source_type": "official_doc",
+      "evidence_snippet": "[ Sign up ](https://app.clay.com/signup?source=nav)",
+      "retrieved_at": "2026-07-09T17:18:48.617Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.clay.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617528617_3",
+      "claim_field": "api_surface.public_api",
+      "claim": "unclear",
+      "source_url": "https://www.clay.com/",
+      "source_title": "Clay | Build systems to grow revenue",
+      "source_type": "official_doc",
+      "evidence_snippet": "Buy data from 200+ providers in one place",
+      "retrieved_at": "2026-07-09T17:18:48.617Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.clay.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617528617_4",
+      "claim_field": "api_surface.public_api",
+      "claim": "unclear",
+      "source_url": "https://www.clay.com/",
+      "source_title": "Clay | Build systems to grow revenue",
+      "source_type": "official_doc",
+      "evidence_snippet": "Connect every GTM or AI tool to a common data layer.",
+      "retrieved_at": "2026-07-09T17:18:48.617Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.clay.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617528617_5",
+      "claim_field": "api_surface.public_api",
+      "claim": "unclear",
+      "source_url": "https://www.clay.com/",
+      "source_title": "Clay | Build systems to grow revenue",
+      "source_type": "official_doc",
+      "evidence_snippet": "Trigger emails, ads, and more with integrations to your existing GTM tools.",
+      "retrieved_at": "2026-07-09T17:18:48.617Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.clay.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617528617_6",
+      "claim_field": "api_surface.public_api",
+      "claim": "unclear",
+      "source_url": "https://www.clay.com/",
+      "source_title": "Clay | Build systems to grow revenue",
+      "source_type": "official_doc",
+      "evidence_snippet": "Functions\nLink long form description will go in this slot here.",
+      "retrieved_at": "2026-07-09T17:18:48.617Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.clay.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617528617_7",
+      "claim_field": "api_surface.public_api",
+      "claim": "unclear",
+      "source_url": "https://www.clay.com/",
+      "source_title": "Clay | Build systems to grow revenue",
+      "source_type": "official_doc",
+      "evidence_snippet": "AI formatting\nLink long form description will go in this slot here.",
+      "retrieved_at": "2026-07-09T17:18:48.617Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.clay.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 60,
+      "app_name": "Clay",
+      "website_hint": "clay.com",
+      "assigned_category": "Data, SEO and Scraping",
+      "researched_at": "2026-07-09T17:18:48.617Z"
+    },
+    "product": {
+      "normalized_category": "Data, SEO and Scraping",
+      "one_line_description": "Clay provides infrastructure to get any data, run AI-powered agentic workflows, and launch go-to-market plays to grow revenue."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "The provided source does not explicitly mention authentication methods for Clay's own API or developer access. While the platform integrates with 200+ data and AI vendors, how developers would authenticate with Clay's core platform for API access is unclear."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": "unknown",
+      "access_notes": "The website offers 'Start free trial' and 'Sign up' options, which appear to grant access to the Clay application. However, there is no explicit mention or documentation on how to obtain API credentials (e.g., API keys, OAuth tokens) for programmatic access to Clay's services without human approval."
+    },
+    "api_surface": {
+      "public_api": "unclear",
+      "api_styles": [],
+      "api_breadth": "unclear",
+      "api_summary": "The provided source does not explicitly mention Clay exposing a public API for external programmatic use. The platform highlights its ability to 'get data from the most complete data marketplace' by integrating with '200+ data and AI vendors' and 'orchestrate workflows across tools in real time', suggesting it acts as a consumer or orchestrator of other services' APIs and data, rather than directly offering its own API. Features like 'Functions' and 'AI formatting' are listed but lack descriptive text."
+    },
+    "mcp": {
+      "mcp_status": "none_found",
+      "mcp_summary": "No mention of Model Context Protocol (MCP) or similar concepts was found on the provided source page."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient.",
+      "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0.2,
+        "access_model": 0.2,
+        "public_api": 0.2,
+        "api_breadth": 0.2,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.3,
+      "requires_human_review": true,
+      "human_review_reason": "Lack of explicit information regarding Clay's public API, developer access, and authentication methods. The website focuses on the product's capabilities and integrations rather than its own API for external developers."
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_access_model_unclear",
+    "risk_auth_methods_unclear",
+    "risk_public_api_unclear",
+    "risk_verdict_unclear",
+    "risk_low_confidence"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_access_model_unclear",
+      "risk_auth_methods_unclear",
+      "risk_public_api_unclear",
+      "risk_verdict_unclear",
+      "risk_low_confidence"
+    ]
+  }
+}

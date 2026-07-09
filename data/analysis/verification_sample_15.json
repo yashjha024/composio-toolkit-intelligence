@@ -1,0 +1,137 @@
+[
+  {
+    "assignment_number": 1,
+    "app_name": "Salesforce",
+    "assigned_category": "CRM and Sales",
+    "processing_mode": "deep_verified",
+    "current_verdict": "UNCLEAR",
+    "risk_flag_count": 0,
+    "reason_selected": "Complex enterprise CRM where developer editions allow buildability despite strict multi-tenant OAuth requirements."
+  },
+  {
+    "assignment_number": 4,
+    "app_name": "Attio",
+    "assigned_category": "CRM and Sales",
+    "processing_mode": "deep_verified",
+    "current_verdict": "UNCLEAR",
+    "risk_flag_count": 0,
+    "reason_selected": "Deep verified baseline CRM with clean API key/OAuth self-serve access and high confidence."
+  },
+  {
+    "assignment_number": 11,
+    "app_name": "Zendesk",
+    "assigned_category": "Support and Helpdesk",
+    "processing_mode": "deep_verified",
+    "current_verdict": "UNCLEAR",
+    "risk_flag_count": 0,
+    "reason_selected": "Deep verified baseline support ticketing platform tested during smoke testing to check multi-auth handling."
+  },
+  {
+    "assignment_number": 15,
+    "app_name": "Pylon",
+    "assigned_category": "Support and Helpdesk",
+    "processing_mode": "fast_scale",
+    "current_verdict": "OUTREACH_REQUIRED",
+    "risk_flag_count": 3,
+    "reason_selected": "Representative sales-gated B2B support platform where API documentation exists but credentials require vendor contact."
+  },
+  {
+    "assignment_number": 21,
+    "app_name": "Slack",
+    "assigned_category": "Communications and Messaging",
+    "processing_mode": "deep_verified",
+    "current_verdict": "UNCLEAR",
+    "risk_flag_count": 0,
+    "reason_selected": "Deep verified messaging platform with broad API surface but flagged for conservative validation audit."
+  },
+  {
+    "assignment_number": 28,
+    "app_name": "WhatsApp Business",
+    "assigned_category": "Communications and Messaging",
+    "processing_mode": "fast_scale",
+    "current_verdict": "OUTREACH_REQUIRED",
+    "risk_flag_count": 3,
+    "reason_selected": "Major messaging ecosystem requiring Meta business verification and approval for production API credentials."
+  },
+  {
+    "assignment_number": 53,
+    "app_name": "Ahrefs",
+    "assigned_category": "Data, SEO and Scraping",
+    "processing_mode": "fast_scale",
+    "current_verdict": "OUTREACH_REQUIRED",
+    "risk_flag_count": 2,
+    "reason_selected": "SEO industry standard where API access is gated behind specific high-tier enterprise subscriptions."
+  },
+  {
+    "assignment_number": 54,
+    "app_name": "MrScraper",
+    "assigned_category": "Data, SEO and Scraping",
+    "processing_mode": "fast_scale",
+    "current_verdict": "BUILD_NOW",
+    "risk_flag_count": 3,
+    "reason_selected": "Fast scale BUILD_NOW verdict with verified REST/SDK endpoints and API key self-serve access."
+  },
+  {
+    "assignment_number": 56,
+    "app_name": "Firecrawl",
+    "assigned_category": "Data, SEO and Scraping",
+    "processing_mode": "deep_verified",
+    "current_verdict": "BUILD_NOW",
+    "risk_flag_count": 0,
+    "reason_selected": "Verified scraping infrastructure with official MCP server and immediate self-serve API access."
+  },
+  {
+    "assignment_number": 65,
+    "app_name": "Supabase",
+    "assigned_category": "Developer, Infra and Data platforms",
+    "processing_mode": "fast_scale",
+    "current_verdict": "UNCLEAR",
+    "risk_flag_count": 6,
+    "reason_selected": "Developer-native backend service where API availability is undisputed but Fast Scale triggered 6 risk flags."
+  },
+  {
+    "assignment_number": 70,
+    "app_name": "Sentry",
+    "assigned_category": "Developer, Infra and Data platforms",
+    "processing_mode": "fast_scale",
+    "current_verdict": "BUILD_NOW",
+    "risk_flag_count": 2,
+    "reason_selected": "Developer monitoring tool verified with self-serve free tier and API/DSN endpoints."
+  },
+  {
+    "assignment_number": 75,
+    "app_name": "Asana",
+    "assigned_category": "Productivity and Project Management",
+    "processing_mode": "fast_scale",
+    "current_verdict": "BUILD_NOW",
+    "risk_flag_count": 3,
+    "reason_selected": "Enterprise project management platform confirmed self-serve with broad OAuth/PAT API coverage."
+  },
+  {
+    "assignment_number": 81,
+    "app_name": "Stripe",
+    "assigned_category": "Finance and Fintech",
+    "processing_mode": "fast_scale",
+    "current_verdict": "UNCLEAR",
+    "risk_flag_count": 5,
+    "reason_selected": "Fintech payment standard showing conservative Fast Scale UNCLEAR classification despite clear REST APIs."
+  },
+  {
+    "assignment_number": 95,
+    "app_name": "Reducto",
+    "assigned_category": "AI, Research and Media-native",
+    "processing_mode": "fast_scale",
+    "current_verdict": "BUILD_NOW",
+    "risk_flag_count": 1,
+    "reason_selected": "AI-native document extraction platform verified buildable via self-serve API keys."
+  },
+  {
+    "assignment_number": 96,
+    "app_name": "Devin",
+    "assigned_category": "AI, Research and Media-native",
+    "processing_mode": "fast_scale",
+    "current_verdict": "UNCLEAR",
+    "risk_flag_count": 6,
+    "reason_selected": "AI autonomous software engineer app with emerging API/MCP interfaces and strict gating verification."
+  }
+]

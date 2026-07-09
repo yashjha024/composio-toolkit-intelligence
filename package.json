@@ -9,7 +9,10 @@
     "test:watch": "vitest",
     "build": "tsc",
     "extract-benchmark": "node scripts/extract-benchmark.js",
-    "gate:a": "tsx src/cli/run-gate-a.ts"
+    "gate:a": "tsx src/cli/run-gate-a.ts",
+    "gate:b": "tsx src/cli/run-gate-b.ts",
+    "build:data": "tsx src/cli/generate-case-study-data.ts",
+    "build:html": "tsx src/cli/build-html.ts"
   },
   "dependencies": {
     "@google/genai": "^2.10.0",

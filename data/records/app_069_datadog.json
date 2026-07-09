@@ -1,0 +1,426 @@
+{
+  "identity": {
+    "assignment_number": 69,
+    "app_name": "Datadog",
+    "website_hint": "docs.datadoghq.com/api",
+    "assigned_category": "Developer, Infra and Data platforms",
+    "researched_at": "2026-07-09T17:32:33.694Z"
+  },
+  "product": {
+    "normalized_category": "Developer, Infra and Data platforms",
+    "one_line_description": "Datadog is a monitoring and security platform that provides an API for managing agents, metrics, events, incidents, and various other observability and cloud application functionalities."
+  },
+  "authentication": {
+    "auth_methods": [
+      "oauth2",
+      "unclear"
+    ],
+    "auth_summary": "Datadog documentation explicitly mentions support for OAuth2 for authorization. Other authentication methods are not detailed in the provided content."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": "unknown",
+    "access_notes": "The provided documentation does not specify the process for developers to obtain API credentials (e.g., API keys, OAuth client credentials) or whether this process is self-serve, free, or requires human approval. It mentions 'Credential Management' under 'Access for Enterprises', but not as a means for API key acquisition for individual developers."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "REST",
+      "SDK",
+      "CLI"
+    ],
+    "api_breadth": "broad",
+    "api_summary": "Datadog offers a broad public API, evidenced by its comprehensive 'API Reference' and extensive navigation covering diverse functionalities like agents, metrics, monitors, incidents, and workflow automation. The API appears to be RESTful based on URL patterns, and the platform also supports Client SDKs and a Command Line interface."
+  },
+  "mcp": {
+    "mcp_status": "official",
+    "mcp_summary": "Datadog officially supports Model Context Protocol (MCP) as indicated by dedicated documentation sections for 'MCP Server' and 'MCP Tools'."
+  },
+  "buildability": {
+    "verdict": "unclear",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 0.8,
+      "access_model": 0.5,
+      "public_api": 1,
+      "api_breadth": 1,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.86,
+    "requires_human_review": true,
+    "human_review_reason": "The exact process for obtaining API credentials (developer access model) and the full range of authentication methods are not explicitly detailed in the provided snippet."
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783618353694_0",
+      "claim_field": "product.one_line_description",
+      "claim": "Datadog is a monitoring and security platform that provides an API for managing agents, metrics, events, incidents, and various other observability and cloud application functionalities.",
+      "source_url": "https://docs.datadoghq.com/api/latest/",
+      "source_title": "API ReferenceWhite modal up arrowIcon/world",
+      "source_type": "api_ref",
+      "evidence_snippet": "API Reference ... [Home] Docs API ... Agents ... Metrics ... Monitors ... Incident Management ... Workflow Automation",
+      "retrieved_at": "2026-07-09T17:32:33.694Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.datadoghq.com/api/latest/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783618353694_1",
+      "claim_field": "authentication.auth_methods",
+      "claim": "oauth2",
+      "source_url": "https://docs.datadoghq.com/api/latest/",
+      "source_title": "API ReferenceWhite modal up arrowIcon/world",
+      "source_type": "api_ref",
+      "evidence_snippet": "*   [Extend Datadog](https://docs.datadoghq.com/extend/) *   [Authorization](https://docs.datadoghq.com/extend/authorization/) *   [OAuth2 in Datadog](https://docs.datadoghq.com/extend/authorization/oauth2_in_datadog/) *   [Authorization Endpoints](https://docs.datadoghq.com/extend/authorization/oauth2_endpoints/)",
+      "retrieved_at": "2026-07-09T17:32:33.694Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.datadoghq.com/api/latest/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783618353694_2",
+      "claim_field": "developer_access.access_model",
+      "claim": "unclear",
+      "source_url": "https://docs.datadoghq.com/api/latest/",
+      "source_title": "API ReferenceWhite modal up arrowIcon/world",
+      "source_type": "api_ref",
+      "evidence_snippet": "No direct evidence found regarding the self-serve nature or cost of obtaining API credentials.",
+      "retrieved_at": "2026-07-09T17:32:33.694Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.datadoghq.com/api/latest/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783618353694_3",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": "unknown",
+      "source_url": "https://docs.datadoghq.com/api/latest/",
+      "source_title": "API ReferenceWhite modal up arrowIcon/world",
+      "source_type": "api_ref",
+      "evidence_snippet": "No direct evidence found regarding whether human approval is needed for API credentials. 'Credential Management' is mentioned under 'Access for Enterprises', but does not specify API key acquisition for developers.",
+      "retrieved_at": "2026-07-09T17:32:33.694Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.datadoghq.com/api/latest/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783618353694_4",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://docs.datadoghq.com/api/latest/",
+      "source_title": "API ReferenceWhite modal up arrowIcon/world",
+      "source_type": "api_ref",
+      "evidence_snippet": "API Reference",
+      "retrieved_at": "2026-07-09T17:32:33.694Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.datadoghq.com/api/latest/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783618353694_5",
+      "claim_field": "api_surface.api_styles",
+      "claim": "REST",
+      "source_url": "https://docs.datadoghq.com/api/latest/",
+      "source_title": "API ReferenceWhite modal up arrowIcon/world",
+      "source_type": "api_ref",
+      "evidence_snippet": "URL paths like `/api/latest/` and `/api/v1/service-checks/` indicate a RESTful API structure.",
+      "retrieved_at": "2026-07-09T17:32:33.694Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.datadoghq.com/api/latest/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783618353695_6",
+      "claim_field": "api_surface.api_styles",
+      "claim": "SDK",
+      "source_url": "https://docs.datadoghq.com/api/latest/",
+      "source_title": "API ReferenceWhite modal up arrowIcon/world",
+      "source_type": "api_ref",
+      "evidence_snippet": "*   [Client SDKs](https://docs.datadoghq.com/client_sdks/)",
+      "retrieved_at": "2026-07-09T17:32:33.695Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.datadoghq.com/api/latest/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783618353695_7",
+      "claim_field": "api_surface.api_styles",
+      "claim": "CLI",
+      "source_url": "https://docs.datadoghq.com/api/latest/",
+      "source_title": "API ReferenceWhite modal up arrowIcon/world",
+      "source_type": "api_ref",
+      "evidence_snippet": "*   [Command Line](https://docs.datadoghq.com/cli/)",
+      "retrieved_at": "2026-07-09T17:32:33.695Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.datadoghq.com/api/latest/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783618353695_8",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://docs.datadoghq.com/api/latest/",
+      "source_title": "API ReferenceWhite modal up arrowIcon/world",
+      "source_type": "api_ref",
+      "evidence_snippet": "The extensive navigation menu listing topics such as 'Agents', 'Metrics', 'Monitors', 'Dashboards', 'Integrations', 'Incident Management', and 'Workflow Automation' indicates broad API coverage.",
+      "retrieved_at": "2026-07-09T17:32:33.695Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.datadoghq.com/api/latest/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783618353695_9",
+      "claim_field": "mcp.mcp_status",
+      "claim": "official",
+      "source_url": "https://docs.datadoghq.com/api/latest/",
+      "source_title": "API ReferenceWhite modal up arrowIcon/world",
+      "source_type": "api_ref",
+      "evidence_snippet": "*   [MCP Server](https://docs.datadoghq.com/mcp_server) *   [Setup](https://docs.datadoghq.com/mcp_server/setup) *   [MCP Tools](https://docs.datadoghq.com/mcp_server/tools)",
+      "retrieved_at": "2026-07-09T17:32:33.695Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.datadoghq.com/api/latest/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 69,
+      "app_name": "Datadog",
+      "website_hint": "docs.datadoghq.com/api",
+      "assigned_category": "Developer, Infra and Data platforms",
+      "researched_at": "2026-07-09T17:32:33.694Z"
+    },
+    "product": {
+      "normalized_category": "Developer, Infra and Data platforms",
+      "one_line_description": "Datadog is a monitoring and security platform that provides an API for managing agents, metrics, events, incidents, and various other observability and cloud application functionalities."
+    },
+    "authentication": {
+      "auth_methods": [
+        "oauth2",
+        "unclear"
+      ],
+      "auth_summary": "Datadog documentation explicitly mentions support for OAuth2 for authorization. Other authentication methods are not detailed in the provided content."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": "unknown",
+      "access_notes": "The provided documentation does not specify the process for developers to obtain API credentials (e.g., API keys, OAuth client credentials) or whether this process is self-serve, free, or requires human approval. It mentions 'Credential Management' under 'Access for Enterprises', but not as a means for API key acquisition for individual developers."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "REST",
+        "SDK",
+        "CLI"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "Datadog offers a broad public API, evidenced by its comprehensive 'API Reference' and extensive navigation covering diverse functionalities like agents, metrics, monitors, incidents, and workflow automation. The API appears to be RESTful based on URL patterns, and the platform also supports Client SDKs and a Command Line interface."
+    },
+    "mcp": {
+      "mcp_status": "official",
+      "mcp_summary": "Datadog officially supports Model Context Protocol (MCP) as indicated by dedicated documentation sections for 'MCP Server' and 'MCP Tools'."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient.",
+      "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0.8,
+        "access_model": 0.5,
+        "public_api": 1,
+        "api_breadth": 1,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.86,
+      "requires_human_review": true,
+      "human_review_reason": "The exact process for obtaining API credentials (developer access model) and the full range of authentication methods are not explicitly detailed in the provided snippet."
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_access_model_unclear",
+    "risk_auth_methods_unclear",
+    "risk_material_evidence_validation_failed",
+    "risk_contradictory_claims",
+    "risk_verdict_unclear",
+    "risk_low_confidence"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_access_model_unclear",
+      "risk_auth_methods_unclear",
+      "risk_material_evidence_validation_failed",
+      "risk_contradictory_claims",
+      "risk_verdict_unclear",
+      "risk_low_confidence"
+    ]
+  }
+}

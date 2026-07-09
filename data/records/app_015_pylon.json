@@ -1,0 +1,298 @@
+{
+  "identity": {
+    "assignment_number": 15,
+    "app_name": "Pylon",
+    "website_hint": "usepylon.com",
+    "assigned_category": "Support and Helpdesk",
+    "researched_at": "2026-07-09T16:55:22.777Z"
+  },
+  "product": {
+    "normalized_category": "Support and Helpdesk",
+    "one_line_description": "Pylon is an AI-native B2B support platform that consolidates support across every channel, offering features like AI-powered routing, knowledge automation, and account intelligence."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "The provided source page does not explicitly document any authentication methods for developer access or APIs. There is no mention of API keys, OAuth, or other credentials."
+  },
+  "developer_access": {
+    "access_model": "sales_gated",
+    "credentials_obtainable_without_human_approval": false,
+    "access_notes": "Access to Pylon's features and potential APIs appears to be gated behind a sales process, indicated by the 'Book a Demo' call to action. There is no self-serve option to obtain developer credentials or API access mentioned on the page."
+  },
+  "api_surface": {
+    "public_api": "limited",
+    "api_styles": [
+      "other"
+    ],
+    "api_breadth": "moderate",
+    "api_summary": "The website references integrations and documentation for various features like Slack, Teams, Discord, AI agents, and account intelligence, implying programmatic capabilities. However, it does not explicitly mention a 'public API' or specific API styles (REST, GraphQL, etc.). The links to 'docs.usepylon.com' suggest an interface for integration and automation, but the main page doesn't provide details on how to use them as an external API. Given the context, these are likely integration points rather than a fully exposed public API for general developer use."
+  },
+  "mcp": {
+    "mcp_status": "none_found",
+    "mcp_summary": "There is no mention of Model Context Protocol or similar server availability in the provided source."
+  },
+  "buildability": {
+    "verdict": "outreach_required",
+    "primary_blocker": "Access requires contacting enterprise sales team.",
+    "verdict_reasoning": "Public API endpoints exist, but developer credentials cannot be obtained without sales contact."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 0.4,
+      "access_model": 0.7,
+      "public_api": 0.6,
+      "api_breadth": 0.6,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.6,
+    "requires_human_review": false,
+    "human_review_reason": null
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783616122777_0",
+      "claim_field": "product.one_line_description",
+      "claim": "Pylon is AI-native B2B support, across every channel.",
+      "source_url": "https://www.usepylon.com/",
+      "source_title": "Pylon | AI-native B2B Support",
+      "source_type": "official_doc",
+      "evidence_snippet": "Pylon is AI-native B2B support, across every channel.",
+      "retrieved_at": "2026-07-09T16:55:22.777Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.usepylon.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616122777_1",
+      "claim_field": "developer_access.access_model",
+      "claim": "sales_gated",
+      "source_url": "https://www.usepylon.com/",
+      "source_title": "Pylon | AI-native B2B Support",
+      "source_type": "official_doc",
+      "evidence_snippet": "Book a Demo",
+      "retrieved_at": "2026-07-09T16:55:22.777Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.usepylon.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616122777_2",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": false,
+      "source_url": "https://www.usepylon.com/",
+      "source_title": "Pylon | AI-native B2B Support",
+      "source_type": "official_doc",
+      "evidence_snippet": "Book a Demo",
+      "retrieved_at": "2026-07-09T16:55:22.777Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.usepylon.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616122777_3",
+      "claim_field": "api_surface.public_api",
+      "claim": "limited",
+      "source_url": "https://www.usepylon.com/",
+      "source_title": "Pylon | AI-native B2B Support",
+      "source_type": "official_doc",
+      "evidence_snippet": "Manage Slack Connect and Community channels in Pylon\nSupport Microsoft Teams users without switching apps\nTrack all Discord conversations and forums in one place",
+      "retrieved_at": "2026-07-09T16:55:22.777Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.usepylon.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616122777_4",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "moderate",
+      "source_url": "https://www.usepylon.com/",
+      "source_title": "Pylon | AI-native B2B Support",
+      "source_type": "official_doc",
+      "evidence_snippet": "Automate repetitive tasks and ticket pre-work\nAsk AI anything and get answers with sources\nFill knowledge gaps and automatically generate docs",
+      "retrieved_at": "2026-07-09T16:55:22.777Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.usepylon.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616122777_5",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "moderate",
+      "source_url": "https://www.usepylon.com/",
+      "source_title": "Pylon | AI-native B2B Support",
+      "source_type": "official_doc",
+      "evidence_snippet": "Track key account signals automatically\nSee full customer context in seconds\nTurn conversations into actionable tasks and projects",
+      "retrieved_at": "2026-07-09T16:55:22.777Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.usepylon.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 15,
+      "app_name": "Pylon",
+      "website_hint": "usepylon.com",
+      "assigned_category": "Support and Helpdesk",
+      "researched_at": "2026-07-09T16:55:22.777Z"
+    },
+    "product": {
+      "normalized_category": "Support and Helpdesk",
+      "one_line_description": "Pylon is an AI-native B2B support platform that consolidates support across every channel, offering features like AI-powered routing, knowledge automation, and account intelligence."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "The provided source page does not explicitly document any authentication methods for developer access or APIs. There is no mention of API keys, OAuth, or other credentials."
+    },
+    "developer_access": {
+      "access_model": "sales_gated",
+      "credentials_obtainable_without_human_approval": false,
+      "access_notes": "Access to Pylon's features and potential APIs appears to be gated behind a sales process, indicated by the 'Book a Demo' call to action. There is no self-serve option to obtain developer credentials or API access mentioned on the page."
+    },
+    "api_surface": {
+      "public_api": "limited",
+      "api_styles": [
+        "other"
+      ],
+      "api_breadth": "moderate",
+      "api_summary": "The website references integrations and documentation for various features like Slack, Teams, Discord, AI agents, and account intelligence, implying programmatic capabilities. However, it does not explicitly mention a 'public API' or specific API styles (REST, GraphQL, etc.). The links to 'docs.usepylon.com' suggest an interface for integration and automation, but the main page doesn't provide details on how to use them as an external API. Given the context, these are likely integration points rather than a fully exposed public API for general developer use."
+    },
+    "mcp": {
+      "mcp_status": "none_found",
+      "mcp_summary": "There is no mention of Model Context Protocol or similar server availability in the provided source."
+    },
+    "buildability": {
+      "verdict": "outreach_required",
+      "primary_blocker": "Access requires contacting enterprise sales team.",
+      "verdict_reasoning": "Public API endpoints exist, but developer credentials cannot be obtained without sales contact."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0.4,
+        "access_model": 0.7,
+        "public_api": 0.6,
+        "api_breadth": 0.6,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.6,
+      "requires_human_review": false,
+      "human_review_reason": null
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_auth_methods_unclear",
+    "risk_material_evidence_validation_failed",
+    "risk_low_confidence"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_auth_methods_unclear",
+      "risk_material_evidence_validation_failed",
+      "risk_low_confidence"
+    ]
+  }
+}

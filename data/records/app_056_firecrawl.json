@@ -3,13 +3,954 @@
     "assignment_number": 56,
     "app_name": "Firecrawl",
     "website_hint": "firecrawl.dev",
-    "assigned_category": "Data, SEO and Scraping"
+    "assigned_category": "Data, SEO and Scraping",
+    "researched_at": "2026-07-09T10:59:03.807Z"
   },
-  "evidence_pool": [],
+  "product": {
+    "normalized_category": "AI agents and workflows",
+    "one_line_description": "Firecrawl is an API for web crawling, scraping, search, and interaction, providing AI-ready content and structured data for AI agents and builders."
+  },
+  "authentication": {
+    "auth_methods": [
+      "api_key",
+      "bearer_token",
+      "oauth2"
+    ],
+    "auth_summary": "Authentication is primarily done via an API key, which is included in an Authorization header as a Bearer token. For MCP servers, OAuth access tokens can also be used and are forwarded as Bearer tokens. A keyless free tier is available for certain API functionalities."
+  },
+  "developer_access": {
+    "access_model": "self_serve_free",
+    "credentials_obtainable_without_human_approval": true,
+    "access_notes": "Developers can sign up and obtain an API key instantly without human approval from the Firecrawl website. A keyless free tier is available for `scrape`, `search`, and `interact` tools, albeit with rate limits. An API key or OAuth is preferred for unlocking the full toolset and higher rate limits."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "REST",
+      "SDK",
+      "CLI",
+      "webhooks",
+      "other"
+    ],
+    "api_breadth": "broad",
+    "api_summary": "Firecrawl provides a comprehensive API surface with features for web scraping (markdown, HTML, JSON, branding), crawling entire websites, mapping URLs, web search, interactive browser automation (click, fill forms), structured data extraction via LLMs, autonomous web research agents, and recurring page monitoring with diffing. It offers REST endpoints, Python and Node.js SDKs, a CLI, and supports webhooks for asynchronous event delivery. It also integrates with AI tools via an official Model Context Protocol (MCP) server."
+  },
+  "mcp": {
+    "mcp_status": "official",
+    "mcp_summary": "Firecrawl provides an official Model Context Protocol (MCP) server, designed to integrate powerful web scraping and search capabilities with MCP-compatible AI agents and LLM clients like Cursor, Claude, Windsurf, and VS Code. The MCP server supports search, scrape, and interact functions in a keyless free tier (rate-limited), with an API key or OAuth unlocking the full tool set including crawl, map, agent, and extract features."
+  },
+  "buildability": {
+    "verdict": "build_now",
+    "primary_blocker": null,
+    "verdict_reasoning": "Self-serve developer access is verified with a broad/moderate documented public API."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 1,
+      "access_model": 1,
+      "public_api": 1,
+      "api_breadth": 1,
+      "mcp_status": 1
+    },
+    "overall_confidence": 1,
+    "requires_human_review": false,
+    "human_review_reason": null
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783594743807_0",
+      "claim_field": "product.one_line_description",
+      "claim": "Firecrawl is an API for web crawling, scraping, search, and interaction, providing AI-ready content and structured data for AI agents and builders.",
+      "source_url": "https://www.firecrawl.dev/",
+      "source_title": "Firecrawl - The Web Data API for AI",
+      "source_type": "official_doc",
+      "evidence_snippet": "The web crawling, scraping, and search API for AI. Built for scale. Firecrawl delivers the entire internet to AI agents and builders.",
+      "retrieved_at": "2026-07-09T10:59:03.807Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.firecrawl.dev/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783594743807_1",
+      "claim_field": "product.one_line_description",
+      "claim": "Firecrawl is an API for web crawling, scraping, search, and interaction, providing AI-ready content and structured data for AI agents and builders.",
+      "source_url": "https://github.com/firecrawl/firecrawl",
+      "source_title": "mendableai/firecrawl: Turn entire websites into LLM-ready ... - GitHub",
+      "source_type": "github_repo",
+      "evidence_snippet": "Firecrawl is an API service that takes a URL, crawls it, and converts it into clean markdown or structured data.",
+      "retrieved_at": "2026-07-09T10:59:03.807Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://github.com/firecrawl/firecrawl"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783594743807_2",
+      "claim_field": "product.one_line_description",
+      "claim": "Firecrawl is an API for web crawling, scraping, search, and interaction, providing AI-ready content and structured data for AI agents and builders.",
+      "source_url": "https://github.com/firecrawl/firecrawl-mcp-server",
+      "source_title": "GitHub - firecrawl/firecrawl-mcp-server: 🔥 Official Firecrawl MCP Server - Adds powerful web scraping and search to Cursor, Claude and any other LLM clients. · GitHub",
+      "source_type": "github_repo",
+      "evidence_snippet": "A Model Context Protocol (MCP) server that brings Firecrawl to MCP-compatible AI agents — search, scrape, and interact with the live web for clean, agent-ready context.",
+      "retrieved_at": "2026-07-09T10:59:03.807Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://github.com/firecrawl/firecrawl-mcp-server"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783594743807_3",
+      "claim_field": "authentication.auth_methods",
+      "claim": [
+        "api_key",
+        "bearer_token"
+      ],
+      "source_url": "https://docs.firecrawl.dev/api-reference/introduction",
+      "source_title": "Introduction - Firecrawl Docs",
+      "source_type": "api_ref",
+      "evidence_snippet": "For authentication, it’s required to include an Authorization header. The header should contain `Bearer fc-123456789`, where `fc-123456789` represents your API Key.\n```\nAuthorization: Bearer fc-123456789\n```",
+      "retrieved_at": "2026-07-09T10:59:03.807Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.firecrawl.dev/api-reference/introduction"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783594743807_4",
+      "claim_field": "authentication.auth_methods",
+      "claim": "api_key",
+      "source_url": "https://docs.firecrawl.dev/introduction",
+      "source_title": "Introduction | Firecrawl",
+      "source_type": "official_doc",
+      "evidence_snippet": "api_key=\"fc-YOUR-API-KEY\"",
+      "retrieved_at": "2026-07-09T10:59:03.807Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.firecrawl.dev/introduction"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783594743807_5",
+      "claim_field": "authentication.auth_methods",
+      "claim": "oauth2",
+      "source_url": "https://github.com/firecrawl/firecrawl-mcp-server",
+      "source_title": "GitHub - firecrawl/firecrawl-mcp-server: 🔥 Official Firecrawl MCP Server - Adds powerful web scraping and search to Cursor, Claude and any other LLM clients. · GitHub",
+      "source_type": "github_repo",
+      "evidence_snippet": "Hosted Firecrawl can issue OAuth **access tokens** (`fco_…`) via the authorization server on [firecrawl.dev](https://firecrawl.dev). This MCP server forwards whichever credential it resolves to the Firecrawl API as `Authorization: Bearer …`.",
+      "retrieved_at": "2026-07-09T10:59:03.807Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://github.com/firecrawl/firecrawl-mcp-server"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783594743807_6",
+      "claim_field": "developer_access.access_model",
+      "claim": "self_serve_free",
+      "source_url": "https://docs.firecrawl.dev/introduction",
+      "source_title": "Introduction | Firecrawl",
+      "source_type": "official_doc",
+      "evidence_snippet": "No API key needed to get started — add one for higher rate limits:\n# api_key=\"fc-YOUR-API-KEY\",",
+      "retrieved_at": "2026-07-09T10:59:03.807Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.firecrawl.dev/introduction"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783594743807_7",
+      "claim_field": "developer_access.access_model",
+      "claim": "self_serve_free",
+      "source_url": "https://github.com/firecrawl/firecrawl-mcp-server",
+      "source_title": "GitHub - firecrawl/firecrawl-mcp-server: 🔥 Official Firecrawl MCP Server - Adds powerful web scraping and search to Cursor, Claude and any other LLM clients. · GitHub",
+      "source_type": "github_repo",
+      "evidence_snippet": "On the keyless free tier, `scrape`, `search`, and `interact` work without an API key (rate-limited).",
+      "retrieved_at": "2026-07-09T10:59:03.807Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://github.com/firecrawl/firecrawl-mcp-server"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783594743807_8",
+      "claim_field": "developer_access.access_model",
+      "claim": "self_serve_free",
+      "source_url": "https://github.com/firecrawl/firecrawl-mcp-server",
+      "source_title": "GitHub - firecrawl/firecrawl-mcp-server: 🔥 Official Firecrawl MCP Server - Adds powerful web scraping and search to Cursor, Claude and any other LLM clients. · GitHub",
+      "source_type": "github_repo",
+      "evidence_snippet": "Prefer an API key or OAuth whenever the human can sign up. It unlocks the full tool set and higher limits.",
+      "retrieved_at": "2026-07-09T10:59:03.807Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://github.com/firecrawl/firecrawl-mcp-server"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783594743807_9",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": true,
+      "source_url": "https://docs.firecrawl.dev/introduction",
+      "source_title": "Introduction | Firecrawl",
+      "source_type": "official_doc",
+      "evidence_snippet": "Sign up and get your API key to start using Firecrawl",
+      "retrieved_at": "2026-07-09T10:59:03.807Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.firecrawl.dev/introduction"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783594743807_10",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": true,
+      "source_url": "https://github.com/firecrawl/firecrawl-mcp-server",
+      "source_title": "GitHub - firecrawl/firecrawl-mcp-server: 🔥 Official Firecrawl MCP Server - Adds powerful web scraping and search to Cursor, Claude and any other LLM clients. · GitHub",
+      "source_type": "github_repo",
+      "evidence_snippet": "If you don't have one yet, you can create an account and get it from [https://www.firecrawl.dev/app/api-keys](https://www.firecrawl.dev/app/api-keys)",
+      "retrieved_at": "2026-07-09T10:59:03.807Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://github.com/firecrawl/firecrawl-mcp-server"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783594743807_11",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://docs.firecrawl.dev/api-reference/introduction",
+      "source_title": "Introduction - Firecrawl Docs",
+      "source_type": "api_ref",
+      "evidence_snippet": "All requests contain the following base URL:\n```\nhttps://api.firecrawl.dev \n```",
+      "retrieved_at": "2026-07-09T10:59:03.807Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.firecrawl.dev/api-reference/introduction"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783594743807_12",
+      "claim_field": "api_surface.api_styles",
+      "claim": "REST",
+      "source_url": "https://docs.firecrawl.dev/api-reference/introduction",
+      "source_title": "Introduction - Firecrawl Docs",
+      "source_type": "api_ref",
+      "evidence_snippet": "All requests contain the following base URL:\n```\nhttps://api.firecrawl.dev \n```",
+      "retrieved_at": "2026-07-09T10:59:03.807Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.firecrawl.dev/api-reference/introduction"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783594743807_13",
+      "claim_field": "api_surface.api_styles",
+      "claim": "SDK",
+      "source_url": "https://docs.firecrawl.dev/introduction",
+      "source_title": "Introduction | Firecrawl",
+      "source_type": "official_doc",
+      "evidence_snippet": "Python\nNode",
+      "retrieved_at": "2026-07-09T10:59:03.807Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.firecrawl.dev/introduction"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783594743807_14",
+      "claim_field": "api_surface.api_styles",
+      "claim": "CLI",
+      "source_url": "https://docs.firecrawl.dev/introduction",
+      "source_title": "Introduction | Firecrawl",
+      "source_type": "official_doc",
+      "evidence_snippet": "CLI\n```\n# Search the web\nfirecrawl search \"firecrawl web scraping\" --limit 5 --pretty\n```",
+      "retrieved_at": "2026-07-09T10:59:03.807Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.firecrawl.dev/introduction"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783594743807_15",
+      "claim_field": "api_surface.api_styles",
+      "claim": "webhooks",
+      "source_url": "https://docs.firecrawl.dev/introduction",
+      "source_title": "Introduction | Firecrawl",
+      "source_type": "official_doc",
+      "evidence_snippet": "Webhooks\nAsync event delivery",
+      "retrieved_at": "2026-07-09T10:59:03.807Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.firecrawl.dev/introduction"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783594743807_16",
+      "claim_field": "api_surface.api_styles",
+      "claim": "other",
+      "source_url": "https://github.com/firecrawl/firecrawl-mcp-server",
+      "source_title": "GitHub - firecrawl/firecrawl-mcp-server: 🔥 Official Firecrawl MCP Server - Adds powerful web scraping and search to Cursor, Claude and any other LLM clients. · GitHub",
+      "source_type": "github_repo",
+      "evidence_snippet": "A Model Context Protocol (MCP) server that brings [Firecrawl](https://github.com/firecrawl/firecrawl) to MCP-compatible AI agents — search, scrape, and interact with the live web for clean, agent-ready context.",
+      "retrieved_at": "2026-07-09T10:59:03.807Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://github.com/firecrawl/firecrawl-mcp-server"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783594743807_17",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://docs.firecrawl.dev/api-reference/introduction",
+      "source_title": "Introduction - Firecrawl Docs",
+      "source_type": "api_ref",
+      "evidence_snippet": "## Scrape\nExtract content from any webpage in markdown or json format.\n\n## Crawl\nCrawl entire websites, extract their content and metadata.\n\n## Map\nGet a complete list of URLs from any website quickly and reliably.\n\n## Search\nSearch the web and get full page content in any format.\n\n## Extract\nExtract structured data from entire webpages using natural language.",
+      "retrieved_at": "2026-07-09T10:59:03.807Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.firecrawl.dev/api-reference/introduction"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783594743807_18",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://docs.firecrawl.dev/introduction",
+      "source_title": "Introduction | Firecrawl",
+      "source_type": "official_doc",
+      "evidence_snippet": "## What can Firecrawl do?\n\n## Search\nSearch the web and get full page content from results\n\n## Scrape\nExtract content from any URL as markdown, HTML, or structured JSON\n\n## Interact\nContinue working with any scraped page — click, fill forms, extract dynamic content",
+      "retrieved_at": "2026-07-09T10:59:03.807Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.firecrawl.dev/introduction"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783594743807_19",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://github.com/firecrawl/firecrawl-mcp-server",
+      "source_title": "GitHub - firecrawl/firecrawl-mcp-server: 🔥 Official Firecrawl MCP Server - Adds powerful web scraping and search to Cursor, Claude and any other LLM clients. · GitHub",
+      "source_type": "github_repo",
+      "evidence_snippet": "## Available Tools\n### 1. Scrape Tool (`firecrawl_scrape`)\n### 2. Map Tool (`firecrawl_map`)\n### 3. Search Tool (`firecrawl_search`)\n### 3b. Search Feedback Tool (`firecrawl_search_feedback`)\n### 3c. Generic Feedback Tool (`firecrawl_feedback`)\n### 4. Crawl Tool (`firecrawl_crawl`)\n### 5. Check Crawl Status (`firecrawl_check_crawl_status`)\n### 6. Parse Tool (`firecrawl_parse`)\n### 7. Extract Tool (`firecrawl_extract`)\n### 8. Agent Tool (`firecrawl_agent`)\n### 9. Check Agent Status (`firecrawl_agent_status`)\n### 10. Interact Tool (`firecrawl_interact`)\n### 11. Stop Interact Tool (`firecrawl_interact_stop`)\n### 12. Research Tools (`firecrawl_research_*`)\n### 13. Monitor Tools (`firecrawl_monitor_*`)",
+      "retrieved_at": "2026-07-09T10:59:03.807Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://github.com/firecrawl/firecrawl-mcp-server"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783594743807_20",
+      "claim_field": "mcp.mcp_status",
+      "claim": "official",
+      "source_url": "https://docs.firecrawl.dev/introduction",
+      "source_title": "Introduction | Firecrawl",
+      "source_type": "official_doc",
+      "evidence_snippet": "Or use the [MCP Server](/mcp-server) to connect Firecrawl directly to Claude, Cursor, Windsurf, VS Code, and other AI tools.",
+      "retrieved_at": "2026-07-09T10:59:03.807Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.firecrawl.dev/introduction"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783594743807_21",
+      "claim_field": "mcp.mcp_status",
+      "claim": "official",
+      "source_url": "https://github.com/firecrawl/firecrawl-mcp-server",
+      "source_title": "GitHub - firecrawl/firecrawl-mcp-server: 🔥 Official Firecrawl MCP Server - Adds powerful web scraping and search to Cursor, Claude and any other LLM clients. · GitHub",
+      "source_type": "github_repo",
+      "evidence_snippet": "🔥 Official Firecrawl MCP Server - Adds powerful web scraping and search to Cursor, Claude and any other LLM clients.",
+      "retrieved_at": "2026-07-09T10:59:03.807Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://github.com/firecrawl/firecrawl-mcp-server"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783594743807_22",
+      "claim_field": "mcp.mcp_summary",
+      "claim": "Firecrawl provides an official Model Context Protocol (MCP) server, designed to integrate powerful web scraping and search capabilities with MCP-compatible AI agents and LLM clients like Cursor, Claude, Windsurf, and VS Code. The MCP server supports search, scrape, and interact functions in a keyless free tier (rate-limited), with an API key or OAuth unlocking the full tool set including crawl, map, agent, and extract features.",
+      "source_url": "https://docs.firecrawl.dev/introduction",
+      "source_title": "Introduction | Firecrawl",
+      "source_type": "official_doc",
+      "evidence_snippet": "Use Firecrawl with AI agents (recommended)\nThe Firecrawl skills are the fastest way for agents to discover and use Firecrawl. Without them, your agent will not know Firecrawl is available.\n```\nnpx -y firecrawl-cli@latest init --all --browser\n```\nRestart your agent after installing the skills. See [Skills + CLI](/sdks/cli) for the full setup.\n\nOr use the [MCP Server](/mcp-server) to connect Firecrawl directly to Claude, Cursor, Windsurf, VS Code, and other AI tools.",
+      "retrieved_at": "2026-07-09T10:59:03.807Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.firecrawl.dev/introduction"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783594743807_23",
+      "claim_field": "mcp.mcp_summary",
+      "claim": "Firecrawl provides an official Model Context Protocol (MCP) server, designed to integrate powerful web scraping and search capabilities with MCP-compatible AI agents and LLM clients like Cursor, Claude, Windsurf, and VS Code. The MCP server supports search, scrape, and interact functions in a keyless free tier (rate-limited), with an API key or OAuth unlocking the full tool set including crawl, map, agent, and extract features.",
+      "source_url": "https://github.com/firecrawl/firecrawl-mcp-server",
+      "source_title": "GitHub - firecrawl/firecrawl-mcp-server: 🔥 Official Firecrawl MCP Server - Adds powerful web scraping and search to Cursor, Claude and any other LLM clients. · GitHub",
+      "source_type": "github_repo",
+      "evidence_snippet": "A Model Context Protocol (MCP) server that brings [Firecrawl](https://github.com/firecrawl/firecrawl) to MCP-compatible AI agents — search, scrape, and interact with the live web for clean, agent-ready context.\n\n## Installation\n### Hosted MCP (keyless free tier)\n\nConnect to the remote hosted server with no setup:\n```\nhttps://mcp.firecrawl.dev/v2/mcp\n```\nOn the keyless free tier, `scrape`, `search`, and `interact` work without an API key (rate-limited). Other tools such as `crawl`, `map`, `agent`, and `extract` still need a key.\n\nPrefer an API key or OAuth whenever the human can sign up. It unlocks the full tool set and higher limits. With a key, use:\n```\nhttps://mcp.firecrawl.dev/{FIRECRAWL_API_KEY}/v2/mcp\n```\n\nSee the [MCP server docs](https://docs.firecrawl.dev/mcp-server) and the [agent onboarding guide](https://www.firecrawl.dev/agent-onboarding/SKILL.md) for setup details.\n\n### Running on Cursor\nConfiguring Cursor 🖥️ Note: Requires Cursor version 0.45.6+ ...\n### Running on Windsurf\nAdd this to your `./codeium/windsurf/model_config.json`: ...\n### Running on VS Code\nFor one-click installation, click one of the install buttons below...\n### Usage with Claude Desktop\nAdd this to your `claude_desktop_config.json`: ...",
+      "retrieved_at": "2026-07-09T10:59:03.807Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://github.com/firecrawl/firecrawl-mcp-server"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_rr_1783594821503_0",
+      "claim_field": "product.one_line_description",
+      "claim": "unclear",
+      "source_url": "https://docs.firecrawl.dev/introduction",
+      "source_title": "Introduction | Firecrawl",
+      "source_type": "official_doc",
+      "evidence_snippet": "After reviewing the available documentation, no single verbatim statement was found that fully encompasses all elements of the original one-line description: 'Firecrawl is an API for web crawling, scraping, search, and interaction, providing AI-ready content and structured data for AI agents and builders.' Individual components like 'API for web crawling, scraping, search', 'interaction', 'AI-ready content', 'structured data', and 'AI agents and builders' are present across various sections (e.g., in features lists, 'Why Firecrawl?' section, and MCP server description), but not in a single, cohesive, verbatim sentence.",
+      "retrieved_at": "2026-07-09T11:00:21.503Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.firecrawl.dev/introduction"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 56,
+      "app_name": "Firecrawl",
+      "website_hint": "firecrawl.dev (docs.firecrawl.dev)",
+      "assigned_category": "AI agents and workflows",
+      "researched_at": "2026-07-09T10:59:03.807Z"
+    },
+    "product": {
+      "normalized_category": "AI agents and workflows",
+      "one_line_description": "Firecrawl is an API for web crawling, scraping, search, and interaction, providing AI-ready content and structured data for AI agents and builders."
+    },
+    "authentication": {
+      "auth_methods": [
+        "api_key",
+        "bearer_token",
+        "oauth2"
+      ],
+      "auth_summary": "Authentication is primarily done via an API key, which is included in an Authorization header as a Bearer token. For MCP servers, OAuth access tokens can also be used and are forwarded as Bearer tokens. A keyless free tier is available for certain API functionalities."
+    },
+    "developer_access": {
+      "access_model": "self_serve_free",
+      "credentials_obtainable_without_human_approval": true,
+      "access_notes": "Developers can sign up and obtain an API key instantly without human approval from the Firecrawl website. A keyless free tier is available for `scrape`, `search`, and `interact` tools, albeit with rate limits. An API key or OAuth is preferred for unlocking the full toolset and higher rate limits."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "REST",
+        "SDK",
+        "CLI",
+        "webhooks",
+        "other"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "Firecrawl provides a comprehensive API surface with features for web scraping (markdown, HTML, JSON, branding), crawling entire websites, mapping URLs, web search, interactive browser automation (click, fill forms), structured data extraction via LLMs, autonomous web research agents, and recurring page monitoring with diffing. It offers REST endpoints, Python and Node.js SDKs, a CLI, and supports webhooks for asynchronous event delivery. It also integrates with AI tools via an official Model Context Protocol (MCP) server."
+    },
+    "mcp": {
+      "mcp_status": "official",
+      "mcp_summary": "Firecrawl provides an official Model Context Protocol (MCP) server, designed to integrate powerful web scraping and search capabilities with MCP-compatible AI agents and LLM clients like Cursor, Claude, Windsurf, and VS Code. The MCP server supports search, scrape, and interact functions in a keyless free tier (rate-limited), with an API key or OAuth unlocking the full tool set including crawl, map, agent, and extract features."
+    },
+    "buildability": {
+      "verdict": "build_now",
+      "primary_blocker": null,
+      "verdict_reasoning": "Self-serve developer access is verified with a broad/moderate documented public API."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 1,
+        "access_model": 1,
+        "public_api": 1,
+        "api_breadth": 1,
+        "mcp_status": 1
+      },
+      "overall_confidence": 1,
+      "requires_human_review": false,
+      "human_review_reason": null
+    }
+  },
+  "critic_result": {
+    "challenged_fields": [
+      "product.one_line_description"
+    ],
+    "critic_analysis": {
+      "product.one_line_description": "The extracted claim for `product.one_line_description` is a synthesized statement that combines elements from multiple evidence snippets. While the individual components of the description (e.g., 'API for web crawling, scraping, search', 'interaction', 'AI-ready content', 'structured data', 'AI agents and builders') are found across various snippets (E1, E2, E3), none of the provided evidence snippets directly and explicitly match the entire one-line description. All associated snippets are marked with `match_type: not_found`, indicating that the first-pass extraction itself did not identify an exact or normalized match for the complete claim. This violates the 'explicit, direct supporting evidence without semantic drift or assumptions' requirement."
+    },
+    "error_taxonomy_flags": []
+  },
+  "targeted_reresearch_result": {
+    "identity": {
+      "assignment_number": 56,
+      "app_name": "Firecrawl",
+      "website_hint": "firecrawl.dev (docs.firecrawl.dev)",
+      "assigned_category": "AI agents and workflows",
+      "researched_at": "2026-07-09T10:59:03.807Z"
+    },
+    "product": {
+      "normalized_category": "AI agents and workflows",
+      "one_line_description": "unclear"
+    },
+    "authentication": {
+      "auth_methods": [
+        "api_key",
+        "bearer_token",
+        "oauth2"
+      ],
+      "auth_summary": "Authentication is primarily done via an API key, which is included in an Authorization header as a Bearer token. For MCP servers, OAuth access tokens can also be used and are forwarded as Bearer tokens. A keyless free tier is available for certain API functionalities."
+    },
+    "developer_access": {
+      "access_model": "self_serve_free",
+      "credentials_obtainable_without_human_approval": true,
+      "access_notes": "Developers can sign up and obtain an API key instantly without human approval from the Firecrawl website. A keyless free tier is available for `scrape`, `search`, and `interact` tools, albeit with rate limits. An API key or OAuth is preferred for unlocking the full toolset and higher rate limits."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "REST",
+        "SDK",
+        "CLI",
+        "webhooks",
+        "other"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "Firecrawl provides a comprehensive API surface with features for web scraping (markdown, HTML, JSON, branding), crawling entire websites, mapping URLs, web search, interactive browser automation (click, fill forms), structured data extraction via LLMs, autonomous web research agents, and recurring page monitoring with diffing. It offers REST endpoints, Python and Node.js SDKs, a CLI, and supports webhooks for asynchronous event delivery. It also integrates with AI tools via an official Model Context Protocol (MCP) server."
+    },
+    "mcp": {
+      "mcp_status": "official",
+      "mcp_summary": "Firecrawl provides an official Model Context Protocol (MCP) server, designed to integrate powerful web scraping and search capabilities with MCP-compatible AI agents and LLM clients like Cursor, Claude, Windsurf, and VS Code. The MCP server supports search, scrape, and interact functions in a keyless free tier (rate-limited), with an API key or OAuth unlocking the full tool set including crawl, map, agent, and extract features."
+    },
+    "buildability": {
+      "verdict": "build_now",
+      "primary_blocker": null,
+      "verdict_reasoning": "Self-serve developer access is verified with a broad/moderate documented public API."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 1,
+        "access_model": 1,
+        "public_api": 1,
+        "api_breadth": 1,
+        "mcp_status": 1
+      },
+      "overall_confidence": 1,
+      "requires_human_review": false,
+      "human_review_reason": null
+    }
+  },
+  "final_agent_result": {
+    "identity": {
+      "assignment_number": 56,
+      "app_name": "Firecrawl",
+      "website_hint": "firecrawl.dev (docs.firecrawl.dev)",
+      "assigned_category": "AI agents and workflows",
+      "researched_at": "2026-07-09T10:59:03.807Z"
+    },
+    "product": {
+      "normalized_category": "AI agents and workflows",
+      "one_line_description": "Firecrawl is an API for web crawling, scraping, search, and interaction, providing AI-ready content and structured data for AI agents and builders."
+    },
+    "authentication": {
+      "auth_methods": [
+        "api_key",
+        "bearer_token",
+        "oauth2"
+      ],
+      "auth_summary": "Authentication is primarily done via an API key, which is included in an Authorization header as a Bearer token. For MCP servers, OAuth access tokens can also be used and are forwarded as Bearer tokens. A keyless free tier is available for certain API functionalities."
+    },
+    "developer_access": {
+      "access_model": "self_serve_free",
+      "credentials_obtainable_without_human_approval": true,
+      "access_notes": "Developers can sign up and obtain an API key instantly without human approval from the Firecrawl website. A keyless free tier is available for `scrape`, `search`, and `interact` tools, albeit with rate limits. An API key or OAuth is preferred for unlocking the full toolset and higher rate limits."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "REST",
+        "SDK",
+        "CLI",
+        "webhooks",
+        "other"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "Firecrawl provides a comprehensive API surface with features for web scraping (markdown, HTML, JSON, branding), crawling entire websites, mapping URLs, web search, interactive browser automation (click, fill forms), structured data extraction via LLMs, autonomous web research agents, and recurring page monitoring with diffing. It offers REST endpoints, Python and Node.js SDKs, a CLI, and supports webhooks for asynchronous event delivery. It also integrates with AI tools via an official Model Context Protocol (MCP) server."
+    },
+    "mcp": {
+      "mcp_status": "official",
+      "mcp_summary": "Firecrawl provides an official Model Context Protocol (MCP) server, designed to integrate powerful web scraping and search capabilities with MCP-compatible AI agents and LLM clients like Cursor, Claude, Windsurf, and VS Code. The MCP server supports search, scrape, and interact functions in a keyless free tier (rate-limited), with an API key or OAuth unlocking the full tool set including crawl, map, agent, and extract features."
+    },
+    "buildability": {
+      "verdict": "build_now",
+      "primary_blocker": null,
+      "verdict_reasoning": "Self-serve developer access is verified with a broad/moderate documented public API."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 1,
+        "access_model": 1,
+        "public_api": 1,
+        "api_breadth": 1,
+        "mcp_status": 1
+      },
+      "overall_confidence": 1,
+      "requires_human_review": false,
+      "human_review_reason": null
+    }
+  },
   "change_log": [],
   "pipeline_metadata": {
     "pipeline_version": "1.0.0",
-    "current_stage": "first_pass",
+    "current_stage": "final_agent",
     "errors": [],
     "unresolved_questions": []
   }

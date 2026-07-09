@@ -1,0 +1,615 @@
+{
+  "identity": {
+    "assignment_number": 76,
+    "app_name": "Monday.com",
+    "website_hint": "developer.monday.com",
+    "assigned_category": "Productivity and Project Management",
+    "researched_at": "2026-07-09T17:46:13.839Z"
+  },
+  "product": {
+    "normalized_category": "Productivity and Project Management",
+    "one_line_description": "monday.com offers a developer platform for connecting AI agents, integrating with data via a GraphQL API, customizing the UI, and building full-stack applications with features like hosting, storage, and webhooks."
+  },
+  "authentication": {
+    "auth_methods": [
+      "oauth2"
+    ],
+    "auth_summary": "The platform supports OAuth2 for authentication, allowing granular scope requests."
+  },
+  "developer_access": {
+    "access_model": "self_serve_free",
+    "credentials_obtainable_without_human_approval": true,
+    "access_notes": "Developers can obtain API access by opening a developer account, visiting the developer center, and making their first API call, indicating a self-serve process without human approval."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "GraphQL",
+      "webhooks"
+    ],
+    "api_breadth": "broad",
+    "api_summary": "monday.com offers a broad API surface, including an expressive GraphQL API for interacting with workflows and data, a Models API for connecting to various LLMs, and an Agents API for programmatic agent management. Webhooks are available for triggering workflows from real-time events."
+  },
+  "mcp": {
+    "mcp_status": "official",
+    "mcp_summary": "monday.com provides an official hosted Model Context Protocol (MCP) URL, including a Developer MCP, which allows agents to connect to the platform and can be used to scaffold, set environment variables, and promote versions from chat."
+  },
+  "buildability": {
+    "verdict": "build_now",
+    "primary_blocker": null,
+    "verdict_reasoning": "Self-serve developer access is verified with a broad/moderate documented public API."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 1,
+      "access_model": 1,
+      "public_api": 1,
+      "api_breadth": 1,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.95,
+    "requires_human_review": false,
+    "human_review_reason": null
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783619173839_0",
+      "claim_field": "product.one_line_description",
+      "claim": "monday.com offers a developer platform for connecting AI agents, integrating with data via a GraphQL API, customizing the UI, and building full-stack applications with features like hosting, storage, and webhooks.",
+      "source_url": "https://developer.monday.com/",
+      "source_title": "Developer Platform - monday.comDeveloper Platform — monday.com",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Developer Platform — monday.com\n## Turn agents into teammates\n### Connect agents to the platform\n## Connect to your monday data from anywhere\nAn expressive GraphQL API to interact with your workflows, automate processes, power integrations, and more!\n## Customize monday to your exact needs\nBuild new views, widgets, menu actions, and doc plug-ins right inside the product.\n## Build and deploy apps on our infrastructure\nGet hosting, storage, secrets, and scaling on infra certified for SOC 2, HIPAA, and ISO 27001.\n## Trigger workflows from any monday action\nListen for real-time events and run your workflow the moment data changes.",
+      "retrieved_at": "2026-07-09T17:46:13.839Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.monday.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619173839_1",
+      "claim_field": "authentication.auth_methods",
+      "claim": "oauth2",
+      "source_url": "https://developer.monday.com/",
+      "source_title": "Developer Platform - monday.comDeveloper Platform — monday.com",
+      "source_type": "developer_portal",
+      "evidence_snippet": "OAuth2 scopes built in",
+      "retrieved_at": "2026-07-09T17:46:13.839Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.monday.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619173839_2",
+      "claim_field": "developer_access.access_model",
+      "claim": "self_serve_free",
+      "source_url": "https://developer.monday.com/",
+      "source_title": "Developer Platform - monday.comDeveloper Platform — monday.com",
+      "source_type": "developer_portal",
+      "evidence_snippet": "06 Get started\n## Build your first full stack app on monday.com developer platform\nYou\n1Open a developer account\n2Visit the developer center\n3Make your first API call\n4Connect your IDE to our MCPs\n5Extend the UI\n[Get started →](https://developer.monday.com/api-reference/docs/basics)",
+      "retrieved_at": "2026-07-09T17:46:13.839Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.monday.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619173839_3",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": true,
+      "source_url": "https://developer.monday.com/",
+      "source_title": "Developer Platform - monday.comDeveloper Platform — monday.com",
+      "source_type": "developer_portal",
+      "evidence_snippet": "06 Get started\n## Build your first full stack app on monday.com developer platform\nYou\n1Open a developer account\n2Visit the developer center\n3Make your first API call\n4Connect your IDE to our MCPs\n5Extend the UI\n[Get started →](https://developer.monday.com/api-reference/docs/basics)",
+      "retrieved_at": "2026-07-09T17:46:13.839Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.monday.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619173839_4",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://developer.monday.com/",
+      "source_title": "Developer Platform - monday.comDeveloper Platform — monday.com",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Developer Platform — monday.com",
+      "retrieved_at": "2026-07-09T17:46:13.839Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.monday.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619173839_5",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://developer.monday.com/",
+      "source_title": "Developer Platform - monday.comDeveloper Platform — monday.com",
+      "source_type": "developer_portal",
+      "evidence_snippet": "02 Platform API\n## Connect to your monday data from anywhere\nAn expressive GraphQL API to interact with your workflows, automate processes, power integrations, and more!",
+      "retrieved_at": "2026-07-09T17:46:13.839Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.monday.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619173839_6",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://developer.monday.com/",
+      "source_title": "Developer Platform - monday.comDeveloper Platform — monday.com",
+      "source_type": "developer_portal",
+      "evidence_snippet": "06 Models API\n### Connect to any LLM",
+      "retrieved_at": "2026-07-09T17:46:13.839Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.monday.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619173839_7",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://developer.monday.com/",
+      "source_title": "Developer Platform - monday.comDeveloper Platform — monday.com",
+      "source_type": "developer_portal",
+      "evidence_snippet": "07 Agents API\n### Run agents from your code",
+      "retrieved_at": "2026-07-09T17:46:13.839Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.monday.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619173839_8",
+      "claim_field": "api_surface.api_styles",
+      "claim": "GraphQL",
+      "source_url": "https://developer.monday.com/",
+      "source_title": "Developer Platform - monday.comDeveloper Platform — monday.com",
+      "source_type": "developer_portal",
+      "evidence_snippet": "An expressive GraphQL API to interact with your workflows, automate processes, power integrations, and more!",
+      "retrieved_at": "2026-07-09T17:46:13.839Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.monday.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619173839_9",
+      "claim_field": "api_surface.api_styles",
+      "claim": "webhooks",
+      "source_url": "https://developer.monday.com/",
+      "source_title": "Developer Platform - monday.comDeveloper Platform — monday.com",
+      "source_type": "developer_portal",
+      "evidence_snippet": "05 Webhooks\n## Trigger workflows from any monday action\nListen for real-time events and run your workflow the moment data changes. We post the payload as it happens, signed and verifiable.",
+      "retrieved_at": "2026-07-09T17:46:13.839Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.monday.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619173839_10",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://developer.monday.com/",
+      "source_title": "Developer Platform - monday.comDeveloper Platform — monday.com",
+      "source_type": "developer_portal",
+      "evidence_snippet": "An expressive GraphQL API to interact with your workflows, automate processes, power integrations, and more!",
+      "retrieved_at": "2026-07-09T17:46:13.839Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.monday.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619173839_11",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://developer.monday.com/",
+      "source_title": "Developer Platform - monday.comDeveloper Platform — monday.com",
+      "source_type": "developer_portal",
+      "evidence_snippet": "01 Agents\n## Turn agents into teammates\n### Connect agents to the platform",
+      "retrieved_at": "2026-07-09T17:46:13.839Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.monday.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619173839_12",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://developer.monday.com/",
+      "source_title": "Developer Platform - monday.comDeveloper Platform — monday.com",
+      "source_type": "developer_portal",
+      "evidence_snippet": "06 Models API\n### Connect to any LLM",
+      "retrieved_at": "2026-07-09T17:46:13.839Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.monday.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619173839_13",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://developer.monday.com/",
+      "source_title": "Developer Platform - monday.comDeveloper Platform — monday.com",
+      "source_type": "developer_portal",
+      "evidence_snippet": "07 Agents API\n### Run agents from your code",
+      "retrieved_at": "2026-07-09T17:46:13.839Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.monday.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619173839_14",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://developer.monday.com/",
+      "source_title": "Developer Platform - monday.comDeveloper Platform — monday.com",
+      "source_type": "developer_portal",
+      "evidence_snippet": "03 Extensible UI\n## Customize monday to your exact needs\nBuild new views, widgets, menu actions, and doc plug-ins right inside the product.",
+      "retrieved_at": "2026-07-09T17:46:13.839Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.monday.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619173839_15",
+      "claim_field": "mcp.mcp_status",
+      "claim": "official",
+      "source_url": "https://developer.monday.com/",
+      "source_title": "Developer Platform - monday.comDeveloper Platform — monday.com",
+      "source_type": "developer_portal",
+      "evidence_snippet": "### Connect agents to the platform\nUse our native integration, or manually connect with our hosted MCP url. Each agent gets its own identity on monday.",
+      "retrieved_at": "2026-07-09T17:46:13.839Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.monday.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619173839_16",
+      "claim_field": "mcp.mcp_status",
+      "claim": "official",
+      "source_url": "https://developer.monday.com/",
+      "source_title": "Developer Platform - monday.comDeveloper Platform — monday.com",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Developer MCP\n#### Build and deploy using AI\nConnect the developer MCP to any agent. Scaffold, set env vars, and promote versions from chat.",
+      "retrieved_at": "2026-07-09T17:46:13.839Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.monday.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 76,
+      "app_name": "Monday.com",
+      "website_hint": "developer.monday.com",
+      "assigned_category": "Productivity and Project Management",
+      "researched_at": "2026-07-09T17:46:13.839Z"
+    },
+    "product": {
+      "normalized_category": "Productivity and Project Management",
+      "one_line_description": "monday.com offers a developer platform for connecting AI agents, integrating with data via a GraphQL API, customizing the UI, and building full-stack applications with features like hosting, storage, and webhooks."
+    },
+    "authentication": {
+      "auth_methods": [
+        "oauth2"
+      ],
+      "auth_summary": "The platform supports OAuth2 for authentication, allowing granular scope requests."
+    },
+    "developer_access": {
+      "access_model": "self_serve_free",
+      "credentials_obtainable_without_human_approval": true,
+      "access_notes": "Developers can obtain API access by opening a developer account, visiting the developer center, and making their first API call, indicating a self-serve process without human approval."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "GraphQL",
+        "webhooks"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "monday.com offers a broad API surface, including an expressive GraphQL API for interacting with workflows and data, a Models API for connecting to various LLMs, and an Agents API for programmatic agent management. Webhooks are available for triggering workflows from real-time events."
+    },
+    "mcp": {
+      "mcp_status": "official",
+      "mcp_summary": "monday.com provides an official hosted Model Context Protocol (MCP) URL, including a Developer MCP, which allows agents to connect to the platform and can be used to scaffold, set environment variables, and promote versions from chat."
+    },
+    "buildability": {
+      "verdict": "build_now",
+      "primary_blocker": null,
+      "verdict_reasoning": "Self-serve developer access is verified with a broad/moderate documented public API."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 1,
+        "access_model": 1,
+        "public_api": 1,
+        "api_breadth": 1,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.95,
+      "requires_human_review": false,
+      "human_review_reason": null
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_material_evidence_validation_failed"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_material_evidence_validation_failed"
+    ]
+  }
+}

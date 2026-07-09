@@ -1,0 +1,31 @@
+{
+  "assignment_number": 18,
+  "app_name": "Help Scout",
+  "assigned_category": "Support and Helpdesk",
+  "baseline_verdict": "UNCLEAR",
+  "calibrated_verdict": "UNCLEAR",
+  "exact_fields_to_verify": [
+    "public_api_status_unclear",
+    "access_model_unclear",
+    "auth_methods_unclear"
+  ],
+  "targeted_result": {
+    "verified_auth_methods": [
+      "unclear"
+    ],
+    "verified_access_model": "unclear",
+    "verified_credentials_obtainable_without_approval": false,
+    "verified_public_api_status": "yes",
+    "verified_api_breadth": "unknown",
+    "verified_verdict": "UNCLEAR",
+    "primary_blocker": "API access model and authentication methods are unclear.",
+    "evidence_url": "https://helpscout.com/docs",
+    "concise_evidence_snippet": "Make your help center public, restrict visitors, or authorize specific users via our API.",
+    "remaining_uncertainty": [
+      "access_model",
+      "auth_methods",
+      "api_breadth"
+    ]
+  },
+  "verified_at": "2026-07-09T19:00:06.101Z"
+}

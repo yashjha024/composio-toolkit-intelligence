@@ -1,0 +1,381 @@
+{
+  "identity": {
+    "assignment_number": 62,
+    "app_name": "Vercel",
+    "website_hint": "vercel.com/docs/rest-api",
+    "assigned_category": "Developer, Infra and Data platforms",
+    "researched_at": "2026-07-09T17:19:54.309Z"
+  },
+  "product": {
+    "normalized_category": "Developer, Infra and Data platforms",
+    "one_line_description": "Vercel REST API allows programmatic interaction with a Vercel account to manage deployments, domains, secrets, and environment variables."
+  },
+  "authentication": {
+    "auth_methods": [
+      "bearer_token"
+    ],
+    "auth_summary": "Authentication to the Vercel REST API requires Vercel Access Tokens, which are included in the Authorization header as a Bearer token."
+  },
+  "developer_access": {
+    "access_model": "self_serve_free",
+    "credentials_obtainable_without_human_approval": true,
+    "access_notes": "Vercel Access Tokens, required for API authentication, can be created and managed by the user in their account settings without human approval."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "api_summary": "Vercel provides a comprehensive REST API over HTTP/1 and HTTP/2 for programmatic interaction with Vercel accounts, offering a broad range of endpoints covering access groups, aliases, deployments, domains, environment variables, projects, teams, and much more."
+  },
+  "mcp": {
+    "mcp_status": "none_found",
+    "mcp_summary": "No information about Model Context Protocol (MCP) servers or related functionalities was found in the provided source."
+  },
+  "buildability": {
+    "verdict": "build_now",
+    "primary_blocker": null,
+    "verdict_reasoning": "Self-serve developer access is verified with a broad/moderate documented public API."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 1,
+      "access_model": 0.9,
+      "public_api": 1,
+      "api_breadth": 0.9,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.95,
+    "requires_human_review": false,
+    "human_review_reason": null
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783617594309_0",
+      "claim_field": "product.one_line_description",
+      "claim": "Interact programmatically with your Vercel account using the SDK or direct HTTP requests. You can deploy new versions of web applications, manage custom domains, retrieve information about deployments, and manage secrets and environment variables for projects.",
+      "source_url": "https://vercel.com/docs/rest-api",
+      "source_title": "Vercel REST API Reference",
+      "source_type": "api_ref",
+      "evidence_snippet": "Interact programmatically with your Vercel account using the SDK or direct HTTP requests. You can deploy new versions of web applications, manage custom domains, retrieve information about deployments, and manage secrets and environment variables for projects.",
+      "retrieved_at": "2026-07-09T17:19:54.309Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://vercel.com/docs/rest-api"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617594309_1",
+      "claim_field": "authentication.auth_methods",
+      "claim": "bearer_token",
+      "source_url": "https://vercel.com/docs/rest-api",
+      "source_title": "Vercel REST API Reference",
+      "source_type": "api_ref",
+      "evidence_snippet": "Vercel Access Tokens are required to authenticate and use the Vercel API. Include the token in the `Authorization` header:\n\n`Authorization: Bearer <TOKEN>`",
+      "retrieved_at": "2026-07-09T17:19:54.309Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://vercel.com/docs/rest-api"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617594309_2",
+      "claim_field": "developer_access.access_model",
+      "claim": "self_serve_free",
+      "source_url": "https://vercel.com/docs/rest-api",
+      "source_title": "Vercel REST API Reference",
+      "source_type": "api_ref",
+      "evidence_snippet": "Create and manage Access Tokens in your [account settings](https://vercel.com/account/tokens).",
+      "retrieved_at": "2026-07-09T17:19:54.309Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://vercel.com/docs/rest-api"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617594309_3",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": true,
+      "source_url": "https://vercel.com/docs/rest-api",
+      "source_title": "Vercel REST API Reference",
+      "source_type": "api_ref",
+      "evidence_snippet": "Create and manage Access Tokens in your [account settings](https://vercel.com/account/tokens).",
+      "retrieved_at": "2026-07-09T17:19:54.309Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://vercel.com/docs/rest-api"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617594309_4",
+      "claim_field": "developer_access.access_notes",
+      "claim": "Create and manage Access Tokens in your [account settings](https://vercel.com/account/tokens).",
+      "source_url": "https://vercel.com/docs/rest-api",
+      "source_title": "Vercel REST API Reference",
+      "source_type": "api_ref",
+      "evidence_snippet": "Create and manage Access Tokens in your [account settings](https://vercel.com/account/tokens).",
+      "retrieved_at": "2026-07-09T17:19:54.309Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://vercel.com/docs/rest-api"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617594309_5",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://vercel.com/docs/rest-api",
+      "source_title": "Vercel REST API Reference",
+      "source_type": "api_ref",
+      "evidence_snippet": "Vercel REST API",
+      "retrieved_at": "2026-07-09T17:19:54.309Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://vercel.com/docs/rest-api"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617594309_6",
+      "claim_field": "api_surface.api_styles",
+      "claim": "REST",
+      "source_url": "https://vercel.com/docs/rest-api",
+      "source_title": "Vercel REST API Reference",
+      "source_type": "api_ref",
+      "evidence_snippet": "Vercel REST API\n\n# [Using the REST API](#using-the-rest-api)[](#using-the-rest-api)\n\nInteract programmatically with your Vercel account using the SDK or direct HTTP requests.\n... The API is exposed as an HTTP/1 and HTTP/2 service over SSL. All endpoints live under the URL `https://api.vercel.com` and follow the REST architecture.",
+      "retrieved_at": "2026-07-09T17:19:54.309Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://vercel.com/docs/rest-api"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617594309_7",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://vercel.com/docs/rest-api",
+      "source_title": "Vercel REST API Reference",
+      "source_type": "api_ref",
+      "evidence_snippet": "Browse all available REST API endpoints grouped by category.\n\n[Access-groups11 endpoints](/docs/rest-api/access-groups/reads-an-access-group)[Aliases6 endpoints](/docs/rest-api/aliases/list-deployment-aliases)[Api-observability2 endpoints](/docs/rest-api/api-observability/lists-disabled-observability-plus-projects)[Artifacts7 endpoints](/docs/rest-api/artifacts/record-an-artifacts-cache-usage-event)[Authentication5 endpoints](/docs/rest-api/authentication/sso-token-exchange)[Billing3 endpoints](/docs/rest-api/billing/list-focus-billing-charges)[Bulk-redirects7 endpoints](/docs/rest-api/bulk-redirects/gets-project-level-redirects)[Certs4 endpoints](/docs/rest-api/certs/get-cert-by-id)[Checks-v210 endpoints](/docs/rest-api/checks-v2/list-all-checks-for-a-project)[Connect4 endpoints](/docs/rest-api/connect/create-a-connector)[Deployments10 endpoints](/docs/rest-api/deployments/get-deployment-events)[DNS4 endpoints](/docs/rest-api/dns/list-existing-dns-records)[Domains9 endpoints](/docs/rest-api/domains/get-a-domain-s-configuration)[Domains-registrar17 endpoints](/docs/rest-api/domains-registrar/get-supported-tlds)[Drains6 endpoints](/docs/rest-api/drains/retrieve-a-list-of-all-drains)[Edge-cache4 endpoints](/docs/rest-api/edge-cache/invalidate-by-tag)[Edge-config18 endpoints](/docs/rest-api/edge-config/get-edge-configs)[Environment11 endpoints](/docs/rest-api/environment/lists-all-shared-environment-variables-for-a-team)[Feature-flags21 endpoints](/docs/rest-api/feature-flags/list-flags)[Integrations10 endpoints](/docs/rest-api/deployments/update-deployment-integration-action)[Logs1 endpoint](/docs/rest-api/logs/get-logs-for-a-deployment)[Marketplace23 endpoints](/docs/rest-api/marketplace/update-installation)[Microfrontends5 endpoints](/docs/rest-api/microfrontends/list-microfrontends-groups)[Networking6 endpoints](/docs/rest-api/networking/list-secure-compute-networks)[Project-routes8 endpoints](/docs/rest-api/project-routes/get-project-routing-rules)[Projectmembers3 endpoints](/docs/rest-api/projectmembers/list-project-members)[Projects29 endpoints](/docs/rest-api/projects/retrieve-a-list-of-projects)[Rolling-release8 endpoints](/docs/rest-api/rolling-release/get-rolling-release-billing-status)[Sandboxes25 endpoints](/docs/rest-api/sandboxes/list-sandboxes)[Security9 endpoints](/docs/rest-api/security/update-attack-challenge-mode)[Static-ips1 endpoint](/docs/rest-api/networking/configures-static-ips-for-a-project)[Teams16 endpoints](/docs/rest-api/teams/list-team-members)[User4 endpoints](/docs/rest-api/user/list-user-events)[VCR9 endpoints](/docs/rest-api/vcr/list-repositories)[Web-analytics4 endpoints](/docs/rest-api/web-analytics/aggregates-page-views)[Webhooks4 endpoints](/docs/rest-api/webhooks/get-a-list-of-webhooks)",
+      "retrieved_at": "2026-07-09T17:19:54.309Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://vercel.com/docs/rest-api"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617594309_8",
+      "claim_field": "api_surface.api_summary",
+      "claim": "Browse all available REST API endpoints grouped by category.\n\n[Access-groups11 endpoints](/docs/rest-api/access-groups/reads-an-access-group)[Aliases6 endpoints](/docs/rest-api/aliases/list-deployment-aliases)[Api-observability2 endpoints](/docs/rest-api/api-observability/lists-disabled-observability-plus-projects)[Artifacts7 endpoints](/docs/rest-api/artifacts/record-an-artifacts-cache-usage-event)[Authentication5 endpoints](/docs/rest-api/authentication/sso-token-exchange)[Billing3 endpoints](/docs/rest-api/billing/list-focus-billing-charges)[Bulk-redirects7 endpoints](/docs/rest-api/bulk-redirects/gets-project-level-redirects)[Certs4 endpoints](/docs/rest-api/certs/get-cert-by-id)[Checks-v210 endpoints](/docs/rest-api/checks-v2/list-all-checks-for-a-project)[Connect4 endpoints](/docs/rest-api/connect/create-a-connector)[Deployments10 endpoints](/docs/rest-api/deployments/get-deployment-events)[DNS4 endpoints](/docs/rest-api/dns/list-existing-dns-records)[Domains9 endpoints](/docs/rest-api/domains/get-a-domain-s-configuration)[Domains-registrar17 endpoints](/docs/rest-api/domains-registrar/get-supported-tlds)[Drains6 endpoints](/docs/rest-api/drains/retrieve-a-list-of-all-drains)[Edge-cache4 endpoints](/docs/rest-api/edge-cache/invalidate-by-tag)[Edge-config18 endpoints](/docs/rest-api/edge-config/get-edge-configs)[Environment11 endpoints](/docs/rest-api/environment/lists-all-shared-environment-variables-for-a-team)[Feature-flags21 endpoints](/docs/rest-api/feature-flags/list-flags)[Integrations10 endpoints](/docs/rest-api/deployments/update-deployment-integration-action)[Logs1 endpoint](/docs/rest-api/logs/get-logs-for-a-deployment)[Marketplace23 endpoints](/docs/rest-api/marketplace/update-installation)[Microfrontends5 endpoints](/docs/rest-api/microfrontends/list-microfrontends-groups)[Networking6 endpoints](/docs/rest-api/networking/list-secure-compute-networks)[Project-routes8 endpoints](/docs/rest-api/project-routes/get-project-routing-rules)[Projectmembers3 endpoints](/docs/rest-api/projectmembers/list-project-members)[Projects29 endpoints](/docs/rest-api/projects/retrieve-a-list-of-projects)[Rolling-release8 endpoints](/docs/rest-api/rolling-release/get-rolling-release-billing-status)[Sandboxes25 endpoints](/docs/rest-api/sandboxes/list-sandboxes)[Security9 endpoints](/docs/rest-api/security/update-attack-challenge-mode)[Static-ips1 endpoint](/docs/rest-api/networking/configures-static-ips-for-a-project)[Teams16 endpoints](/docs/rest-api/teams/list-team-members)[User4 endpoints](/docs/rest-api/user/list-user-events)[VCR9 endpoints](/docs/rest-api/vcr/list-repositories)[Web-analytics4 endpoints](/docs/rest-api/web-analytics/aggregates-page-views)[Webhooks4 endpoints](/docs/rest-api/webhooks/get-a-list-of-webhooks)",
+      "source_url": "https://vercel.com/docs/rest-api",
+      "source_title": "Vercel REST API Reference",
+      "source_type": "api_ref",
+      "evidence_snippet": "Browse all available REST API endpoints grouped by category.\n\n[Access-groups11 endpoints](/docs/rest-api/access-groups/reads-an-access-group)[Aliases6 endpoints](/docs/rest-api/aliases/list-deployment-aliases)[Api-observability2 endpoints](/docs/rest-api/api-observability/lists-disabled-observability-plus-projects)[Artifacts7 endpoints](/docs/rest-api/artifacts/record-an-artifacts-cache-usage-event)[Authentication5 endpoints](/docs/rest-api/authentication/sso-token-exchange)[Billing3 endpoints](/docs/rest-api/billing/list-focus-billing-charges)[Bulk-redirects7 endpoints](/docs/rest-api/bulk-redirects/gets-project-level-redirects)[Certs4 endpoints](/docs/rest-api/certs/get-cert-by-id)[Checks-v210 endpoints](/docs/rest-api/checks-v2/list-all-checks-for-a-project)[Connect4 endpoints](/docs/rest-api/connect/create-a-connector)[Deployments10 endpoints](/docs/rest-api/deployments/get-deployment-events)[DNS4 endpoints](/docs/rest-api/dns/list-existing-dns-records)[Domains9 endpoints](/docs/rest-api/domains/get-a-domain-s-configuration)[Domains-registrar17 endpoints](/docs/rest-api/domains-registrar/get-supported-tlds)[Drains6 endpoints](/docs/rest-api/drains/retrieve-a-list-of-all-drains)[Edge-cache4 endpoints](/docs/rest-api/edge-cache/invalidate-by-tag)[Edge-config18 endpoints](/docs/rest-api/edge-config/get-edge-configs)[Environment11 endpoints](/docs/rest-api/environment/lists-all-shared-environment-variables-for-a-team)[Feature-flags21 endpoints](/docs/rest-api/feature-flags/list-flags)[Integrations10 endpoints](/docs/rest-api/deployments/update-deployment-integration-action)[Logs1 endpoint](/docs/rest-api/logs/get-logs-for-a-deployment)[Marketplace23 endpoints](/docs/rest-api/marketplace/update-installation)[Microfrontends5 endpoints](/docs/rest-api/microfrontends/list-microfrontends-groups)[Networking6 endpoints](/docs/rest-api/networking/list-secure-compute-networks)[Project-routes8 endpoints](/docs/rest-api/project-routes/get-project-routing-rules)[Projectmembers3 endpoints](/docs/rest-api/projectmembers/list-project-members)[Projects29 endpoints](/docs/rest-api/projects/retrieve-a-list-of-projects)[Rolling-release8 endpoints](/docs/rest-api/rolling-release/get-rolling-release-billing-status)[Sandboxes25 endpoints](/docs/rest-api/sandboxes/list-sandboxes)[Security9 endpoints](/docs/rest-api/security/update-attack-challenge-mode)[Static-ips1 endpoint](/docs/rest-api/networking/configures-static-ips-for-a-project)[Teams16 endpoints](/docs/rest-api/teams/list-team-members)[User4 endpoints](/docs/rest-api/user/list-user-events)[VCR9 endpoints](/docs/rest-api/vcr/list-repositories)[Web-analytics4 endpoints](/docs/rest-api/web-analytics/aggregates-page-views)[Webhooks4 endpoints](/docs/rest-api/webhooks/get-a-list-of-webhooks)",
+      "retrieved_at": "2026-07-09T17:19:54.309Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://vercel.com/docs/rest-api"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 62,
+      "app_name": "Vercel",
+      "website_hint": "vercel.com/docs/rest-api",
+      "assigned_category": "Developer, Infra and Data platforms",
+      "researched_at": "2026-07-09T17:19:54.309Z"
+    },
+    "product": {
+      "normalized_category": "Developer, Infra and Data platforms",
+      "one_line_description": "Vercel REST API allows programmatic interaction with a Vercel account to manage deployments, domains, secrets, and environment variables."
+    },
+    "authentication": {
+      "auth_methods": [
+        "bearer_token"
+      ],
+      "auth_summary": "Authentication to the Vercel REST API requires Vercel Access Tokens, which are included in the Authorization header as a Bearer token."
+    },
+    "developer_access": {
+      "access_model": "self_serve_free",
+      "credentials_obtainable_without_human_approval": true,
+      "access_notes": "Vercel Access Tokens, required for API authentication, can be created and managed by the user in their account settings without human approval."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "REST"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "Vercel provides a comprehensive REST API over HTTP/1 and HTTP/2 for programmatic interaction with Vercel accounts, offering a broad range of endpoints covering access groups, aliases, deployments, domains, environment variables, projects, teams, and much more."
+    },
+    "mcp": {
+      "mcp_status": "none_found",
+      "mcp_summary": "No information about Model Context Protocol (MCP) servers or related functionalities was found in the provided source."
+    },
+    "buildability": {
+      "verdict": "build_now",
+      "primary_blocker": null,
+      "verdict_reasoning": "Self-serve developer access is verified with a broad/moderate documented public API."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 1,
+        "access_model": 0.9,
+        "public_api": 1,
+        "api_breadth": 0.9,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.95,
+      "requires_human_review": false,
+      "human_review_reason": null
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_material_evidence_validation_failed"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_material_evidence_validation_failed"
+    ]
+  }
+}

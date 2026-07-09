@@ -1,0 +1,88 @@
+{
+  "assignment_number": 54,
+  "app_name": "MrScraper",
+  "assigned_category": "Data, SEO and Scraping",
+  "processing_mode": "fast_scale",
+  "baseline_fields": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "access_model": "self_serve_paid",
+    "credentials_obtainable_without_approval": true,
+    "public_api_status": "yes",
+    "api_breadth": "broad",
+    "mcp_status": "official",
+    "buildability_verdict": "BUILD_NOW",
+    "primary_blocker": null
+  },
+  "verified_fields": {
+    "auth_methods": {
+      "verified_value": [
+        "token_based"
+      ],
+      "evidence_url": "https://docs.mrscraper.com/docs/getting-started/api-token",
+      "concise_evidence_snippet": "[Token Plan](/docs/getting-started/api-token)",
+      "baseline_classification": "incorrect",
+      "correction_required": true,
+      "failure_mode": "conservative_guardrail"
+    },
+    "access_model": {
+      "verified_value": "self_serve_paid",
+      "evidence_url": "https://docs.mrscraper.com/docs/getting-started/billing",
+      "concise_evidence_snippet": "[Billing](/docs/getting-started/billing)",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "credentials_obtainable_without_approval": {
+      "verified_value": true,
+      "evidence_url": "https://docs.mrscraper.com/docs/getting-started/api-token",
+      "concise_evidence_snippet": "[Token Plan](/docs/getting-started/api-token)",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "public_api_status": {
+      "verified_value": "yes",
+      "evidence_url": "https://docs.mrscraper.com/docs/features/activating-api",
+      "concise_evidence_snippet": "[Scraper API](/docs/features/activating-api)",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "api_breadth": {
+      "verified_value": "broad",
+      "evidence_url": "https://docs.mrscraper.com",
+      "concise_evidence_snippet": "Scraper API, Python SDK, Node.js SDK, LangChain SDK, CLI, Webhook listed under Integrations.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "mcp_status": {
+      "verified_value": "official",
+      "evidence_url": "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+      "concise_evidence_snippet": "[MCP Server](/docs/getting-started/mcp-server)",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "buildability_verdict": {
+      "verified_value": "BUILD_NOW",
+      "evidence_url": "https://docs.mrscraper.com/docs/getting-started/overview",
+      "concise_evidence_snippet": "Public API, self-serve paid access, token-based authentication, and credentials obtainable without approval confirmed.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "primary_blocker": {
+      "verified_value": null,
+      "evidence_url": "https://docs.mrscraper.com/docs/getting-started/overview",
+      "concise_evidence_snippet": "All conditions for BUILD_NOW are met; no primary blockers identified for API usage.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "unclear_diagnosis": "not_applicable"
+  },
+  "verified_at": "2026-07-09T18:54:47.702Z"
+}

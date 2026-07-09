@@ -1,0 +1,478 @@
+{
+  "identity": {
+    "assignment_number": 3,
+    "app_name": "Pipedrive",
+    "website_hint": "pipedrive.com",
+    "assigned_category": "CRM and Sales",
+    "researched_at": "2026-07-09T15:52:28.884Z"
+  },
+  "product": {
+    "normalized_category": "CRM and Sales",
+    "one_line_description": "Pipedrive is a sales CRM that helps track sales pipelines, optimize leads, manage deals with AI, and automate sales processes."
+  },
+  "authentication": {
+    "auth_methods": [
+      "api_key",
+      "oauth2"
+    ],
+    "auth_summary": "API requests are validated against an API token, which can be obtained manually from the Pipedrive app. OAuth 2.0 is also supported as an authentication method."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": true,
+    "access_notes": "Developers can obtain an API token manually from the Pipedrive app. A free Developer Sandbox Account is available for experimentation and development, which allows signing up and accessing API credentials without human approval."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "REST",
+      "SDK",
+      "webhooks"
+    ],
+    "api_breadth": "broad",
+    "api_summary": "Pipedrive offers a RESTful API with OpenAPI 3 specifications, covering a broad range of CRM functionalities including Activities, Deals, Leads, Organizations, Persons, Products, Projects, Users, and more. Official client libraries (SDKs) are available for Node.js and PHP, and the API supports webhooks."
+  },
+  "mcp": {
+    "mcp_status": "none_found",
+    "mcp_summary": "No information about Model Context Protocol or specific AI agent integration capabilities was found in the provided sources."
+  },
+  "buildability": {
+    "verdict": "unclear",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 1,
+      "access_model": 1,
+      "public_api": 1,
+      "api_breadth": 1,
+      "mcp_status": 1
+    },
+    "overall_confidence": 1,
+    "requires_human_review": false,
+    "human_review_reason": null
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783612348884_0",
+      "claim_field": "product.one_line_description",
+      "claim": "Pipedrive lets you track your sales pipeline, optimize leads, manage deals with AI and automate your entire sales process so you can focus on selling.",
+      "source_url": "https://www.pipedrive.com/",
+      "source_title": "Sales CRM & Pipeline Management Software | Pipedrive",
+      "source_type": "official_doc",
+      "evidence_snippet": "Pipedrive lets you track your sales pipeline, optimize leads, manage deals with AI and automate your entire sales process so you can focus on selling.",
+      "retrieved_at": "2026-07-09T15:52:28.884Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.pipedrive.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612348884_1",
+      "claim_field": "authentication.auth_methods",
+      "claim": "api_key",
+      "source_url": "https://developers.pipedrive.com/docs/api/v1",
+      "source_title": "Pipedrive API Reference and Documentation",
+      "source_type": "api_ref",
+      "evidence_snippet": "The API is stateless – all requests are validated against an API token. The API token can be [obtained](https://pipedrive.readme.io/docs/how-to-find-the-api-token) manually from the Pipedrive app.",
+      "retrieved_at": "2026-07-09T15:52:28.884Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.pipedrive.com/docs/api/v1"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612348884_2",
+      "claim_field": "authentication.auth_methods",
+      "claim": "oauth2",
+      "source_url": "https://developers.pipedrive.com/docs/api/v1",
+      "source_title": "Pipedrive API Reference and Documentation",
+      "source_type": "api_ref",
+      "evidence_snippet": "[OAuth 2.0](/docs/api/v1/Oauth)",
+      "retrieved_at": "2026-07-09T15:52:28.884Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.pipedrive.com/docs/api/v1"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612348884_3",
+      "claim_field": "developer_access.access_model",
+      "claim": "self_serve_free",
+      "source_url": "https://developers.pipedrive.com/",
+      "source_title": "Pipedrive Developers Corner | Pipedrive API sandbox",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Sign up for a Sandbox Account today to begin experimenting and developing in a risk free environment",
+      "retrieved_at": "2026-07-09T15:52:28.884Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.pipedrive.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612348884_4",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": true,
+      "source_url": "https://developers.pipedrive.com/docs/api/v1",
+      "source_title": "Pipedrive API Reference and Documentation",
+      "source_type": "api_ref",
+      "evidence_snippet": "The API token can be [obtained](https://pipedrive.readme.io/docs/how-to-find-the-api-token) manually from the Pipedrive app.",
+      "retrieved_at": "2026-07-09T15:52:28.884Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.pipedrive.com/docs/api/v1"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612348884_5",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": true,
+      "source_url": "https://developers.pipedrive.com/",
+      "source_title": "Pipedrive Developers Corner | Pipedrive API sandbox",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Sign up for a Sandbox Account today to begin experimenting and developing in a risk free environment",
+      "retrieved_at": "2026-07-09T15:52:28.884Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.pipedrive.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612348884_6",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://developers.pipedrive.com/docs/api/v1",
+      "source_title": "Pipedrive API Reference and Documentation",
+      "source_type": "api_ref",
+      "evidence_snippet": "API Reference\nThis reference helps you implement the RESTful Pipedrive API.",
+      "retrieved_at": "2026-07-09T15:52:28.884Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.pipedrive.com/docs/api/v1"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612348884_7",
+      "claim_field": "api_surface.api_styles",
+      "claim": "REST",
+      "source_url": "https://developers.pipedrive.com/docs/api/v1",
+      "source_title": "Pipedrive API Reference and Documentation",
+      "source_type": "api_ref",
+      "evidence_snippet": "This reference helps you implement the RESTful Pipedrive API.",
+      "retrieved_at": "2026-07-09T15:52:28.884Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.pipedrive.com/docs/api/v1"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612348884_8",
+      "claim_field": "api_surface.api_styles",
+      "claim": "REST",
+      "source_url": "https://developers.pipedrive.com/docs/api/v1",
+      "source_title": "Pipedrive API Reference and Documentation",
+      "source_type": "api_ref",
+      "evidence_snippet": "You can always import our OpenAPI 3 specification files (available for both [v1](/docs/api/v1/openapi.yaml) and [v2](/docs/api/v1/openapi-v2.yaml) APIs) into your tool of choice.",
+      "retrieved_at": "2026-07-09T15:52:28.884Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.pipedrive.com/docs/api/v1"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612348884_9",
+      "claim_field": "api_surface.api_styles",
+      "claim": "SDK",
+      "source_url": "https://developers.pipedrive.com/docs/api/v1",
+      "source_title": "Pipedrive API Reference and Documentation",
+      "source_type": "api_ref",
+      "evidence_snippet": "We offer two official Pipedrive API client libraries: [Node.js](https://github.com/pipedrive/client-nodejs) and [PHP](https://github.com/pipedrive/client-php).",
+      "retrieved_at": "2026-07-09T15:52:28.884Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.pipedrive.com/docs/api/v1"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612348884_10",
+      "claim_field": "api_surface.api_styles",
+      "claim": "webhooks",
+      "source_url": "https://developers.pipedrive.com/docs/api/v1",
+      "source_title": "Pipedrive API Reference and Documentation",
+      "source_type": "api_ref",
+      "evidence_snippet": "[Webhooks](/docs/api/v1/Webhooks)",
+      "retrieved_at": "2026-07-09T15:52:28.884Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.pipedrive.com/docs/api/v1"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612348884_11",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://developers.pipedrive.com/docs/api/v1",
+      "source_title": "Pipedrive API Reference and Documentation",
+      "source_type": "api_ref",
+      "evidence_snippet": "Endpoints\n[Activities](/docs/api/v1/Activities)\n[Activity fields](/docs/api/v1/ActivityFields)\n[Activity types](/docs/api/v1/ActivityTypes)\n[Beta](/docs/api/v1/Beta)\n[Billing](/docs/api/v1/Billing)\n[Call logs](/docs/api/v1/CallLogs)\n[Channels](/docs/api/v1/Channels)\n[Currencies](/docs/api/v1/Currencies)\n[Deal fields](/docs/api/v1/DealFields)\n[Deal installments](/docs/api/v1/DealInstallments)\n[Deal products](/docs/api/v1/DealProducts)\n[Deals](/docs/api/v1/Deals)\n[Files](/docs/api/v1/Files)\n[Filters](/docs/api/v1/Filters)\n[Goals](/docs/api/v1/Goals)\n[Item search](/docs/api/v1/ItemSearch)\n[Lead fields](/docs/api/v1/LeadFields)\n[Lead labels](/docs/api/v1/LeadLabels)\n[Leads](/docs/api/v1/Leads)\n[Lead sources](/docs/api/v1/LeadSources)\n[Legacy teams](/docs/api/v1/LegacyTeams)\n[Mailbox](/docs/api/v1/Mailbox)\n[Meetings](/docs/api/v1/Meetings)\n[Note fields](/docs/api/v1/NoteFields)\n[Notes](/docs/api/v1/Notes)\n[OAuth 2.0](/docs/api/v1/Oauth)\n[Organization fields](/docs/api/v1/OrganizationFields)\n[Organization relationships](/docs/api/v1/OrganizationRelationships)\n[Organizations](/docs/api/v1/Organizations)\n[Permission sets](/docs/api/v1/PermissionSets)\n[Person fields](/docs/api/v1/PersonFields)\n[Persons](/docs/api/v1/Persons)\n[Pipelines](/docs/api/v1/Pipelines)\n[Product fields](/docs/api/v1/ProductFields)\n[Products](/docs/api/v1/Products)\n[Project boards](/docs/api/v1/ProjectBoards)\n[Project fields](/docs/api/v1/ProjectFields)\n[Project phases](/docs/api/v1/ProjectPhases)\n[Projects](/docs/api/v1/Projects)\n[Project templates](/docs/api/v1/ProjectTemplates)\n[Recents](/docs/api/v1/Recents)\n[Roles](/docs/api/v1/Roles)\n[Stages](/docs/api/v1/Stages)\n[Tasks](/docs/api/v1/Tasks)\n[User connections](/docs/api/v1/UserConnections)\n[Users](/docs/api/v1/Users)\n[User settings](/docs/api/v1/UserSettings)\n[Webhooks](/docs/api/v1/Webhooks)",
+      "retrieved_at": "2026-07-09T15:52:28.884Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.pipedrive.com/docs/api/v1"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 3,
+      "app_name": "Pipedrive",
+      "website_hint": "pipedrive.com",
+      "assigned_category": "CRM and Sales",
+      "researched_at": "2026-07-09T15:52:28.884Z"
+    },
+    "product": {
+      "normalized_category": "CRM and Sales",
+      "one_line_description": "Pipedrive is a sales CRM that helps track sales pipelines, optimize leads, manage deals with AI, and automate sales processes."
+    },
+    "authentication": {
+      "auth_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "auth_summary": "API requests are validated against an API token, which can be obtained manually from the Pipedrive app. OAuth 2.0 is also supported as an authentication method."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": true,
+      "access_notes": "Developers can obtain an API token manually from the Pipedrive app. A free Developer Sandbox Account is available for experimentation and development, which allows signing up and accessing API credentials without human approval."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "REST",
+        "SDK",
+        "webhooks"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "Pipedrive offers a RESTful API with OpenAPI 3 specifications, covering a broad range of CRM functionalities including Activities, Deals, Leads, Organizations, Persons, Products, Projects, Users, and more. Official client libraries (SDKs) are available for Node.js and PHP, and the API supports webhooks."
+    },
+    "mcp": {
+      "mcp_status": "none_found",
+      "mcp_summary": "No information about Model Context Protocol or specific AI agent integration capabilities was found in the provided sources."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient.",
+      "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 1,
+        "access_model": 1,
+        "public_api": 1,
+        "api_breadth": 1,
+        "mcp_status": 1
+      },
+      "overall_confidence": 1,
+      "requires_human_review": false,
+      "human_review_reason": null
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_access_model_unclear",
+    "risk_contradictory_claims",
+    "risk_verdict_unclear"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_access_model_unclear",
+      "risk_contradictory_claims",
+      "risk_verdict_unclear"
+    ]
+  }
+}

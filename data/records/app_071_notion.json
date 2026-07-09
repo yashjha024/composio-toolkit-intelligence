@@ -1,0 +1,627 @@
+{
+  "identity": {
+    "assignment_number": 71,
+    "app_name": "Notion",
+    "website_hint": "developers.notion.com",
+    "assigned_category": "Productivity and Project Management",
+    "researched_at": "2026-07-09T17:36:32.465Z"
+  },
+  "product": {
+    "normalized_category": "Productivity and Project Management",
+    "one_line_description": "Notion API allows external tools to connect to Notion workspaces, automate workflows, and read, create, and update pages, databases, users, comments, and more."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "Notion supports three authentication models: Internal connections use a static API token. Public connections use OAuth 2.0 for authentication. Personal access tokens (PATs) are user-scoped tokens that use a static bearer token."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": true,
+    "access_notes": "Developers can create personal access tokens (PATs) for quick start in under two minutes, which are self-serve and do not require human approval. Internal connections also use static API tokens. Public connections use OAuth 2.0 and can be created and used without listing on the Marketplace, although listing requires a security review."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "REST",
+      "SDK",
+      "webhooks",
+      "CLI"
+    ],
+    "api_breadth": "broad",
+    "api_summary": "Notion provides a REST API that allows reading, creating, and updating nearly everything in a workspace including pages, databases, users, comments, views, data sources, and file uploads. It also offers a JavaScript SDK, supports CLI workflows, and provides webhooks for real-time event subscriptions."
+  },
+  "mcp": {
+    "mcp_status": "none_found",
+    "mcp_summary": "No mention of Model Context Protocol (MCP) or similar capabilities was found in the provided documentation."
+  },
+  "buildability": {
+    "verdict": "unclear",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 1,
+      "access_model": 1,
+      "public_api": 1,
+      "api_breadth": 1,
+      "mcp_status": 1
+    },
+    "overall_confidence": 1,
+    "requires_human_review": false,
+    "human_review_reason": null
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783618592465_0",
+      "claim_field": "product.one_line_description",
+      "claim": "Notion API allows external tools to connect to Notion workspaces, automate workflows, and read, create, and update pages, databases, users, comments, and more.",
+      "source_url": "https://developers.notion.com/guides/get-started/overview",
+      "source_title": "Overview - Notion Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Notion connections let you connect your workspace to external tools and automate workflows through code. With the REST API, you can read, create, and update nearly everything in a workspace — pages, databases, users, comments, and more.",
+      "retrieved_at": "2026-07-09T17:36:32.465Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.notion.com/guides/get-started/overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783618592465_1",
+      "claim_field": "authentication.auth_methods",
+      "claim": "api_key",
+      "source_url": "https://developers.notion.com/guides/get-started/overview",
+      "source_title": "Overview - Notion Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Internal connections are scoped to a single workspace and use a static API token.",
+      "retrieved_at": "2026-07-09T17:36:32.465Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.notion.com/guides/get-started/overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783618592465_2",
+      "claim_field": "authentication.auth_methods",
+      "claim": "oauth2",
+      "source_url": "https://developers.notion.com/guides/get-started/overview",
+      "source_title": "Overview - Notion Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Public connections use OAuth 2.0 for authentication.",
+      "retrieved_at": "2026-07-09T17:36:32.465Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.notion.com/guides/get-started/overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783618592465_3",
+      "claim_field": "authentication.auth_methods",
+      "claim": "bearer_token",
+      "source_url": "https://developers.notion.com/guides/get-started/overview",
+      "source_title": "Overview - Notion Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Personal access tokens (PATs) are user-scoped tokens for scripts, CLI workflows, Workers, and tools that should act as one Notion user. A PAT uses the creator’s workspace membership and page permissions. See Personal access tokens. ... Authentication: Static bearer token.",
+      "retrieved_at": "2026-07-09T17:36:32.465Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.notion.com/guides/get-started/overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783618592465_4",
+      "claim_field": "authentication.auth_summary",
+      "claim": "Notion supports three authentication models: Internal connections use a static API token; Public connections use OAuth 2.0; and Personal access tokens use a static bearer token.",
+      "source_url": "https://developers.notion.com/guides/get-started/overview",
+      "source_title": "Overview - Notion Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Notion supports three authentication models:\nInternal connections are scoped to a single workspace and use a static API token.\nPublic connections use OAuth 2.0 for authentication.\nPersonal access tokens (PATs) are user-scoped tokens for scripts, CLI workflows, Workers, and tools that should act as one Notion user. ... Authentication: Static bearer token.",
+      "retrieved_at": "2026-07-09T17:36:32.465Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.notion.com/guides/get-started/overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783618592465_5",
+      "claim_field": "developer_access.access_model",
+      "claim": "self_serve_free",
+      "source_url": "https://developers.notion.com/guides/get-started/overview",
+      "source_title": "Overview - Notion Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "The fastest way to start building is the Quickstart — create a personal access token, make your first API request, and see a new page appear in your workspace in under two minutes.",
+      "retrieved_at": "2026-07-09T17:36:32.465Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.notion.com/guides/get-started/overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783618592465_6",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": true,
+      "source_url": "https://developers.notion.com/guides/get-started/overview",
+      "source_title": "Overview - Notion Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "The fastest way to start building is the Quickstart — create a personal access token, make your first API request, and see a new page appear in your workspace in under two minutes.",
+      "retrieved_at": "2026-07-09T17:36:32.465Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.notion.com/guides/get-started/overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783618592465_7",
+      "claim_field": "developer_access.access_notes",
+      "claim": "Notion supports internal connections, public connections, and personal access tokens. The 'Quickstart' guide mentions creating a personal access token in under two minutes. Public connections must undergo a Notion security review before being listed on the Marketplace, but can be created and used without listing. Internal connections are scoped to a single workspace and use a static API token.",
+      "source_url": "https://developers.notion.com/guides/get-started/overview",
+      "source_title": "Overview - Notion Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Notion supports internal connections, public connections, and personal access tokens — all powered by the same REST API.\nThe fastest way to start building is the Quickstart — create a personal access token, make your first API request, and see a new page appear in your workspace in under two minutes.\nPublic connections must undergo a Notion security review before being listed on the Marketplace. You can create and use a public connection without listing it.\nInternal connections are scoped to a single workspace and use a static API token.",
+      "retrieved_at": "2026-07-09T17:36:32.465Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.notion.com/guides/get-started/overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783618592465_8",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://developers.notion.com/guides/get-started/overview",
+      "source_title": "Overview - Notion Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "With the REST API, you can read, create, and update nearly everything in a workspace — pages, databases, users, comments, and more.",
+      "retrieved_at": "2026-07-09T17:36:32.465Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.notion.com/guides/get-started/overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783618592465_9",
+      "claim_field": "api_surface.api_styles",
+      "claim": "REST",
+      "source_url": "https://developers.notion.com/guides/get-started/overview",
+      "source_title": "Overview - Notion Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "With the REST API, you can read, create, and update nearly everything in a workspace",
+      "retrieved_at": "2026-07-09T17:36:32.465Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.notion.com/guides/get-started/overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783618592465_10",
+      "claim_field": "api_surface.api_styles",
+      "claim": "SDK",
+      "source_url": "https://developers.notion.com/guides/get-started/overview",
+      "source_title": "Overview - Notion Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "## Notion SDK for JavaScript",
+      "retrieved_at": "2026-07-09T17:36:32.465Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.notion.com/guides/get-started/overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783618592465_11",
+      "claim_field": "api_surface.api_styles",
+      "claim": "webhooks",
+      "source_url": "https://developers.notion.com/guides/get-started/overview",
+      "source_title": "Overview - Notion Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Connections can subscribe to real-time events — like page updates, property changes, and new comments — via webhooks.",
+      "retrieved_at": "2026-07-09T17:36:32.465Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.notion.com/guides/get-started/overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783618592465_12",
+      "claim_field": "api_surface.api_styles",
+      "claim": "CLI",
+      "source_url": "https://developers.notion.com/guides/get-started/overview",
+      "source_title": "Overview - Notion Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Personal access tokens (PATs) are user-scoped tokens for scripts, CLI workflows, Workers, and tools that should act as one Notion user.",
+      "retrieved_at": "2026-07-09T17:36:32.465Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.notion.com/guides/get-started/overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783618592465_13",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://developers.notion.com/guides/get-started/overview",
+      "source_title": "Overview - Notion Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "With the REST API, you can read, create, and update nearly everything in a workspace — pages, databases, users, comments, and more.",
+      "retrieved_at": "2026-07-09T17:36:32.465Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.notion.com/guides/get-started/overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783618592465_14",
+      "claim_field": "api_surface.api_summary",
+      "claim": "The Notion API is a REST API that allows reading, creating, and updating pages, databases, users, and comments. It also supports file uploads, content queries, and webhooks for real-time events.",
+      "source_url": "https://developers.notion.com/guides/get-started/overview",
+      "source_title": "Overview - Notion Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "With the REST API, you can read, create, and update nearly everything in a workspace — pages, databases, users, comments, and more. ... Every connection or token has a set of capabilities that control what it can do — read content, update content, insert content, read comments, and more. ... Pages Create, update, and retrieve page content. Databases Manage database, properties, entries, and schemas. File uploads Upload and attach files to pages and databases. Comments Handle page and inline comments. Content queries Search through workspace content. ... Connections can subscribe to real-time events — like page updates, property changes, and new comments — via webhooks.",
+      "retrieved_at": "2026-07-09T17:36:32.465Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.notion.com/guides/get-started/overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783618592465_15",
+      "claim_field": "mcp.mcp_status",
+      "claim": "none_found",
+      "source_url": "https://developers.notion.com/guides/get-started/overview",
+      "source_title": "Overview - Notion Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "N/A",
+      "retrieved_at": "2026-07-09T17:36:32.465Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.notion.com/guides/get-started/overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783618592465_16",
+      "claim_field": "mcp.mcp_summary",
+      "claim": "No mention of Model Context Protocol (MCP) or similar capabilities in the provided documentation.",
+      "source_url": "https://developers.notion.com/guides/get-started/overview",
+      "source_title": "Overview - Notion Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "N/A",
+      "retrieved_at": "2026-07-09T17:36:32.465Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.notion.com/guides/get-started/overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 71,
+      "app_name": "Notion",
+      "website_hint": "developers.notion.com",
+      "assigned_category": "Productivity and Project Management",
+      "researched_at": "2026-07-09T17:36:32.465Z"
+    },
+    "product": {
+      "normalized_category": "Productivity and Project Management",
+      "one_line_description": "Notion API allows external tools to connect to Notion workspaces, automate workflows, and read, create, and update pages, databases, users, comments, and more."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "Notion supports three authentication models: Internal connections use a static API token. Public connections use OAuth 2.0 for authentication. Personal access tokens (PATs) are user-scoped tokens that use a static bearer token."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": true,
+      "access_notes": "Developers can create personal access tokens (PATs) for quick start in under two minutes, which are self-serve and do not require human approval. Internal connections also use static API tokens. Public connections use OAuth 2.0 and can be created and used without listing on the Marketplace, although listing requires a security review."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "REST",
+        "SDK",
+        "webhooks",
+        "CLI"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "Notion provides a REST API that allows reading, creating, and updating nearly everything in a workspace including pages, databases, users, comments, views, data sources, and file uploads. It also offers a JavaScript SDK, supports CLI workflows, and provides webhooks for real-time event subscriptions."
+    },
+    "mcp": {
+      "mcp_status": "none_found",
+      "mcp_summary": "No mention of Model Context Protocol (MCP) or similar capabilities was found in the provided documentation."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient.",
+      "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 1,
+        "access_model": 1,
+        "public_api": 1,
+        "api_breadth": 1,
+        "mcp_status": 1
+      },
+      "overall_confidence": 1,
+      "requires_human_review": false,
+      "human_review_reason": null
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_access_model_unclear",
+    "risk_auth_methods_unclear",
+    "risk_material_evidence_validation_failed",
+    "risk_contradictory_claims",
+    "risk_verdict_unclear"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_access_model_unclear",
+      "risk_auth_methods_unclear",
+      "risk_material_evidence_validation_failed",
+      "risk_contradictory_claims",
+      "risk_verdict_unclear"
+    ]
+  }
+}

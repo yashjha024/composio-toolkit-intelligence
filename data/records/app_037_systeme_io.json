@@ -1,0 +1,269 @@
+{
+  "identity": {
+    "assignment_number": 37,
+    "app_name": "systeme.io",
+    "website_hint": "systeme.io (funnel builder)",
+    "assigned_category": "Marketing, Ads, Email and Social",
+    "researched_at": "2026-07-09T17:06:37.592Z"
+  },
+  "product": {
+    "normalized_category": "Marketing, Ads, Email and Social",
+    "one_line_description": "Systeme.io is an all-in-one platform for online businesses, offering tools for sales funnels, email marketing, online courses, website building, blogging, and more."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "The provided source does not contain information on the authentication methods used for the Public API."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": "unknown",
+    "access_notes": "While the platform offers a 'free forever' account for product usage, the provided source does not specify how API credentials are obtained, if they are self-serve, free, or require human approval or a paid plan."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [],
+    "api_breadth": "unclear",
+    "api_summary": "Systeme.io has a 'Public API' as indicated by a link to a help article. However, details regarding its API styles (e.g., REST, GraphQL) or the breadth of its capabilities (e.g., specific endpoints covered) are not available in the provided source."
+  },
+  "mcp": {
+    "mcp_status": "none_found",
+    "mcp_summary": "No mention of Model Context Protocol (MCP) or similar capabilities was found in the provided source."
+  },
+  "buildability": {
+    "verdict": "unclear",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 0.1,
+      "access_model": 0.2,
+      "public_api": 1,
+      "api_breadth": 0.1,
+      "mcp_status": 0.9
+    },
+    "overall_confidence": 0.46,
+    "requires_human_review": true,
+    "human_review_reason": "Details about API authentication methods, access model for API credentials, API styles, and API breadth are not available in the provided source. A review of the linked 'Public API' documentation is needed."
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783616797592_0",
+      "claim_field": "product.one_line_description",
+      "claim": "Your platform for sales funnels email marketing online courses selling online blogging sales funnels",
+      "source_url": "https://systeme.io/",
+      "source_title": "Systeme.io - The only tool you need to launch your online business",
+      "source_type": "official_doc",
+      "evidence_snippet": "Your platform for sales funnels email marketing online courses selling online blogging sales funnels",
+      "retrieved_at": "2026-07-09T17:06:37.592Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://systeme.io/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616797592_1",
+      "claim_field": "product.one_line_description",
+      "claim": "The only tool you need to launch your online business",
+      "source_url": "https://systeme.io/",
+      "source_title": "Systeme.io - The only tool you need to launch your online business",
+      "source_type": "official_doc",
+      "evidence_snippet": "The only tool you need to launch your online business",
+      "retrieved_at": "2026-07-09T17:06:37.592Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://systeme.io/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616797592_2",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://systeme.io/",
+      "source_title": "Systeme.io - The only tool you need to launch your online business",
+      "source_type": "official_doc",
+      "evidence_snippet": "[Public API](< https://help.systeme.io/article/2329-how-to-use-systeme-io-public-api>)",
+      "retrieved_at": "2026-07-09T17:06:37.592Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://systeme.io/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616797592_3",
+      "claim_field": "developer_access.access_notes",
+      "claim": "Free forever",
+      "source_url": "https://systeme.io/",
+      "source_title": "Systeme.io - The only tool you need to launch your online business",
+      "source_type": "official_doc",
+      "evidence_snippet": "Free forever",
+      "retrieved_at": "2026-07-09T17:06:37.592Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://systeme.io/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616797592_4",
+      "claim_field": "developer_access.access_notes",
+      "claim": "No credit card required",
+      "source_url": "https://systeme.io/",
+      "source_title": "Systeme.io - The only tool you need to launch your online business",
+      "source_type": "official_doc",
+      "evidence_snippet": "No credit card required",
+      "retrieved_at": "2026-07-09T17:06:37.592Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://systeme.io/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 37,
+      "app_name": "systeme.io",
+      "website_hint": "systeme.io (funnel builder)",
+      "assigned_category": "Marketing, Ads, Email and Social",
+      "researched_at": "2026-07-09T17:06:37.592Z"
+    },
+    "product": {
+      "normalized_category": "Marketing, Ads, Email and Social",
+      "one_line_description": "Systeme.io is an all-in-one platform for online businesses, offering tools for sales funnels, email marketing, online courses, website building, blogging, and more."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "The provided source does not contain information on the authentication methods used for the Public API."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": "unknown",
+      "access_notes": "While the platform offers a 'free forever' account for product usage, the provided source does not specify how API credentials are obtained, if they are self-serve, free, or require human approval or a paid plan."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [],
+      "api_breadth": "unclear",
+      "api_summary": "Systeme.io has a 'Public API' as indicated by a link to a help article. However, details regarding its API styles (e.g., REST, GraphQL) or the breadth of its capabilities (e.g., specific endpoints covered) are not available in the provided source."
+    },
+    "mcp": {
+      "mcp_status": "none_found",
+      "mcp_summary": "No mention of Model Context Protocol (MCP) or similar capabilities was found in the provided source."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient.",
+      "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0.1,
+        "access_model": 0.2,
+        "public_api": 1,
+        "api_breadth": 0.1,
+        "mcp_status": 0.9
+      },
+      "overall_confidence": 0.46,
+      "requires_human_review": true,
+      "human_review_reason": "Details about API authentication methods, access model for API credentials, API styles, and API breadth are not available in the provided source. A review of the linked 'Public API' documentation is needed."
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_access_model_unclear",
+    "risk_auth_methods_unclear",
+    "risk_contradictory_claims",
+    "risk_verdict_unclear",
+    "risk_low_confidence"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_access_model_unclear",
+      "risk_auth_methods_unclear",
+      "risk_contradictory_claims",
+      "risk_verdict_unclear",
+      "risk_low_confidence"
+    ]
+  }
+}

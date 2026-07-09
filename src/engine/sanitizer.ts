@@ -110,39 +110,56 @@ export function sanitizeApiStyles(raw: any): ApiStyle[] {
   return Array.from(validSet);
 }
 
+export function sanitizeVerdict(raw: any): any {
+  if (typeof raw !== 'string') return 'unclear';
+  const s = raw.toLowerCase().trim();
+  if (s === 'build_now' || s.includes('build now') || s.includes('fully buildable')) return 'build_now';
+  if (s === 'build_with_caveats' || s.includes('caveats')) return 'build_with_caveats';
+  if (s === 'outreach_required' || s.includes('outreach')) return 'outreach_required';
+  if (s === 'blocked_low_priority' || s.includes('blocked')) return 'blocked_low_priority';
+  return 'unclear';
+}
+
 export function sanitizeStageResult(result: any): CanonicalStageResult {
+  const safeId = result?.identity || {};
   return {
-    identity: result.identity,
+    identity: {
+      assignment_number: typeof safeId.assignment_number === 'number' ? safeId.assignment_number : 1,
+      app_name: safeId.app_name || 'Unknown App',
+      website_hint: safeId.website_hint || '',
+      assigned_category: safeId.assigned_category || 'Unclear Category',
+      researched_at: safeId.researched_at || new Date().toISOString(),
+    },
     product: {
-      normalized_category: result.product?.normalized_category || result.identity.assigned_category,
-      one_line_description: result.product?.one_line_description || `${result.identity.app_name} application`,
+      normalized_category: result?.product?.normalized_category || safeId.assigned_category || 'Unclear Category',
+      one_line_description: result?.product?.one_line_description || `${safeId.app_name || 'App'} application`,
     },
     authentication: {
-      auth_methods: sanitizeAuthMethods(result.authentication?.auth_methods),
-      auth_summary: result.authentication?.auth_summary || 'Unclear authentication summary.',
+      auth_methods: sanitizeAuthMethods(result?.authentication?.auth_methods),
+      auth_summary: result?.authentication?.auth_summary || 'Unclear authentication summary.',
     },
     developer_access: {
-      access_model: sanitizeAccessModel(result.developer_access?.access_model),
+      access_model: sanitizeAccessModel(result?.developer_access?.access_model),
       credentials_obtainable_without_human_approval:
-        typeof result.developer_access?.credentials_obtainable_without_human_approval === 'boolean'
+        typeof result?.developer_access?.credentials_obtainable_without_human_approval === 'boolean'
           ? result.developer_access.credentials_obtainable_without_human_approval
           : 'unknown',
-      access_notes: result.developer_access?.access_notes || 'Unclear developer credential access model notes.',
+      access_notes: result?.developer_access?.access_notes || 'Unclear developer credential access model notes.',
     },
     api_surface: {
-      public_api: sanitizePublicApi(result.api_surface?.public_api),
-      api_styles: sanitizeApiStyles(result.api_surface?.api_styles),
-      api_breadth: sanitizeApiBreadth(result.api_surface?.api_breadth),
-      api_summary: result.api_surface?.api_summary || 'Unclear API surface summary.',
+      public_api: sanitizePublicApi(result?.api_surface?.public_api),
+      api_styles: sanitizeApiStyles(result?.api_surface?.api_styles),
+      api_breadth: sanitizeApiBreadth(result?.api_surface?.api_breadth),
+      api_summary: result?.api_surface?.api_summary || 'Unclear API surface summary.',
     },
     mcp: {
-      mcp_status: sanitizeMcpStatus(result.mcp?.mcp_status),
-      mcp_summary: result.mcp?.mcp_summary || 'Unclear MCP status summary.',
+      mcp_status: sanitizeMcpStatus(result?.mcp?.mcp_status),
+      mcp_summary: result?.mcp?.mcp_summary || 'Unclear MCP status summary.',
     },
-    buildability: result.buildability || {
-      verdict: 'unclear',
-      primary_blocker: null,
-      verdict_reasoning: 'Unclear buildability verdict.',
+    buildability: {
+      verdict: sanitizeVerdict(result?.buildability?.verdict),
+      primary_blocker: result?.buildability?.primary_blocker ?? null,
+      verdict_reasoning: result?.buildability?.verdict_reasoning || 'Unclear buildability verdict.',
     },
     confidence: {
       field_confidence: result.confidence?.field_confidence || {},

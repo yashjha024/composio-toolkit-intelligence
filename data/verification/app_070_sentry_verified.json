@@ -1,0 +1,88 @@
+{
+  "assignment_number": 70,
+  "app_name": "Sentry",
+  "assigned_category": "Developer, Infra and Data platforms",
+  "processing_mode": "fast_scale",
+  "baseline_fields": {
+    "auth_methods": [
+      "api_key"
+    ],
+    "access_model": "self_serve_free",
+    "credentials_obtainable_without_approval": true,
+    "public_api_status": "yes",
+    "api_breadth": "broad",
+    "mcp_status": "none_found",
+    "buildability_verdict": "BUILD_NOW",
+    "primary_blocker": null
+  },
+  "verified_fields": {
+    "auth_methods": {
+      "verified_value": [
+        "api_key"
+      ],
+      "evidence_url": "https://docs.sentry.io/api/",
+      "concise_evidence_snippet": "Tutorial: Create a Sentry Authentication Token",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "access_model": {
+      "verified_value": "self_serve",
+      "evidence_url": "https://docs.sentry.io/api/",
+      "concise_evidence_snippet": "Tutorial: Create a Sentry Authentication Token",
+      "baseline_classification": "partially_correct",
+      "correction_required": true,
+      "failure_mode": "evidence_validation_error"
+    },
+    "credentials_obtainable_without_approval": {
+      "verified_value": true,
+      "evidence_url": "https://docs.sentry.io/api/",
+      "concise_evidence_snippet": "Tutorial: Create a Sentry Authentication Token",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "public_api_status": {
+      "verified_value": "yes",
+      "evidence_url": "https://docs.sentry.io/api/",
+      "concise_evidence_snippet": "Our public endpoints are generally stable",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "api_breadth": {
+      "verified_value": "broad",
+      "evidence_url": "https://docs.sentry.io/api/",
+      "concise_evidence_snippet": "manage account-level resources... API Reference includes Crons, Dashboards, Events & Issues, Projects, Users.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "mcp_status": {
+      "verified_value": "none_found",
+      "evidence_url": "https://docs.sentry.io/api/",
+      "concise_evidence_snippet": "No mention of 'Model Context Protocol' or 'MCP' found in the document.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "buildability_verdict": {
+      "verified_value": "BUILD_NOW",
+      "evidence_url": "https://docs.sentry.io/api/",
+      "concise_evidence_snippet": "Our public endpoints are generally stable... Tutorial: Create a Sentry Authentication Token",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "primary_blocker": {
+      "verified_value": null,
+      "evidence_url": "https://docs.sentry.io/api/",
+      "concise_evidence_snippet": "No blockers identified, consistent with BUILD_NOW verdict.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "unclear_diagnosis": "not_applicable"
+  },
+  "verified_at": "2026-07-09T18:54:48.612Z"
+}

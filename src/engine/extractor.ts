@@ -28,7 +28,11 @@ export class FirstPassExtractor {
     const systemInstruction = `You are an expert AI Product Operations researcher investigating applications to evaluate whether they can become toolkits that AI agents can call.
 Extract exact, factual research claims strictly derived from the provided source pages.
 If a fact cannot be established from the sources, set or classify it as "unclear" or "unknown".
-Never invent URLs, endpoints, or supporting text. Every evidence snippet MUST be exact text copied directly from the provided source content.`;
+Never invent URLs, endpoints, or supporting text. Every evidence snippet MUST be exact text copied directly from the provided source content.
+
+CRITICAL RULES FOR EXTRACTION (PRE-SCALE FIXES):
+1. API-SPECIFIC DEVELOPER ACCESS: "developer_access" refers ONLY to obtaining credentials that allow API/tool access (e.g. API keys, OAuth client credentials, developer tokens, service-account credentials, or equivalent agent-callable credentials). A free product account, free dashboard, free trial, or "Get started free" button is NOT evidence of self-serve developer access! If the product is free but API access requires Enterprise, sales, partnership, or manual approval, classify developer_access accordingly (map to existing enum: "sales_gated", "admin_gated", or "unclear"). Do NOT classify as self_serve_free unless obtaining API credentials is free and self-serve!
+2. EVIDENCE-BACKED AUTHENTICATION: Every authentication method in "auth_methods" MUST have direct supporting evidence from retrieved source content. Do NOT infer OAuth2, API keys, Basic auth, or bearer tokens from common SaaS patterns! If no authentication method has direct support in the text, return ["unclear"].`;
 
     const prompt = `Research Target:
 - Assignment #: ${assignmentNumber}
@@ -40,6 +44,8 @@ Available Source Pages:
 ${pagesContext}
 
 Extract the core research fields and provide direct evidence snippets for every claim.
+Ensure every auth method in "auth_methods" has exact verbatim support or return ["unclear"].
+Ensure "developer_access" applies strictly to obtaining API credentials/keys, NOT general app signup.
 Return a JSON object matching this exact structure:
 {
   "product": {
@@ -48,12 +54,12 @@ Return a JSON object matching this exact structure:
   },
   "authentication": {
     "auth_methods": ["oauth2" | "api_key" | "basic" | "bearer_token" | "service_account" | "custom" | "other" | "unclear"],
-    "auth_summary": "Summary of authentication patterns and requirements"
+    "auth_summary": "Summary of authentication patterns and requirements (return 'unclear' methods if not explicitly documented)"
   },
   "developer_access": {
     "access_model": "self_serve_free" | "self_serve_trial" | "self_serve_paid" | "admin_gated" | "sales_gated" | "partner_gated" | "unclear",
     "credentials_obtainable_without_human_approval": true | false | "unknown",
-    "access_notes": "Explanation of exact credential generation steps and whether human/vendor/admin approval is needed"
+    "access_notes": "Explanation of exact API credential generation steps and whether human/vendor/admin approval is needed"
   },
   "api_surface": {
     "public_api": "yes" | "no" | "limited" | "unclear",
@@ -166,10 +172,21 @@ Return a JSON object matching this exact structure:
 
     const rawResult: any = await this.llm.generateStructured(prompt, schema, systemInstruction);
 
+    const safeResult = sanitizeStageResult({
+      identity: {
+        assignment_number: assignmentNumber,
+        app_name: appName,
+        website_hint: websiteHint,
+        assigned_category: assignedCategory,
+        researched_at: new Date().toISOString(),
+      },
+      ...rawResult,
+    });
+
     // Compute deterministic buildability verdict from extracted facts
     const verdictCalc = computeProvisionalVerdict({
-      developer_access: rawResult.developer_access,
-      api_surface: rawResult.api_surface,
+      developer_access: safeResult.developer_access,
+      api_surface: safeResult.api_surface,
     });
 
     const stageResult: CanonicalStageResult = sanitizeStageResult({
@@ -228,6 +245,7 @@ Return a JSON object matching this exact structure:
       evidence_snippet: e.evidence_snippet || '',
       retrieved_at: new Date().toISOString(),
       supports_claim: true,
+      fetch_mode: pages.find((p: any) => p.url === e.source_url)?.fetchMode || 'http',
       url_status: { format_valid: true, resolves: true, redirect_chain: [e.source_url || ''] },
       snippet_match_status: { exact_match: false, normalized_match: false, match_type: 'not_found' },
       semantic_support_status: { supported: true, critic_notes: '' },

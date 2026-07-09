@@ -1,0 +1,30 @@
+{
+  "assignment_number": 13,
+  "app_name": "Freshdesk",
+  "assigned_category": "Support and Helpdesk",
+  "baseline_verdict": "UNCLEAR",
+  "calibrated_verdict": "UNCLEAR",
+  "exact_fields_to_verify": [
+    "access_model_unclear",
+    "auth_methods_unclear"
+  ],
+  "targeted_result": {
+    "verified_auth_methods": [
+      "unclear"
+    ],
+    "verified_access_model": "unclear",
+    "verified_credentials_obtainable_without_approval": false,
+    "verified_public_api_status": "limited",
+    "verified_api_breadth": "unclear",
+    "verified_verdict": "OUTREACH_REQUIRED",
+    "primary_blocker": "API credentials require manual vendor approval or partnership.",
+    "evidence_url": "https://www.freshworks.com/freshdesk/",
+    "concise_evidence_snippet": "Official website and pricing pages do not provide information on self-serve API credential generation.",
+    "remaining_uncertainty": [
+      "auth_methods",
+      "access_model",
+      "api_breadth"
+    ]
+  },
+  "verified_at": "2026-07-09T19:00:03.730Z"
+}

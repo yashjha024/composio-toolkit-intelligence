@@ -1,0 +1,88 @@
+{
+  "assignment_number": 11,
+  "app_name": "Zendesk",
+  "assigned_category": "Support and Helpdesk",
+  "processing_mode": "deep_verified",
+  "baseline_fields": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "access_model": "unclear",
+    "credentials_obtainable_without_approval": "unknown",
+    "public_api_status": "yes",
+    "api_breadth": "broad",
+    "mcp_status": "none_found",
+    "buildability_verdict": "UNCLEAR",
+    "primary_blocker": "Research data ambiguous or insufficient."
+  },
+  "verified_fields": {
+    "auth_methods": {
+      "verified_value": [
+        "unclear"
+      ],
+      "evidence_url": "https://developer.zendesk.com/documentation/",
+      "concise_evidence_snippet": "Zendesk's APIs are organized around REST principles. Our APIs have resource-oriented URLs, accepts form-encoded request bodies and return JSON-encoded responses.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "access_model": {
+      "verified_value": "self_serve_trial",
+      "evidence_url": "https://developer.zendesk.com/documentation/",
+      "concise_evidence_snippet": "Try out the Sunshine Platform with a free, 14-day trial account. [Create an account]",
+      "baseline_classification": "incorrect",
+      "correction_required": true,
+      "failure_mode": "extraction_error"
+    },
+    "credentials_obtainable_without_approval": {
+      "verified_value": true,
+      "evidence_url": "https://developer.zendesk.com/documentation/",
+      "concise_evidence_snippet": "Try out the Sunshine Platform with a free, 14-day trial account. [Create an account]",
+      "baseline_classification": "incorrect",
+      "correction_required": true,
+      "failure_mode": "extraction_error"
+    },
+    "public_api_status": {
+      "verified_value": "yes",
+      "evidence_url": "https://developer.zendesk.com/documentation/",
+      "concise_evidence_snippet": "Zendesk's APIs are organized around REST principles. Our APIs have resource-oriented URLs, accepts form-encoded request bodies and return JSON-encoded responses.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "api_breadth": {
+      "verified_value": "broad",
+      "evidence_url": "https://developer.zendesk.com/documentation/",
+      "concise_evidence_snippet": "Access, integrate, and extend your data anywhere with an event-driven platform and robust APIs that let you build anything",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "mcp_status": {
+      "verified_value": "none_found",
+      "evidence_url": "https://zendesk.com",
+      "concise_evidence_snippet": "No evidence of multi-cloud platform status found across provided documentation.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "buildability_verdict": {
+      "verified_value": "UNCLEAR",
+      "evidence_url": "https://developer.zendesk.com/documentation/",
+      "concise_evidence_snippet": "Auth methods are unclear, making it difficult to proceed with integration despite other positive factors.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "primary_blocker": {
+      "verified_value": "Research data ambiguous or insufficient.",
+      "evidence_url": "https://developer.zendesk.com/documentation/",
+      "concise_evidence_snippet": "The ambiguity regarding API authentication methods represents a primary blocker for buildability.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "unclear_diagnosis": "genuinely_unclear"
+  },
+  "verified_at": "2026-07-09T18:54:36.489Z"
+}

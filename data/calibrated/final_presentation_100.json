@@ -1,0 +1,2673 @@
+[
+  {
+    "assignment_number": 1,
+    "app_name": "Salesforce",
+    "assigned_category": "CRM and Sales",
+    "website_hint": "salesforce.com",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "unclear",
+      "api_breadth": "unclear",
+      "mcp_status": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "BUILD_NOW",
+    "final_presentation_verdict": "BUILD_NOW",
+    "verification_status": "independently_verified",
+    "evidence_urls": [
+      "https://salesforce.com/pricing"
+    ],
+    "remaining_uncertainty": [],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 2,
+    "app_name": "HubSpot",
+    "assigned_category": "CRM and Sales",
+    "website_hint": "hubspot.com",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "BUILD_NOW",
+    "verification_status": "targeted_verified",
+    "evidence_urls": [
+      "https://www.hubspot.com/"
+    ],
+    "remaining_uncertainty": [
+      "auth_methods"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 3,
+    "app_name": "Pipedrive",
+    "assigned_category": "CRM and Sales",
+    "website_hint": "pipedrive.com",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": true,
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "BUILD_NOW",
+    "verification_status": "targeted_verified",
+    "evidence_urls": [
+      "https://developers.pipedrive.com/"
+    ],
+    "remaining_uncertainty": [],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 4,
+    "app_name": "Attio",
+    "assigned_category": "CRM and Sales",
+    "website_hint": "attio.com",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "yes",
+      "api_breadth": "unclear",
+      "mcp_status": "official",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "BUILD_WITH_CAVEATS",
+    "final_presentation_verdict": "BUILD_WITH_CAVEATS",
+    "verification_status": "independently_verified",
+    "evidence_urls": [
+      "https://attio.com/pricing"
+    ],
+    "remaining_uncertainty": [],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 5,
+    "app_name": "Twenty",
+    "assigned_category": "CRM and Sales",
+    "website_hint": "twenty.com (open-source CRM)",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "oauth2"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": true,
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "official",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "BUILD_NOW",
+    "verification_status": "targeted_verified",
+    "evidence_urls": [
+      "https://docs.twenty.com/developers/introduction"
+    ],
+    "remaining_uncertainty": [],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 6,
+    "app_name": "Podio",
+    "assigned_category": "CRM and Sales",
+    "website_hint": "podio.com",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "oauth2",
+        "api_key",
+        "bearer_token"
+      ],
+      "access_model": "self_serve_free",
+      "credentials_obtainable_without_approval": true,
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "none_found",
+      "primary_blocker": null
+    },
+    "original_baseline_verdict": "BUILD_NOW",
+    "calibrated_verdict": "BUILD_NOW",
+    "final_presentation_verdict": "BUILD_NOW",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 7,
+    "app_name": "Zoho CRM",
+    "assigned_category": "CRM and Sales",
+    "website_hint": "zoho.com/crm",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "targeted_verified",
+    "evidence_urls": [
+      "https://www.zoho.com/crm/developer/docs/api/v8/"
+    ],
+    "remaining_uncertainty": [
+      "auth_methods_unclear",
+      "access_model_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 8,
+    "app_name": "Close",
+    "assigned_category": "CRM and Sales",
+    "website_hint": "close.com",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "official",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "targeted_verified",
+    "evidence_urls": [
+      "https://close.com/"
+    ],
+    "remaining_uncertainty": [
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 9,
+    "app_name": "Copper",
+    "assigned_category": "CRM and Sales",
+    "website_hint": "copper.com",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "unclear",
+      "api_breadth": "unclear",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "BLOCKED_LOW_PRIORITY",
+    "verification_status": "targeted_verified",
+    "evidence_urls": [
+      "https://copper.com/docs"
+    ],
+    "remaining_uncertainty": [],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 10,
+    "app_name": "DealCloud",
+    "assigned_category": "CRM and Sales",
+    "website_hint": "api.docs.dealcloud.com",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "api_key",
+        "bearer_token"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "official",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "OUTREACH_REQUIRED",
+    "verification_status": "targeted_verified",
+    "evidence_urls": [
+      "https://api.docs.dealcloud.com/"
+    ],
+    "remaining_uncertainty": [
+      "Specifics of the API credential acquisition process (e.g., sales contact, admin approval, partner program)."
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 11,
+    "app_name": "Zendesk",
+    "assigned_category": "Support and Helpdesk",
+    "website_hint": "zendesk.com",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "BUILD_NOW",
+    "verification_status": "targeted_verified",
+    "evidence_urls": [
+      "https://developer.zendesk.com/documentation/"
+    ],
+    "remaining_uncertainty": [],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 12,
+    "app_name": "Intercom",
+    "assigned_category": "Support and Helpdesk",
+    "website_hint": "intercom.com",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "targeted_verified",
+    "evidence_urls": [
+      "https://www.intercom.com/"
+    ],
+    "remaining_uncertainty": [
+      "access_model",
+      "auth_methods",
+      "credentials_obtainable_without_approval"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 13,
+    "app_name": "Freshdesk",
+    "assigned_category": "Support and Helpdesk",
+    "website_hint": "freshdesk.com",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "limited",
+      "api_breadth": "unclear",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "OUTREACH_REQUIRED",
+    "verification_status": "targeted_verified",
+    "evidence_urls": [
+      "https://www.freshworks.com/freshdesk/"
+    ],
+    "remaining_uncertainty": [
+      "auth_methods",
+      "access_model",
+      "api_breadth"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 14,
+    "app_name": "Front",
+    "assigned_category": "Support and Helpdesk",
+    "website_hint": "front.com",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "targeted_verified",
+    "evidence_urls": [
+      "https://front.com/"
+    ],
+    "remaining_uncertainty": [
+      "access_model",
+      "auth_methods",
+      "credentials_obtainable_without_approval"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 15,
+    "app_name": "Pylon",
+    "assigned_category": "Support and Helpdesk",
+    "website_hint": "usepylon.com",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "sales_gated",
+      "credentials_obtainable_without_approval": false,
+      "public_api_status": "limited",
+      "api_breadth": "moderate",
+      "mcp_status": "none_found",
+      "primary_blocker": "Access requires contacting enterprise sales team."
+    },
+    "original_baseline_verdict": "OUTREACH_REQUIRED",
+    "calibrated_verdict": "OUTREACH_REQUIRED",
+    "final_presentation_verdict": "OUTREACH_REQUIRED",
+    "verification_status": "independently_verified",
+    "evidence_urls": [
+      "https://usepylon.com/pricing"
+    ],
+    "remaining_uncertainty": [],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 16,
+    "app_name": "LiveAgent",
+    "assigned_category": "Support and Helpdesk",
+    "website_hint": "liveagent.com",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "unclear",
+      "api_breadth": "unclear",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "targeted_verified",
+    "evidence_urls": [
+      "https://www.liveagent.com/"
+    ],
+    "remaining_uncertainty": [
+      "public_api_status",
+      "access_model",
+      "auth_methods",
+      "api_breadth",
+      "credentials_obtainable_without_approval"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 17,
+    "app_name": "Plain",
+    "assigned_category": "Support and Helpdesk",
+    "website_hint": "plain.com",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "BUILD_WITH_CAVEATS",
+    "verification_status": "targeted_verified",
+    "evidence_urls": [
+      "https://plain.com/docs"
+    ],
+    "remaining_uncertainty": [],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 18,
+    "app_name": "Help Scout",
+    "assigned_category": "Support and Helpdesk",
+    "website_hint": "helpscout.com",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "unclear",
+      "api_breadth": "unclear",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "targeted_verified",
+    "evidence_urls": [
+      "https://helpscout.com/docs"
+    ],
+    "remaining_uncertainty": [
+      "access_model",
+      "auth_methods",
+      "api_breadth"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 19,
+    "app_name": "Gorgias",
+    "assigned_category": "Support and Helpdesk",
+    "website_hint": "gorgias.com",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "unclear",
+      "api_breadth": "unclear",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "BLOCKED_LOW_PRIORITY",
+    "verification_status": "targeted_verified",
+    "evidence_urls": [
+      "https://gorgias.com"
+    ],
+    "remaining_uncertainty": [],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 20,
+    "app_name": "Gladly",
+    "assigned_category": "Support and Helpdesk",
+    "website_hint": "gladly.com",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "sales_gated",
+      "credentials_obtainable_without_approval": false,
+      "public_api_status": "unclear",
+      "api_breadth": "unclear",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "OUTREACH_REQUIRED",
+    "final_presentation_verdict": "OUTREACH_REQUIRED",
+    "verification_status": "deterministically_calibrated",
+    "evidence_urls": [],
+    "remaining_uncertainty": [],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 21,
+    "app_name": "Slack",
+    "assigned_category": "Communications and Messaging",
+    "website_hint": "slack.com",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "oauth2"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "yes",
+      "api_breadth": "unclear",
+      "mcp_status": "community",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "BUILD_NOW",
+    "final_presentation_verdict": "BUILD_NOW",
+    "verification_status": "independently_verified",
+    "evidence_urls": [
+      "https://slack.com/pricing"
+    ],
+    "remaining_uncertainty": [],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 22,
+    "app_name": "Twilio",
+    "assigned_category": "Communications and Messaging",
+    "website_hint": "twilio.com",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "api_key",
+        "basic"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": true,
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "access_model_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 23,
+    "app_name": "Zoho Cliq",
+    "assigned_category": "Communications and Messaging",
+    "website_hint": "zoho.com/cliq",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "yes",
+      "api_breadth": "unclear",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 24,
+    "app_name": "Lark (Larksuite)",
+    "assigned_category": "Communications and Messaging",
+    "website_hint": "open.larksuite.com",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "yes",
+      "api_breadth": "unclear",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 25,
+    "app_name": "Pumble",
+    "assigned_category": "Communications and Messaging",
+    "website_hint": "pumble.com",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "limited",
+      "api_breadth": "narrow",
+      "mcp_status": "official",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 26,
+    "app_name": "Discord",
+    "assigned_category": "Communications and Messaging",
+    "website_hint": "discord.com",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "unclear",
+      "api_breadth": "unclear",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "public_api_status_unclear",
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 27,
+    "app_name": "Telegram",
+    "assigned_category": "Communications and Messaging",
+    "website_hint": "core.telegram.org",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": true,
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 28,
+    "app_name": "WhatsApp Business",
+    "assigned_category": "Communications and Messaging",
+    "website_hint": "developers.facebook.com/docs/whatsapp",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "admin_gated",
+      "credentials_obtainable_without_approval": false,
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "none_found",
+      "primary_blocker": "Requires vendor/support approval for admin credentials."
+    },
+    "original_baseline_verdict": "OUTREACH_REQUIRED",
+    "calibrated_verdict": "OUTREACH_REQUIRED",
+    "final_presentation_verdict": "OUTREACH_REQUIRED",
+    "verification_status": "independently_verified",
+    "evidence_urls": [
+      "https://developers.facebook.com/docs/whatsapp"
+    ],
+    "remaining_uncertainty": [],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 29,
+    "app_name": "Aircall",
+    "assigned_category": "Communications and Messaging",
+    "website_hint": "aircall.io",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "unclear",
+      "api_breadth": "unclear",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "public_api_status_unclear",
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 30,
+    "app_name": "Vonage",
+    "assigned_category": "Communications and Messaging",
+    "website_hint": "developer.vonage.com",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": true,
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 31,
+    "app_name": "Google Ads",
+    "assigned_category": "Marketing, Ads, Email and Social",
+    "website_hint": "developers.google.com/google-ads",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 32,
+    "app_name": "Meta Ads",
+    "assigned_category": "Marketing, Ads, Email and Social",
+    "website_hint": "developers.facebook.com/docs/marketing-apis",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "unclear",
+      "api_breadth": "unclear",
+      "mcp_status": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "public_api_status_unclear",
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 33,
+    "app_name": "LinkedIn Ads",
+    "assigned_category": "Marketing, Ads, Email and Social",
+    "website_hint": "learn.microsoft.com/linkedin/marketing",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "oauth2"
+      ],
+      "access_model": "partner_gated",
+      "credentials_obtainable_without_approval": false,
+      "public_api_status": "limited",
+      "api_breadth": "broad",
+      "mcp_status": "none_found",
+      "primary_blocker": "Requires formal ISV or partner program approval from vendor."
+    },
+    "original_baseline_verdict": "OUTREACH_REQUIRED",
+    "calibrated_verdict": "OUTREACH_REQUIRED",
+    "final_presentation_verdict": "OUTREACH_REQUIRED",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 34,
+    "app_name": "GoHighLevel",
+    "assigned_category": "Marketing, Ads, Email and Social",
+    "website_hint": "highlevel.stoplight.io",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "unclear",
+      "api_breadth": "unclear",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "public_api_status_unclear",
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 35,
+    "app_name": "Mailchimp",
+    "assigned_category": "Marketing, Ads, Email and Social",
+    "website_hint": "mailchimp.com/developer",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 36,
+    "app_name": "Klaviyo",
+    "assigned_category": "Marketing, Ads, Email and Social",
+    "website_hint": "developers.klaviyo.com",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": true,
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 37,
+    "app_name": "systeme.io",
+    "assigned_category": "Marketing, Ads, Email and Social",
+    "website_hint": "systeme.io (funnel builder)",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "yes",
+      "api_breadth": "unclear",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 38,
+    "app_name": "Pinterest",
+    "assigned_category": "Marketing, Ads, Email and Social",
+    "website_hint": "developers.pinterest.com",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 39,
+    "app_name": "Threads (Meta)",
+    "assigned_category": "Marketing, Ads, Email and Social",
+    "website_hint": "developers.facebook.com/docs/threads",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "admin_gated",
+      "credentials_obtainable_without_approval": false,
+      "public_api_status": "yes",
+      "api_breadth": "moderate",
+      "mcp_status": "none_found",
+      "primary_blocker": "Requires vendor/support approval for admin credentials."
+    },
+    "original_baseline_verdict": "OUTREACH_REQUIRED",
+    "calibrated_verdict": "OUTREACH_REQUIRED",
+    "final_presentation_verdict": "OUTREACH_REQUIRED",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 40,
+    "app_name": "SendGrid",
+    "assigned_category": "Marketing, Ads, Email and Social",
+    "website_hint": "sendgrid.com",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": true,
+      "public_api_status": "yes",
+      "api_breadth": "moderate",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 41,
+    "app_name": "Shopify",
+    "assigned_category": "Ecommerce",
+    "website_hint": "shopify.dev",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": true,
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 42,
+    "app_name": "WooCommerce",
+    "assigned_category": "Ecommerce",
+    "website_hint": "woocommerce.com/document/woocommerce-rest-api",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "api_key"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": true,
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "access_model_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 43,
+    "app_name": "BigCommerce",
+    "assigned_category": "Ecommerce",
+    "website_hint": "developer.bigcommerce.com",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": true,
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "official",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 44,
+    "app_name": "Salesforce Commerce Cloud",
+    "assigned_category": "Ecommerce",
+    "website_hint": "developer.salesforce.com/docs/commerce",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "yes",
+      "api_breadth": "unclear",
+      "mcp_status": "official",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 45,
+    "app_name": "Magento (Adobe Commerce)",
+    "assigned_category": "Ecommerce",
+    "website_hint": "developer.adobe.com/commerce",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 46,
+    "app_name": "Squarespace",
+    "assigned_category": "Ecommerce",
+    "website_hint": "developers.squarespace.com",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "yes",
+      "api_breadth": "moderate",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 47,
+    "app_name": "Ecwid",
+    "assigned_category": "Ecommerce",
+    "website_hint": "api-docs.ecwid.com",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": true,
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 48,
+    "app_name": "Gumroad",
+    "assigned_category": "Ecommerce",
+    "website_hint": "gumroad.com/api",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "yes",
+      "api_breadth": "unclear",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 49,
+    "app_name": "Amazon Selling Partner",
+    "assigned_category": "Ecommerce",
+    "website_hint": "developer-docs.amazon.com/sp-api",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "admin_gated",
+      "credentials_obtainable_without_approval": false,
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "official",
+      "primary_blocker": "Requires vendor/support approval for admin credentials."
+    },
+    "original_baseline_verdict": "OUTREACH_REQUIRED",
+    "calibrated_verdict": "OUTREACH_REQUIRED",
+    "final_presentation_verdict": "OUTREACH_REQUIRED",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 50,
+    "app_name": "fanbasis",
+    "assigned_category": "Ecommerce",
+    "website_hint": "fanbasis.com",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "no",
+      "api_breadth": "none",
+      "mcp_status": "none_found",
+      "primary_blocker": "No documented public API available."
+    },
+    "original_baseline_verdict": "BLOCKED_LOW_PRIORITY",
+    "calibrated_verdict": "BLOCKED_LOW_PRIORITY",
+    "final_presentation_verdict": "BLOCKED_LOW_PRIORITY",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 51,
+    "app_name": "DataForSEO",
+    "assigned_category": "Data, SEO and Scraping",
+    "website_hint": "docs.dataforseo.com",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "self_serve_trial",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "official",
+      "primary_blocker": null
+    },
+    "original_baseline_verdict": "BUILD_NOW",
+    "calibrated_verdict": "BUILD_NOW",
+    "final_presentation_verdict": "BUILD_NOW",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 52,
+    "app_name": "SE Ranking",
+    "assigned_category": "Data, SEO and Scraping",
+    "website_hint": "seranking.com/api",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "unclear",
+      "api_breadth": "unclear",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "public_api_status_unclear",
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 53,
+    "app_name": "Ahrefs",
+    "assigned_category": "Data, SEO and Scraping",
+    "website_hint": "ahrefs.com/api",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "sales_gated",
+      "credentials_obtainable_without_approval": false,
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "official",
+      "primary_blocker": "Access requires contacting enterprise sales team."
+    },
+    "original_baseline_verdict": "OUTREACH_REQUIRED",
+    "calibrated_verdict": "BUILD_WITH_CAVEATS",
+    "final_presentation_verdict": "BUILD_WITH_CAVEATS",
+    "verification_status": "independently_verified",
+    "evidence_urls": [
+      "https://ahrefs.com/api"
+    ],
+    "remaining_uncertainty": [],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 54,
+    "app_name": "MrScraper",
+    "assigned_category": "Data, SEO and Scraping",
+    "website_hint": "docs.mrscraper.com",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "self_serve_paid",
+      "credentials_obtainable_without_approval": true,
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "official",
+      "primary_blocker": null
+    },
+    "original_baseline_verdict": "BUILD_NOW",
+    "calibrated_verdict": "BUILD_NOW",
+    "final_presentation_verdict": "BUILD_NOW",
+    "verification_status": "independently_verified",
+    "evidence_urls": [
+      "https://docs.mrscraper.com/docs/getting-started/overview"
+    ],
+    "remaining_uncertainty": [],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 55,
+    "app_name": "Apify",
+    "assigned_category": "Data, SEO and Scraping",
+    "website_hint": "docs.apify.com",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "bearer_token",
+        "api_key",
+        "custom"
+      ],
+      "access_model": "self_serve_free",
+      "credentials_obtainable_without_approval": true,
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "official",
+      "primary_blocker": null
+    },
+    "original_baseline_verdict": "BUILD_NOW",
+    "calibrated_verdict": "BUILD_NOW",
+    "final_presentation_verdict": "BUILD_NOW",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 56,
+    "app_name": "Firecrawl",
+    "assigned_category": "Data, SEO and Scraping",
+    "website_hint": "firecrawl.dev",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "api_key",
+        "bearer_token",
+        "oauth2"
+      ],
+      "access_model": "self_serve_free",
+      "credentials_obtainable_without_approval": true,
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "official",
+      "primary_blocker": null
+    },
+    "original_baseline_verdict": "BUILD_NOW",
+    "calibrated_verdict": "BUILD_NOW",
+    "final_presentation_verdict": "BUILD_NOW",
+    "verification_status": "independently_verified",
+    "evidence_urls": [
+      "https://firecrawl.dev/docs"
+    ],
+    "remaining_uncertainty": [],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 57,
+    "app_name": "Bright Data",
+    "assigned_category": "Data, SEO and Scraping",
+    "website_hint": "brightdata.com",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "official",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 58,
+    "app_name": "Sherlock",
+    "assigned_category": "Data, SEO and Scraping",
+    "website_hint": "github.com/sherlock-project/sherlock",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": false,
+      "public_api_status": "no",
+      "api_breadth": "narrow",
+      "mcp_status": "none_found",
+      "primary_blocker": "No documented public API available."
+    },
+    "original_baseline_verdict": "BLOCKED_LOW_PRIORITY",
+    "calibrated_verdict": "OUTREACH_REQUIRED",
+    "final_presentation_verdict": "OUTREACH_REQUIRED",
+    "verification_status": "deterministically_calibrated",
+    "evidence_urls": [],
+    "remaining_uncertainty": [],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 59,
+    "app_name": "Waterfall.io",
+    "assigned_category": "Data, SEO and Scraping",
+    "website_hint": "waterfall.io (contact/company intel)",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "sales_gated",
+      "credentials_obtainable_without_approval": false,
+      "public_api_status": "yes",
+      "api_breadth": "moderate",
+      "mcp_status": "none_found",
+      "primary_blocker": "Access requires contacting enterprise sales team."
+    },
+    "original_baseline_verdict": "OUTREACH_REQUIRED",
+    "calibrated_verdict": "OUTREACH_REQUIRED",
+    "final_presentation_verdict": "OUTREACH_REQUIRED",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 60,
+    "app_name": "Clay",
+    "assigned_category": "Data, SEO and Scraping",
+    "website_hint": "clay.com",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "unclear",
+      "api_breadth": "unclear",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "public_api_status_unclear",
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 61,
+    "app_name": "GitHub",
+    "assigned_category": "Developer, Infra and Data platforms",
+    "website_hint": "docs.github.com/rest",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 62,
+    "app_name": "Vercel",
+    "assigned_category": "Developer, Infra and Data platforms",
+    "website_hint": "vercel.com/docs/rest-api",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "bearer_token"
+      ],
+      "access_model": "self_serve_free",
+      "credentials_obtainable_without_approval": true,
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "none_found",
+      "primary_blocker": null
+    },
+    "original_baseline_verdict": "BUILD_NOW",
+    "calibrated_verdict": "BUILD_NOW",
+    "final_presentation_verdict": "BUILD_NOW",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 63,
+    "app_name": "Netlify",
+    "assigned_category": "Developer, Infra and Data platforms",
+    "website_hint": "docs.netlify.com/api",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "oauth2",
+        "bearer_token"
+      ],
+      "access_model": "self_serve_free",
+      "credentials_obtainable_without_approval": true,
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "none_found",
+      "primary_blocker": null
+    },
+    "original_baseline_verdict": "BUILD_NOW",
+    "calibrated_verdict": "BUILD_NOW",
+    "final_presentation_verdict": "BUILD_NOW",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 64,
+    "app_name": "Cloudflare",
+    "assigned_category": "Developer, Infra and Data platforms",
+    "website_hint": "developers.cloudflare.com/api",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 65,
+    "app_name": "Supabase",
+    "assigned_category": "Developer, Infra and Data platforms",
+    "website_hint": "supabase.com/docs",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": true,
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "official",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "BUILD_NOW",
+    "final_presentation_verdict": "BUILD_NOW",
+    "verification_status": "independently_verified",
+    "evidence_urls": [
+      "https://supabase.com/docs/pricing"
+    ],
+    "remaining_uncertainty": [],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 66,
+    "app_name": "Neo4j",
+    "assigned_category": "Developer, Infra and Data platforms",
+    "website_hint": "neo4j.com/docs/api",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "unclear",
+      "api_breadth": "unclear",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "public_api_status_unclear",
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 67,
+    "app_name": "Snowflake",
+    "assigned_category": "Developer, Infra and Data platforms",
+    "website_hint": "docs.snowflake.com",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 68,
+    "app_name": "MongoDB Atlas",
+    "assigned_category": "Developer, Infra and Data platforms",
+    "website_hint": "mongodb.com/docs/atlas/api",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "official",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 69,
+    "app_name": "Datadog",
+    "assigned_category": "Developer, Infra and Data platforms",
+    "website_hint": "docs.datadoghq.com/api",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "oauth2",
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "official",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 70,
+    "app_name": "Sentry",
+    "assigned_category": "Developer, Infra and Data platforms",
+    "website_hint": "docs.sentry.io/api",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "api_key"
+      ],
+      "access_model": "self_serve_free",
+      "credentials_obtainable_without_approval": true,
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "none_found",
+      "primary_blocker": null
+    },
+    "original_baseline_verdict": "BUILD_NOW",
+    "calibrated_verdict": "BUILD_NOW",
+    "final_presentation_verdict": "BUILD_NOW",
+    "verification_status": "independently_verified",
+    "evidence_urls": [
+      "https://docs.sentry.io/api/"
+    ],
+    "remaining_uncertainty": [],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 71,
+    "app_name": "Notion",
+    "assigned_category": "Productivity and Project Management",
+    "website_hint": "developers.notion.com",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": true,
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 72,
+    "app_name": "Airtable",
+    "assigned_category": "Productivity and Project Management",
+    "website_hint": "airtable.com/developers",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "yes",
+      "api_breadth": "unclear",
+      "mcp_status": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 73,
+    "app_name": "Linear",
+    "assigned_category": "Productivity and Project Management",
+    "website_hint": "developers.linear.app",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "official",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 74,
+    "app_name": "Jira",
+    "assigned_category": "Productivity and Project Management",
+    "website_hint": "developer.atlassian.com",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "yes",
+      "api_breadth": "unclear",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 75,
+    "app_name": "Asana",
+    "assigned_category": "Productivity and Project Management",
+    "website_hint": "developers.asana.com",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "self_serve_free",
+      "credentials_obtainable_without_approval": true,
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "official",
+      "primary_blocker": null
+    },
+    "original_baseline_verdict": "BUILD_NOW",
+    "calibrated_verdict": "BUILD_NOW",
+    "final_presentation_verdict": "BUILD_NOW",
+    "verification_status": "independently_verified",
+    "evidence_urls": [
+      "https://developers.asana.com"
+    ],
+    "remaining_uncertainty": [],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 76,
+    "app_name": "Monday.com",
+    "assigned_category": "Productivity and Project Management",
+    "website_hint": "developer.monday.com",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "oauth2"
+      ],
+      "access_model": "self_serve_free",
+      "credentials_obtainable_without_approval": true,
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "official",
+      "primary_blocker": null
+    },
+    "original_baseline_verdict": "BUILD_NOW",
+    "calibrated_verdict": "BUILD_NOW",
+    "final_presentation_verdict": "BUILD_NOW",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 77,
+    "app_name": "ClickUp",
+    "assigned_category": "Productivity and Project Management",
+    "website_hint": "clickup.com/api",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "oauth2"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "yes",
+      "api_breadth": "unclear",
+      "mcp_status": "official",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "access_model_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 78,
+    "app_name": "Coda",
+    "assigned_category": "Productivity and Project Management",
+    "website_hint": "coda.io/developers",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": true,
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "official",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 79,
+    "app_name": "Smartsheet",
+    "assigned_category": "Productivity and Project Management",
+    "website_hint": "smartsheet.com/developers",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "oauth2"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": true,
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "official",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "access_model_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 80,
+    "app_name": "Harvest",
+    "assigned_category": "Productivity and Project Management",
+    "website_hint": "harvestapp.com (help.getharvest.com/api-v2)",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "unclear",
+      "api_breadth": "unclear",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "public_api_status_unclear",
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 81,
+    "app_name": "Stripe",
+    "assigned_category": "Finance and Fintech",
+    "website_hint": "stripe.com/docs/api",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": true,
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "BUILD_NOW",
+    "final_presentation_verdict": "BUILD_NOW",
+    "verification_status": "independently_verified",
+    "evidence_urls": [
+      "https://docs.stripe.com/api/authentication"
+    ],
+    "remaining_uncertainty": [],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 82,
+    "app_name": "Plaid",
+    "assigned_category": "Finance and Fintech",
+    "website_hint": "plaid.com/docs",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "official",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 83,
+    "app_name": "Binance",
+    "assigned_category": "Finance and Fintech",
+    "website_hint": "binance-docs.github.io",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": true,
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 84,
+    "app_name": "Paygent Connect",
+    "assigned_category": "Finance and Fintech",
+    "website_hint": "paygent (NMI-powered)",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "unclear",
+      "api_breadth": "unclear",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "public_api_status_unclear",
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 85,
+    "app_name": "iPayX",
+    "assigned_category": "Finance and Fintech",
+    "website_hint": "ipayx.ai/docs",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "api_key",
+        "bearer_token"
+      ],
+      "access_model": "sales_gated",
+      "credentials_obtainable_without_approval": false,
+      "public_api_status": "yes",
+      "api_breadth": "moderate",
+      "mcp_status": "none_found",
+      "primary_blocker": "Access requires contacting enterprise sales team."
+    },
+    "original_baseline_verdict": "OUTREACH_REQUIRED",
+    "calibrated_verdict": "OUTREACH_REQUIRED",
+    "final_presentation_verdict": "OUTREACH_REQUIRED",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 86,
+    "app_name": "QuickBooks",
+    "assigned_category": "Finance and Fintech",
+    "website_hint": "developer.intuit.com",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "yes",
+      "api_breadth": "unclear",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 87,
+    "app_name": "Xero",
+    "assigned_category": "Finance and Fintech",
+    "website_hint": "developer.xero.com",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "oauth2"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": true,
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "official",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "access_model_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 88,
+    "app_name": "Brex",
+    "assigned_category": "Finance and Fintech",
+    "website_hint": "developer.brex.com",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 89,
+    "app_name": "Ramp",
+    "assigned_category": "Finance and Fintech",
+    "website_hint": "docs.ramp.com",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "yes",
+      "api_breadth": "unclear",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 90,
+    "app_name": "PitchBook",
+    "assigned_category": "Finance and Fintech",
+    "website_hint": "pitchbook.com (research API)",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "api_key"
+      ],
+      "access_model": "sales_gated",
+      "credentials_obtainable_without_approval": false,
+      "public_api_status": "limited",
+      "api_breadth": "broad",
+      "mcp_status": "none_found",
+      "primary_blocker": "Access requires contacting enterprise sales team."
+    },
+    "original_baseline_verdict": "OUTREACH_REQUIRED",
+    "calibrated_verdict": "OUTREACH_REQUIRED",
+    "final_presentation_verdict": "OUTREACH_REQUIRED",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 91,
+    "app_name": "NotebookLM",
+    "assigned_category": "AI, Research and Media-native",
+    "website_hint": "cloud.google.com/gemini (Enterprise API)",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "unclear",
+      "api_breadth": "unclear",
+      "mcp_status": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "public_api_status_unclear",
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 92,
+    "app_name": "Otter AI",
+    "assigned_category": "AI, Research and Media-native",
+    "website_hint": "help.otter.ai (MCP server)",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "limited",
+      "api_breadth": "unclear",
+      "mcp_status": "community",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 93,
+    "app_name": "Fathom",
+    "assigned_category": "AI, Research and Media-native",
+    "website_hint": "fathom.video",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "no",
+      "api_breadth": "none",
+      "mcp_status": "none_found",
+      "primary_blocker": "No documented public API available."
+    },
+    "original_baseline_verdict": "BLOCKED_LOW_PRIORITY",
+    "calibrated_verdict": "BLOCKED_LOW_PRIORITY",
+    "final_presentation_verdict": "BLOCKED_LOW_PRIORITY",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 94,
+    "app_name": "Consensus",
+    "assigned_category": "AI, Research and Media-native",
+    "website_hint": "consensus.app (OAuth requested)",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "yes",
+      "api_breadth": "unclear",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 95,
+    "app_name": "Reducto",
+    "assigned_category": "AI, Research and Media-native",
+    "website_hint": "reducto.ai (document parsing)",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "api_key"
+      ],
+      "access_model": "self_serve_paid",
+      "credentials_obtainable_without_approval": true,
+      "public_api_status": "yes",
+      "api_breadth": "moderate",
+      "mcp_status": "none_found",
+      "primary_blocker": null
+    },
+    "original_baseline_verdict": "BUILD_NOW",
+    "calibrated_verdict": "BUILD_NOW",
+    "final_presentation_verdict": "BUILD_NOW",
+    "verification_status": "independently_verified",
+    "evidence_urls": [
+      "https://reducto.ai/"
+    ],
+    "remaining_uncertainty": [],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 96,
+    "app_name": "Devin",
+    "assigned_category": "AI, Research and Media-native",
+    "website_hint": "docs.devin.ai (MCP)",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": false,
+      "public_api_status": "yes",
+      "api_breadth": "unclear",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "independently_verified",
+    "evidence_urls": [
+      "https://docs.devin.ai/get-started/devin-intro"
+    ],
+    "remaining_uncertainty": [
+      "genuinely_unclear_per_verified_audit"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 97,
+    "app_name": "higgsfield",
+    "assigned_category": "AI, Research and Media-native",
+    "website_hint": "higgsfield.ai/cli (content suite)",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "custom"
+      ],
+      "access_model": "self_serve_paid",
+      "credentials_obtainable_without_approval": true,
+      "public_api_status": "limited",
+      "api_breadth": "broad",
+      "mcp_status": "official",
+      "primary_blocker": "Minor onboarding or tier restrictions."
+    },
+    "original_baseline_verdict": "BUILD_WITH_CAVEATS",
+    "calibrated_verdict": "BUILD_NOW",
+    "final_presentation_verdict": "BUILD_NOW",
+    "verification_status": "deterministically_calibrated",
+    "evidence_urls": [],
+    "remaining_uncertainty": [],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 98,
+    "app_name": "Mermaid CLI",
+    "assigned_category": "AI, Research and Media-native",
+    "website_hint": "github.com/mermaid-js/mermaid-cli",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": true,
+      "public_api_status": "yes",
+      "api_breadth": "narrow",
+      "mcp_status": "none_found",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 99,
+    "app_name": "YouTube Transcript",
+    "assigned_category": "AI, Research and Media-native",
+    "website_hint": "transcriptapi.com",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": true,
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "official",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  },
+  {
+    "assignment_number": 100,
+    "app_name": "Grain",
+    "assigned_category": "AI, Research and Media-native",
+    "website_hint": "grain.com (meeting notes)",
+    "original_baseline_facts": {
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "yes",
+      "api_breadth": "moderate",
+      "mcp_status": "official",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "original_baseline_verdict": "UNCLEAR",
+    "calibrated_verdict": "UNCLEAR",
+    "final_presentation_verdict": "UNCLEAR",
+    "verification_status": "baseline_unverified",
+    "evidence_urls": [],
+    "remaining_uncertainty": [
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ],
+    "risk_flags": []
+  }
+]

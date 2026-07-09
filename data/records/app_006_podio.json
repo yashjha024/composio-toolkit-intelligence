@@ -1,0 +1,882 @@
+{
+  "identity": {
+    "assignment_number": 6,
+    "app_name": "Podio",
+    "website_hint": "podio.com",
+    "assigned_category": "CRM and Sales",
+    "researched_at": "2026-07-09T15:54:17.101Z"
+  },
+  "product": {
+    "normalized_category": "CRM and Sales",
+    "one_line_description": "Podio is a work management platform that unifies and automates work with no-code tools, flexible workflows, and customizable business solutions."
+  },
+  "authentication": {
+    "auth_methods": [
+      "oauth2",
+      "api_key",
+      "bearer_token"
+    ],
+    "auth_summary": "The Podio API uses the OAuth2 protocol for authentication. Developers must register their application to obtain a 'Client ID' and 'Client Secret' (referred to as API keys). Authentication involves different OAuth flows (Server-side, Client-side, Username & password, App authentication) which provide an access token and refresh token. The access token, a bearer token, is included in an 'Authorization: OAuth2 ACCESS_TOKEN' HTTP header."
+  },
+  "developer_access": {
+    "access_model": "self_serve_free",
+    "credentials_obtainable_without_human_approval": true,
+    "access_notes": "Developers can obtain API credentials (Client ID and Client Secret) by first getting a Podio account, reviewing the Terms of API use, and then generating the API key for each app from their account settings page. This process is self-serve and does not require human approval."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "REST",
+      "SDK",
+      "webhooks"
+    ],
+    "api_breadth": "broad",
+    "api_summary": "The Podio API offers a complete programmable interface to all Podio functionality, on which the entire Podio frontend is built. It supports RESTful conventions, provides client libraries/wrappers for multiple languages (PHP, .NET, Ruby, Java, Python, Android, Objective-C), and allows for event-driven applications through webhooks."
+  },
+  "mcp": {
+    "mcp_status": "none_found",
+    "mcp_summary": "No information regarding Model Context Protocol was found in the provided sources."
+  },
+  "buildability": {
+    "verdict": "build_now",
+    "primary_blocker": null,
+    "verdict_reasoning": "Self-serve developer access is verified with a broad/moderate documented public API."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 1,
+      "access_model": 0.9,
+      "public_api": 1,
+      "api_breadth": 1,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.95,
+    "requires_human_review": false,
+    "human_review_reason": null
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783612457101_0",
+      "claim_field": "product.one_line_description",
+      "claim": "Podio is a work management platform that unifies and automates work with no-code tools, flexible workflows, and customizable business solutions.",
+      "source_url": "https://podio.com/",
+      "source_title": "Work Management Platform | Streamline Collaboration & Workflows | Podio",
+      "source_type": "official_doc",
+      "evidence_snippet": "Unify and automate work with no-code tools, flexible workflows and customizable business solutions.",
+      "retrieved_at": "2026-07-09T15:54:17.101Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://podio.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612457101_1",
+      "claim_field": "authentication.auth_methods",
+      "claim": "oauth2",
+      "source_url": "https://developers.podio.com/authentication",
+      "source_title": "Authentication - Podio API Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "The Podio API uses the OAuth2 protocol for authentication.",
+      "retrieved_at": "2026-07-09T15:54:17.101Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.podio.com/authentication"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612457101_2",
+      "claim_field": "authentication.auth_methods",
+      "claim": "api_key",
+      "source_url": "https://developers.podio.com/",
+      "source_title": "Developers - Podio API Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "#### Get an API Key\n\nGet started right away - [generate your API key](/api-key).",
+      "retrieved_at": "2026-07-09T15:54:17.101Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.podio.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612457101_3",
+      "claim_field": "authentication.auth_methods",
+      "claim": "api_key",
+      "source_url": "https://developers.podio.com/authentication",
+      "source_title": "Authentication - Podio API Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Your application is assigned a unique identifier, called \"Client ID\", together with a \"Client Secret\". You will need both of these to authenticate.",
+      "retrieved_at": "2026-07-09T15:54:17.101Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.podio.com/authentication"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612457101_4",
+      "claim_field": "authentication.auth_methods",
+      "claim": "bearer_token",
+      "source_url": "https://developers.podio.com/authentication",
+      "source_title": "Authentication - Podio API Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "`Authorization: OAuth2 ACCESS_TOKEN`\n\nWhere ACCESS_TOKEN should be replaced with the actual access token you have obtained.",
+      "retrieved_at": "2026-07-09T15:54:17.101Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.podio.com/authentication"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612457101_5",
+      "claim_field": "authentication.auth_methods",
+      "claim": "bearer_token",
+      "source_url": "https://developers.podio.com/authentication",
+      "source_title": "Authentication - Podio API Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "{ \"access_token\": ACCESS_TOKEN,\n  \"token_type\": \"bearer\",",
+      "retrieved_at": "2026-07-09T15:54:17.101Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.podio.com/authentication"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612457101_6",
+      "claim_field": "authentication.auth_summary",
+      "claim": "The Podio API uses the OAuth2 protocol for authentication. Developers must register their application to obtain a 'Client ID' and 'Client Secret' (referred to as API keys). Authentication involves different OAuth flows (Server-side, Client-side, Username & password, App authentication) which provide an access token and refresh token. The access token, a bearer token, is included in an 'Authorization: OAuth2 ACCESS_TOKEN' HTTP header.",
+      "source_url": "https://developers.podio.com/authentication",
+      "source_title": "Authentication - Podio API Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "The Podio API uses the OAuth2 protocol for authentication. This allows external apps to request authorization to Podio without having direct access to the user's password. Our API supports different OAuth flows depending on what kind of integration you are making.\nBefore you can use the Podio API you must register your application. Your application is assigned a unique identifier, called \"Client ID\", together with a \"Client Secret\". You will need both of these to authenticate.\nPodio supports four different ways of autheticating depending on what kind of application you are building: [Server-side flow](/authentication/server_side), [Client-side flow](/authentication/client_side), [Username & password flow](/authentication/username_password), [App authentication flow](/authentication/app_auth).\nAll of these authentication methods will provide you with an access token. You will be including this access token in any subsequent requests to the API.\n`Authorization: OAuth2 ACCESS_TOKEN`\n\nWhere ACCESS_TOKEN should be replaced with the actual access token you have obtained.\nIn addition to the access token, the response also contains a **expires_in** parameter, and a **refresh_token** parameter.",
+      "retrieved_at": "2026-07-09T15:54:17.101Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.podio.com/authentication"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612457101_7",
+      "claim_field": "developer_access.access_model",
+      "claim": "self_serve_free",
+      "source_url": "https://developers.podio.com/",
+      "source_title": "Developers - Podio API Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "#### Get an API Key\n\nGet started right away - [generate your API key](/api-key).",
+      "retrieved_at": "2026-07-09T15:54:17.101Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.podio.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612457101_8",
+      "claim_field": "developer_access.access_model",
+      "claim": "self_serve_free",
+      "source_url": "https://developers.podio.com/",
+      "source_title": "Developers - Podio API Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "You'll need a Podio account, first of all. Then you should review [our Terms of API use](https://api.sharefile.com/home/tos) and then [grab an API key](/api-key) for each app you want to build from your account settings page.",
+      "retrieved_at": "2026-07-09T15:54:17.101Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.podio.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612457101_9",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": true,
+      "source_url": "https://developers.podio.com/",
+      "source_title": "Developers - Podio API Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Get started right away - [generate your API key](/api-key).",
+      "retrieved_at": "2026-07-09T15:54:17.101Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.podio.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612457101_10",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": true,
+      "source_url": "https://developers.podio.com/",
+      "source_title": "Developers - Podio API Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "then [grab an API key](/api-key) for each app you want to build from your account settings page.",
+      "retrieved_at": "2026-07-09T15:54:17.101Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.podio.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612457101_11",
+      "claim_field": "developer_access.access_notes",
+      "claim": "Developers can generate an API key (Client ID and Client Secret) from their Podio account settings page after reviewing the Terms of API use. This process is self-service and does not require human approval.",
+      "source_url": "https://developers.podio.com/",
+      "source_title": "Developers - Podio API Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "You'll need a Podio account, first of all. Then you should review [our Terms of API use](https://api.sharefile.com/home/tos) and then [grab an API key](/api-key) for each app you want to build from your account settings page.",
+      "retrieved_at": "2026-07-09T15:54:17.101Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.podio.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612457101_12",
+      "claim_field": "developer_access.access_notes",
+      "claim": "Developers can generate an API key (Client ID and Client Secret) from their Podio account settings page after reviewing the Terms of API use. This process is self-service and does not require human approval.",
+      "source_url": "https://developers.podio.com/",
+      "source_title": "Developers - Podio API Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Get started right away - [generate your API key](/api-key).",
+      "retrieved_at": "2026-07-09T15:54:17.101Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.podio.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612457101_13",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://developers.podio.com/",
+      "source_title": "Developers - Podio API Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "The Podio API lets you integrate with other services and build tools and applications on top of Podio",
+      "retrieved_at": "2026-07-09T15:54:17.101Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.podio.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612457101_14",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://developers.podio.com/",
+      "source_title": "Developers - Podio API Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "What is the Podio API?\n\nThe Podio API is a complete programmable interface to all Podio functionality.",
+      "retrieved_at": "2026-07-09T15:54:17.101Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.podio.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612457101_15",
+      "claim_field": "api_surface.api_styles",
+      "claim": "REST",
+      "source_url": "https://developers.podio.com/",
+      "source_title": "Developers - Podio API Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "[API conventions and structure](/index/api)",
+      "retrieved_at": "2026-07-09T15:54:17.101Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.podio.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612457101_16",
+      "claim_field": "api_surface.api_styles",
+      "claim": "REST",
+      "source_url": "https://developers.podio.com/authentication",
+      "source_title": "Authentication - Podio API Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "`HTTP METHOD: POST\nURL: https://api.podio.com/oauth/token/v2`",
+      "retrieved_at": "2026-07-09T15:54:17.101Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.podio.com/authentication"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612457101_17",
+      "claim_field": "api_surface.api_styles",
+      "claim": "SDK",
+      "source_url": "https://developers.podio.com/",
+      "source_title": "Developers - Podio API Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "We currently provide wrappers for [PHP](https://github.com/podio-community/podio-php), [.NET](/clients/dotnet), [Ruby](/clients/ruby), [Java](/clients/java), [Python](/clients/python), [Android](http://podio.github.io/podio-android/) and [Objective-C](http://podio.github.io/podio-objc/)",
+      "retrieved_at": "2026-07-09T15:54:17.101Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.podio.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612457101_18",
+      "claim_field": "api_surface.api_styles",
+      "claim": "webhooks",
+      "source_url": "https://developers.podio.com/",
+      "source_title": "Developers - Podio API Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "If you want to build event-driven applications, you have the ability to register [webhooks](/examples/webhooks) in your Podio apps.",
+      "retrieved_at": "2026-07-09T15:54:17.101Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.podio.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612457101_19",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://developers.podio.com/",
+      "source_title": "Developers - Podio API Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "In fact, the entire Podio frontend is built on the API, and we've exposed it all for you to use too.",
+      "retrieved_at": "2026-07-09T15:54:17.101Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.podio.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612457101_20",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://developers.podio.com/",
+      "source_title": "Developers - Podio API Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "The Podio API is a complete programmable interface to all Podio functionality.",
+      "retrieved_at": "2026-07-09T15:54:17.101Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.podio.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612457101_21",
+      "claim_field": "api_surface.api_summary",
+      "claim": "The Podio API provides a complete programmable interface to all Podio functionality, with the entire Podio frontend built on it. It supports RESTful conventions, offers SDKs/wrappers for multiple languages (PHP, .NET, Ruby, Java, Python, Android, Objective-C), and includes webhook capabilities for event-driven applications.",
+      "source_url": "https://developers.podio.com/",
+      "source_title": "Developers - Podio API Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "The Podio API is a complete programmable interface to all Podio functionality. We currently provide wrappers for [PHP](https://github.com/podio-community/podio-php), [.NET](/clients/dotnet), [Ruby](/clients/ruby), [Java](/clients/java), [Python](/clients/python), [Android](http://podio.github.io/podio-android/) and [Objective-C](http://podio.github.io/podio-objc/) which make working with common API operations very simple.\nIn fact, the entire Podio frontend is built on the API, and we've exposed it all for you to use too. If you want to build event-driven applications, you have the ability to register [webhooks](/examples/webhooks) in your Podio apps.",
+      "retrieved_at": "2026-07-09T15:54:17.101Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.podio.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612457101_22",
+      "claim_field": "api_surface.api_summary",
+      "claim": "The Podio API provides a complete programmable interface to all Podio functionality, with the entire Podio frontend built on it. It supports RESTful conventions, offers SDKs/wrappers for multiple languages (PHP, .NET, Ruby, Java, Python, Android, Objective-C), and includes webhook capabilities for event-driven applications.",
+      "source_url": "https://developers.podio.com/authentication",
+      "source_title": "Authentication - Podio API Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "`HTTP METHOD: POST\nURL: https://api.podio.com/oauth/token/v2`",
+      "retrieved_at": "2026-07-09T15:54:17.101Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.podio.com/authentication"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612457101_23",
+      "claim_field": "mcp.mcp_status",
+      "claim": "none_found",
+      "source_url": "https://developers.podio.com/",
+      "source_title": "Developers - Podio API Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "No mention of MCP related terms.",
+      "retrieved_at": "2026-07-09T15:54:17.101Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.podio.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612457101_24",
+      "claim_field": "mcp.mcp_status",
+      "claim": "none_found",
+      "source_url": "https://developers.podio.com/authentication",
+      "source_title": "Authentication - Podio API Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "No mention of MCP related terms.",
+      "retrieved_at": "2026-07-09T15:54:17.101Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.podio.com/authentication"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783612457101_25",
+      "claim_field": "mcp.mcp_status",
+      "claim": "none_found",
+      "source_url": "https://podio.com/",
+      "source_title": "Work Management Platform | Streamline Collaboration & Workflows | Podio",
+      "source_type": "official_doc",
+      "evidence_snippet": "No mention of MCP related terms.",
+      "retrieved_at": "2026-07-09T15:54:17.101Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://podio.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 6,
+      "app_name": "Podio",
+      "website_hint": "podio.com",
+      "assigned_category": "CRM and Sales",
+      "researched_at": "2026-07-09T15:54:17.101Z"
+    },
+    "product": {
+      "normalized_category": "CRM and Sales",
+      "one_line_description": "Podio is a work management platform that unifies and automates work with no-code tools, flexible workflows, and customizable business solutions."
+    },
+    "authentication": {
+      "auth_methods": [
+        "oauth2",
+        "api_key",
+        "bearer_token"
+      ],
+      "auth_summary": "The Podio API uses the OAuth2 protocol for authentication. Developers must register their application to obtain a 'Client ID' and 'Client Secret' (referred to as API keys). Authentication involves different OAuth flows (Server-side, Client-side, Username & password, App authentication) which provide an access token and refresh token. The access token, a bearer token, is included in an 'Authorization: OAuth2 ACCESS_TOKEN' HTTP header."
+    },
+    "developer_access": {
+      "access_model": "self_serve_free",
+      "credentials_obtainable_without_human_approval": true,
+      "access_notes": "Developers can obtain API credentials (Client ID and Client Secret) by first getting a Podio account, reviewing the Terms of API use, and then generating the API key for each app from their account settings page. This process is self-serve and does not require human approval."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "REST",
+        "SDK",
+        "webhooks"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "The Podio API offers a complete programmable interface to all Podio functionality, on which the entire Podio frontend is built. It supports RESTful conventions, provides client libraries/wrappers for multiple languages (PHP, .NET, Ruby, Java, Python, Android, Objective-C), and allows for event-driven applications through webhooks."
+    },
+    "mcp": {
+      "mcp_status": "none_found",
+      "mcp_summary": "No information regarding Model Context Protocol was found in the provided sources."
+    },
+    "buildability": {
+      "verdict": "build_now",
+      "primary_blocker": null,
+      "verdict_reasoning": "Self-serve developer access is verified with a broad/moderate documented public API."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 1,
+        "access_model": 0.9,
+        "public_api": 1,
+        "api_breadth": 1,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.95,
+      "requires_human_review": false,
+      "human_review_reason": null
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_material_evidence_validation_failed"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_material_evidence_validation_failed"
+    ]
+  }
+}

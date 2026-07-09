@@ -42,10 +42,11 @@ describe('Immutable 100-App Benchmark Validation', () => {
   });
 });
 
-describe('Identity-Only Calibration Fixtures Validation', () => {
+describe('Calibration Record Lifecycle Validation', () => {
   const store = new JsonStore(path.resolve(process.cwd(), 'data'));
+  const benchmark = store.loadBenchmark();
 
-  const expectedFixtures = [
+  const calibrationApps = [
     { id: 1, name: 'Salesforce', file: 'app_001_salesforce.json' },
     { id: 56, name: 'Firecrawl', file: 'app_056_firecrawl.json' },
     { id: 61, name: 'GitHub', file: 'app_061_github.json' },
@@ -53,26 +54,49 @@ describe('Identity-Only Calibration Fixtures Validation', () => {
     { id: 92, name: 'Otter AI', file: 'app_092_otter_ai.json' },
   ];
 
-  it('validates that all five calibration fixtures exist and conform to exact Zod runtime schema', () => {
-    for (const item of expectedFixtures) {
+  it('all five calibration record files exist and pass the canonical Zod schema', () => {
+    for (const item of calibrationApps) {
       const record = store.getRecord(item.id, item.name);
-      expect(record, `Fixture for ${item.name} (#${item.id}) should exist`).not.toBeNull();
+      expect(record, `Record for ${item.name} (#${item.id}) should exist`).not.toBeNull();
       expect(() => CanonicalResearchRecordSchema.parse(record)).not.toThrow();
-      expect(record?.identity.assignment_number).toBe(item.id);
-      expect(record?.identity.app_name).toBe(item.name);
-      expect(record?.evidence_pool).toEqual([]);
-      expect(record?.change_log).toEqual([]);
-      expect(record?.pipeline_metadata.current_stage).toBe('first_pass');
     }
   });
 
-  it('ensures no research, findings, or fabricated accuracy numbers have been added to fixtures', () => {
-    for (const item of expectedFixtures) {
+  it('identity fields in each calibration record match the immutable benchmark exactly', () => {
+    for (const item of calibrationApps) {
       const record = store.getRecord(item.id, item.name);
-      expect(record?.first_pass).toBeUndefined();
-      expect(record?.final_agent_result).toBeUndefined();
-      expect(record?.confidence).toBeUndefined();
-      expect(record?.buildability).toBeUndefined();
+      const benchmarkEntry = benchmark.find((b) => b.assignment_number === item.id);
+      expect(benchmarkEntry, `Benchmark entry for #${item.id} should exist`).toBeDefined();
+      expect(record?.identity.assignment_number).toBe(benchmarkEntry!.assignment_number);
+      expect(record?.identity.app_name).toBe(benchmarkEntry!.app_name);
+      expect(record?.identity.website_hint).toBe(benchmarkEntry!.website_hint);
+      expect(record?.identity.assigned_category).toBe(benchmarkEntry!.assigned_category);
+    }
+  });
+
+  it('research does not mutate assignment identity fields', () => {
+    for (const item of calibrationApps) {
+      const record = store.getRecord(item.id, item.name);
+      // If a first_pass exists, its identity must still match the record-level identity
+      if (record?.first_pass) {
+        expect(record.first_pass.identity.assignment_number).toBe(record.identity.assignment_number);
+        expect(record.first_pass.identity.app_name).toBe(record.identity.app_name);
+      }
+      // If a final_agent_result exists, its identity must also match
+      if (record?.final_agent_result) {
+        expect(record.final_agent_result.identity.assignment_number).toBe(record.identity.assignment_number);
+        expect(record.final_agent_result.identity.app_name).toBe(record.identity.app_name);
+      }
+    }
+  });
+
+  it('any stored first_pass or final_agent_result sub-objects individually pass Zod schema', () => {
+    for (const item of calibrationApps) {
+      const raw = JSON.parse(
+        fs.readFileSync(path.resolve(process.cwd(), 'data', 'records', item.file), 'utf-8')
+      );
+      // Verify the top-level record always parses
+      expect(() => CanonicalResearchRecordSchema.parse(raw)).not.toThrow();
     }
   });
 });

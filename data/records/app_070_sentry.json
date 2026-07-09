@@ -1,0 +1,472 @@
+{
+  "identity": {
+    "assignment_number": 70,
+    "app_name": "Sentry",
+    "website_hint": "docs.sentry.io/api",
+    "assigned_category": "Developer, Infra and Data platforms",
+    "researched_at": "2026-07-09T17:34:33.849Z"
+  },
+  "product": {
+    "normalized_category": "Developer, Infra and Data platforms",
+    "one_line_description": "Sentry provides a web API for programmatic access to its platform, allowing management of account-level resources and data."
+  },
+  "authentication": {
+    "auth_methods": [
+      "api_key"
+    ],
+    "auth_summary": "The Sentry API uses an authentication token for access, with a tutorial provided on how to create one."
+  },
+  "developer_access": {
+    "access_model": "self_serve_free",
+    "credentials_obtainable_without_human_approval": true,
+    "access_notes": "Developers can create a Sentry Authentication Token through a self-serve process, as indicated by the available tutorial 'Create a Sentry Authentication Token'."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "REST",
+      "SDK"
+    ],
+    "api_breadth": "broad",
+    "api_summary": "Sentry offers a broad public web API (v0) with generally stable endpoints for programmatic access to manage various resources like organizations, teams, events, and more. It also mentions an API surface for Sentry's SDKs."
+  },
+  "mcp": {
+    "mcp_status": "none_found",
+    "mcp_summary": "No information regarding Model Context Protocol server availability was found in the provided source."
+  },
+  "buildability": {
+    "verdict": "build_now",
+    "primary_blocker": null,
+    "verdict_reasoning": "Self-serve developer access is verified with a broad/moderate documented public API."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 0.9,
+      "access_model": 0.7,
+      "public_api": 1,
+      "api_breadth": 1,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.85,
+    "requires_human_review": true,
+    "human_review_reason": "The 'self_serve_free' access model for credentials is an inference based on the presence of a 'create auth token' tutorial and lack of explicit gating information. The overall product's API access tiers (free vs. paid) are not specified, which could impact the true access model."
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783618473849_0",
+      "claim_field": "product.one_line_description",
+      "claim": "Sentry provides a web API for programmatic access to its platform, allowing management of account-level resources and data.",
+      "source_url": "https://docs.sentry.io/api/",
+      "source_title": "API Reference",
+      "source_type": "api_ref",
+      "evidence_snippet": "The Sentry web API is used to access the Sentry platform programmatically. You can use the APIs to manage account-level resources, like organizations and teams, as well as manage and export data.",
+      "retrieved_at": "2026-07-09T17:34:33.849Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.sentry.io/api/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783618473849_1",
+      "claim_field": "authentication.auth_methods",
+      "claim": "api_key",
+      "source_url": "https://docs.sentry.io/api/",
+      "source_title": "API Reference",
+      "source_type": "api_ref",
+      "evidence_snippet": "Tutorial: Create a Sentry Authentication Token",
+      "retrieved_at": "2026-07-09T17:34:33.849Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.sentry.io/api/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783618473849_2",
+      "claim_field": "authentication.auth_summary",
+      "claim": "The Sentry API uses an authentication token for access, with a tutorial provided on how to create one.",
+      "source_url": "https://docs.sentry.io/api/",
+      "source_title": "API Reference",
+      "source_type": "api_ref",
+      "evidence_snippet": "*   [Authentication](/api/auth/)\n*   [Tutorial: Create a Sentry Authentication Token](/api/guides/create-auth-token/)",
+      "retrieved_at": "2026-07-09T17:34:33.849Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.sentry.io/api/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783618473849_3",
+      "claim_field": "developer_access.access_model",
+      "claim": "self_serve_free",
+      "source_url": "https://docs.sentry.io/api/",
+      "source_title": "API Reference",
+      "source_type": "api_ref",
+      "evidence_snippet": "*   [Tutorial: Create a Sentry Authentication Token](/api/guides/create-auth-token/)",
+      "retrieved_at": "2026-07-09T17:34:33.849Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.sentry.io/api/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783618473849_4",
+      "claim_field": "credentials_obtainable_without_human_approval",
+      "claim": true,
+      "source_url": "https://docs.sentry.io/api/",
+      "source_title": "API Reference",
+      "source_type": "api_ref",
+      "evidence_snippet": "*   [Tutorial: Create a Sentry Authentication Token](/api/guides/create-auth-token/)",
+      "retrieved_at": "2026-07-09T17:34:33.849Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.sentry.io/api/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783618473849_5",
+      "claim_field": "developer_access.access_notes",
+      "claim": "Developers can create a Sentry Authentication Token through a self-serve process, as indicated by the available tutorial 'Create a Sentry Authentication Token'.",
+      "source_url": "https://docs.sentry.io/api/",
+      "source_title": "API Reference",
+      "source_type": "api_ref",
+      "evidence_snippet": "*   [Tutorial: Create a Sentry Authentication Token](/api/guides/create-auth-token/)",
+      "retrieved_at": "2026-07-09T17:34:33.849Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.sentry.io/api/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783618473849_6",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://docs.sentry.io/api/",
+      "source_title": "API Reference",
+      "source_type": "api_ref",
+      "evidence_snippet": "The Sentry web API is used to access the Sentry platform programmatically.\nOur public endpoints are generally stable",
+      "retrieved_at": "2026-07-09T17:34:33.849Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.sentry.io/api/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783618473849_7",
+      "claim_field": "api_surface.api_styles",
+      "claim": "REST",
+      "source_url": "https://docs.sentry.io/api/",
+      "source_title": "API Reference",
+      "source_type": "api_ref",
+      "evidence_snippet": "The Sentry web API is used to access the Sentry platform programmatically. You can use the APIs to manage account-level resources, like organizations and teams, as well as manage and export data.",
+      "retrieved_at": "2026-07-09T17:34:33.849Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.sentry.io/api/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783618473849_8",
+      "claim_field": "api_surface.api_styles",
+      "claim": "SDK",
+      "source_url": "https://docs.sentry.io/api/",
+      "source_title": "API Reference",
+      "source_type": "api_ref",
+      "evidence_snippet": "If you're looking for information about the API surface for Sentry's SDKs, see the [SDK Development](https://develop.sentry.dev/sdk/overview/) docs.",
+      "retrieved_at": "2026-07-09T17:34:33.849Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.sentry.io/api/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783618473849_9",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://docs.sentry.io/api/",
+      "source_title": "API Reference",
+      "source_type": "api_ref",
+      "evidence_snippet": "You can use the APIs to manage account-level resources, like organizations and teams, as well as manage and export data.\n\nAPI Reference\n*   [Crons](/api/crons/)\n*   [Dashboards](/api/dashboards/)\n*   [Discover & Performance](/api/discover/)\n*   [Environments](/api/environments/)\n*   [Events & Issues](/api/events/)\n*   [Explore](/api/explore/)\n*   [Integration Platform](/api/integration/)\n*   [Integrations](/api/integrations/)\n*   [Mobile Builds](/api/mobile-builds/)\n*   [Monitors & Alerts](/api/monitors/)\n*   [Organizations](/api/organizations/)\n*   [Profiling](/api/profiling/)\n*   [Projects](/api/projects/)\n*   [Releases](/api/releases/)\n*   [Replays](/api/replays/)\n*   [SCIM](/api/scim/)\n*   [Seer](/api/seer/)\n*   [Snapshots](/api/snapshots/)\n*   [Spike Protection Notifications](/api/spike-protection/)\n*   [Teams](/api/teams/)\n*   [Users](/api/users/)",
+      "retrieved_at": "2026-07-09T17:34:33.849Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.sentry.io/api/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783618473849_10",
+      "claim_field": "api_surface.api_summary",
+      "claim": "Sentry offers a broad public web API (v0) with generally stable endpoints for programmatic access to manage various resources like organizations, teams, events, and more. It also mentions an API surface for Sentry's SDKs.",
+      "source_url": "https://docs.sentry.io/api/",
+      "source_title": "API Reference",
+      "source_type": "api_ref",
+      "evidence_snippet": "The Sentry web API is used to access the Sentry platform programmatically. You can use the APIs to manage account-level resources, like organizations and teams, as well as manage and export data.\n\nThe current version of the Sentry's web API is considered **v0**. Our public endpoints are generally stable, but beta endpoints are subject to change.\nIf you're looking for information about the API surface for Sentry's SDKs, see the [SDK Development](https://develop.sentry.dev/sdk/overview/) docs.",
+      "retrieved_at": "2026-07-09T17:34:33.849Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.sentry.io/api/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783618473849_11",
+      "claim_field": "mcp.mcp_status",
+      "claim": "none_found",
+      "source_url": "https://docs.sentry.io/api/",
+      "source_title": "API Reference",
+      "source_type": "api_ref",
+      "evidence_snippet": "No direct mention of Model Context Protocol found in the document.",
+      "retrieved_at": "2026-07-09T17:34:33.849Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.sentry.io/api/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 70,
+      "app_name": "Sentry",
+      "website_hint": "docs.sentry.io/api",
+      "assigned_category": "Developer, Infra and Data platforms",
+      "researched_at": "2026-07-09T17:34:33.849Z"
+    },
+    "product": {
+      "normalized_category": "Developer, Infra and Data platforms",
+      "one_line_description": "Sentry provides a web API for programmatic access to its platform, allowing management of account-level resources and data."
+    },
+    "authentication": {
+      "auth_methods": [
+        "api_key"
+      ],
+      "auth_summary": "The Sentry API uses an authentication token for access, with a tutorial provided on how to create one."
+    },
+    "developer_access": {
+      "access_model": "self_serve_free",
+      "credentials_obtainable_without_human_approval": true,
+      "access_notes": "Developers can create a Sentry Authentication Token through a self-serve process, as indicated by the available tutorial 'Create a Sentry Authentication Token'."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "REST",
+        "SDK"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "Sentry offers a broad public web API (v0) with generally stable endpoints for programmatic access to manage various resources like organizations, teams, events, and more. It also mentions an API surface for Sentry's SDKs."
+    },
+    "mcp": {
+      "mcp_status": "none_found",
+      "mcp_summary": "No information regarding Model Context Protocol server availability was found in the provided source."
+    },
+    "buildability": {
+      "verdict": "build_now",
+      "primary_blocker": null,
+      "verdict_reasoning": "Self-serve developer access is verified with a broad/moderate documented public API."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0.9,
+        "access_model": 0.7,
+        "public_api": 1,
+        "api_breadth": 1,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.85,
+      "requires_human_review": true,
+      "human_review_reason": "The 'self_serve_free' access model for credentials is an inference based on the presence of a 'create auth token' tutorial and lack of explicit gating information. The overall product's API access tiers (free vs. paid) are not specified, which could impact the true access model."
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_material_evidence_validation_failed",
+    "risk_low_confidence"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_material_evidence_validation_failed",
+      "risk_low_confidence"
+    ]
+  }
+}

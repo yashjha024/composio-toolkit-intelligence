@@ -123,9 +123,11 @@ export class EvidenceValidator {
     }
 
     const matchStatus = this.checkSnippetMatch(record.evidence_snippet, pageText);
+    const isValidEvidence = matchStatus.match_type !== 'not_found' && record.source_type !== 'secondary';
 
     return {
       ...record,
+      supports_claim: isValidEvidence,
       url_status: {
         format_valid: true,
         resolves: urlResolves,

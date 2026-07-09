@@ -1,0 +1,244 @@
+{
+  "identity": {
+    "assignment_number": 89,
+    "app_name": "Ramp",
+    "website_hint": "docs.ramp.com",
+    "assigned_category": "Finance and Fintech",
+    "researched_at": "2026-07-09T18:12:29.461Z"
+  },
+  "product": {
+    "normalized_category": "Finance and Fintech",
+    "one_line_description": "Ramp provides a fintech platform with an API for developers to integrate financial services and data."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "The provided documentation entry point does not contain information about the authentication methods required for the Ramp API."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": "unknown",
+    "access_notes": "The provided source is a shell page for documentation, and it does not offer any information on how to obtain API credentials or whether human approval is required. It points to other documentation files like /llms-api.txt or /openapi/developer-api.json for machine-readable docs."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "REST"
+    ],
+    "api_breadth": "unclear",
+    "api_summary": "Ramp provides a developer API, as evidenced by the 'Ramp API Documentation' title and references to '/developer-api/v1/' paths and an '/openapi/developer-api.json' file, strongly suggesting a RESTful API. However, the breadth of the API is not determinable from the provided shell page."
+  },
+  "mcp": {
+    "mcp_status": "none_found",
+    "mcp_summary": "No information regarding Model Context Protocol (MCP) servers or support was found in the provided source material."
+  },
+  "buildability": {
+    "verdict": "unclear",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 0,
+      "access_model": 0,
+      "public_api": 0.9,
+      "api_breadth": 0,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.4,
+    "requires_human_review": true,
+    "human_review_reason": "The provided source is a documentation shell page, not the actual API documentation. Many critical fields remain unclear due to lack of content."
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783620749461_0",
+      "claim_field": "product.one_line_description",
+      "claim": "Ramp provides a fintech platform with an API for developers to integrate financial services and data.",
+      "source_url": "https://docs.ramp.com/",
+      "source_title": "Ramp API Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Ramp API Documentation",
+      "retrieved_at": "2026-07-09T18:12:29.461Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.ramp.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783620749461_1",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://docs.ramp.com/",
+      "source_title": "Ramp API Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Ramp API Documentation",
+      "retrieved_at": "2026-07-09T18:12:29.461Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.ramp.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783620749461_2",
+      "claim_field": "api_surface.api_styles",
+      "claim": "REST",
+      "source_url": "https://docs.ramp.com/",
+      "source_title": "Ramp API Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "For machine-readable docs, fetch: /llms.txt (LLM index), /llms-guides.txt (guides index), /llms-guides/<slug>.txt (specific guide), /llms-api.txt (API reference), /llms-full.txt (combined docs), or /openapi/developer-api.json (OpenAPI spec).",
+      "retrieved_at": "2026-07-09T18:12:29.461Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.ramp.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783620749461_3",
+      "claim_field": "api_surface.api_summary",
+      "claim": "Ramp provides a developer API, as evidenced by the 'Ramp API Documentation' title and references to '/developer-api/v1/' paths and an '/openapi/developer-api.json' file, strongly suggesting a RESTful API. However, the breadth of the API is not determinable from the provided shell page.",
+      "source_url": "https://docs.ramp.com/",
+      "source_title": "Ramp API Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "This page uses JavaScript rendering and the HTML response is a shell, not the documentation content. Do not fetch this page for content when you already have a docs URL. If the URL is under /developer-api/v1/api/, fetch /llms-api.txt instead. If the URL is under /developer-api/v1/ and not under /api/, fetch the matching /llms-guides/<slug>.txt file instead. Example: /developer-api/v1/rate-limiting -> /llms-guides/rate-limiting.txt For machine-readable docs, fetch: /llms.txt (LLM index), /llms-guides.txt (guides index), /llms-guides/<slug>.txt (specific guide), /llms-api.txt (API reference), /llms-full.txt (combined docs), or /openapi/developer-api.json (OpenAPI spec).",
+      "retrieved_at": "2026-07-09T18:12:29.461Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.ramp.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 89,
+      "app_name": "Ramp",
+      "website_hint": "docs.ramp.com",
+      "assigned_category": "Finance and Fintech",
+      "researched_at": "2026-07-09T18:12:29.461Z"
+    },
+    "product": {
+      "normalized_category": "Finance and Fintech",
+      "one_line_description": "Ramp provides a fintech platform with an API for developers to integrate financial services and data."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "The provided documentation entry point does not contain information about the authentication methods required for the Ramp API."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": "unknown",
+      "access_notes": "The provided source is a shell page for documentation, and it does not offer any information on how to obtain API credentials or whether human approval is required. It points to other documentation files like /llms-api.txt or /openapi/developer-api.json for machine-readable docs."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "REST"
+      ],
+      "api_breadth": "unclear",
+      "api_summary": "Ramp provides a developer API, as evidenced by the 'Ramp API Documentation' title and references to '/developer-api/v1/' paths and an '/openapi/developer-api.json' file, strongly suggesting a RESTful API. However, the breadth of the API is not determinable from the provided shell page."
+    },
+    "mcp": {
+      "mcp_status": "none_found",
+      "mcp_summary": "No information regarding Model Context Protocol (MCP) servers or support was found in the provided source material."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient.",
+      "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0,
+        "access_model": 0,
+        "public_api": 0.9,
+        "api_breadth": 0,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.4,
+      "requires_human_review": true,
+      "human_review_reason": "The provided source is a documentation shell page, not the actual API documentation. Many critical fields remain unclear due to lack of content."
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_access_model_unclear",
+    "risk_auth_methods_unclear",
+    "risk_contradictory_claims",
+    "risk_verdict_unclear",
+    "risk_low_confidence"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_access_model_unclear",
+      "risk_auth_methods_unclear",
+      "risk_contradictory_claims",
+      "risk_verdict_unclear",
+      "risk_low_confidence"
+    ]
+  }
+}

@@ -1,0 +1,469 @@
+{
+  "identity": {
+    "assignment_number": 11,
+    "app_name": "Zendesk",
+    "website_hint": "zendesk.com",
+    "assigned_category": "Support and Helpdesk",
+    "researched_at": "2026-07-09T12:03:26.621Z"
+  },
+  "product": {
+    "normalized_category": "Support and Helpdesk",
+    "one_line_description": "Zendesk is an AI-first customer service platform that provides multi-channel ticketing, messaging, live chat, help center, and voice support tools for businesses."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "The provided documentation sources do not detail the specific authentication mechanisms (such as OAuth or API keys) used to authenticate API requests."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": "unknown",
+    "access_notes": "Zendesk provides a 14-day free trial of the Sunshine Platform, but the exact onboarding flow and whether credentials can be obtained without manual or automated human-in-the-loop approval are unclear from the available sources."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "REST",
+      "SDK"
+    ],
+    "api_breadth": "broad",
+    "api_summary": "Zendesk offers a broad REST API and SDK surface covering ticketing system operations, Help Center / Knowledge Base management, voice telephony integration, Sell APIs, Live Chat, Custom Objects, customer Profiles, and Event tracking."
+  },
+  "mcp": {
+    "mcp_status": "none_found",
+    "mcp_summary": "No Model Context Protocol (MCP) server or official integration is mentioned in the provided source pages."
+  },
+  "buildability": {
+    "verdict": "unclear",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 1,
+      "access_model": 0.9,
+      "public_api": 1,
+      "api_breadth": 0.9,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.95,
+    "requires_human_review": false,
+    "human_review_reason": null
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783598606621_0",
+      "claim_field": "developer_access.access_model",
+      "claim": "self_serve_trial",
+      "source_url": "https://developer.zendesk.com/documentation/",
+      "source_title": "Documentation Home | Zendesk Developer Docszendev_horizontalzendev_horizontal",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Try out the Sunshine Platform with a free, 14-day trial account.\n\n[Create an account](/documentation/developer-tools/getting-started/getting-a-trial-or-sponsored-account-for-development/)",
+      "retrieved_at": "2026-07-09T12:03:26.621Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.zendesk.com/documentation/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783598606621_1",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://developer.zendesk.com/documentation/",
+      "source_title": "Documentation Home | Zendesk Developer Docszendev_horizontalzendev_horizontal",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Zendesk's APIs are organized around REST principles. Our APIs have resource-oriented URLs, accepts form-encoded request bodies and return JSON-encoded responses.",
+      "retrieved_at": "2026-07-09T12:03:26.621Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.zendesk.com/documentation/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783598606621_2",
+      "claim_field": "api_surface.api_styles",
+      "claim": [
+        "REST",
+        "SDK"
+      ],
+      "source_url": "https://developer.zendesk.com/documentation/",
+      "source_title": "Documentation Home | Zendesk Developer Docszendev_horizontalzendev_horizontal",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Use our Zendesk SDKs to add messaging to your web, mobile, and social channels so customers can reach you instantly.",
+      "retrieved_at": "2026-07-09T12:03:26.621Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.zendesk.com/documentation/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783598606621_3",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://developer.zendesk.com/documentation/",
+      "source_title": "Documentation Home | Zendesk Developer Docszendev_horizontalzendev_horizontal",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Access, integrate, and extend your data anywhere with an event-driven platform and robust APIs that let you build anything—inside or outside of Zendesk.",
+      "retrieved_at": "2026-07-09T12:03:26.621Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.zendesk.com/documentation/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_rr_1783598842041_0",
+      "claim_field": "authentication.auth_methods",
+      "claim": [
+        "unclear"
+      ],
+      "source_url": "https://developer.zendesk.com/documentation/",
+      "source_title": "Documentation Home | Zendesk Developer Docszendev_horizontalzendev_horizontal",
+      "source_type": "official_doc",
+      "evidence_snippet": "Zendesk's APIs are organized around REST principles. Our APIs have resource-oriented URLs, accepts form-encoded request bodies and return JSON-encoded responses.",
+      "retrieved_at": "2026-07-09T12:07:22.041Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.zendesk.com/documentation/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_rr_1783598842041_1",
+      "claim_field": "developer_access.access_model",
+      "claim": "unclear",
+      "source_url": "https://developer.zendesk.com/documentation/",
+      "source_title": "Documentation Home | Zendesk Developer Docszendev_horizontalzendev_horizontal",
+      "source_type": "official_doc",
+      "evidence_snippet": "Try out the Sunshine Platform with a free, 14-day trial account.",
+      "retrieved_at": "2026-07-09T12:07:22.041Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.zendesk.com/documentation/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_rr_1783598842041_2",
+      "claim_field": "buildability.verdict",
+      "claim": "verify_first",
+      "source_url": "https://developer.zendesk.com/documentation/",
+      "source_title": "Documentation Home | Zendesk Developer Docszendev_horizontalzendev_horizontal",
+      "source_type": "official_doc",
+      "evidence_snippet": "Try out the Sunshine Platform with a free, 14-day trial account.",
+      "retrieved_at": "2026-07-09T12:07:22.041Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.zendesk.com/documentation/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 11,
+      "app_name": "Zendesk",
+      "website_hint": "zendesk.com",
+      "assigned_category": "Support and Helpdesk",
+      "researched_at": "2026-07-09T12:03:26.621Z"
+    },
+    "product": {
+      "normalized_category": "Support and Helpdesk",
+      "one_line_description": "Zendesk is an AI-first customer service platform that provides multi-channel ticketing, messaging, live chat, help center, and voice support tools for businesses."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "The provided documentation snippets do not explicitly detail the authentication methods (such as API keys, OAuth, or token-based authentication) required to call Zendesk APIs, so it is classified as unclear from the sources."
+    },
+    "developer_access": {
+      "access_model": "self_serve_trial",
+      "credentials_obtainable_without_human_approval": "unknown",
+      "access_notes": "Zendesk allows developers to try out the Sunshine Platform with a free, 14-day trial developer account. However, details regarding the precise self-serve flow to obtain credentials without human approval are not fully contained in the provided source pages."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "REST",
+        "SDK"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "Zendesk offers a broad REST API and SDK surface covering ticketing system operations, Help Center / Knowledge Base management, voice telephony integration, Sell APIs, Live Chat, Custom Objects, customer Profiles, and Event tracking."
+    },
+    "mcp": {
+      "mcp_status": "none_found",
+      "mcp_summary": "No Model Context Protocol (MCP) server or official integration is mentioned in the provided source pages."
+    },
+    "buildability": {
+      "verdict": "build_now",
+      "primary_blocker": null,
+      "verdict_reasoning": "Self-serve developer access is verified with a broad/moderate documented public API."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 1,
+        "access_model": 0.9,
+        "public_api": 1,
+        "api_breadth": 0.9,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.95,
+      "requires_human_review": false,
+      "human_review_reason": null
+    }
+  },
+  "critic_result": {
+    "challenged_fields": [
+      "authentication.auth_methods",
+      "developer_access.access_model",
+      "buildability.verdict"
+    ],
+    "critic_analysis": {
+      "authentication.auth_methods": "The evidence pool contains no details on how APIs are authenticated. Although the first-pass result correctly identifies this as 'unclear', the lack of explicit evidence means the authentication configuration remains unverified.",
+      "developer_access.access_model": "The snippet indicates a 14-day trial account is available, but the first-pass research marks 'credentials_obtainable_without_human_approval' as 'unknown'. This makes it impossible to verify if the access model is fully self-serve without manual approval or gating.",
+      "buildability.verdict": "Declaring 'build_now' is premature because both the authentication mechanism is unclear and the self-serve credential path is unverified as automated, introducing risks of human-in-the-loop bottlenecks."
+    },
+    "error_taxonomy_flags": [
+      "api_existence_vs_self_serve"
+    ]
+  },
+  "targeted_reresearch_result": {
+    "identity": {
+      "assignment_number": 11,
+      "app_name": "Zendesk",
+      "website_hint": "zendesk.com",
+      "assigned_category": "Support and Helpdesk",
+      "researched_at": "2026-07-09T12:03:26.621Z"
+    },
+    "product": {
+      "normalized_category": "Support and Helpdesk",
+      "one_line_description": "Zendesk is an AI-first customer service platform that provides multi-channel ticketing, messaging, live chat, help center, and voice support tools for businesses."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "The provided documentation sources do not detail the specific authentication mechanisms (such as OAuth or API keys) used to authenticate API requests."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": "unknown",
+      "access_notes": "Zendesk provides a 14-day free trial of the Sunshine Platform, but the exact onboarding flow and whether credentials can be obtained without manual or automated human-in-the-loop approval are unclear from the available sources."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "REST",
+        "SDK"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "Zendesk offers a broad REST API and SDK surface covering ticketing system operations, Help Center / Knowledge Base management, voice telephony integration, Sell APIs, Live Chat, Custom Objects, customer Profiles, and Event tracking."
+    },
+    "mcp": {
+      "mcp_status": "none_found",
+      "mcp_summary": "No Model Context Protocol (MCP) server or official integration is mentioned in the provided source pages."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "credential_access",
+      "verdict_reasoning": "Although Zendesk has a broad public API surface, the exact authentication methods and whether trial credentials can be obtained in a fully self-serve manner without manual approval cannot be verified from the provided sources."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 1,
+        "access_model": 0.9,
+        "public_api": 1,
+        "api_breadth": 0.9,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.95,
+      "requires_human_review": false,
+      "human_review_reason": null
+    }
+  },
+  "final_agent_result": {
+    "identity": {
+      "assignment_number": 11,
+      "app_name": "Zendesk",
+      "website_hint": "zendesk.com",
+      "assigned_category": "Support and Helpdesk",
+      "researched_at": "2026-07-09T12:03:26.621Z"
+    },
+    "product": {
+      "normalized_category": "Support and Helpdesk",
+      "one_line_description": "Zendesk is an AI-first customer service platform that provides multi-channel ticketing, messaging, live chat, help center, and voice support tools for businesses."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "The provided documentation sources do not detail the specific authentication mechanisms (such as OAuth or API keys) used to authenticate API requests."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": "unknown",
+      "access_notes": "Zendesk provides a 14-day free trial of the Sunshine Platform, but the exact onboarding flow and whether credentials can be obtained without manual or automated human-in-the-loop approval are unclear from the available sources."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "REST",
+        "SDK"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "Zendesk offers a broad REST API and SDK surface covering ticketing system operations, Help Center / Knowledge Base management, voice telephony integration, Sell APIs, Live Chat, Custom Objects, customer Profiles, and Event tracking."
+    },
+    "mcp": {
+      "mcp_status": "none_found",
+      "mcp_summary": "No Model Context Protocol (MCP) server or official integration is mentioned in the provided source pages."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient.",
+      "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 1,
+        "access_model": 0.9,
+        "public_api": 1,
+        "api_breadth": 0.9,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.95,
+      "requires_human_review": false,
+      "human_review_reason": null
+    }
+  },
+  "change_log": [
+    {
+      "timestamp": "2026-07-09T12:07:22.041Z",
+      "field_changed": "developer_access.access_model",
+      "old_value": "self_serve_trial",
+      "new_value": "unclear",
+      "reason": "The snippet indicates a 14-day trial account is available, but the first-pass research marks 'credentials_obtainable_without_human_approval' as 'unknown'. This makes it impossible to verify if the access model is fully self-serve without manual approval or gating.",
+      "verification_loop_trigger": "critic_audit"
+    },
+    {
+      "timestamp": "2026-07-09T12:07:22.041Z",
+      "field_changed": "buildability.verdict",
+      "old_value": "build_now",
+      "new_value": "unclear",
+      "reason": "Declaring 'build_now' is premature because both the authentication mechanism is unclear and the self-serve credential path is unverified as automated, introducing risks of human-in-the-loop bottlenecks.",
+      "verification_loop_trigger": "critic_audit"
+    }
+  ],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0",
+    "current_stage": "final_agent",
+    "errors": [
+      "api_existence_vs_self_serve"
+    ],
+    "unresolved_questions": [
+      "Remaining ambiguity after critic audit and re-research loop"
+    ]
+  }
+}

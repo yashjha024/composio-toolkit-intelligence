@@ -1,0 +1,455 @@
+{
+  "identity": {
+    "assignment_number": 7,
+    "app_name": "Zoho CRM",
+    "website_hint": "zoho.com/crm",
+    "assigned_category": "CRM and Sales",
+    "researched_at": "2026-07-09T16:51:40.688Z"
+  },
+  "product": {
+    "normalized_category": "CRM and Sales",
+    "one_line_description": "Zoho CRM is an AI-powered, top-rated sales CRM software designed to supercharge business growth with intelligent automation and intuitive design."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "The provided sources detail the API functionalities but do not explicitly mention the authentication methods required to access these APIs. Therefore, the authentication methods are unclear."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": "unknown",
+    "access_notes": "While Zoho CRM offers a freemium edition and a flexible free trial for the product itself, the provided sources do not specify how developers obtain API credentials (e.g., API keys, OAuth client credentials) or if this process is self-serve, requires a paid plan, or involves human approval. Information regarding the exact steps to generate API credentials for developer use is not documented."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "REST",
+      "webhooks"
+    ],
+    "api_breadth": "broad",
+    "api_summary": "Zoho CRM provides extensive public APIs (V8) with flexible RESTful endpoints. The API surface covers core CRUD operations on module entities, metadata management for modules, fields, and layouts, bulk data operations, notification APIs, and query APIs using SQL syntax (COQL). Additionally, there are dedicated APIs for customization (modules, fields, layouts, tags), process automation (blueprint, pipeline, assignment rules, cadences, scoring rules, workflow rules, connected workflows, actions like field updates, email notifications, automation tasks, and webhooks), security control (roles, profiles, territories, data sharing), company settings (business hours, fiscal year, holidays, user groups, currencies, variables), and AI-powered Zia features (data enrichment, Zia Assistant)."
+  },
+  "mcp": {
+    "mcp_status": "none_found",
+    "mcp_summary": "No mention of Model Context Protocol (MCP) or related terms was found in the provided source materials."
+  },
+  "buildability": {
+    "verdict": "unclear",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 0,
+      "access_model": 0,
+      "public_api": 1,
+      "api_breadth": 1,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.6,
+    "requires_human_review": true,
+    "human_review_reason": "Authentication methods and developer access model for API credentials are not explicitly detailed in the provided documentation, despite extensive API references."
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783615900688_0",
+      "claim_field": "product.one_line_description",
+      "claim": "Zoho CRM is an AI-powered, top-rated sales CRM software designed to supercharge business growth with intelligent automation and intuitive design.",
+      "source_url": "https://www.zoho.com/en-in/crm/",
+      "source_title": "Zoho CRM | Top-rated Sales CRM Software by Customers",
+      "source_type": "official_doc",
+      "evidence_snippet": "# The easiest AI CRM for growth.\n\nIntelligent automation meets intuitive design. Built with AI at its core, Zoho CRM supercharges your business to get ahead without the overhead.",
+      "retrieved_at": "2026-07-09T16:51:40.688Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.zoho.com/en-in/crm/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783615900688_1",
+      "claim_field": "product.one_line_description",
+      "claim": "Zoho CRM is an AI-powered, top-rated sales CRM software designed to supercharge business growth with intelligent automation and intuitive design.",
+      "source_url": "https://www.zoho.com/en-in/crm/",
+      "source_title": "Zoho CRM | Top-rated Sales CRM Software by Customers",
+      "source_type": "official_doc",
+      "evidence_snippet": "Zoho CRM | Top-rated Sales CRM Software by Customers",
+      "retrieved_at": "2026-07-09T16:51:40.688Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.zoho.com/en-in/crm/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783615900688_2",
+      "claim_field": "authentication.auth_methods",
+      "claim": [
+        "unclear"
+      ],
+      "source_url": "https://www.zoho.com/crm/developer/docs/api/v8/",
+      "source_title": "Zoho CRM V8 APIs",
+      "source_type": "api_ref",
+      "evidence_snippet": "The document lists various API categories but does not contain explicit information on authentication methods.",
+      "retrieved_at": "2026-07-09T16:51:40.688Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.zoho.com/crm/developer/docs/api/v8/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783615900688_3",
+      "claim_field": "authentication.auth_methods",
+      "claim": [
+        "unclear"
+      ],
+      "source_url": "https://www.zoho.com/crm/developer/docs/api/v8/api-references.html",
+      "source_title": "APIs and References | Zoho CRM V8 APIs",
+      "source_type": "api_ref",
+      "evidence_snippet": "This page details numerous API operations across different categories but does not provide any section or mention of authentication protocols or required credentials.",
+      "retrieved_at": "2026-07-09T16:51:40.688Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.zoho.com/crm/developer/docs/api/v8/api-references.html"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783615900688_4",
+      "claim_field": "developer_access.access_model",
+      "claim": "unclear",
+      "source_url": "https://www.zoho.com/en-in/crm/",
+      "source_title": "Zoho CRM | Top-rated Sales CRM Software by Customers",
+      "source_type": "official_doc",
+      "evidence_snippet": "Does Zoho CRM have a free plan?\nZoho CRM's freemium edition supports up to 3 users and comes with the essentials like leads, documents, and mobile apps, it’s a perfect fit for your home business. Alternatively, check out [Bigin by Zoho CRM,](https://www.bigin.com/?source_from=crm_home) built specifically for small businesses, freelancers, and entrepreneurs.",
+      "retrieved_at": "2026-07-09T16:51:40.688Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.zoho.com/en-in/crm/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783615900688_5",
+      "claim_field": "developer_access.access_model",
+      "claim": "unclear",
+      "source_url": "https://www.zoho.com/crm/developer/docs/api/v8/",
+      "source_title": "Zoho CRM V8 APIs",
+      "source_type": "api_ref",
+      "evidence_snippet": "This document outlines the available APIs but does not describe the process for obtaining API credentials or associated access tiers (free, paid, etc.).",
+      "retrieved_at": "2026-07-09T16:51:40.688Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.zoho.com/crm/developer/docs/api/v8/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783615900688_6",
+      "claim_field": "public_api",
+      "claim": "yes",
+      "source_url": "https://www.zoho.com/crm/developer/docs/api/v8/",
+      "source_title": "Zoho CRM V8 APIs",
+      "source_type": "api_ref",
+      "evidence_snippet": "# Zoho CRM V8 APIs",
+      "retrieved_at": "2026-07-09T16:51:40.688Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.zoho.com/crm/developer/docs/api/v8/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783615900688_7",
+      "claim_field": "public_api",
+      "claim": "yes",
+      "source_url": "https://www.zoho.com/crm/developer/docs/api/v8/api-references.html",
+      "source_title": "APIs and References | Zoho CRM V8 APIs",
+      "source_type": "api_ref",
+      "evidence_snippet": "# APIs and References\n\nOn this page",
+      "retrieved_at": "2026-07-09T16:51:40.688Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.zoho.com/crm/developer/docs/api/v8/api-references.html"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783615900688_8",
+      "claim_field": "api_styles",
+      "claim": "REST",
+      "source_url": "https://www.zoho.com/crm/developer/docs/api/v8/",
+      "source_title": "Zoho CRM V8 APIs",
+      "source_type": "api_ref",
+      "evidence_snippet": "[Perform CRUD operations on CRM module entities and integrate with any third party application through flexible RESTful endpoints.](/crm/developer/docs/api/v8/get-records.html)",
+      "retrieved_at": "2026-07-09T16:51:40.688Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.zoho.com/crm/developer/docs/api/v8/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783615900688_9",
+      "claim_field": "api_styles",
+      "claim": "webhooks",
+      "source_url": "https://www.zoho.com/crm/developer/docs/api/v8/api-references.html",
+      "source_title": "APIs and References | Zoho CRM V8 APIs",
+      "source_type": "api_ref",
+      "evidence_snippet": "#### Actions - Webhook Actions\n\nTrigger real-time events in external applications using webhooks when workflow rules are executed. The Webhook Actions APIs allow you to create, retrieve, update, or delete webhook actions.",
+      "retrieved_at": "2026-07-09T16:51:40.688Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.zoho.com/crm/developer/docs/api/v8/api-references.html"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783615900688_10",
+      "claim_field": "api_breadth",
+      "claim": "broad",
+      "source_url": "https://www.zoho.com/crm/developer/docs/api/v8/api-references.html",
+      "source_title": "APIs and References | Zoho CRM V8 APIs",
+      "source_type": "api_ref",
+      "evidence_snippet": "## Metadata APIs\nMetadata of fields, modules, layouts, related lists, etc,.\n\n## Customization\n*   ### Modules\n*   ### Fields\n*   ### Layouts\n*   ### Related Lists\n*   ### Custom View\n*   ### Templates\n*   ### Duplicate Check Option\n*   ### Tags\n*   ### Wizards\n*   ### Record Locking Configuration\n*   ### Map Dependency\n*   ### Global Picklists\n*   ### Unsubscribe Links\n*   ### Calls Preferences\n\n## Process Automation\n*   ### Blueprint\n*   ### Pipeline\n*   ### Assignment Rules\n*   ### Assignment Threshold API\n*   ### Related Lists\n*   ### Cadences\n*   ### Scoring Rules\n*   ### Workflow Rules\n*   ### Connected Workflow APIs\n*   ### Actions APIs\n\n## Security Control\n*   ### Roles\n*   ### Profiles\n*   ### Territories\n*   ### Export Audit Log\n*   ### Portals\n*   ### Data Sharing\n\n## Company settings\n*   ### Business Hours\n*   ### Shift Hours\n*   ### Fiscal Year\n*   ### Holidays\n*   ### User Groups\n*   ### Users' Unavailability\n*   ### Currencies\n*   ### Variables\n\n## Zia\n*   ### Organization Enrichment\n*   ### Zia Assistant\n*   ### Zia Data Enrichment Configuration\n\n## Core APIs\nCRUD operations on records, Mass Actions, Subforms, Linking modules, etc,.",
+      "retrieved_at": "2026-07-09T16:51:40.688Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.zoho.com/crm/developer/docs/api/v8/api-references.html"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 7,
+      "app_name": "Zoho CRM",
+      "website_hint": "zoho.com/crm",
+      "assigned_category": "CRM and Sales",
+      "researched_at": "2026-07-09T16:51:40.688Z"
+    },
+    "product": {
+      "normalized_category": "CRM and Sales",
+      "one_line_description": "Zoho CRM is an AI-powered, top-rated sales CRM software designed to supercharge business growth with intelligent automation and intuitive design."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "The provided sources detail the API functionalities but do not explicitly mention the authentication methods required to access these APIs. Therefore, the authentication methods are unclear."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": "unknown",
+      "access_notes": "While Zoho CRM offers a freemium edition and a flexible free trial for the product itself, the provided sources do not specify how developers obtain API credentials (e.g., API keys, OAuth client credentials) or if this process is self-serve, requires a paid plan, or involves human approval. Information regarding the exact steps to generate API credentials for developer use is not documented."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "REST",
+        "webhooks"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "Zoho CRM provides extensive public APIs (V8) with flexible RESTful endpoints. The API surface covers core CRUD operations on module entities, metadata management for modules, fields, and layouts, bulk data operations, notification APIs, and query APIs using SQL syntax (COQL). Additionally, there are dedicated APIs for customization (modules, fields, layouts, tags), process automation (blueprint, pipeline, assignment rules, cadences, scoring rules, workflow rules, connected workflows, actions like field updates, email notifications, automation tasks, and webhooks), security control (roles, profiles, territories, data sharing), company settings (business hours, fiscal year, holidays, user groups, currencies, variables), and AI-powered Zia features (data enrichment, Zia Assistant)."
+    },
+    "mcp": {
+      "mcp_status": "none_found",
+      "mcp_summary": "No mention of Model Context Protocol (MCP) or related terms was found in the provided source materials."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient.",
+      "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0,
+        "access_model": 0,
+        "public_api": 1,
+        "api_breadth": 1,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.6,
+      "requires_human_review": true,
+      "human_review_reason": "Authentication methods and developer access model for API credentials are not explicitly detailed in the provided documentation, despite extensive API references."
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_access_model_unclear",
+    "risk_auth_methods_unclear",
+    "risk_material_evidence_validation_failed",
+    "risk_contradictory_claims",
+    "risk_verdict_unclear",
+    "risk_low_confidence"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_access_model_unclear",
+      "risk_auth_methods_unclear",
+      "risk_material_evidence_validation_failed",
+      "risk_contradictory_claims",
+      "risk_verdict_unclear",
+      "risk_low_confidence"
+    ]
+  }
+}

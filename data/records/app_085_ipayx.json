@@ -1,0 +1,410 @@
+{
+  "identity": {
+    "assignment_number": 85,
+    "app_name": "iPayX",
+    "website_hint": "ipayx.ai/docs",
+    "assigned_category": "Finance and Fintech",
+    "researched_at": "2026-07-09T18:04:32.794Z"
+  },
+  "product": {
+    "normalized_category": "Finance and Fintech",
+    "one_line_description": "iPayX provides a robust platform for managing business expenses, automating accounts payable, and simplifying invoice processing."
+  },
+  "authentication": {
+    "auth_methods": [
+      "api_key",
+      "bearer_token"
+    ],
+    "auth_summary": "All API requests to iPayX must be authenticated using an API Key. The API Key must be included in the 'Authorization' header of each request, prefixed with 'Bearer'."
+  },
+  "developer_access": {
+    "access_model": "sales_gated",
+    "credentials_obtainable_without_human_approval": false,
+    "access_notes": "To obtain API credentials, developers need to contact the sales team to discuss integration needs and obtain API credentials, which typically involves an Enterprise plan."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "REST",
+      "webhooks"
+    ],
+    "api_breadth": "moderate",
+    "api_summary": "The iPayX API is organized around RESTful principles, allowing management of invoices, processing of payments, management of vendors, and retrieval of financial reports. It also supports webhooks for real-time notifications."
+  },
+  "mcp": {
+    "mcp_status": "none_found",
+    "mcp_summary": "No information found regarding Model Context Protocol (MCP) server availability."
+  },
+  "buildability": {
+    "verdict": "outreach_required",
+    "primary_blocker": "Access requires contacting enterprise sales team.",
+    "verdict_reasoning": "Public API endpoints exist, but developer credentials cannot be obtained without sales contact."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 1,
+      "access_model": 1,
+      "public_api": 1,
+      "api_breadth": 0.9,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.95,
+    "requires_human_review": false,
+    "human_review_reason": null
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783620272794_0",
+      "claim_field": "product.one_line_description",
+      "claim": "iPayX provides a robust platform for managing business expenses, automating accounts payable, and simplifying invoice processing.",
+      "source_url": "ipayx.ai/docs",
+      "source_title": "iPayX Developer Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "iPayX provides a robust platform for managing business expenses, automating accounts payable, and simplifying invoice processing.",
+      "retrieved_at": "2026-07-09T18:04:32.794Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": false,
+        "resolves": false,
+        "redirect_chain": []
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783620272794_1",
+      "claim_field": "authentication.auth_methods",
+      "claim": "api_key",
+      "source_url": "ipayx.ai/docs",
+      "source_title": "iPayX Developer Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "We use API Keys for authentication.",
+      "retrieved_at": "2026-07-09T18:04:32.794Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": false,
+        "resolves": false,
+        "redirect_chain": []
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783620272794_2",
+      "claim_field": "authentication.auth_methods",
+      "claim": "bearer_token",
+      "source_url": "ipayx.ai/docs",
+      "source_title": "iPayX Developer Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Your API Key must be included in the Authorization header of each request, prefixed with Bearer. Example: Authorization: Bearer YOUR_API_KEY",
+      "retrieved_at": "2026-07-09T18:04:32.794Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": false,
+        "resolves": false,
+        "redirect_chain": []
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783620272794_3",
+      "claim_field": "developer_access.access_model",
+      "claim": "sales_gated",
+      "source_url": "ipayx.ai/docs",
+      "source_title": "iPayX Developer Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "To begin using the iPayX API, you will need to request API access. Please contact our sales team to discuss your integration needs and obtain API credentials. Our team will guide you through the setup process, which typically involves an Enterprise plan.",
+      "retrieved_at": "2026-07-09T18:04:32.794Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": false,
+        "resolves": false,
+        "redirect_chain": []
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783620272794_4",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": false,
+      "source_url": "ipayx.ai/docs",
+      "source_title": "iPayX Developer Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Please contact our sales team to discuss your integration needs and obtain API credentials.",
+      "retrieved_at": "2026-07-09T18:04:32.794Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": false,
+        "resolves": false,
+        "redirect_chain": []
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783620272794_5",
+      "claim_field": "developer_access.access_notes",
+      "claim": "To obtain API credentials, developers must contact the sales team, as API access typically involves an Enterprise plan.",
+      "source_url": "ipayx.ai/docs",
+      "source_title": "iPayX Developer Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Please contact our sales team to discuss your integration needs and obtain API credentials. Our team will guide you through the setup process, which typically involves an Enterprise plan.",
+      "retrieved_at": "2026-07-09T18:04:32.794Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": false,
+        "resolves": false,
+        "redirect_chain": []
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783620272794_6",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "ipayx.ai/docs",
+      "source_title": "iPayX Developer Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Our API allows developers to integrate iPayX functionalities directly into their applications",
+      "retrieved_at": "2026-07-09T18:04:32.794Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": false,
+        "resolves": false,
+        "redirect_chain": []
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783620272794_7",
+      "claim_field": "api_surface.api_styles",
+      "claim": "REST",
+      "source_url": "ipayx.ai/docs",
+      "source_title": "iPayX Developer Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "The iPayX API is organized around RESTful principles.",
+      "retrieved_at": "2026-07-09T18:04:32.794Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": false,
+        "resolves": false,
+        "redirect_chain": []
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783620272794_8",
+      "claim_field": "api_surface.api_styles",
+      "claim": "webhooks",
+      "source_url": "ipayx.ai/docs",
+      "source_title": "iPayX Developer Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "iPayX supports webhooks for real-time notifications on events such as invoice status changes or payment confirmations.",
+      "retrieved_at": "2026-07-09T18:04:32.794Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": false,
+        "resolves": false,
+        "redirect_chain": []
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783620272794_9",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "moderate",
+      "source_url": "ipayx.ai/docs",
+      "source_title": "iPayX Developer Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Our API allows you to:\n* Manage Invoices: Create, retrieve, update, and delete invoices.\n* Process Payments: Initiate and track payment disbursements.\n* Manage Vendors: Add and update vendor information.\n* Retrieve Reports: Access financial reports related to expenses and payments.",
+      "retrieved_at": "2026-07-09T18:04:32.794Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": false,
+        "resolves": false,
+        "redirect_chain": []
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783620272794_10",
+      "claim_field": "api_surface.api_summary",
+      "claim": "The iPayX API is RESTful and allows management of invoices, processing of payments, management of vendors, and retrieval of financial reports. It also supports webhooks for real-time notifications.",
+      "source_url": "ipayx.ai/docs",
+      "source_title": "iPayX Developer Documentation",
+      "source_type": "developer_portal",
+      "evidence_snippet": "The iPayX API is organized around RESTful principles. Our API allows you to:\n* Manage Invoices: Create, retrieve, update, and delete invoices.\n* Process Payments: Initiate and track payment disbursements.\n* Manage Vendors: Add and update vendor information.\n* Retrieve Reports: Access financial reports related to expenses and payments.\nWebhooks: iPayX supports webhooks for real-time notifications on events such as invoice status changes or payment confirmations.",
+      "retrieved_at": "2026-07-09T18:04:32.794Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": false,
+        "resolves": false,
+        "redirect_chain": []
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 85,
+      "app_name": "iPayX",
+      "website_hint": "ipayx.ai/docs",
+      "assigned_category": "Finance and Fintech",
+      "researched_at": "2026-07-09T18:04:32.794Z"
+    },
+    "product": {
+      "normalized_category": "Finance and Fintech",
+      "one_line_description": "iPayX provides a robust platform for managing business expenses, automating accounts payable, and simplifying invoice processing."
+    },
+    "authentication": {
+      "auth_methods": [
+        "api_key",
+        "bearer_token"
+      ],
+      "auth_summary": "All API requests to iPayX must be authenticated using an API Key. The API Key must be included in the 'Authorization' header of each request, prefixed with 'Bearer'."
+    },
+    "developer_access": {
+      "access_model": "sales_gated",
+      "credentials_obtainable_without_human_approval": false,
+      "access_notes": "To obtain API credentials, developers need to contact the sales team to discuss integration needs and obtain API credentials, which typically involves an Enterprise plan."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "REST",
+        "webhooks"
+      ],
+      "api_breadth": "moderate",
+      "api_summary": "The iPayX API is organized around RESTful principles, allowing management of invoices, processing of payments, management of vendors, and retrieval of financial reports. It also supports webhooks for real-time notifications."
+    },
+    "mcp": {
+      "mcp_status": "none_found",
+      "mcp_summary": "No information found regarding Model Context Protocol (MCP) server availability."
+    },
+    "buildability": {
+      "verdict": "outreach_required",
+      "primary_blocker": "Access requires contacting enterprise sales team.",
+      "verdict_reasoning": "Public API endpoints exist, but developer credentials cannot be obtained without sales contact."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 1,
+        "access_model": 1,
+        "public_api": 1,
+        "api_breadth": 0.9,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.95,
+      "requires_human_review": false,
+      "human_review_reason": null
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_insufficient_official_sources"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_insufficient_official_sources"
+    ]
+  }
+}

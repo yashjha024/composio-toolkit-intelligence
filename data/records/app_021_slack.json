@@ -1,0 +1,550 @@
+{
+  "identity": {
+    "assignment_number": 21,
+    "app_name": "Slack",
+    "website_hint": "slack.com",
+    "assigned_category": "Communications and Messaging",
+    "researched_at": "2026-07-09T12:18:17.010Z"
+  },
+  "product": {
+    "normalized_category": "Communications and Messaging",
+    "one_line_description": "Slack is a team communication and collaboration platform that supports channels, direct messaging, and workflow integrations."
+  },
+  "authentication": {
+    "auth_methods": [
+      "oauth2"
+    ],
+    "auth_summary": "Slack relies on OAuth 2.0 to securely authenticate users and request access tokens. Slack apps utilize bot tokens, user tokens, app tokens, and granular OAuth scopes to govern and authorize access to Slack workspace data."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": "unknown",
+    "access_notes": "Developers can self-register, install the Slack CLI, and log in to their workspaces to create and run applications immediately without manual human approval."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "SDK",
+      "CLI"
+    ],
+    "api_breadth": "unclear",
+    "api_summary": "Slack provides extensive Developer APIs, CLI tools, and official Bolt/SDK libraries for Java, JavaScript, Node, and Python to build interactive apps and automate complex workflows."
+  },
+  "mcp": {
+    "mcp_status": "community",
+    "mcp_summary": "A reference Slack MCP server was previously hosted in the official Model Context Protocol repositories but is now archived and maintained by the community through Zencoder (github.com/zencoderai/slack-mcp-server)."
+  },
+  "buildability": {
+    "verdict": "unclear",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 1,
+      "access_model": 0.9,
+      "public_api": 1,
+      "api_breadth": 0.9,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.96,
+    "requires_human_review": false,
+    "human_review_reason": null
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783599497010_0",
+      "claim_field": "authentication.auth_methods",
+      "claim": "oauth2",
+      "source_url": "https://docs.slack.dev/authentication/",
+      "source_title": "Authentication overview | Slack Developer Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "Whether you’re handling OAuth 2.0, verifying requests, or setting up Sign in with Slack, we’ve got you covered.",
+      "retrieved_at": "2026-07-09T12:18:17.010Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.slack.dev/authentication/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783599497010_1",
+      "claim_field": "developer_access.access_model",
+      "claim": "self_serve_free",
+      "source_url": "https://docs.slack.dev/",
+      "source_title": "Slack developer docs | Slack Developer Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "Log in and authenticate with your Slack workspace. slack login",
+      "retrieved_at": "2026-07-09T12:18:17.010Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.slack.dev/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783599497010_2",
+      "claim_field": "mcp.mcp_status",
+      "claim": "community",
+      "source_url": "https://github.com/modelcontextprotocol/servers",
+      "source_title": "GitHub - modelcontextprotocol/servers: Model Context Protocol Servers · GitHub",
+      "source_type": "github_repo",
+      "evidence_snippet": "Slack - Channel management and messaging capabilities. Now maintained by Zencoder",
+      "retrieved_at": "2026-07-09T12:18:17.010Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://github.com/modelcontextprotocol/servers"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_rr_1783599815236_0",
+      "claim_field": "developer_access.access_model",
+      "claim": "unclear",
+      "source_url": "https://docs.slack.dev/",
+      "source_title": "Slack developer docs | Slack Developer Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "Welcome to the Slack API docs, the place where ideas turn into interactive apps, workflows get automated, and Slack becomes the platform that powers your workday.",
+      "retrieved_at": "2026-07-09T12:23:35.236Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.slack.dev/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_rr_1783599815236_1",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": "unclear",
+      "source_url": "https://docs.slack.dev/",
+      "source_title": "Slack developer docs | Slack Developer Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "Welcome to the Slack API docs, the place where ideas turn into interactive apps, workflows get automated, and Slack becomes the platform that powers your workday.",
+      "retrieved_at": "2026-07-09T12:23:35.236Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.slack.dev/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_rr_1783599815236_2",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://docs.slack.dev/",
+      "source_title": "Slack developer docs | Slack Developer Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "Welcome to the Slack API docs, the place where ideas turn into interactive apps, workflows get automated, and Slack becomes the platform that powers your workday.",
+      "retrieved_at": "2026-07-09T12:23:35.236Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.slack.dev/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_rr_1783599815236_3",
+      "claim_field": "api_surface.api_styles",
+      "claim": [
+        "SDK",
+        "CLI"
+      ],
+      "source_url": "https://docs.slack.dev/",
+      "source_title": "Slack developer docs | Slack Developer Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "Download the command-line tool for developing Slack apps.\n\n`curl -fsSL https://downloads.slack-edge.com/slack-cli/install.sh | bash`",
+      "retrieved_at": "2026-07-09T12:23:35.236Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.slack.dev/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_rr_1783599815236_4",
+      "claim_field": "api_surface.api_styles",
+      "claim": [
+        "SDK",
+        "CLI"
+      ],
+      "source_url": "https://docs.slack.dev/",
+      "source_title": "Slack developer docs | Slack Developer Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "### Slack CLI\n\n### Java Slack SDK\n\n### Node Slack SDK\n\n### Python Slack SDK",
+      "retrieved_at": "2026-07-09T12:23:35.236Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.slack.dev/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_rr_1783599815236_5",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "unclear",
+      "source_url": "https://docs.slack.dev/",
+      "source_title": "Slack developer docs | Slack Developer Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "Welcome to the Slack API docs, the place where ideas turn into interactive apps, workflows get automated, and Slack becomes the platform that powers your workday.",
+      "retrieved_at": "2026-07-09T12:23:35.236Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.slack.dev/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 21,
+      "app_name": "Slack",
+      "website_hint": "slack.com",
+      "assigned_category": "Communications and Messaging",
+      "researched_at": "2026-07-09T12:18:17.010Z"
+    },
+    "product": {
+      "normalized_category": "Communications and Messaging",
+      "one_line_description": "Slack is a team communication and collaboration platform that supports channels, direct messaging, and workflow integrations."
+    },
+    "authentication": {
+      "auth_methods": [
+        "oauth2"
+      ],
+      "auth_summary": "Slack relies on OAuth 2.0 to securely authenticate users and request access tokens. Slack apps utilize bot tokens, user tokens, app tokens, and granular OAuth scopes to govern and authorize access to Slack workspace data."
+    },
+    "developer_access": {
+      "access_model": "self_serve_free",
+      "credentials_obtainable_without_human_approval": true,
+      "access_notes": "Developers can self-register, install the Slack CLI, and log in to their workspaces to create and run applications immediately without manual human approval."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "SDK",
+        "CLI"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "Slack provides extensive Developer APIs, CLI tools, and official Bolt/SDK libraries for Java, JavaScript, Node, and Python to build interactive apps and automate complex workflows."
+    },
+    "mcp": {
+      "mcp_status": "community",
+      "mcp_summary": "A reference Slack MCP server was previously hosted in the official Model Context Protocol repositories but is now archived and maintained by the community through Zencoder (github.com/zencoderai/slack-mcp-server)."
+    },
+    "buildability": {
+      "verdict": "build_now",
+      "primary_blocker": null,
+      "verdict_reasoning": "Self-serve developer access is verified with a broad/moderate documented public API."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 1,
+        "access_model": 0.9,
+        "public_api": 1,
+        "api_breadth": 0.9,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.96,
+      "requires_human_review": false,
+      "human_review_reason": null
+    }
+  },
+  "critic_result": {
+    "challenged_fields": [
+      "developer_access.access_model",
+      "developer_access.credentials_obtainable_without_human_approval",
+      "api_surface.public_api",
+      "api_surface.api_styles",
+      "api_surface.api_breadth"
+    ],
+    "critic_analysis": {
+      "developer_access.access_model": "The snippet ('Log in and authenticate with your Slack workspace. slack login') only demonstrates a CLI login command. It does not provide evidence that developer access is free or self-serve, failing to rule out premium or paid tier requirements for API/app creation.",
+      "developer_access.credentials_obtainable_without_human_approval": "There is absolutely no evidence in the provided snippets confirming that developer credentials can be obtained immediately without human review, admin approval, or team-level whitelisting.",
+      "api_surface.public_api": "The evidence pool completely lacks any snippets validating the public availability, categorization, or existence of the public Slack APIs, REST endpoints, or Web APIs.",
+      "api_surface.api_styles": "No snippet evidence supports the categorization of API styles (SDK, CLI, or REST) other than a passing command-line reference.",
+      "api_surface.api_breadth": "The breadth rating of 'broad' is completely unsupported by the provided snippets as there is no mention of the API coverage scale.",
+      "authentication.auth_methods": "The snippet ('Whether you’re handling OAuth 2.0... we’ve got you covered') successfully verifies OAuth2 as an authenticating protocol.",
+      "mcp.mcp_status": "The snippet from the official MCP servers repository ('Slack - Channel management... Now maintained by Zencoder') successfully supports the 'community' status."
+    },
+    "error_taxonomy_flags": [
+      "free_product_vs_free_api"
+    ]
+  },
+  "targeted_reresearch_result": {
+    "identity": {
+      "assignment_number": 21,
+      "app_name": "Slack",
+      "website_hint": "slack.com",
+      "assigned_category": "Communications and Messaging",
+      "researched_at": "2026-07-09T12:18:17.010Z"
+    },
+    "product": {
+      "normalized_category": "Communications and Messaging",
+      "one_line_description": "Slack is a team communication and collaboration platform that supports channels, direct messaging, and workflow integrations."
+    },
+    "authentication": {
+      "auth_methods": [
+        "oauth2"
+      ],
+      "auth_summary": "Slack relies on OAuth 2.0 to securely authenticate users and request access tokens. Slack apps utilize bot tokens, user tokens, app tokens, and granular OAuth scopes to govern and authorize access to Slack workspace data."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": "unknown",
+      "access_notes": "Developers can self-register, install the Slack CLI, and log in to their workspaces to create and run applications immediately without manual human approval."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "SDK",
+        "CLI"
+      ],
+      "api_breadth": "unclear",
+      "api_summary": "Slack provides extensive Developer APIs, CLI tools, and official Bolt/SDK libraries for Java, JavaScript, Node, and Python to build interactive apps and automate complex workflows."
+    },
+    "mcp": {
+      "mcp_status": "community",
+      "mcp_summary": "A reference Slack MCP server was previously hosted in the official Model Context Protocol repositories but is now archived and maintained by the community through Zencoder (github.com/zencoderai/slack-mcp-server)."
+    },
+    "buildability": {
+      "verdict": "build_now",
+      "primary_blocker": null,
+      "verdict_reasoning": "Self-serve developer access is verified with a broad/moderate documented public API."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 1,
+        "access_model": 0.9,
+        "public_api": 1,
+        "api_breadth": 0.9,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.96,
+      "requires_human_review": false,
+      "human_review_reason": null
+    }
+  },
+  "final_agent_result": {
+    "identity": {
+      "assignment_number": 21,
+      "app_name": "Slack",
+      "website_hint": "slack.com",
+      "assigned_category": "Communications and Messaging",
+      "researched_at": "2026-07-09T12:18:17.010Z"
+    },
+    "product": {
+      "normalized_category": "Communications and Messaging",
+      "one_line_description": "Slack is a team communication and collaboration platform that supports channels, direct messaging, and workflow integrations."
+    },
+    "authentication": {
+      "auth_methods": [
+        "oauth2"
+      ],
+      "auth_summary": "Slack relies on OAuth 2.0 to securely authenticate users and request access tokens. Slack apps utilize bot tokens, user tokens, app tokens, and granular OAuth scopes to govern and authorize access to Slack workspace data."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": "unknown",
+      "access_notes": "Developers can self-register, install the Slack CLI, and log in to their workspaces to create and run applications immediately without manual human approval."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "SDK",
+        "CLI"
+      ],
+      "api_breadth": "unclear",
+      "api_summary": "Slack provides extensive Developer APIs, CLI tools, and official Bolt/SDK libraries for Java, JavaScript, Node, and Python to build interactive apps and automate complex workflows."
+    },
+    "mcp": {
+      "mcp_status": "community",
+      "mcp_summary": "A reference Slack MCP server was previously hosted in the official Model Context Protocol repositories but is now archived and maintained by the community through Zencoder (github.com/zencoderai/slack-mcp-server)."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient.",
+      "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 1,
+        "access_model": 0.9,
+        "public_api": 1,
+        "api_breadth": 0.9,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.96,
+      "requires_human_review": false,
+      "human_review_reason": null
+    }
+  },
+  "change_log": [
+    {
+      "timestamp": "2026-07-09T12:23:35.237Z",
+      "field_changed": "developer_access.access_model",
+      "old_value": "self_serve_free",
+      "new_value": "unclear",
+      "reason": "The snippet ('Log in and authenticate with your Slack workspace. slack login') only demonstrates a CLI login command. It does not provide evidence that developer access is free or self-serve, failing to rule out premium or paid tier requirements for API/app creation.",
+      "verification_loop_trigger": "critic_audit"
+    },
+    {
+      "timestamp": "2026-07-09T12:23:35.237Z",
+      "field_changed": "developer_access.credentials_obtainable_without_human_approval",
+      "old_value": true,
+      "new_value": "unknown",
+      "reason": "There is absolutely no evidence in the provided snippets confirming that developer credentials can be obtained immediately without human review, admin approval, or team-level whitelisting.",
+      "verification_loop_trigger": "critic_audit"
+    },
+    {
+      "timestamp": "2026-07-09T12:23:35.237Z",
+      "field_changed": "api_surface.api_breadth",
+      "old_value": "broad",
+      "new_value": "unclear",
+      "reason": "The breadth rating of 'broad' is completely unsupported by the provided snippets as there is no mention of the API coverage scale.",
+      "verification_loop_trigger": "critic_audit"
+    },
+    {
+      "timestamp": "2026-07-09T12:23:35.237Z",
+      "field_changed": "buildability.verdict",
+      "old_value": "build_now",
+      "new_value": "unclear",
+      "reason": "Updated during targeted verification loop",
+      "verification_loop_trigger": "critic_audit"
+    }
+  ],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0",
+    "current_stage": "final_agent",
+    "errors": [
+      "free_product_vs_free_api"
+    ],
+    "unresolved_questions": [
+      "Remaining ambiguity after critic audit and re-research loop"
+    ]
+  }
+}

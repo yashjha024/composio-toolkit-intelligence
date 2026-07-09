@@ -1,0 +1,331 @@
+{
+  "identity": {
+    "assignment_number": 23,
+    "app_name": "Zoho Cliq",
+    "website_hint": "zoho.com/cliq",
+    "assigned_category": "Communications and Messaging",
+    "researched_at": "2026-07-09T16:59:20.236Z"
+  },
+  "product": {
+    "normalized_category": "Communications and Messaging",
+    "one_line_description": "Zoho Cliq is a team chat and communication software that streamlines business communication and collaboration through organization, automation, and AI."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "The source mentions a 'developer platform' and 'developer tools' but does not specify any authentication methods like API keys or OAuth2 for accessing these tools."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": "unknown",
+    "access_notes": "The source mentions 'Cliq’s developer platform' and 'built-in developer tools' suggesting developer capabilities. However, it does not provide explicit information on how API credentials are obtained, whether they are self-serve, free, or require human approval (sales/admin gating). While product signup offers a free trial or free sign-up, this is not evidence of free self-serve API credential access."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "other"
+    ],
+    "api_breadth": "unclear",
+    "api_summary": "Zoho Cliq provides a 'developer platform' and 'built-in developer tools' for building and deploying software with 'easy-to-build components'. This indicates the availability of some form of API or extensibility for customization and integration. However, the specific API styles (e.g., REST, GraphQL, SDKs) and the breadth of available endpoints are not detailed in the provided source."
+  },
+  "mcp": {
+    "mcp_status": "none_found",
+    "mcp_summary": "No mention of Model Context Protocol (MCP) or related concepts was found in the provided source."
+  },
+  "buildability": {
+    "verdict": "unclear",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 0.1,
+      "access_model": 0.2,
+      "public_api": 0.7,
+      "api_breadth": 0.2,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.4,
+    "requires_human_review": true,
+    "human_review_reason": "Specifics about API authentication methods, developer access model (e.g., self-serve, gated, free for API credentials), and the breadth/style of the API surface are unclear and require further investigation. While 'developer platform' is mentioned, concrete details are missing."
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783616360236_0",
+      "claim_field": "product.one_line_description",
+      "claim": "Zoho Cliq is a team chat and communication software that streamlines business communication and collaboration through organization, automation, and AI.",
+      "source_url": "https://www.zoho.com/cliq/",
+      "source_title": "Team chat & communication software for businesses - Zoho Cliq",
+      "source_type": "official_doc",
+      "evidence_snippet": "Zoho Cliq streamlines your business communication and fuels effortless conversations within teams and external stakeholders through organization, automation, and AI.",
+      "retrieved_at": "2026-07-09T16:59:20.236Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.zoho.com/cliq/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616360236_1",
+      "claim_field": "developer_access.access_model",
+      "claim": "unclear",
+      "source_url": "https://www.zoho.com/cliq/",
+      "source_title": "Team chat & communication software for businesses - Zoho Cliq",
+      "source_type": "official_doc",
+      "evidence_snippet": "Have the app work the way you want with easy-to-build components in Cliq’s developer platform.",
+      "retrieved_at": "2026-07-09T16:59:20.236Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.zoho.com/cliq/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616360236_2",
+      "claim_field": "developer_access.access_notes",
+      "claim": "The source mentions 'Cliq’s developer platform' and 'built-in developer tools' suggesting developer capabilities. However, it does not provide explicit information on how API credentials are obtained, whether they are self-serve, free, or require human approval (sales/admin gating). While product signup offers a free trial or free sign-up, this is not evidence of free self-serve API credential access.",
+      "source_url": "https://www.zoho.com/cliq/",
+      "source_title": "Team chat & communication software for businesses - Zoho Cliq",
+      "source_type": "official_doc",
+      "evidence_snippet": "Have the app work the way you want with easy-to-build components in Cliq’s developer platform.",
+      "retrieved_at": "2026-07-09T16:59:20.236Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.zoho.com/cliq/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616360236_3",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": "unknown",
+      "source_url": "https://www.zoho.com/cliq/",
+      "source_title": "Team chat & communication software for businesses - Zoho Cliq",
+      "source_type": "official_doc",
+      "evidence_snippet": "Have the app work the way you want with easy-to-build components in Cliq’s developer platform.",
+      "retrieved_at": "2026-07-09T16:59:20.236Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.zoho.com/cliq/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616360236_4",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://www.zoho.com/cliq/",
+      "source_title": "Team chat & communication software for businesses - Zoho Cliq",
+      "source_type": "official_doc",
+      "evidence_snippet": "Have the app work the way you want with easy-to-build components in Cliq’s developer platform.",
+      "retrieved_at": "2026-07-09T16:59:20.236Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.zoho.com/cliq/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616360236_5",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://www.zoho.com/cliq/",
+      "source_title": "Team chat & communication software for businesses - Zoho Cliq",
+      "source_type": "official_doc",
+      "evidence_snippet": "Build and deploy software with Zoho Cliq’s built-in developer tools.",
+      "retrieved_at": "2026-07-09T16:59:20.236Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.zoho.com/cliq/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616360236_6",
+      "claim_field": "api_surface.api_summary",
+      "claim": "Zoho Cliq provides a 'developer platform' and 'built-in developer tools' for building and deploying software with 'easy-to-build components'. This indicates the availability of some form of API or extensibility for customization and integration. However, the specific API styles (e.g., REST, GraphQL, SDKs) and the breadth of available endpoints are not detailed in the provided source.",
+      "source_url": "https://www.zoho.com/cliq/",
+      "source_title": "Team chat & communication software for businesses - Zoho Cliq",
+      "source_type": "official_doc",
+      "evidence_snippet": "Have the app work the way you want with easy-to-build components in Cliq’s developer platform.",
+      "retrieved_at": "2026-07-09T16:59:20.236Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.zoho.com/cliq/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 23,
+      "app_name": "Zoho Cliq",
+      "website_hint": "zoho.com/cliq",
+      "assigned_category": "Communications and Messaging",
+      "researched_at": "2026-07-09T16:59:20.236Z"
+    },
+    "product": {
+      "normalized_category": "Communications and Messaging",
+      "one_line_description": "Zoho Cliq is a team chat and communication software that streamlines business communication and collaboration through organization, automation, and AI."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "The source mentions a 'developer platform' and 'developer tools' but does not specify any authentication methods like API keys or OAuth2 for accessing these tools."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": "unknown",
+      "access_notes": "The source mentions 'Cliq’s developer platform' and 'built-in developer tools' suggesting developer capabilities. However, it does not provide explicit information on how API credentials are obtained, whether they are self-serve, free, or require human approval (sales/admin gating). While product signup offers a free trial or free sign-up, this is not evidence of free self-serve API credential access."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "other"
+      ],
+      "api_breadth": "unclear",
+      "api_summary": "Zoho Cliq provides a 'developer platform' and 'built-in developer tools' for building and deploying software with 'easy-to-build components'. This indicates the availability of some form of API or extensibility for customization and integration. However, the specific API styles (e.g., REST, GraphQL, SDKs) and the breadth of available endpoints are not detailed in the provided source."
+    },
+    "mcp": {
+      "mcp_status": "none_found",
+      "mcp_summary": "No mention of Model Context Protocol (MCP) or related concepts was found in the provided source."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient.",
+      "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0.1,
+        "access_model": 0.2,
+        "public_api": 0.7,
+        "api_breadth": 0.2,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.4,
+      "requires_human_review": true,
+      "human_review_reason": "Specifics about API authentication methods, developer access model (e.g., self-serve, gated, free for API credentials), and the breadth/style of the API surface are unclear and require further investigation. While 'developer platform' is mentioned, concrete details are missing."
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_access_model_unclear",
+    "risk_auth_methods_unclear",
+    "risk_contradictory_claims",
+    "risk_verdict_unclear",
+    "risk_low_confidence"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_access_model_unclear",
+      "risk_auth_methods_unclear",
+      "risk_contradictory_claims",
+      "risk_verdict_unclear",
+      "risk_low_confidence"
+    ]
+  }
+}

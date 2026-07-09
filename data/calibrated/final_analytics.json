@@ -1,0 +1,315 @@
+{
+  "total_apps": 100,
+  "unclear_progression": {
+    "baseline": 76,
+    "after_deterministic_recalibration": 70,
+    "changed_by_deterministic_rules": 3,
+    "after_targeted_verification": 61,
+    "genuinely_unresolved_verified": 7,
+    "baseline_unverified_conservative": 54
+  },
+  "final_verdict_distribution": {
+    "BUILD_NOW": 20,
+    "BUILD_WITH_CAVEATS": 3,
+    "OUTREACH_REQUIRED": 12,
+    "BLOCKED_LOW_PRIORITY": 4,
+    "UNCLEAR": 61
+  },
+  "final_provenance_distribution": {
+    "independently_verified": 14,
+    "targeted_verified": 15,
+    "deterministically_calibrated": 3,
+    "baseline_unverified": 68
+  },
+  "distributions": {
+    "auth_methods": {
+      "unclear": 70,
+      "api_key": 12,
+      "oauth2": 13,
+      "bearer_token": 8,
+      "none": 1,
+      "API Key": 2,
+      "OAuth": 2,
+      "Bearer Token": 1,
+      "basic": 1,
+      "token_based": 1,
+      "custom": 2,
+      "email and password": 1,
+      "passwordless": 1,
+      "mobile logins": 1,
+      "oauth": 1,
+      "pat": 1,
+      "API keys": 1
+    },
+    "access_model": {
+      "self-serve_free_and_paid": 1,
+      "self_serve_free": 14,
+      "unclear": 67,
+      "sales_gated": 6,
+      "self_serve_paid": 4,
+      "admin_gated": 3,
+      "partner_gated": 1,
+      "self_serve_trial": 1,
+      "freemium": 1,
+      "self_serve": 1,
+      "subscription": 1
+    },
+    "public_api_status": {
+      "documented_and_available": 1,
+      "yes": 75,
+      "no": 5,
+      "limited": 7,
+      "unclear": 12
+    },
+    "api_breadth": {
+      "full": 1,
+      "broad": 55,
+      "read/write": 1,
+      "none": 3,
+      "unclear": 26,
+      "unverifiable": 1,
+      "unknown": 1,
+      "SDK,CLI": 1,
+      "narrow": 3,
+      "moderate": 7,
+      "api, cli, sdk": 1
+    },
+    "mcp_status": {
+      "unclear": 5,
+      "none_found": 65,
+      "official": 28,
+      "community": 2
+    },
+    "most_common_blockers": {
+      "Research data ambiguous or insufficient.": 67,
+      "Authentication methods not specified.": 1,
+      "This document outlines the available APIs but does not describe the process for obtaining API credentials or associated access tiers.": 1,
+      "No public API documentation found.": 1,
+      "API credential acquisition requires manual process or approval.": 1,
+      "API credentials require manual vendor approval or partnership.": 1,
+      "Information on developer access model and API credentialing is absent from official documentation.": 1,
+      "Access requires contacting enterprise sales team.": 4,
+      "Existence of a public developer API, its access model, and authentication methods could not be confirmed.": 1,
+      "API access model and authentication methods are unclear.": 1,
+      "No public API found on the official website.": 1,
+      "Requires vendor/support approval for admin credentials.": 3,
+      "Requires formal ISV or partner program approval from vendor.": 1,
+      "No documented public API available.": 3,
+      "Access to full API functionality requires contacting enterprise sales team.": 1,
+      "Minor onboarding or tier restrictions.": 1
+    }
+  },
+  "matrices": {
+    "category_by_access_model": {
+      "CRM and Sales": {
+        "self-serve_free_and_paid": 1,
+        "self_serve_free": 5,
+        "unclear": 4
+      },
+      "Support and Helpdesk": {
+        "self_serve_free": 1,
+        "unclear": 6,
+        "sales_gated": 2,
+        "self_serve_paid": 1
+      },
+      "Communications and Messaging": {
+        "self_serve_free": 1,
+        "unclear": 8,
+        "admin_gated": 1
+      },
+      "Marketing, Ads, Email and Social": {
+        "unclear": 8,
+        "partner_gated": 1,
+        "admin_gated": 1
+      },
+      "Ecommerce": {
+        "unclear": 9,
+        "admin_gated": 1
+      },
+      "Data, SEO and Scraping": {
+        "self_serve_trial": 1,
+        "unclear": 4,
+        "sales_gated": 2,
+        "self_serve_paid": 1,
+        "self_serve_free": 2
+      },
+      "Developer, Infra and Data platforms": {
+        "unclear": 6,
+        "self_serve_free": 2,
+        "freemium": 1,
+        "self_serve": 1
+      },
+      "Productivity and Project Management": {
+        "unclear": 8,
+        "self_serve_free": 2
+      },
+      "Finance and Fintech": {
+        "self_serve_free": 1,
+        "unclear": 7,
+        "sales_gated": 2
+      },
+      "AI, Research and Media-native": {
+        "unclear": 7,
+        "self_serve_paid": 2,
+        "subscription": 1
+      }
+    },
+    "category_by_buildability": {
+      "CRM and Sales": {
+        "BUILD_NOW": 5,
+        "BUILD_WITH_CAVEATS": 1,
+        "UNCLEAR": 2,
+        "BLOCKED_LOW_PRIORITY": 1,
+        "OUTREACH_REQUIRED": 1
+      },
+      "Support and Helpdesk": {
+        "BUILD_NOW": 1,
+        "UNCLEAR": 4,
+        "OUTREACH_REQUIRED": 3,
+        "BUILD_WITH_CAVEATS": 1,
+        "BLOCKED_LOW_PRIORITY": 1
+      },
+      "Communications and Messaging": {
+        "BUILD_NOW": 1,
+        "UNCLEAR": 8,
+        "OUTREACH_REQUIRED": 1
+      },
+      "Marketing, Ads, Email and Social": {
+        "UNCLEAR": 8,
+        "OUTREACH_REQUIRED": 2
+      },
+      "Ecommerce": {
+        "UNCLEAR": 8,
+        "OUTREACH_REQUIRED": 1,
+        "BLOCKED_LOW_PRIORITY": 1
+      },
+      "Data, SEO and Scraping": {
+        "BUILD_NOW": 4,
+        "UNCLEAR": 3,
+        "BUILD_WITH_CAVEATS": 1,
+        "OUTREACH_REQUIRED": 2
+      },
+      "Developer, Infra and Data platforms": {
+        "UNCLEAR": 6,
+        "BUILD_NOW": 4
+      },
+      "Productivity and Project Management": {
+        "UNCLEAR": 8,
+        "BUILD_NOW": 2
+      },
+      "Finance and Fintech": {
+        "BUILD_NOW": 1,
+        "UNCLEAR": 7,
+        "OUTREACH_REQUIRED": 2
+      },
+      "AI, Research and Media-native": {
+        "UNCLEAR": 7,
+        "BLOCKED_LOW_PRIORITY": 1,
+        "BUILD_NOW": 2
+      }
+    }
+  },
+  "lists": {
+    "easy_wins": [
+      "#1 Salesforce",
+      "#2 HubSpot",
+      "#3 Pipedrive",
+      "#5 Twenty",
+      "#6 Podio",
+      "#11 Zendesk",
+      "#21 Slack",
+      "#51 DataForSEO",
+      "#54 MrScraper",
+      "#55 Apify",
+      "#56 Firecrawl",
+      "#62 Vercel",
+      "#63 Netlify",
+      "#65 Supabase",
+      "#70 Sentry",
+      "#75 Asana",
+      "#76 Monday.com",
+      "#81 Stripe",
+      "#95 Reducto",
+      "#97 higgsfield"
+    ],
+    "outreach_required_opportunities": [
+      "#10 DealCloud",
+      "#13 Freshdesk",
+      "#15 Pylon",
+      "#20 Gladly",
+      "#28 WhatsApp Business",
+      "#33 LinkedIn Ads",
+      "#39 Threads (Meta)",
+      "#49 Amazon Selling Partner",
+      "#58 Sherlock",
+      "#59 Waterfall.io",
+      "#85 iPayX",
+      "#90 PitchBook"
+    ],
+    "genuinely_unresolved_after_verification": [
+      "#7 Zoho CRM",
+      "#8 Close",
+      "#12 Intercom",
+      "#14 Front",
+      "#16 LiveAgent",
+      "#18 Help Scout",
+      "#96 Devin"
+    ],
+    "baseline_unverified_conservative_unclear": [
+      "#22 Twilio",
+      "#23 Zoho Cliq",
+      "#24 Lark (Larksuite)",
+      "#25 Pumble",
+      "#26 Discord",
+      "#27 Telegram",
+      "#29 Aircall",
+      "#30 Vonage",
+      "#31 Google Ads",
+      "#32 Meta Ads",
+      "#34 GoHighLevel",
+      "#35 Mailchimp",
+      "#36 Klaviyo",
+      "#37 systeme.io",
+      "#38 Pinterest",
+      "#40 SendGrid",
+      "#41 Shopify",
+      "#42 WooCommerce",
+      "#43 BigCommerce",
+      "#44 Salesforce Commerce Cloud",
+      "#45 Magento (Adobe Commerce)",
+      "#46 Squarespace",
+      "#47 Ecwid",
+      "#48 Gumroad",
+      "#52 SE Ranking",
+      "#57 Bright Data",
+      "#60 Clay",
+      "#61 GitHub",
+      "#64 Cloudflare",
+      "#66 Neo4j",
+      "#67 Snowflake",
+      "#68 MongoDB Atlas",
+      "#69 Datadog",
+      "#71 Notion",
+      "#72 Airtable",
+      "#73 Linear",
+      "#74 Jira",
+      "#77 ClickUp",
+      "#78 Coda",
+      "#79 Smartsheet",
+      "#80 Harvest",
+      "#82 Plaid",
+      "#83 Binance",
+      "#84 Paygent Connect",
+      "#86 QuickBooks",
+      "#87 Xero",
+      "#88 Brex",
+      "#89 Ramp",
+      "#91 NotebookLM",
+      "#92 Otter AI",
+      "#94 Consensus",
+      "#98 Mermaid CLI",
+      "#99 YouTube Transcript",
+      "#100 Grain"
+    ]
+  }
+}

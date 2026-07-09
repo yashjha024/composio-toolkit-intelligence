@@ -1,0 +1,381 @@
+{
+  "identity": {
+    "assignment_number": 95,
+    "app_name": "Reducto",
+    "website_hint": "reducto.ai (document parsing)",
+    "assigned_category": "AI, Research and Media-native",
+    "researched_at": "2026-07-09T18:20:02.485Z"
+  },
+  "product": {
+    "normalized_category": "AI, Research and Media-native",
+    "one_line_description": "Reducto is an agentic document platform for AI teams that reads, parses, splits, extracts, and edits structured data from various documents with high accuracy."
+  },
+  "authentication": {
+    "auth_methods": [
+      "api_key"
+    ],
+    "auth_summary": "API access is available through an API key. Users can obtain an API key by starting on the Standard tier, pay-as-you-go plan."
+  },
+  "developer_access": {
+    "access_model": "self_serve_paid",
+    "credentials_obtainable_without_human_approval": true,
+    "access_notes": "API keys can be obtained immediately by subscribing to the Standard tier, which is a pay-as-you-go plan. For Growth or Enterprise tiers, a contact form needs to be filled out, indicating human approval is likely required for those tiers."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "other"
+    ],
+    "api_breadth": "moderate",
+    "api_summary": "Reducto offers a public API for document processing, including parsing, splitting, extracting structured data, and editing document elements. The API section is explicitly mentioned on the website."
+  },
+  "mcp": {
+    "mcp_status": "none_found",
+    "mcp_summary": "There is a question in the FAQ section 'Do you have an MCP?', but no answer is provided or any direct mention of an official or community Model Context Protocol server."
+  },
+  "buildability": {
+    "verdict": "build_now",
+    "primary_blocker": null,
+    "verdict_reasoning": "Self-serve developer access is verified with a broad/moderate documented public API."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 0.9,
+      "access_model": 0.9,
+      "public_api": 0.9,
+      "api_breadth": 0.7,
+      "mcp_status": 0.5
+    },
+    "overall_confidence": 0.8,
+    "requires_human_review": false,
+    "human_review_reason": null
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783621202485_0",
+      "claim_field": "product.one_line_description",
+      "claim": "Reducto is an agentic document platform for AI teams that reads, parses, splits, extracts, and edits structured data from various documents with high accuracy.",
+      "source_url": "https://reducto.ai/",
+      "source_title": "Reducto: The Agentic Document Platform for AI Teams",
+      "source_type": "official_doc",
+      "evidence_snippet": "Reducto: The Agentic Document Platform for AI Teams\n\nReducto's parser reads documents like a human would—capturing layout, structure, and meaning with high accuracy.\nExtract structured data directly from documents with schema-level precision.",
+      "retrieved_at": "2026-07-09T18:20:02.485Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://reducto.ai/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621202485_1",
+      "claim_field": "authentication.auth_methods",
+      "claim": "api_key",
+      "source_url": "https://reducto.ai/",
+      "source_title": "Reducto: The Agentic Document Platform for AI Teams",
+      "source_type": "official_doc",
+      "evidence_snippet": "How can I get access to an API key?",
+      "retrieved_at": "2026-07-09T18:20:02.485Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://reducto.ai/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621202485_2",
+      "claim_field": "developer_access.access_model",
+      "claim": "self_serve_paid",
+      "source_url": "https://reducto.ai/",
+      "source_title": "Reducto: The Agentic Document Platform for AI Teams",
+      "source_type": "official_doc",
+      "evidence_snippet": "You can get API access right away by starting off on our Standard tier, pay-as-you-go plan.",
+      "retrieved_at": "2026-07-09T18:20:02.485Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://reducto.ai/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621202485_3",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": true,
+      "source_url": "https://reducto.ai/",
+      "source_title": "Reducto: The Agentic Document Platform for AI Teams",
+      "source_type": "official_doc",
+      "evidence_snippet": "You can get API access right away by starting off on our Standard tier, pay-as-you-go plan. [Click here](/contact) to fill out the contact form if you'd like to trial on the Growth or Enterprise tier. We'll be in touch shortly to get you set up.",
+      "retrieved_at": "2026-07-09T18:20:02.485Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://reducto.ai/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621202485_4",
+      "claim_field": "developer_access.access_notes",
+      "claim": "API keys can be obtained immediately by subscribing to the Standard tier, which is a pay-as-you-go plan. For Growth or Enterprise tiers, a contact form needs to be filled out, indicating human approval is likely required for those tiers.",
+      "source_url": "https://reducto.ai/",
+      "source_title": "Reducto: The Agentic Document Platform for AI Teams",
+      "source_type": "official_doc",
+      "evidence_snippet": "You can get API access right away by starting off on our Standard tier, pay-as-you-go plan. [Click here](/contact) to fill out the contact form if you'd like to trial on the Growth or Enterprise tier. We'll be in touch shortly to get you set up.",
+      "retrieved_at": "2026-07-09T18:20:02.485Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://reducto.ai/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621202485_5",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://reducto.ai/",
+      "source_title": "Reducto: The Agentic Document Platform for AI Teams",
+      "source_type": "official_doc",
+      "evidence_snippet": "### API\nHow can I get access to an API key?",
+      "retrieved_at": "2026-07-09T18:20:02.485Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://reducto.ai/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621202485_6",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "moderate",
+      "source_url": "https://reducto.ai/",
+      "source_title": "Reducto: The Agentic Document Platform for AI Teams",
+      "source_type": "official_doc",
+      "evidence_snippet": "Parse\nReducto's parser reads documents like a human would—capturing layout, structure, and meaning with high accuracy.\nSplit\nAutomatically separate multi-document files or long forms into individually useful units.\nExtract\nExtract structured data directly from documents with schema-level precision.\nEdit\nFill in detected blanks, tables, and checkboxes with supplied data.",
+      "retrieved_at": "2026-07-09T18:20:02.485Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://reducto.ai/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621202485_7",
+      "claim_field": "mcp.mcp_status",
+      "claim": "none_found",
+      "source_url": "https://reducto.ai/",
+      "source_title": "Reducto: The Agentic Document Platform for AI Teams",
+      "source_type": "official_doc",
+      "evidence_snippet": "### Do you have an MCP?",
+      "retrieved_at": "2026-07-09T18:20:02.485Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://reducto.ai/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621202485_8",
+      "claim_field": "mcp.mcp_summary",
+      "claim": "There is a question in the FAQ section 'Do you have an MCP?', but no answer is provided or any direct mention of an official or community Model Context Protocol server.",
+      "source_url": "https://reducto.ai/",
+      "source_title": "Reducto: The Agentic Document Platform for AI Teams",
+      "source_type": "official_doc",
+      "evidence_snippet": "### Do you have an MCP?",
+      "retrieved_at": "2026-07-09T18:20:02.485Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://reducto.ai/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 95,
+      "app_name": "Reducto",
+      "website_hint": "reducto.ai (document parsing)",
+      "assigned_category": "AI, Research and Media-native",
+      "researched_at": "2026-07-09T18:20:02.485Z"
+    },
+    "product": {
+      "normalized_category": "AI, Research and Media-native",
+      "one_line_description": "Reducto is an agentic document platform for AI teams that reads, parses, splits, extracts, and edits structured data from various documents with high accuracy."
+    },
+    "authentication": {
+      "auth_methods": [
+        "api_key"
+      ],
+      "auth_summary": "API access is available through an API key. Users can obtain an API key by starting on the Standard tier, pay-as-you-go plan."
+    },
+    "developer_access": {
+      "access_model": "self_serve_paid",
+      "credentials_obtainable_without_human_approval": true,
+      "access_notes": "API keys can be obtained immediately by subscribing to the Standard tier, which is a pay-as-you-go plan. For Growth or Enterprise tiers, a contact form needs to be filled out, indicating human approval is likely required for those tiers."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "other"
+      ],
+      "api_breadth": "moderate",
+      "api_summary": "Reducto offers a public API for document processing, including parsing, splitting, extracting structured data, and editing document elements. The API section is explicitly mentioned on the website."
+    },
+    "mcp": {
+      "mcp_status": "none_found",
+      "mcp_summary": "There is a question in the FAQ section 'Do you have an MCP?', but no answer is provided or any direct mention of an official or community Model Context Protocol server."
+    },
+    "buildability": {
+      "verdict": "build_now",
+      "primary_blocker": null,
+      "verdict_reasoning": "Self-serve developer access is verified with a broad/moderate documented public API."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0.9,
+        "access_model": 0.9,
+        "public_api": 0.9,
+        "api_breadth": 0.7,
+        "mcp_status": 0.5
+      },
+      "overall_confidence": 0.8,
+      "requires_human_review": false,
+      "human_review_reason": null
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_material_evidence_validation_failed"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_material_evidence_validation_failed"
+    ]
+  }
+}

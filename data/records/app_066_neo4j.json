@@ -1,0 +1,420 @@
+{
+  "identity": {
+    "assignment_number": 66,
+    "app_name": "Neo4j",
+    "website_hint": "neo4j.com/docs/api",
+    "assigned_category": "Developer, Infra and Data platforms",
+    "researched_at": "2026-07-09T17:26:25.742Z"
+  },
+  "product": {
+    "normalized_category": "Developer, Infra and Data platforms",
+    "one_line_description": "unclear"
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "The provided sources are login pages for customer service portals and do not describe API authentication methods. Source 1 mentions user login via email and redirection to Atlassian ID, which pertains to portal access, not programmatic API authentication."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": "unknown",
+    "access_notes": "The provided source pages are related to an 'Employee Service Center' and 'Customer Service Portal' and do not contain information on how to obtain API credentials or the access model for developers."
+  },
+  "api_surface": {
+    "public_api": "unclear",
+    "api_styles": [],
+    "api_breadth": "unclear",
+    "api_summary": "The provided source pages are customer service portals and do not contain any information regarding public APIs, their styles, or their breadth."
+  },
+  "mcp": {
+    "mcp_status": "none_found",
+    "mcp_summary": "The provided source pages do not contain any mention or information about Model Context Protocol (MCP)."
+  },
+  "buildability": {
+    "verdict": "unclear",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 0.1,
+      "access_model": 0.1,
+      "public_api": 0.1,
+      "api_breadth": 0.1,
+      "mcp_status": 0.1
+    },
+    "overall_confidence": 0.1,
+    "requires_human_review": true,
+    "human_review_reason": "The provided source pages are customer service portals/login pages and contain no relevant information for API authentication, developer access, or API surface details. The research target's core product functionality and API capabilities cannot be determined from these sources."
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783617985742_0",
+      "claim_field": "product.one_line_description",
+      "claim": "unclear",
+      "source_url": "https://help.internal.neo4j.com/servicedesk/customer/user/login?destination=portals",
+      "source_title": "Jira Service Management",
+      "source_type": "secondary",
+      "evidence_snippet": "Welcome to the Employee Service Center\nEnter your email to log in or sign up",
+      "retrieved_at": "2026-07-09T17:26:25.742Z",
+      "supports_claim": false,
+      "fetch_mode": "alternate_official_source",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://help.internal.neo4j.com/servicedesk/customer/user/login?destination=portals"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617985742_1",
+      "claim_field": "product.one_line_description",
+      "claim": "unclear",
+      "source_url": "https://support.neo4j.com/s/",
+      "source_title": "Neo4j Customer Service Portal",
+      "source_type": "secondary",
+      "evidence_snippet": "Loading",
+      "retrieved_at": "2026-07-09T17:26:25.742Z",
+      "supports_claim": false,
+      "fetch_mode": "alternate_official_source",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://support.neo4j.com/s/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617985742_2",
+      "claim_field": "authentication.auth_methods",
+      "claim": [
+        "unclear"
+      ],
+      "source_url": "https://help.internal.neo4j.com/servicedesk/customer/user/login?destination=portals",
+      "source_title": "Jira Service Management",
+      "source_type": "secondary",
+      "evidence_snippet": "Enter your email to log in or sign up",
+      "retrieved_at": "2026-07-09T17:26:25.742Z",
+      "supports_claim": false,
+      "fetch_mode": "alternate_official_source",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://help.internal.neo4j.com/servicedesk/customer/user/login?destination=portals"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617985742_3",
+      "claim_field": "authentication.auth_methods",
+      "claim": [
+        "unclear"
+      ],
+      "source_url": "https://help.internal.neo4j.com/servicedesk/customer/user/login?destination=portals",
+      "source_title": "Jira Service Management",
+      "source_type": "secondary",
+      "evidence_snippet": "\"redirectUrl\":\"https://id.atlassian.com/login\"",
+      "retrieved_at": "2026-07-09T17:26:25.742Z",
+      "supports_claim": false,
+      "fetch_mode": "alternate_official_source",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://help.internal.neo4j.com/servicedesk/customer/user/login?destination=portals"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617985742_4",
+      "claim_field": "developer_access.access_model",
+      "claim": "unclear",
+      "source_url": "https://help.internal.neo4j.com/servicedesk/customer/user/login?destination=portals",
+      "source_title": "Jira Service Management",
+      "source_type": "secondary",
+      "evidence_snippet": "Welcome to the Employee Service Center",
+      "retrieved_at": "2026-07-09T17:26:25.742Z",
+      "supports_claim": false,
+      "fetch_mode": "alternate_official_source",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://help.internal.neo4j.com/servicedesk/customer/user/login?destination=portals"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617985742_5",
+      "claim_field": "developer_access.access_model",
+      "claim": "unclear",
+      "source_url": "https://support.neo4j.com/s/",
+      "source_title": "Neo4j Customer Service Portal",
+      "source_type": "secondary",
+      "evidence_snippet": "Neo4j Customer Service Portal",
+      "retrieved_at": "2026-07-09T17:26:25.742Z",
+      "supports_claim": false,
+      "fetch_mode": "alternate_official_source",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://support.neo4j.com/s/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617985742_6",
+      "claim_field": "api_surface.public_api",
+      "claim": "unclear",
+      "source_url": "https://help.internal.neo4j.com/servicedesk/customer/user/login?destination=portals",
+      "source_title": "Jira Service Management",
+      "source_type": "secondary",
+      "evidence_snippet": "Welcome to the Employee Service Center",
+      "retrieved_at": "2026-07-09T17:26:25.742Z",
+      "supports_claim": false,
+      "fetch_mode": "alternate_official_source",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://help.internal.neo4j.com/servicedesk/customer/user/login?destination=portals"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617985742_7",
+      "claim_field": "api_surface.public_api",
+      "claim": "unclear",
+      "source_url": "https://support.neo4j.com/s/",
+      "source_title": "Neo4j Customer Service Portal",
+      "source_type": "secondary",
+      "evidence_snippet": "Neo4j Customer Service Portal",
+      "retrieved_at": "2026-07-09T17:26:25.742Z",
+      "supports_claim": false,
+      "fetch_mode": "alternate_official_source",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://support.neo4j.com/s/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617985742_8",
+      "claim_field": "mcp.mcp_status",
+      "claim": "none_found",
+      "source_url": "https://help.internal.neo4j.com/servicedesk/customer/user/login?destination=portals",
+      "source_title": "Jira Service Management",
+      "source_type": "secondary",
+      "evidence_snippet": "No mention of MCP found.",
+      "retrieved_at": "2026-07-09T17:26:25.742Z",
+      "supports_claim": false,
+      "fetch_mode": "alternate_official_source",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://help.internal.neo4j.com/servicedesk/customer/user/login?destination=portals"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617985742_9",
+      "claim_field": "mcp.mcp_status",
+      "claim": "none_found",
+      "source_url": "https://support.neo4j.com/s/",
+      "source_title": "Neo4j Customer Service Portal",
+      "source_type": "secondary",
+      "evidence_snippet": "No mention of MCP found.",
+      "retrieved_at": "2026-07-09T17:26:25.742Z",
+      "supports_claim": false,
+      "fetch_mode": "alternate_official_source",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://support.neo4j.com/s/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 66,
+      "app_name": "Neo4j",
+      "website_hint": "neo4j.com/docs/api",
+      "assigned_category": "Developer, Infra and Data platforms",
+      "researched_at": "2026-07-09T17:26:25.742Z"
+    },
+    "product": {
+      "normalized_category": "Developer, Infra and Data platforms",
+      "one_line_description": "unclear"
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "The provided sources are login pages for customer service portals and do not describe API authentication methods. Source 1 mentions user login via email and redirection to Atlassian ID, which pertains to portal access, not programmatic API authentication."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": "unknown",
+      "access_notes": "The provided source pages are related to an 'Employee Service Center' and 'Customer Service Portal' and do not contain information on how to obtain API credentials or the access model for developers."
+    },
+    "api_surface": {
+      "public_api": "unclear",
+      "api_styles": [],
+      "api_breadth": "unclear",
+      "api_summary": "The provided source pages are customer service portals and do not contain any information regarding public APIs, their styles, or their breadth."
+    },
+    "mcp": {
+      "mcp_status": "none_found",
+      "mcp_summary": "The provided source pages do not contain any mention or information about Model Context Protocol (MCP)."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient.",
+      "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0.1,
+        "access_model": 0.1,
+        "public_api": 0.1,
+        "api_breadth": 0.1,
+        "mcp_status": 0.1
+      },
+      "overall_confidence": 0.1,
+      "requires_human_review": true,
+      "human_review_reason": "The provided source pages are customer service portals/login pages and contain no relevant information for API authentication, developer access, or API surface details. The research target's core product functionality and API capabilities cannot be determined from these sources."
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_access_model_unclear",
+    "risk_auth_methods_unclear",
+    "risk_public_api_unclear",
+    "risk_material_evidence_validation_failed",
+    "risk_verdict_unclear",
+    "risk_low_confidence"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_access_model_unclear",
+      "risk_auth_methods_unclear",
+      "risk_public_api_unclear",
+      "risk_material_evidence_validation_failed",
+      "risk_verdict_unclear",
+      "risk_low_confidence"
+    ]
+  }
+}

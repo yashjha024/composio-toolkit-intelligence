@@ -1,0 +1,447 @@
+{
+  "identity": {
+    "assignment_number": 99,
+    "app_name": "YouTube Transcript",
+    "website_hint": "transcriptapi.com",
+    "assigned_category": "AI, Research and Media-native",
+    "researched_at": "2026-07-09T18:28:01.099Z"
+  },
+  "product": {
+    "normalized_category": "AI, Research and Media-native",
+    "one_line_description": "Provides a REST API and YouTube MCP to extract transcripts, search videos, and manage channels and playlists on YouTube."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "API authentication is performed using a Bearer token, which is specified as 'API_KEY' in the provided curl examples."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": true,
+    "access_notes": "Access to the API appears to be self-serve and free to start, indicated by a 'Get Started Free' button. API keys are used for authentication."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "api_summary": "The YouTube Transcript API offers a broad range of functionalities via a REST API, including extracting video transcripts (with or without timestamps), searching for videos, channels, or playlists, searching within specific channels, browsing all videos from a channel, tracking new video uploads, and extracting all videos from a YouTube playlist."
+  },
+  "mcp": {
+    "mcp_status": "official",
+    "mcp_summary": "The API explicitly supports YouTube MCP (Model Context Protocol). Each described API feature has a corresponding 'MCP Tool' endpoint, indicating integration for AI agents."
+  },
+  "buildability": {
+    "verdict": "unclear",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 1,
+      "access_model": 0.9,
+      "public_api": 1,
+      "api_breadth": 1,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.98,
+    "requires_human_review": false,
+    "human_review_reason": null
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783621681099_0",
+      "claim_field": "product.one_line_description",
+      "claim": "Provides a REST API and YouTube MCP to extract transcripts, search videos, and manage channels and playlists on YouTube.",
+      "source_url": "https://transcriptapi.com/",
+      "source_title": "YouTube Transcript API with Search, Channels & Playlists | TranscriptAPI",
+      "source_type": "official_doc",
+      "evidence_snippet": "Get transcripts, search videos, browse channels, and extract playlists via REST API or YouTube MCP — at scale.",
+      "retrieved_at": "2026-07-09T18:28:01.099Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://transcriptapi.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621681099_1",
+      "claim_field": "authentication.auth_methods",
+      "claim": "bearer_token",
+      "source_url": "https://transcriptapi.com/",
+      "source_title": "YouTube Transcript API with Search, Channels & Playlists | TranscriptAPI",
+      "source_type": "official_doc",
+      "evidence_snippet": "curl \"https://transcriptapi.com/api/v2/youtube/transcript?video_url=dQw4w9WgXcQ&format=json\" \\\n  -H \"Authorization: Bearer API_KEY\"",
+      "retrieved_at": "2026-07-09T18:28:01.099Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://transcriptapi.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621681099_2",
+      "claim_field": "developer_access.access_model",
+      "claim": "self_serve_free",
+      "source_url": "https://transcriptapi.com/",
+      "source_title": "YouTube Transcript API with Search, Channels & Playlists | TranscriptAPI",
+      "source_type": "official_doc",
+      "evidence_snippet": "[Get Started Free](/signup)",
+      "retrieved_at": "2026-07-09T18:28:01.099Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://transcriptapi.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621681099_3",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": true,
+      "source_url": "https://transcriptapi.com/",
+      "source_title": "YouTube Transcript API with Search, Channels & Playlists | TranscriptAPI",
+      "source_type": "official_doc",
+      "evidence_snippet": "[Get Started Free](/signup)",
+      "retrieved_at": "2026-07-09T18:28:01.099Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://transcriptapi.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621681099_4",
+      "claim_field": "public_api",
+      "claim": "yes",
+      "source_url": "https://transcriptapi.com/",
+      "source_title": "YouTube Transcript API with Search, Channels & Playlists | TranscriptAPI",
+      "source_type": "official_doc",
+      "evidence_snippet": "# YouTube Transcript API That Just Works",
+      "retrieved_at": "2026-07-09T18:28:01.099Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://transcriptapi.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621681099_5",
+      "claim_field": "api_styles",
+      "claim": "REST",
+      "source_url": "https://transcriptapi.com/",
+      "source_title": "YouTube Transcript API with Search, Channels & Playlists | TranscriptAPI",
+      "source_type": "official_doc",
+      "evidence_snippet": "Get transcripts, search videos, browse channels, and extract playlists via REST API or YouTube MCP — at scale.",
+      "retrieved_at": "2026-07-09T18:28:01.099Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://transcriptapi.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621681099_6",
+      "claim_field": "api_breadth",
+      "claim": "broad",
+      "source_url": "https://transcriptapi.com/",
+      "source_title": "YouTube Transcript API with Search, Channels & Playlists | TranscriptAPI",
+      "source_type": "official_doc",
+      "evidence_snippet": "Transcripts, search, channels, playlists — all in one place. Every feature works via API, MCP, and agent skills.",
+      "retrieved_at": "2026-07-09T18:28:01.099Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://transcriptapi.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621681099_7",
+      "claim_field": "api_summary",
+      "claim": "The YouTube Transcript API offers a broad range of functionalities via a REST API, including extracting video transcripts (with or without timestamps), searching for videos, channels, or playlists, searching within specific channels, browsing all videos from a channel, tracking new video uploads, and extracting all videos from a YouTube playlist.",
+      "source_url": "https://transcriptapi.com/",
+      "source_title": "YouTube Transcript API with Search, Channels & Playlists | TranscriptAPI",
+      "source_type": "official_doc",
+      "evidence_snippet": "### Get Transcripts\n### Search YouTube\n### Search Inside a Channel\n### Browse Channel Videos\n### Track New Uploads\n### Extract Playlist Videos",
+      "retrieved_at": "2026-07-09T18:28:01.099Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://transcriptapi.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621681099_8",
+      "claim_field": "mcp_status",
+      "claim": "official",
+      "source_url": "https://transcriptapi.com/",
+      "source_title": "YouTube Transcript API with Search, Channels & Playlists | TranscriptAPI",
+      "source_type": "official_doc",
+      "evidence_snippet": "Get transcripts, search videos, browse channels, and extract playlists via REST API or YouTube MCP — at scale.",
+      "retrieved_at": "2026-07-09T18:28:01.099Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://transcriptapi.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621681099_9",
+      "claim_field": "mcp_summary",
+      "claim": "The API explicitly supports YouTube MCP (Model Context Protocol). Each described API feature has a corresponding 'MCP Tool' endpoint, indicating integration for AI agents.",
+      "source_url": "https://transcriptapi.com/",
+      "source_title": "YouTube Transcript API with Search, Channels & Playlists | TranscriptAPI",
+      "source_type": "official_doc",
+      "evidence_snippet": "Every feature works via API, MCP, and agent skills.",
+      "retrieved_at": "2026-07-09T18:28:01.099Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://transcriptapi.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783621681099_10",
+      "claim_field": "mcp_summary",
+      "claim": "The API explicitly supports YouTube MCP (Model Context Protocol). Each described API feature has a corresponding 'MCP Tool' endpoint, indicating integration for AI agents.",
+      "source_url": "https://transcriptapi.com/",
+      "source_title": "YouTube Transcript API with Search, Channels & Playlists | TranscriptAPI",
+      "source_type": "official_doc",
+      "evidence_snippet": "[MCP Tool](/docs/mcp#get_youtube_transcript)",
+      "retrieved_at": "2026-07-09T18:28:01.099Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://transcriptapi.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 99,
+      "app_name": "YouTube Transcript",
+      "website_hint": "transcriptapi.com",
+      "assigned_category": "AI, Research and Media-native",
+      "researched_at": "2026-07-09T18:28:01.099Z"
+    },
+    "product": {
+      "normalized_category": "AI, Research and Media-native",
+      "one_line_description": "Provides a REST API and YouTube MCP to extract transcripts, search videos, and manage channels and playlists on YouTube."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "API authentication is performed using a Bearer token, which is specified as 'API_KEY' in the provided curl examples."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": true,
+      "access_notes": "Access to the API appears to be self-serve and free to start, indicated by a 'Get Started Free' button. API keys are used for authentication."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "REST"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "The YouTube Transcript API offers a broad range of functionalities via a REST API, including extracting video transcripts (with or without timestamps), searching for videos, channels, or playlists, searching within specific channels, browsing all videos from a channel, tracking new video uploads, and extracting all videos from a YouTube playlist."
+    },
+    "mcp": {
+      "mcp_status": "official",
+      "mcp_summary": "The API explicitly supports YouTube MCP (Model Context Protocol). Each described API feature has a corresponding 'MCP Tool' endpoint, indicating integration for AI agents."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient.",
+      "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 1,
+        "access_model": 0.9,
+        "public_api": 1,
+        "api_breadth": 1,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.98,
+      "requires_human_review": false,
+      "human_review_reason": null
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_access_model_unclear",
+    "risk_auth_methods_unclear",
+    "risk_material_evidence_validation_failed",
+    "risk_contradictory_claims",
+    "risk_verdict_unclear"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_access_model_unclear",
+      "risk_auth_methods_unclear",
+      "risk_material_evidence_validation_failed",
+      "risk_contradictory_claims",
+      "risk_verdict_unclear"
+    ]
+  }
+}

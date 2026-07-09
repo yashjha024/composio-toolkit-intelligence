@@ -1,0 +1,29 @@
+{
+  "assignment_number": 8,
+  "app_name": "Close",
+  "assigned_category": "CRM and Sales",
+  "baseline_verdict": "UNCLEAR",
+  "calibrated_verdict": "UNCLEAR",
+  "exact_fields_to_verify": [
+    "access_model_unclear",
+    "auth_methods_unclear"
+  ],
+  "targeted_result": {
+    "verified_auth_methods": [
+      "unclear"
+    ],
+    "verified_access_model": "unclear",
+    "verified_credentials_obtainable_without_approval": false,
+    "verified_public_api_status": "yes",
+    "verified_api_breadth": "broad",
+    "verified_verdict": "UNCLEAR",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "evidence_url": "https://close.com/",
+    "concise_evidence_snippet": "REST API, webhooks, and MCP server. Everything you need to customize Close for the way your team works. [Explore the developer platform](https://developer.close.com/)",
+    "remaining_uncertainty": [
+      "access_model_unclear",
+      "auth_methods_unclear"
+    ]
+  },
+  "verified_at": "2026-07-09T18:59:45.028Z"
+}

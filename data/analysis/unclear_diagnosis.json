@@ -1,0 +1,1943 @@
+{
+  "total_unclear_count": 76,
+  "unclear_percentage": "76.0%",
+  "causes_distribution": {
+    "access_model_unclear": 75,
+    "auth_unclear": 67,
+    "api_status_unclear": 16,
+    "evidence_validation_failure": 49,
+    "insufficient_official_sources": 13,
+    "low_confidence": 72,
+    "contradictory_claims": 53,
+    "other": 0
+  },
+  "useful_raw_fields_beneath_unclear_count": 76,
+  "useful_raw_fields_beneath_unclear_percentage": "100.0%",
+  "primary_issue_classification": "Conservative verdict logic & strict single-pass evidence matching risk flags (rather than raw extraction or source fetching failure).",
+  "records": [
+    {
+      "assignment_number": 1,
+      "app_name": "Salesforce",
+      "assigned_category": "CRM and Sales",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "api_status_unclear",
+        "evidence_validation_failure",
+        "insufficient_official_sources",
+        "low_confidence"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "unclear",
+      "overall_confidence": 0.5,
+      "risk_flags": []
+    },
+    {
+      "assignment_number": 2,
+      "app_name": "HubSpot",
+      "assigned_category": "CRM and Sales",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "evidence_validation_failure",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.64,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_material_evidence_validation_failed",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 3,
+      "app_name": "Pipedrive",
+      "assigned_category": "CRM and Sales",
+      "causes": [
+        "access_model_unclear",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 1,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear"
+      ]
+    },
+    {
+      "assignment_number": 4,
+      "app_name": "Attio",
+      "assigned_category": "CRM and Sales",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.9,
+      "risk_flags": []
+    },
+    {
+      "assignment_number": 5,
+      "app_name": "Twenty",
+      "assigned_category": "CRM and Sales",
+      "causes": [
+        "access_model_unclear",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "oauth2"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.95,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear"
+      ]
+    },
+    {
+      "assignment_number": 7,
+      "app_name": "Zoho CRM",
+      "assigned_category": "CRM and Sales",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "evidence_validation_failure",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.6,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_material_evidence_validation_failed",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 8,
+      "app_name": "Close",
+      "assigned_category": "CRM and Sales",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.6,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 9,
+      "app_name": "Copper",
+      "assigned_category": "CRM and Sales",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "api_status_unclear",
+        "evidence_validation_failure",
+        "low_confidence"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "unclear",
+      "overall_confidence": 0.3,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_public_api_unclear",
+        "risk_material_evidence_validation_failed",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 10,
+      "app_name": "DealCloud",
+      "assigned_category": "CRM and Sales",
+      "causes": [
+        "access_model_unclear",
+        "evidence_validation_failure",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "api_key",
+        "bearer_token"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.8,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_material_evidence_validation_failed",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 11,
+      "app_name": "Zendesk",
+      "assigned_category": "Support and Helpdesk",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.95,
+      "risk_flags": []
+    },
+    {
+      "assignment_number": 12,
+      "app_name": "Intercom",
+      "assigned_category": "Support and Helpdesk",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.68,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 13,
+      "app_name": "Freshdesk",
+      "assigned_category": "Support and Helpdesk",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "low_confidence"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "limited",
+      "overall_confidence": 0.4,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 14,
+      "app_name": "Front",
+      "assigned_category": "Support and Helpdesk",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.4,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 16,
+      "app_name": "LiveAgent",
+      "assigned_category": "Support and Helpdesk",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "api_status_unclear",
+        "low_confidence"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "unclear",
+      "overall_confidence": 0.2,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_public_api_unclear",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 17,
+      "app_name": "Plain",
+      "assigned_category": "Support and Helpdesk",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "evidence_validation_failure",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.6,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_material_evidence_validation_failed",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 18,
+      "app_name": "Help Scout",
+      "assigned_category": "Support and Helpdesk",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "api_status_unclear",
+        "evidence_validation_failure",
+        "low_confidence"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "unclear",
+      "overall_confidence": 0.3,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_public_api_unclear",
+        "risk_material_evidence_validation_failed",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 19,
+      "app_name": "Gorgias",
+      "assigned_category": "Support and Helpdesk",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "api_status_unclear",
+        "evidence_validation_failure",
+        "low_confidence"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "unclear",
+      "overall_confidence": 0.6,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_public_api_unclear",
+        "risk_material_evidence_validation_failed",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 20,
+      "app_name": "Gladly",
+      "assigned_category": "Support and Helpdesk",
+      "causes": [
+        "auth_unclear",
+        "api_status_unclear",
+        "evidence_validation_failure",
+        "low_confidence"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "sales_gated",
+      "public_api_status": "unclear",
+      "overall_confidence": 0.3,
+      "risk_flags": [
+        "risk_auth_methods_unclear",
+        "risk_public_api_unclear",
+        "risk_material_evidence_validation_failed",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 21,
+      "app_name": "Slack",
+      "assigned_category": "Communications and Messaging",
+      "causes": [
+        "access_model_unclear"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "oauth2"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.96,
+      "risk_flags": []
+    },
+    {
+      "assignment_number": 22,
+      "app_name": "Twilio",
+      "assigned_category": "Communications and Messaging",
+      "causes": [
+        "access_model_unclear",
+        "evidence_validation_failure",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "api_key",
+        "basic"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.96,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_material_evidence_validation_failed",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear"
+      ]
+    },
+    {
+      "assignment_number": 23,
+      "app_name": "Zoho Cliq",
+      "assigned_category": "Communications and Messaging",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.4,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 24,
+      "app_name": "Lark (Larksuite)",
+      "assigned_category": "Communications and Messaging",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "evidence_validation_failure",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.3,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_material_evidence_validation_failed",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 25,
+      "app_name": "Pumble",
+      "assigned_category": "Communications and Messaging",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "evidence_validation_failure",
+        "low_confidence"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "limited",
+      "overall_confidence": 0.6,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_material_evidence_validation_failed",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 26,
+      "app_name": "Discord",
+      "assigned_category": "Communications and Messaging",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "api_status_unclear",
+        "insufficient_official_sources",
+        "low_confidence"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "unclear",
+      "overall_confidence": 0.3,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_public_api_unclear",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 27,
+      "app_name": "Telegram",
+      "assigned_category": "Communications and Messaging",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "evidence_validation_failure",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.85,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_material_evidence_validation_failed",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 29,
+      "app_name": "Aircall",
+      "assigned_category": "Communications and Messaging",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "api_status_unclear",
+        "low_confidence"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "unclear",
+      "overall_confidence": 0.3,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_public_api_unclear",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 30,
+      "app_name": "Vonage",
+      "assigned_category": "Communications and Messaging",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "evidence_validation_failure",
+        "insufficient_official_sources",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.9,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear"
+      ]
+    },
+    {
+      "assignment_number": 31,
+      "app_name": "Google Ads",
+      "assigned_category": "Marketing, Ads, Email and Social",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.74,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear"
+      ]
+    },
+    {
+      "assignment_number": 32,
+      "app_name": "Meta Ads",
+      "assigned_category": "Marketing, Ads, Email and Social",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "api_status_unclear",
+        "evidence_validation_failure",
+        "insufficient_official_sources",
+        "low_confidence"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "unclear",
+      "overall_confidence": 0,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_public_api_unclear",
+        "risk_insufficient_official_sources",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 34,
+      "app_name": "GoHighLevel",
+      "assigned_category": "Marketing, Ads, Email and Social",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "api_status_unclear",
+        "evidence_validation_failure",
+        "insufficient_official_sources",
+        "low_confidence"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "unclear",
+      "overall_confidence": 0,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_public_api_unclear",
+        "risk_insufficient_official_sources",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 35,
+      "app_name": "Mailchimp",
+      "assigned_category": "Marketing, Ads, Email and Social",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.5,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 36,
+      "app_name": "Klaviyo",
+      "assigned_category": "Marketing, Ads, Email and Social",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "evidence_validation_failure",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.85,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_material_evidence_validation_failed",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear"
+      ]
+    },
+    {
+      "assignment_number": 37,
+      "app_name": "systeme.io",
+      "assigned_category": "Marketing, Ads, Email and Social",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.46,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 38,
+      "app_name": "Pinterest",
+      "assigned_category": "Marketing, Ads, Email and Social",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "evidence_validation_failure",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.7,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_material_evidence_validation_failed",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 40,
+      "app_name": "SendGrid",
+      "assigned_category": "Marketing, Ads, Email and Social",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "evidence_validation_failure",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.8,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_material_evidence_validation_failed",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear"
+      ]
+    },
+    {
+      "assignment_number": 41,
+      "app_name": "Shopify",
+      "assigned_category": "Ecommerce",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.7,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 42,
+      "app_name": "WooCommerce",
+      "assigned_category": "Ecommerce",
+      "causes": [
+        "access_model_unclear",
+        "evidence_validation_failure",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "api_key"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 1,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_material_evidence_validation_failed",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear"
+      ]
+    },
+    {
+      "assignment_number": 43,
+      "app_name": "BigCommerce",
+      "assigned_category": "Ecommerce",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "evidence_validation_failure",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 1,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_material_evidence_validation_failed",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear"
+      ]
+    },
+    {
+      "assignment_number": 44,
+      "app_name": "Salesforce Commerce Cloud",
+      "assigned_category": "Ecommerce",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "low_confidence"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.5,
+      "risk_flags": []
+    },
+    {
+      "assignment_number": 45,
+      "app_name": "Magento (Adobe Commerce)",
+      "assigned_category": "Ecommerce",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.6,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 46,
+      "app_name": "Squarespace",
+      "assigned_category": "Ecommerce",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "evidence_validation_failure",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.6,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_material_evidence_validation_failed",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 47,
+      "app_name": "Ecwid",
+      "assigned_category": "Ecommerce",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "evidence_validation_failure",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.8,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_material_evidence_validation_failed",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear"
+      ]
+    },
+    {
+      "assignment_number": 48,
+      "app_name": "Gumroad",
+      "assigned_category": "Ecommerce",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "evidence_validation_failure",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.2,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_material_evidence_validation_failed",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 52,
+      "app_name": "SE Ranking",
+      "assigned_category": "Data, SEO and Scraping",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "api_status_unclear",
+        "evidence_validation_failure",
+        "insufficient_official_sources",
+        "low_confidence"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "unclear",
+      "overall_confidence": 0,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_public_api_unclear",
+        "risk_insufficient_official_sources",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 57,
+      "app_name": "Bright Data",
+      "assigned_category": "Data, SEO and Scraping",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "insufficient_official_sources",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.82,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 60,
+      "app_name": "Clay",
+      "assigned_category": "Data, SEO and Scraping",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "api_status_unclear",
+        "low_confidence"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "unclear",
+      "overall_confidence": 0.3,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_public_api_unclear",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 61,
+      "app_name": "GitHub",
+      "assigned_category": "Developer, Infra and Data platforms",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "evidence_validation_failure",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.7,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_material_evidence_validation_failed",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 64,
+      "app_name": "Cloudflare",
+      "assigned_category": "Developer, Infra and Data platforms",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "evidence_validation_failure",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.7,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_material_evidence_validation_failed",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 65,
+      "app_name": "Supabase",
+      "assigned_category": "Developer, Infra and Data platforms",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "evidence_validation_failure",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.8,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_material_evidence_validation_failed",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 66,
+      "app_name": "Neo4j",
+      "assigned_category": "Developer, Infra and Data platforms",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "api_status_unclear",
+        "evidence_validation_failure",
+        "low_confidence"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "unclear",
+      "overall_confidence": 0.1,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_public_api_unclear",
+        "risk_material_evidence_validation_failed",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 67,
+      "app_name": "Snowflake",
+      "assigned_category": "Developer, Infra and Data platforms",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "evidence_validation_failure",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.7,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_material_evidence_validation_failed",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 68,
+      "app_name": "MongoDB Atlas",
+      "assigned_category": "Developer, Infra and Data platforms",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "evidence_validation_failure",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.8,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_material_evidence_validation_failed",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear"
+      ]
+    },
+    {
+      "assignment_number": 69,
+      "app_name": "Datadog",
+      "assigned_category": "Developer, Infra and Data platforms",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "evidence_validation_failure",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "oauth2",
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.86,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_material_evidence_validation_failed",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 71,
+      "app_name": "Notion",
+      "assigned_category": "Productivity and Project Management",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "evidence_validation_failure",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 1,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_material_evidence_validation_failed",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear"
+      ]
+    },
+    {
+      "assignment_number": 72,
+      "app_name": "Airtable",
+      "assigned_category": "Productivity and Project Management",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "evidence_validation_failure",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.1,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_material_evidence_validation_failed",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 73,
+      "app_name": "Linear",
+      "assigned_category": "Productivity and Project Management",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "evidence_validation_failure",
+        "insufficient_official_sources",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.82,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 74,
+      "app_name": "Jira",
+      "assigned_category": "Productivity and Project Management",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "insufficient_official_sources",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.3,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 77,
+      "app_name": "ClickUp",
+      "assigned_category": "Productivity and Project Management",
+      "causes": [
+        "access_model_unclear",
+        "evidence_validation_failure",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "oauth2"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.8,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_material_evidence_validation_failed",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 78,
+      "app_name": "Coda",
+      "assigned_category": "Productivity and Project Management",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "evidence_validation_failure",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 1,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_material_evidence_validation_failed",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear"
+      ]
+    },
+    {
+      "assignment_number": 79,
+      "app_name": "Smartsheet",
+      "assigned_category": "Productivity and Project Management",
+      "causes": [
+        "access_model_unclear",
+        "evidence_validation_failure",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "oauth2"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.95,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_material_evidence_validation_failed",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear"
+      ]
+    },
+    {
+      "assignment_number": 80,
+      "app_name": "Harvest",
+      "assigned_category": "Productivity and Project Management",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "api_status_unclear",
+        "evidence_validation_failure",
+        "low_confidence"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "unclear",
+      "overall_confidence": 0.2,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_public_api_unclear",
+        "risk_material_evidence_validation_failed",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 81,
+      "app_name": "Stripe",
+      "assigned_category": "Finance and Fintech",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "evidence_validation_failure",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.95,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_material_evidence_validation_failed",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear"
+      ]
+    },
+    {
+      "assignment_number": 82,
+      "app_name": "Plaid",
+      "assigned_category": "Finance and Fintech",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "evidence_validation_failure",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.7,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_material_evidence_validation_failed",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 83,
+      "app_name": "Binance",
+      "assigned_category": "Finance and Fintech",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "evidence_validation_failure",
+        "insufficient_official_sources",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 1,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_material_evidence_validation_failed",
+        "risk_insufficient_official_sources",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear"
+      ]
+    },
+    {
+      "assignment_number": 84,
+      "app_name": "Paygent Connect",
+      "assigned_category": "Finance and Fintech",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "api_status_unclear",
+        "evidence_validation_failure",
+        "insufficient_official_sources",
+        "low_confidence"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "unclear",
+      "overall_confidence": 0,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_public_api_unclear",
+        "risk_insufficient_official_sources",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 86,
+      "app_name": "QuickBooks",
+      "assigned_category": "Finance and Fintech",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "evidence_validation_failure",
+        "insufficient_official_sources",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.1,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_material_evidence_validation_failed",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 87,
+      "app_name": "Xero",
+      "assigned_category": "Finance and Fintech",
+      "causes": [
+        "access_model_unclear",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "oauth2"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.95,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear"
+      ]
+    },
+    {
+      "assignment_number": 88,
+      "app_name": "Brex",
+      "assigned_category": "Finance and Fintech",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "evidence_validation_failure",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.6,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_material_evidence_validation_failed",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 89,
+      "app_name": "Ramp",
+      "assigned_category": "Finance and Fintech",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.4,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 91,
+      "app_name": "NotebookLM",
+      "assigned_category": "AI, Research and Media-native",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "api_status_unclear",
+        "evidence_validation_failure",
+        "insufficient_official_sources",
+        "low_confidence"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "unclear",
+      "overall_confidence": 0,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_public_api_unclear",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 92,
+      "app_name": "Otter AI",
+      "assigned_category": "AI, Research and Media-native",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "limited",
+      "overall_confidence": 0.6,
+      "risk_flags": []
+    },
+    {
+      "assignment_number": 94,
+      "app_name": "Consensus",
+      "assigned_category": "AI, Research and Media-native",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.5,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 96,
+      "app_name": "Devin",
+      "assigned_category": "AI, Research and Media-native",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "evidence_validation_failure",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.5,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_material_evidence_validation_failed",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear",
+        "risk_low_confidence"
+      ]
+    },
+    {
+      "assignment_number": 98,
+      "app_name": "Mermaid CLI",
+      "assigned_category": "AI, Research and Media-native",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "evidence_validation_failure",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.85,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_material_evidence_validation_failed",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear"
+      ]
+    },
+    {
+      "assignment_number": 99,
+      "app_name": "YouTube Transcript",
+      "assigned_category": "AI, Research and Media-native",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "evidence_validation_failure",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.98,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_material_evidence_validation_failed",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear"
+      ]
+    },
+    {
+      "assignment_number": 100,
+      "app_name": "Grain",
+      "assigned_category": "AI, Research and Media-native",
+      "causes": [
+        "access_model_unclear",
+        "auth_unclear",
+        "low_confidence",
+        "contradictory_claims"
+      ],
+      "has_useful_raw_fields": true,
+      "extracted_auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "public_api_status": "yes",
+      "overall_confidence": 0.95,
+      "risk_flags": [
+        "risk_access_model_unclear",
+        "risk_auth_methods_unclear",
+        "risk_contradictory_claims",
+        "risk_verdict_unclear"
+      ]
+    }
+  ]
+}

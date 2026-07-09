@@ -1,0 +1,455 @@
+{
+  "identity": {
+    "assignment_number": 65,
+    "app_name": "Supabase",
+    "website_hint": "supabase.com/docs",
+    "assigned_category": "Developer, Infra and Data platforms",
+    "researched_at": "2026-07-09T17:24:27.970Z"
+  },
+  "product": {
+    "normalized_category": "Developer, Infra and Data platforms",
+    "one_line_description": "Supabase provides a full Postgres database with services for authentication, storage, real-time functionality, and server-side functions, accessible via various APIs and client libraries."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "The documentation describes Supabase's 'Auth' product which offers user authentication methods like email/password, passwordless, and OAuth for applications built on Supabase. However, the specific authentication methods required to access Supabase's own 'Data REST API', 'GraphQL API', or 'Management API' are not explicitly detailed in the provided source."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": true,
+    "access_notes": "Developers can set up and connect a database in just a few minutes to get started with Supabase services. This implies obtaining necessary credentials for API/tool access without human approval, consistent with a self-serve developer platform."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "REST",
+      "GraphQL",
+      "SDK",
+      "CLI"
+    ],
+    "api_breadth": "broad",
+    "api_summary": "Supabase offers a broad API surface including a 'Data REST API' and a 'GraphQL API' for data interaction, and a 'Management API' for project and organization management. It also provides client libraries (SDKs) for JavaScript, Flutter, Python, C#, Swift, and Kotlin, alongside a Supabase CLI for project development, management, and deployment."
+  },
+  "mcp": {
+    "mcp_status": "official",
+    "mcp_summary": "Supabase officially supports developing with AI-first using plugins, MCP, and skills, as mentioned under its 'AI tools' resources."
+  },
+  "buildability": {
+    "verdict": "unclear",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 0.5,
+      "access_model": 0.7,
+      "public_api": 1,
+      "api_breadth": 1,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.8,
+    "requires_human_review": true,
+    "human_review_reason": "Specific authentication methods for Supabase's APIs are not explicitly stated, leading to an 'unclear' classification for 'auth_methods'. The 'access_model' is inferred from 'getting started' language rather than explicit 'free API key' statements."
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783617867970_0",
+      "claim_field": "product.one_line_description",
+      "claim": "Supabase provides a full Postgres database with services for authentication, storage, real-time functionality, and server-side functions, accessible via various APIs and client libraries.",
+      "source_url": "https://supabase.com/docs",
+      "source_title": "Supabase Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "Supabase provides a full Postgres database for every project with Realtime functionality, database backups, extensions, and more.\nAuth\nAdd and manage email and password, passwordless, OAuth, and mobile logins to your project through a suite of identity providers and APIs.\nStorage\nStore, organize, transform, and serve large files—fully integrated with your Postgres database with Row Level Security access policies.\nRealtime\nListen to database changes, store and sync user states across clients, broadcast data to clients subscribed to a channel, and more.\nEdge Functions\nGlobally distributed, server-side functions to execute your code closest to your users for the lowest latency.",
+      "retrieved_at": "2026-07-09T17:24:27.970Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://supabase.com/docs"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617867970_1",
+      "claim_field": "developer_access.access_model",
+      "claim": "self_serve_free",
+      "source_url": "https://supabase.com/docs",
+      "source_title": "Supabase Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "Set up and connect a database in just a few minutes.",
+      "retrieved_at": "2026-07-09T17:24:27.970Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://supabase.com/docs"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617867970_2",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": true,
+      "source_url": "https://supabase.com/docs",
+      "source_title": "Supabase Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "Set up and connect a database in just a few minutes.",
+      "retrieved_at": "2026-07-09T17:24:27.970Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://supabase.com/docs"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617867970_3",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://supabase.com/docs",
+      "source_title": "Supabase Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "Modules\n[...]\nData REST API\n[...]\nGraphQL API",
+      "retrieved_at": "2026-07-09T17:24:27.970Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://supabase.com/docs"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617867970_4",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://supabase.com/docs",
+      "source_title": "Supabase Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "Management API\nManage your Supabase projects and organizations.",
+      "retrieved_at": "2026-07-09T17:24:27.970Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://supabase.com/docs"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617867970_5",
+      "claim_field": "api_surface.api_styles",
+      "claim": "REST",
+      "source_url": "https://supabase.com/docs",
+      "source_title": "Supabase Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "Modules\n[...]\nData REST API",
+      "retrieved_at": "2026-07-09T17:24:27.970Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://supabase.com/docs"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617867970_6",
+      "claim_field": "api_surface.api_styles",
+      "claim": "GraphQL",
+      "source_url": "https://supabase.com/docs",
+      "source_title": "Supabase Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "Modules\n[...]\nGraphQL API",
+      "retrieved_at": "2026-07-09T17:24:27.970Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://supabase.com/docs"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617867970_7",
+      "claim_field": "api_surface.api_styles",
+      "claim": "SDK",
+      "source_url": "https://supabase.com/docs",
+      "source_title": "Supabase Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "Client Libraries\n[...]\nJavaScript\n[...]\nFlutter\n[...]\nPython\n[...]\nC#\n[...]\nSwift\n[...]\nKotlin",
+      "retrieved_at": "2026-07-09T17:24:27.970Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://supabase.com/docs"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617867970_8",
+      "claim_field": "api_surface.api_styles",
+      "claim": "CLI",
+      "source_url": "https://supabase.com/docs",
+      "source_title": "Supabase Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "Supabase CLI\nUse the CLI to develop, manage and deploy your projects.",
+      "retrieved_at": "2026-07-09T17:24:27.970Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://supabase.com/docs"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617867970_9",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://supabase.com/docs",
+      "source_title": "Supabase Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "Modules\n[...]\nData REST API\n[...]\nGraphQL API\n[...]\nClient Libraries\n[...]\nSupabase CLI\n[...]\nManagement API",
+      "retrieved_at": "2026-07-09T17:24:27.970Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://supabase.com/docs"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617867970_10",
+      "claim_field": "mcp.mcp_status",
+      "claim": "official",
+      "source_url": "https://supabase.com/docs",
+      "source_title": "Supabase Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "AI tools\nDevelop with Supabase AI-first using plugins, MCP, and skills.",
+      "retrieved_at": "2026-07-09T17:24:27.970Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://supabase.com/docs"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 65,
+      "app_name": "Supabase",
+      "website_hint": "supabase.com/docs",
+      "assigned_category": "Developer, Infra and Data platforms",
+      "researched_at": "2026-07-09T17:24:27.970Z"
+    },
+    "product": {
+      "normalized_category": "Developer, Infra and Data platforms",
+      "one_line_description": "Supabase provides a full Postgres database with services for authentication, storage, real-time functionality, and server-side functions, accessible via various APIs and client libraries."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "The documentation describes Supabase's 'Auth' product which offers user authentication methods like email/password, passwordless, and OAuth for applications built on Supabase. However, the specific authentication methods required to access Supabase's own 'Data REST API', 'GraphQL API', or 'Management API' are not explicitly detailed in the provided source."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": true,
+      "access_notes": "Developers can set up and connect a database in just a few minutes to get started with Supabase services. This implies obtaining necessary credentials for API/tool access without human approval, consistent with a self-serve developer platform."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "REST",
+        "GraphQL",
+        "SDK",
+        "CLI"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "Supabase offers a broad API surface including a 'Data REST API' and a 'GraphQL API' for data interaction, and a 'Management API' for project and organization management. It also provides client libraries (SDKs) for JavaScript, Flutter, Python, C#, Swift, and Kotlin, alongside a Supabase CLI for project development, management, and deployment."
+    },
+    "mcp": {
+      "mcp_status": "official",
+      "mcp_summary": "Supabase officially supports developing with AI-first using plugins, MCP, and skills, as mentioned under its 'AI tools' resources."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient.",
+      "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0.5,
+        "access_model": 0.7,
+        "public_api": 1,
+        "api_breadth": 1,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.8,
+      "requires_human_review": true,
+      "human_review_reason": "Specific authentication methods for Supabase's APIs are not explicitly stated, leading to an 'unclear' classification for 'auth_methods'. The 'access_model' is inferred from 'getting started' language rather than explicit 'free API key' statements."
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_access_model_unclear",
+    "risk_auth_methods_unclear",
+    "risk_material_evidence_validation_failed",
+    "risk_contradictory_claims",
+    "risk_verdict_unclear",
+    "risk_low_confidence"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_access_model_unclear",
+      "risk_auth_methods_unclear",
+      "risk_material_evidence_validation_failed",
+      "risk_contradictory_claims",
+      "risk_verdict_unclear",
+      "risk_low_confidence"
+    ]
+  }
+}

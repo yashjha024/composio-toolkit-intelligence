@@ -1,0 +1,336 @@
+{
+  "identity": {
+    "assignment_number": 55,
+    "app_name": "Apify",
+    "website_hint": "docs.apify.com",
+    "assigned_category": "Data, SEO and Scraping",
+    "researched_at": "2026-07-09T12:52:32.617Z"
+  },
+  "product": {
+    "normalized_category": "Data, SEO and Scraping",
+    "one_line_description": "Apify is a cloud-based web scraping and data extraction platform that lets users run and build web crawlers called Actors, accessible via REST APIs or MCP."
+  },
+  "authentication": {
+    "auth_methods": [
+      "bearer_token",
+      "api_key",
+      "custom"
+    ],
+    "auth_summary": "Apify requests are authenticated using a personal API token, which can be passed as a Bearer token in the 'Authorization' header (recommended) or as a 'token' query parameter. In addition, AI agents can authenticate and pay for Actor runs without an account using agentic payment protocols like x402 (PAYMENT-SIGNATURE header) and Skyfire (skyfire-pay-id header)."
+  },
+  "developer_access": {
+    "access_model": "self_serve_free",
+    "credentials_obtainable_without_human_approval": true,
+    "access_notes": "Anyone can sign up for Apify's Free tier ($0/month, no credit card required) and immediately obtain their secret API token from the Integrations page in the Apify Console."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "REST",
+      "SDK",
+      "CLI"
+    ],
+    "api_breadth": "broad",
+    "api_summary": "Apify provides a RESTful HTTP API (v2) with complete OpenAPI specifications in YAML/JSON. It offers official JavaScript and Python clients, an SDK, a CLI, and comprehensive endpoints for managing, running, and getting results from Actors, datasets, key-value stores, and request queues."
+  },
+  "mcp": {
+    "mcp_status": "official",
+    "mcp_summary": "Apify officially hosts and maintains an open-source Model Context Protocol (MCP) server (mcp.apify.com) that enables AI agents to dynamically discover and run thousands of ready-made web scrapers (Actors) from the Apify Store, using stdio or streamable HTTP."
+  },
+  "buildability": {
+    "verdict": "build_now",
+    "primary_blocker": null,
+    "verdict_reasoning": "Self-serve developer access is verified with a broad/moderate documented public API."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 1,
+      "access_model": 1,
+      "public_api": 1,
+      "api_breadth": 1,
+      "mcp_status": 1
+    },
+    "overall_confidence": 1,
+    "requires_human_review": false,
+    "human_review_reason": null
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783601552617_0",
+      "claim_field": "authentication.auth_methods",
+      "claim": [
+        "bearer_token",
+        "api_key",
+        "custom"
+      ],
+      "source_url": "https://docs.apify.com/api/v2",
+      "source_title": "Apify API | Apify Documentation",
+      "source_type": "api_ref",
+      "evidence_snippet": "To use your token in a request, either:\n\n*   Add the token to your request's `Authorization` header as `Bearer <token>`.\n*   Add it as the `token` parameter to your request URL.\n\n...Apify supports the x402 protocol (PAYMENT-SIGNATURE header) and Skyfire (skyfire-pay-id header).",
+      "retrieved_at": "2026-07-09T12:52:32.618Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.apify.com/api/v2"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783601552618_1",
+      "claim_field": "developer_access.access_model",
+      "claim": "self_serve_free",
+      "source_url": "https://apify.com/pricing",
+      "source_title": "Apify pricing - plans for data collection at any scale · Apify",
+      "source_type": "official_doc",
+      "evidence_snippet": "Free\n$0\n$5 to spend in Apify Store or on your own Actors\n\nStart for free\nNo credit card required.",
+      "retrieved_at": "2026-07-09T12:52:32.618Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://apify.com/pricing"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783601552618_2",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": true,
+      "source_url": "https://docs.apify.com/api/v2",
+      "source_title": "Apify API | Apify Documentation",
+      "source_type": "api_ref",
+      "evidence_snippet": "You can find your API token on the Integrations page in the Apify Console.",
+      "retrieved_at": "2026-07-09T12:52:32.618Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.apify.com/api/v2"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783601552618_3",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://docs.apify.com/api/v2",
+      "source_title": "Apify API | Apify Documentation",
+      "source_type": "api_ref",
+      "evidence_snippet": "The Apify API (version 2) provides programmatic access to the Apify platform. The API is organized around RESTful HTTP endpoints.",
+      "retrieved_at": "2026-07-09T12:52:32.618Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.apify.com/api/v2"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783601552618_4",
+      "claim_field": "mcp.mcp_status",
+      "claim": "official",
+      "source_url": "https://github.com/apify/apify-mcp-server",
+      "source_title": "GitHub - apify/apify-mcp-server: The Apify MCP server enables your AI agents to extract data from social media, search engines, maps, e-commerce sites, or any other website using thousands of ready-made scrapers, crawlers, and automation tools available on the Apify Store. · GitHub",
+      "source_type": "github_repo",
+      "evidence_snippet": "The Apify Model Context Protocol (MCP) server at mcp.apify.com enables your AI agents to extract data from social media, search engines, maps, e-commerce sites, and any other website using thousands of ready-made scrapers, crawlers, and automation tools from Apify Store.",
+      "retrieved_at": "2026-07-09T12:52:32.618Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://github.com/apify/apify-mcp-server"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 55,
+      "app_name": "Apify",
+      "website_hint": "docs.apify.com",
+      "assigned_category": "Data, SEO and Scraping",
+      "researched_at": "2026-07-09T12:52:32.617Z"
+    },
+    "product": {
+      "normalized_category": "Data, SEO and Scraping",
+      "one_line_description": "Apify is a cloud-based web scraping and data extraction platform that lets users run and build web crawlers called Actors, accessible via REST APIs or MCP."
+    },
+    "authentication": {
+      "auth_methods": [
+        "bearer_token",
+        "api_key",
+        "custom"
+      ],
+      "auth_summary": "Apify requests are authenticated using a personal API token, which can be passed as a Bearer token in the 'Authorization' header (recommended) or as a 'token' query parameter. In addition, AI agents can authenticate and pay for Actor runs without an account using agentic payment protocols like x402 (PAYMENT-SIGNATURE header) and Skyfire (skyfire-pay-id header)."
+    },
+    "developer_access": {
+      "access_model": "self_serve_free",
+      "credentials_obtainable_without_human_approval": true,
+      "access_notes": "Anyone can sign up for Apify's Free tier ($0/month, no credit card required) and immediately obtain their secret API token from the Integrations page in the Apify Console."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "REST",
+        "SDK",
+        "CLI"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "Apify provides a RESTful HTTP API (v2) with complete OpenAPI specifications in YAML/JSON. It offers official JavaScript and Python clients, an SDK, a CLI, and comprehensive endpoints for managing, running, and getting results from Actors, datasets, key-value stores, and request queues."
+    },
+    "mcp": {
+      "mcp_status": "official",
+      "mcp_summary": "Apify officially hosts and maintains an open-source Model Context Protocol (MCP) server (mcp.apify.com) that enables AI agents to dynamically discover and run thousands of ready-made web scrapers (Actors) from the Apify Store, using stdio or streamable HTTP."
+    },
+    "buildability": {
+      "verdict": "build_now",
+      "primary_blocker": null,
+      "verdict_reasoning": "Self-serve developer access is verified with a broad/moderate documented public API."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 1,
+        "access_model": 1,
+        "public_api": 1,
+        "api_breadth": 1,
+        "mcp_status": 1
+      },
+      "overall_confidence": 1,
+      "requires_human_review": false,
+      "human_review_reason": null
+    }
+  },
+  "critic_result": {
+    "challenged_fields": [],
+    "critic_analysis": {
+      "error": "Critic audit LLM invocation failed"
+    },
+    "error_taxonomy_flags": []
+  },
+  "final_agent_result": {
+    "identity": {
+      "assignment_number": 55,
+      "app_name": "Apify",
+      "website_hint": "docs.apify.com",
+      "assigned_category": "Data, SEO and Scraping",
+      "researched_at": "2026-07-09T12:52:32.617Z"
+    },
+    "product": {
+      "normalized_category": "Data, SEO and Scraping",
+      "one_line_description": "Apify is a cloud-based web scraping and data extraction platform that lets users run and build web crawlers called Actors, accessible via REST APIs or MCP."
+    },
+    "authentication": {
+      "auth_methods": [
+        "bearer_token",
+        "api_key",
+        "custom"
+      ],
+      "auth_summary": "Apify requests are authenticated using a personal API token, which can be passed as a Bearer token in the 'Authorization' header (recommended) or as a 'token' query parameter. In addition, AI agents can authenticate and pay for Actor runs without an account using agentic payment protocols like x402 (PAYMENT-SIGNATURE header) and Skyfire (skyfire-pay-id header)."
+    },
+    "developer_access": {
+      "access_model": "self_serve_free",
+      "credentials_obtainable_without_human_approval": true,
+      "access_notes": "Anyone can sign up for Apify's Free tier ($0/month, no credit card required) and immediately obtain their secret API token from the Integrations page in the Apify Console."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "REST",
+        "SDK",
+        "CLI"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "Apify provides a RESTful HTTP API (v2) with complete OpenAPI specifications in YAML/JSON. It offers official JavaScript and Python clients, an SDK, a CLI, and comprehensive endpoints for managing, running, and getting results from Actors, datasets, key-value stores, and request queues."
+    },
+    "mcp": {
+      "mcp_status": "official",
+      "mcp_summary": "Apify officially hosts and maintains an open-source Model Context Protocol (MCP) server (mcp.apify.com) that enables AI agents to dynamically discover and run thousands of ready-made web scrapers (Actors) from the Apify Store, using stdio or streamable HTTP."
+    },
+    "buildability": {
+      "verdict": "build_now",
+      "primary_blocker": null,
+      "verdict_reasoning": "Self-serve developer access is verified with a broad/moderate documented public API."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 1,
+        "access_model": 1,
+        "public_api": 1,
+        "api_breadth": 1,
+        "mcp_status": 1
+      },
+      "overall_confidence": 1,
+      "requires_human_review": false,
+      "human_review_reason": null
+    }
+  },
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0",
+    "current_stage": "final_agent",
+    "errors": [],
+    "unresolved_questions": []
+  }
+}

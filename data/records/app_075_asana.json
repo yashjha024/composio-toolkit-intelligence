@@ -1,0 +1,563 @@
+{
+  "identity": {
+    "assignment_number": 75,
+    "app_name": "Asana",
+    "website_hint": "developers.asana.com",
+    "assigned_category": "Productivity and Project Management",
+    "researched_at": "2026-07-09T17:44:13.537Z"
+  },
+  "product": {
+    "normalized_category": "Productivity and Project Management",
+    "one_line_description": "Asana's developer platform enables integration of tools, automation of actions, and customization of workflows within Asana."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "The quick start guide mentions learning to 'create and authorize with a token' to build an app, but the specific authentication method (e.g., API key, OAuth2) for this token is not explicitly detailed in the provided source."
+  },
+  "developer_access": {
+    "access_model": "self_serve_free",
+    "credentials_obtainable_without_human_approval": true,
+    "access_notes": "The quick start guide instructs users to 'Learn to create and authorize with a token' to build their first app and create tasks via the API, indicating that API credentials can be obtained through a self-serve process without human approval."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "REST",
+      "webhooks"
+    ],
+    "api_breadth": "broad",
+    "api_summary": "Asana offers a public API that supports various integrations, automation, and workflow customizations. It allows for creating tasks, reading status updates, and using webhooks for automated actions. The platform also provides OpenAPI specifications for AI agents."
+  },
+  "mcp": {
+    "mcp_status": "official",
+    "mcp_summary": "Asana provides an official resource specifically 'For AI agents' at 'https://developers.asana.com/llms.txt' which includes an index of pages formatted in Markdown and endpoints in OpenAPI."
+  },
+  "buildability": {
+    "verdict": "build_now",
+    "primary_blocker": null,
+    "verdict_reasoning": "Self-serve developer access is verified with a broad/moderate documented public API."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 0.5,
+      "access_model": 0.9,
+      "public_api": 1,
+      "api_breadth": 0.9,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.9,
+    "requires_human_review": false,
+    "human_review_reason": null
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783619053537_0",
+      "claim_field": "product.one_line_description",
+      "claim": "Asana's developer platform enables integration of tools, automation of actions, and customization of workflows within Asana.",
+      "source_url": "https://developers.asana.com/",
+      "source_title": "Asana Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Integrate tools, automate actions, and customize your workflows with Asana’s developer platform.",
+      "retrieved_at": "2026-07-09T17:44:13.537Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.asana.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619053537_1",
+      "claim_field": "authentication.auth_methods",
+      "claim": [
+        "unclear"
+      ],
+      "source_url": "https://developers.asana.com/",
+      "source_title": "Asana Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Learn to create and authorize with a token then create tasks via the API.",
+      "retrieved_at": "2026-07-09T17:44:13.537Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.asana.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619053537_2",
+      "claim_field": "authentication.auth_summary",
+      "claim": "The quick start guide mentions learning to 'create and authorize with a token' to build an app, but the specific authentication method (e.g., API key, OAuth2) for this token is not explicitly detailed in the provided source.",
+      "source_url": "https://developers.asana.com/",
+      "source_title": "Asana Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "New to the Asana API? Build your first app with our step by step quick start guide. Learn to create and authorize with a token then create tasks via the API.",
+      "retrieved_at": "2026-07-09T17:44:13.537Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.asana.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619053537_3",
+      "claim_field": "developer_access.access_model",
+      "claim": "self_serve_free",
+      "source_url": "https://developers.asana.com/",
+      "source_title": "Asana Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "New to the Asana API? Build your first app with our step by step quick start guide. Learn to create and authorize with a token then create tasks via the API.",
+      "retrieved_at": "2026-07-09T17:44:13.537Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.asana.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619053537_4",
+      "claim_field": "credentials_obtainable_without_human_approval",
+      "claim": true,
+      "source_url": "https://developers.asana.com/",
+      "source_title": "Asana Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Learn to create and authorize with a token then create tasks via the API.",
+      "retrieved_at": "2026-07-09T17:44:13.537Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.asana.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619053537_5",
+      "claim_field": "developer_access.access_notes",
+      "claim": "The quick start guide instructs users on how to create and authorize with a token to build their first app and create tasks via the API, implying self-serve access to credentials.",
+      "source_url": "https://developers.asana.com/",
+      "source_title": "Asana Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "New to the Asana API? Build your first app with our step by step quick start guide. Learn to create and authorize with a token then create tasks via the API.",
+      "retrieved_at": "2026-07-09T17:44:13.537Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.asana.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619053537_6",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://developers.asana.com/",
+      "source_title": "Asana Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Integrate tools, automate actions, and customize your workflows with Asana’s developer platform.",
+      "retrieved_at": "2026-07-09T17:44:13.537Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.asana.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619053537_7",
+      "claim_field": "api_surface.api_styles",
+      "claim": "REST",
+      "source_url": "https://developers.asana.com/",
+      "source_title": "Asana Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "For AI agents: visit https://developers.asana.com/llms.txt for an index of all pages formatted in Markdown and endpoints in OpenAPI.",
+      "retrieved_at": "2026-07-09T17:44:13.537Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.asana.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619053537_8",
+      "claim_field": "api_surface.api_styles",
+      "claim": "webhooks",
+      "source_url": "https://developers.asana.com/",
+      "source_title": "Asana Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Automate tedious work in powerful, bespoke ways with our platform features like rule actions, webhooks, and our API.",
+      "retrieved_at": "2026-07-09T17:44:13.537Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.asana.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619053537_9",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://developers.asana.com/",
+      "source_title": "Asana Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Integrate tools, automate actions, and customize your workflows with Asana’s developer platform.",
+      "retrieved_at": "2026-07-09T17:44:13.537Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.asana.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619053537_10",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://developers.asana.com/",
+      "source_title": "Asana Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Learn to create and authorize with a token then create tasks via the API.",
+      "retrieved_at": "2026-07-09T17:44:13.537Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.asana.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619053537_11",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://developers.asana.com/",
+      "source_title": "Asana Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Learn to read status updates from Asana and share them in another tool.",
+      "retrieved_at": "2026-07-09T17:44:13.537Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.asana.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619053537_12",
+      "claim_field": "api_surface.api_summary",
+      "claim": "The Asana developer platform allows integration of tools, automation of actions, customization of workflows, and creation/reading of tasks and status updates via its API, webhooks, and app components. OpenAPI specification is available.",
+      "source_url": "https://developers.asana.com/",
+      "source_title": "Asana Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Integrate tools, automate actions, and customize your workflows with Asana’s developer platform.\n[...]Learn to create and authorize with a token then create tasks via the API.\n[...]Automate tedious work in powerful, bespoke ways with our platform features like rule actions, webhooks, and our API.\n[...]For AI agents: visit https://developers.asana.com/llms.txt for an index of all pages formatted in Markdown and endpoints in OpenAPI.",
+      "retrieved_at": "2026-07-09T17:44:13.537Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.asana.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619053537_13",
+      "claim_field": "mcp.mcp_status",
+      "claim": "official",
+      "source_url": "https://developers.asana.com/",
+      "source_title": "Asana Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "For AI agents: visit https://developers.asana.com/llms.txt for an index of all pages formatted in Markdown and endpoints in OpenAPI.",
+      "retrieved_at": "2026-07-09T17:44:13.537Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.asana.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619053537_14",
+      "claim_field": "mcp.mcp_summary",
+      "claim": "Asana provides an official resource specifically 'For AI agents' at 'https://developers.asana.com/llms.txt' which includes an index of pages formatted in Markdown and endpoints in OpenAPI.",
+      "source_url": "https://developers.asana.com/",
+      "source_title": "Asana Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "For AI agents: visit https://developers.asana.com/llms.txt for an index of all pages formatted in Markdown and endpoints in OpenAPI.",
+      "retrieved_at": "2026-07-09T17:44:13.537Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.asana.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 75,
+      "app_name": "Asana",
+      "website_hint": "developers.asana.com",
+      "assigned_category": "Productivity and Project Management",
+      "researched_at": "2026-07-09T17:44:13.537Z"
+    },
+    "product": {
+      "normalized_category": "Productivity and Project Management",
+      "one_line_description": "Asana's developer platform enables integration of tools, automation of actions, and customization of workflows within Asana."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "The quick start guide mentions learning to 'create and authorize with a token' to build an app, but the specific authentication method (e.g., API key, OAuth2) for this token is not explicitly detailed in the provided source."
+    },
+    "developer_access": {
+      "access_model": "self_serve_free",
+      "credentials_obtainable_without_human_approval": true,
+      "access_notes": "The quick start guide instructs users to 'Learn to create and authorize with a token' to build their first app and create tasks via the API, indicating that API credentials can be obtained through a self-serve process without human approval."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "REST",
+        "webhooks"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "Asana offers a public API that supports various integrations, automation, and workflow customizations. It allows for creating tasks, reading status updates, and using webhooks for automated actions. The platform also provides OpenAPI specifications for AI agents."
+    },
+    "mcp": {
+      "mcp_status": "official",
+      "mcp_summary": "Asana provides an official resource specifically 'For AI agents' at 'https://developers.asana.com/llms.txt' which includes an index of pages formatted in Markdown and endpoints in OpenAPI."
+    },
+    "buildability": {
+      "verdict": "build_now",
+      "primary_blocker": null,
+      "verdict_reasoning": "Self-serve developer access is verified with a broad/moderate documented public API."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0.5,
+        "access_model": 0.9,
+        "public_api": 1,
+        "api_breadth": 0.9,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.9,
+      "requires_human_review": false,
+      "human_review_reason": null
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_auth_methods_unclear",
+    "risk_material_evidence_validation_failed",
+    "risk_contradictory_claims"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_auth_methods_unclear",
+      "risk_material_evidence_validation_failed",
+      "risk_contradictory_claims"
+    ]
+  }
+}

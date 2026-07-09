@@ -1,0 +1,14 @@
+{
+  "recommendation": "TARGETED REPAIR — repair only specific fields/apps",
+  "rationale": "Out of 76 UNCLEAR records, 76 (100.0%) already contain valid, accurate extracted raw data for access model, auth methods, or API status. The high UNCLEAR rate (76%) is primarily driven by conservative Fast Scale risk flag triggers acting as strict guardrails during one-pass extraction. A targeted repair/calibration of the deterministic verdict evaluator or a single targeted re-research pass on specific borderline self-serve apps will resolve false-positive UNCLEAR verdicts without needing a broader re-extraction across all 100 records.",
+  "target_scope": {
+    "apps_to_repair": "The ~60 Fast Scale apps currently marked UNCLEAR that possess clear self-serve access models and documented APIs (e.g. Supabase #65, Notion #71, Stripe #81, Plaid #82, Xero #87, GitHub #61).",
+    "fields_to_repair": [
+      "buildability.verdict",
+      "buildability.primary_blocker",
+      "fast_scale_risk_flags"
+    ],
+    "why_fields_matter": "These fields directly dictate the assignment-level buildability insights and determine whether a developer toolkit can immediately integrate the application. Ensuring accurate verdicts unblocks pattern analysis without altering verified raw facts.",
+    "estimated_additional_llm_calls": "0 to ~15 calls (0 if applying deterministic threshold adjustments to existing raw extractions; up to 15 if running targeted critic passes on top borderline apps during verification)."
+  }
+}

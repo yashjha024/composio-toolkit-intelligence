@@ -1,0 +1,271 @@
+{
+  "identity": {
+    "assignment_number": 58,
+    "app_name": "Sherlock",
+    "website_hint": "github.com/sherlock-project/sherlock",
+    "assigned_category": "Data, SEO and Scraping",
+    "researched_at": "2026-07-09T17:17:38.479Z"
+  },
+  "product": {
+    "normalized_category": "Data, SEO and Scraping",
+    "one_line_description": "Hunt down social media accounts by username across social networks."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "The Sherlock project is an open-source command-line tool, not an external API service. Therefore, the concept of authentication methods for API access, such as API keys or OAuth, is not applicable or documented within the provided source."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": false,
+    "access_notes": "Sherlock is a command-line interface (CLI) tool that users install and run locally. It does not require obtaining API credentials (e.g., API keys, OAuth tokens) for its functionality, as it does not expose a public API. Access to the tool itself is achieved through standard software installation methods like `pipx install`, `docker run`, or package managers."
+  },
+  "api_surface": {
+    "public_api": "no",
+    "api_styles": [
+      "CLI"
+    ],
+    "api_breadth": "narrow",
+    "api_summary": "Sherlock functions as a command-line interface (CLI) tool, allowing users to search for social media accounts by username. It does not offer a traditional public API (e.g., REST, GraphQL) for external programmatic integration. Its functionality is accessed and controlled solely through command-line arguments and options."
+  },
+  "mcp": {
+    "mcp_status": "none_found",
+    "mcp_summary": "No information regarding Model Context Protocol (MCP) support or integration for AI agents was found in the provided source."
+  },
+  "buildability": {
+    "verdict": "blocked_low_priority",
+    "primary_blocker": "No documented public API available.",
+    "verdict_reasoning": "Application lacks documented REST, GraphQL, or SDK endpoints required for agent tool calling."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 0.8,
+      "access_model": 0.7,
+      "public_api": 1,
+      "api_breadth": 1,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.85,
+    "requires_human_review": true,
+    "human_review_reason": "The product is a command-line tool, not a traditional API service. The definitions for 'developer_access' and 'authentication' fields, particularly around 'credentials obtainable without human approval' and 'access_model', are challenging to apply directly to a tool that doesn't require API-specific credentials. The current classification reflects this non-applicability."
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783617458479_0",
+      "claim_field": "product.one_line_description",
+      "claim": "Hunt down social media accounts by username across social networks.",
+      "source_url": "https://github.com/sherlock-project/sherlock",
+      "source_title": "GitHub - sherlock-project/sherlock: Hunt down social media accounts by username across social networks · GitHub",
+      "source_type": "github_repo",
+      "evidence_snippet": "Hunt down social media accounts by username across [400+ social networks](https://sherlockproject.xyz/sites)",
+      "retrieved_at": "2026-07-09T17:17:38.479Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://github.com/sherlock-project/sherlock"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617458479_1",
+      "claim_field": "api_surface.api_styles",
+      "claim": "CLI",
+      "source_url": "https://github.com/sherlock-project/sherlock",
+      "source_title": "GitHub - sherlock-project/sherlock: Hunt down social media accounts by username across social networks · GitHub",
+      "source_type": "github_repo",
+      "evidence_snippet": "Method\nNotes\n`pipx install sherlock-project`\n`pip` or [`uv`](https://docs.astral.sh/uv/) may be used in place of `pipx`\n`docker run -it --rm sherlock/sherlock`\n`dnf install sherlock-project`",
+      "retrieved_at": "2026-07-09T17:17:38.479Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://github.com/sherlock-project/sherlock"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617458479_2",
+      "claim_field": "api_surface.api_styles",
+      "claim": "CLI",
+      "source_url": "https://github.com/sherlock-project/sherlock",
+      "source_title": "GitHub - sherlock-project/sherlock: Hunt down social media accounts by username across social networks · GitHub",
+      "source_type": "github_repo",
+      "evidence_snippet": "$ sherlock --help\nusage: sherlock [-h] [--version] [--verbose] [--folderoutput FOLDEROUTPUT] [--output OUTPUT] [--csv] [--xlsx] [--site SITE_NAME] [--proxy PROXY_URL] [--dump-response]\n                [--json JSON_FILE] [--timeout TIMEOUT] [--print-all] [--print-found] [--no-color] [--browse] [--local] [--nsfw] [--txt] [--ignore-exclusions]\n                USERNAMES [USERNAMES ...]\n\nSherlock: Find Usernames Across Social Networks (Version 0.16.0)",
+      "retrieved_at": "2026-07-09T17:17:38.479Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://github.com/sherlock-project/sherlock"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617458479_3",
+      "claim_field": "api_surface.public_api",
+      "claim": "no",
+      "source_url": "https://github.com/sherlock-project/sherlock",
+      "source_title": "GitHub - sherlock-project/sherlock: Hunt down social media accounts by username across social networks · GitHub",
+      "source_type": "github_repo",
+      "evidence_snippet": "Method\nNotes\n`pipx install sherlock-project`\n`pip` or [`uv`](https://docs.astral.sh/uv/) may be used in place of `pipx`\n`docker run -it --rm sherlock/sherlock`\n`dnf install sherlock-project`",
+      "retrieved_at": "2026-07-09T17:17:38.479Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://github.com/sherlock-project/sherlock"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617458479_4",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "narrow",
+      "source_url": "https://github.com/sherlock-project/sherlock",
+      "source_title": "GitHub - sherlock-project/sherlock: Hunt down social media accounts by username across social networks · GitHub",
+      "source_type": "github_repo",
+      "evidence_snippet": "$ sherlock --help\nusage: sherlock [-h] [--version] [--verbose] [--folderoutput FOLDEROUTPUT] [--output OUTPUT] [--csv] [--xlsx] [--site SITE_NAME] [--proxy PROXY_URL] [--dump-response]\n                [--json JSON_FILE] [--timeout TIMEOUT] [--print-all] [--print-found] [--no-color] [--browse] [--local] [--nsfw] [--txt] [--ignore-exclusions]\n                USERNAMES [USERNAMES ...]",
+      "retrieved_at": "2026-07-09T17:17:38.479Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://github.com/sherlock-project/sherlock"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 58,
+      "app_name": "Sherlock",
+      "website_hint": "github.com/sherlock-project/sherlock",
+      "assigned_category": "Data, SEO and Scraping",
+      "researched_at": "2026-07-09T17:17:38.479Z"
+    },
+    "product": {
+      "normalized_category": "Data, SEO and Scraping",
+      "one_line_description": "Hunt down social media accounts by username across social networks."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "The Sherlock project is an open-source command-line tool, not an external API service. Therefore, the concept of authentication methods for API access, such as API keys or OAuth, is not applicable or documented within the provided source."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": false,
+      "access_notes": "Sherlock is a command-line interface (CLI) tool that users install and run locally. It does not require obtaining API credentials (e.g., API keys, OAuth tokens) for its functionality, as it does not expose a public API. Access to the tool itself is achieved through standard software installation methods like `pipx install`, `docker run`, or package managers."
+    },
+    "api_surface": {
+      "public_api": "no",
+      "api_styles": [
+        "CLI"
+      ],
+      "api_breadth": "narrow",
+      "api_summary": "Sherlock functions as a command-line interface (CLI) tool, allowing users to search for social media accounts by username. It does not offer a traditional public API (e.g., REST, GraphQL) for external programmatic integration. Its functionality is accessed and controlled solely through command-line arguments and options."
+    },
+    "mcp": {
+      "mcp_status": "none_found",
+      "mcp_summary": "No information regarding Model Context Protocol (MCP) support or integration for AI agents was found in the provided source."
+    },
+    "buildability": {
+      "verdict": "blocked_low_priority",
+      "primary_blocker": "No documented public API available.",
+      "verdict_reasoning": "Application lacks documented REST, GraphQL, or SDK endpoints required for agent tool calling."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0.8,
+        "access_model": 0.7,
+        "public_api": 1,
+        "api_breadth": 1,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.85,
+      "requires_human_review": true,
+      "human_review_reason": "The product is a command-line tool, not a traditional API service. The definitions for 'developer_access' and 'authentication' fields, particularly around 'credentials obtainable without human approval' and 'access_model', are challenging to apply directly to a tool that doesn't require API-specific credentials. The current classification reflects this non-applicability."
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_access_model_unclear",
+    "risk_auth_methods_unclear",
+    "risk_material_evidence_validation_failed",
+    "risk_low_confidence"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_access_model_unclear",
+      "risk_auth_methods_unclear",
+      "risk_material_evidence_validation_failed",
+      "risk_low_confidence"
+    ]
+  }
+}

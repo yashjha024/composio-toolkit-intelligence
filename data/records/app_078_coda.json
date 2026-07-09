@@ -1,0 +1,631 @@
+{
+  "identity": {
+    "assignment_number": 78,
+    "app_name": "Coda",
+    "website_hint": "coda.io/developers",
+    "assigned_category": "Productivity and Project Management",
+    "researched_at": "2026-07-09T17:50:21.798Z"
+  },
+  "product": {
+    "normalized_category": "Productivity and Project Management",
+    "one_line_description": "Coda is a flexible workspace for documents, data, and applications, and its API allows programmatic interaction with Coda docs, including listing, creating, sharing, publishing, and managing their structure and content."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "API requests are authenticated by providing an API token as a Bearer token in the Authorization header. Response codes 401 and 403 indicate invalid/expired tokens or insufficient access."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": true,
+    "access_notes": "The Coda API is available free of charge to all users, in both free and paid workspaces. API usage is subject to the role of the user associated with the API token, with some operations (e.g., creating docs) requiring specific roles like 'Doc Maker' (with potential for auto-promotion)."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "REST",
+      "SDK"
+    ],
+    "api_breadth": "broad",
+    "api_summary": "The Coda API is a RESTful API providing extensive capabilities to programmatically interact with Coda docs. It supports managing folders, docs (listing, creating, retrieving, deleting, updating metadata), permissions (listing, adding, getting sharing metadata, updating ACL settings), doc structure (pages, automations), tables and views (tables, columns, rows, button pushes), formulas, controls, account information, and analytics. An OpenAPI/Swagger spec is available, and there is an official Google Apps Script library, with various third-party client libraries also existing."
+  },
+  "mcp": {
+    "mcp_status": "official",
+    "mcp_summary": "Coda offers a Coda MCP server which is optimized for Large Language Model (LLM) usage patterns and exposes more granular methods for accessing and modifying data, recommended for integrating Coda with AI tools."
+  },
+  "buildability": {
+    "verdict": "unclear",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 1,
+      "access_model": 1,
+      "public_api": 1,
+      "api_breadth": 1,
+      "mcp_status": 1
+    },
+    "overall_confidence": 1,
+    "requires_human_review": false,
+    "human_review_reason": null
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783619421798_0",
+      "claim_field": "product.one_line_description",
+      "claim": "The Coda API is a RESTful API that lets you programmatically interact with Coda docs, including listing, creating, sharing, publishing, and managing their structure and content.",
+      "source_url": "https://docs.superhuman.com/developers/apis/v1",
+      "source_title": "Superhuman Docs API (v1) Reference Documentation",
+      "source_type": "api_ref",
+      "evidence_snippet": "The Coda API is a RESTful API that lets you programmatically interact with Coda docs:\n*   List and search Coda docs\n*   Create new docs and copy existing ones\n*   Share and publish docs\n*   Discover pages, tables, formulas, and controls\n*   Read, insert, upsert, update, and delete rows",
+      "retrieved_at": "2026-07-09T17:50:21.798Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.superhuman.com/developers/apis/v1"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619421798_1",
+      "claim_field": "authentication.auth_methods",
+      "claim": [
+        "bearer_token"
+      ],
+      "source_url": "https://docs.superhuman.com/developers/apis/v1",
+      "source_title": "Superhuman Docs API (v1) Reference Documentation",
+      "source_type": "api_ref",
+      "evidence_snippet": "headers = {'Authorization': 'Bearer <your API token>'}",
+      "retrieved_at": "2026-07-09T17:50:21.798Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.superhuman.com/developers/apis/v1"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619421798_2",
+      "claim_field": "authentication.auth_summary",
+      "claim": "API requests are authenticated by providing an API token as a Bearer token in the Authorization header. Response codes 401 and 403 indicate invalid/expired tokens or insufficient access.",
+      "source_url": "https://docs.superhuman.com/developers/apis/v1",
+      "source_title": "Superhuman Docs API (v1) Reference Documentation",
+      "source_type": "api_ref",
+      "evidence_snippet": "headers = {'Authorization': 'Bearer <your API token>'}",
+      "retrieved_at": "2026-07-09T17:50:21.798Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.superhuman.com/developers/apis/v1"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619421798_3",
+      "claim_field": "authentication.auth_summary",
+      "claim": "API requests are authenticated by providing an API token as a Bearer token in the Authorization header. Response codes 401 and 403 indicate invalid/expired tokens or insufficient access.",
+      "source_url": "https://docs.superhuman.com/developers/apis/v1",
+      "source_title": "Superhuman Docs API (v1) Reference Documentation",
+      "source_type": "api_ref",
+      "evidence_snippet": "401\nThe API token is invalid or has expired.\n403\nThe API token does not grant access to this resource.",
+      "retrieved_at": "2026-07-09T17:50:21.798Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.superhuman.com/developers/apis/v1"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619421798_4",
+      "claim_field": "developer_access.access_model",
+      "claim": "self_serve_free",
+      "source_url": "https://docs.superhuman.com/developers/apis/v1",
+      "source_title": "Superhuman Docs API (v1) Reference Documentation",
+      "source_type": "api_ref",
+      "evidence_snippet": "We make the Coda API available to all of our users free of charge, in both free and paid workspaces.",
+      "retrieved_at": "2026-07-09T17:50:21.798Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.superhuman.com/developers/apis/v1"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619421798_5",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": true,
+      "source_url": "https://docs.superhuman.com/developers/apis/v1",
+      "source_title": "Superhuman Docs API (v1) Reference Documentation",
+      "source_type": "api_ref",
+      "evidence_snippet": "We make the Coda API available to all of our users free of charge, in both free and paid workspaces. However, API usage is subject to the role of the user associated with the API token in the workspace applicable to each API request.",
+      "retrieved_at": "2026-07-09T17:50:21.798Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.superhuman.com/developers/apis/v1"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619421798_6",
+      "claim_field": "developer_access.access_notes",
+      "claim": "The Coda API is available free of charge to all users, in both free and paid workspaces. API usage is subject to the role of the user associated with the API token, with some operations (e.g., creating docs) requiring specific roles like 'Doc Maker' (with potential for auto-promotion).",
+      "source_url": "https://docs.superhuman.com/developers/apis/v1",
+      "source_title": "Superhuman Docs API (v1) Reference Documentation",
+      "source_type": "api_ref",
+      "evidence_snippet": "We make the Coda API available to all of our users free of charge, in both free and paid workspaces. However, API usage is subject to the role of the user associated with the API token in the workspace applicable to each API request. What this means is:\n*   For the [`#createDoc`](#operation/createDoc) endpoint specifically, the owner of the API token must be a Doc Maker (or Admin) in the workspace. If the \"Any member can create docs\" option in enabled in the workspace settings, they can be an Editor and will get auto-promoted to Doc Maker upon using this endpoint. Lastly, if in addition, the API key owner matches the \"Auto-join email domains\" setting, they will be auto-added to the workspace and promoted to Doc Maker upon using this endpoint",
+      "retrieved_at": "2026-07-09T17:50:21.798Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.superhuman.com/developers/apis/v1"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619421798_7",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://docs.superhuman.com/developers/apis/v1",
+      "source_title": "Superhuman Docs API (v1) Reference Documentation",
+      "source_type": "api_ref",
+      "evidence_snippet": "The Coda API is a RESTful API that lets you programmatically interact with Coda docs:",
+      "retrieved_at": "2026-07-09T17:50:21.798Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.superhuman.com/developers/apis/v1"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619421798_8",
+      "claim_field": "api_surface.api_styles",
+      "claim": [
+        "REST",
+        "SDK"
+      ],
+      "source_url": "https://docs.superhuman.com/developers/apis/v1",
+      "source_title": "Superhuman Docs API (v1) Reference Documentation",
+      "source_type": "api_ref",
+      "evidence_snippet": "The Coda API is a RESTful API that lets you programmatically interact with Coda docs:",
+      "retrieved_at": "2026-07-09T17:50:21.798Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.superhuman.com/developers/apis/v1"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619421798_9",
+      "claim_field": "api_surface.api_styles",
+      "claim": [
+        "REST",
+        "SDK"
+      ],
+      "source_url": "https://docs.superhuman.com/developers/apis/v1",
+      "source_title": "Superhuman Docs API (v1) Reference Documentation",
+      "source_type": "api_ref",
+      "evidence_snippet": "Coda provides a library for Google Apps Script.",
+      "retrieved_at": "2026-07-09T17:50:21.798Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.superhuman.com/developers/apis/v1"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619421798_10",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://docs.superhuman.com/developers/apis/v1",
+      "source_title": "Superhuman Docs API (v1) Reference Documentation",
+      "source_type": "api_ref",
+      "evidence_snippet": "*   Folders\n    *   Folders\n*   Docs\n    *   Docs\n    *   Permissions\n    *   Publishing\n*   Doc Structure\n    *   Pages\n    *   Automations\n*   Tables and Views\n    *   Tables\n    *   Columns\n    *   Rows\n*   Formulas & Controls\n    *   Formulas\n    *   Controls\n*   Miscellaneous\n    *   Account\n    *   Analytics\n    *   Miscellaneous",
+      "retrieved_at": "2026-07-09T17:50:21.798Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.superhuman.com/developers/apis/v1"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619421798_11",
+      "claim_field": "api_surface.api_summary",
+      "claim": "The Coda API is a RESTful API providing extensive capabilities to programmatically interact with Coda docs. It supports managing folders, docs (listing, creating, retrieving, deleting, updating metadata), permissions (listing, adding, getting sharing metadata, updating ACL settings), doc structure (pages, automations), tables and views (tables, columns, rows, button pushes), formulas, controls, account information, and analytics. An OpenAPI/Swagger spec is available, and there is an official Google Apps Script library, with various third-party client libraries also existing.",
+      "source_url": "https://docs.superhuman.com/developers/apis/v1",
+      "source_title": "Superhuman Docs API (v1) Reference Documentation",
+      "source_type": "api_ref",
+      "evidence_snippet": "The Coda API is a RESTful API that lets you programmatically interact with Coda docs:\n*   List and search Coda docs\n*   Create new docs and copy existing ones\n*   Share and publish docs\n*   Discover pages, tables, formulas, and controls\n*   Read, insert, upsert, update, and delete rows",
+      "retrieved_at": "2026-07-09T17:50:21.798Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.superhuman.com/developers/apis/v1"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619421798_12",
+      "claim_field": "api_surface.api_summary",
+      "claim": "The Coda API is a RESTful API providing extensive capabilities to programmatically interact with Coda docs. It supports managing folders, docs (listing, creating, retrieving, deleting, updating metadata), permissions (listing, adding, getting sharing metadata, updating ACL settings), doc structure (pages, automations), tables and views (tables, columns, rows, button pushes), formulas, controls, account information, and analytics. An OpenAPI/Swagger spec is available, and there is an official Google Apps Script library, with various third-party client libraries also existing.",
+      "source_url": "https://docs.superhuman.com/developers/apis/v1",
+      "source_title": "Superhuman Docs API (v1) Reference Documentation",
+      "source_type": "api_ref",
+      "evidence_snippet": "In an effort to standardize our API and make it accessible, we offer an OpenAPI 3.0 specification:\n*   [OpenAPI 3.0 spec - YAML](https://coda.io/apis/v1/openapi.yaml)\n*   [OpenAPI 3.0 spec - JSON](https://coda.io/apis/v1/openapi.json)",
+      "retrieved_at": "2026-07-09T17:50:21.798Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.superhuman.com/developers/apis/v1"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619421798_13",
+      "claim_field": "api_surface.api_summary",
+      "claim": "The Coda API is a RESTful API providing extensive capabilities to programmatically interact with Coda docs. It supports managing folders, docs (listing, creating, retrieving, deleting, updating metadata), permissions (listing, adding, getting sharing metadata, updating ACL settings), doc structure (pages, automations), tables and views (tables, columns, rows, button pushes), formulas, controls, account information, and analytics. An OpenAPI/Swagger spec is available, and there is an official Google Apps Script library, with various third-party client libraries also existing.",
+      "source_url": "https://docs.superhuman.com/developers/apis/v1",
+      "source_title": "Superhuman Docs API (v1) Reference Documentation",
+      "source_type": "api_ref",
+      "evidence_snippet": "We do not currently support client libraries apart from Google Apps Script.",
+      "retrieved_at": "2026-07-09T17:50:21.798Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.superhuman.com/developers/apis/v1"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619421798_14",
+      "claim_field": "api_surface.api_summary",
+      "claim": "The Coda API is a RESTful API providing extensive capabilities to programmatically interact with Coda docs. It supports managing folders, docs (listing, creating, retrieving, deleting, updating metadata), permissions (listing, adding, getting sharing metadata, updating ACL settings), doc structure (pages, automations), tables and views (tables, columns, rows, button pushes), formulas, controls, account information, and analytics. An OpenAPI/Swagger spec is available, and there is an official Google Apps Script library, with various third-party client libraries also existing.",
+      "source_url": "https://docs.superhuman.com/developers/apis/v1",
+      "source_title": "Superhuman Docs API (v1) Reference Documentation",
+      "source_type": "api_ref",
+      "evidence_snippet": "Some members of our amazing community have written libraries to work with our API. These aren't officially supported by Coda, but are listed here for convenience.",
+      "retrieved_at": "2026-07-09T17:50:21.798Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.superhuman.com/developers/apis/v1"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619421798_15",
+      "claim_field": "mcp.mcp_status",
+      "claim": "official",
+      "source_url": "https://docs.superhuman.com/developers/apis/v1",
+      "source_title": "Superhuman Docs API (v1) Reference Documentation",
+      "source_type": "api_ref",
+      "evidence_snippet": "If you plan to integrate Coda with an AI tool, you may also want to consider using the [Coda MCP server](https://coda.io/resources/guides/getting_started_with_coda_mcp).",
+      "retrieved_at": "2026-07-09T17:50:21.798Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.superhuman.com/developers/apis/v1"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619421798_16",
+      "claim_field": "mcp.mcp_summary",
+      "claim": "Coda offers a Coda MCP server which is optimized for Large Language Model (LLM) usage patterns and exposes more granular methods for accessing and modifying data, recommended for integrating Coda with AI tools.",
+      "source_url": "https://docs.superhuman.com/developers/apis/v1",
+      "source_title": "Superhuman Docs API (v1) Reference Documentation",
+      "source_type": "api_ref",
+      "evidence_snippet": "If you plan to integrate Coda with an AI tool, you may also want to consider using the [Coda MCP server](https://coda.io/resources/guides/getting_started_with_coda_mcp). It's optimized for LLM usage patterns and often exposes more granular methods for accessing and modifying data.",
+      "retrieved_at": "2026-07-09T17:50:21.798Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.superhuman.com/developers/apis/v1"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 78,
+      "app_name": "Coda",
+      "website_hint": "coda.io/developers",
+      "assigned_category": "Productivity and Project Management",
+      "researched_at": "2026-07-09T17:50:21.798Z"
+    },
+    "product": {
+      "normalized_category": "Productivity and Project Management",
+      "one_line_description": "Coda is a flexible workspace for documents, data, and applications, and its API allows programmatic interaction with Coda docs, including listing, creating, sharing, publishing, and managing their structure and content."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "API requests are authenticated by providing an API token as a Bearer token in the Authorization header. Response codes 401 and 403 indicate invalid/expired tokens or insufficient access."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": true,
+      "access_notes": "The Coda API is available free of charge to all users, in both free and paid workspaces. API usage is subject to the role of the user associated with the API token, with some operations (e.g., creating docs) requiring specific roles like 'Doc Maker' (with potential for auto-promotion)."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "REST",
+        "SDK"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "The Coda API is a RESTful API providing extensive capabilities to programmatically interact with Coda docs. It supports managing folders, docs (listing, creating, retrieving, deleting, updating metadata), permissions (listing, adding, getting sharing metadata, updating ACL settings), doc structure (pages, automations), tables and views (tables, columns, rows, button pushes), formulas, controls, account information, and analytics. An OpenAPI/Swagger spec is available, and there is an official Google Apps Script library, with various third-party client libraries also existing."
+    },
+    "mcp": {
+      "mcp_status": "official",
+      "mcp_summary": "Coda offers a Coda MCP server which is optimized for Large Language Model (LLM) usage patterns and exposes more granular methods for accessing and modifying data, recommended for integrating Coda with AI tools."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient.",
+      "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 1,
+        "access_model": 1,
+        "public_api": 1,
+        "api_breadth": 1,
+        "mcp_status": 1
+      },
+      "overall_confidence": 1,
+      "requires_human_review": false,
+      "human_review_reason": null
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_access_model_unclear",
+    "risk_auth_methods_unclear",
+    "risk_material_evidence_validation_failed",
+    "risk_contradictory_claims",
+    "risk_verdict_unclear"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_access_model_unclear",
+      "risk_auth_methods_unclear",
+      "risk_material_evidence_validation_failed",
+      "risk_contradictory_claims",
+      "risk_verdict_unclear"
+    ]
+  }
+}

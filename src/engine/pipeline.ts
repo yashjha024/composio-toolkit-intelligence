@@ -88,60 +88,106 @@ export class ResearchPipeline {
     let urlsFetched = 0;
     const initialLlmCalls = (this.llmProvider as any).callCount || 0;
 
-    // Step 1: Find relevant official documentation
-    const discovered = await this.discovery.discoverSources(appName, websiteHint, seededUrls);
-    const pagesToFetch = discovered.slice(0, 3); // Fetch top 3 candidate sources
-    const pages = [];
-
-    for (const source of pagesToFetch) {
-      try {
-        const page = await this.validator.getCachedOrFetch(source.url);
-        if (page.status >= 200 && page.status < 400 && page.markdown) {
-          pages.push(page);
-          urlsFetched++;
-        }
-      } catch {
-        // Skip failed fetch cleanly
-      }
+    const existingRecord = this.store.getRecord(assignmentNumber, appName);
+    if (existingRecord && existingRecord.final_agent_result) {
+      return {
+        record: existingRecord,
+        stats: { totalRuntimeMs: 0, urlsFetched: 0, llmCallsCount: 0 },
+      };
     }
 
-    if (pages.length === 0) {
-      // Fallback: try fetching websiteHint directly if discovery queries failed or returned non-200
-      const directUrl = websiteHint.startsWith('http') ? websiteHint : `https://${websiteHint.replace(/\(.*?\)/g, '').trim()}`;
-      try {
-        const page = await this.validator.getCachedOrFetch(directUrl);
-        if (page.markdown || page.rawHtml) {
-          pages.push(page);
-          urlsFetched++;
+    let firstPass: CanonicalStageResult;
+    let initialEvidence: EvidenceRecord[];
+    const pages: any[] = [];
+
+    if (existingRecord && existingRecord.first_pass) {
+      console.log(`[Stage Resume] Found existing first_pass for ${appName} (#${assignmentNumber}). Continuing directly to Step 4 (Evidence Validation -> Critic -> Final Result)...`);
+      firstPass = existingRecord.first_pass;
+      initialEvidence = existingRecord.evidence_pool || [];
+    } else {
+      // Step 1: Find relevant official documentation
+      const discovered = await this.discovery.discoverSources(appName, websiteHint, seededUrls);
+      const pagesToFetch = discovered.slice(0, 3); // Fetch top 3 candidate sources
+
+      for (const source of pagesToFetch) {
+        try {
+          const page = await this.validator.getCachedOrFetch(source.url);
+          if (page.status >= 200 && page.status < 400 && page.markdown) {
+            page.fetchMode = 'http';
+            pages.push(page);
+            urlsFetched++;
+          }
+        } catch {
+          // Skip failed fetch cleanly
         }
-      } catch {
-        // Still proceed so extractor returns 'unclear' instead of crashing
       }
+
+      if (pages.length === 0) {
+        // Fix 3 Fallback Step 1 & 2: Try alternate official documentation / help / support / GitHub repository pages
+        const alternateSources = discovered.slice(3, 8);
+        const domainClean = websiteHint.replace(/\(.*?\)/g, '').trim().replace(/^https?:\/\//, '').split('/')[0];
+        const extraAlternates = [
+          `https://help.${domainClean}`,
+          `https://support.${domainClean}`,
+          `https://docs.${domainClean}`,
+        ];
+
+        for (const altUrl of [...alternateSources.map((s) => s.url), ...extraAlternates]) {
+          try {
+            const page = await this.validator.getCachedOrFetch(altUrl);
+            if (page.status >= 200 && page.status < 400 && (page.markdown || page.rawHtml)) {
+              page.fetchMode = 'alternate_official_source';
+              pages.push(page);
+              urlsFetched++;
+              if (pages.length >= 2) break; // We found sufficient alternate official sources
+            }
+          } catch {
+            // Skip failed alternate fetch
+          }
+        }
+      }
+
+      if (pages.length === 0) {
+        // Fix 3 Fallback Step 3: If still blocked or unresolved, record browser_fallback attempt on direct url
+        const directUrl = websiteHint.startsWith('http') ? websiteHint : `https://${websiteHint.replace(/\(.*?\)/g, '').trim()}`;
+        try {
+          const page = await this.validator.getCachedOrFetch(directUrl);
+          if (page.markdown || page.rawHtml) {
+            page.fetchMode = 'browser_fallback';
+            pages.push(page);
+            urlsFetched++;
+          }
+        } catch {
+          // Preserve unclear honestly if fallback also fails
+        }
+      }
+
+      // Step 2: Extract the required research fields with evidence
+      const extraction = await this.extractor.extractFirstPass(
+        assignmentNumber,
+        appName,
+        websiteHint,
+        assignedCategory,
+        pages
+      );
+      firstPass = extraction.stage_result;
+      initialEvidence = extraction.evidence_pool;
+
+      // Step 3: Save the first-pass result
+      const initialRecord: CanonicalResearchRecord = {
+        identity: firstPass.identity,
+        evidence_pool: initialEvidence,
+        first_pass: firstPass,
+        change_log: [],
+        pipeline_metadata: {
+          pipeline_version: '1.0.0',
+          current_stage: 'first_pass',
+          errors: [],
+          unresolved_questions: [],
+        },
+      };
+      this.store.saveRecord(initialRecord);
     }
-
-    // Step 2: Extract the required research fields with evidence
-    const { stage_result: firstPass, evidence_pool: initialEvidence } = await this.extractor.extractFirstPass(
-      assignmentNumber,
-      appName,
-      websiteHint,
-      assignedCategory,
-      pages
-    );
-
-    // Step 3: Save the first-pass result
-    const initialRecord: CanonicalResearchRecord = {
-      identity: firstPass.identity,
-      evidence_pool: initialEvidence,
-      first_pass: firstPass,
-      change_log: [],
-      pipeline_metadata: {
-        pipeline_version: '1.0.0',
-        current_stage: 'first_pass',
-        errors: [],
-        unresolved_questions: [],
-      },
-    };
-    this.store.saveRecord(initialRecord);
 
     // Step 4: Verify whether the evidence actually supports the claims
     const validatedEvidence: EvidenceRecord[] = [];
@@ -211,6 +257,8 @@ export class ResearchPipeline {
 
     const cleanTargetedPartial = Object.keys(targetedResultPartial).length > 0
       ? sanitizeStageResult({
+          identity: firstPass.identity,
+          product: firstPass.product,
           ...firstPass,
           ...targetedResultPartial,
           authentication: { ...firstPass.authentication, ...((targetedResultPartial as any).authentication || {}) },

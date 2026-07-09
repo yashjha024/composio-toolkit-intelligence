@@ -1,0 +1,443 @@
+{
+  "identity": {
+    "assignment_number": 49,
+    "app_name": "Amazon Selling Partner",
+    "website_hint": "developer-docs.amazon.com/sp-api",
+    "assigned_category": "Ecommerce",
+    "researched_at": "2026-07-09T17:13:09.277Z"
+  },
+  "product": {
+    "normalized_category": "Ecommerce",
+    "one_line_description": "The Amazon Selling Partner API provides a comprehensive set of tools for sellers and vendors to programmatically manage various aspects of their Amazon business operations, including listings, orders, fulfillment, reports, and finances."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "The API documentation has sections for \"Authorization\" and \"Tokens API\", indicating a mechanism for authorizing applications and managing tokens is present. The specific authentication method (e.g., OAuth2, API key) is not explicitly stated in the provided content."
+  },
+  "developer_access": {
+    "access_model": "admin_gated",
+    "credentials_obtainable_without_human_approval": false,
+    "access_notes": "Developer access requires registration, and the status of a \"Developer Registration Request\" can be checked, suggesting a human or administrative review and approval process before credentials can be obtained. \"Third-Party Provider Registration\" also implies a specific vetting process."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "SDK",
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "api_summary": "The Amazon Selling Partner API offers a broad range of functionalities covering A+ content, Amazon Warehousing and Distribution, app integrations, catalog items, customer feedback, data kiosk, delivery, Easy Ship, external fulfillment, FBA, feeds, finances, fulfillment inbound/outbound, invoicing, listings, merchant fulfillment, messaging, notifications, orders, product fees, pricing, replenishment, reports, sales, seller wallet, sellers, services, shipment invoicing, shipping, solicitations, supply sources, tokens, uploads, vehicles, and various vendor-specific APIs. It provides SDKs and offers OpenAPI specifications for AI agents."
+  },
+  "mcp": {
+    "mcp_status": "official",
+    "mcp_summary": "An official Model Context Protocol (MCP) is available for AI agents, providing an index of all pages formatted in Markdown and endpoints in OpenAPI at the specified URL."
+  },
+  "buildability": {
+    "verdict": "outreach_required",
+    "primary_blocker": "Requires vendor/support approval for admin credentials.",
+    "verdict_reasoning": "[PROVISIONAL V1] Admin gated access explicitly requires external vendor authorization."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 1,
+      "access_model": 1,
+      "public_api": 1,
+      "api_breadth": 1,
+      "mcp_status": 1
+    },
+    "overall_confidence": 1,
+    "requires_human_review": false,
+    "human_review_reason": null
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783617189277_0",
+      "claim_field": "authentication.auth_methods",
+      "claim": "unclear",
+      "source_url": "https://developer-docs.amazon/sp-api",
+      "source_title": "Selling Partner API",
+      "source_type": "developer_portal",
+      "evidence_snippet": "### Authorization\n*   [Authorize Applications](/sp-api/docs/authorizing-selling-partner-api-applications)\n*   [Renew Authorizations](/sp-api/docs/renew-authorizations)\n*   [Revoke Authorizations](/sp-api/docs/revoke-authorizations)\n*   [View More…](/sp-api/docs/authorizing-selling-partner-api-applications)\n\n...\n\n### Tokens API\n*   [Tokens API](/sp-api/docs/tokens-api)",
+      "retrieved_at": "2026-07-09T17:13:09.277Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer-docs.amazon/sp-api"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617189277_1",
+      "claim_field": "developer_access.access_model",
+      "claim": "admin_gated",
+      "source_url": "https://developer-docs.amazon/sp-api",
+      "source_title": "Selling Partner API",
+      "source_type": "developer_portal",
+      "evidence_snippet": "### Registration\n*   [SP-API Registration Overview](/sp-api/docs/sp-api-registration-overview)\n*   [Developer Registration Request Status](/sp-api/docs/check-the-status-of-your-request-to-register-as-a-developer)\n*   [Third-Party Provider Registration](/sp-api/docs/tpp-registration)",
+      "retrieved_at": "2026-07-09T17:13:09.277Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer-docs.amazon/sp-api"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617189277_2",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": false,
+      "source_url": "https://developer-docs.amazon/sp-api",
+      "source_title": "Selling Partner API",
+      "source_type": "developer_portal",
+      "evidence_snippet": "### Registration\n*   [SP-API Registration Overview](/sp-api/docs/sp-api-registration-overview)\n*   [Developer Registration Request Status](/sp-api/docs/check-the-status-of-your-request-to-register-as-a-developer)\n*   [Third-Party Provider Registration](/sp-api/docs/tpp-registration)",
+      "retrieved_at": "2026-07-09T17:13:09.277Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer-docs.amazon/sp-api"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617189277_3",
+      "claim_field": "developer_access.access_notes",
+      "claim": "Developer access requires registration, and the status of a \"Developer Registration Request\" can be checked, suggesting a human or administrative review and approval process before credentials can be obtained. \"Third-Party Provider Registration\" also implies a specific vetting process.",
+      "source_url": "https://developer-docs.amazon/sp-api",
+      "source_title": "Selling Partner API",
+      "source_type": "developer_portal",
+      "evidence_snippet": "### Registration\n*   [SP-API Registration Overview](/sp-api/docs/sp-api-registration-overview)\n*   [Developer Registration Request Status](/sp-api/docs/check-the-status-of-your-request-to-register-as-a-developer)\n*   [Third-Party Provider Registration](/sp-api/docs/tpp-registration)",
+      "retrieved_at": "2026-07-09T17:13:09.277Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer-docs.amazon/sp-api"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617189277_4",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://developer-docs.amazon/sp-api",
+      "source_title": "Selling Partner API",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Title: Selling Partner API",
+      "retrieved_at": "2026-07-09T17:13:09.277Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer-docs.amazon/sp-api"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617189277_5",
+      "claim_field": "api_surface.api_styles",
+      "claim": "SDK",
+      "source_url": "https://developer-docs.amazon/sp-api",
+      "source_title": "Selling Partner API",
+      "source_type": "developer_portal",
+      "evidence_snippet": "### Integration\n*   [SP-API SDKs](/sp-api/docs/sp-api-sdks)",
+      "retrieved_at": "2026-07-09T17:13:09.277Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer-docs.amazon/sp-api"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617189277_6",
+      "claim_field": "api_surface.api_styles",
+      "claim": "REST",
+      "source_url": "https://developer-docs.amazon/sp-api",
+      "source_title": "Selling Partner API",
+      "source_type": "developer_portal",
+      "evidence_snippet": "For AI agents: visit https://developer-docs.amazon/llms.txt for an index of all pages formatted in Markdown and endpoints in OpenAPI.",
+      "retrieved_at": "2026-07-09T17:13:09.277Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer-docs.amazon/sp-api"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617189277_7",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://developer-docs.amazon/sp-api",
+      "source_title": "Selling Partner API",
+      "source_type": "developer_portal",
+      "evidence_snippet": "### A+ Content API\n*   [A+ Content API](/sp-api/docs/a-plus-content-api-use-case-guide)\n...\n### Vendor Retail Procurement Transaction Status API\n*   [Vendor Retail Procurement Transaction Status API](/sp-api/docs/vendor-retail-procurement-transaction-status-api)",
+      "retrieved_at": "2026-07-09T17:13:09.277Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer-docs.amazon/sp-api"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617189277_8",
+      "claim_field": "api_surface.api_summary",
+      "claim": "The Amazon Selling Partner API offers a broad range of functionalities covering A+ content, Amazon Warehousing and Distribution, app integrations, catalog items, customer feedback, data kiosk, delivery, Easy Ship, external fulfillment, FBA, feeds, finances, fulfillment inbound/outbound, invoicing, listings, merchant fulfillment, messaging, notifications, orders, product fees, pricing, replenishment, reports, sales, seller wallet, sellers, services, shipment invoicing, shipping, solicitations, supply sources, tokens, uploads, vehicles, and various vendor-specific APIs. It provides SDKs and offers OpenAPI specifications for AI agents.",
+      "source_url": "https://developer-docs.amazon/sp-api",
+      "source_title": "Selling Partner API",
+      "source_type": "developer_portal",
+      "evidence_snippet": "### SP-API SDKs\n...\nFor AI agents: visit https://developer-docs.amazon/llms.txt for an index of all pages formatted in Markdown and endpoints in OpenAPI.\n...\n### A+ Content API\n...\n### Vendor Retail Procurement Transaction Status API",
+      "retrieved_at": "2026-07-09T17:13:09.277Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer-docs.amazon/sp-api"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617189277_9",
+      "claim_field": "mcp.mcp_status",
+      "claim": "official",
+      "source_url": "https://developer-docs.amazon/sp-api",
+      "source_title": "Selling Partner API",
+      "source_type": "developer_portal",
+      "evidence_snippet": "For AI agents: visit https://developer-docs.amazon/llms.txt for an index of all pages formatted in Markdown and endpoints in OpenAPI.",
+      "retrieved_at": "2026-07-09T17:13:09.277Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer-docs.amazon/sp-api"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617189277_10",
+      "claim_field": "mcp.mcp_summary",
+      "claim": "An official Model Context Protocol (MCP) is available for AI agents, providing an index of all pages formatted in Markdown and endpoints in OpenAPI at the specified URL.",
+      "source_url": "https://developer-docs.amazon/sp-api",
+      "source_title": "Selling Partner API",
+      "source_type": "developer_portal",
+      "evidence_snippet": "For AI agents: visit https://developer-docs.amazon/llms.txt for an index of all pages formatted in Markdown and endpoints in OpenAPI.",
+      "retrieved_at": "2026-07-09T17:13:09.277Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer-docs.amazon/sp-api"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 49,
+      "app_name": "Amazon Selling Partner",
+      "website_hint": "developer-docs.amazon.com/sp-api",
+      "assigned_category": "Ecommerce",
+      "researched_at": "2026-07-09T17:13:09.277Z"
+    },
+    "product": {
+      "normalized_category": "Ecommerce",
+      "one_line_description": "The Amazon Selling Partner API provides a comprehensive set of tools for sellers and vendors to programmatically manage various aspects of their Amazon business operations, including listings, orders, fulfillment, reports, and finances."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "The API documentation has sections for \"Authorization\" and \"Tokens API\", indicating a mechanism for authorizing applications and managing tokens is present. The specific authentication method (e.g., OAuth2, API key) is not explicitly stated in the provided content."
+    },
+    "developer_access": {
+      "access_model": "admin_gated",
+      "credentials_obtainable_without_human_approval": false,
+      "access_notes": "Developer access requires registration, and the status of a \"Developer Registration Request\" can be checked, suggesting a human or administrative review and approval process before credentials can be obtained. \"Third-Party Provider Registration\" also implies a specific vetting process."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "SDK",
+        "REST"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "The Amazon Selling Partner API offers a broad range of functionalities covering A+ content, Amazon Warehousing and Distribution, app integrations, catalog items, customer feedback, data kiosk, delivery, Easy Ship, external fulfillment, FBA, feeds, finances, fulfillment inbound/outbound, invoicing, listings, merchant fulfillment, messaging, notifications, orders, product fees, pricing, replenishment, reports, sales, seller wallet, sellers, services, shipment invoicing, shipping, solicitations, supply sources, tokens, uploads, vehicles, and various vendor-specific APIs. It provides SDKs and offers OpenAPI specifications for AI agents."
+    },
+    "mcp": {
+      "mcp_status": "official",
+      "mcp_summary": "An official Model Context Protocol (MCP) is available for AI agents, providing an index of all pages formatted in Markdown and endpoints in OpenAPI at the specified URL."
+    },
+    "buildability": {
+      "verdict": "outreach_required",
+      "primary_blocker": "Requires vendor/support approval for admin credentials.",
+      "verdict_reasoning": "[PROVISIONAL V1] Admin gated access explicitly requires external vendor authorization."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 1,
+        "access_model": 1,
+        "public_api": 1,
+        "api_breadth": 1,
+        "mcp_status": 1
+      },
+      "overall_confidence": 1,
+      "requires_human_review": false,
+      "human_review_reason": null
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_auth_methods_unclear",
+    "risk_material_evidence_validation_failed"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_auth_methods_unclear",
+      "risk_material_evidence_validation_failed"
+    ]
+  }
+}

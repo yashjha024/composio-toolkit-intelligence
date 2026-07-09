@@ -1,0 +1,451 @@
+{
+  "identity": {
+    "assignment_number": 2,
+    "app_name": "HubSpot",
+    "website_hint": "hubspot.com",
+    "assigned_category": "CRM and Sales",
+    "researched_at": "2026-07-09T14:24:01.329Z"
+  },
+  "product": {
+    "normalized_category": "CRM and Sales",
+    "one_line_description": "HubSpot is an agentic customer platform and Smart CRM that unites marketing, sales, and customer service teams, offering various hubs and APIs for businesses to grow and manage customer data."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "The provided sources do not explicitly detail the authentication methods required for accessing HubSpot's APIs."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": "unknown",
+    "access_notes": "While HubSpot offers a developer platform and API documentation, the provided sources do not explicitly state the process for obtaining API credentials, nor do they confirm whether these credentials can be obtained freely and without human approval. The 'Get started free' option refers to the product's free tools, not specifically API developer access."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "REST",
+      "webhooks"
+    ],
+    "api_breadth": "broad",
+    "api_summary": "HubSpot provides a public API with RESTful endpoints, exemplified by `/crm/objects/2026-03/contacts`, and supports webhooks. The API covers a broad range of functionalities including CRM, marketing, sales, service, content, data, revenue, and AI features, with a date-based versioning scheme for updates."
+  },
+  "mcp": {
+    "mcp_status": "none_found",
+    "mcp_summary": "No information about an official or community Model Context Protocol (MCP) server or similar AI agent toolkit protocol was found in the provided sources. Although AI features and agents (Breeze) are mentioned, there is no evidence of an MCP."
+  },
+  "buildability": {
+    "verdict": "unclear",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 0.1,
+      "access_model": 0.2,
+      "public_api": 1,
+      "api_breadth": 0.9,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.64,
+    "requires_human_review": true,
+    "human_review_reason": "Missing explicit information on API authentication methods and the process for developers to self-serve obtain API credentials."
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783607041329_0",
+      "claim_field": "product.one_line_description",
+      "claim": "HubSpot is an agentic customer platform and Smart CRM that unites marketing, sales, and customer service teams, offering various hubs and APIs for businesses to grow and manage customer data.",
+      "source_url": "https://www.hubspot.com/",
+      "source_title": "HubSpot | Software & Tools for your Business - HomepageLogo - Full (Color)",
+      "source_type": "secondary",
+      "evidence_snippet": "Unite marketing, sales, and customer service on one agentic customer platform that delivers results fast. ... HubSpot’s Smart CRM is the single source of truth that connects all your business data.",
+      "retrieved_at": "2026-07-09T14:24:01.329Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.hubspot.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783607041329_1",
+      "claim_field": "product.one_line_description",
+      "claim": "HubSpot is an agentic customer platform and Smart CRM that unites marketing, sales, and customer service teams, offering various hubs and APIs for businesses to grow and manage customer data.",
+      "source_url": "https://developers.hubspot.com/",
+      "source_title": "HubSpot Developers | Create tomorrow's solutions today on HubSpot's Developer Platform.",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Craft seamless experiences that help businesses grow better powered by HubSpot's Smart CRM",
+      "retrieved_at": "2026-07-09T14:24:01.329Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.hubspot.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783607041329_2",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://developers.hubspot.com/docs/api-reference/latest/overview",
+      "source_title": "2026-03 API reference - HubSpot docs",
+      "source_type": "api_ref",
+      "evidence_snippet": "The 2026-03 APIs use a date-based versioning scheme... All APIs, whether legacy, new, or beta, use the same root path as before: `https://api.hubapi.com/`.",
+      "retrieved_at": "2026-07-09T14:24:01.329Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.hubspot.com/docs/api-reference/latest/overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783607041329_3",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://developers.hubspot.com/",
+      "source_title": "HubSpot Developers | Create tomorrow's solutions today on HubSpot's Developer Platform.",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Explore our docs to learn more about our APIs, Apps, Developer Tooling, and CMS",
+      "retrieved_at": "2026-07-09T14:24:01.329Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.hubspot.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783607041330_4",
+      "claim_field": "api_surface.api_styles",
+      "claim": "REST",
+      "source_url": "https://developers.hubspot.com/docs/api-reference/latest/overview",
+      "source_title": "2026-03 API reference - HubSpot docs",
+      "source_type": "api_ref",
+      "evidence_snippet": "For example, to retrieve all contacts: GET /crm/objects/2026-03/contacts",
+      "retrieved_at": "2026-07-09T14:24:01.330Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.hubspot.com/docs/api-reference/latest/overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783607041330_5",
+      "claim_field": "api_surface.api_styles",
+      "claim": "webhooks",
+      "source_url": "https://developers.hubspot.com/",
+      "source_title": "HubSpot Developers | Create tomorrow's solutions today on HubSpot's Developer Platform.",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Use workflows, webhooks, and custom actions to execute the next step the moment data updates—keeping users in flow and out of tool-hopping.",
+      "retrieved_at": "2026-07-09T14:24:01.330Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.hubspot.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783607041330_6",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://developers.hubspot.com/",
+      "source_title": "HubSpot Developers | Create tomorrow's solutions today on HubSpot's Developer Platform.",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Explore our docs to learn more about our APIs, Apps, Developer Tooling, and CMS ... Fuel Your Applications: Seamlessly Bring Data Into HubSpot ... Surface Insights: Bring Data to Life in HubSpot ... Act on Data: Keep Work Moving ... Ship Intelligent Features",
+      "retrieved_at": "2026-07-09T14:24:01.330Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.hubspot.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783607041330_7",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://www.hubspot.com/",
+      "source_title": "HubSpot | Software & Tools for your Business - HomepageLogo - Full (Color)",
+      "source_type": "secondary",
+      "evidence_snippet": "Marketing Hub®, Sales Hub®, Service Hub®, Content Hub™, Data Hub™, Revenue Hub™, Smart CRM™, Breeze™",
+      "retrieved_at": "2026-07-09T14:24:01.330Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.hubspot.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783607041330_8",
+      "claim_field": "mcp.mcp_status",
+      "claim": "none_found",
+      "source_url": "https://developers.hubspot.com/docs/api-reference/latest/overview",
+      "source_title": "2026-03 API reference - HubSpot docs",
+      "source_type": "api_ref",
+      "evidence_snippet": "Fetch the complete documentation index at: [/docs/llms.txt](/docs/llms.txt)",
+      "retrieved_at": "2026-07-09T14:24:01.330Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.hubspot.com/docs/api-reference/latest/overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783607041330_9",
+      "claim_field": "mcp.mcp_status",
+      "claim": "none_found",
+      "source_url": "https://developers.hubspot.com/",
+      "source_title": "HubSpot Developers | Create tomorrow's solutions today on HubSpot's Developer Platform.",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Ship Intelligent Features Add AI that turns intent into outcomes—connecting your solution to the right data, decisions, and actions without extra overhead. [Add intelligence to your apps](https://developers.hubspot.com/ai-tools)",
+      "retrieved_at": "2026-07-09T14:24:01.330Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.hubspot.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783607041330_10",
+      "claim_field": "mcp.mcp_status",
+      "claim": "none_found",
+      "source_url": "https://www.hubspot.com/",
+      "source_title": "HubSpot | Software & Tools for your Business - HomepageLogo - Full (Color)",
+      "source_type": "secondary",
+      "evidence_snippet": "Breeze: AI that gets your work done. Built-in AI tools boost productivity, scale growth, and unlock insights. ... Breeze Agents are your always-on teammates.",
+      "retrieved_at": "2026-07-09T14:24:01.330Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.hubspot.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 2,
+      "app_name": "HubSpot",
+      "website_hint": "hubspot.com",
+      "assigned_category": "CRM and Sales",
+      "researched_at": "2026-07-09T14:24:01.329Z"
+    },
+    "product": {
+      "normalized_category": "CRM and Sales",
+      "one_line_description": "HubSpot is an agentic customer platform and Smart CRM that unites marketing, sales, and customer service teams, offering various hubs and APIs for businesses to grow and manage customer data."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "The provided sources do not explicitly detail the authentication methods required for accessing HubSpot's APIs."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": "unknown",
+      "access_notes": "While HubSpot offers a developer platform and API documentation, the provided sources do not explicitly state the process for obtaining API credentials, nor do they confirm whether these credentials can be obtained freely and without human approval. The 'Get started free' option refers to the product's free tools, not specifically API developer access."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "REST",
+        "webhooks"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "HubSpot provides a public API with RESTful endpoints, exemplified by `/crm/objects/2026-03/contacts`, and supports webhooks. The API covers a broad range of functionalities including CRM, marketing, sales, service, content, data, revenue, and AI features, with a date-based versioning scheme for updates."
+    },
+    "mcp": {
+      "mcp_status": "none_found",
+      "mcp_summary": "No information about an official or community Model Context Protocol (MCP) server or similar AI agent toolkit protocol was found in the provided sources. Although AI features and agents (Breeze) are mentioned, there is no evidence of an MCP."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient.",
+      "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0.1,
+        "access_model": 0.2,
+        "public_api": 1,
+        "api_breadth": 0.9,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.64,
+      "requires_human_review": true,
+      "human_review_reason": "Missing explicit information on API authentication methods and the process for developers to self-serve obtain API credentials."
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_access_model_unclear",
+    "risk_auth_methods_unclear",
+    "risk_material_evidence_validation_failed",
+    "risk_contradictory_claims",
+    "risk_verdict_unclear",
+    "risk_low_confidence"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_access_model_unclear",
+      "risk_auth_methods_unclear",
+      "risk_material_evidence_validation_failed",
+      "risk_contradictory_claims",
+      "risk_verdict_unclear",
+      "risk_low_confidence"
+    ]
+  }
+}

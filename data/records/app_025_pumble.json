@@ -1,0 +1,443 @@
+{
+  "identity": {
+    "assignment_number": 25,
+    "app_name": "Pumble",
+    "website_hint": "pumble.com",
+    "assigned_category": "Communications and Messaging",
+    "researched_at": "2026-07-09T17:00:36.537Z"
+  },
+  "product": {
+    "normalized_category": "Communications and Messaging",
+    "one_line_description": "Pumble is a free business communication tool that offers messaging, video/voice calls, file sharing, and collaboration features for teams."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "The source page mentions 'Integrations' and the ability to 'Connect AI agents' but provides no information regarding the authentication methods required for these features."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": "unknown",
+    "access_notes": "The website mentions the ability to 'Connect AI agents' via Pumble's MCP server, which suggests programmatic access. However, there is no information provided on how developers can obtain API credentials (e.g., API keys, tokens) or if these credentials can be obtained through a self-serve process without human approval."
+  },
+  "api_surface": {
+    "public_api": "limited",
+    "api_styles": [],
+    "api_breadth": "narrow",
+    "api_summary": "Pumble provides functionality to 'Connect AI agents' using its 'MCP server' for tasks like summarizing conversations, finding files, and automating updates. It also mentions 'Integrations' with different apps. However, the exact styles, breadth, and specific endpoints of this API or server are not detailed."
+  },
+  "mcp": {
+    "mcp_status": "official",
+    "mcp_summary": "Pumble provides an official 'MCP server' to 'Connect AI agents' for tasks such as summarizing conversations, finding lost files, and automating updates, thereby optimizing collaboration."
+  },
+  "buildability": {
+    "verdict": "unclear",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 0.2,
+      "access_model": 0.3,
+      "public_api": 0.7,
+      "api_breadth": 0.5,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.6,
+    "requires_human_review": true,
+    "human_review_reason": "Authentication methods for the API/MCP server are not specified. Details on how developers obtain API credentials (access model) are also missing. The scope and style of the API for integrations/AI agents are not fully described beyond general use cases."
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783616436537_0",
+      "claim_field": "product.one_line_description",
+      "claim": "Pumble is a free business communication tool that offers messaging, video/voice calls, file sharing, and collaboration features for teams.",
+      "source_url": "https://pumble.com/",
+      "source_title": "Pumble™ - FREE Business Communication Tool",
+      "source_type": "official_doc",
+      "evidence_snippet": "Pumble™ - FREE Business Communication Tool\nStart channels, share documents, organize video calls, and invite partners to collaborate.\n### Messages\n### Video conferencing\n### Voice calls\n### Files\n### Collaborative teamwork",
+      "retrieved_at": "2026-07-09T17:00:36.537Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://pumble.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616436537_1",
+      "claim_field": "authentication.auth_methods",
+      "claim": "unclear",
+      "source_url": "https://pumble.com/",
+      "source_title": "Pumble™ - FREE Business Communication Tool",
+      "source_type": "official_doc",
+      "evidence_snippet": "Integrations\nConnect AI agents\nUse Pumble’s MCP server to optimize collaboration with AI agents.",
+      "retrieved_at": "2026-07-09T17:00:36.537Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://pumble.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616436537_2",
+      "claim_field": "authentication.auth_summary",
+      "claim": "The source page mentions 'Integrations' and the ability to 'Connect AI agents' but provides no information regarding the authentication methods required for these features.",
+      "source_url": "https://pumble.com/",
+      "source_title": "Pumble™ - FREE Business Communication Tool",
+      "source_type": "official_doc",
+      "evidence_snippet": "Integrations\nConnect AI agents\nUse Pumble’s MCP server to optimize collaboration with AI agents.",
+      "retrieved_at": "2026-07-09T17:00:36.537Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://pumble.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616436537_3",
+      "claim_field": "developer_access.access_model",
+      "claim": "unclear",
+      "source_url": "https://pumble.com/",
+      "source_title": "Pumble™ - FREE Business Communication Tool",
+      "source_type": "official_doc",
+      "evidence_snippet": "Connect AI agents\nUse Pumble’s MCP server to optimize collaboration with AI agents. Summarize conversations, find lost files, automate updates, and much more.",
+      "retrieved_at": "2026-07-09T17:00:36.537Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://pumble.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616436537_4",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": "unknown",
+      "source_url": "https://pumble.com/",
+      "source_title": "Pumble™ - FREE Business Communication Tool",
+      "source_type": "official_doc",
+      "evidence_snippet": "Connect AI agents\nUse Pumble’s MCP server to optimize collaboration with AI agents. Summarize conversations, find lost files, automate updates, and much more.",
+      "retrieved_at": "2026-07-09T17:00:36.537Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://pumble.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616436537_5",
+      "claim_field": "developer_access.access_notes",
+      "claim": "The website mentions the ability to 'Connect AI agents' via Pumble's MCP server, which suggests programmatic access. However, there is no information provided on how developers can obtain API credentials (e.g., API keys, tokens) or if these credentials can be obtained through a self-serve process without human approval.",
+      "source_url": "https://pumble.com/",
+      "source_title": "Pumble™ - FREE Business Communication Tool",
+      "source_type": "official_doc",
+      "evidence_snippet": "Connect AI agents\nUse Pumble’s MCP server to optimize collaboration with AI agents. Summarize conversations, find lost files, automate updates, and much more.",
+      "retrieved_at": "2026-07-09T17:00:36.537Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://pumble.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616436537_6",
+      "claim_field": "api_surface.public_api",
+      "claim": "limited",
+      "source_url": "https://pumble.com/",
+      "source_title": "Pumble™ - FREE Business Communication Tool",
+      "source_type": "official_doc",
+      "evidence_snippet": "Connect AI agents\nUse Pumble’s MCP server to optimize collaboration with AI agents.\nIntegrations\nIntegrate with different apps so you can collaborate from one place.",
+      "retrieved_at": "2026-07-09T17:00:36.537Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://pumble.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616436537_7",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "narrow",
+      "source_url": "https://pumble.com/",
+      "source_title": "Pumble™ - FREE Business Communication Tool",
+      "source_type": "official_doc",
+      "evidence_snippet": "Use Pumble’s MCP server to optimize collaboration with AI agents. Summarize conversations, find lost files, automate updates, and much more.",
+      "retrieved_at": "2026-07-09T17:00:36.537Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://pumble.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616436537_8",
+      "claim_field": "api_surface.api_summary",
+      "claim": "Pumble provides functionality to 'Connect AI agents' using its 'MCP server' for tasks like summarizing conversations, finding files, and automating updates. It also mentions 'Integrations' with different apps. However, the exact styles, breadth, and specific endpoints of this API or server are not detailed.",
+      "source_url": "https://pumble.com/",
+      "source_title": "Pumble™ - FREE Business Communication Tool",
+      "source_type": "official_doc",
+      "evidence_snippet": "Integrations\nIntegrate with different apps so you can collaborate from one place.\nConnect AI agents\nUse Pumble’s MCP server to optimize collaboration with AI agents. Summarize conversations, find lost files, automate updates, and much more.",
+      "retrieved_at": "2026-07-09T17:00:36.537Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://pumble.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616436537_9",
+      "claim_field": "mcp.mcp_status",
+      "claim": "official",
+      "source_url": "https://pumble.com/",
+      "source_title": "Pumble™ - FREE Business Communication Tool",
+      "source_type": "official_doc",
+      "evidence_snippet": "Use Pumble’s MCP server to optimize collaboration with AI agents.",
+      "retrieved_at": "2026-07-09T17:00:36.537Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://pumble.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616436537_10",
+      "claim_field": "mcp.mcp_summary",
+      "claim": "Pumble provides an official 'MCP server' to 'Connect AI agents' for tasks such as summarizing conversations, finding lost files, and automating updates, thereby optimizing collaboration.",
+      "source_url": "https://pumble.com/",
+      "source_title": "Pumble™ - FREE Business Communication Tool",
+      "source_type": "official_doc",
+      "evidence_snippet": "Connect AI agents\nUse Pumble’s MCP server to optimize collaboration with AI agents. Summarize conversations, find lost files, automate updates, and much more.",
+      "retrieved_at": "2026-07-09T17:00:36.537Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://pumble.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 25,
+      "app_name": "Pumble",
+      "website_hint": "pumble.com",
+      "assigned_category": "Communications and Messaging",
+      "researched_at": "2026-07-09T17:00:36.537Z"
+    },
+    "product": {
+      "normalized_category": "Communications and Messaging",
+      "one_line_description": "Pumble is a free business communication tool that offers messaging, video/voice calls, file sharing, and collaboration features for teams."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "The source page mentions 'Integrations' and the ability to 'Connect AI agents' but provides no information regarding the authentication methods required for these features."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": "unknown",
+      "access_notes": "The website mentions the ability to 'Connect AI agents' via Pumble's MCP server, which suggests programmatic access. However, there is no information provided on how developers can obtain API credentials (e.g., API keys, tokens) or if these credentials can be obtained through a self-serve process without human approval."
+    },
+    "api_surface": {
+      "public_api": "limited",
+      "api_styles": [],
+      "api_breadth": "narrow",
+      "api_summary": "Pumble provides functionality to 'Connect AI agents' using its 'MCP server' for tasks like summarizing conversations, finding files, and automating updates. It also mentions 'Integrations' with different apps. However, the exact styles, breadth, and specific endpoints of this API or server are not detailed."
+    },
+    "mcp": {
+      "mcp_status": "official",
+      "mcp_summary": "Pumble provides an official 'MCP server' to 'Connect AI agents' for tasks such as summarizing conversations, finding lost files, and automating updates, thereby optimizing collaboration."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient.",
+      "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0.2,
+        "access_model": 0.3,
+        "public_api": 0.7,
+        "api_breadth": 0.5,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.6,
+      "requires_human_review": true,
+      "human_review_reason": "Authentication methods for the API/MCP server are not specified. Details on how developers obtain API credentials (access model) are also missing. The scope and style of the API for integrations/AI agents are not fully described beyond general use cases."
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_access_model_unclear",
+    "risk_auth_methods_unclear",
+    "risk_material_evidence_validation_failed",
+    "risk_verdict_unclear",
+    "risk_low_confidence"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_access_model_unclear",
+      "risk_auth_methods_unclear",
+      "risk_material_evidence_validation_failed",
+      "risk_verdict_unclear",
+      "risk_low_confidence"
+    ]
+  }
+}

@@ -1,0 +1,474 @@
+{
+  "identity": {
+    "assignment_number": 39,
+    "app_name": "Threads (Meta)",
+    "website_hint": "developers.facebook.com/docs/threads",
+    "assigned_category": "Marketing, Ads, Email and Social",
+    "researched_at": "2026-07-09T17:07:45.293Z"
+  },
+  "product": {
+    "normalized_category": "Marketing, Ads, Email and Social",
+    "one_line_description": "The Threads API enables third-party platforms to publish posts, retrieve posts and replies, and manage basic insights on Threads accounts."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "The Threads API uses the OAuth 2.0 protocol for authentication and authorization. Each API request must be authenticated with an access token, which can be obtained after a user grants the app permissions through an OAuth dialog. For long-lived access, the Instagram Graph API can generate User Access Tokens with up to 60-day expiry."
+  },
+  "developer_access": {
+    "access_model": "admin_gated",
+    "credentials_obtainable_without_human_approval": false,
+    "access_notes": "To use the Threads API, developers must have a Facebook Developer Account and an app that has successfully passed App Review for Threads API access. The App Review process involves human approval to grant the necessary permissions for API usage."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "REST",
+      "webhooks"
+    ],
+    "api_breadth": "moderate",
+    "api_summary": "The Threads API provides functionality to publish posts, retrieve an app's own posts, retrieve replies to an app's posts, and manage basic insights. It also supports responding to specific posts, hiding or unhiding replies, deleting media posts, and reading media posts including comments, likes, replies, and user profile information like follower count. The API operates via HTTP requests and offers webhook capabilities."
+  },
+  "mcp": {
+    "mcp_status": "none_found",
+    "mcp_summary": "No mention of Model Context Protocol (MCP) or similar AI agent integration protocols was found in the provided documentation for the Threads API."
+  },
+  "buildability": {
+    "verdict": "outreach_required",
+    "primary_blocker": "Requires vendor/support approval for admin credentials.",
+    "verdict_reasoning": "[PROVISIONAL V1] Admin gated access explicitly requires external vendor authorization."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 1,
+      "access_model": 1,
+      "public_api": 1,
+      "api_breadth": 0.9,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.95,
+    "requires_human_review": false,
+    "human_review_reason": null
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783616865293_0",
+      "claim_field": "product.one_line_description",
+      "claim": "The Threads API enables third-party platforms to publish posts to Threads, retrieve their own posts, retrieve replies to their own posts, and manage basic insights.",
+      "source_url": "https://developers.facebook.com/docs/threads",
+      "source_title": "Threads API - Documentation - Meta for Developers",
+      "source_type": "official_doc",
+      "evidence_snippet": "The Threads API enables third-party platforms to publish posts to Threads, retrieve their own posts, retrieve replies to their own posts, and manage basic insights.",
+      "retrieved_at": "2026-07-09T17:07:45.293Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": false,
+        "status_code": 400,
+        "redirect_chain": [
+          "https://developers.facebook.com/docs/threads"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616865293_1",
+      "claim_field": "authentication.auth_methods",
+      "claim": "oauth2",
+      "source_url": "https://developers.facebook.com/docs/threads",
+      "source_title": "Threads API - Documentation - Meta for Developers",
+      "source_type": "official_doc",
+      "evidence_snippet": "The Threads API uses the OAuth 2.0 protocol for authentication and authorization.",
+      "retrieved_at": "2026-07-09T17:07:45.294Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": false,
+        "status_code": 400,
+        "redirect_chain": [
+          "https://developers.facebook.com/docs/threads"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616865294_2",
+      "claim_field": "authentication.auth_summary",
+      "claim": "The Threads API uses the OAuth 2.0 protocol for authentication and authorization, requiring access tokens for each API request. Long-lived access tokens can be obtained via the Instagram Graph API.",
+      "source_url": "https://developers.facebook.com/docs/threads",
+      "source_title": "Threads API - Documentation - Meta for Developers",
+      "source_type": "official_doc",
+      "evidence_snippet": "The Threads API uses the OAuth 2.0 protocol for authentication and authorization. Each API request must be authenticated with an access token.\nFor applications that require long-lived access, we recommend using the Threads API with the Instagram Graph API. The Instagram Graph API uses OAuth 2.0 to generate User Access Tokens with up to 60-day expiry.",
+      "retrieved_at": "2026-07-09T17:07:45.294Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": false,
+        "status_code": 400,
+        "redirect_chain": [
+          "https://developers.facebook.com/docs/threads"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616865294_3",
+      "claim_field": "developer_access.access_model",
+      "claim": "admin_gated",
+      "source_url": "https://developers.facebook.com/docs/threads",
+      "source_title": "Threads API - Documentation - Meta for Developers",
+      "source_type": "official_doc",
+      "evidence_snippet": "To get access to the Threads API, your app must first pass App Review.",
+      "retrieved_at": "2026-07-09T17:07:45.294Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": false,
+        "status_code": 400,
+        "redirect_chain": [
+          "https://developers.facebook.com/docs/threads"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616865294_4",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": false,
+      "source_url": "https://developers.facebook.com/docs/threads",
+      "source_title": "Threads API - Documentation - Meta for Developers",
+      "source_type": "official_doc",
+      "evidence_snippet": "To get access to the Threads API, your app must first pass App Review.",
+      "retrieved_at": "2026-07-09T17:07:45.294Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": false,
+        "status_code": 400,
+        "redirect_chain": [
+          "https://developers.facebook.com/docs/threads"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616865294_5",
+      "claim_field": "developer_access.access_notes",
+      "claim": "Developers must have a Facebook Developer Account and an app that has passed App Review for Threads API access. The App Review process requires human approval to grant the necessary permissions for API usage.",
+      "source_url": "https://developers.facebook.com/docs/threads",
+      "source_title": "Threads API - Documentation - Meta for Developers",
+      "source_type": "official_doc",
+      "evidence_snippet": "Before you can use the Threads API, you must have:\nA Facebook Developer Account.\nAn app that has passed App Review for Threads API access.",
+      "retrieved_at": "2026-07-09T17:07:45.294Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": false,
+        "status_code": 400,
+        "redirect_chain": [
+          "https://developers.facebook.com/docs/threads"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616865294_6",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://developers.facebook.com/docs/threads",
+      "source_title": "Threads API - Documentation - Meta for Developers",
+      "source_type": "official_doc",
+      "evidence_snippet": "Threads API - Documentation - Meta for Developers",
+      "retrieved_at": "2026-07-09T17:07:45.294Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": false,
+        "status_code": 400,
+        "redirect_chain": [
+          "https://developers.facebook.com/docs/threads"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616865294_7",
+      "claim_field": "api_surface.api_styles",
+      "claim": "REST",
+      "source_url": "https://developers.facebook.com/docs/threads",
+      "source_title": "Threads API - Documentation - Meta for Developers",
+      "source_type": "official_doc",
+      "evidence_snippet": "All API requests must be authenticated with an access token. See our Authentication documentation for more details. HTTP requests",
+      "retrieved_at": "2026-07-09T17:07:45.294Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": false,
+        "status_code": 400,
+        "redirect_chain": [
+          "https://developers.facebook.com/docs/threads"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616865294_8",
+      "claim_field": "api_surface.api_styles",
+      "claim": "webhooks",
+      "source_url": "https://developers.facebook.com/docs/threads",
+      "source_title": "Threads API - Documentation - Meta for Developers",
+      "source_type": "official_doc",
+      "evidence_snippet": "Webhooks\nSubscribe to Instagram API Webhooks to receive notifications when changes happen on an Instagram user's Threads profile or media.",
+      "retrieved_at": "2026-07-09T17:07:45.294Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": false,
+        "status_code": 400,
+        "redirect_chain": [
+          "https://developers.facebook.com/docs/threads"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616865294_9",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "moderate",
+      "source_url": "https://developers.facebook.com/docs/threads",
+      "source_title": "Threads API - Documentation - Meta for Developers",
+      "source_type": "official_doc",
+      "evidence_snippet": "What you can do\nPublish posts to Threads\nRetrieve your own posts\nRetrieve replies to your own posts\nManage basic insights\nRespond to specific posts\nHide or unhide replies\nDelete media posts\nRead media posts, including comments, likes, replies, and other metadata\nRead user profiles, including follower count and other metadata",
+      "retrieved_at": "2026-07-09T17:07:45.294Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": false,
+        "status_code": 400,
+        "redirect_chain": [
+          "https://developers.facebook.com/docs/threads"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616865294_10",
+      "claim_field": "api_surface.api_summary",
+      "claim": "The Threads API provides endpoints for publishing posts, retrieving posts and their replies, managing basic insights, responding to specific posts, hiding/unhiding replies, deleting media posts, and reading user profiles and media post metadata. It supports standard HTTP requests and offers webhook functionality.",
+      "source_url": "https://developers.facebook.com/docs/threads",
+      "source_title": "Threads API - Documentation - Meta for Developers",
+      "source_type": "official_doc",
+      "evidence_snippet": "What you can do\nPublish posts to Threads\nRetrieve your own posts\nRetrieve replies to your own posts\nManage basic insights\nRespond to specific posts\nHide or unhide replies\nDelete media posts\nRead media posts, including comments, likes, replies, and other metadata\nRead user profiles, including follower count and other metadata\nAll API requests must be authenticated with an access token. See our Authentication documentation for more details. HTTP requests\nWebhooks\nSubscribe to Instagram API Webhooks to receive notifications when changes happen on an Instagram user's Threads profile or media.",
+      "retrieved_at": "2026-07-09T17:07:45.294Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": false,
+        "status_code": 400,
+        "redirect_chain": [
+          "https://developers.facebook.com/docs/threads"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616865294_11",
+      "claim_field": "mcp.mcp_status",
+      "claim": "none_found",
+      "source_url": "https://developers.facebook.com/docs/threads",
+      "source_title": "Threads API - Documentation - Meta for Developers",
+      "source_type": "official_doc",
+      "evidence_snippet": "No mention of Model Context Protocol or similar AI agent specific integrations found on the page.",
+      "retrieved_at": "2026-07-09T17:07:45.294Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": false,
+        "status_code": 400,
+        "redirect_chain": [
+          "https://developers.facebook.com/docs/threads"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 39,
+      "app_name": "Threads (Meta)",
+      "website_hint": "developers.facebook.com/docs/threads",
+      "assigned_category": "Marketing, Ads, Email and Social",
+      "researched_at": "2026-07-09T17:07:45.293Z"
+    },
+    "product": {
+      "normalized_category": "Marketing, Ads, Email and Social",
+      "one_line_description": "The Threads API enables third-party platforms to publish posts, retrieve posts and replies, and manage basic insights on Threads accounts."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "The Threads API uses the OAuth 2.0 protocol for authentication and authorization. Each API request must be authenticated with an access token, which can be obtained after a user grants the app permissions through an OAuth dialog. For long-lived access, the Instagram Graph API can generate User Access Tokens with up to 60-day expiry."
+    },
+    "developer_access": {
+      "access_model": "admin_gated",
+      "credentials_obtainable_without_human_approval": false,
+      "access_notes": "To use the Threads API, developers must have a Facebook Developer Account and an app that has successfully passed App Review for Threads API access. The App Review process involves human approval to grant the necessary permissions for API usage."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "REST",
+        "webhooks"
+      ],
+      "api_breadth": "moderate",
+      "api_summary": "The Threads API provides functionality to publish posts, retrieve an app's own posts, retrieve replies to an app's posts, and manage basic insights. It also supports responding to specific posts, hiding or unhiding replies, deleting media posts, and reading media posts including comments, likes, replies, and user profile information like follower count. The API operates via HTTP requests and offers webhook capabilities."
+    },
+    "mcp": {
+      "mcp_status": "none_found",
+      "mcp_summary": "No mention of Model Context Protocol (MCP) or similar AI agent integration protocols was found in the provided documentation for the Threads API."
+    },
+    "buildability": {
+      "verdict": "outreach_required",
+      "primary_blocker": "Requires vendor/support approval for admin credentials.",
+      "verdict_reasoning": "[PROVISIONAL V1] Admin gated access explicitly requires external vendor authorization."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 1,
+        "access_model": 1,
+        "public_api": 1,
+        "api_breadth": 0.9,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.95,
+      "requires_human_review": false,
+      "human_review_reason": null
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_auth_methods_unclear",
+    "risk_material_evidence_validation_failed",
+    "risk_insufficient_official_sources"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_auth_methods_unclear",
+      "risk_material_evidence_validation_failed",
+      "risk_insufficient_official_sources"
+    ]
+  }
+}

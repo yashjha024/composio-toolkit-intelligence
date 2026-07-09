@@ -1,0 +1,213 @@
+{
+  "identity": {
+    "assignment_number": 80,
+    "app_name": "Harvest",
+    "website_hint": "harvestapp.com (help.getharvest.com/api-v2)",
+    "assigned_category": "Productivity and Project Management",
+    "researched_at": "2026-07-09T17:54:12.021Z"
+  },
+  "product": {
+    "normalized_category": "Productivity and Project Management",
+    "one_line_description": "Harvest is a time tracking software that helps professional teams track time, bill clients, optimize team time, and measure performance."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "The provided source page is a marketing homepage and does not contain any information regarding authentication methods for an API or developer access."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": "unknown",
+    "access_notes": "The source page mentions a 'Free 30-day trial' for the Harvest product, but there is no information provided regarding how to obtain API credentials or whether developer access is self-serve or requires human approval."
+  },
+  "api_surface": {
+    "public_api": "unclear",
+    "api_styles": [],
+    "api_breadth": "unclear",
+    "api_summary": "The provided marketing page mentions '40+ integrations', implying that Harvest connects with other tools, but it does not explicitly state the availability of a public API for developers to use, nor does it provide any details about API styles or breadth."
+  },
+  "mcp": {
+    "mcp_status": "none_found",
+    "mcp_summary": "There is no mention of any Model Context Protocol (MCP) or similar agent-specific toolkits or servers in the provided source content."
+  },
+  "buildability": {
+    "verdict": "unclear",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 0.1,
+      "access_model": 0.1,
+      "public_api": 0.1,
+      "api_breadth": 0.1,
+      "mcp_status": 0.8
+    },
+    "overall_confidence": 0.2,
+    "requires_human_review": true,
+    "human_review_reason": "The provided source is a marketing homepage and lacks detailed information about API access, authentication methods, or developer specific resources. The `api-v2` hint was explicitly ignored due to strict instructions regarding 'strictly derived from provided source pages' and 'evidence snippet MUST be exact text copied directly from the provided source content'."
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783619652021_0",
+      "claim_field": "product.one_line_description",
+      "claim": "Harvest is a time tracking software that helps professional teams track time, bill clients, optimize team time, and measure performance.",
+      "source_url": "https://www.getharvest.com/",
+      "source_title": "Time Tracking Software With Invoicing | Harvest",
+      "source_type": "official_doc",
+      "evidence_snippet": "Harvest helps professional teams track time, bill clients, optimize team time, and measure performance with confidence.",
+      "retrieved_at": "2026-07-09T17:54:12.021Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.getharvest.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619652021_1",
+      "claim_field": "developer_access.access_model",
+      "claim": "unclear",
+      "source_url": "https://www.getharvest.com/",
+      "source_title": "Time Tracking Software With Invoicing | Harvest",
+      "source_type": "official_doc",
+      "evidence_snippet": "Free 30-day trial\nNo credit card\nCancel anytime",
+      "retrieved_at": "2026-07-09T17:54:12.021Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.getharvest.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783619652021_2",
+      "claim_field": "api_surface.api_summary",
+      "claim": "The provided marketing page mentions '40+ integrations', implying that Harvest connects with other tools, but it does not explicitly state the availability of a public API for developers to use, nor does it provide any details about API styles or breadth.",
+      "source_url": "https://www.getharvest.com/",
+      "source_title": "Time Tracking Software With Invoicing | Harvest",
+      "source_type": "official_doc",
+      "evidence_snippet": "40+ integrations\nHarvest connects with the tools your team already uses, including project management, accounting, and payments.",
+      "retrieved_at": "2026-07-09T17:54:12.021Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.getharvest.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 80,
+      "app_name": "Harvest",
+      "website_hint": "harvestapp.com (help.getharvest.com/api-v2)",
+      "assigned_category": "Productivity and Project Management",
+      "researched_at": "2026-07-09T17:54:12.021Z"
+    },
+    "product": {
+      "normalized_category": "Productivity and Project Management",
+      "one_line_description": "Harvest is a time tracking software that helps professional teams track time, bill clients, optimize team time, and measure performance."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "The provided source page is a marketing homepage and does not contain any information regarding authentication methods for an API or developer access."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": "unknown",
+      "access_notes": "The source page mentions a 'Free 30-day trial' for the Harvest product, but there is no information provided regarding how to obtain API credentials or whether developer access is self-serve or requires human approval."
+    },
+    "api_surface": {
+      "public_api": "unclear",
+      "api_styles": [],
+      "api_breadth": "unclear",
+      "api_summary": "The provided marketing page mentions '40+ integrations', implying that Harvest connects with other tools, but it does not explicitly state the availability of a public API for developers to use, nor does it provide any details about API styles or breadth."
+    },
+    "mcp": {
+      "mcp_status": "none_found",
+      "mcp_summary": "There is no mention of any Model Context Protocol (MCP) or similar agent-specific toolkits or servers in the provided source content."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient.",
+      "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0.1,
+        "access_model": 0.1,
+        "public_api": 0.1,
+        "api_breadth": 0.1,
+        "mcp_status": 0.8
+      },
+      "overall_confidence": 0.2,
+      "requires_human_review": true,
+      "human_review_reason": "The provided source is a marketing homepage and lacks detailed information about API access, authentication methods, or developer specific resources. The `api-v2` hint was explicitly ignored due to strict instructions regarding 'strictly derived from provided source pages' and 'evidence snippet MUST be exact text copied directly from the provided source content'."
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_access_model_unclear",
+    "risk_auth_methods_unclear",
+    "risk_public_api_unclear",
+    "risk_material_evidence_validation_failed",
+    "risk_verdict_unclear",
+    "risk_low_confidence"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_access_model_unclear",
+      "risk_auth_methods_unclear",
+      "risk_public_api_unclear",
+      "risk_material_evidence_validation_failed",
+      "risk_verdict_unclear",
+      "risk_low_confidence"
+    ]
+  }
+}

@@ -1,0 +1,722 @@
+{
+  "identity": {
+    "assignment_number": 27,
+    "app_name": "Telegram",
+    "website_hint": "core.telegram.org",
+    "assigned_category": "Communications and Messaging",
+    "researched_at": "2026-07-09T17:01:38.833Z"
+  },
+  "product": {
+    "normalized_category": "Communications and Messaging",
+    "one_line_description": "Telegram is a cloud-based mobile and desktop messaging app offering various APIs for bot creation, custom client development, and verification code delivery."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "The source mentions user authorization methods like two-factor authentication, QR code login, and passkeys, and that the Bot API uses a 'simple HTTPS interface' with an intermediary server handling encryption. However, it does not explicitly detail the authentication methods (e.g., API key, OAuth2) developers use to authenticate their applications to the Telegram API service itself."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": true,
+    "access_notes": "Telegram states that its Bot API, Telegram API, and TDLib are 'free of charge'. The Gateway API is 'completely free to test'. To use the Telegram API, developers need to 'register your application in our system' to 'get your application identifier and create a new Telegram app', implying a self-serve process without human approval."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "SDK",
+      "other"
+    ],
+    "api_breadth": "broad",
+    "api_summary": "Telegram offers several APIs: the Bot API for creating programs using Telegram messages via a 'simple HTTPS interface', TDLib for building custom Telegram clients as an open-source library, the Telegram API for building customized Telegram clients directly, and the Gateway API for sending verification codes. The APIs cover extensive features including messaging, calls, payments, groups, channels, security, file transfers, and user management."
+  },
+  "mcp": {
+    "mcp_status": "none_found",
+    "mcp_summary": "There is no mention of Model Context Protocol (MCP) or similar capabilities in the provided source."
+  },
+  "buildability": {
+    "verdict": "unclear",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 0.5,
+      "access_model": 1,
+      "public_api": 1,
+      "api_breadth": 1,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.85,
+    "requires_human_review": true,
+    "human_review_reason": "Authentication methods for API access are not explicitly stated, only user authentication methods or communication protocols are mentioned."
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783616498833_0",
+      "claim_field": "product.one_line_description",
+      "claim": "Telegram is a cloud-based mobile and desktop messaging app offering various APIs for bot creation, custom client development, and verification code delivery.",
+      "source_url": "https://core.telegram.org/",
+      "source_title": "Telegram APIs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.",
+      "retrieved_at": "2026-07-09T17:01:38.833Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://core.telegram.org/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616498833_1",
+      "claim_field": "product.one_line_description",
+      "claim": "Telegram is a cloud-based mobile and desktop messaging app offering various APIs for bot creation, custom client development, and verification code delivery.",
+      "source_url": "https://core.telegram.org/",
+      "source_title": "Telegram APIs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "We offer three kinds of APIs for developers. The Bot API allows you to easily create programs that use Telegram messages for an interface. The Telegram API and TDLib allow you to build your own customized Telegram clients. You are welcome to use both APIs free of charge. Lastly, the Gateway API allows any business, app or website to send verification codes through Telegram instead of traditional SMS.",
+      "retrieved_at": "2026-07-09T17:01:38.833Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://core.telegram.org/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616498833_2",
+      "claim_field": "authentication.auth_methods",
+      "claim": [
+        "unclear"
+      ],
+      "source_url": "https://core.telegram.org/",
+      "source_title": "Telegram APIs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "You communicate with this server via a simple HTTPS interface that offers a simplified version of the Telegram API.",
+      "retrieved_at": "2026-07-09T17:01:38.833Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://core.telegram.org/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616498833_3",
+      "claim_field": "authentication.auth_methods",
+      "claim": [
+        "unclear"
+      ],
+      "source_url": "https://core.telegram.org/",
+      "source_title": "Telegram APIs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "User authorization",
+      "retrieved_at": "2026-07-09T17:01:38.833Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://core.telegram.org/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616498833_4",
+      "claim_field": "authentication.auth_methods",
+      "claim": [
+        "unclear"
+      ],
+      "source_url": "https://core.telegram.org/",
+      "source_title": "Telegram APIs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Two-factor authentication",
+      "retrieved_at": "2026-07-09T17:01:38.833Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://core.telegram.org/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616498833_5",
+      "claim_field": "authentication.auth_methods",
+      "claim": [
+        "unclear"
+      ],
+      "source_url": "https://core.telegram.org/",
+      "source_title": "Telegram APIs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "QR code login",
+      "retrieved_at": "2026-07-09T17:01:38.833Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://core.telegram.org/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616498833_6",
+      "claim_field": "authentication.auth_methods",
+      "claim": [
+        "unclear"
+      ],
+      "source_url": "https://core.telegram.org/",
+      "source_title": "Telegram APIs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Passkeys",
+      "retrieved_at": "2026-07-09T17:01:38.833Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://core.telegram.org/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616498833_7",
+      "claim_field": "developer_access.access_model",
+      "claim": "self_serve_free",
+      "source_url": "https://core.telegram.org/",
+      "source_title": "Telegram APIs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "You are welcome to use both APIs free of charge.",
+      "retrieved_at": "2026-07-09T17:01:38.833Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://core.telegram.org/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616498833_8",
+      "claim_field": "developer_access.access_model",
+      "claim": "self_serve_free",
+      "source_url": "https://core.telegram.org/",
+      "source_title": "Telegram APIs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Telegram's Gateway API is completely free to test. Learn more here »",
+      "retrieved_at": "2026-07-09T17:01:38.833Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://core.telegram.org/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616498833_9",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": true,
+      "source_url": "https://core.telegram.org/",
+      "source_title": "Telegram APIs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Don't forget to register your application in our system.",
+      "retrieved_at": "2026-07-09T17:01:38.833Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://core.telegram.org/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616498833_10",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": true,
+      "source_url": "https://core.telegram.org/",
+      "source_title": "Telegram APIs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Creating an application How to get your application identifier and create a new Telegram app.",
+      "retrieved_at": "2026-07-09T17:01:38.833Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://core.telegram.org/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616498833_11",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://core.telegram.org/",
+      "source_title": "Telegram APIs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "We offer three kinds of APIs for developers.",
+      "retrieved_at": "2026-07-09T17:01:38.833Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://core.telegram.org/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616498833_12",
+      "claim_field": "api_surface.api_styles",
+      "claim": "SDK",
+      "source_url": "https://core.telegram.org/",
+      "source_title": "Telegram APIs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Try our Telegram Database Library (or simply TDLib), a tool for third-party developers that makes it easy to build fast, secure and feature-rich Telegram apps.",
+      "retrieved_at": "2026-07-09T17:01:38.833Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://core.telegram.org/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616498833_13",
+      "claim_field": "api_surface.api_styles",
+      "claim": "SDK",
+      "source_url": "https://core.telegram.org/",
+      "source_title": "Telegram APIs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "The library is open source and compatible with virtually any programming language.",
+      "retrieved_at": "2026-07-09T17:01:38.833Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://core.telegram.org/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616498833_14",
+      "claim_field": "api_surface.api_styles",
+      "claim": "other",
+      "source_url": "https://core.telegram.org/",
+      "source_title": "Telegram APIs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "You communicate with this server via a simple HTTPS interface that offers a simplified version of the Telegram API.",
+      "retrieved_at": "2026-07-09T17:01:38.833Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://core.telegram.org/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616498833_15",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://core.telegram.org/",
+      "source_title": "Telegram APIs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "This API allows you to connect bots to our system.",
+      "retrieved_at": "2026-07-09T17:01:38.833Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://core.telegram.org/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616498833_16",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://core.telegram.org/",
+      "source_title": "Telegram APIs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "This API allows you to build your own customized Telegram clients. It is 100% open for all developers who wish to create Telegram applications on our platform.",
+      "retrieved_at": "2026-07-09T17:01:38.833Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://core.telegram.org/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616498833_17",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://core.telegram.org/",
+      "source_title": "Telegram APIs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Bot developers can also make use of our Payments API to accept payments from Telegram users around the world.",
+      "retrieved_at": "2026-07-09T17:01:38.833Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://core.telegram.org/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616498833_18",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://core.telegram.org/",
+      "source_title": "Telegram APIs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "The Telegram Gateway API allows any business, app or website to send authorization codes through Telegram instead of traditional SMS",
+      "retrieved_at": "2026-07-09T17:01:38.833Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://core.telegram.org/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616498833_19",
+      "claim_field": "mcp_status",
+      "claim": "none_found",
+      "source_url": "https://core.telegram.org/",
+      "source_title": "Telegram APIs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "N/A",
+      "retrieved_at": "2026-07-09T17:01:38.833Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://core.telegram.org/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 27,
+      "app_name": "Telegram",
+      "website_hint": "core.telegram.org",
+      "assigned_category": "Communications and Messaging",
+      "researched_at": "2026-07-09T17:01:38.833Z"
+    },
+    "product": {
+      "normalized_category": "Communications and Messaging",
+      "one_line_description": "Telegram is a cloud-based mobile and desktop messaging app offering various APIs for bot creation, custom client development, and verification code delivery."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "The source mentions user authorization methods like two-factor authentication, QR code login, and passkeys, and that the Bot API uses a 'simple HTTPS interface' with an intermediary server handling encryption. However, it does not explicitly detail the authentication methods (e.g., API key, OAuth2) developers use to authenticate their applications to the Telegram API service itself."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": true,
+      "access_notes": "Telegram states that its Bot API, Telegram API, and TDLib are 'free of charge'. The Gateway API is 'completely free to test'. To use the Telegram API, developers need to 'register your application in our system' to 'get your application identifier and create a new Telegram app', implying a self-serve process without human approval."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "SDK",
+        "other"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "Telegram offers several APIs: the Bot API for creating programs using Telegram messages via a 'simple HTTPS interface', TDLib for building custom Telegram clients as an open-source library, the Telegram API for building customized Telegram clients directly, and the Gateway API for sending verification codes. The APIs cover extensive features including messaging, calls, payments, groups, channels, security, file transfers, and user management."
+    },
+    "mcp": {
+      "mcp_status": "none_found",
+      "mcp_summary": "There is no mention of Model Context Protocol (MCP) or similar capabilities in the provided source."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient.",
+      "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0.5,
+        "access_model": 1,
+        "public_api": 1,
+        "api_breadth": 1,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.85,
+      "requires_human_review": true,
+      "human_review_reason": "Authentication methods for API access are not explicitly stated, only user authentication methods or communication protocols are mentioned."
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_access_model_unclear",
+    "risk_auth_methods_unclear",
+    "risk_material_evidence_validation_failed",
+    "risk_contradictory_claims",
+    "risk_verdict_unclear",
+    "risk_low_confidence"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_access_model_unclear",
+      "risk_auth_methods_unclear",
+      "risk_material_evidence_validation_failed",
+      "risk_contradictory_claims",
+      "risk_verdict_unclear",
+      "risk_low_confidence"
+    ]
+  }
+}

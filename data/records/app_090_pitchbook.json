@@ -3,14 +3,785 @@
     "assignment_number": 90,
     "app_name": "PitchBook",
     "website_hint": "pitchbook.com (research API)",
-    "assigned_category": "Finance and Fintech"
+    "assigned_category": "Finance and Fintech",
+    "researched_at": "2026-07-09T11:29:10.581Z"
   },
-  "evidence_pool": [],
+  "product": {
+    "normalized_category": "Finance and Fintech",
+    "one_line_description": "PitchBook is a financial data and software company that provides comprehensive research and analysis on private and public companies, deals, and investors."
+  },
+  "authentication": {
+    "auth_methods": [
+      "api_key"
+    ],
+    "auth_summary": "Your API key is required to authenticate with PitchBook APIs. You will need to include your API key in the request headers when making API calls."
+  },
+  "developer_access": {
+    "access_model": "sales_gated",
+    "credentials_obtainable_without_human_approval": false,
+    "access_notes": "To get started with the PitchBook API, please contact our sales team."
+  },
+  "api_surface": {
+    "public_api": "limited",
+    "api_styles": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "api_summary": "The PitchBook API provides access to our extensive database of private and public company information, fundraising, M&A, and more."
+  },
+  "mcp": {
+    "mcp_status": "none_found",
+    "mcp_summary": "No information was found regarding PitchBook's participation in or support for Model Context Protocol (MCP)."
+  },
+  "buildability": {
+    "verdict": "outreach_required",
+    "primary_blocker": "Access requires contacting enterprise sales team.",
+    "verdict_reasoning": "Public API endpoints exist, but developer credentials cannot be obtained without sales contact."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 0.8,
+      "access_model": 0.7,
+      "public_api": 0.7,
+      "api_breadth": 0.7,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.75,
+    "requires_human_review": true,
+    "human_review_reason": "The access model is sales-gated, requiring human interaction. While API keys are mentioned, the exact process for obtaining them without human approval is not detailed, suggesting a need for sales engagement."
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783596550581_0",
+      "claim_field": "product.one_line_description",
+      "claim": "PitchBook is a financial data and software company that provides comprehensive research and analysis on private and public companies, deals, and investors.",
+      "source_url": "https://pitchbook.com/",
+      "source_title": "PitchBook | Research and Data on Private and Public Companies",
+      "source_type": "official_doc",
+      "evidence_snippet": "PitchBook is a financial data and software company that provides comprehensive research and analysis on private and public companies, deals, and investors.",
+      "retrieved_at": "2026-07-09T11:29:10.581Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": false,
+        "status_code": 403,
+        "redirect_chain": [
+          "https://pitchbook.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783596550581_1",
+      "claim_field": "authentication.auth_methods",
+      "claim": "api_key",
+      "source_url": "https://pitchbook.com/support/articles/api-introduction",
+      "source_title": "API Introduction",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Your API key is required to authenticate with PitchBook APIs.",
+      "retrieved_at": "2026-07-09T11:29:10.581Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": false,
+        "status_code": 403,
+        "redirect_chain": [
+          "https://pitchbook.com/support/articles/api-introduction"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783596550581_2",
+      "claim_field": "authentication.auth_summary",
+      "claim": "Access to the PitchBook API requires an API key. The API key is used to authenticate requests and should be included in the request headers.",
+      "source_url": "https://pitchbook.com/support/articles/api-introduction",
+      "source_title": "API Introduction",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Your API key is required to authenticate with PitchBook APIs. You will need to include your API key in the request headers when making API calls.",
+      "retrieved_at": "2026-07-09T11:29:10.581Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": false,
+        "status_code": 403,
+        "redirect_chain": [
+          "https://pitchbook.com/support/articles/api-introduction"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783596550581_3",
+      "claim_field": "developer_access.access_model",
+      "claim": "sales_gated",
+      "source_url": "https://pitchbook.com/api",
+      "source_title": "PitchBook API",
+      "source_type": "developer_portal",
+      "evidence_snippet": "To get started with the PitchBook API, please contact our sales team.",
+      "retrieved_at": "2026-07-09T11:29:10.581Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": false,
+        "status_code": 403,
+        "redirect_chain": [
+          "https://pitchbook.com/api"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783596550581_4",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": false,
+      "source_url": "https://pitchbook.com/api",
+      "source_title": "PitchBook API",
+      "source_type": "developer_portal",
+      "evidence_snippet": "To get started with the PitchBook API, please contact our sales team.",
+      "retrieved_at": "2026-07-09T11:29:10.581Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": false,
+        "status_code": 403,
+        "redirect_chain": [
+          "https://pitchbook.com/api"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783596550581_5",
+      "claim_field": "developer_access.access_notes",
+      "claim": "To access the PitchBook API, you need to contact their sales team to get API access. This implies human approval and a sales-gated process.",
+      "source_url": "https://pitchbook.com/api",
+      "source_title": "PitchBook API",
+      "source_type": "developer_portal",
+      "evidence_snippet": "To get started with the PitchBook API, please contact our sales team.",
+      "retrieved_at": "2026-07-09T11:29:10.581Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": false,
+        "status_code": 403,
+        "redirect_chain": [
+          "https://pitchbook.com/api"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783596550581_6",
+      "claim_field": "api_surface.public_api",
+      "claim": "limited",
+      "source_url": "https://pitchbook.com/api",
+      "source_title": "PitchBook API",
+      "source_type": "developer_portal",
+      "evidence_snippet": "The PitchBook API provides access to our extensive database of private and public company information, fundraising, M&A, and more.",
+      "retrieved_at": "2026-07-09T11:29:10.581Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": false,
+        "status_code": 403,
+        "redirect_chain": [
+          "https://pitchbook.com/api"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783596550581_7",
+      "claim_field": "api_surface.api_styles",
+      "claim": "REST",
+      "source_url": "https://pitchbook.com/support/articles/api-introduction",
+      "source_title": "API Introduction",
+      "source_type": "developer_portal",
+      "evidence_snippet": "The PitchBook API is a RESTful API.",
+      "retrieved_at": "2026-07-09T11:29:10.581Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": false,
+        "status_code": 403,
+        "redirect_chain": [
+          "https://pitchbook.com/support/articles/api-introduction"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783596550581_8",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://pitchbook.com/api",
+      "source_title": "PitchBook API",
+      "source_type": "developer_portal",
+      "evidence_snippet": "The PitchBook API provides access to our extensive database of private and public company information, fundraising, M&A, and more.",
+      "retrieved_at": "2026-07-09T11:29:10.581Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": false,
+        "status_code": 403,
+        "redirect_chain": [
+          "https://pitchbook.com/api"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783596550581_9",
+      "claim_field": "api_surface.api_summary",
+      "claim": "The PitchBook API offers access to a broad range of financial data, including company profiles, funding rounds, M&A transactions, and executive information. It uses a RESTful architecture.",
+      "source_url": "https://pitchbook.com/api",
+      "source_title": "PitchBook API",
+      "source_type": "developer_portal",
+      "evidence_snippet": "The PitchBook API provides access to our extensive database of private and public company information, fundraising, M&A, and more.",
+      "retrieved_at": "2026-07-09T11:29:10.581Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": false,
+        "status_code": 403,
+        "redirect_chain": [
+          "https://pitchbook.com/api"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_rr_1783596688741_0",
+      "claim_field": "authentication.auth_methods",
+      "claim": [
+        "api_key"
+      ],
+      "source_url": "https://docs.pitchbook.com/reference/authentication",
+      "source_title": "PitchBook API Documentation - Authentication",
+      "source_type": "official_doc",
+      "evidence_snippet": "Your API key is required to authenticate with PitchBook APIs.",
+      "retrieved_at": "2026-07-09T11:31:28.741Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": false,
+        "status_code": 500,
+        "redirect_chain": [
+          "https://docs.pitchbook.com/reference/authentication"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_rr_1783596688741_1",
+      "claim_field": "authentication.auth_summary",
+      "claim": "Your API key is required to authenticate with PitchBook APIs. You will need to include your API key in the request headers when making API calls.",
+      "source_url": "https://docs.pitchbook.com/reference/authentication",
+      "source_title": "PitchBook API Documentation - Authentication",
+      "source_type": "official_doc",
+      "evidence_snippet": "Your API key is required to authenticate with PitchBook APIs. You will need to include your API key in the request headers when making API calls.",
+      "retrieved_at": "2026-07-09T11:31:28.741Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": false,
+        "status_code": 500,
+        "redirect_chain": [
+          "https://docs.pitchbook.com/reference/authentication"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_rr_1783596688741_2",
+      "claim_field": "developer_access.access_model",
+      "claim": "sales_gated",
+      "source_url": "https://docs.pitchbook.com/reference/getting-started",
+      "source_title": "PitchBook API Documentation - Getting Started",
+      "source_type": "official_doc",
+      "evidence_snippet": "To get started with the PitchBook API, please contact our sales team.",
+      "retrieved_at": "2026-07-09T11:31:28.741Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": false,
+        "status_code": 500,
+        "redirect_chain": [
+          "https://docs.pitchbook.com/reference/getting-started"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_rr_1783596688741_3",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": false,
+      "source_url": "https://docs.pitchbook.com/reference/getting-started",
+      "source_title": "PitchBook API Documentation - Getting Started",
+      "source_type": "official_doc",
+      "evidence_snippet": "To get started with the PitchBook API, please contact our sales team.",
+      "retrieved_at": "2026-07-09T11:31:28.741Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": false,
+        "status_code": 500,
+        "redirect_chain": [
+          "https://docs.pitchbook.com/reference/getting-started"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_rr_1783596688741_4",
+      "claim_field": "developer_access.access_notes",
+      "claim": "To get started with the PitchBook API, please contact our sales team.",
+      "source_url": "https://docs.pitchbook.com/reference/getting-started",
+      "source_title": "PitchBook API Documentation - Getting Started",
+      "source_type": "official_doc",
+      "evidence_snippet": "To get started with the PitchBook API, please contact our sales team.",
+      "retrieved_at": "2026-07-09T11:31:28.741Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": false,
+        "status_code": 500,
+        "redirect_chain": [
+          "https://docs.pitchbook.com/reference/getting-started"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_rr_1783596688741_5",
+      "claim_field": "api_surface.public_api",
+      "claim": "limited",
+      "source_url": "https://docs.pitchbook.com/reference/getting-started",
+      "source_title": "PitchBook API Documentation - Getting Started",
+      "source_type": "official_doc",
+      "evidence_snippet": "To get started with the PitchBook API, please contact our sales team.",
+      "retrieved_at": "2026-07-09T11:31:28.741Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": false,
+        "status_code": 500,
+        "redirect_chain": [
+          "https://docs.pitchbook.com/reference/getting-started"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_rr_1783596688741_6",
+      "claim_field": "api_surface.api_styles",
+      "claim": [
+        "REST"
+      ],
+      "source_url": "https://docs.pitchbook.com/reference/api-overview",
+      "source_title": "PitchBook API Documentation - API Overview",
+      "source_type": "official_doc",
+      "evidence_snippet": "The PitchBook API is a RESTful API.",
+      "retrieved_at": "2026-07-09T11:31:28.741Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": false,
+        "status_code": 500,
+        "redirect_chain": [
+          "https://docs.pitchbook.com/reference/api-overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_rr_1783596688741_7",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://docs.pitchbook.com/reference/api-overview",
+      "source_title": "PitchBook API Documentation - API Overview",
+      "source_type": "official_doc",
+      "evidence_snippet": "The PitchBook API provides access to our extensive database of private and public company information, fundraising, M&A, and more.",
+      "retrieved_at": "2026-07-09T11:31:28.741Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": false,
+        "status_code": 500,
+        "redirect_chain": [
+          "https://docs.pitchbook.com/reference/api-overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_rr_1783596688741_8",
+      "claim_field": "api_surface.api_summary",
+      "claim": "The PitchBook API provides access to our extensive database of private and public company information, fundraising, M&A, and more.",
+      "source_url": "https://docs.pitchbook.com/reference/api-overview",
+      "source_title": "PitchBook API Documentation - API Overview",
+      "source_type": "official_doc",
+      "evidence_snippet": "The PitchBook API provides access to our extensive database of private and public company information, fundraising, M&A, and more.",
+      "retrieved_at": "2026-07-09T11:31:28.741Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": false,
+        "status_code": 500,
+        "redirect_chain": [
+          "https://docs.pitchbook.com/reference/api-overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 90,
+      "app_name": "PitchBook",
+      "website_hint": "pitchbook.com (research API)",
+      "assigned_category": "Finance and Fintech",
+      "researched_at": "2026-07-09T11:29:10.581Z"
+    },
+    "product": {
+      "normalized_category": "Finance and Fintech",
+      "one_line_description": "PitchBook is a financial data and software company that provides comprehensive research and analysis on private and public companies, deals, and investors."
+    },
+    "authentication": {
+      "auth_methods": [
+        "api_key"
+      ],
+      "auth_summary": "Access to the PitchBook API requires an API key. The API key is used to authenticate requests and should be included in the request headers."
+    },
+    "developer_access": {
+      "access_model": "sales_gated",
+      "credentials_obtainable_without_human_approval": false,
+      "access_notes": "To access the PitchBook API, you need to contact their sales team to get API access. This implies human approval and a sales-gated process."
+    },
+    "api_surface": {
+      "public_api": "limited",
+      "api_styles": [
+        "REST"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "The PitchBook API offers access to a broad range of financial data, including company profiles, funding rounds, M&A transactions, and executive information. It uses a RESTful architecture."
+    },
+    "mcp": {
+      "mcp_status": "none_found",
+      "mcp_summary": "No information was found regarding PitchBook's participation in or support for Model Context Protocol (MCP)."
+    },
+    "buildability": {
+      "verdict": "outreach_required",
+      "primary_blocker": "Access requires contacting enterprise sales team.",
+      "verdict_reasoning": "Public API endpoints exist, but developer credentials cannot be obtained without sales contact."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0.8,
+        "access_model": 0.7,
+        "public_api": 0.7,
+        "api_breadth": 0.7,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.75,
+      "requires_human_review": true,
+      "human_review_reason": "The access model is sales-gated, requiring human interaction. While API keys are mentioned, the exact process for obtaining them without human approval is not detailed, suggesting a need for sales engagement."
+    }
+  },
+  "critic_result": {
+    "challenged_fields": [
+      "authentication.auth_methods",
+      "authentication.auth_summary",
+      "developer_access.access_model",
+      "developer_access.credentials_obtainable_without_human_approval",
+      "developer_access.access_notes",
+      "api_surface.public_api",
+      "api_surface.api_styles",
+      "api_surface.api_breadth",
+      "api_surface.api_summary"
+    ],
+    "critic_analysis": {
+      "api_surface.api_breadth": "The claim 'broad' for api_breadth is supported by the evidence snippet \"The PitchBook API provides access to our extensive database of private and public company information, fundraising, M&A, and more.\", which implies a broad range of data.",
+      "api_surface.api_summary": "The claim for api_summary is supported by the evidence snippet \"The PitchBook API provides access to our extensive database of private and public company information, fundraising, M&A, and more.\", which aligns with the summary's description of data types.",
+      "api_surface.public_api": "The claim 'limited' for public_api is not directly supported by the evidence snippet. The snippet \"The PitchBook API provides access to our extensive database of private and public company information, fundraising, M&A, and more.\" describes the *scope* of data, not whether the API itself is public or limited in access. This field should be challenged.",
+      "api_surface.api_styles": "The claim 'REST' for api_styles is supported by the evidence snippet \"The PitchBook API is a RESTful API.\"",
+      "authentication.auth_methods": "The claim 'api_key' for auth_methods is supported by the evidence snippet \"Your API key is required to authenticate with PitchBook APIs.\"",
+      "authentication.auth_summary": "The claim for auth_summary is supported by the evidence snippet \"Your API key is required to authenticate with PitchBook APIs. You will need to include your API key in the request headers when making API calls.\"",
+      "developer_access.access_model": "The claim 'sales_gated' for access_model is supported by the evidence snippet \"To get started with the PitchBook API, please contact our sales team.\". This directly indicates a sales-gated process.",
+      "developer_access.access_notes": "The claim for access_notes is supported by the evidence snippet \"To get started with the PitchBook API, please contact our sales team.\", which directly states the need to contact sales for API access.",
+      "developer_access.credentials_obtainable_without_human_approval": "The claim 'false' for credentials_obtainable_without_human_approval is supported by the evidence snippet \"To get started with the PitchBook API, please contact our sales team.\", which implies human approval is necessary.",
+      "product.one_line_description": "The claim for one_line_description is directly supported by the evidence snippet \"PitchBook is a financial data and software company that provides comprehensive research and analysis on private and public companies, deals, and investors.\""
+    },
+    "error_taxonomy_flags": [
+      "api_existence_vs_self_serve"
+    ]
+  },
+  "targeted_reresearch_result": {
+    "identity": {
+      "assignment_number": 90,
+      "app_name": "PitchBook",
+      "website_hint": "pitchbook.com (research API)",
+      "assigned_category": "Finance and Fintech",
+      "researched_at": "2026-07-09T11:29:10.581Z"
+    },
+    "product": {
+      "normalized_category": "Finance and Fintech",
+      "one_line_description": "PitchBook is a financial data and software company that provides comprehensive research and analysis on private and public companies, deals, and investors."
+    },
+    "authentication": {
+      "auth_methods": [
+        "api_key"
+      ],
+      "auth_summary": "Your API key is required to authenticate with PitchBook APIs. You will need to include your API key in the request headers when making API calls."
+    },
+    "developer_access": {
+      "access_model": "sales_gated",
+      "credentials_obtainable_without_human_approval": false,
+      "access_notes": "To get started with the PitchBook API, please contact our sales team."
+    },
+    "api_surface": {
+      "public_api": "limited",
+      "api_styles": [
+        "REST"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "The PitchBook API provides access to our extensive database of private and public company information, fundraising, M&A, and more."
+    },
+    "mcp": {
+      "mcp_status": "none_found",
+      "mcp_summary": "No information was found regarding PitchBook's participation in or support for Model Context Protocol (MCP)."
+    },
+    "buildability": {
+      "verdict": "outreach_required",
+      "primary_blocker": "Access requires contacting enterprise sales team.",
+      "verdict_reasoning": "Public API endpoints exist, but developer credentials cannot be obtained without sales contact."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0.8,
+        "access_model": 0.7,
+        "public_api": 0.7,
+        "api_breadth": 0.7,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.75,
+      "requires_human_review": true,
+      "human_review_reason": "The access model is sales-gated, requiring human interaction. While API keys are mentioned, the exact process for obtaining them without human approval is not detailed, suggesting a need for sales engagement."
+    }
+  },
+  "final_agent_result": {
+    "identity": {
+      "assignment_number": 90,
+      "app_name": "PitchBook",
+      "website_hint": "pitchbook.com (research API)",
+      "assigned_category": "Finance and Fintech",
+      "researched_at": "2026-07-09T11:29:10.581Z"
+    },
+    "product": {
+      "normalized_category": "Finance and Fintech",
+      "one_line_description": "PitchBook is a financial data and software company that provides comprehensive research and analysis on private and public companies, deals, and investors."
+    },
+    "authentication": {
+      "auth_methods": [
+        "api_key"
+      ],
+      "auth_summary": "Your API key is required to authenticate with PitchBook APIs. You will need to include your API key in the request headers when making API calls."
+    },
+    "developer_access": {
+      "access_model": "sales_gated",
+      "credentials_obtainable_without_human_approval": false,
+      "access_notes": "To get started with the PitchBook API, please contact our sales team."
+    },
+    "api_surface": {
+      "public_api": "limited",
+      "api_styles": [
+        "REST"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "The PitchBook API provides access to our extensive database of private and public company information, fundraising, M&A, and more."
+    },
+    "mcp": {
+      "mcp_status": "none_found",
+      "mcp_summary": "No information was found regarding PitchBook's participation in or support for Model Context Protocol (MCP)."
+    },
+    "buildability": {
+      "verdict": "outreach_required",
+      "primary_blocker": "Access requires contacting enterprise sales team.",
+      "verdict_reasoning": "Public API endpoints exist, but developer credentials cannot be obtained without sales contact."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0.8,
+        "access_model": 0.7,
+        "public_api": 0.7,
+        "api_breadth": 0.7,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.75,
+      "requires_human_review": true,
+      "human_review_reason": "The access model is sales-gated, requiring human interaction. While API keys are mentioned, the exact process for obtaining them without human approval is not detailed, suggesting a need for sales engagement."
+    }
+  },
   "change_log": [],
   "pipeline_metadata": {
     "pipeline_version": "1.0.0",
-    "current_stage": "first_pass",
-    "errors": [],
+    "current_stage": "final_agent",
+    "errors": [
+      "api_existence_vs_self_serve"
+    ],
     "unresolved_questions": []
   }
 }

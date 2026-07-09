@@ -1,0 +1,333 @@
+{
+  "identity": {
+    "assignment_number": 40,
+    "app_name": "SendGrid",
+    "website_hint": "sendgrid.com",
+    "assigned_category": "Marketing, Ads, Email and Social",
+    "researched_at": "2026-07-09T17:08:13.308Z"
+  },
+  "product": {
+    "normalized_category": "Marketing, Ads, Email and Social",
+    "one_line_description": "SendGrid provides an Email API for delivering transactional emails at scale and tools for creating email marketing campaigns."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "The provided source indicates that there is documentation to integrate and send with APIs, implying authentication is required, but specific methods like API keys or OAuth are not mentioned in this snippet."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": true,
+    "access_notes": "Users can sign up for free to access SendGrid's email solutions, which includes the Email API. Documentation is available to help integrate and send with the APIs."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "REST",
+      "other"
+    ],
+    "api_breadth": "moderate",
+    "api_summary": "SendGrid offers a public Email API for sending email at scale, an SMTP service, and tools for creating email marketing campaigns. Documentation is available to quickly integrate and send with these APIs."
+  },
+  "mcp": {
+    "mcp_status": "none_found",
+    "mcp_summary": "No information regarding Model Context Protocol (MCP) server availability was found in the provided source."
+  },
+  "buildability": {
+    "verdict": "unclear",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 0.2,
+      "access_model": 0.9,
+      "public_api": 1,
+      "api_breadth": 0.8,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.8,
+    "requires_human_review": false,
+    "human_review_reason": null
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783616893308_0",
+      "claim_field": "developer_access.access_model",
+      "claim": "self_serve_free",
+      "source_url": "https://www.twilio.com/en-us/sendgrid",
+      "source_title": "SendGrid Email API and Email Marketing Campaigns | Twilio",
+      "source_type": "official_doc",
+      "evidence_snippet": "[Start for free](https://signup.sendgrid.com/)",
+      "retrieved_at": "2026-07-09T17:08:13.308Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.twilio.com/en-us/sendgrid"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616893308_1",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": true,
+      "source_url": "https://www.twilio.com/en-us/sendgrid",
+      "source_title": "SendGrid Email API and Email Marketing Campaigns | Twilio",
+      "source_type": "official_doc",
+      "evidence_snippet": "[Start for free](https://signup.sendgrid.com/)\nUse up-to-date documentation to quickly integrate and send with our APIs.",
+      "retrieved_at": "2026-07-09T17:08:13.308Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.twilio.com/en-us/sendgrid"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616893308_2",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://www.twilio.com/en-us/sendgrid",
+      "source_title": "SendGrid Email API and Email Marketing Campaigns | Twilio",
+      "source_type": "official_doc",
+      "evidence_snippet": "The trusted SendGrid Email API for delivery at scale.  \n[Explore SendGrid Email API](/en-us/products/email-api)",
+      "retrieved_at": "2026-07-09T17:08:13.308Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.twilio.com/en-us/sendgrid"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616893308_3",
+      "claim_field": "api_surface.api_styles",
+      "claim": "REST",
+      "source_url": "https://www.twilio.com/en-us/sendgrid",
+      "source_title": "SendGrid Email API and Email Marketing Campaigns | Twilio",
+      "source_type": "official_doc",
+      "evidence_snippet": "Use up-to-date documentation to quickly integrate and send with our APIs.",
+      "retrieved_at": "2026-07-09T17:08:13.308Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.twilio.com/en-us/sendgrid"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616893308_4",
+      "claim_field": "api_surface.api_styles",
+      "claim": "other",
+      "source_url": "https://www.twilio.com/en-us/sendgrid",
+      "source_title": "SendGrid Email API and Email Marketing Campaigns | Twilio",
+      "source_type": "official_doc",
+      "evidence_snippet": "##### Twilio SendGrid Email API and SMTP service",
+      "retrieved_at": "2026-07-09T17:08:13.308Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.twilio.com/en-us/sendgrid"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616893308_5",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "moderate",
+      "source_url": "https://www.twilio.com/en-us/sendgrid",
+      "source_title": "SendGrid Email API and Email Marketing Campaigns | Twilio",
+      "source_type": "official_doc",
+      "evidence_snippet": "##### Twilio SendGrid Email API and SMTP service\nThe trusted SendGrid Email API for delivery at scale.\n##### Email campaigns for marketers\nFlexible tools for creating engaging email campaigns.",
+      "retrieved_at": "2026-07-09T17:08:13.308Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.twilio.com/en-us/sendgrid"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616893308_6",
+      "claim_field": "product.one_line_description",
+      "claim": "SendGrid provides an Email API for delivering transactional emails at scale and tools for creating email marketing campaigns.",
+      "source_url": "https://www.twilio.com/en-us/sendgrid",
+      "source_title": "SendGrid Email API and Email Marketing Campaigns | Twilio",
+      "source_type": "official_doc",
+      "evidence_snippet": "The trusted SendGrid Email API for delivery at scale.\nFlexible tools for creating engaging email campaigns.",
+      "retrieved_at": "2026-07-09T17:08:13.308Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.twilio.com/en-us/sendgrid"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 40,
+      "app_name": "SendGrid",
+      "website_hint": "sendgrid.com",
+      "assigned_category": "Marketing, Ads, Email and Social",
+      "researched_at": "2026-07-09T17:08:13.308Z"
+    },
+    "product": {
+      "normalized_category": "Marketing, Ads, Email and Social",
+      "one_line_description": "SendGrid provides an Email API for delivering transactional emails at scale and tools for creating email marketing campaigns."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "The provided source indicates that there is documentation to integrate and send with APIs, implying authentication is required, but specific methods like API keys or OAuth are not mentioned in this snippet."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": true,
+      "access_notes": "Users can sign up for free to access SendGrid's email solutions, which includes the Email API. Documentation is available to help integrate and send with the APIs."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "REST",
+        "other"
+      ],
+      "api_breadth": "moderate",
+      "api_summary": "SendGrid offers a public Email API for sending email at scale, an SMTP service, and tools for creating email marketing campaigns. Documentation is available to quickly integrate and send with these APIs."
+    },
+    "mcp": {
+      "mcp_status": "none_found",
+      "mcp_summary": "No information regarding Model Context Protocol (MCP) server availability was found in the provided source."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient.",
+      "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0.2,
+        "access_model": 0.9,
+        "public_api": 1,
+        "api_breadth": 0.8,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.8,
+      "requires_human_review": false,
+      "human_review_reason": null
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_access_model_unclear",
+    "risk_auth_methods_unclear",
+    "risk_material_evidence_validation_failed",
+    "risk_contradictory_claims",
+    "risk_verdict_unclear"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_access_model_unclear",
+      "risk_auth_methods_unclear",
+      "risk_material_evidence_validation_failed",
+      "risk_contradictory_claims",
+      "risk_verdict_unclear"
+    ]
+  }
+}

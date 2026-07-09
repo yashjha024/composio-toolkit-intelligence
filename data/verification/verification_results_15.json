@@ -1,0 +1,1331 @@
+[
+  {
+    "assignment_number": 1,
+    "app_name": "Salesforce",
+    "assigned_category": "CRM and Sales",
+    "processing_mode": "deep_verified",
+    "baseline_fields": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "unclear",
+      "api_breadth": "unclear",
+      "mcp_status": "unclear",
+      "buildability_verdict": "UNCLEAR",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "verified_fields": {
+      "auth_methods": {
+        "verified_value": [
+          "unclear"
+        ],
+        "evidence_url": "",
+        "concise_evidence_snippet": "",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "access_model": {
+        "verified_value": "self-serve_free_and_paid",
+        "evidence_url": "https://salesforce.com/pricing",
+        "concise_evidence_snippet": "Calculate pricing Start for free ... See all Agentforce pricing ... See all Small Business pricing",
+        "baseline_classification": "incorrect",
+        "correction_required": true,
+        "failure_mode": "extraction_error"
+      },
+      "credentials_obtainable_without_approval": {
+        "verified_value": true,
+        "evidence_url": "https://salesforce.com/pricing",
+        "concise_evidence_snippet": "Start for free ... Help small businesses sell smarter and support faster in a single app.",
+        "baseline_classification": "incorrect",
+        "correction_required": true,
+        "failure_mode": "extraction_error"
+      },
+      "public_api_status": {
+        "verified_value": "documented_and_available",
+        "evidence_url": "https://salesforce.com/pricing",
+        "concise_evidence_snippet": "MuleSoft: Connect any app, data, or device — in the cloud or on-premises. AI App Dev: Build, customize, and configure",
+        "baseline_classification": "incorrect",
+        "correction_required": true,
+        "failure_mode": "extraction_error"
+      },
+      "api_breadth": {
+        "verified_value": "full",
+        "evidence_url": "https://salesforce.com/pricing",
+        "concise_evidence_snippet": "MuleSoft: Connect any app, data, or device — in the cloud or on-premises. AI App Dev: Build, customize, and configure",
+        "baseline_classification": "incorrect",
+        "correction_required": true,
+        "failure_mode": "extraction_error"
+      },
+      "mcp_status": {
+        "verified_value": "available",
+        "evidence_url": "https://salesforce.com/pricing",
+        "concise_evidence_snippet": "MuleSoft: Connect any app, data, or device — in the cloud or on-premises.",
+        "baseline_classification": "incorrect",
+        "correction_required": true,
+        "failure_mode": "extraction_error"
+      },
+      "buildability_verdict": {
+        "verified_value": "BUILD_NOW",
+        "evidence_url": "https://salesforce.com/pricing",
+        "concise_evidence_snippet": "Start for free...MuleSoft: Connect any app, data, or device — in the cloud or on-premises. AI App Dev: Build, customize, and configure",
+        "baseline_classification": "incorrect",
+        "correction_required": true,
+        "failure_mode": "conservative_guardrail"
+      },
+      "primary_blocker": {
+        "verified_value": null,
+        "evidence_url": "",
+        "concise_evidence_snippet": "",
+        "baseline_classification": "incorrect",
+        "correction_required": true,
+        "failure_mode": "extraction_error"
+      },
+      "unclear_diagnosis": "false_unclear_due_to_guardrails"
+    },
+    "verified_at": "2026-07-09T18:54:38.698Z"
+  },
+  {
+    "assignment_number": 4,
+    "app_name": "Attio",
+    "assigned_category": "CRM and Sales",
+    "processing_mode": "deep_verified",
+    "baseline_fields": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "yes",
+      "api_breadth": "unclear",
+      "mcp_status": "official",
+      "buildability_verdict": "UNCLEAR",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "verified_fields": {
+      "auth_methods": {
+        "verified_value": [
+          "unclear"
+        ],
+        "evidence_url": "https://docs.attio.com/docs",
+        "concise_evidence_snippet": "The Attio Developer Platform consists of four parts: ... REST API ... App SDK. (No explicit authentication methods mentioned)",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "access_model": {
+        "verified_value": "self_serve_free",
+        "evidence_url": "https://attio.com/pricing",
+        "concise_evidence_snippet": "Start for free... API and webhook access. Free. Per user/month, billed monthlyannually. For individuals getting started.",
+        "baseline_classification": "incorrect",
+        "correction_required": true,
+        "failure_mode": "extraction_error"
+      },
+      "credentials_obtainable_without_approval": {
+        "verified_value": true,
+        "evidence_url": "https://attio.com/pricing",
+        "concise_evidence_snippet": "Start for free, no credit card required. API and webhook access is available on the Free plan.",
+        "baseline_classification": "incorrect",
+        "correction_required": true,
+        "failure_mode": "extraction_error"
+      },
+      "public_api_status": {
+        "verified_value": "yes",
+        "evidence_url": "https://docs.attio.com/docs",
+        "concise_evidence_snippet": "The Attio Developer Platform consists of four parts: ... REST API. This allows developers to build apps.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "api_breadth": {
+        "verified_value": "read/write",
+        "evidence_url": "https://docs.attio.com/docs",
+        "concise_evidence_snippet": "REST API ... allows developers to build apps that read and write information to and from Attio workspaces. subscribe to events using webhooks.",
+        "baseline_classification": "incorrect",
+        "correction_required": true,
+        "failure_mode": "conservative_guardrail"
+      },
+      "mcp_status": {
+        "verified_value": "official",
+        "evidence_url": "https://docs.attio.com/docs",
+        "concise_evidence_snippet": "## MCP Manage Attio via AI. Connect Claude, ChatGPT or your AI tool of choice to search, update and manage your Attio workspace.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "buildability_verdict": {
+        "verified_value": "BUILD_WITH_CAVEATS",
+        "evidence_url": "https://attio.com/pricing",
+        "concise_evidence_snippet": "API and webhook access is available for Free plan, self-serve. Auth methods are unclear.",
+        "baseline_classification": "incorrect",
+        "correction_required": true,
+        "failure_mode": "conservative_guardrail"
+      },
+      "primary_blocker": {
+        "verified_value": "Authentication methods not specified.",
+        "evidence_url": "https://docs.attio.com/docs",
+        "concise_evidence_snippet": "The documentation for the REST API and App SDK does not detail specific authentication methods such as OAuth or API keys.",
+        "baseline_classification": "incorrect",
+        "correction_required": true,
+        "failure_mode": "extraction_error"
+      },
+      "unclear_diagnosis": "false_unclear_due_to_guardrails"
+    },
+    "verified_at": "2026-07-09T18:54:30.501Z"
+  },
+  {
+    "assignment_number": 11,
+    "app_name": "Zendesk",
+    "assigned_category": "Support and Helpdesk",
+    "processing_mode": "deep_verified",
+    "baseline_fields": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "none_found",
+      "buildability_verdict": "UNCLEAR",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "verified_fields": {
+      "auth_methods": {
+        "verified_value": [
+          "unclear"
+        ],
+        "evidence_url": "https://developer.zendesk.com/documentation/",
+        "concise_evidence_snippet": "Zendesk's APIs are organized around REST principles. Our APIs have resource-oriented URLs, accepts form-encoded request bodies and return JSON-encoded responses.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "access_model": {
+        "verified_value": "self_serve_trial",
+        "evidence_url": "https://developer.zendesk.com/documentation/",
+        "concise_evidence_snippet": "Try out the Sunshine Platform with a free, 14-day trial account. [Create an account]",
+        "baseline_classification": "incorrect",
+        "correction_required": true,
+        "failure_mode": "extraction_error"
+      },
+      "credentials_obtainable_without_approval": {
+        "verified_value": true,
+        "evidence_url": "https://developer.zendesk.com/documentation/",
+        "concise_evidence_snippet": "Try out the Sunshine Platform with a free, 14-day trial account. [Create an account]",
+        "baseline_classification": "incorrect",
+        "correction_required": true,
+        "failure_mode": "extraction_error"
+      },
+      "public_api_status": {
+        "verified_value": "yes",
+        "evidence_url": "https://developer.zendesk.com/documentation/",
+        "concise_evidence_snippet": "Zendesk's APIs are organized around REST principles. Our APIs have resource-oriented URLs, accepts form-encoded request bodies and return JSON-encoded responses.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "api_breadth": {
+        "verified_value": "broad",
+        "evidence_url": "https://developer.zendesk.com/documentation/",
+        "concise_evidence_snippet": "Access, integrate, and extend your data anywhere with an event-driven platform and robust APIs that let you build anything",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "mcp_status": {
+        "verified_value": "none_found",
+        "evidence_url": "https://zendesk.com",
+        "concise_evidence_snippet": "No evidence of multi-cloud platform status found across provided documentation.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "buildability_verdict": {
+        "verified_value": "UNCLEAR",
+        "evidence_url": "https://developer.zendesk.com/documentation/",
+        "concise_evidence_snippet": "Auth methods are unclear, making it difficult to proceed with integration despite other positive factors.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "primary_blocker": {
+        "verified_value": "Research data ambiguous or insufficient.",
+        "evidence_url": "https://developer.zendesk.com/documentation/",
+        "concise_evidence_snippet": "The ambiguity regarding API authentication methods represents a primary blocker for buildability.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "unclear_diagnosis": "genuinely_unclear"
+    },
+    "verified_at": "2026-07-09T18:54:36.489Z"
+  },
+  {
+    "assignment_number": 15,
+    "app_name": "Pylon",
+    "assigned_category": "Support and Helpdesk",
+    "processing_mode": "fast_scale",
+    "baseline_fields": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "access_model": "sales_gated",
+      "credentials_obtainable_without_approval": false,
+      "public_api_status": "limited",
+      "api_breadth": "moderate",
+      "mcp_status": "none_found",
+      "buildability_verdict": "OUTREACH_REQUIRED",
+      "primary_blocker": "Access requires contacting enterprise sales team."
+    },
+    "verified_fields": {
+      "auth_methods": {
+        "verified_value": [
+          "unclear"
+        ],
+        "evidence_url": "",
+        "concise_evidence_snippet": "No information found regarding authentication methods in the provided documentation.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "access_model": {
+        "verified_value": "sales_gated",
+        "evidence_url": "https://usepylon.com/pricing",
+        "concise_evidence_snippet": "\"Get started\" buttons for all plans link to \"/schedule-demo\", indicating sales interaction is required.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "credentials_obtainable_without_approval": {
+        "verified_value": false,
+        "evidence_url": "https://usepylon.com/pricing",
+        "concise_evidence_snippet": "\"Get started\" for all plans requires scheduling a demo, preventing unapproved credential obtainment.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "public_api_status": {
+        "verified_value": "limited",
+        "evidence_url": "https://usepylon.com/pricing",
+        "concise_evidence_snippet": "\"API\" is listed as a feature in Professional plan. No public API documentation found.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "api_breadth": {
+        "verified_value": "unverifiable",
+        "evidence_url": "https://usepylon.com/",
+        "concise_evidence_snippet": "\"Automate repetitive tasks...\" and other snippets describe product features, not API breadth. No API docs available.",
+        "baseline_classification": "incorrect",
+        "correction_required": true,
+        "failure_mode": "extraction_error"
+      },
+      "mcp_status": {
+        "verified_value": "none_found",
+        "evidence_url": "https://usepylon.com/",
+        "concise_evidence_snippet": "No information found regarding marketplace, developer program, or partnership portal.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "buildability_verdict": {
+        "verified_value": "OUTREACH_REQUIRED",
+        "evidence_url": "https://usepylon.com/pricing",
+        "concise_evidence_snippet": "All \"Get started\" buttons on pricing page link to \"/schedule-demo\", requiring outreach.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "primary_blocker": {
+        "verified_value": "Access requires contacting enterprise sales team.",
+        "evidence_url": "https://usepylon.com/pricing",
+        "concise_evidence_snippet": "All \"Get started\" buttons on pricing page link to \"/schedule-demo\", requiring contact.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "unclear_diagnosis": "not_applicable"
+    },
+    "verified_at": "2026-07-09T18:54:39.450Z"
+  },
+  {
+    "assignment_number": 21,
+    "app_name": "Slack",
+    "assigned_category": "Communications and Messaging",
+    "processing_mode": "deep_verified",
+    "baseline_fields": {
+      "auth_methods": [
+        "oauth2"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": "unknown",
+      "public_api_status": "yes",
+      "api_breadth": "unclear",
+      "mcp_status": "community",
+      "buildability_verdict": "UNCLEAR",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "verified_fields": {
+      "auth_methods": {
+        "verified_value": [
+          "oauth2"
+        ],
+        "evidence_url": "https://docs.slack.dev/authentication/",
+        "concise_evidence_snippet": "Whether you’re handling OAuth 2.0, verifying requests, or setting up Sign in with Slack, we’ve got you covered.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "access_model": {
+        "verified_value": "self_serve_free",
+        "evidence_url": "https://slack.com/pricing",
+        "concise_evidence_snippet": "Free: A simpler way to chat and collaborate ₹0 Free forever",
+        "baseline_classification": "incorrect",
+        "correction_required": true,
+        "failure_mode": "extraction_error"
+      },
+      "credentials_obtainable_without_approval": {
+        "verified_value": true,
+        "evidence_url": "https://slack.com/pricing",
+        "concise_evidence_snippet": "Free: A simpler way to chat and collaborate ₹0 Free forever [Get started]",
+        "baseline_classification": "incorrect",
+        "correction_required": true,
+        "failure_mode": "extraction_error"
+      },
+      "public_api_status": {
+        "verified_value": "yes",
+        "evidence_url": "https://docs.slack.dev/",
+        "concise_evidence_snippet": "Welcome to the Slack API docs, the place where ideas turn into interactive apps, workflows get automated.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "api_breadth": {
+        "verified_value": "SDK,CLI",
+        "evidence_url": "https://docs.slack.dev/",
+        "concise_evidence_snippet": "### Slack CLI ### Java Slack SDK ### Node Slack SDK ### Python Slack SDK",
+        "baseline_classification": "incorrect",
+        "correction_required": true,
+        "failure_mode": "extraction_error"
+      },
+      "mcp_status": {
+        "verified_value": "community",
+        "evidence_url": "https://github.com/modelcontextprotocol/servers",
+        "concise_evidence_snippet": "Slack - Channel management and messaging capabilities. Now maintained by Zencoder",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "buildability_verdict": {
+        "verified_value": "BUILD_NOW",
+        "evidence_url": "https://slack.com/pricing",
+        "concise_evidence_snippet": "Free: A simpler way to chat and collaborate ₹0 Free forever [Get started]",
+        "baseline_classification": "incorrect",
+        "correction_required": true,
+        "failure_mode": "conservative_guardrail"
+      },
+      "primary_blocker": {
+        "verified_value": null,
+        "evidence_url": "https://slack.com/pricing",
+        "concise_evidence_snippet": "The availability of a free tier and clear API documentation indicates no primary blocker.",
+        "baseline_classification": "incorrect",
+        "correction_required": true,
+        "failure_mode": "conservative_guardrail"
+      },
+      "unclear_diagnosis": "false_unclear_due_to_guardrails"
+    },
+    "verified_at": "2026-07-09T18:54:30.095Z"
+  },
+  {
+    "assignment_number": 28,
+    "app_name": "WhatsApp Business",
+    "assigned_category": "Communications and Messaging",
+    "processing_mode": "fast_scale",
+    "baseline_fields": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "access_model": "admin_gated",
+      "credentials_obtainable_without_approval": false,
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "none_found",
+      "buildability_verdict": "OUTREACH_REQUIRED",
+      "primary_blocker": "Requires vendor/support approval for admin credentials."
+    },
+    "verified_fields": {
+      "auth_methods": {
+        "verified_value": [
+          "bearer_token"
+        ],
+        "evidence_url": "https://developers.facebook.com/docs/whatsapp",
+        "concise_evidence_snippet": "All access tokens must be included in the Authorization HTTP header of your requests, as a Bearer Token.",
+        "baseline_classification": "incorrect",
+        "correction_required": true,
+        "failure_mode": "extraction_error"
+      },
+      "access_model": {
+        "verified_value": "admin_gated",
+        "evidence_url": "https://developers.facebook.com/docs/whatsapp",
+        "concise_evidence_snippet": "Before you can use the WhatsApp Business Platform, your business needs to be verified.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "credentials_obtainable_without_approval": {
+        "verified_value": false,
+        "evidence_url": "https://developers.facebook.com/docs/whatsapp",
+        "concise_evidence_snippet": "Before you can use the WhatsApp Business Platform, your business needs to be verified.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "public_api_status": {
+        "verified_value": "yes",
+        "evidence_url": "https://developers.facebook.com/docs/whatsapp",
+        "concise_evidence_snippet": "The WhatsApp Business Platform consists of two main components: The Cloud API and the On-Premises API.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "api_breadth": {
+        "verified_value": "broad",
+        "evidence_url": "https://developers.facebook.com/docs/whatsapp",
+        "concise_evidence_snippet": "Cloud API: Send and receive messages, manage your business profile, media and message templates, and gain insights.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "mcp_status": {
+        "verified_value": "none_found",
+        "evidence_url": "https://developers.facebook.com/docs/whatsapp",
+        "concise_evidence_snippet": "The WhatsApp Business Platform allows medium and large businesses to communicate with their customers at scale.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "buildability_verdict": {
+        "verified_value": "OUTREACH_REQUIRED",
+        "evidence_url": "https://developers.facebook.com/docs/whatsapp",
+        "concise_evidence_snippet": "Before you can use the WhatsApp Business Platform, your business needs to be verified.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "primary_blocker": {
+        "verified_value": "Requires vendor/support approval for admin credentials.",
+        "evidence_url": "https://developers.facebook.com/docs/whatsapp",
+        "concise_evidence_snippet": "Before you can use the WhatsApp Business Platform, your business needs to be verified.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "unclear_diagnosis": "not_applicable"
+    },
+    "verified_at": "2026-07-09T18:54:26.790Z"
+  },
+  {
+    "assignment_number": 53,
+    "app_name": "Ahrefs",
+    "assigned_category": "Data, SEO and Scraping",
+    "processing_mode": "fast_scale",
+    "baseline_fields": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "access_model": "sales_gated",
+      "credentials_obtainable_without_approval": false,
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "official",
+      "buildability_verdict": "OUTREACH_REQUIRED",
+      "primary_blocker": "Access requires contacting enterprise sales team."
+    },
+    "verified_fields": {
+      "auth_methods": {
+        "verified_value": [
+          "api_key",
+          "oauth2"
+        ],
+        "evidence_url": "https://docs.ahrefs.com/",
+        "concise_evidence_snippet": "API keys Create and manage your API keys; OAuth guide Implement OAuth 2.0 authorization",
+        "baseline_classification": "incorrect",
+        "correction_required": true,
+        "failure_mode": "extraction_error"
+      },
+      "access_model": {
+        "verified_value": "sales_gated",
+        "evidence_url": "https://ahrefs.com/api",
+        "concise_evidence_snippet": "Free test queries Try API endpoints without an Enterprise plan",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "credentials_obtainable_without_approval": {
+        "verified_value": true,
+        "evidence_url": "https://ahrefs.com/api",
+        "concise_evidence_snippet": "Free test queries Try API endpoints without an Enterprise plan",
+        "baseline_classification": "incorrect",
+        "correction_required": true,
+        "failure_mode": "extraction_error"
+      },
+      "public_api_status": {
+        "verified_value": "yes",
+        "evidence_url": "https://ahrefs.com/api",
+        "concise_evidence_snippet": "Access Ahrefs marketing and search data through our APIs and developer tools to build custom integrations and workflows.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "api_breadth": {
+        "verified_value": "broad",
+        "evidence_url": "https://ahrefs.com/api",
+        "concise_evidence_snippet": "Research keywords, analyze backlinks, track rankings, and monitor brand visibility across traditional search and AI platforms.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "mcp_status": {
+        "verified_value": "official",
+        "evidence_url": "https://ahrefs.com/api",
+        "concise_evidence_snippet": "## MCP Connect your Ahrefs data to AI assistants and agents to enhance their answers with real marketing insights.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "buildability_verdict": {
+        "verified_value": "BUILD_WITH_CAVEATS",
+        "evidence_url": "https://ahrefs.com/api",
+        "concise_evidence_snippet": "Free test queries Try API endpoints without an Enterprise plan",
+        "baseline_classification": "incorrect",
+        "correction_required": true,
+        "failure_mode": "conservative_guardrail"
+      },
+      "primary_blocker": {
+        "verified_value": "Access to full API functionality requires contacting enterprise sales team.",
+        "evidence_url": "https://ahrefs.com/api",
+        "concise_evidence_snippet": "Free test queries Try API endpoints without an Enterprise plan",
+        "baseline_classification": "partially_correct",
+        "correction_required": true,
+        "failure_mode": "extraction_error"
+      },
+      "unclear_diagnosis": "not_applicable"
+    },
+    "verified_at": "2026-07-09T18:54:36.802Z"
+  },
+  {
+    "assignment_number": 54,
+    "app_name": "MrScraper",
+    "assigned_category": "Data, SEO and Scraping",
+    "processing_mode": "fast_scale",
+    "baseline_fields": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "access_model": "self_serve_paid",
+      "credentials_obtainable_without_approval": true,
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "official",
+      "buildability_verdict": "BUILD_NOW",
+      "primary_blocker": null
+    },
+    "verified_fields": {
+      "auth_methods": {
+        "verified_value": [
+          "token_based"
+        ],
+        "evidence_url": "https://docs.mrscraper.com/docs/getting-started/api-token",
+        "concise_evidence_snippet": "[Token Plan](/docs/getting-started/api-token)",
+        "baseline_classification": "incorrect",
+        "correction_required": true,
+        "failure_mode": "conservative_guardrail"
+      },
+      "access_model": {
+        "verified_value": "self_serve_paid",
+        "evidence_url": "https://docs.mrscraper.com/docs/getting-started/billing",
+        "concise_evidence_snippet": "[Billing](/docs/getting-started/billing)",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "credentials_obtainable_without_approval": {
+        "verified_value": true,
+        "evidence_url": "https://docs.mrscraper.com/docs/getting-started/api-token",
+        "concise_evidence_snippet": "[Token Plan](/docs/getting-started/api-token)",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "public_api_status": {
+        "verified_value": "yes",
+        "evidence_url": "https://docs.mrscraper.com/docs/features/activating-api",
+        "concise_evidence_snippet": "[Scraper API](/docs/features/activating-api)",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "api_breadth": {
+        "verified_value": "broad",
+        "evidence_url": "https://docs.mrscraper.com",
+        "concise_evidence_snippet": "Scraper API, Python SDK, Node.js SDK, LangChain SDK, CLI, Webhook listed under Integrations.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "mcp_status": {
+        "verified_value": "official",
+        "evidence_url": "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+        "concise_evidence_snippet": "[MCP Server](/docs/getting-started/mcp-server)",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "buildability_verdict": {
+        "verified_value": "BUILD_NOW",
+        "evidence_url": "https://docs.mrscraper.com/docs/getting-started/overview",
+        "concise_evidence_snippet": "Public API, self-serve paid access, token-based authentication, and credentials obtainable without approval confirmed.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "primary_blocker": {
+        "verified_value": null,
+        "evidence_url": "https://docs.mrscraper.com/docs/getting-started/overview",
+        "concise_evidence_snippet": "All conditions for BUILD_NOW are met; no primary blockers identified for API usage.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "unclear_diagnosis": "not_applicable"
+    },
+    "verified_at": "2026-07-09T18:54:47.702Z"
+  },
+  {
+    "assignment_number": 56,
+    "app_name": "Firecrawl",
+    "assigned_category": "Data, SEO and Scraping",
+    "processing_mode": "deep_verified",
+    "baseline_fields": {
+      "auth_methods": [
+        "api_key",
+        "bearer_token",
+        "oauth2"
+      ],
+      "access_model": "self_serve_free",
+      "credentials_obtainable_without_approval": true,
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "official",
+      "buildability_verdict": "BUILD_NOW",
+      "primary_blocker": null
+    },
+    "verified_fields": {
+      "auth_methods": {
+        "verified_value": [
+          "api_key",
+          "bearer_token",
+          "oauth2"
+        ],
+        "evidence_url": "https://docs.firecrawl.dev/api-reference/introduction",
+        "concise_evidence_snippet": "Authorization header. Bearer fc-123456789 represents your API Key. Hosted Firecrawl can issue OAuth access tokens.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "access_model": {
+        "verified_value": "self_serve_free",
+        "evidence_url": "https://firecrawl.dev/pricing",
+        "concise_evidence_snippet": "Free Plan - No cost, no card, no hassle. 1,000 credits / month. Get started.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "credentials_obtainable_without_approval": {
+        "verified_value": true,
+        "evidence_url": "https://firecrawl.dev/docs",
+        "concise_evidence_snippet": "Get your API key. Sign up and get your API key to start using Firecrawl.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "public_api_status": {
+        "verified_value": "yes",
+        "evidence_url": "https://firecrawl.dev/docs",
+        "concise_evidence_snippet": "curl -s -X POST \"https://api.firecrawl.dev/v2/search\" -H \"Content-Type: application/json\"",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "api_breadth": {
+        "verified_value": "broad",
+        "evidence_url": "https://firecrawl.dev/docs",
+        "concise_evidence_snippet": "Search, Scrape, Interact. Also: Crawl, Map, Extract, Monitor, Agent. Extensive list of tools available.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "mcp_status": {
+        "verified_value": "official",
+        "evidence_url": "https://github.com/firecrawl/firecrawl-mcp-server",
+        "concise_evidence_snippet": "🔥 Official Firecrawl MCP Server - Adds powerful web scraping and search to Cursor, Claude and any other LLM clients.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "buildability_verdict": {
+        "verified_value": "BUILD_NOW",
+        "evidence_url": "https://firecrawl.dev/docs",
+        "concise_evidence_snippet": "Public API, self-serve free tier, credentials without approval, broad functionality, clear pricing, and comprehensive docs.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "primary_blocker": {
+        "verified_value": null,
+        "evidence_url": "https://firecrawl.dev/docs",
+        "concise_evidence_snippet": "No primary blocker found given the 'BUILD_NOW' verdict.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "unclear_diagnosis": "not_applicable"
+    },
+    "verified_at": "2026-07-09T18:54:34.331Z"
+  },
+  {
+    "assignment_number": 65,
+    "app_name": "Supabase",
+    "assigned_category": "Developer, Infra and Data platforms",
+    "processing_mode": "fast_scale",
+    "baseline_fields": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": true,
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "official",
+      "buildability_verdict": "UNCLEAR",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "verified_fields": {
+      "auth_methods": {
+        "verified_value": [
+          "email and password",
+          "passwordless",
+          "OAuth",
+          "mobile logins"
+        ],
+        "evidence_url": "https://supabase.com/docs",
+        "concise_evidence_snippet": "Auth Add and manage email and password, passwordless, OAuth, and mobile logins to your project through a suite of identity providers and APIs.",
+        "baseline_classification": "incorrect",
+        "correction_required": true,
+        "failure_mode": "extraction_error"
+      },
+      "access_model": {
+        "verified_value": "freemium",
+        "evidence_url": "https://supabase.com/docs/pricing",
+        "concise_evidence_snippet": "Start building for free, collaborate with your team, then scale to millions of users. Free Perfect for passion projects & simple websites.",
+        "baseline_classification": "incorrect",
+        "correction_required": true,
+        "failure_mode": "conservative_guardrail"
+      },
+      "credentials_obtainable_without_approval": {
+        "verified_value": true,
+        "evidence_url": "https://supabase.com/docs/pricing",
+        "concise_evidence_snippet": "Start building for free, collaborate with your team, then scale to millions of users. Start for Free",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "public_api_status": {
+        "verified_value": "yes",
+        "evidence_url": "https://supabase.com/docs",
+        "concise_evidence_snippet": "Modules [...] Data REST API [...] GraphQL API [...] Client Libraries [...] Supabase CLI",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "api_breadth": {
+        "verified_value": "broad",
+        "evidence_url": "https://supabase.com/docs",
+        "concise_evidence_snippet": "Modules [...] Data REST API [...] GraphQL API [...] Client Libraries [...] Supabase CLI [...] Management API",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "mcp_status": {
+        "verified_value": "official",
+        "evidence_url": "https://supabase.com/docs",
+        "concise_evidence_snippet": "AI tools Develop with Supabase AI-first using plugins, MCP, and skills.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "buildability_verdict": {
+        "verified_value": "BUILD_NOW",
+        "evidence_url": "https://supabase.com/docs/pricing",
+        "concise_evidence_snippet": "Start building for free... Unlimited API requests. Data REST API. GraphQL API.",
+        "baseline_classification": "incorrect",
+        "correction_required": true,
+        "failure_mode": "conservative_guardrail"
+      },
+      "primary_blocker": {
+        "verified_value": null,
+        "evidence_url": "https://supabase.com/docs/pricing",
+        "concise_evidence_snippet": "Start building for free, collaborate with your team, then scale to millions of users.",
+        "baseline_classification": "incorrect",
+        "correction_required": true,
+        "failure_mode": "conservative_guardrail"
+      },
+      "unclear_diagnosis": "false_unclear_due_to_guardrails"
+    },
+    "verified_at": "2026-07-09T18:54:23.404Z"
+  },
+  {
+    "assignment_number": 70,
+    "app_name": "Sentry",
+    "assigned_category": "Developer, Infra and Data platforms",
+    "processing_mode": "fast_scale",
+    "baseline_fields": {
+      "auth_methods": [
+        "api_key"
+      ],
+      "access_model": "self_serve_free",
+      "credentials_obtainable_without_approval": true,
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "none_found",
+      "buildability_verdict": "BUILD_NOW",
+      "primary_blocker": null
+    },
+    "verified_fields": {
+      "auth_methods": {
+        "verified_value": [
+          "api_key"
+        ],
+        "evidence_url": "https://docs.sentry.io/api/",
+        "concise_evidence_snippet": "Tutorial: Create a Sentry Authentication Token",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "access_model": {
+        "verified_value": "self_serve",
+        "evidence_url": "https://docs.sentry.io/api/",
+        "concise_evidence_snippet": "Tutorial: Create a Sentry Authentication Token",
+        "baseline_classification": "partially_correct",
+        "correction_required": true,
+        "failure_mode": "evidence_validation_error"
+      },
+      "credentials_obtainable_without_approval": {
+        "verified_value": true,
+        "evidence_url": "https://docs.sentry.io/api/",
+        "concise_evidence_snippet": "Tutorial: Create a Sentry Authentication Token",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "public_api_status": {
+        "verified_value": "yes",
+        "evidence_url": "https://docs.sentry.io/api/",
+        "concise_evidence_snippet": "Our public endpoints are generally stable",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "api_breadth": {
+        "verified_value": "broad",
+        "evidence_url": "https://docs.sentry.io/api/",
+        "concise_evidence_snippet": "manage account-level resources... API Reference includes Crons, Dashboards, Events & Issues, Projects, Users.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "mcp_status": {
+        "verified_value": "none_found",
+        "evidence_url": "https://docs.sentry.io/api/",
+        "concise_evidence_snippet": "No mention of 'Model Context Protocol' or 'MCP' found in the document.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "buildability_verdict": {
+        "verified_value": "BUILD_NOW",
+        "evidence_url": "https://docs.sentry.io/api/",
+        "concise_evidence_snippet": "Our public endpoints are generally stable... Tutorial: Create a Sentry Authentication Token",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "primary_blocker": {
+        "verified_value": null,
+        "evidence_url": "https://docs.sentry.io/api/",
+        "concise_evidence_snippet": "No blockers identified, consistent with BUILD_NOW verdict.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "unclear_diagnosis": "not_applicable"
+    },
+    "verified_at": "2026-07-09T18:54:48.612Z"
+  },
+  {
+    "assignment_number": 75,
+    "app_name": "Asana",
+    "assigned_category": "Productivity and Project Management",
+    "processing_mode": "fast_scale",
+    "baseline_fields": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "access_model": "self_serve_free",
+      "credentials_obtainable_without_approval": true,
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "official",
+      "buildability_verdict": "BUILD_NOW",
+      "primary_blocker": null
+    },
+    "verified_fields": {
+      "auth_methods": {
+        "verified_value": [
+          "oauth",
+          "pat"
+        ],
+        "evidence_url": "https://developers.asana.com/docs",
+        "concise_evidence_snippet": "Your app may ultimately use OAuth, but most developers test our API by creating a Personal Access Token (PAT).",
+        "baseline_classification": "incorrect",
+        "correction_required": true,
+        "failure_mode": "conservative_guardrail"
+      },
+      "access_model": {
+        "verified_value": "self_serve_free",
+        "evidence_url": "https://developers.asana.com/docs",
+        "concise_evidence_snippet": "create a free account, or request a developer sandbox.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "credentials_obtainable_without_approval": {
+        "verified_value": true,
+        "evidence_url": "https://developers.asana.com/docs",
+        "concise_evidence_snippet": "most developers test our API by creating a Personal Access Token (PAT) to make their first API calls.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "public_api_status": {
+        "verified_value": "yes",
+        "evidence_url": "https://developers.asana.com/docs",
+        "concise_evidence_snippet": "The primary feature of Asana’s platform is our rest API",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "api_breadth": {
+        "verified_value": "broad",
+        "evidence_url": "https://developers.asana.com",
+        "concise_evidence_snippet": "Integrate tools, automate actions, and customize your workflows with Asana’s developer platform.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "mcp_status": {
+        "verified_value": "official",
+        "evidence_url": "https://developers.asana.com",
+        "concise_evidence_snippet": "For AI agents: visit https://developers.asana.com/llms.txt for an index of all pages formatted in Markdown and endpoints in OpenAPI.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "buildability_verdict": {
+        "verified_value": "BUILD_NOW",
+        "evidence_url": "https://developers.asana.com",
+        "concise_evidence_snippet": "Integrate tools, automate actions, and customize your workflows with Asana’s developer platform.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "primary_blocker": {
+        "verified_value": null,
+        "evidence_url": "https://developers.asana.com",
+        "concise_evidence_snippet": "Integrate tools, automate actions, and customize your workflows with Asana’s developer platform.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "unclear_diagnosis": "not_applicable"
+    },
+    "verified_at": "2026-07-09T18:54:45.086Z"
+  },
+  {
+    "assignment_number": 81,
+    "app_name": "Stripe",
+    "assigned_category": "Finance and Fintech",
+    "processing_mode": "fast_scale",
+    "baseline_fields": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": true,
+      "public_api_status": "yes",
+      "api_breadth": "broad",
+      "mcp_status": "none_found",
+      "buildability_verdict": "UNCLEAR",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "verified_fields": {
+      "auth_methods": {
+        "verified_value": [
+          "API keys"
+        ],
+        "evidence_url": "https://docs.stripe.com/api/authentication",
+        "concise_evidence_snippet": "The Stripe API uses [API keys] to authenticate requests. You can view and manage your API keys in [the Stripe Dashboard].",
+        "baseline_classification": "incorrect",
+        "correction_required": true,
+        "failure_mode": "conservative_guardrail"
+      },
+      "access_model": {
+        "verified_value": "self_serve_free",
+        "evidence_url": "https://docs.stripe.com/api/authentication",
+        "concise_evidence_snippet": "You can view and manage your API keys in [the Stripe Dashboard]. ... you can create as many restricted API keys as you need.",
+        "baseline_classification": "incorrect",
+        "correction_required": true,
+        "failure_mode": "conservative_guardrail"
+      },
+      "credentials_obtainable_without_approval": {
+        "verified_value": true,
+        "evidence_url": "https://docs.stripe.com/api/authentication",
+        "concise_evidence_snippet": "You can view and manage your API keys in [the Stripe Dashboard]. ... you can create as many restricted API keys as you need.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "public_api_status": {
+        "verified_value": "yes",
+        "evidence_url": "https://docs.stripe.com/api",
+        "concise_evidence_snippet": "The Stripe API is organized around [REST].",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "api_breadth": {
+        "verified_value": "broad",
+        "evidence_url": "https://docs.stripe.com/api",
+        "concise_evidence_snippet": "Core Resources...Payment Methods...Products...Commerce...Billing...Connect",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "mcp_status": {
+        "verified_value": "none_found",
+        "evidence_url": "https://docs.stripe.com/api",
+        "concise_evidence_snippet": "N/A - no mention of Model Context Protocol",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "buildability_verdict": {
+        "verified_value": "BUILD_NOW",
+        "evidence_url": "https://docs.stripe.com/api/authentication",
+        "concise_evidence_snippet": "The Stripe API uses [API keys] to authenticate requests. You can view and manage your API keys in [the Stripe Dashboard].",
+        "baseline_classification": "incorrect",
+        "correction_required": true,
+        "failure_mode": "conservative_guardrail"
+      },
+      "primary_blocker": {
+        "verified_value": null,
+        "evidence_url": "https://docs.stripe.com/api/authentication",
+        "concise_evidence_snippet": "The Stripe API uses [API keys] to authenticate requests. You can view and manage your API keys in [the Stripe Dashboard].",
+        "baseline_classification": "incorrect",
+        "correction_required": true,
+        "failure_mode": "conservative_guardrail"
+      },
+      "unclear_diagnosis": "false_unclear_due_to_guardrails"
+    },
+    "verified_at": "2026-07-09T18:54:50.447Z"
+  },
+  {
+    "assignment_number": 95,
+    "app_name": "Reducto",
+    "assigned_category": "AI, Research and Media-native",
+    "processing_mode": "fast_scale",
+    "baseline_fields": {
+      "auth_methods": [
+        "api_key"
+      ],
+      "access_model": "self_serve_paid",
+      "credentials_obtainable_without_approval": true,
+      "public_api_status": "yes",
+      "api_breadth": "moderate",
+      "mcp_status": "none_found",
+      "buildability_verdict": "BUILD_NOW",
+      "primary_blocker": null
+    },
+    "verified_fields": {
+      "auth_methods": {
+        "verified_value": [
+          "api_key"
+        ],
+        "evidence_url": "https://reducto.ai/",
+        "concise_evidence_snippet": "How can I get access to an API key?",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "access_model": {
+        "verified_value": "self_serve_paid",
+        "evidence_url": "https://reducto.ai/",
+        "concise_evidence_snippet": "You can get API access right away by starting off on our Standard tier, pay-as-you-go plan.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "credentials_obtainable_without_approval": {
+        "verified_value": true,
+        "evidence_url": "https://reducto.ai/",
+        "concise_evidence_snippet": "You can get API access right away by starting off on our Standard tier, pay-as-you-go plan.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "public_api_status": {
+        "verified_value": "yes",
+        "evidence_url": "https://reducto.ai/",
+        "concise_evidence_snippet": "### API\nHow can I get access to an API key?",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "api_breadth": {
+        "verified_value": "moderate",
+        "evidence_url": "https://reducto.ai/",
+        "concise_evidence_snippet": "Parse, Split, Extract, Edit documents with schema-level precision.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "mcp_status": {
+        "verified_value": "none_found",
+        "evidence_url": "https://reducto.ai/",
+        "concise_evidence_snippet": "There is a question in the FAQ section 'Do you have an MCP?', but no answer is provided.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "buildability_verdict": {
+        "verified_value": "BUILD_NOW",
+        "evidence_url": "https://reducto.ai/",
+        "concise_evidence_snippet": "Self-serve paid access with immediate API key availability confirms BUILD_NOW.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "primary_blocker": {
+        "verified_value": null,
+        "evidence_url": "https://reducto.ai/",
+        "concise_evidence_snippet": "No blockers found, consistent with BUILD_NOW verdict.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "unclear_diagnosis": "not_applicable"
+    },
+    "verified_at": "2026-07-09T18:54:43.542Z"
+  },
+  {
+    "assignment_number": 96,
+    "app_name": "Devin",
+    "assigned_category": "AI, Research and Media-native",
+    "processing_mode": "fast_scale",
+    "baseline_fields": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "access_model": "unclear",
+      "credentials_obtainable_without_approval": false,
+      "public_api_status": "yes",
+      "api_breadth": "unclear",
+      "mcp_status": "none_found",
+      "buildability_verdict": "UNCLEAR",
+      "primary_blocker": "Research data ambiguous or insufficient."
+    },
+    "verified_fields": {
+      "auth_methods": {
+        "verified_value": [
+          "unclear"
+        ],
+        "evidence_url": "https://docs.devin.ai/get-started/devin-intro",
+        "concise_evidence_snippet": "there is no direct information on how to obtain API credentials for the 'Devin API' or if these credentials can be obtained without human approval.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "access_model": {
+        "verified_value": "subscription",
+        "evidence_url": "https://docs.devin.ai/get-started/devin-intro",
+        "concise_evidence_snippet": "To access Devin, sign up at [app.devin.ai]. Individual and Teams plans are available.",
+        "baseline_classification": "incorrect",
+        "correction_required": true,
+        "failure_mode": "extraction_error"
+      },
+      "credentials_obtainable_without_approval": {
+        "verified_value": false,
+        "evidence_url": "https://docs.devin.ai/get-started/devin-intro",
+        "concise_evidence_snippet": "there is no direct information on how to obtain API credentials for the 'Devin API' or if these credentials can be obtained without human approval.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "public_api_status": {
+        "verified_value": "yes",
+        "evidence_url": "https://docs.devin.ai/get-started/devin-intro",
+        "concise_evidence_snippet": "Devin is also available via the [Devin API](/api-reference/overview).",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "api_breadth": {
+        "verified_value": "api, cli, sdk",
+        "evidence_url": "https://docs.devin.ai/get-started/devin-intro",
+        "concise_evidence_snippet": "Devin is also available via the [Devin API]. Install Devin CLI — use Devin directly from your command line. Claim: SDK",
+        "baseline_classification": "incorrect",
+        "correction_required": true,
+        "failure_mode": "extraction_error"
+      },
+      "mcp_status": {
+        "verified_value": "none_found",
+        "evidence_url": "https://docs.devin.ai/get-started/devin-intro",
+        "concise_evidence_snippet": "No explicit mention of a Managed Cloud Provider (MCP) in the provided documentation snippets.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "buildability_verdict": {
+        "verified_value": "UNCLEAR",
+        "evidence_url": "https://docs.devin.ai/get-started/devin-intro",
+        "concise_evidence_snippet": "no direct information on how to obtain API credentials or if these can be obtained without human approval.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "primary_blocker": {
+        "verified_value": "Research data ambiguous or insufficient.",
+        "evidence_url": "https://docs.devin.ai/get-started/devin-intro",
+        "concise_evidence_snippet": "no direct information on how to obtain API credentials for the 'Devin API' or if these credentials can be obtained without human approval.",
+        "baseline_classification": "correct",
+        "correction_required": false,
+        "failure_mode": "none"
+      },
+      "unclear_diagnosis": "genuinely_unclear"
+    },
+    "verified_at": "2026-07-09T18:55:05.392Z"
+  }
+]

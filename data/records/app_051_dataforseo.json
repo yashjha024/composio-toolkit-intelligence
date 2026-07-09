@@ -1,0 +1,480 @@
+{
+  "identity": {
+    "assignment_number": 51,
+    "app_name": "DataForSEO",
+    "website_hint": "docs.dataforseo.com",
+    "assigned_category": "Data, SEO and Scraping",
+    "researched_at": "2026-07-09T17:14:26.189Z"
+  },
+  "product": {
+    "normalized_category": "Data, SEO and Scraping",
+    "one_line_description": "DataForSEO API provides all the necessary data for building powerful SEO software, data analysis pipelines, and robust no-code automations using REST technology."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "The provided documentation does not explicitly detail the authentication methods (e.g., API keys, OAuth) required to access the DataForSEO API."
+  },
+  "developer_access": {
+    "access_model": "self_serve_trial",
+    "credentials_obtainable_without_human_approval": "unknown",
+    "access_notes": "The documentation mentions 'Free Unlimited Trial Info' and a 'Kickstart Guide to our APIs', suggesting developers can access the API through a self-serve trial. However, the exact steps for obtaining API credentials without human approval are not explicitly detailed in the provided text."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "REST",
+      "SDK",
+      "webhooks",
+      "other"
+    ],
+    "api_breadth": "broad",
+    "api_summary": "DataForSEO offers a public REST API, with officially supported client libraries (SDKs) for PHP, C#, Java, Python, and TypeScript. The API supports data exchange via HTTP, provides responses in JSON and XML formats, and includes features like webhooks. The breadth is broad, covering various aspects like SERP, Keyword Data, and On-Page APIs, as indicated by specific best practice guides and an OpenAPI specification."
+  },
+  "mcp": {
+    "mcp_status": "official",
+    "mcp_summary": "DataForSEO provides an 'LLMs.txt standard' for LLM-friendly documentation and an 'official' LangChain integration, indicating direct support for Model Context Protocols."
+  },
+  "buildability": {
+    "verdict": "build_now",
+    "primary_blocker": null,
+    "verdict_reasoning": "Self-serve developer access is verified with a broad/moderate documented public API."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 0,
+      "access_model": 0.7,
+      "public_api": 1,
+      "api_breadth": 0.9,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.72,
+    "requires_human_review": true,
+    "human_review_reason": "Authentication methods are not explicitly documented. While a free trial is mentioned, the exact process for obtaining API credentials without human approval is not detailed."
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783617266189_0",
+      "claim_field": "product.one_line_description",
+      "claim": "DataForSEO API provides all the necessary data for building powerful SEO software, data analysis pipelines, and robust no-code automations using REST technology.",
+      "source_url": "https://docs.dataforseo.com/v3/",
+      "source_title": "DataForSEO API v.3",
+      "source_type": "official_doc",
+      "evidence_snippet": "This is the starting point on your journey towards building powerful SEO software, data analysis pipelines, and robust no-code automations. With DataForSEO you can get all the data you need while saving your time and budget. ... DataForSEO API is using the REST technology for interchanging data between your application and our service.",
+      "retrieved_at": "2026-07-09T17:14:26.189Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.dataforseo.com/v3/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617266189_1",
+      "claim_field": "developer_access.access_model",
+      "claim": "self_serve_trial",
+      "source_url": "https://docs.dataforseo.com/v3/",
+      "source_title": "DataForSEO API v.3",
+      "source_type": "official_doc",
+      "evidence_snippet": "4. Free Unlimited Trial Info",
+      "retrieved_at": "2026-07-09T17:14:26.189Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.dataforseo.com/v3/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617266189_2",
+      "claim_field": "developer_access.access_notes",
+      "claim": "The documentation mentions 'Free Unlimited Trial Info' and a 'Kickstart Guide to our APIs', suggesting developers can access the API through a self-serve trial. However, the exact steps for obtaining API credentials without human approval are not explicitly detailed in the provided text.",
+      "source_url": "https://docs.dataforseo.com/v3/",
+      "source_title": "DataForSEO API v.3",
+      "source_type": "official_doc",
+      "evidence_snippet": "1. Kickstart Guide to our APIs\n4. Free Unlimited Trial Info",
+      "retrieved_at": "2026-07-09T17:14:26.189Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.dataforseo.com/v3/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617266189_3",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://docs.dataforseo.com/v3/",
+      "source_title": "DataForSEO API v.3",
+      "source_type": "official_doc",
+      "evidence_snippet": "Welcome to DataForSEO API!",
+      "retrieved_at": "2026-07-09T17:14:26.189Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.dataforseo.com/v3/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617266189_4",
+      "claim_field": "api_surface.api_styles",
+      "claim": "REST",
+      "source_url": "https://docs.dataforseo.com/v3/",
+      "source_title": "DataForSEO API v.3",
+      "source_type": "official_doc",
+      "evidence_snippet": "DataForSEO API is using the REST technology for interchanging data between your application and our service.",
+      "retrieved_at": "2026-07-09T17:14:26.189Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.dataforseo.com/v3/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617266189_5",
+      "claim_field": "api_surface.api_styles",
+      "claim": "SDK",
+      "source_url": "https://docs.dataforseo.com/v3/",
+      "source_title": "DataForSEO API v.3",
+      "source_type": "official_doc",
+      "evidence_snippet": "You can create your REST class or use the following ready-made classes: ... PHP DataForSEO Client ... C# DataForSEO Client ... Java DataForSEO Client ... Python DataForSEO Client ... TypeScript DataForSEO Client",
+      "retrieved_at": "2026-07-09T17:14:26.189Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.dataforseo.com/v3/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617266189_6",
+      "claim_field": "api_surface.api_styles",
+      "claim": "webhooks",
+      "source_url": "https://docs.dataforseo.com/v3/",
+      "source_title": "DataForSEO API v.3",
+      "source_type": "official_doc",
+      "evidence_snippet": "• Webhooks & callbacks",
+      "retrieved_at": "2026-07-09T17:14:26.189Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.dataforseo.com/v3/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617266189_7",
+      "claim_field": "api_surface.api_styles",
+      "claim": "other",
+      "source_url": "https://docs.dataforseo.com/v3/",
+      "source_title": "DataForSEO API v.3",
+      "source_type": "official_doc",
+      "evidence_snippet": "OpenAPI specification - YAML-formatted specification for all APIs",
+      "retrieved_at": "2026-07-09T17:14:26.189Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.dataforseo.com/v3/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617266189_8",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://docs.dataforseo.com/v3/",
+      "source_title": "DataForSEO API v.3",
+      "source_type": "official_doc",
+      "evidence_snippet": "With DataForSEO you can get all the data you need while saving your time and budget. ... • SERP API best practices ... • Keyword Data API best practices ... • On-Page API best practices ... • Live endpoints best practices",
+      "retrieved_at": "2026-07-09T17:14:26.189Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.dataforseo.com/v3/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617266189_9",
+      "claim_field": "api_surface.api_summary",
+      "claim": "DataForSEO offers a public REST API, with officially supported client libraries (SDKs) for PHP, C#, Java, Python, and TypeScript. The API supports data exchange via HTTP, provides responses in JSON and XML formats, and includes features like webhooks. The breadth is broad, covering various aspects like SERP, Keyword Data, and On-Page APIs, as indicated by specific best practice guides and an OpenAPI specification.",
+      "source_url": "https://docs.dataforseo.com/v3/",
+      "source_title": "DataForSEO API v.3",
+      "source_type": "official_doc",
+      "evidence_snippet": "Welcome to DataForSEO API! ... DataForSEO API is using the REST technology for interchanging data between your application and our service. ... Client libraries: PHP DataForSEO Client ... C# DataForSEO Client ... Java DataForSEO Client ... Python DataForSEO Client ... TypeScript DataForSEO Client. ... All the responses are returned in the JSON format by default, but we also support responses in the XML format. ... • Webhooks & callbacks. ... • SERP API best practices ... • Keyword Data API best practices ... • On-Page API best practices ... OpenAPI specification - YAML-formatted specification for all APIs.",
+      "retrieved_at": "2026-07-09T17:14:26.189Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.dataforseo.com/v3/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617266189_10",
+      "claim_field": "mcp.mcp_status",
+      "claim": "official",
+      "source_url": "https://docs.dataforseo.com/v3/",
+      "source_title": "DataForSEO API v.3",
+      "source_type": "official_doc",
+      "evidence_snippet": "LLMs.txt standard - LLM-friendly docs version ... LangChain integration - DataForSEO API Wrapper",
+      "retrieved_at": "2026-07-09T17:14:26.189Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.dataforseo.com/v3/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617266189_11",
+      "claim_field": "mcp.mcp_summary",
+      "claim": "DataForSEO provides an 'LLMs.txt standard' for LLM-friendly documentation and an 'official' LangChain integration, indicating direct support for Model Context Protocols.",
+      "source_url": "https://docs.dataforseo.com/v3/",
+      "source_title": "DataForSEO API v.3",
+      "source_type": "official_doc",
+      "evidence_snippet": "LLMs.txt standard - LLM-friendly docs version ... LangChain integration - DataForSEO API Wrapper",
+      "retrieved_at": "2026-07-09T17:14:26.189Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.dataforseo.com/v3/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 51,
+      "app_name": "DataForSEO",
+      "website_hint": "docs.dataforseo.com",
+      "assigned_category": "Data, SEO and Scraping",
+      "researched_at": "2026-07-09T17:14:26.189Z"
+    },
+    "product": {
+      "normalized_category": "Data, SEO and Scraping",
+      "one_line_description": "DataForSEO API provides all the necessary data for building powerful SEO software, data analysis pipelines, and robust no-code automations using REST technology."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "The provided documentation does not explicitly detail the authentication methods (e.g., API keys, OAuth) required to access the DataForSEO API."
+    },
+    "developer_access": {
+      "access_model": "self_serve_trial",
+      "credentials_obtainable_without_human_approval": "unknown",
+      "access_notes": "The documentation mentions 'Free Unlimited Trial Info' and a 'Kickstart Guide to our APIs', suggesting developers can access the API through a self-serve trial. However, the exact steps for obtaining API credentials without human approval are not explicitly detailed in the provided text."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "REST",
+        "SDK",
+        "webhooks",
+        "other"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "DataForSEO offers a public REST API, with officially supported client libraries (SDKs) for PHP, C#, Java, Python, and TypeScript. The API supports data exchange via HTTP, provides responses in JSON and XML formats, and includes features like webhooks. The breadth is broad, covering various aspects like SERP, Keyword Data, and On-Page APIs, as indicated by specific best practice guides and an OpenAPI specification."
+    },
+    "mcp": {
+      "mcp_status": "official",
+      "mcp_summary": "DataForSEO provides an 'LLMs.txt standard' for LLM-friendly documentation and an 'official' LangChain integration, indicating direct support for Model Context Protocols."
+    },
+    "buildability": {
+      "verdict": "build_now",
+      "primary_blocker": null,
+      "verdict_reasoning": "Self-serve developer access is verified with a broad/moderate documented public API."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0,
+        "access_model": 0.7,
+        "public_api": 1,
+        "api_breadth": 0.9,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.72,
+      "requires_human_review": true,
+      "human_review_reason": "Authentication methods are not explicitly documented. While a free trial is mentioned, the exact process for obtaining API credentials without human approval is not detailed."
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_auth_methods_unclear",
+    "risk_material_evidence_validation_failed",
+    "risk_contradictory_claims",
+    "risk_low_confidence"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_auth_methods_unclear",
+      "risk_material_evidence_validation_failed",
+      "risk_contradictory_claims",
+      "risk_low_confidence"
+    ]
+  }
+}

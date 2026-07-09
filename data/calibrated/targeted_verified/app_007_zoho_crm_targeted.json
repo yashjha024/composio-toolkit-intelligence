@@ -1,0 +1,29 @@
+{
+  "assignment_number": 7,
+  "app_name": "Zoho CRM",
+  "assigned_category": "CRM and Sales",
+  "baseline_verdict": "UNCLEAR",
+  "calibrated_verdict": "UNCLEAR",
+  "exact_fields_to_verify": [
+    "access_model_unclear",
+    "auth_methods_unclear"
+  ],
+  "targeted_result": {
+    "verified_auth_methods": [
+      "unclear"
+    ],
+    "verified_access_model": "unclear",
+    "verified_credentials_obtainable_without_approval": false,
+    "verified_public_api_status": "yes",
+    "verified_api_breadth": "broad",
+    "verified_verdict": "UNCLEAR",
+    "primary_blocker": "This document outlines the available APIs but does not describe the process for obtaining API credentials or associated access tiers.",
+    "evidence_url": "https://www.zoho.com/crm/developer/docs/api/v8/",
+    "concise_evidence_snippet": "This document outlines the available APIs but does not describe the process for obtaining API credentials or associated access tiers (free, paid, etc.).",
+    "remaining_uncertainty": [
+      "auth_methods_unclear",
+      "access_model_unclear"
+    ]
+  },
+  "verified_at": "2026-07-09T18:59:54.686Z"
+}

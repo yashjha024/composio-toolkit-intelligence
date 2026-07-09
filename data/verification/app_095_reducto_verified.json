@@ -1,0 +1,88 @@
+{
+  "assignment_number": 95,
+  "app_name": "Reducto",
+  "assigned_category": "AI, Research and Media-native",
+  "processing_mode": "fast_scale",
+  "baseline_fields": {
+    "auth_methods": [
+      "api_key"
+    ],
+    "access_model": "self_serve_paid",
+    "credentials_obtainable_without_approval": true,
+    "public_api_status": "yes",
+    "api_breadth": "moderate",
+    "mcp_status": "none_found",
+    "buildability_verdict": "BUILD_NOW",
+    "primary_blocker": null
+  },
+  "verified_fields": {
+    "auth_methods": {
+      "verified_value": [
+        "api_key"
+      ],
+      "evidence_url": "https://reducto.ai/",
+      "concise_evidence_snippet": "How can I get access to an API key?",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "access_model": {
+      "verified_value": "self_serve_paid",
+      "evidence_url": "https://reducto.ai/",
+      "concise_evidence_snippet": "You can get API access right away by starting off on our Standard tier, pay-as-you-go plan.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "credentials_obtainable_without_approval": {
+      "verified_value": true,
+      "evidence_url": "https://reducto.ai/",
+      "concise_evidence_snippet": "You can get API access right away by starting off on our Standard tier, pay-as-you-go plan.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "public_api_status": {
+      "verified_value": "yes",
+      "evidence_url": "https://reducto.ai/",
+      "concise_evidence_snippet": "### API\nHow can I get access to an API key?",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "api_breadth": {
+      "verified_value": "moderate",
+      "evidence_url": "https://reducto.ai/",
+      "concise_evidence_snippet": "Parse, Split, Extract, Edit documents with schema-level precision.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "mcp_status": {
+      "verified_value": "none_found",
+      "evidence_url": "https://reducto.ai/",
+      "concise_evidence_snippet": "There is a question in the FAQ section 'Do you have an MCP?', but no answer is provided.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "buildability_verdict": {
+      "verified_value": "BUILD_NOW",
+      "evidence_url": "https://reducto.ai/",
+      "concise_evidence_snippet": "Self-serve paid access with immediate API key availability confirms BUILD_NOW.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "primary_blocker": {
+      "verified_value": null,
+      "evidence_url": "https://reducto.ai/",
+      "concise_evidence_snippet": "No blockers found, consistent with BUILD_NOW verdict.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "unclear_diagnosis": "not_applicable"
+  },
+  "verified_at": "2026-07-09T18:54:43.542Z"
+}

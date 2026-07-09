@@ -1,0 +1,538 @@
+{
+  "identity": {
+    "assignment_number": 10,
+    "app_name": "DealCloud",
+    "website_hint": "api.docs.dealcloud.com",
+    "assigned_category": "CRM and Sales",
+    "researched_at": "2026-07-09T16:53:24.118Z"
+  },
+  "product": {
+    "normalized_category": "CRM and Sales",
+    "one_line_description": "DealCloud provides an API for managing CRM data, schema, users, and relationship intelligence within its platform."
+  },
+  "authentication": {
+    "auth_methods": [
+      "api_key",
+      "bearer_token"
+    ],
+    "auth_summary": "Authentication is supported via API Keys and Authorization Tokens, with dedicated sections for authentication in the SDKs and MCP."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": "unknown",
+    "access_notes": "The documentation lists sections for 'API Keys' and 'Authorization Token' but does not provide explicit instructions on how developers can obtain these credentials, nor does it mention self-service registration, pricing, or an application process."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "REST",
+      "SDK"
+    ],
+    "api_breadth": "broad",
+    "api_summary": "The API provides broad access to DealCloud functionalities including managing data (entries, rows, files, reports), user management, schema definition, publications, site backups, and relationship intelligence. It is accessible via a REST API and SDKs for Python and C#."
+  },
+  "mcp": {
+    "mcp_status": "official",
+    "mcp_summary": "DealCloud offers an official MCP Server, currently in client preview and scheduled to start in July 2026, with dedicated documentation for authentication and available tools."
+  },
+  "buildability": {
+    "verdict": "unclear",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 0.9,
+      "access_model": 0.4,
+      "public_api": 1,
+      "api_breadth": 0.9,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.8,
+    "requires_human_review": true,
+    "human_review_reason": "The method for obtaining API credentials ('developer_access.access_model') is not explicitly documented, leading to low confidence in this field."
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783616004118_0",
+      "claim_field": "product.one_line_description",
+      "claim": "DealCloud provides an API for managing CRM data, schema, users, and relationship intelligence within its platform.",
+      "source_url": "https://api.docs.dealcloud.com/",
+      "source_title": "Dealcloud Developer Documentation - DealCloud API Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "API Reference\nGetting Started\nAPI Keys\nAuthorization Token\nCore\nSchema\nData\nUser Management\nPublications\nSite Backups\nRelationship Intelligence",
+      "retrieved_at": "2026-07-09T16:53:24.118Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://api.docs.dealcloud.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616004118_1",
+      "claim_field": "authentication.auth_methods",
+      "claim": "api_key",
+      "source_url": "https://api.docs.dealcloud.com/",
+      "source_title": "Dealcloud Developer Documentation - DealCloud API Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "*   [API Keys](/docs/apikeys)",
+      "retrieved_at": "2026-07-09T16:53:24.118Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://api.docs.dealcloud.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616004118_2",
+      "claim_field": "authentication.auth_methods",
+      "claim": "bearer_token",
+      "source_url": "https://api.docs.dealcloud.com/",
+      "source_title": "Dealcloud Developer Documentation - DealCloud API Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "*   [Authorization Token](/docs/token)",
+      "retrieved_at": "2026-07-09T16:53:24.118Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://api.docs.dealcloud.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616004118_3",
+      "claim_field": "authentication.auth_summary",
+      "claim": "Authentication is supported via API Keys and Authorization Tokens, with dedicated sections for authentication in the SDKs and MCP.",
+      "source_url": "https://api.docs.dealcloud.com/",
+      "source_title": "Dealcloud Developer Documentation - DealCloud API Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "*   [API Keys](/docs/apikeys)\n*   [Authorization Token](/docs/token)\n*   [Authentication](/mcp/authentication)\n*   [Authentication](/sdk/python/authentication)\n*   [Authentication](/sdk/csharp/authentication)",
+      "retrieved_at": "2026-07-09T16:53:24.118Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://api.docs.dealcloud.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616004118_4",
+      "claim_field": "developer_access.access_model",
+      "claim": "unclear",
+      "source_url": "https://api.docs.dealcloud.com/",
+      "source_title": "Dealcloud Developer Documentation - DealCloud API Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "*   [API Keys](/docs/apikeys)\n*   [Authorization Token](/docs/token)\n(No information found regarding how to obtain these credentials, pricing, or self-service signup for API access.)",
+      "retrieved_at": "2026-07-09T16:53:24.118Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://api.docs.dealcloud.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616004118_5",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": "unknown",
+      "source_url": "https://api.docs.dealcloud.com/",
+      "source_title": "Dealcloud Developer Documentation - DealCloud API Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "*   [API Keys](/docs/apikeys)\n*   [Authorization Token](/docs/token)\n(No information found regarding how to obtain these credentials, pricing, or self-service signup for API access.)",
+      "retrieved_at": "2026-07-09T16:53:24.118Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://api.docs.dealcloud.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616004118_6",
+      "claim_field": "developer_access.access_notes",
+      "claim": "The documentation lists sections for 'API Keys' and 'Authorization Token' but does not provide explicit instructions on how developers can obtain these credentials, nor does it mention self-service registration or pricing.",
+      "source_url": "https://api.docs.dealcloud.com/",
+      "source_title": "Dealcloud Developer Documentation - DealCloud API Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "*   [API Keys](/docs/apikeys)\n*   [Authorization Token](/docs/token)\n(No instructions for obtaining credentials, self-service, or pricing details are provided on this page.)",
+      "retrieved_at": "2026-07-09T16:53:24.118Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://api.docs.dealcloud.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616004118_7",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://api.docs.dealcloud.com/",
+      "source_title": "Dealcloud Developer Documentation - DealCloud API Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Dealcloud Developer Documentation\nAPI Reference\nSDKs\nGuides",
+      "retrieved_at": "2026-07-09T16:53:24.118Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://api.docs.dealcloud.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616004118_8",
+      "claim_field": "api_surface.api_styles",
+      "claim": "REST",
+      "source_url": "https://api.docs.dealcloud.com/",
+      "source_title": "Dealcloud Developer Documentation - DealCloud API Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "*   [API Reference](/docs)",
+      "retrieved_at": "2026-07-09T16:53:24.118Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://api.docs.dealcloud.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616004118_9",
+      "claim_field": "api_surface.api_styles",
+      "claim": "SDK",
+      "source_url": "https://api.docs.dealcloud.com/",
+      "source_title": "Dealcloud Developer Documentation - DealCloud API Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "*   [SDKs](/sdk)\n    *   [Python](/sdk/python)\n    *   [C#](/sdk/csharp)",
+      "retrieved_at": "2026-07-09T16:53:24.118Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://api.docs.dealcloud.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616004118_10",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://api.docs.dealcloud.com/",
+      "source_title": "Dealcloud Developer Documentation - DealCloud API Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "*   [Schema](/docs/schema)\n*   [Data](/docs/data)\n*   [User Management](/docs/management)\n*   [Publications](/docs/publications)\n*   [Site Backups](/docs/backups)\n*   [Relationship Intelligence](/docs/relintel)",
+      "retrieved_at": "2026-07-09T16:53:24.118Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://api.docs.dealcloud.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616004118_11",
+      "claim_field": "api_surface.api_summary",
+      "claim": "The API provides broad access to DealCloud functionalities including managing data (entries, rows, files, reports), user management, schema definition, publications, site backups, and relationship intelligence. It is accessible via a REST API and SDKs for Python and C#.",
+      "source_url": "https://api.docs.dealcloud.com/",
+      "source_title": "Dealcloud Developer Documentation - DealCloud API Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "API Reference\nSchema\nData\nUser Management\nPublications\nSite Backups\nRelationship Intelligence\nSDKs\nPython\nC#",
+      "retrieved_at": "2026-07-09T16:53:24.118Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://api.docs.dealcloud.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616004118_12",
+      "claim_field": "mcp.mcp_status",
+      "claim": "official",
+      "source_url": "https://api.docs.dealcloud.com/",
+      "source_title": "Dealcloud Developer Documentation - DealCloud API Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "🚀 New: DealCloud MCP Server — client preview starting July 2026\n*   [MCP](/mcp)",
+      "retrieved_at": "2026-07-09T16:53:24.118Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://api.docs.dealcloud.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616004118_13",
+      "claim_field": "mcp.mcp_summary",
+      "claim": "DealCloud offers an official MCP Server, currently in client preview and scheduled to start in July 2026, with dedicated documentation for authentication and available tools.",
+      "source_url": "https://api.docs.dealcloud.com/",
+      "source_title": "Dealcloud Developer Documentation - DealCloud API Docs",
+      "source_type": "developer_portal",
+      "evidence_snippet": "🚀 New: DealCloud MCP Server — client preview starting July 2026\n*   [MCP](/mcp)\n    *   [Authentication](/mcp/authentication)\n    *   [Available Tools](/mcp/tools)",
+      "retrieved_at": "2026-07-09T16:53:24.118Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://api.docs.dealcloud.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 10,
+      "app_name": "DealCloud",
+      "website_hint": "api.docs.dealcloud.com",
+      "assigned_category": "CRM and Sales",
+      "researched_at": "2026-07-09T16:53:24.118Z"
+    },
+    "product": {
+      "normalized_category": "CRM and Sales",
+      "one_line_description": "DealCloud provides an API for managing CRM data, schema, users, and relationship intelligence within its platform."
+    },
+    "authentication": {
+      "auth_methods": [
+        "api_key",
+        "bearer_token"
+      ],
+      "auth_summary": "Authentication is supported via API Keys and Authorization Tokens, with dedicated sections for authentication in the SDKs and MCP."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": "unknown",
+      "access_notes": "The documentation lists sections for 'API Keys' and 'Authorization Token' but does not provide explicit instructions on how developers can obtain these credentials, nor does it mention self-service registration, pricing, or an application process."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "REST",
+        "SDK"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "The API provides broad access to DealCloud functionalities including managing data (entries, rows, files, reports), user management, schema definition, publications, site backups, and relationship intelligence. It is accessible via a REST API and SDKs for Python and C#."
+    },
+    "mcp": {
+      "mcp_status": "official",
+      "mcp_summary": "DealCloud offers an official MCP Server, currently in client preview and scheduled to start in July 2026, with dedicated documentation for authentication and available tools."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient.",
+      "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0.9,
+        "access_model": 0.4,
+        "public_api": 1,
+        "api_breadth": 0.9,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.8,
+      "requires_human_review": true,
+      "human_review_reason": "The method for obtaining API credentials ('developer_access.access_model') is not explicitly documented, leading to low confidence in this field."
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_access_model_unclear",
+    "risk_material_evidence_validation_failed",
+    "risk_contradictory_claims",
+    "risk_verdict_unclear",
+    "risk_low_confidence"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_access_model_unclear",
+      "risk_material_evidence_validation_failed",
+      "risk_contradictory_claims",
+      "risk_verdict_unclear",
+      "risk_low_confidence"
+    ]
+  }
+}

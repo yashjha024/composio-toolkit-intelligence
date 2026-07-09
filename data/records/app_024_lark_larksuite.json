@@ -1,0 +1,304 @@
+{
+  "identity": {
+    "assignment_number": 24,
+    "app_name": "Lark (Larksuite)",
+    "website_hint": "open.larksuite.com",
+    "assigned_category": "Communications and Messaging",
+    "researched_at": "2026-07-09T16:59:55.782Z"
+  },
+  "product": {
+    "normalized_category": "Communications and Messaging",
+    "one_line_description": "Larksuite's Open Platform provides integration capabilities for its communication and collaboration suite."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "Authentication methods for API access are not detailed on this high-level landing page."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": "unknown",
+    "access_notes": "The 'Lark Open Platform' implies developer access, but specific details on how to obtain API credentials (e.g., self-serve, requiring approval, free, paid) are not available on this page."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "other"
+    ],
+    "api_breadth": "unclear",
+    "api_summary": "The 'Lark 开放平台' (Lark Open Platform) indicates the presence of a public API for integrations, but specific API styles (e.g., REST, GraphQL, SDKs) and the breadth of available endpoints are not detailed on this page."
+  },
+  "mcp": {
+    "mcp_status": "none_found",
+    "mcp_summary": "No mention of Model Context Protocol (MCP) was found on the provided page."
+  },
+  "buildability": {
+    "verdict": "unclear",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 0.1,
+      "access_model": 0.2,
+      "public_api": 0.9,
+      "api_breadth": 0.1,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.3,
+    "requires_human_review": true,
+    "human_review_reason": "Many core fields regarding authentication, developer access model, and API breadth are unclear due to the high-level nature of the provided source page. Further investigation into developer documentation would be required."
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783616395782_0",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://open.larksuite.com/",
+      "source_title": "Lark 开放平台",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Lark 开放平台",
+      "retrieved_at": "2026-07-09T16:59:55.782Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://open.larksuite.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616395782_1",
+      "claim_field": "developer_access.access_model",
+      "claim": "unclear",
+      "source_url": "https://open.larksuite.com/",
+      "source_title": "Lark 开放平台",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Lark 开放平台",
+      "retrieved_at": "2026-07-09T16:59:55.782Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://open.larksuite.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616395782_2",
+      "claim_field": "authentication.auth_methods",
+      "claim": "unclear",
+      "source_url": "https://open.larksuite.com/",
+      "source_title": "Lark 开放平台",
+      "source_type": "developer_portal",
+      "evidence_snippet": "No specific authentication methods (e.g., OAuth2, API key) are mentioned on this page.",
+      "retrieved_at": "2026-07-09T16:59:55.782Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://open.larksuite.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616395782_3",
+      "claim_field": "api_surface.api_styles",
+      "claim": "unclear",
+      "source_url": "https://open.larksuite.com/",
+      "source_title": "Lark 开放平台",
+      "source_type": "developer_portal",
+      "evidence_snippet": "No specific API styles (e.g., REST, GraphQL, SDK) are mentioned on this page.",
+      "retrieved_at": "2026-07-09T16:59:55.782Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://open.larksuite.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616395782_4",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "unclear",
+      "source_url": "https://open.larksuite.com/",
+      "source_title": "Lark 开放平台",
+      "source_type": "developer_portal",
+      "evidence_snippet": "No details on the breadth of the API or specific endpoints are provided on this page.",
+      "retrieved_at": "2026-07-09T16:59:55.782Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://open.larksuite.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616395782_5",
+      "claim_field": "mcp.mcp_status",
+      "claim": "none_found",
+      "source_url": "https://open.larksuite.com/",
+      "source_title": "Lark 开放平台",
+      "source_type": "developer_portal",
+      "evidence_snippet": "No mention of Model Context Protocol found on the page content.",
+      "retrieved_at": "2026-07-09T16:59:55.782Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://open.larksuite.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 24,
+      "app_name": "Lark (Larksuite)",
+      "website_hint": "open.larksuite.com",
+      "assigned_category": "Communications and Messaging",
+      "researched_at": "2026-07-09T16:59:55.782Z"
+    },
+    "product": {
+      "normalized_category": "Communications and Messaging",
+      "one_line_description": "Larksuite's Open Platform provides integration capabilities for its communication and collaboration suite."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "Authentication methods for API access are not detailed on this high-level landing page."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": "unknown",
+      "access_notes": "The 'Lark Open Platform' implies developer access, but specific details on how to obtain API credentials (e.g., self-serve, requiring approval, free, paid) are not available on this page."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "other"
+      ],
+      "api_breadth": "unclear",
+      "api_summary": "The 'Lark 开放平台' (Lark Open Platform) indicates the presence of a public API for integrations, but specific API styles (e.g., REST, GraphQL, SDKs) and the breadth of available endpoints are not detailed on this page."
+    },
+    "mcp": {
+      "mcp_status": "none_found",
+      "mcp_summary": "No mention of Model Context Protocol (MCP) was found on the provided page."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient.",
+      "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0.1,
+        "access_model": 0.2,
+        "public_api": 0.9,
+        "api_breadth": 0.1,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.3,
+      "requires_human_review": true,
+      "human_review_reason": "Many core fields regarding authentication, developer access model, and API breadth are unclear due to the high-level nature of the provided source page. Further investigation into developer documentation would be required."
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_access_model_unclear",
+    "risk_auth_methods_unclear",
+    "risk_material_evidence_validation_failed",
+    "risk_contradictory_claims",
+    "risk_verdict_unclear",
+    "risk_low_confidence"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_access_model_unclear",
+      "risk_auth_methods_unclear",
+      "risk_material_evidence_validation_failed",
+      "risk_contradictory_claims",
+      "risk_verdict_unclear",
+      "risk_low_confidence"
+    ]
+  }
+}

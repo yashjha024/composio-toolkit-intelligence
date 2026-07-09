@@ -1,0 +1,422 @@
+{
+  "identity": {
+    "assignment_number": 4,
+    "app_name": "Attio",
+    "website_hint": "attio.com",
+    "assigned_category": "CRM and Sales",
+    "researched_at": "2026-07-09T11:56:23.631Z"
+  },
+  "product": {
+    "normalized_category": "CRM and Sales",
+    "one_line_description": "Attio is a highly customizable, data-driven CRM platform that enables teams to build custom integrations, automations, and data pipelines."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "The exact authentication methods (such as API keys or OAuth2) are not explicitly documented in the provided overview or pricing snippets."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": "unknown",
+    "access_notes": "The provided documentation and pricing plan details do not clearly indicate if API/webhook access is available on the free tier or if API keys are obtainable instantly without manual approval."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "REST",
+      "webhooks",
+      "other"
+    ],
+    "api_breadth": "unclear",
+    "api_summary": "Attio provides a REST API, webhooks, SQL capabilities, and an App SDK, but specific endpoint details are not present in the provided documentation overview."
+  },
+  "mcp": {
+    "mcp_status": "official",
+    "mcp_summary": "Attio officially supports an MCP (Model Context Protocol) server to search, update, and manage workspaces via AI tools like Claude and ChatGPT."
+  },
+  "buildability": {
+    "verdict": "unclear",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 1,
+      "access_model": 0.9,
+      "public_api": 1,
+      "api_breadth": 0.8,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.9,
+    "requires_human_review": false,
+    "human_review_reason": null
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783598183631_0",
+      "claim_field": "mcp.mcp_status",
+      "claim": "official",
+      "source_url": "https://docs.attio.com/docs/overview",
+      "source_title": "Overview - Attio Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "## MCP\n\nManage Attio via AI. Connect Claude, ChatGPT or your AI tool of choice to search, update and manage your Attio workspace.",
+      "retrieved_at": "2026-07-09T11:56:23.631Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.attio.com/docs/overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783598183631_1",
+      "claim_field": "developer_access.access_model",
+      "claim": "self_serve_free",
+      "source_url": "https://attio.com/pricing",
+      "source_title": "Pricing | Attio",
+      "source_type": "official_doc",
+      "evidence_snippet": "Start today, no credit card required.",
+      "retrieved_at": "2026-07-09T11:56:23.631Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://attio.com/pricing"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783598183631_2",
+      "claim_field": "api_surface.api_styles",
+      "claim": [
+        "REST",
+        "webhooks",
+        "other"
+      ],
+      "source_url": "https://docs.attio.com/docs/overview",
+      "source_title": "Overview - Attio Docs",
+      "source_type": "official_doc",
+      "evidence_snippet": "The Attio Developer Platform consists of four parts:\n\n## App SDK\n\nThis allows developers to embed Typescript React applications within the Attio interface and run server functions with access to our REST API.\n\n## REST API\n\nThis allows developers to build apps that read and write information to and from Attio workspaces. You can also subscribe to events in realtime using webhooks.",
+      "retrieved_at": "2026-07-09T11:56:23.631Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://docs.attio.com/docs/overview"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_rr_1783598481802_0",
+      "claim_field": "developer_access.access_model",
+      "claim": "unclear",
+      "source_url": "https://attio.com/pricing",
+      "source_title": "Pricing | Attio",
+      "source_type": "official_doc",
+      "evidence_snippet": "API and webhook access\nFree\nPlus\nPro\nEnterprise",
+      "retrieved_at": "2026-07-09T12:01:21.802Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://attio.com/pricing"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_rr_1783598481803_1",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": "unclear",
+      "source_url": "https://attio.com/pricing",
+      "source_title": "Pricing | Attio",
+      "source_type": "official_doc",
+      "evidence_snippet": "Start today, no credit card required.",
+      "retrieved_at": "2026-07-09T12:01:21.803Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://attio.com/pricing"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 4,
+      "app_name": "Attio",
+      "website_hint": "attio.com",
+      "assigned_category": "CRM and Sales",
+      "researched_at": "2026-07-09T11:56:23.631Z"
+    },
+    "product": {
+      "normalized_category": "CRM and Sales",
+      "one_line_description": "Attio is a highly customizable, data-driven CRM platform that enables teams to build custom integrations, automations, and data pipelines."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "The exact authentication methods (such as API keys or OAuth2) are not explicitly documented in the provided overview or pricing snippets."
+    },
+    "developer_access": {
+      "access_model": "self_serve_free",
+      "credentials_obtainable_without_human_approval": true,
+      "access_notes": "Attio offers 'API and webhook access' on its Free plan, which is available to start immediately with no credit card required."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "REST",
+        "webhooks",
+        "other"
+      ],
+      "api_breadth": "unclear",
+      "api_summary": "Attio provides a REST API, webhooks, SQL capabilities, and an App SDK, but specific endpoint details are not present in the provided documentation overview."
+    },
+    "mcp": {
+      "mcp_status": "official",
+      "mcp_summary": "Attio officially supports an MCP (Model Context Protocol) server to search, update, and manage workspaces via AI tools like Claude and ChatGPT."
+    },
+    "buildability": {
+      "verdict": "build_now",
+      "primary_blocker": null,
+      "verdict_reasoning": "Self-serve developer access is verified with a broad/moderate documented public API."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 1,
+        "access_model": 0.9,
+        "public_api": 1,
+        "api_breadth": 0.8,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.9,
+      "requires_human_review": false,
+      "human_review_reason": null
+    }
+  },
+  "critic_result": {
+    "challenged_fields": [
+      "developer_access.access_model",
+      "developer_access.credentials_obtainable_without_human_approval",
+      "buildability.verdict"
+    ],
+    "critic_analysis": {
+      "developer_access.access_model": "The assertion that Attio offers 'API and webhook access' on its Free plan is unsupported by the provided evidence. The snippet merely states 'Start today, no credit card required,' which is a generic SaaS sign-up message. This does not prove that API access is included in the free tier or that developer credentials are free-tier eligible.",
+      "developer_access.credentials_obtainable_without_human_approval": "There is no direct evidence in the snippets showing that API credentials can be obtained automatically without manual intervention or human approval. Setting up a free SaaS account does not guarantee immediate, self-serve API access.",
+      "buildability.verdict": "Because self-serve developer access to the API cannot be verified with the provided evidence, the 'build_now' verdict is currently unproven and must be downgraded or marked as blocked until credential availability is verified."
+    },
+    "error_taxonomy_flags": [
+      "free_product_vs_free_api"
+    ]
+  },
+  "targeted_reresearch_result": {
+    "identity": {
+      "assignment_number": 4,
+      "app_name": "Attio",
+      "website_hint": "attio.com",
+      "assigned_category": "CRM and Sales",
+      "researched_at": "2026-07-09T11:56:23.631Z"
+    },
+    "product": {
+      "normalized_category": "CRM and Sales",
+      "one_line_description": "Attio is a highly customizable, data-driven CRM platform that enables teams to build custom integrations, automations, and data pipelines."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "The exact authentication methods (such as API keys or OAuth2) are not explicitly documented in the provided overview or pricing snippets."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": "unknown",
+      "access_notes": "The provided documentation and pricing plan details do not clearly indicate if API/webhook access is available on the free tier or if API keys are obtainable instantly without manual approval."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "REST",
+        "webhooks",
+        "other"
+      ],
+      "api_breadth": "unclear",
+      "api_summary": "Attio provides a REST API, webhooks, SQL capabilities, and an App SDK, but specific endpoint details are not present in the provided documentation overview."
+    },
+    "mcp": {
+      "mcp_status": "official",
+      "mcp_summary": "Attio officially supports an MCP (Model Context Protocol) server to search, update, and manage workspaces via AI tools like Claude and ChatGPT."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": null,
+      "verdict_reasoning": "Self-serve developer access and credential eligibility on the free tier cannot be verified from the current source documentation."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 1,
+        "access_model": 0.9,
+        "public_api": 1,
+        "api_breadth": 0.8,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.9,
+      "requires_human_review": false,
+      "human_review_reason": null
+    }
+  },
+  "final_agent_result": {
+    "identity": {
+      "assignment_number": 4,
+      "app_name": "Attio",
+      "website_hint": "attio.com",
+      "assigned_category": "CRM and Sales",
+      "researched_at": "2026-07-09T11:56:23.631Z"
+    },
+    "product": {
+      "normalized_category": "CRM and Sales",
+      "one_line_description": "Attio is a highly customizable, data-driven CRM platform that enables teams to build custom integrations, automations, and data pipelines."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "The exact authentication methods (such as API keys or OAuth2) are not explicitly documented in the provided overview or pricing snippets."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": "unknown",
+      "access_notes": "The provided documentation and pricing plan details do not clearly indicate if API/webhook access is available on the free tier or if API keys are obtainable instantly without manual approval."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "REST",
+        "webhooks",
+        "other"
+      ],
+      "api_breadth": "unclear",
+      "api_summary": "Attio provides a REST API, webhooks, SQL capabilities, and an App SDK, but specific endpoint details are not present in the provided documentation overview."
+    },
+    "mcp": {
+      "mcp_status": "official",
+      "mcp_summary": "Attio officially supports an MCP (Model Context Protocol) server to search, update, and manage workspaces via AI tools like Claude and ChatGPT."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient.",
+      "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 1,
+        "access_model": 0.9,
+        "public_api": 1,
+        "api_breadth": 0.8,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.9,
+      "requires_human_review": false,
+      "human_review_reason": null
+    }
+  },
+  "change_log": [
+    {
+      "timestamp": "2026-07-09T12:01:21.808Z",
+      "field_changed": "developer_access.access_model",
+      "old_value": "self_serve_free",
+      "new_value": "unclear",
+      "reason": "The assertion that Attio offers 'API and webhook access' on its Free plan is unsupported by the provided evidence. The snippet merely states 'Start today, no credit card required,' which is a generic SaaS sign-up message. This does not prove that API access is included in the free tier or that developer credentials are free-tier eligible.",
+      "verification_loop_trigger": "critic_audit"
+    },
+    {
+      "timestamp": "2026-07-09T12:01:21.808Z",
+      "field_changed": "developer_access.credentials_obtainable_without_human_approval",
+      "old_value": true,
+      "new_value": "unknown",
+      "reason": "There is no direct evidence in the snippets showing that API credentials can be obtained automatically without manual intervention or human approval. Setting up a free SaaS account does not guarantee immediate, self-serve API access.",
+      "verification_loop_trigger": "critic_audit"
+    },
+    {
+      "timestamp": "2026-07-09T12:01:21.808Z",
+      "field_changed": "buildability.verdict",
+      "old_value": "build_now",
+      "new_value": "unclear",
+      "reason": "Because self-serve developer access to the API cannot be verified with the provided evidence, the 'build_now' verdict is currently unproven and must be downgraded or marked as blocked until credential availability is verified.",
+      "verification_loop_trigger": "critic_audit"
+    }
+  ],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0",
+    "current_stage": "final_agent",
+    "errors": [
+      "free_product_vs_free_api"
+    ],
+    "unresolved_questions": [
+      "Remaining ambiguity after critic audit and re-research loop"
+    ]
+  }
+}

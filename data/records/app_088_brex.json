@@ -1,0 +1,364 @@
+{
+  "identity": {
+    "assignment_number": 88,
+    "app_name": "Brex",
+    "website_hint": "developer.brex.com",
+    "assigned_category": "Finance and Fintech",
+    "researched_at": "2026-07-09T18:10:42.740Z"
+  },
+  "product": {
+    "normalized_category": "Finance and Fintech",
+    "one_line_description": "Brex is a unified spend platform providing global corporate cards, expense management, reimbursements, travel, and bill pay, designed to help finance teams control spend."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "The provided source does not explicitly mention the authentication methods required for accessing the Brex API."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": "unknown",
+    "access_notes": "While a quickstart guide for making API calls is available, the process for obtaining API credentials (e.g., API keys, OAuth client IDs) and whether human approval is required for this process is not detailed in the provided content."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "REST",
+      "webhooks"
+    ],
+    "api_breadth": "broad",
+    "api_summary": "Brex offers a broad suite of REST APIs, defined using the OpenAPI specification, which allow for managing accounting data, budgets, expenses, fields, onboarding, payments, team management, transactions, and travel. It also provides a Webhooks API for real-time event notifications."
+  },
+  "mcp": {
+    "mcp_status": "unclear",
+    "mcp_summary": "The term 'Brex MCP' is mentioned as a linked item, but its nature or status as a Model Context Protocol server is not described in the provided content."
+  },
+  "buildability": {
+    "verdict": "unclear",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 0,
+      "access_model": 0.1,
+      "public_api": 1,
+      "api_breadth": 1,
+      "mcp_status": 0
+    },
+    "overall_confidence": 0.6,
+    "requires_human_review": true,
+    "human_review_reason": "Authentication methods and the developer access model for obtaining API credentials are not explicitly detailed in the provided content."
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783620642740_0",
+      "claim_field": "product.one_line_description",
+      "claim": "Brex is a unified spend platform providing global corporate cards, expense management, reimbursements, travel, and bill pay, designed to help finance teams control spend.",
+      "source_url": "https://developer.brex.com/",
+      "source_title": "Overview",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Brex is the first fully unified spend platform — with global corporate cards, expense management, reimbursements, travel, and bill pay. Brex makes it easy for finance teams to control all of their spend, all in one place.",
+      "retrieved_at": "2026-07-09T18:10:42.740Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.brex.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783620642740_1",
+      "claim_field": "developer_access.access_notes",
+      "claim": "The documentation mentions a quickstart guide for making API calls, but does not explicitly detail the process for obtaining API credentials or whether human approval is required for access.",
+      "source_url": "https://developer.brex.com/",
+      "source_title": "Overview",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Check out our quickstart guide to get up and running making your first Brex API call in just a few minutes.",
+      "retrieved_at": "2026-07-09T18:10:42.740Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.brex.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783620642740_2",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://developer.brex.com/",
+      "source_title": "Overview",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Using the Brex API, you can power your internal tools and create custom workflows.",
+      "retrieved_at": "2026-07-09T18:10:42.740Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.brex.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783620642740_3",
+      "claim_field": "api_surface.api_styles",
+      "claim": "REST",
+      "source_url": "https://developer.brex.com/",
+      "source_title": "Overview",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Brex APIs use the REST architecture",
+      "retrieved_at": "2026-07-09T18:10:42.740Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.brex.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783620642740_4",
+      "claim_field": "api_surface.api_styles",
+      "claim": "webhooks",
+      "source_url": "https://developer.brex.com/",
+      "source_title": "Overview",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Webhooks API: Send real-time notifications based on events",
+      "retrieved_at": "2026-07-09T18:10:42.740Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.brex.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783620642740_5",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://developer.brex.com/",
+      "source_title": "Overview",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Accounting API: View and manage accounting data\nBudgets API: Manage budgets and budget programs\nExpenses API: View and manage card expenses data, receipt match and receipt uploads\nFields API: View and manage fields and their options\nOnboarding API: Refer your customers and personal contacts to Brex and prefill signup information\nPayments API: Manage vendors and send ACH, domestic wires, and checks\nTeam API: Manage users, locations, departments, and cards\nTransactions API: View your transactions, accounts, and statements\nTravel API: View trips made in Brex Travel\nWebhooks API: Send real-time notifications based on events",
+      "retrieved_at": "2026-07-09T18:10:42.740Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.brex.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783620642740_6",
+      "claim_field": "api_surface.api_summary",
+      "claim": "Brex offers a broad suite of REST APIs, defined using the OpenAPI specification, which allow for managing accounting data, budgets, expenses, fields, onboarding, payments, team management, transactions, and travel. It also provides a Webhooks API for real-time event notifications.",
+      "source_url": "https://developer.brex.com/",
+      "source_title": "Overview",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Brex APIs use the REST architecture, are defined using the OpenAPI specification and use standard HTTP response codes and verbs. All APIs accept and return JSON and require HTTPS.\nExplore our guides and review our API documentation to see how you can integrate with Brex.\n*   [Accounting API](/openapi/accounting_api): View and manage accounting data\n*   [Budgets API](/openapi/budgets_api): Manage budgets and budget programs\n*   [Expenses API](/openapi/expenses_api): View and manage card expenses data, receipt match and receipt uploads\n*   [Fields API](/openapi/fields_api): View and manage fields and their options\n*   [Onboarding API](/openapi/onboarding_api): Refer your customers and personal contacts to Brex and prefill signup information\n*   [Payments API](/openapi/payments_api): Manage vendors and send ACH, domestic wires, and checks\n*   [Team API](/openapi/team_api): Manage users, locations, departments, and cards\n*   [Transactions API](/openapi/transactions_api): View your transactions, accounts, and statements\n*   [Travel API](/openapi/travel_api): View trips made in Brex Travel\n*   [Webhooks API](/openapi/webhooks_api): Send real-time notifications based on events",
+      "retrieved_at": "2026-07-09T18:10:42.740Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.brex.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783620642740_7",
+      "claim_field": "mcp.mcp_status",
+      "claim": "unclear",
+      "source_url": "https://developer.brex.com/",
+      "source_title": "Overview",
+      "source_type": "developer_portal",
+      "evidence_snippet": "*   Brex MCP\n    ](/docs/mcp)",
+      "retrieved_at": "2026-07-09T18:10:42.740Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developer.brex.com/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 88,
+      "app_name": "Brex",
+      "website_hint": "developer.brex.com",
+      "assigned_category": "Finance and Fintech",
+      "researched_at": "2026-07-09T18:10:42.740Z"
+    },
+    "product": {
+      "normalized_category": "Finance and Fintech",
+      "one_line_description": "Brex is a unified spend platform providing global corporate cards, expense management, reimbursements, travel, and bill pay, designed to help finance teams control spend."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "The provided source does not explicitly mention the authentication methods required for accessing the Brex API."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": "unknown",
+      "access_notes": "While a quickstart guide for making API calls is available, the process for obtaining API credentials (e.g., API keys, OAuth client IDs) and whether human approval is required for this process is not detailed in the provided content."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "REST",
+        "webhooks"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "Brex offers a broad suite of REST APIs, defined using the OpenAPI specification, which allow for managing accounting data, budgets, expenses, fields, onboarding, payments, team management, transactions, and travel. It also provides a Webhooks API for real-time event notifications."
+    },
+    "mcp": {
+      "mcp_status": "unclear",
+      "mcp_summary": "The term 'Brex MCP' is mentioned as a linked item, but its nature or status as a Model Context Protocol server is not described in the provided content."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient.",
+      "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0,
+        "access_model": 0.1,
+        "public_api": 1,
+        "api_breadth": 1,
+        "mcp_status": 0
+      },
+      "overall_confidence": 0.6,
+      "requires_human_review": true,
+      "human_review_reason": "Authentication methods and the developer access model for obtaining API credentials are not explicitly detailed in the provided content."
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_access_model_unclear",
+    "risk_auth_methods_unclear",
+    "risk_material_evidence_validation_failed",
+    "risk_contradictory_claims",
+    "risk_verdict_unclear",
+    "risk_low_confidence"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_access_model_unclear",
+      "risk_auth_methods_unclear",
+      "risk_material_evidence_validation_failed",
+      "risk_contradictory_claims",
+      "risk_verdict_unclear",
+      "risk_low_confidence"
+    ]
+  }
+}

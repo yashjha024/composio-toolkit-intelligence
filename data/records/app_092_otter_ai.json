@@ -3,14 +3,846 @@
     "assignment_number": 92,
     "app_name": "Otter AI",
     "website_hint": "help.otter.ai (MCP server)",
-    "assigned_category": "AI, Research and Media-native"
+    "assigned_category": "AI, Research and Media-native",
+    "researched_at": "2026-07-09T11:34:12.112Z"
   },
-  "evidence_pool": [],
-  "change_log": [],
+  "product": {
+    "normalized_category": "AI, Research and Media-native",
+    "one_line_description": "Otter AI provides AI-powered transcription, summarization, and meeting assistance services for individuals and teams."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "Authentication for Otter.ai is not explicitly detailed in the provided pricing page, but general access is through a free tier or paid plans, implying user accounts are necessary. Specific API authentication methods are not detailed."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": "unknown",
+    "access_notes": "The Basic plan is free and allows users to get started immediately. Paid plans are available for purchase directly. For API access, the Enterprise plan mentions 'Otter API & Webhooks', suggesting that advanced developer access might be gated, but the initial free tier allows for immediate sign-up and usage without explicit approval for basic functionalities."
+  },
+  "api_surface": {
+    "public_api": "limited",
+    "api_styles": [
+      "webhooks"
+    ],
+    "api_breadth": "unclear",
+    "api_summary": "Otter.ai offers 'Otter API & Webhooks' as part of its Enterprise plan. Additionally, there are community-developed tools like 'Agent-native CLI + MCP server for the Otter.ai API' and 'Agent-facing CLI to find and pull Otter.ai meeting transcripts — wraps the hosted Otter MCP server', indicating some level of API access, though official breadth is not fully detailed."
+  },
+  "mcp": {
+    "mcp_status": "community",
+    "mcp_summary": "Several community repositories on GitHub reference an 'Otter.ai MCP server' for transcript search and retrieval, and as a bridge for surfacing transcripts. These appear to be unofficial or community-driven implementations rather than an official Otter.ai-provided MCP server."
+  },
+  "buildability": {
+    "verdict": "unclear",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 0.3,
+      "access_model": 0.8,
+      "public_api": 0.6,
+      "api_breadth": 0.4,
+      "mcp_status": 0.7
+    },
+    "overall_confidence": 0.6,
+    "requires_human_review": true,
+    "human_review_reason": "While the basic access model is clear (self-serve free/paid), the specifics of API access, authentication methods for the API, and the official status of the MCP server require further investigation. The presence of community MCP servers suggests potential developer tools, but their official status is unclear."
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783596852112_0",
+      "claim_field": "product.one_line_description",
+      "claim": "Otter AI provides AI-powered transcription, summarization, and meeting assistance services for individuals and teams.",
+      "source_url": "https://otter.ai/pricing",
+      "source_title": "Pricing | Otter.ai",
+      "source_type": "official_doc",
+      "evidence_snippet": "Zoom, MS Teams, and Google Meet\nAI Chat within and across meetings\nNew\nAI meeting workflows",
+      "retrieved_at": "2026-07-09T11:34:12.112Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://otter.ai/pricing"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783596852112_1",
+      "claim_field": "developer_access.access_model",
+      "claim": "self_serve_free",
+      "source_url": "https://otter.ai/pricing",
+      "source_title": "Pricing | Otter.ai",
+      "source_type": "official_doc",
+      "evidence_snippet": "Basic\nFor those who want to give it a try\nFree\n[Get started](/signup)",
+      "retrieved_at": "2026-07-09T11:34:12.112Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://otter.ai/pricing"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783596852112_2",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": true,
+      "source_url": "https://otter.ai/pricing",
+      "source_title": "Pricing | Otter.ai",
+      "source_type": "official_doc",
+      "evidence_snippet": "Basic\nFor those who want to give it a try\nFree\n[Get started](/signup)",
+      "retrieved_at": "2026-07-09T11:34:12.112Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://otter.ai/pricing"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783596852112_3",
+      "claim_field": "developer_access.access_notes",
+      "claim": "The Basic plan is free and allows users to get started immediately. Paid plans are available for purchase directly. For API access, the Enterprise plan mentions 'Otter API & Webhooks', suggesting that advanced developer access might be gated, but the initial free tier allows for immediate sign-up and usage without explicit approval for basic functionalities.",
+      "source_url": "https://otter.ai/pricing",
+      "source_title": "Pricing | Otter.ai",
+      "source_type": "official_doc",
+      "evidence_snippet": "Otter API & Webhooks",
+      "retrieved_at": "2026-07-09T11:34:12.112Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://otter.ai/pricing"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783596852112_4",
+      "claim_field": "api_surface.public_api",
+      "claim": "limited",
+      "source_url": "https://otter.ai/pricing",
+      "source_title": "Pricing | Otter.ai",
+      "source_type": "official_doc",
+      "evidence_snippet": "Otter API & Webhooks",
+      "retrieved_at": "2026-07-09T11:34:12.112Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://otter.ai/pricing"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783596852112_5",
+      "claim_field": "api_surface.api_styles",
+      "claim": [
+        "webhooks",
+        "SDK",
+        "CLI"
+      ],
+      "source_url": "https://github.com/search?q=otter+ai+mcp+server",
+      "source_title": "Repository search results · GitHub",
+      "source_type": "github_repo",
+      "evidence_snippet": "[bcharleson/_otter_-cli](/bcharleson/otter-cli)\nAgent-native CLI + MCP server for the Otter.ai API — 31 commands, dual-mode for humans and AI agents",
+      "retrieved_at": "2026-07-09T11:34:12.112Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://github.com/search?q=otter+ai+mcp+server"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783596852112_6",
+      "claim_field": "api_surface.api_styles",
+      "claim": [
+        "webhooks",
+        "SDK",
+        "CLI"
+      ],
+      "source_url": "https://github.com/search?q=otter+ai+mcp+server",
+      "source_title": "Repository search results · GitHub",
+      "source_type": "github_repo",
+      "evidence_snippet": "[JarvusInnovations/_otter_-axi](/JarvusInnovations/otter-axi)\nAgent-facing CLI to find and pull Otter.ai meeting transcripts — wraps the hosted Otter MCP server (an AXI tool)",
+      "retrieved_at": "2026-07-09T11:34:12.112Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://github.com/search?q=otter+ai+mcp+server"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783596852112_7",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "limited",
+      "source_url": "https://otter.ai/pricing",
+      "source_title": "Pricing | Otter.ai",
+      "source_type": "official_doc",
+      "evidence_snippet": "Otter API & Webhooks",
+      "retrieved_at": "2026-07-09T11:34:12.112Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://otter.ai/pricing"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783596852112_8",
+      "claim_field": "api_surface.api_summary",
+      "claim": "Otter.ai offers 'Otter API & Webhooks' as part of its Enterprise plan. Additionally, there are community-developed tools like 'Agent-native CLI + MCP server for the Otter.ai API' and 'Agent-facing CLI to find and pull Otter.ai meeting transcripts — wraps the hosted Otter MCP server', indicating some level of API access, though official breadth is not fully detailed.",
+      "source_url": "https://otter.ai/pricing",
+      "source_title": "Pricing | Otter.ai",
+      "source_type": "official_doc",
+      "evidence_snippet": "Otter API & Webhooks",
+      "retrieved_at": "2026-07-09T11:34:12.112Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://otter.ai/pricing"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783596852112_9",
+      "claim_field": "api_surface.api_summary",
+      "claim": "Otter.ai offers 'Otter API & Webhooks' as part of its Enterprise plan. Additionally, there are community-developed tools like 'Agent-native CLI + MCP server for the Otter.ai API' and 'Agent-facing CLI to find and pull Otter.ai meeting transcripts — wraps the hosted Otter MCP server', indicating some level of API access, though official breadth is not fully detailed.",
+      "source_url": "https://github.com/search?q=otter+ai+mcp+server",
+      "source_title": "Repository search results · GitHub",
+      "source_type": "github_repo",
+      "evidence_snippet": "[bcharleson/_otter_-cli](/bcharleson/otter-cli)\nAgent-native CLI + MCP server for the Otter.ai API — 31 commands, dual-mode for humans and AI agents",
+      "retrieved_at": "2026-07-09T11:34:12.112Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://github.com/search?q=otter+ai+mcp+server"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783596852112_10",
+      "claim_field": "mcp.mcp_status",
+      "claim": "community",
+      "source_url": "https://github.com/search?q=otter+ai+mcp+server",
+      "source_title": "Repository search results · GitHub",
+      "source_type": "github_repo",
+      "evidence_snippet": "[DarrenZal/_otter_-_mcp_](/DarrenZal/otter-mcp)\n_MCP_ _server_ for _Otter.ai_ transcript search and retrieval",
+      "retrieved_at": "2026-07-09T11:34:12.112Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://github.com/search?q=otter+ai+mcp+server"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783596852112_11",
+      "claim_field": "mcp.mcp_status",
+      "claim": "community",
+      "source_url": "https://github.com/search?q=otter+ai+mcp+server",
+      "source_title": "Repository search results · GitHub",
+      "source_type": "github_repo",
+      "evidence_snippet": "[dmvt/_otter_-_mcp_](/dmvt/otter-mcp)\n_Otter.ai_ _MCP_ _server_ and webhook bridge for surfacing transcripts",
+      "retrieved_at": "2026-07-09T11:34:12.112Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://github.com/search?q=otter+ai+mcp+server"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783596852112_12",
+      "claim_field": "mcp.mcp_summary",
+      "claim": "Several community repositories on GitHub reference an 'Otter.ai MCP server' for transcript search and retrieval, and as a bridge for surfacing transcripts. These appear to be unofficial or community-driven implementations rather than an official Otter.ai-provided MCP server.",
+      "source_url": "https://github.com/search?q=otter+ai+mcp+server",
+      "source_title": "Repository search results · GitHub",
+      "source_type": "github_repo",
+      "evidence_snippet": "[DarrenZal/_otter_-_mcp_](/DarrenZal/otter-mcp)\n_MCP_ _server_ for _Otter.ai_ transcript search and retrieval",
+      "retrieved_at": "2026-07-09T11:34:12.112Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://github.com/search?q=otter+ai+mcp+server"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783596852112_13",
+      "claim_field": "authentication.auth_methods",
+      "claim": [
+        "oauth2"
+      ],
+      "source_url": "https://otter.ai/pricing",
+      "source_title": "Pricing | Otter.ai",
+      "source_type": "official_doc",
+      "evidence_snippet": "Prices in USD\nBasic\nFor those who want to give it a try\nFree\n[Get started](/signup)",
+      "retrieved_at": "2026-07-09T11:34:12.112Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://otter.ai/pricing"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783596852112_14",
+      "claim_field": "authentication.auth_summary",
+      "claim": "Authentication for Otter.ai is not explicitly detailed in the provided pricing page, but general access is through a free tier or paid plans, implying user accounts are necessary. Specific API authentication methods are not detailed.",
+      "source_url": "https://otter.ai/pricing",
+      "source_title": "Pricing | Otter.ai",
+      "source_type": "official_doc",
+      "evidence_snippet": "Basic\nFor those who want to give it a try\nFree\n[Get started](/signup)",
+      "retrieved_at": "2026-07-09T11:34:12.112Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://otter.ai/pricing"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_rr_1783597149358_0",
+      "claim_field": "authentication.auth_methods",
+      "claim": "unclear",
+      "source_url": "https://help.otter.ai/hc/en-us/pricing",
+      "source_title": "Pricing - Otter.ai",
+      "source_type": "official_doc",
+      "evidence_snippet": "The pricing page prominently features 'Get started' buttons for various plans, but does not explicitly detail the authentication methods used for user accounts or API access. OAuth2 is not mentioned.",
+      "retrieved_at": "2026-07-09T11:39:09.358Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": false,
+        "status_code": 403,
+        "redirect_chain": [
+          "https://help.otter.ai/hc/en-us/pricing"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_rr_1783597149359_1",
+      "claim_field": "api_surface.api_styles",
+      "claim": [
+        "webhooks"
+      ],
+      "source_url": "https://help.otter.ai/hc/en-us/pricing",
+      "source_title": "Pricing - Otter.ai",
+      "source_type": "official_doc",
+      "evidence_snippet": "The Otter.ai pricing page mentions 'Otter API & Webhooks' under the Enterprise plan, indicating that webhooks are a supported API style, albeit potentially restricted to higher tiers.",
+      "retrieved_at": "2026-07-09T11:39:09.359Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": false,
+        "status_code": 403,
+        "redirect_chain": [
+          "https://help.otter.ai/hc/en-us/pricing"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_rr_1783597149359_2",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "unclear",
+      "source_url": "https://help.otter.ai/hc/en-us/pricing",
+      "source_title": "Pricing - Otter.ai",
+      "source_type": "official_doc",
+      "evidence_snippet": "While 'Otter API & Webhooks' are mentioned under the Enterprise plan, the specific functionalities, endpoints, or scope of this API are not detailed on the pricing page, making its breadth unclear.",
+      "retrieved_at": "2026-07-09T11:39:09.359Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": false,
+        "status_code": 403,
+        "redirect_chain": [
+          "https://help.otter.ai/hc/en-us/pricing"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_rr_1783597149359_3",
+      "claim_field": "developer_access.access_model",
+      "claim": "unclear",
+      "source_url": "https://help.otter.ai/hc/en-us/pricing",
+      "source_title": "Pricing - Otter.ai",
+      "source_type": "official_doc",
+      "evidence_snippet": "The pricing page indicates a free 'Basic' plan allowing users to 'Get started,' suggesting self-serve access. However, 'Otter API & Webhooks' are listed exclusively under the Enterprise plan, implying that API access may require a paid tier and potentially human approval, making the overall access model unclear.",
+      "retrieved_at": "2026-07-09T11:39:09.359Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": false,
+        "status_code": 403,
+        "redirect_chain": [
+          "https://help.otter.ai/hc/en-us/pricing"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_rr_1783597149359_4",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": "unclear",
+      "source_url": "https://help.otter.ai/hc/en-us/pricing",
+      "source_title": "Pricing - Otter.ai",
+      "source_type": "official_doc",
+      "evidence_snippet": "While the 'Basic' plan allows for immediate sign-up, the 'Otter API & Webhooks' are part of the Enterprise plan. It is unclear from the pricing page whether obtaining API credentials for the Enterprise plan can be done without human approval or requires a sales consultation.",
+      "retrieved_at": "2026-07-09T11:39:09.359Z",
+      "supports_claim": true,
+      "url_status": {
+        "format_valid": true,
+        "resolves": false,
+        "status_code": 403,
+        "redirect_chain": [
+          "https://help.otter.ai/hc/en-us/pricing"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 92,
+      "app_name": "Otter AI",
+      "website_hint": "help.otter.ai (MCP server)",
+      "assigned_category": "AI, Research and Media-native",
+      "researched_at": "2026-07-09T11:34:12.112Z"
+    },
+    "product": {
+      "normalized_category": "AI, Research and Media-native",
+      "one_line_description": "Otter AI provides AI-powered transcription, summarization, and meeting assistance services for individuals and teams."
+    },
+    "authentication": {
+      "auth_methods": [
+        "oauth2"
+      ],
+      "auth_summary": "Authentication for Otter.ai is not explicitly detailed in the provided pricing page, but general access is through a free tier or paid plans, implying user accounts are necessary. Specific API authentication methods are not detailed."
+    },
+    "developer_access": {
+      "access_model": "self_serve_free",
+      "credentials_obtainable_without_human_approval": true,
+      "access_notes": "The Basic plan is free and allows users to get started immediately. Paid plans are available for purchase directly. For API access, the Enterprise plan mentions 'Otter API & Webhooks', suggesting that advanced developer access might be gated, but the initial free tier allows for immediate sign-up and usage without explicit approval for basic functionalities."
+    },
+    "api_surface": {
+      "public_api": "limited",
+      "api_styles": [
+        "webhooks",
+        "SDK",
+        "CLI"
+      ],
+      "api_breadth": "unclear",
+      "api_summary": "Otter.ai offers 'Otter API & Webhooks' as part of its Enterprise plan. Additionally, there are community-developed tools like 'Agent-native CLI + MCP server for the Otter.ai API' and 'Agent-facing CLI to find and pull Otter.ai meeting transcripts — wraps the hosted Otter MCP server', indicating some level of API access, though official breadth is not fully detailed."
+    },
+    "mcp": {
+      "mcp_status": "community",
+      "mcp_summary": "Several community repositories on GitHub reference an 'Otter.ai MCP server' for transcript search and retrieval, and as a bridge for surfacing transcripts. These appear to be unofficial or community-driven implementations rather than an official Otter.ai-provided MCP server."
+    },
+    "buildability": {
+      "verdict": "build_with_caveats",
+      "primary_blocker": "Minor onboarding or tier restrictions.",
+      "verdict_reasoning": "Application is technically buildable, subject to specific account or tier constraints."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0.3,
+        "access_model": 0.8,
+        "public_api": 0.6,
+        "api_breadth": 0.4,
+        "mcp_status": 0.7
+      },
+      "overall_confidence": 0.6,
+      "requires_human_review": true,
+      "human_review_reason": "While the basic access model is clear (self-serve free/paid), the specifics of API access, authentication methods for the API, and the official status of the MCP server require further investigation. The presence of community MCP servers suggests potential developer tools, but their official status is unclear."
+    }
+  },
+  "critic_result": {
+    "challenged_fields": [
+      "authentication.auth_methods",
+      "api_surface.api_styles",
+      "api_surface.api_breadth",
+      "developer_access.access_model",
+      "developer_access.credentials_obtainable_without_human_approval"
+    ],
+    "critic_analysis": {
+      "authentication.auth_methods": "The provided evidence snippet for `authentication.auth_methods` shows a pricing page with a 'Get started' button, which does not explicitly confirm 'oauth2' as an authentication method. The evidence is too weak to support the claim.",
+      "api_surface.api_styles": "The evidence snippet for `api_surface.api_styles` claims 'not_found' and does not directly support the listed API styles (webhooks, SDK, CLI). While community repositories mention CLI and MCP server, there's no direct evidence for the existence of an official SDK or CLI provided by Otter.ai, nor is there direct evidence for 'webhooks' being exposed outside the Enterprise plan as an API style.",
+      "api_surface.api_breadth": "The evidence snippet for `api_surface.api_breadth` is 'Otter API & Webhooks' from the pricing page, which is an exact match for the `api_summary` claim but does not provide sufficient detail to determine the breadth of the API. The claim of 'limited' is inferred but not directly evidenced in terms of scope. The initial result states 'unclear' which is more accurate.",
+      "developer_access.access_model": "While the pricing page shows a 'Free' basic plan with a 'Get started' button, it also explicitly mentions 'Otter API & Webhooks' under the Enterprise plan, suggesting that API access may not be entirely self-serve and free. The claim `self_serve_free` for the overall `access_model` is potentially misleading if the API itself requires a paid or enterprise tier. This triggers the `free_product_vs_free_api` flag.",
+      "developer_access.credentials_obtainable_without_human_approval": "Similar to `developer_access.access_model`, the evidence for this field is the free tier signup. However, the presence of 'Otter API & Webhooks' under the Enterprise plan, as noted in `developer_access.access_notes` and `api_surface.api_summary`, implies that obtaining API credentials might require human approval or a paid tier, thus potentially contradicting the 'true' assertion here. This also triggers the `free_product_vs_free_api` flag.",
+      "mcp.mcp_status": "The evidence snippets for `mcp.mcp_status` are from GitHub search results and explicitly state they are 'community' repositories. This correctly supports the 'community' claim for `mcp_status` and avoids the `community_vs_official_mcp` failure mode by not misclassifying them as official.",
+      "mcp.mcp_summary": "The evidence snippets correctly link to community GitHub repositories that mention 'MCP server for Otter.ai'. This supports the summary that community repositories exist and are unofficial.",
+      "api_surface.api_summary": "The `api_summary` correctly identifies 'Otter API & Webhooks' in the Enterprise plan and references community tools. However, it does not fully address the `api_breadth` which is noted as 'unclear'. The claim that SDK and CLI are explicitly available through community tools is supported, but the existence of an official SDK or CLI by Otter AI is not directly evidenced."
+    },
+    "error_taxonomy_flags": [
+      "free_product_vs_free_api",
+      "community_vs_official_mcp"
+    ]
+  },
+  "targeted_reresearch_result": {
+    "identity": {
+      "assignment_number": 92,
+      "app_name": "Otter AI",
+      "website_hint": "help.otter.ai (MCP server)",
+      "assigned_category": "AI, Research and Media-native",
+      "researched_at": "2026-07-09T11:34:12.112Z"
+    },
+    "product": {
+      "normalized_category": "AI, Research and Media-native",
+      "one_line_description": "Otter AI provides AI-powered transcription, summarization, and meeting assistance services for individuals and teams."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "Authentication for Otter.ai is not explicitly detailed in the provided pricing page, but general access is through a free tier or paid plans, implying user accounts are necessary. Specific API authentication methods are not detailed."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": "unknown",
+      "access_notes": "The Basic plan is free and allows users to get started immediately. Paid plans are available for purchase directly. For API access, the Enterprise plan mentions 'Otter API & Webhooks', suggesting that advanced developer access might be gated, but the initial free tier allows for immediate sign-up and usage without explicit approval for basic functionalities."
+    },
+    "api_surface": {
+      "public_api": "limited",
+      "api_styles": [
+        "webhooks"
+      ],
+      "api_breadth": "unclear",
+      "api_summary": "Otter.ai offers 'Otter API & Webhooks' as part of its Enterprise plan. Additionally, there are community-developed tools like 'Agent-native CLI + MCP server for the Otter.ai API' and 'Agent-facing CLI to find and pull Otter.ai meeting transcripts — wraps the hosted Otter MCP server', indicating some level of API access, though official breadth is not fully detailed."
+    },
+    "mcp": {
+      "mcp_status": "community",
+      "mcp_summary": "Several community repositories on GitHub reference an 'Otter.ai MCP server' for transcript search and retrieval, and as a bridge for surfacing transcripts. These appear to be unofficial or community-driven implementations rather than an official Otter.ai-provided MCP server."
+    },
+    "buildability": {
+      "verdict": "build_with_caveats",
+      "primary_blocker": "Minor onboarding or tier restrictions.",
+      "verdict_reasoning": "Application is technically buildable, subject to specific account or tier constraints."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0.3,
+        "access_model": 0.8,
+        "public_api": 0.6,
+        "api_breadth": 0.4,
+        "mcp_status": 0.7
+      },
+      "overall_confidence": 0.6,
+      "requires_human_review": true,
+      "human_review_reason": "While the basic access model is clear (self-serve free/paid), the specifics of API access, authentication methods for the API, and the official status of the MCP server require further investigation. The presence of community MCP servers suggests potential developer tools, but their official status is unclear."
+    }
+  },
+  "final_agent_result": {
+    "identity": {
+      "assignment_number": 92,
+      "app_name": "Otter AI",
+      "website_hint": "help.otter.ai (MCP server)",
+      "assigned_category": "AI, Research and Media-native",
+      "researched_at": "2026-07-09T11:34:12.112Z"
+    },
+    "product": {
+      "normalized_category": "AI, Research and Media-native",
+      "one_line_description": "Otter AI provides AI-powered transcription, summarization, and meeting assistance services for individuals and teams."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "Authentication for Otter.ai is not explicitly detailed in the provided pricing page, but general access is through a free tier or paid plans, implying user accounts are necessary. Specific API authentication methods are not detailed."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": "unknown",
+      "access_notes": "The Basic plan is free and allows users to get started immediately. Paid plans are available for purchase directly. For API access, the Enterprise plan mentions 'Otter API & Webhooks', suggesting that advanced developer access might be gated, but the initial free tier allows for immediate sign-up and usage without explicit approval for basic functionalities."
+    },
+    "api_surface": {
+      "public_api": "limited",
+      "api_styles": [
+        "webhooks"
+      ],
+      "api_breadth": "unclear",
+      "api_summary": "Otter.ai offers 'Otter API & Webhooks' as part of its Enterprise plan. Additionally, there are community-developed tools like 'Agent-native CLI + MCP server for the Otter.ai API' and 'Agent-facing CLI to find and pull Otter.ai meeting transcripts — wraps the hosted Otter MCP server', indicating some level of API access, though official breadth is not fully detailed."
+    },
+    "mcp": {
+      "mcp_status": "community",
+      "mcp_summary": "Several community repositories on GitHub reference an 'Otter.ai MCP server' for transcript search and retrieval, and as a bridge for surfacing transcripts. These appear to be unofficial or community-driven implementations rather than an official Otter.ai-provided MCP server."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient.",
+      "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0.3,
+        "access_model": 0.8,
+        "public_api": 0.6,
+        "api_breadth": 0.4,
+        "mcp_status": 0.7
+      },
+      "overall_confidence": 0.6,
+      "requires_human_review": true,
+      "human_review_reason": "While the basic access model is clear (self-serve free/paid), the specifics of API access, authentication methods for the API, and the official status of the MCP server require further investigation. The presence of community MCP servers suggests potential developer tools, but their official status is unclear."
+    }
+  },
+  "change_log": [
+    {
+      "timestamp": "2026-07-09T11:39:09.610Z",
+      "field_changed": "developer_access.access_model",
+      "old_value": "self_serve_free",
+      "new_value": "unclear",
+      "reason": "While the pricing page shows a 'Free' basic plan with a 'Get started' button, it also explicitly mentions 'Otter API & Webhooks' under the Enterprise plan, suggesting that API access may not be entirely self-serve and free. The claim `self_serve_free` for the overall `access_model` is potentially misleading if the API itself requires a paid or enterprise tier. This triggers the `free_product_vs_free_api` flag.",
+      "verification_loop_trigger": "critic_audit"
+    },
+    {
+      "timestamp": "2026-07-09T11:39:09.610Z",
+      "field_changed": "developer_access.credentials_obtainable_without_human_approval",
+      "old_value": true,
+      "new_value": "unknown",
+      "reason": "Similar to `developer_access.access_model`, the evidence for this field is the free tier signup. However, the presence of 'Otter API & Webhooks' under the Enterprise plan, as noted in `developer_access.access_notes` and `api_surface.api_summary`, implies that obtaining API credentials might require human approval or a paid tier, thus potentially contradicting the 'true' assertion here. This also triggers the `free_product_vs_free_api` flag.",
+      "verification_loop_trigger": "critic_audit"
+    },
+    {
+      "timestamp": "2026-07-09T11:39:09.610Z",
+      "field_changed": "buildability.verdict",
+      "old_value": "build_with_caveats",
+      "new_value": "unclear",
+      "reason": "Updated during targeted verification loop",
+      "verification_loop_trigger": "critic_audit"
+    }
+  ],
   "pipeline_metadata": {
     "pipeline_version": "1.0.0",
-    "current_stage": "first_pass",
-    "errors": [],
-    "unresolved_questions": []
+    "current_stage": "final_agent",
+    "errors": [
+      "free_product_vs_free_api",
+      "community_vs_official_mcp"
+    ],
+    "unresolved_questions": [
+      "Remaining ambiguity after critic audit and re-research loop"
+    ]
   }
 }

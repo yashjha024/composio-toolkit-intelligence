@@ -1,0 +1,88 @@
+{
+  "assignment_number": 81,
+  "app_name": "Stripe",
+  "assigned_category": "Finance and Fintech",
+  "processing_mode": "fast_scale",
+  "baseline_fields": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "access_model": "unclear",
+    "credentials_obtainable_without_approval": true,
+    "public_api_status": "yes",
+    "api_breadth": "broad",
+    "mcp_status": "none_found",
+    "buildability_verdict": "UNCLEAR",
+    "primary_blocker": "Research data ambiguous or insufficient."
+  },
+  "verified_fields": {
+    "auth_methods": {
+      "verified_value": [
+        "API keys"
+      ],
+      "evidence_url": "https://docs.stripe.com/api/authentication",
+      "concise_evidence_snippet": "The Stripe API uses [API keys] to authenticate requests. You can view and manage your API keys in [the Stripe Dashboard].",
+      "baseline_classification": "incorrect",
+      "correction_required": true,
+      "failure_mode": "conservative_guardrail"
+    },
+    "access_model": {
+      "verified_value": "self_serve_free",
+      "evidence_url": "https://docs.stripe.com/api/authentication",
+      "concise_evidence_snippet": "You can view and manage your API keys in [the Stripe Dashboard]. ... you can create as many restricted API keys as you need.",
+      "baseline_classification": "incorrect",
+      "correction_required": true,
+      "failure_mode": "conservative_guardrail"
+    },
+    "credentials_obtainable_without_approval": {
+      "verified_value": true,
+      "evidence_url": "https://docs.stripe.com/api/authentication",
+      "concise_evidence_snippet": "You can view and manage your API keys in [the Stripe Dashboard]. ... you can create as many restricted API keys as you need.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "public_api_status": {
+      "verified_value": "yes",
+      "evidence_url": "https://docs.stripe.com/api",
+      "concise_evidence_snippet": "The Stripe API is organized around [REST].",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "api_breadth": {
+      "verified_value": "broad",
+      "evidence_url": "https://docs.stripe.com/api",
+      "concise_evidence_snippet": "Core Resources...Payment Methods...Products...Commerce...Billing...Connect",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "mcp_status": {
+      "verified_value": "none_found",
+      "evidence_url": "https://docs.stripe.com/api",
+      "concise_evidence_snippet": "N/A - no mention of Model Context Protocol",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "buildability_verdict": {
+      "verified_value": "BUILD_NOW",
+      "evidence_url": "https://docs.stripe.com/api/authentication",
+      "concise_evidence_snippet": "The Stripe API uses [API keys] to authenticate requests. You can view and manage your API keys in [the Stripe Dashboard].",
+      "baseline_classification": "incorrect",
+      "correction_required": true,
+      "failure_mode": "conservative_guardrail"
+    },
+    "primary_blocker": {
+      "verified_value": null,
+      "evidence_url": "https://docs.stripe.com/api/authentication",
+      "concise_evidence_snippet": "The Stripe API uses [API keys] to authenticate requests. You can view and manage your API keys in [the Stripe Dashboard].",
+      "baseline_classification": "incorrect",
+      "correction_required": true,
+      "failure_mode": "conservative_guardrail"
+    },
+    "unclear_diagnosis": "false_unclear_due_to_guardrails"
+  },
+  "verified_at": "2026-07-09T18:54:50.447Z"
+}

@@ -1,0 +1,331 @@
+{
+  "identity": {
+    "assignment_number": 31,
+    "app_name": "Google Ads",
+    "website_hint": "developers.google.com/google-ads",
+    "assigned_category": "Marketing, Ads, Email and Social",
+    "researched_at": "2026-07-09T17:04:05.244Z"
+  },
+  "product": {
+    "normalized_category": "Marketing, Ads, Email and Social",
+    "one_line_description": "Google Ads allows users to promote websites, products, and apps, and create and manage ads across Google Search, Display, and YouTube."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "The provided source does not explicitly mention the authentication methods required for the Google Ads API or scripts."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": "unknown",
+    "access_notes": "The source page describes the existence of Google Ads API and scripts for developers, but does not detail the process for obtaining API credentials or whether human approval is required for developer access. The 'Get started on Google Ads' link appears to be for the main product, not specifically for API credentials."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "SDK",
+      "webhooks"
+    ],
+    "api_breadth": "broad",
+    "api_summary": "Google Ads offers an API and scripts to automate campaign management and interact directly with the Google Ads platform. It also provides webhooks for sending data from Google Ads to CRM systems. This indicates a broad API surface for managing advertising campaigns and data integration."
+  },
+  "mcp": {
+    "mcp_status": "none_found",
+    "mcp_summary": "No information regarding Model Context Protocol (MCP) servers was found in the provided source."
+  },
+  "buildability": {
+    "verdict": "unclear",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 0.4,
+      "access_model": 0.4,
+      "public_api": 1,
+      "api_breadth": 0.9,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.74,
+    "requires_human_review": false,
+    "human_review_reason": null
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783616645244_0",
+      "claim_field": "product.one_line_description",
+      "claim": "Google Ads allows users to promote websites, products, and apps, and create and manage ads across Google Search, Display, and YouTube.",
+      "source_url": "https://developers.google.com/google-ads",
+      "source_title": "Google Ads  |  Google for DevelopersGoogleGoogle",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Promote your website, products, and app to the right users with Google Ads.\nCreate and manage ads that reach users looking for your products or services on Google Search, Display, YouTube and more.",
+      "retrieved_at": "2026-07-09T17:04:05.244Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.google.com/google-ads"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616645244_1",
+      "claim_field": "developer_access.access_model",
+      "claim": "unclear",
+      "source_url": "https://developers.google.com/google-ads",
+      "source_title": "Google Ads  |  Google for DevelopersGoogleGoogle",
+      "source_type": "developer_portal",
+      "evidence_snippet": "### [Google Ads API and Google Ads scripts](https://developers.google.com/google-ads/api/docs/start)\nSave time by automating your Google Ads campaign management. Build an application to interact directly with the Google Ads platform or write programmatic scripts.\n[Google Ads API](https://developers.google.com/google-ads/api/docs/start) [Google Ads Scripts](https://developers.google.com/google-ads/scripts)",
+      "retrieved_at": "2026-07-09T17:04:05.244Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.google.com/google-ads"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616645244_2",
+      "claim_field": "public_api",
+      "claim": "yes",
+      "source_url": "https://developers.google.com/google-ads",
+      "source_title": "Google Ads  |  Google for DevelopersGoogleGoogle",
+      "source_type": "developer_portal",
+      "evidence_snippet": "### [Google Ads API and Google Ads scripts](https://developers.google.com/google-ads/api/docs/start)",
+      "retrieved_at": "2026-07-09T17:04:05.244Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.google.com/google-ads"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616645244_3",
+      "claim_field": "api_styles",
+      "claim": "SDK",
+      "source_url": "https://developers.google.com/google-ads",
+      "source_title": "Google Ads  |  Google for DevelopersGoogleGoogle",
+      "source_type": "developer_portal",
+      "evidence_snippet": "### [Google Ads API and Google Ads scripts](https://developers.google.com/google-ads/api/docs/start)\nSave time by automating your Google Ads campaign management. Build an application to interact directly with the Google Ads platform or write programmatic scripts.\n[Google Ads API](https://developers.google.com/google-ads/api/docs/start) [Google Ads Scripts](https://developers.google.com/google-ads/scripts)",
+      "retrieved_at": "2026-07-09T17:04:05.244Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.google.com/google-ads"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616645244_4",
+      "claim_field": "api_styles",
+      "claim": "webhooks",
+      "source_url": "https://developers.google.com/google-ads",
+      "source_title": "Google Ads  |  Google for DevelopersGoogleGoogle",
+      "source_type": "developer_portal",
+      "evidence_snippet": "### [Webhook](https://developers.google.com/google-ads/webhook/docs/overview)\nUse webhook to send data from Google Ads to your CRM system.\n[Lead form Webhook](https://developers.google.com/google-ads/webhook/docs/overview)",
+      "retrieved_at": "2026-07-09T17:04:05.244Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.google.com/google-ads"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616645244_5",
+      "claim_field": "api_breadth",
+      "claim": "broad",
+      "source_url": "https://developers.google.com/google-ads",
+      "source_title": "Google Ads  |  Google for DevelopersGoogleGoogle",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Save time by automating your Google Ads campaign management. Build an application to interact directly with the Google Ads platform or write programmatic scripts.",
+      "retrieved_at": "2026-07-09T17:04:05.244Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.google.com/google-ads"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616645244_6",
+      "claim_field": "mcp_status",
+      "claim": "none_found",
+      "source_url": "https://developers.google.com/google-ads",
+      "source_title": "Google Ads  |  Google for DevelopersGoogleGoogle",
+      "source_type": "developer_portal",
+      "evidence_snippet": "No direct mention of Model Context Protocol (MCP) servers on the page.",
+      "retrieved_at": "2026-07-09T17:04:05.244Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://developers.google.com/google-ads"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 31,
+      "app_name": "Google Ads",
+      "website_hint": "developers.google.com/google-ads",
+      "assigned_category": "Marketing, Ads, Email and Social",
+      "researched_at": "2026-07-09T17:04:05.244Z"
+    },
+    "product": {
+      "normalized_category": "Marketing, Ads, Email and Social",
+      "one_line_description": "Google Ads allows users to promote websites, products, and apps, and create and manage ads across Google Search, Display, and YouTube."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "The provided source does not explicitly mention the authentication methods required for the Google Ads API or scripts."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": "unknown",
+      "access_notes": "The source page describes the existence of Google Ads API and scripts for developers, but does not detail the process for obtaining API credentials or whether human approval is required for developer access. The 'Get started on Google Ads' link appears to be for the main product, not specifically for API credentials."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "SDK",
+        "webhooks"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "Google Ads offers an API and scripts to automate campaign management and interact directly with the Google Ads platform. It also provides webhooks for sending data from Google Ads to CRM systems. This indicates a broad API surface for managing advertising campaigns and data integration."
+    },
+    "mcp": {
+      "mcp_status": "none_found",
+      "mcp_summary": "No information regarding Model Context Protocol (MCP) servers was found in the provided source."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient.",
+      "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0.4,
+        "access_model": 0.4,
+        "public_api": 1,
+        "api_breadth": 0.9,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.74,
+      "requires_human_review": false,
+      "human_review_reason": null
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_access_model_unclear",
+    "risk_auth_methods_unclear",
+    "risk_contradictory_claims",
+    "risk_verdict_unclear"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_access_model_unclear",
+      "risk_auth_methods_unclear",
+      "risk_contradictory_claims",
+      "risk_verdict_unclear"
+    ]
+  }
+}

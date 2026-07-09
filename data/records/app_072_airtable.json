@@ -1,0 +1,181 @@
+{
+  "identity": {
+    "assignment_number": 72,
+    "app_name": "Airtable",
+    "website_hint": "airtable.com/developers",
+    "assigned_category": "Productivity and Project Management",
+    "researched_at": "2026-07-09T17:38:22.735Z"
+  },
+  "product": {
+    "normalized_category": "Productivity and Project Management",
+    "one_line_description": "unclear"
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "unclear methods if not explicitly documented"
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": "unknown",
+    "access_notes": "unclear"
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [],
+    "api_breadth": "unclear",
+    "api_summary": "The existence of an 'Airtable Developers' page implies a public API, but the breadth, specific styles (e.g., REST, GraphQL), and endpoint details are not provided in the source content."
+  },
+  "mcp": {
+    "mcp_status": "unclear",
+    "mcp_summary": "unclear"
+  },
+  "buildability": {
+    "verdict": "unclear",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 0,
+      "access_model": 0,
+      "public_api": 0.5,
+      "api_breadth": 0,
+      "mcp_status": 0
+    },
+    "overall_confidence": 0.1,
+    "requires_human_review": true,
+    "human_review_reason": "The provided source snippet contains no textual information, only an image tag, preventing extraction of most fields beyond the implication of a public API from the page title/URL."
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783618702735_0",
+      "claim_field": "product.normalized_category",
+      "claim": "Productivity and Project Management",
+      "source_url": "Assignment #72",
+      "source_title": "Assignment #72",
+      "source_type": "unknown",
+      "evidence_snippet": "Assigned Category: Productivity and Project Management",
+      "retrieved_at": "2026-07-09T17:38:22.735Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": false,
+        "resolves": false,
+        "redirect_chain": []
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783618702735_1",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://airtable.com/developers",
+      "source_title": "Airtable Developers",
+      "source_type": "developer_portal",
+      "evidence_snippet": "Airtable Developers",
+      "retrieved_at": "2026-07-09T17:38:22.735Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://airtable.com/developers"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 72,
+      "app_name": "Airtable",
+      "website_hint": "airtable.com/developers",
+      "assigned_category": "Productivity and Project Management",
+      "researched_at": "2026-07-09T17:38:22.735Z"
+    },
+    "product": {
+      "normalized_category": "Productivity and Project Management",
+      "one_line_description": "unclear"
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "unclear methods if not explicitly documented"
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": "unknown",
+      "access_notes": "unclear"
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [],
+      "api_breadth": "unclear",
+      "api_summary": "The existence of an 'Airtable Developers' page implies a public API, but the breadth, specific styles (e.g., REST, GraphQL), and endpoint details are not provided in the source content."
+    },
+    "mcp": {
+      "mcp_status": "unclear",
+      "mcp_summary": "unclear"
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient.",
+      "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0,
+        "access_model": 0,
+        "public_api": 0.5,
+        "api_breadth": 0,
+        "mcp_status": 0
+      },
+      "overall_confidence": 0.1,
+      "requires_human_review": true,
+      "human_review_reason": "The provided source snippet contains no textual information, only an image tag, preventing extraction of most fields beyond the implication of a public API from the page title/URL."
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_access_model_unclear",
+    "risk_auth_methods_unclear",
+    "risk_material_evidence_validation_failed",
+    "risk_contradictory_claims",
+    "risk_verdict_unclear",
+    "risk_low_confidence"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_access_model_unclear",
+      "risk_auth_methods_unclear",
+      "risk_material_evidence_validation_failed",
+      "risk_contradictory_claims",
+      "risk_verdict_unclear",
+      "risk_low_confidence"
+    ]
+  }
+}

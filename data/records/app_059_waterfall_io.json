@@ -1,0 +1,615 @@
+{
+  "identity": {
+    "assignment_number": 59,
+    "app_name": "Waterfall.io",
+    "website_hint": "waterfall.io (contact/company intel)",
+    "assigned_category": "Data, SEO and Scraping",
+    "researched_at": "2026-07-09T17:18:14.296Z"
+  },
+  "product": {
+    "normalized_category": "Data, SEO and Scraping",
+    "one_line_description": "Waterfall.io is a B2B data solution providing verified contact and company data through various APIs for sales, marketing, and revenue operations."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "Authentication for the Waterfall API is performed using an API key, which is passed in the 'x-waterfall-api-key' or 'x-api-key' header for API requests."
+  },
+  "developer_access": {
+    "access_model": "sales_gated",
+    "credentials_obtainable_without_human_approval": false,
+    "access_notes": "Access to API credentials appears to be sales-gated, as the primary call to action throughout the website is \"Book a Call\" to discuss use cases with the team, including founders. There is no visible self-serve option for obtaining API keys directly without human interaction."
+  },
+  "api_surface": {
+    "public_api": "yes",
+    "api_styles": [
+      "REST"
+    ],
+    "api_breadth": "moderate",
+    "api_summary": "Waterfall offers a Modular & Scalable GTM API with specific endpoints for various data operations. These include the Prospector API for finding contacts by website, job titles & location, Contact Enrichment API for verified emails and matching emails to business profiles, Phone Enrichment API for mobile numbers, and Job Changes API for tracking customer movements. The API utilizes RESTful principles, as demonstrated by the provided `curl` examples and linked API documentation."
+  },
+  "mcp": {
+    "mcp_status": "none_found",
+    "mcp_summary": "No information regarding Model Context Protocol (MCP) or similar concepts was found on the provided source page."
+  },
+  "buildability": {
+    "verdict": "outreach_required",
+    "primary_blocker": "Access requires contacting enterprise sales team.",
+    "verdict_reasoning": "Public API endpoints exist, but developer credentials cannot be obtained without sales contact."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 1,
+      "access_model": 0.8,
+      "public_api": 1,
+      "api_breadth": 0.9,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.9,
+    "requires_human_review": false,
+    "human_review_reason": null
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783617494296_0",
+      "claim_field": "authentication.auth_methods",
+      "claim": "api_key",
+      "source_url": "https://www.waterfall.io/",
+      "source_title": "Waterfall | One B2B data solution to connect them all",
+      "source_type": "official_doc",
+      "evidence_snippet": "curl --location 'https://api.waterfall.io/v1/prospector' \\\n--header 'x-waterfall-api-key: YOURKEY'",
+      "retrieved_at": "2026-07-09T17:18:14.296Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.waterfall.io/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617494296_1",
+      "claim_field": "authentication.auth_methods",
+      "claim": "api_key",
+      "source_url": "https://www.waterfall.io/",
+      "source_title": "Waterfall | One B2B data solution to connect them all",
+      "source_type": "official_doc",
+      "evidence_snippet": "curl --location 'https://api.waterfall.io/v1/prospector' \\\n--header 'x-api-key: your_key'",
+      "retrieved_at": "2026-07-09T17:18:14.296Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.waterfall.io/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617494296_2",
+      "claim_field": "developer_access.access_model",
+      "claim": "sales_gated",
+      "source_url": "https://www.waterfall.io/",
+      "source_title": "Waterfall | One B2B data solution to connect them all",
+      "source_type": "official_doc",
+      "evidence_snippet": "Book a Call",
+      "retrieved_at": "2026-07-09T17:18:14.296Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.waterfall.io/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617494296_3",
+      "claim_field": "developer_access.access_model",
+      "claim": "sales_gated",
+      "source_url": "https://www.waterfall.io/",
+      "source_title": "Waterfall | One B2B data solution to connect them all",
+      "source_type": "official_doc",
+      "evidence_snippet": "Book a call: Every company has different needs. Talk to our team (most likely one of the founders) to share your use case and see how Waterfall can help.",
+      "retrieved_at": "2026-07-09T17:18:14.296Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.waterfall.io/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617494296_4",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": false,
+      "source_url": "https://www.waterfall.io/",
+      "source_title": "Waterfall | One B2B data solution to connect them all",
+      "source_type": "official_doc",
+      "evidence_snippet": "Book a call: Every company has different needs. Talk to our team (most likely one of the founders) to share your use case and see how Waterfall can help.",
+      "retrieved_at": "2026-07-09T17:18:14.296Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.waterfall.io/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617494296_5",
+      "claim_field": "api_surface.public_api",
+      "claim": "yes",
+      "source_url": "https://www.waterfall.io/",
+      "source_title": "Waterfall | One B2B data solution to connect them all",
+      "source_type": "official_doc",
+      "evidence_snippet": "[View API doc](https://docs.waterfall.io/waterfall-v1-1)",
+      "retrieved_at": "2026-07-09T17:18:14.296Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.waterfall.io/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617494296_6",
+      "claim_field": "api_surface.api_styles",
+      "claim": "REST",
+      "source_url": "https://www.waterfall.io/",
+      "source_title": "Waterfall | One B2B data solution to connect them all",
+      "source_type": "official_doc",
+      "evidence_snippet": "curl --location 'https://api.waterfall.io/v1/prospector' \\\n--header 'Content-Type: application/json'",
+      "retrieved_at": "2026-07-09T17:18:14.296Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.waterfall.io/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617494296_7",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "moderate",
+      "source_url": "https://www.waterfall.io/",
+      "source_title": "Waterfall | One B2B data solution to connect them all",
+      "source_type": "official_doc",
+      "evidence_snippet": "Find Contacts\nFind contacts by website, job titles & location",
+      "retrieved_at": "2026-07-09T17:18:14.296Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.waterfall.io/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617494296_8",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "moderate",
+      "source_url": "https://www.waterfall.io/",
+      "source_title": "Waterfall | One B2B data solution to connect them all",
+      "source_type": "official_doc",
+      "evidence_snippet": "Find Verified Emails\nFind real-time verified emails",
+      "retrieved_at": "2026-07-09T17:18:14.296Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.waterfall.io/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617494296_9",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "moderate",
+      "source_url": "https://www.waterfall.io/",
+      "source_title": "Waterfall | One B2B data solution to connect them all",
+      "source_type": "official_doc",
+      "evidence_snippet": "Find Mobile Numbers\nGet direct numbers for more connects and conversations with decision-makers",
+      "retrieved_at": "2026-07-09T17:18:14.296Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.waterfall.io/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617494296_10",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "moderate",
+      "source_url": "https://www.waterfall.io/",
+      "source_title": "Waterfall | One B2B data solution to connect them all",
+      "source_type": "official_doc",
+      "evidence_snippet": "Track Champions\nMonitor your best customers in their new positions",
+      "retrieved_at": "2026-07-09T17:18:14.296Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.waterfall.io/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617494296_11",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "moderate",
+      "source_url": "https://www.waterfall.io/",
+      "source_title": "Waterfall | One B2B data solution to connect them all",
+      "source_type": "official_doc",
+      "evidence_snippet": "Match Emails to Business Profiles\nTurn emails into complete business profiles - ready for scoring, segmenting and outreach",
+      "retrieved_at": "2026-07-09T17:18:14.296Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.waterfall.io/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617494296_12",
+      "claim_field": "api_surface.api_summary",
+      "claim": "Prospector API",
+      "source_url": "https://www.waterfall.io/",
+      "source_title": "Waterfall | One B2B data solution to connect them all",
+      "source_type": "official_doc",
+      "evidence_snippet": "Prospector API",
+      "retrieved_at": "2026-07-09T17:18:14.296Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.waterfall.io/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617494296_13",
+      "claim_field": "api_surface.api_summary",
+      "claim": "Contact Enrichment API",
+      "source_url": "https://www.waterfall.io/",
+      "source_title": "Waterfall | One B2B data solution to connect them all",
+      "source_type": "official_doc",
+      "evidence_snippet": "Contact Enrichment API",
+      "retrieved_at": "2026-07-09T17:18:14.296Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.waterfall.io/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617494296_14",
+      "claim_field": "api_surface.api_summary",
+      "claim": "Phone Enrichment API",
+      "source_url": "https://www.waterfall.io/",
+      "source_title": "Waterfall | One B2B data solution to connect them all",
+      "source_type": "official_doc",
+      "evidence_snippet": "Phone Enrichment API",
+      "retrieved_at": "2026-07-09T17:18:14.296Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.waterfall.io/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617494296_15",
+      "claim_field": "api_surface.api_summary",
+      "claim": "Job Changes API",
+      "source_url": "https://www.waterfall.io/",
+      "source_title": "Waterfall | One B2B data solution to connect them all",
+      "source_type": "official_doc",
+      "evidence_snippet": "Job Changes API",
+      "retrieved_at": "2026-07-09T17:18:14.296Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.waterfall.io/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783617494296_16",
+      "claim_field": "mcp.mcp_status",
+      "claim": "none_found",
+      "source_url": "https://www.waterfall.io/",
+      "source_title": "Waterfall | One B2B data solution to connect them all",
+      "source_type": "official_doc",
+      "evidence_snippet": "No direct mention of Model Context Protocol (MCP) was found on the page.",
+      "retrieved_at": "2026-07-09T17:18:14.296Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://www.waterfall.io/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 59,
+      "app_name": "Waterfall.io",
+      "website_hint": "waterfall.io (contact/company intel)",
+      "assigned_category": "Data, SEO and Scraping",
+      "researched_at": "2026-07-09T17:18:14.296Z"
+    },
+    "product": {
+      "normalized_category": "Data, SEO and Scraping",
+      "one_line_description": "Waterfall.io is a B2B data solution providing verified contact and company data through various APIs for sales, marketing, and revenue operations."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "Authentication for the Waterfall API is performed using an API key, which is passed in the 'x-waterfall-api-key' or 'x-api-key' header for API requests."
+    },
+    "developer_access": {
+      "access_model": "sales_gated",
+      "credentials_obtainable_without_human_approval": false,
+      "access_notes": "Access to API credentials appears to be sales-gated, as the primary call to action throughout the website is \"Book a Call\" to discuss use cases with the team, including founders. There is no visible self-serve option for obtaining API keys directly without human interaction."
+    },
+    "api_surface": {
+      "public_api": "yes",
+      "api_styles": [
+        "REST"
+      ],
+      "api_breadth": "moderate",
+      "api_summary": "Waterfall offers a Modular & Scalable GTM API with specific endpoints for various data operations. These include the Prospector API for finding contacts by website, job titles & location, Contact Enrichment API for verified emails and matching emails to business profiles, Phone Enrichment API for mobile numbers, and Job Changes API for tracking customer movements. The API utilizes RESTful principles, as demonstrated by the provided `curl` examples and linked API documentation."
+    },
+    "mcp": {
+      "mcp_status": "none_found",
+      "mcp_summary": "No information regarding Model Context Protocol (MCP) or similar concepts was found on the provided source page."
+    },
+    "buildability": {
+      "verdict": "outreach_required",
+      "primary_blocker": "Access requires contacting enterprise sales team.",
+      "verdict_reasoning": "Public API endpoints exist, but developer credentials cannot be obtained without sales contact."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 1,
+        "access_model": 0.8,
+        "public_api": 1,
+        "api_breadth": 0.9,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.9,
+      "requires_human_review": false,
+      "human_review_reason": null
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_auth_methods_unclear",
+    "risk_material_evidence_validation_failed"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_auth_methods_unclear",
+      "risk_material_evidence_validation_failed"
+    ]
+  }
+}

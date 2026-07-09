@@ -1,0 +1,472 @@
+{
+  "identity": {
+    "assignment_number": 33,
+    "app_name": "LinkedIn Ads",
+    "website_hint": "learn.microsoft.com/linkedin/marketing",
+    "assigned_category": "Marketing, Ads, Email and Social",
+    "researched_at": "2026-07-09T12:31:07.090Z"
+  },
+  "product": {
+    "normalized_category": "Marketing, Ads, Email and Social",
+    "one_line_description": "A platform that offers APIs to manage LinkedIn advertising campaigns, track performance, sync leads, and analyze professional audience insights."
+  },
+  "authentication": {
+    "auth_methods": [
+      "oauth2"
+    ],
+    "auth_summary": "Authenticating with the LinkedIn Marketing API requires OAuth 2.0. Specifically, marketing use cases must use 3-legged OAuth (Member Authorization) for explicit member consent; the 2-legged Client Credentials flow is not supported for any marketing use cases."
+  },
+  "developer_access": {
+    "access_model": "partner_gated",
+    "credentials_obtainable_without_human_approval": false,
+    "access_notes": "Developers must have an application that is explicitly approved and 'accepted into the Development Tier' of the LinkedIn Marketing API Program before they can access the API and manage Ad Accounts."
+  },
+  "api_surface": {
+    "public_api": "limited",
+    "api_styles": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "api_summary": "The LinkedIn Marketing API program offers RESTful APIs covering a broad array of marketing functions including Campaign Management, Reporting & Analytics, Event Management, Community Management, Lead Sync, Matched Audiences, Audience Insights, Media Planning, Conversions, and Company Intelligence."
+  },
+  "mcp": {
+    "mcp_status": "none_found",
+    "mcp_summary": "No mention of an official or community Model Context Protocol (MCP) server for LinkedIn Ads was found in the source documentation."
+  },
+  "buildability": {
+    "verdict": "outreach_required",
+    "primary_blocker": "Requires formal ISV or partner program approval from vendor.",
+    "verdict_reasoning": "Public API endpoints exist, but developer credentials require formal legal/partner approval."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 1,
+      "access_model": 0.9,
+      "public_api": 0.9,
+      "api_breadth": 0.9,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.94,
+    "requires_human_review": false,
+    "human_review_reason": null
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783600267092_0",
+      "claim_field": "authentication.auth_methods",
+      "claim": [
+        "oauth2"
+      ],
+      "source_url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/authentication",
+      "source_title": "Authenticating with OAuth 2.0 Overview - LinkedIn | Microsoft Learn",
+      "source_type": "official_doc",
+      "evidence_snippet": "The LinkedIn API uses OAuth 2.0 for member (user) authorization and API authentication.",
+      "retrieved_at": "2026-07-09T12:31:07.092Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://learn.microsoft.com/en-us/linkedin/shared/authentication/authentication"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783600267093_1",
+      "claim_field": "authentication.auth_summary",
+      "claim": "3-legged OAuth (Member Authorization) is required; 2-legged is not available for marketing.",
+      "source_url": "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started?view=li-lms-2026-06",
+      "source_title": "Key Concepts - LinkedIn | Microsoft Learn",
+      "source_type": "official_doc",
+      "evidence_snippet": "The LinkedIn Advertising API gives you access to the following permissions. All these permission scopes are 3-legged permissions requiring explicit consent from a LinkedIn member. The 2-legged client credentials flow is not available for any marketing use cases.",
+      "retrieved_at": "2026-07-09T12:31:07.093Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started?view=li-lms-2026-06"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783600267093_2",
+      "claim_field": "developer_access.access_model",
+      "claim": "partner_gated",
+      "source_url": "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started?view=li-lms-2026-06",
+      "source_title": "Key Concepts - LinkedIn | Microsoft Learn",
+      "source_type": "official_doc",
+      "evidence_snippet": "Once your application has been accepted into the Development Tier, you can manage and view your Ad Accounts from the developer portal.",
+      "retrieved_at": "2026-07-09T12:31:07.093Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started?view=li-lms-2026-06"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783600267093_3",
+      "claim_field": "developer_access.credentials_obtainable_without_human_approval",
+      "claim": false,
+      "source_url": "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started?view=li-lms-2026-06",
+      "source_title": "Key Concepts - LinkedIn | Microsoft Learn",
+      "source_type": "official_doc",
+      "evidence_snippet": "Once you have a developer application that has been given access to the LinkedIn Marketing API Program, you're ready to start generating OAuth access tokens to make API calls on behalf of authenticated members.",
+      "retrieved_at": "2026-07-09T12:31:07.093Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started?view=li-lms-2026-06"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783600267093_4",
+      "claim_field": "api_surface.api_styles",
+      "claim": [
+        "REST"
+      ],
+      "source_url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/authentication",
+      "source_title": "Authenticating with OAuth 2.0 Overview - LinkedIn | Microsoft Learn",
+      "source_type": "official_doc",
+      "evidence_snippet": "You can explore the OAuth Sample Applications that enables you to try out RESTful OAuth calls to the LinkedIn Authentication server.",
+      "retrieved_at": "2026-07-09T12:31:07.093Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://learn.microsoft.com/en-us/linkedin/shared/authentication/authentication"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_rr_1783600516452_0",
+      "claim_field": "api_surface.public_api",
+      "claim": "limited",
+      "source_url": "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started?view=li-lms-2026-06",
+      "source_title": "Key Concepts - LinkedIn | Microsoft Learn",
+      "source_type": "official_doc",
+      "evidence_snippet": "Once your application has been accepted into the Development Tier, you can manage and view your Ad Accounts from the developer portal.",
+      "retrieved_at": "2026-07-09T12:35:16.452Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started?view=li-lms-2026-06"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_rr_1783600516452_1",
+      "claim_field": "api_surface.api_breadth",
+      "claim": "broad",
+      "source_url": "https://learn.microsoft.com/en-us/linkedin/marketing/?view=li-lms-2026-06",
+      "source_title": "LinkedIn Marketing API Program - LinkedIn | Microsoft Learn",
+      "source_type": "official_doc",
+      "evidence_snippet": "The platform offers APIs to create LinkedIn marketing campaigns, to report campaign performance, to manage leads, and to grow a company Page.",
+      "retrieved_at": "2026-07-09T12:35:16.452Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://learn.microsoft.com/en-us/linkedin/marketing/?view=li-lms-2026-06"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_rr_1783600516452_2",
+      "claim_field": "api_surface.api_summary",
+      "claim": "The LinkedIn Marketing API program offers RESTful APIs covering a broad array of marketing functions including Campaign Management, Reporting & Analytics, Event Management, Community Management, Lead Sync, Matched Audiences, Audience Insights, Media Planning, Conversions, and Company Intelligence.",
+      "source_url": "https://learn.microsoft.com/en-us/linkedin/marketing/?view=li-lms-2026-06",
+      "source_title": "LinkedIn Marketing API Program - LinkedIn | Microsoft Learn",
+      "source_type": "official_doc",
+      "evidence_snippet": "The LinkedIn Marketing Platform helps businesses grow by building technology to reach, engage, and convert professional audiences at scale. The platform offers APIs to create LinkedIn marketing campaigns, to report campaign performance, to manage leads, and to grow a company Page.\n\nLinkedIn Marketing APIs\nAdvertising\nEvent Management\nCommunity Management\nLead Sync\nMatched Audiences\nAudience Insights\nMedia Planning\nConversions\nCompany Intelligence",
+      "retrieved_at": "2026-07-09T12:35:16.452Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://learn.microsoft.com/en-us/linkedin/marketing/?view=li-lms-2026-06"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 33,
+      "app_name": "LinkedIn Ads",
+      "website_hint": "learn.microsoft.com/linkedin/marketing",
+      "assigned_category": "Marketing, Ads, Email and Social",
+      "researched_at": "2026-07-09T12:31:07.090Z"
+    },
+    "product": {
+      "normalized_category": "Marketing, Ads, Email and Social",
+      "one_line_description": "A platform that offers APIs to manage LinkedIn advertising campaigns, track performance, sync leads, and analyze professional audience insights."
+    },
+    "authentication": {
+      "auth_methods": [
+        "oauth2"
+      ],
+      "auth_summary": "Authenticating with the LinkedIn Marketing API requires OAuth 2.0. Specifically, marketing use cases must use 3-legged OAuth (Member Authorization) for explicit member consent; the 2-legged Client Credentials flow is not supported for any marketing use cases."
+    },
+    "developer_access": {
+      "access_model": "partner_gated",
+      "credentials_obtainable_without_human_approval": false,
+      "access_notes": "Developers must have an application that is explicitly approved and 'accepted into the Development Tier' of the LinkedIn Marketing API Program before they can access the API and manage Ad Accounts."
+    },
+    "api_surface": {
+      "public_api": "limited",
+      "api_styles": [
+        "REST"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "LinkedIn offers RESTful APIs covering a broad range of marketing activities, including Campaign Management, Reporting & Analytics, Event Management, Community Management, Lead Sync, Matched Audiences, Audience Insights, Media Planning, Conversions, and Company Intelligence."
+    },
+    "mcp": {
+      "mcp_status": "none_found",
+      "mcp_summary": "No mention of an official or community Model Context Protocol (MCP) server for LinkedIn Ads was found in the source documentation."
+    },
+    "buildability": {
+      "verdict": "outreach_required",
+      "primary_blocker": "Requires formal ISV or partner program approval from vendor.",
+      "verdict_reasoning": "Public API endpoints exist, but developer credentials require formal legal/partner approval."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 1,
+        "access_model": 0.9,
+        "public_api": 0.9,
+        "api_breadth": 0.9,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.94,
+      "requires_human_review": false,
+      "human_review_reason": null
+    }
+  },
+  "critic_result": {
+    "challenged_fields": [
+      "api_surface.public_api",
+      "api_surface.api_breadth",
+      "api_surface.api_summary"
+    ],
+    "critic_analysis": {
+      "api_surface.public_api": "There is no supporting evidence snippet in the provided pool that explicitly evaluates or validates the 'limited' public API status.",
+      "api_surface.api_breadth": "The classification of API breadth as 'broad' lacks any direct supporting evidence or descriptive context in the provided snippets.",
+      "api_surface.api_summary": "The extensive summary listing specific API components (e.g., Campaign Management, Reporting, Lead Sync) is completely unsupported by the provided evidence pool.",
+      "developer_access.access_model": "Verified. The evidence confirms that applications must be explicitly accepted into the 'Development Tier' before they can access the API, supporting the 'partner_gated' classification.",
+      "authentication.auth_methods": "Verified. The snippet explicitly states that the LinkedIn API uses OAuth 2.0 for user authorization and API authentication."
+    },
+    "error_taxonomy_flags": []
+  },
+  "targeted_reresearch_result": {
+    "identity": {
+      "assignment_number": 33,
+      "app_name": "LinkedIn Ads",
+      "website_hint": "learn.microsoft.com/linkedin/marketing",
+      "assigned_category": "Marketing, Ads, Email and Social",
+      "researched_at": "2026-07-09T12:31:07.090Z"
+    },
+    "product": {
+      "normalized_category": "Marketing, Ads, Email and Social",
+      "one_line_description": "A platform that offers APIs to manage LinkedIn advertising campaigns, track performance, sync leads, and analyze professional audience insights."
+    },
+    "authentication": {
+      "auth_methods": [
+        "oauth2"
+      ],
+      "auth_summary": "Authenticating with the LinkedIn Marketing API requires OAuth 2.0. Specifically, marketing use cases must use 3-legged OAuth (Member Authorization) for explicit member consent; the 2-legged Client Credentials flow is not supported for any marketing use cases."
+    },
+    "developer_access": {
+      "access_model": "partner_gated",
+      "credentials_obtainable_without_human_approval": false,
+      "access_notes": "Developers must have an application that is explicitly approved and 'accepted into the Development Tier' of the LinkedIn Marketing API Program before they can access the API and manage Ad Accounts."
+    },
+    "api_surface": {
+      "public_api": "limited",
+      "api_styles": [
+        "REST"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "The LinkedIn Marketing API program offers RESTful APIs covering a broad array of marketing functions including Campaign Management, Reporting & Analytics, Event Management, Community Management, Lead Sync, Matched Audiences, Audience Insights, Media Planning, Conversions, and Company Intelligence."
+    },
+    "mcp": {
+      "mcp_status": "none_found",
+      "mcp_summary": "No mention of an official or community Model Context Protocol (MCP) server for LinkedIn Ads was found in the source documentation."
+    },
+    "buildability": {
+      "verdict": "outreach_required",
+      "primary_blocker": "Requires formal ISV or partner program approval from vendor.",
+      "verdict_reasoning": "Public API endpoints exist, but developer credentials require formal legal/partner approval."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 1,
+        "access_model": 0.9,
+        "public_api": 0.9,
+        "api_breadth": 0.9,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.94,
+      "requires_human_review": false,
+      "human_review_reason": null
+    }
+  },
+  "final_agent_result": {
+    "identity": {
+      "assignment_number": 33,
+      "app_name": "LinkedIn Ads",
+      "website_hint": "learn.microsoft.com/linkedin/marketing",
+      "assigned_category": "Marketing, Ads, Email and Social",
+      "researched_at": "2026-07-09T12:31:07.090Z"
+    },
+    "product": {
+      "normalized_category": "Marketing, Ads, Email and Social",
+      "one_line_description": "A platform that offers APIs to manage LinkedIn advertising campaigns, track performance, sync leads, and analyze professional audience insights."
+    },
+    "authentication": {
+      "auth_methods": [
+        "oauth2"
+      ],
+      "auth_summary": "Authenticating with the LinkedIn Marketing API requires OAuth 2.0. Specifically, marketing use cases must use 3-legged OAuth (Member Authorization) for explicit member consent; the 2-legged Client Credentials flow is not supported for any marketing use cases."
+    },
+    "developer_access": {
+      "access_model": "partner_gated",
+      "credentials_obtainable_without_human_approval": false,
+      "access_notes": "Developers must have an application that is explicitly approved and 'accepted into the Development Tier' of the LinkedIn Marketing API Program before they can access the API and manage Ad Accounts."
+    },
+    "api_surface": {
+      "public_api": "limited",
+      "api_styles": [
+        "REST"
+      ],
+      "api_breadth": "broad",
+      "api_summary": "The LinkedIn Marketing API program offers RESTful APIs covering a broad array of marketing functions including Campaign Management, Reporting & Analytics, Event Management, Community Management, Lead Sync, Matched Audiences, Audience Insights, Media Planning, Conversions, and Company Intelligence."
+    },
+    "mcp": {
+      "mcp_status": "none_found",
+      "mcp_summary": "No mention of an official or community Model Context Protocol (MCP) server for LinkedIn Ads was found in the source documentation."
+    },
+    "buildability": {
+      "verdict": "outreach_required",
+      "primary_blocker": "Requires formal ISV or partner program approval from vendor.",
+      "verdict_reasoning": "Public API endpoints exist, but developer credentials require formal legal/partner approval."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 1,
+        "access_model": 0.9,
+        "public_api": 0.9,
+        "api_breadth": 0.9,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.94,
+      "requires_human_review": false,
+      "human_review_reason": null
+    }
+  },
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0",
+    "current_stage": "final_agent",
+    "errors": [],
+    "unresolved_questions": []
+  }
+}

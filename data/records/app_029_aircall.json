@@ -1,0 +1,414 @@
+{
+  "identity": {
+    "assignment_number": 29,
+    "app_name": "Aircall",
+    "website_hint": "aircall.io",
+    "assigned_category": "Communications and Messaging",
+    "researched_at": "2026-07-09T17:02:55.601Z"
+  },
+  "product": {
+    "normalized_category": "Communications and Messaging",
+    "one_line_description": "Aircall is an AI-powered platform that provides intelligent voice agents, automated workflows, and real-time coaching for customer communications, integrating with CRM, help desk, and business tools."
+  },
+  "authentication": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "auth_summary": "The provided source page does not contain information about specific API authentication methods for developers, such as API keys, OAuth, or other credentials."
+  },
+  "developer_access": {
+    "access_model": "unclear",
+    "credentials_obtainable_without_human_approval": "unknown",
+    "access_notes": "The source mentions '250+ integrations' and 'Native integrations with CRM, help desk, and business tools' which implies an API exists for integration purposes. However, there is no information on how a developer can obtain API credentials (e.g., API keys, OAuth client IDs) or if this process is self-serve, requires human approval, or is associated with a specific plan. The 'TRY FOR FREE' option is for the general product, not explicitly for API developer access. An 'AI implementation guide' is mentioned as 'no developer needed', which further muddies whether direct developer API access is available or how to get it."
+  },
+  "api_surface": {
+    "public_api": "unclear",
+    "api_styles": [],
+    "api_breadth": "unclear",
+    "api_summary": "While Aircall highlights '250+ integrations that connect every conversation to your business tools' and 'Native integrations with CRM, help desk, and business tools', suggesting the presence of an underlying API for these integrations, the provided page does not offer details about a publicly available developer API. There is no mention of API documentation, endpoints, or specific API styles (e.g., REST, GraphQL, SDKs). The statement 'no developer needed' for the AI implementation guide indicates that some advanced features might not be exposed via a direct developer API or are managed internally."
+  },
+  "mcp": {
+    "mcp_status": "none_found",
+    "mcp_summary": "No mention of Model Context Protocol or related functionalities was found on the provided source page."
+  },
+  "buildability": {
+    "verdict": "unclear",
+    "primary_blocker": "Research data ambiguous or insufficient.",
+    "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+  },
+  "confidence": {
+    "field_confidence": {
+      "auth_methods": 0.2,
+      "access_model": 0.2,
+      "public_api": 0.3,
+      "api_breadth": 0.2,
+      "mcp_status": 1
+    },
+    "overall_confidence": 0.3,
+    "requires_human_review": true,
+    "human_review_reason": "The existence of '250+ integrations' strongly suggests an API, but the source page provides no details on how developers can access it, what its capabilities are, or how to obtain credentials. The 'no developer needed' claim for AI implementation also creates ambiguity regarding the nature and accessibility of a public developer API."
+  },
+  "evidence_pool": [
+    {
+      "evidence_id": "ev_fp_1783616575601_0",
+      "claim_field": "product.one_line_description",
+      "claim": "Aircall is an AI-powered platform that provides intelligent voice agents, automated workflows, and real-time coaching for customer communications, integrating with CRM, help desk, and business tools.",
+      "source_url": "https://aircall.io/",
+      "source_title": "AI-Powered Customer Communications Platform for SMBs & Enterprise | Aircall",
+      "source_type": "official_doc",
+      "evidence_snippet": "Aircall is the intuitive, AI-powered platform bringing together intelligent voice agents, \nautomated workflows, & adaptive real-time coaching at scale.",
+      "retrieved_at": "2026-07-09T17:02:55.601Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://aircall.io/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616575601_1",
+      "claim_field": "product.one_line_description",
+      "claim": "Aircall is an AI-powered platform that provides intelligent voice agents, automated workflows, and real-time coaching for customer communications, integrating with CRM, help desk, and business tools.",
+      "source_url": "https://aircall.io/",
+      "source_title": "AI-Powered Customer Communications Platform for SMBs & Enterprise | Aircall",
+      "source_type": "official_doc",
+      "evidence_snippet": "AI-Powered Customer Communications Platform for SMBs & Enterprise | Aircall",
+      "retrieved_at": "2026-07-09T17:02:55.601Z",
+      "supports_claim": false,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://aircall.io/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": false,
+        "match_type": "not_found"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616575601_2",
+      "claim_field": "product.one_line_description",
+      "claim": "Aircall is an AI-powered platform that provides intelligent voice agents, automated workflows, and real-time coaching for customer communications, integrating with CRM, help desk, and business tools.",
+      "source_url": "https://aircall.io/",
+      "source_title": "AI-Powered Customer Communications Platform for SMBs & Enterprise | Aircall",
+      "source_type": "official_doc",
+      "evidence_snippet": "Native integrations with CRM, help desk, and business tools automatically sync conversations and customer data across\nyour systems.",
+      "retrieved_at": "2026-07-09T17:02:55.601Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://aircall.io/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616575601_3",
+      "claim_field": "developer_access.access_notes",
+      "claim": "The source mentions '250+ integrations' and 'Native integrations with CRM, help desk, and business tools' which implies an API exists for integration purposes. However, there is no information on how a developer can obtain API credentials (e.g., API keys, OAuth client IDs) or if this process is self-serve, requires human approval, or is associated with a specific plan. The 'TRY FOR FREE' option is for the general product, not explicitly for API developer access. An 'AI implementation guide' is mentioned as 'no developer needed', which further muddies whether direct developer API access is available or how to get it.",
+      "source_url": "https://aircall.io/",
+      "source_title": "AI-Powered Customer Communications Platform for SMBs & Enterprise | Aircall",
+      "source_type": "official_doc",
+      "evidence_snippet": "250+ integrations that connect every conversation to your business tools.",
+      "retrieved_at": "2026-07-09T17:02:55.601Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://aircall.io/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616575601_4",
+      "claim_field": "developer_access.access_notes",
+      "claim": "The source mentions '250+ integrations' and 'Native integrations with CRM, help desk, and business tools' which implies an API exists for integration purposes. However, there is no information on how a developer can obtain API credentials (e.g., API keys, OAuth client IDs) or if this process is self-serve, requires human approval, or is associated with a specific plan. The 'TRY FOR FREE' option is for the general product, not explicitly for API developer access. An 'AI implementation guide' is mentioned as 'no developer needed', which further muddies whether direct developer API access is available or how to get it.",
+      "source_url": "https://aircall.io/",
+      "source_title": "AI-Powered Customer Communications Platform for SMBs & Enterprise | Aircall",
+      "source_type": "official_doc",
+      "evidence_snippet": "Native integrations with CRM, help desk, and business tools automatically sync conversations and customer data across\nyour systems.",
+      "retrieved_at": "2026-07-09T17:02:55.601Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://aircall.io/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616575601_5",
+      "claim_field": "developer_access.access_notes",
+      "claim": "The source mentions '250+ integrations' and 'Native integrations with CRM, help desk, and business tools' which implies an API exists for integration purposes. However, there is no information on how a developer can obtain API credentials (e.g., API keys, OAuth client IDs) or if this process is self-serve, requires human approval, or is associated with a specific plan. The 'TRY FOR FREE' option is for the general product, not explicitly for API developer access. An 'AI implementation guide' is mentioned as 'no developer needed', which further muddies whether direct developer API access is available or how to get it.",
+      "source_url": "https://aircall.io/",
+      "source_title": "AI-Powered Customer Communications Platform for SMBs & Enterprise | Aircall",
+      "source_type": "official_doc",
+      "evidence_snippet": "[TRY FOR FREE](/get-started/)",
+      "retrieved_at": "2026-07-09T17:02:55.601Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://aircall.io/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616575601_6",
+      "claim_field": "developer_access.access_notes",
+      "claim": "The source mentions '250+ integrations' and 'Native integrations with CRM, help desk, and business tools' which implies an API exists for integration purposes. However, there is no information on how a developer can obtain API credentials (e.g., API keys, OAuth client IDs) or if this process is self-serve, requires human approval, or is associated with a specific plan. The 'TRY FOR FREE' option is for the general product, not explicitly for API developer access. An 'AI implementation guide' is mentioned as 'no developer needed', which further muddies whether direct developer API access is available or how to get it.",
+      "source_url": "https://aircall.io/",
+      "source_title": "AI-Powered Customer Communications Platform for SMBs & Enterprise | Aircall",
+      "source_type": "official_doc",
+      "evidence_snippet": "The definitive AI implementation guide, no developer needed.",
+      "retrieved_at": "2026-07-09T17:02:55.601Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://aircall.io/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616575601_7",
+      "claim_field": "api_surface.api_summary",
+      "claim": "While Aircall highlights '250+ integrations that connect every conversation to your business tools' and 'Native integrations with CRM, help desk, and business tools', suggesting the presence of an underlying API for these integrations, the provided page does not offer details about a publicly available developer API. There is no mention of API documentation, endpoints, or specific API styles (e.g., REST, GraphQL, SDKs). The statement 'no developer needed' for the AI implementation guide indicates that some advanced features might not be exposed via a direct developer API or are managed internally.",
+      "source_url": "https://aircall.io/",
+      "source_title": "AI-Powered Customer Communications Platform for SMBs & Enterprise | Aircall",
+      "source_type": "official_doc",
+      "evidence_snippet": "250+ integrations that connect every conversation to your business tools.",
+      "retrieved_at": "2026-07-09T17:02:55.601Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://aircall.io/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616575601_8",
+      "claim_field": "api_surface.api_summary",
+      "claim": "While Aircall highlights '250+ integrations that connect every conversation to your business tools' and 'Native integrations with CRM, help desk, and business tools', suggesting the presence of an underlying API for these integrations, the provided page does not offer details about a publicly available developer API. There is no mention of API documentation, endpoints, or specific API styles (e.g., REST, GraphQL, SDKs). The statement 'no developer needed' for the AI implementation guide indicates that some advanced features might not be exposed via a direct developer API or are managed internally.",
+      "source_url": "https://aircall.io/",
+      "source_title": "AI-Powered Customer Communications Platform for SMBs & Enterprise | Aircall",
+      "source_type": "official_doc",
+      "evidence_snippet": "Native integrations with CRM, help desk, and business tools automatically sync conversations and customer data across\nyour systems.",
+      "retrieved_at": "2026-07-09T17:02:55.601Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://aircall.io/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": false,
+        "normalized_match": true,
+        "match_type": "normalized"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    },
+    {
+      "evidence_id": "ev_fp_1783616575601_9",
+      "claim_field": "api_surface.api_summary",
+      "claim": "While Aircall highlights '250+ integrations that connect every conversation to your business tools' and 'Native integrations with CRM, help desk, and business tools', suggesting the presence of an underlying API for these integrations, the provided page does not offer details about a publicly available developer API. There is no mention of API documentation, endpoints, or specific API styles (e.g., REST, GraphQL, SDKs). The statement 'no developer needed' for the AI implementation guide indicates that some advanced features might not be exposed via a direct developer API or are managed internally.",
+      "source_url": "https://aircall.io/",
+      "source_title": "AI-Powered Customer Communications Platform for SMBs & Enterprise | Aircall",
+      "source_type": "official_doc",
+      "evidence_snippet": "The definitive AI implementation guide, no developer needed.",
+      "retrieved_at": "2026-07-09T17:02:55.601Z",
+      "supports_claim": true,
+      "fetch_mode": "http",
+      "url_status": {
+        "format_valid": true,
+        "resolves": true,
+        "status_code": 200,
+        "redirect_chain": [
+          "https://aircall.io/"
+        ]
+      },
+      "snippet_match_status": {
+        "exact_match": true,
+        "normalized_match": true,
+        "match_type": "exact"
+      },
+      "semantic_support_status": {
+        "supported": true,
+        "critic_notes": ""
+      }
+    }
+  ],
+  "first_pass": {
+    "identity": {
+      "assignment_number": 29,
+      "app_name": "Aircall",
+      "website_hint": "aircall.io",
+      "assigned_category": "Communications and Messaging",
+      "researched_at": "2026-07-09T17:02:55.601Z"
+    },
+    "product": {
+      "normalized_category": "Communications and Messaging",
+      "one_line_description": "Aircall is an AI-powered platform that provides intelligent voice agents, automated workflows, and real-time coaching for customer communications, integrating with CRM, help desk, and business tools."
+    },
+    "authentication": {
+      "auth_methods": [
+        "unclear"
+      ],
+      "auth_summary": "The provided source page does not contain information about specific API authentication methods for developers, such as API keys, OAuth, or other credentials."
+    },
+    "developer_access": {
+      "access_model": "unclear",
+      "credentials_obtainable_without_human_approval": "unknown",
+      "access_notes": "The source mentions '250+ integrations' and 'Native integrations with CRM, help desk, and business tools' which implies an API exists for integration purposes. However, there is no information on how a developer can obtain API credentials (e.g., API keys, OAuth client IDs) or if this process is self-serve, requires human approval, or is associated with a specific plan. The 'TRY FOR FREE' option is for the general product, not explicitly for API developer access. An 'AI implementation guide' is mentioned as 'no developer needed', which further muddies whether direct developer API access is available or how to get it."
+    },
+    "api_surface": {
+      "public_api": "unclear",
+      "api_styles": [],
+      "api_breadth": "unclear",
+      "api_summary": "While Aircall highlights '250+ integrations that connect every conversation to your business tools' and 'Native integrations with CRM, help desk, and business tools', suggesting the presence of an underlying API for these integrations, the provided page does not offer details about a publicly available developer API. There is no mention of API documentation, endpoints, or specific API styles (e.g., REST, GraphQL, SDKs). The statement 'no developer needed' for the AI implementation guide indicates that some advanced features might not be exposed via a direct developer API or are managed internally."
+    },
+    "mcp": {
+      "mcp_status": "none_found",
+      "mcp_summary": "No mention of Model Context Protocol or related functionalities was found on the provided source page."
+    },
+    "buildability": {
+      "verdict": "unclear",
+      "primary_blocker": "Research data ambiguous or insufficient.",
+      "verdict_reasoning": "Critical atomic facts regarding public API availability or credential gating remain unclear."
+    },
+    "confidence": {
+      "field_confidence": {
+        "auth_methods": 0.2,
+        "access_model": 0.2,
+        "public_api": 0.3,
+        "api_breadth": 0.2,
+        "mcp_status": 1
+      },
+      "overall_confidence": 0.3,
+      "requires_human_review": true,
+      "human_review_reason": "The existence of '250+ integrations' strongly suggests an API, but the source page provides no details on how developers can access it, what its capabilities are, or how to obtain credentials. The 'no developer needed' claim for AI implementation also creates ambiguity regarding the nature and accessibility of a public developer API."
+    }
+  },
+  "fast_scale_risk_flags": [
+    "risk_access_model_unclear",
+    "risk_auth_methods_unclear",
+    "risk_public_api_unclear",
+    "risk_verdict_unclear",
+    "risk_low_confidence"
+  ],
+  "change_log": [],
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0-fast",
+    "current_stage": "first_pass",
+    "errors": [],
+    "unresolved_questions": [
+      "risk_access_model_unclear",
+      "risk_auth_methods_unclear",
+      "risk_public_api_unclear",
+      "risk_verdict_unclear",
+      "risk_low_confidence"
+    ]
+  }
+}

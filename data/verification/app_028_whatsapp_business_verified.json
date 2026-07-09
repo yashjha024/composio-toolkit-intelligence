@@ -1,0 +1,88 @@
+{
+  "assignment_number": 28,
+  "app_name": "WhatsApp Business",
+  "assigned_category": "Communications and Messaging",
+  "processing_mode": "fast_scale",
+  "baseline_fields": {
+    "auth_methods": [
+      "unclear"
+    ],
+    "access_model": "admin_gated",
+    "credentials_obtainable_without_approval": false,
+    "public_api_status": "yes",
+    "api_breadth": "broad",
+    "mcp_status": "none_found",
+    "buildability_verdict": "OUTREACH_REQUIRED",
+    "primary_blocker": "Requires vendor/support approval for admin credentials."
+  },
+  "verified_fields": {
+    "auth_methods": {
+      "verified_value": [
+        "bearer_token"
+      ],
+      "evidence_url": "https://developers.facebook.com/docs/whatsapp",
+      "concise_evidence_snippet": "All access tokens must be included in the Authorization HTTP header of your requests, as a Bearer Token.",
+      "baseline_classification": "incorrect",
+      "correction_required": true,
+      "failure_mode": "extraction_error"
+    },
+    "access_model": {
+      "verified_value": "admin_gated",
+      "evidence_url": "https://developers.facebook.com/docs/whatsapp",
+      "concise_evidence_snippet": "Before you can use the WhatsApp Business Platform, your business needs to be verified.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "credentials_obtainable_without_approval": {
+      "verified_value": false,
+      "evidence_url": "https://developers.facebook.com/docs/whatsapp",
+      "concise_evidence_snippet": "Before you can use the WhatsApp Business Platform, your business needs to be verified.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "public_api_status": {
+      "verified_value": "yes",
+      "evidence_url": "https://developers.facebook.com/docs/whatsapp",
+      "concise_evidence_snippet": "The WhatsApp Business Platform consists of two main components: The Cloud API and the On-Premises API.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "api_breadth": {
+      "verified_value": "broad",
+      "evidence_url": "https://developers.facebook.com/docs/whatsapp",
+      "concise_evidence_snippet": "Cloud API: Send and receive messages, manage your business profile, media and message templates, and gain insights.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "mcp_status": {
+      "verified_value": "none_found",
+      "evidence_url": "https://developers.facebook.com/docs/whatsapp",
+      "concise_evidence_snippet": "The WhatsApp Business Platform allows medium and large businesses to communicate with their customers at scale.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "buildability_verdict": {
+      "verified_value": "OUTREACH_REQUIRED",
+      "evidence_url": "https://developers.facebook.com/docs/whatsapp",
+      "concise_evidence_snippet": "Before you can use the WhatsApp Business Platform, your business needs to be verified.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "primary_blocker": {
+      "verified_value": "Requires vendor/support approval for admin credentials.",
+      "evidence_url": "https://developers.facebook.com/docs/whatsapp",
+      "concise_evidence_snippet": "Before you can use the WhatsApp Business Platform, your business needs to be verified.",
+      "baseline_classification": "correct",
+      "correction_required": false,
+      "failure_mode": "none"
+    },
+    "unclear_diagnosis": "not_applicable"
+  },
+  "verified_at": "2026-07-09T18:54:26.790Z"
+}

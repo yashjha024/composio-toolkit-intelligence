@@ -61,6 +61,7 @@ export const EvidenceRecordSchema = z.object({
   evidence_snippet: z.string(),
   retrieved_at: z.string(),
   supports_claim: z.union([z.boolean(), z.literal('unclear')]),
+  fetch_mode: z.enum(['http', 'alternate_official_source', 'browser_fallback']).optional().default('http'),
   url_status: z.object({
     format_valid: z.boolean(),
     resolves: z.boolean(),
@@ -206,6 +207,7 @@ export const CanonicalResearchRecordSchema = z.object({
   targeted_reresearch_result: CanonicalStageResultSchema.partial().optional(),
   final_agent_result: CanonicalStageResultSchema.optional(),
   human_corrected_result: CanonicalStageResultSchema.optional(),
+  fast_scale_risk_flags: z.array(z.string()).optional(),
 
   change_log: z.array(ChangeLogEntrySchema).default([]),
   pipeline_metadata: PipelineMetadataSchema,
