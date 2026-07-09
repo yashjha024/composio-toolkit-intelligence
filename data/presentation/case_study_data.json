@@ -1,6 +1,6 @@
 {
   "contract_metadata": {
-    "generated_at": "2026-07-09T20:49:18.858Z",
+    "generated_at": "2026-07-09T21:16:25.621Z",
     "authoritative_identity_source": "data/benchmark_100.json",
     "total_apps": 100,
     "schema_version": "1.0.0",
@@ -2704,8 +2704,7 @@
     "targeted_verified": "High-value borderline applications verified during Part 4 targeted verification (data/calibrated/targeted_verified/app_*_targeted.json) where specific unresolved material fields were re-audited via a dedicated LLM call with fresh documentation.",
     "deterministically_calibrated": "Applications whose buildability verdicts changed cleanly via local deterministic rules (Part 2) where raw baseline facts (public_api: 'yes', credentials_obtainable_without_approval: true) satisfied exact evidence-backed thresholds without requiring an additional LLM call.",
     "baseline_unverified": "Applications whose raw initial extraction facts and verdicts were retained without external LLM verification or recalibration changes (0 false human verification claims).",
-    "genuinely_unresolved_verified": "Applications (exactly 7) that underwent independent or targeted verification but remained UNCLEAR due to true structural ambiguity, multi-tenant gating, or waitlisted API access.",
-    "baseline_unverified_conservative_unclear": "Applications (exactly 54) that remained UNCLEAR in the final presentation layer (baseline_unverified provenance) where public_api: 'yes' is largely present, but conservative Fast Scale guardrails were preserved to honor strict provenance integrity."
+    "baseline_unverified_conservative_unclear": "54 baseline-unverified conservative UNCLEAR — retained because the one-pass system did not produce enough validated evidence for confident promotion."
   },
   "token_and_runtime_metrics": {
     "provider_route": "vertex-ai",
@@ -2906,8 +2905,8 @@
     },
     {
       "pattern_id": 5,
-      "headline": "Conservative Single-Pass Guardrails — Not Documentation Hallucinations — Account for the Bulk of UNCLEAR Verdicts",
-      "supporting_metric": "Independent verification confirmed that 71.4% of sampled UNCLEAR baseline verdicts were false-positives forced by conservative string-matching guardrails. In the final dataset, exactly 54 apps remain marked baseline-unverified conservative UNCLEAR, alongside only 7 genuinely unresolved verified apps.",
+      "headline": "Verification Revealed Conservative Guardrails as a Major Source of False UNCLEAR Verdicts",
+      "supporting_metric": "5 of 7 sampled baseline UNCLEAR verdicts (71.4%) were resolved during independent verification. The remaining 54 baseline-unverified UNCLEAR apps were intentionally preserved rather than extrapolating the sample result to unverified records.",
       "categories_driving": [
         "Support and Helpdesk",
         "CRM and Sales",

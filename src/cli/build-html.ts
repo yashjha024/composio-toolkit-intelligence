@@ -1224,13 +1224,13 @@ const html = `<!DOCTYPE html>
             <span class="verdict-badge UNCLEAR">True Ambiguity</span>
           </div>
           <div class="funnel-branch" style="border-left-color: #64748b;">
-            <span>↳ <strong>54 Conservative Baseline-Unverified Apps</strong> &nbsp;(Public API yes largely present, but single-pass guardrails retained to honor strict provenance integrity without unverified claims)</span>
+            <span>↳ <strong>54 Conservative Baseline-Unverified Apps</strong> &nbsp;(retained because the one-pass system did not produce enough validated evidence for confident promotion)</span>
             <span class="verdict-badge BLOCKED_LOW_PRIORITY">Guardrail Retained</span>
           </div>
         </div>
 
         <div class="funnel-annotation">
-          <strong>Key Takeaway on Uncertainty:</strong> UNCLEAR does not mean "no API exists." It means the single-pass system did not accumulate enough verified evidence to promote the verdict with 100% confidence. Our independent audit confirmed that <strong>71.4% of sampled UNCLEARs were false-positives forced by strict guardrails</strong>. Exactly 54 of the 61 UNCLEAR apps were never individually verified — they retain their conservative baseline classification without fabricated human verification claims.
+          <strong>Key Takeaway on Uncertainty:</strong> UNCLEAR does not mean "no API exists." It means the single-pass system did not accumulate enough validated evidence to promote the verdict confidently under the system's decision rules. 5 of 7 sampled baseline UNCLEAR verdicts (71.4%) were resolved during independent verification. The remaining 54 baseline-unverified UNCLEAR apps were intentionally preserved rather than extrapolating the sample result to unverified records.
           <div style="margin-top: 0.75rem; font-weight: 600; color: #fff;">
             Final Provenance Composition: &nbsp; <span style="color: #34d399;">14 Independently Verified</span> &nbsp;·&nbsp; <span style="color: #60a5fa;">15 Targeted Verified</span> &nbsp;·&nbsp; <span style="color: #f59e0b;">3 Deterministically Calibrated</span> &nbsp;·&nbsp; <span style="color: #94a3b8;">68 Baseline Unverified</span>
           </div>

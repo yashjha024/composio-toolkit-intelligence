@@ -217,4 +217,23 @@ describe('Final Analytics Rebuild — Identity, Arithmetic & Provenance Regressi
       }
     }
   });
+
+  it('R18: exact provenance distribution matches row-level counts directly derived from presentation rows (independently_verified=14, targeted_verified=15, deterministically_calibrated=3, baseline_unverified=68)', () => {
+    const provCounts: Record<string, number> = {
+      independently_verified: 0,
+      targeted_verified: 0,
+      deterministically_calibrated: 0,
+      baseline_unverified: 0
+    };
+    for (const row of presentation) {
+      provCounts[row.verification_status] = (provCounts[row.verification_status] || 0) + 1;
+    }
+    expect(provCounts.independently_verified).toBe(14);
+    expect(provCounts.targeted_verified).toBe(15);
+    expect(provCounts.deterministically_calibrated).toBe(3);
+    expect(provCounts.baseline_unverified).toBe(68);
+    expect(analytics.final_provenance_distribution).toEqual(provCounts);
+    const sum = Object.values(provCounts).reduce((a, b) => a + b, 0);
+    expect(sum).toBe(100);
+  });
 });

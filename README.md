@@ -25,7 +25,7 @@ Answering these questions manually across hundreds of applications does not scal
 
 This project builds an AI-assisted research and verification pipeline for that problem.
 
-The system researched a benchmark of **100 applications across 10 categories**, transformed fragmented developer documentation into structured integration intelligence, assigned buildability verdicts through deterministic product rules, independently verified a stratified sample, diagnosed systematic failure modes, and generated a self-contained case study for decision-makers.
+The system researched a benchmark of **100 applications across 10 categories**, transformed fragmented developer documentation into structured integration intelligence, assigned buildability verdicts through deterministic product rules, independently verified a stratified sample, diagnosed systematic failure modes, and generated a single-file interactive case study with all application data and interaction logic embedded for decision-makers.
 
 The objective was not simply to produce 100 rows.
 
@@ -37,7 +37,7 @@ The objective was to build a repeatable system that could answer:
 
 ## Live Case Study
 
-The primary deliverable is a self-contained interactive HTML case study:
+The primary deliverable is a single-file interactive HTML case study with all application data and interaction logic embedded:
 
 **`https://composio-toolkit-intelligence.netlify.app/`**
 
@@ -712,8 +712,8 @@ The final provenance distribution is:
 
 | Provenance Tier | Apps |
 |---|---:|
-| Independently verified | 15 |
-| Targeted verified | 14 |
+| Independently verified | 14 |
+| Targeted verified | 15 |
 | Deterministically calibrated | 3 |
 | Baseline unverified | 68 |
 
@@ -1166,7 +1166,7 @@ case-study.html
 
 from the locked presentation data contract.
 
-The HTML is deterministic and self-contained.
+The HTML is a single-file interactive case study with all application data and interaction logic embedded.
 
 ---
 

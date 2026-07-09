@@ -110,4 +110,23 @@ describe('Case Study Data Contract Validation', () => {
     // Matches source analytics
     expect(prog).toEqual(analytics.unclear_progression);
   });
+
+  it('C8: exact provenance distribution matches row counts directly derived from authoritative 100 rows', () => {
+    const provCounts: Record<string, number> = {
+      independently_verified: 0,
+      targeted_verified: 0,
+      deterministically_calibrated: 0,
+      baseline_unverified: 0
+    };
+    for (const row of caseStudyData.exact_100_app_table_rows) {
+      provCounts[row.verification_status] = (provCounts[row.verification_status] || 0) + 1;
+    }
+    expect(provCounts.independently_verified).toBe(14);
+    expect(provCounts.targeted_verified).toBe(15);
+    expect(provCounts.deterministically_calibrated).toBe(3);
+    expect(provCounts.baseline_unverified).toBe(68);
+    expect(caseStudyData.distributions.provenance_distribution).toEqual(provCounts);
+    const sum = Object.values(provCounts).reduce((a, b) => a + b, 0);
+    expect(sum).toBe(100);
+  });
 });
