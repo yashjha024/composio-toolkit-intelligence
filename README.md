@@ -1160,13 +1160,12 @@ npm run build:html
 
 This regenerates:
 
-```text
-case-study.html
+```https://composio-toolkit-intelligence.netlify.app/
 ```
 
 from the locked presentation data contract.
 
-The HTML is a single-file interactive case study with all application data and interaction logic embedded.
+The HTML is deterministic and self-contained.
 
 ---
 
@@ -1241,66 +1240,6 @@ The pipeline exists to support product decisions, not merely to demonstrate tech
 
 ---
 
-## What I Would Improve Next
-
-Given more time, I would extend the system in four directions.
-
-### 1. Risk-Based Verification Scheduling
-
-Instead of selecting verification targets primarily through stratified sampling and targeted uncertainty, I would score every record using:
-
-```text
-business value
-× uncertainty
-× evidence weakness
-× expected correction impact
-```
-
-The highest-value records would be verified first.
-
-### 2. Claim-Level Evidence Graph
-
-Each material claim could be represented as:
-
-```text
-claim
-→ source
-→ evidence snippet
-→ validation status
-→ confidence
-→ downstream verdict impact
-```
-
-This would make it easier to explain exactly why a verdict changed.
-
-### 3. Documentation Change Monitoring
-
-Developer access conditions change.
-
-A production system should periodically re-check:
-
-- authentication documentation;
-- pricing restrictions;
-- developer onboarding;
-- partner requirements;
-- API deprecations;
-- MCP availability.
-
-### 4. Human Review Queue
-
-Instead of a generic list of uncertain applications, the system could generate a prioritized operations queue such as:
-
-```text
-High product value + weak access evidence
-High product value + contradictory documentation
-Likely BUILD_NOW + evidence validation failure
-Likely OUTREACH_REQUIRED + missing partnership evidence
-```
-
-This would convert the research pipeline into an ongoing Product Ops system.
-
----
-
 ## Key Technical Decisions
 
 | Decision | Why |
@@ -1341,110 +1280,6 @@ This would convert the research pipeline into an ongoing Product Ops system.
 | Single self-explanatory deliverable | Interactive `case-study.html` |
 | Runnable proof | Test suite and pipeline replay |
 | Source repository | This repository |
-
----
-
-## What This Project Demonstrates
-
-This project is intended to demonstrate more than the ability to call an LLM API.
-
-It demonstrates:
-
-### Product Judgment
-
-The system optimizes for the question that matters:
-
-> Which integrations are worth building, which require outreach, and which need more evidence?
-
-### AI Systems Thinking
-
-The architecture separates:
-
-- research;
-- extraction;
-- evidence;
-- decision logic;
-- verification;
-- calibration;
-- analytics;
-- presentation.
-
-### Product Operations
-
-The pipeline turns a large, ambiguous research problem into:
-
-- structured records;
-- repeatable workflows;
-- prioritized opportunities;
-- explicit blockers;
-- measurable quality.
-
-### Engineering Execution
-
-The system includes:
-
-- resumable execution;
-- provider migration;
-- concurrency;
-- error isolation;
-- atomic persistence;
-- deterministic tests;
-- usage observability;
-- reproducible artifact generation.
-
-### Analytical Rigor
-
-The final output includes:
-
-- portfolio-level patterns;
-- accuracy measurement;
-- failure-mode analysis;
-- uncertainty decomposition;
-- provenance tracking.
-
-### Honesty About AI Limitations
-
-The project does not claim that:
-
-- every model output was correct;
-- all 100 records were independently verified;
-- every `UNCLEAR` application lacks an API;
-- the verification sample proves universal accuracy.
-
-Instead, it shows:
-
-- what was measured;
-- what improved;
-- what remains uncertain;
-- and where additional work would create the most value.
-
----
-
-## Final Takeaway
-
-The main lesson from this project is that scaling AI research is not primarily a prompting problem.
-
-The difficult part is building a system that can answer:
-
-```text
-What did the agent find?
-What evidence supports it?
-Which decisions are deterministic?
-Where is the system uncertain?
-How accurate was the first pass?
-What did verification correct?
-Which results should a human inspect next?
-```
-
-The final result is therefore not just a 100-row dataset.
-
-It is a small Product Operations system for converting fragmented developer information into:
-
-- integration opportunities;
-- access blockers;
-- outreach priorities;
-- verification queues;
-- and defensible product decisions.
 
 ---
 
